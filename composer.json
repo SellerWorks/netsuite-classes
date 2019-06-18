@@ -1,0 +1,33 @@
+{
+    "name": "sellerworks/netsuite-classes",
+    "description": "Netsuite PHP Toolkit Classes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Nebes",
+            "email": "steve@nebes.net"
+        },
+        {
+            "name": "Netsuite, Inc."
+        }
+    ],
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "SellerWorks\\Netsuite\\Model\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SellerWorks\\Tools\\": "tools/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
