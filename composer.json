@@ -21,7 +21,10 @@
     "autoload": {
         "psr-4": {
             "SellerWorks\\Netsuite\\Model\\": "src/"
-        }
+        },
+        "files": [
+            "src/classmap.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

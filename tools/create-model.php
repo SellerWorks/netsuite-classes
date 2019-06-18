@@ -47,13 +47,26 @@ PHP;
 }
 
 \sort($classmap);
-$classmap = \implode(",\n    ", $classmap);
+$classmap = \implode(",\n        ", $classmap);
 $content = <<<PHP
 <?php
+/**
+ * (c) NetSuite, Inc.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-return [
-    {$classmap}
-];
+declare(strict_types=1);
+
+namespace SellerWorks\Netsuite\Model;
+
+function classmap(): array
+{
+    return [
+        {$classmap}
+    ];
+}
 
 PHP;
 
