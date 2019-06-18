@@ -42,7 +42,7 @@ namespace SellerWorks\Netsuite\Model;
 PHP;
 
         \file_put_contents($file, $content);
-        $classmap[] = \sprintf("'%s' => '\\SellerWorks\\Netsuite\\Model\\%s'", $className, $className);
+        $classmap[] = \sprintf("'%s' => 'SellerWorks\\Netsuite\\Model\\%s'", $className, $className);
     }
 }
 
