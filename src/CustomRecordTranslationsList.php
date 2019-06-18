@@ -24,8 +24,8 @@ class CustomRecordTranslationsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customRecordTranslations' => 'CustomRecordTranslations[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

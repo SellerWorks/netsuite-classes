@@ -56,7 +56,7 @@ class PaycheckPayTax
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'apply' => 'boolean',
         'payTax' => 'string',
@@ -67,5 +67,5 @@ class PaycheckPayTax
         'isExempt' => 'boolean',
         'isResidentTax' => 'boolean',
         'amount' => 'float',
-    ];
+    );
 }

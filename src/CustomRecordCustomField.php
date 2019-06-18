@@ -184,7 +184,7 @@ class CustomRecordCustomField extends CustomFieldType
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'label' => 'string',
         'owner' => 'RecordRef',
         'description' => 'string',
@@ -227,5 +227,5 @@ class CustomRecordCustomField extends CustomFieldType
         'subAccessList' => 'CustomFieldSubAccessList',
         'translationsList' => 'CustomFieldTranslationsList',
         'internalId' => 'string',
-    ];
+    );
 }

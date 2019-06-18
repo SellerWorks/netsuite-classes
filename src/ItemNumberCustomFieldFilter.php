@@ -44,7 +44,7 @@ class ItemNumberCustomFieldFilter
      */
     public $fldCompareField;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'fldFilter' => 'RecordRef',
         'fldFilterChecked' => 'boolean',
         'fldFilterCompareType' => 'CustomizationFilterCompareType',
@@ -52,5 +52,5 @@ class ItemNumberCustomFieldFilter
         'fldFilterNotNull' => 'boolean',
         'fldfilterNull' => 'boolean',
         'fldCompareField' => 'RecordRef',
-    ];
+    );
 }

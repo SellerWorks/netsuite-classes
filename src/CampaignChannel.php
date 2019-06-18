@@ -40,12 +40,12 @@ class CampaignChannel extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'eventType' => 'CampaignChannelEventType',
         'description' => 'string',
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

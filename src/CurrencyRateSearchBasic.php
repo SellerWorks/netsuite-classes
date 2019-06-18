@@ -40,12 +40,12 @@ class CurrencyRateSearchBasic extends SearchRecordBasic
      */
     public $transactionCurrency;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'baseCurrency' => 'SearchMultiSelectField',
         'effectiveDate' => 'SearchDateField',
         'exchangeRate' => 'SearchDoubleField',
         'internalId' => 'SearchMultiSelectField',
         'internalIdNumber' => 'SearchLongField',
         'transactionCurrency' => 'SearchMultiSelectField',
-    ];
+    );
 }

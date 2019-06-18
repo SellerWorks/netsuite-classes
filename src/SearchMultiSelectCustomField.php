@@ -24,8 +24,8 @@ class SearchMultiSelectCustomField extends SearchCustomField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'ListOrRecordRef[]',
         'operator' => 'SearchMultiSelectFieldOperator',
-    ];
+    );
 }

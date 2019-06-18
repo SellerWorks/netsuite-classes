@@ -32,10 +32,10 @@ class InventoryNumberSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'InventoryNumberSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

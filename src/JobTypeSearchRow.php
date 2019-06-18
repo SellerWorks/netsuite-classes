@@ -24,8 +24,8 @@ class JobTypeSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'JobTypeSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class BinTransferInventoryList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inventory' => 'BinTransferInventory[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

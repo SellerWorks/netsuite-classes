@@ -20,7 +20,7 @@ class SelectCustomFieldRef extends CustomFieldRef
      */
     public $value;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'value' => 'ListOrRecordRef',
-    ];
+    );
 }

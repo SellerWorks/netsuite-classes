@@ -192,7 +192,7 @@ class ProjectTaskSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualWork' => 'SearchDoubleField',
         'assignee' => 'SearchMultiSelectField',
         'company' => 'SearchMultiSelectField',
@@ -237,5 +237,5 @@ class ProjectTaskSearchBasic extends SearchRecordBasic
         'successor' => 'SearchMultiSelectField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

@@ -20,7 +20,7 @@ class AttachBasicReference extends AttachReference
      */
     public $attachedRecord;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'attachedRecord' => 'BaseRef',
-    ];
+    );
 }

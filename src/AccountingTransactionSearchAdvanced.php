@@ -32,10 +32,10 @@ class AccountingTransactionSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'AccountingTransactionSearch',
         'columns' => 'AccountingTransactionSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

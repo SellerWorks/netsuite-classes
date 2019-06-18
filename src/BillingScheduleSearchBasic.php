@@ -84,7 +84,7 @@ class BillingScheduleSearchBasic extends SearchRecordBasic
      */
     public $type;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'applyToSubtotal' => 'SearchBooleanField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -102,5 +102,5 @@ class BillingScheduleSearchBasic extends SearchRecordBasic
         'recurrenceTerms' => 'SearchMultiSelectField',
         'repeatEvery' => 'SearchLongField',
         'type' => 'SearchEnumMultiSelectField',
-    ];
+    );
 }

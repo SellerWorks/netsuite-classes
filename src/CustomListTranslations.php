@@ -28,9 +28,9 @@ class CustomListTranslations
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'locale' => 'Language',
         'localeDescription' => 'string',
         'name' => 'string',
-    ];
+    );
 }

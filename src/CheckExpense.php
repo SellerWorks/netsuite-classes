@@ -80,7 +80,7 @@ class CheckExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'category' => 'RecordRef',
         'account' => 'RecordRef',
@@ -97,5 +97,5 @@ class CheckExpense
         'taxRate2' => 'float',
         'grossAmt' => 'float',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

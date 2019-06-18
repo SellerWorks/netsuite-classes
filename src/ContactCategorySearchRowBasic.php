@@ -40,12 +40,12 @@ class ContactCategorySearchRowBasic extends SearchRowBasic
      */
     public $sync;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
         'private' => 'SearchColumnBooleanField[]',
         'sync' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

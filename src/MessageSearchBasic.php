@@ -80,7 +80,7 @@ class MessageSearchBasic extends SearchRecordBasic
      */
     public $subject;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'author' => 'SearchMultiSelectField',
         'authorEmail' => 'SearchStringField',
         'bcc' => 'SearchStringField',
@@ -97,5 +97,5 @@ class MessageSearchBasic extends SearchRecordBasic
         'recipient' => 'SearchMultiSelectField',
         'recipientEmail' => 'SearchStringField',
         'subject' => 'SearchStringField',
-    ];
+    );
 }

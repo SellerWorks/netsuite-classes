@@ -84,7 +84,7 @@ class GiftCertificateSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'amountRemaining' => 'SearchColumnDoubleField[]',
         'amtAvailBilled' => 'SearchColumnDoubleField[]',
         'createdDate' => 'SearchColumnDateField[]',
@@ -102,5 +102,5 @@ class GiftCertificateSearchRowBasic extends SearchRowBasic
         'purchaseDate' => 'SearchColumnDateField[]',
         'sender' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

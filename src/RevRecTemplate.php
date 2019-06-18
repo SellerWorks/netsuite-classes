@@ -64,7 +64,7 @@ class RevRecTemplate extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'amortizationType' => 'RevRecScheduleAmortizationType',
         'recurrenceType' => 'RevRecScheduleRecurrenceType',
@@ -77,5 +77,5 @@ class RevRecTemplate extends Record
         'recurrenceList' => 'RevRecTemplateRecurrenceList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

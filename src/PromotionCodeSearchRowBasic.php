@@ -64,7 +64,7 @@ class PromotionCodeSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'code' => 'SearchColumnStringField[]',
         'description' => 'SearchColumnStringField[]',
         'discount' => 'SearchColumnStringField[]',
@@ -77,5 +77,5 @@ class PromotionCodeSearchRowBasic extends SearchRowBasic
         'name' => 'SearchColumnStringField[]',
         'startDate' => 'SearchColumnDateField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

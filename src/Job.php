@@ -332,7 +332,7 @@ class Job extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'entityId' => 'string',
         'altName' => 'string',
@@ -412,5 +412,5 @@ class Job extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

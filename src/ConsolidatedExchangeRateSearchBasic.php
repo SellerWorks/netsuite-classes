@@ -56,7 +56,7 @@ class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic
      */
     public $toSubsidiary;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -67,5 +67,5 @@ class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic
         'period' => 'SearchMultiSelectField',
         'periodStartDate' => 'SearchDateField',
         'toSubsidiary' => 'SearchMultiSelectField',
-    ];
+    );
 }

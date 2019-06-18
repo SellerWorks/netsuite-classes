@@ -24,8 +24,8 @@ class EmployeeAccruedTimeList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'employeeAccruedTime' => 'EmployeeAccruedTime[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

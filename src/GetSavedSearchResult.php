@@ -28,9 +28,9 @@ class GetSavedSearchResult
      */
     public $recordRefList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'totalRecords' => 'integer',
         'recordRefList' => 'RecordRefList',
-    ];
+    );
 }

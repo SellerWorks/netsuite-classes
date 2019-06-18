@@ -64,7 +64,7 @@ class TaxType extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'description' => 'string',
         'doesNotAddToTotal' => 'boolean',
@@ -77,5 +77,5 @@ class TaxType extends Record
         'country' => 'Country',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

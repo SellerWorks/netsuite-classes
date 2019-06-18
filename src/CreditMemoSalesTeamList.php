@@ -24,8 +24,8 @@ class CreditMemoSalesTeamList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'salesTeam' => 'CreditMemoSalesTeam[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

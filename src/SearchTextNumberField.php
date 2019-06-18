@@ -28,9 +28,9 @@ class SearchTextNumberField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'string',
         'searchValue2' => 'string',
         'operator' => 'SearchTextNumberFieldOperator',
-    ];
+    );
 }

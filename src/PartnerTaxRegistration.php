@@ -36,11 +36,11 @@ class PartnerTaxRegistration
      */
     public $id;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'nexusCountry' => 'Country',
         'nexus' => 'RecordRef',
         'address' => 'RecordRef',
         'taxRegistrationNumber' => 'string',
         'id' => 'integer',
-    ];
+    );
 }

@@ -52,7 +52,7 @@ class ExpenseCategorySearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchColumnSelectField[]',
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -62,5 +62,5 @@ class ExpenseCategorySearchRowBasic extends SearchRowBasic
         'rateRequired' => 'SearchColumnBooleanField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

@@ -32,10 +32,10 @@ class MessageSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'MessageSearch',
         'columns' => 'MessageSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

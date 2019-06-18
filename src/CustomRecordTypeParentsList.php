@@ -24,8 +24,8 @@ class CustomRecordTypeParentsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'parents' => 'CustomRecordTypeParents[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -20,7 +20,7 @@ class BillingScheduleSearchRow extends SearchRow
      */
     public $basic;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'BillingScheduleSearchRowBasic',
-    ];
+    );
 }

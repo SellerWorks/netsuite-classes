@@ -52,7 +52,7 @@ class CampaignSubscription extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'description' => 'string',
         'subscribedByDefault' => 'boolean',
@@ -62,5 +62,5 @@ class CampaignSubscription extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

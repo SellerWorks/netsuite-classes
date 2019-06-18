@@ -120,7 +120,7 @@ class CalendarEventSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accessLevel' => 'SearchColumnEnumSelectField[]',
         'attendee' => 'SearchColumnSelectField[]',
         'company' => 'SearchColumnSelectField[]',
@@ -147,5 +147,5 @@ class CalendarEventSearchRowBasic extends SearchRowBasic
         'title' => 'SearchColumnStringField[]',
         'transaction' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

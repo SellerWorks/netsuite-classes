@@ -32,10 +32,10 @@ class ItemBinNumberSearchRowBasic extends SearchRowBasic
      */
     public $quantityOnHand;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'binNumber' => 'SearchColumnSelectField[]',
         'location' => 'SearchColumnSelectField[]',
         'quantityAvailable' => 'SearchColumnDoubleField[]',
         'quantityOnHand' => 'SearchColumnDoubleField[]',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class MerchandiseHierarchyNodeSearch extends SearchRecord
      */
     public $parentNodeJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'MerchandiseHierarchyNodeSearchBasic',
         'parentNodeJoin' => 'MerchandiseHierarchyNodeSearchBasic',
-    ];
+    );
 }

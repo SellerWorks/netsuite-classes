@@ -40,12 +40,12 @@ class LotNumberedAssemblyItemBillOfMaterials
      */
     public $memo;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billOfMaterials' => 'RecordRef',
         'currentRevision' => 'string',
         'masterDefault' => 'boolean',
         'defaultForLocationList' => 'RecordRefList',
         'inactive' => 'string',
         'memo' => 'string',
-    ];
+    );
 }

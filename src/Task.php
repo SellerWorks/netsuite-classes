@@ -156,7 +156,7 @@ class Task extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'company' => 'RecordRef',
         'contact' => 'RecordRef',
         'supportCase' => 'RecordRef',
@@ -192,5 +192,5 @@ class Task extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

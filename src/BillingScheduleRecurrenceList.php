@@ -24,8 +24,8 @@ class BillingScheduleRecurrenceList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billingScheduleRecurrence' => 'BillingScheduleRecurrence[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -60,7 +60,7 @@ class VendorPaymentCredit
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -72,5 +72,5 @@ class VendorPaymentCredit
         'due' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    ];
+    );
 }

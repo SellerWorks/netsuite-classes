@@ -132,7 +132,7 @@ class ContactSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ContactSearchRowBasic',
         'callJoin' => 'PhoneCallSearchRowBasic',
         'campaignResponseJoin' => 'CampaignSearchRowBasic',
@@ -162,5 +162,5 @@ class ContactSearchRow extends SearchRow
         'vendorJoin' => 'VendorSearchRowBasic',
         'vendorPrimaryJoin' => 'VendorSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

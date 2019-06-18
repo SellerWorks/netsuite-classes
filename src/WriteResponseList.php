@@ -24,8 +24,8 @@ class WriteResponseList
      */
     public $writeResponse;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'writeResponse' => 'WriteResponse[]',
-    ];
+    );
 }

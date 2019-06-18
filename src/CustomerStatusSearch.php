@@ -24,8 +24,8 @@ class CustomerStatusSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomerStatusSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

@@ -36,11 +36,11 @@ class CustomRecordTypeSublists
      */
     public $recordId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'recordSearch' => 'RecordRef',
         'recordDescr' => 'string',
         'recordDescrLanguageValueList' => 'LanguageValueList',
         'recordTab' => 'RecordRef',
         'recordId' => 'string',
-    ];
+    );
 }

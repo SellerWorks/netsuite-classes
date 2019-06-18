@@ -28,9 +28,9 @@ class SupportCaseSolutions
      */
     public $dateApplied;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'solution' => 'RecordRef',
         'message' => 'string',
         'dateApplied' => 'dateTime',
-    ];
+    );
 }

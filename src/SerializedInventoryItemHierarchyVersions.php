@@ -36,11 +36,11 @@ class SerializedInventoryItemHierarchyVersions
      */
     public $hierarchyNode;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'isIncluded' => 'boolean',
         'hierarchyVersion' => 'RecordRef',
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
         'hierarchyNode' => 'RecordRef',
-    ];
+    );
 }

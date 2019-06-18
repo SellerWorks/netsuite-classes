@@ -32,10 +32,10 @@ class CustomListSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'CustomListSearch',
         'columns' => 'CustomListSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

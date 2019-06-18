@@ -60,7 +60,7 @@ class TaxDetails
      */
     public $calcDetail;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'taxDetailsReference' => 'string',
         'lineType' => 'string',
         'lineName' => 'string',
@@ -72,5 +72,5 @@ class TaxDetails
         'taxRate' => 'float',
         'taxAmount' => 'float',
         'calcDetail' => 'string',
-    ];
+    );
 }

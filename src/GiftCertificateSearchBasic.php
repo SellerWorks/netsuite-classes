@@ -88,7 +88,7 @@ class GiftCertificateSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'amountAvailableBilled' => 'SearchDoubleField',
         'amountRemaining' => 'SearchDoubleField',
         'createdDate' => 'SearchDateField',
@@ -107,5 +107,5 @@ class GiftCertificateSearchBasic extends SearchRecordBasic
         'purchaseDate' => 'SearchDateField',
         'sender' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

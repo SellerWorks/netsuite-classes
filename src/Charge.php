@@ -136,7 +136,7 @@ class Charge extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'salesOrder' => 'RecordRef',
         'billTo' => 'RecordRef',
@@ -167,5 +167,5 @@ class Charge extends Record
         'runId' => 'string',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -76,7 +76,7 @@ class SolutionSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assigned' => 'SearchColumnSelectField[]',
         'caseCount' => 'SearchColumnLongField[]',
         'createdDate' => 'SearchColumnDateField[]',
@@ -92,5 +92,5 @@ class SolutionSearchRowBasic extends SearchRowBasic
         'status' => 'SearchColumnEnumSelectField[]',
         'title' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

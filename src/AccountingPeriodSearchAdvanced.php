@@ -32,10 +32,10 @@ class AccountingPeriodSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'AccountingPeriodSearch',
         'columns' => 'AccountingPeriodSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

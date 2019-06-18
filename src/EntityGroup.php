@@ -116,7 +116,7 @@ class EntityGroup extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'groupName' => 'string',
         'groupType' => 'EntityGroupType',
         'email' => 'string',
@@ -142,5 +142,5 @@ class EntityGroup extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -32,10 +32,10 @@ class SalesTaxItemSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'SalesTaxItemSearchRowBasic',
         'taxTypeJoin' => 'TaxTypeSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

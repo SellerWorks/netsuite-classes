@@ -60,7 +60,7 @@ class ProjectTaskSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ProjectTaskSearchBasic',
         'jobJoin' => 'JobSearchBasic',
         'predecessorJoin' => 'ProjectTaskSearchBasic',
@@ -72,5 +72,5 @@ class ProjectTaskSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

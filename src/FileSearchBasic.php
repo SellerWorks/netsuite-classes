@@ -84,7 +84,7 @@ class FileSearchBasic extends SearchRecordBasic
      */
     public $url;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'availableWithoutLogin' => 'SearchBooleanField',
         'created' => 'SearchDateField',
         'dateViewed' => 'SearchDateField',
@@ -102,5 +102,5 @@ class FileSearchBasic extends SearchRecordBasic
         'name' => 'SearchStringField',
         'owner' => 'SearchMultiSelectField',
         'url' => 'SearchStringField',
-    ];
+    );
 }

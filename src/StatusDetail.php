@@ -32,10 +32,10 @@ class StatusDetail
      */
     public $type;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'code' => 'StatusDetailCodeType',
         'message' => 'string',
         'afterSubmitFailed' => 'boolean',
         'type' => 'StatusDetailType',
-    ];
+    );
 }

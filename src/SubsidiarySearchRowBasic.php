@@ -200,7 +200,7 @@ class SubsidiarySearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'SearchColumnSelectField[]',
         'accountingBookCurrency' => 'SearchColumnSelectField[]',
         'address1' => 'SearchColumnStringField[]',
@@ -247,5 +247,5 @@ class SubsidiarySearchRowBasic extends SearchRowBasic
         'validUntil' => 'SearchColumnDateField[]',
         'zip' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

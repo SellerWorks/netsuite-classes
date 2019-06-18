@@ -52,7 +52,7 @@ class DepartmentSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -62,5 +62,5 @@ class DepartmentSearchBasic extends SearchRecordBasic
         'nameNoHierarchy' => 'SearchStringField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

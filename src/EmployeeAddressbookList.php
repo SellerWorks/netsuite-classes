@@ -24,8 +24,8 @@ class EmployeeAddressbookList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'addressbook' => 'EmployeeAddressbook[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

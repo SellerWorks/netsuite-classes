@@ -32,10 +32,10 @@ class InitializeRecord
      */
     public $referenceList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'type' => 'InitializeType',
         'reference' => 'InitializeRef',
         'auxReference' => 'InitializeAuxRef',
         'referenceList' => 'InitializeRefList',
-    ];
+    );
 }

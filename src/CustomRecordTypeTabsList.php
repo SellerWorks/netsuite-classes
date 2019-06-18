@@ -24,8 +24,8 @@ class CustomRecordTypeTabsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'tabs' => 'CustomRecordTypeTabs[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

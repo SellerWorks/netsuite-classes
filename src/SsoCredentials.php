@@ -40,12 +40,12 @@ class SsoCredentials
      */
     public $partnerId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'email' => 'string',
         'password' => 'string',
         'account' => 'string',
         'role' => 'RecordRef',
         'authenticationToken' => 'string',
         'partnerId' => 'string',
-    ];
+    );
 }

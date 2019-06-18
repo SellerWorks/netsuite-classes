@@ -352,7 +352,7 @@ class JobSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchStringField',
         'actualTime' => 'SearchDoubleField',
         'address' => 'SearchStringField',
@@ -437,5 +437,5 @@ class JobSearchBasic extends SearchRecordBasic
         'usePercentCompleteOverride' => 'SearchBooleanField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

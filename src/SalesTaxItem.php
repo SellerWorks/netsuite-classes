@@ -144,7 +144,7 @@ class SalesTaxItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemId' => 'string',
         'displayName' => 'string',
         'description' => 'string',
@@ -177,5 +177,5 @@ class SalesTaxItem extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

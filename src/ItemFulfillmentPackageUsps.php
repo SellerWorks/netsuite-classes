@@ -64,7 +64,7 @@ class ItemFulfillmentPackageUsps
      */
     public $deliveryConfUsps;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'packageWeightUsps' => 'float',
         'packageDescrUsps' => 'string',
         'packageTrackingNumberUsps' => 'string',
@@ -77,5 +77,5 @@ class ItemFulfillmentPackageUsps
         'packageWidthUsps' => 'integer',
         'packageHeightUsps' => 'integer',
         'deliveryConfUsps' => 'ItemFulfillmentPackageUspsDeliveryConfUsps',
-    ];
+    );
 }

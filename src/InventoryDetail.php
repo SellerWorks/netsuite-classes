@@ -24,8 +24,8 @@ class InventoryDetail extends Record
      */
     public $customForm;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inventoryAssignmentList' => 'InventoryAssignmentList',
         'customForm' => 'RecordRef',
-    ];
+    );
 }

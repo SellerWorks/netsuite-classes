@@ -108,7 +108,7 @@ class VendorCreditExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'orderLine' => 'integer',
         'line' => 'integer',
         'category' => 'RecordRef',
@@ -132,5 +132,5 @@ class VendorCreditExpense
         'amortizationEndDate' => 'dateTime',
         'amortizationResidual' => 'string',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

@@ -20,7 +20,7 @@ class GetServerTimeResponse
      */
     public $getServerTimeResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'getServerTimeResult' => 'GetServerTimeResult',
-    ];
+    );
 }

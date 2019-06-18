@@ -24,8 +24,8 @@ class CustomerRefundApplyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'CustomerRefundApply[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

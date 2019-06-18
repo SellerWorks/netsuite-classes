@@ -28,9 +28,9 @@ class BudgetExchangeRateFilter
      */
     public $toSubsidiary;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'period' => 'RecordRef',
         'fromSubsidiary' => 'RecordRef',
         'toSubsidiary' => 'RecordRef',
-    ];
+    );
 }

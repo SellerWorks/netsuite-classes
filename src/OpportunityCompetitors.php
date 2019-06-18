@@ -36,11 +36,11 @@ class OpportunityCompetitors
      */
     public $winner;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'competitor' => 'RecordRef',
         'url' => 'string',
         'notes' => 'string',
         'strategy' => 'string',
         'winner' => 'boolean',
-    ];
+    );
 }

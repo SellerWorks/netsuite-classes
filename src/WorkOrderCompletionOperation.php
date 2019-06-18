@@ -72,7 +72,7 @@ class WorkOrderCompletionOperation
      */
     public $laborRunTime;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'operationSequence' => 'integer',
         'operationName' => 'string',
         'workCenter' => 'string',
@@ -87,5 +87,5 @@ class WorkOrderCompletionOperation
         'laborSetupTime' => 'float',
         'machineRunTime' => 'float',
         'laborRunTime' => 'float',
-    ];
+    );
 }

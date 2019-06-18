@@ -24,8 +24,8 @@ class SubsidiaryNexusList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'nexus' => 'SubsidiaryNexus[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

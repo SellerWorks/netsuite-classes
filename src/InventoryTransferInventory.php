@@ -60,7 +60,7 @@ class InventoryTransferInventory
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'item' => 'RecordRef',
         'description' => 'string',
@@ -72,5 +72,5 @@ class InventoryTransferInventory
         'toBinNumbers' => 'string',
         'inventoryDetail' => 'InventoryDetail',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

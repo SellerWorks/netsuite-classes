@@ -24,8 +24,8 @@ class CustomRecordTypePermissionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'permissions' => 'CustomRecordTypePermissions[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

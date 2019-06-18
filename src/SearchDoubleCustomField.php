@@ -28,9 +28,9 @@ class SearchDoubleCustomField extends SearchCustomField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'float',
         'searchValue2' => 'float',
         'operator' => 'SearchDoubleFieldOperator',
-    ];
+    );
 }

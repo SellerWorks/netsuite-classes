@@ -112,7 +112,7 @@ class ItemSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ItemSearchRowBasic',
         'accountingBookRevRecScheduleJoin' => 'RevRecTemplateSearchRowBasic',
         'assemblyItemBillOfMaterialsJoin' => 'AssemblyItemBomSearchRowBasic',
@@ -137,5 +137,5 @@ class ItemSearchRow extends SearchRow
         'userNotesJoin' => 'NoteSearchRowBasic',
         'vendorJoin' => 'VendorSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

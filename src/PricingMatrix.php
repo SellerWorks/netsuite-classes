@@ -24,8 +24,8 @@ class PricingMatrix
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'pricing' => 'Pricing[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -48,7 +48,7 @@ class ManufacturingCostTemplateSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
@@ -57,5 +57,5 @@ class ManufacturingCostTemplateSearchRowBasic extends SearchRowBasic
         'name' => 'SearchColumnStringField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

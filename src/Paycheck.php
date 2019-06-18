@@ -136,7 +136,7 @@ class Paycheck extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'batchNumber' => 'string',
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
@@ -167,5 +167,5 @@ class Paycheck extends Record
         'payDisburseList' => 'PaycheckPayDisburseList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

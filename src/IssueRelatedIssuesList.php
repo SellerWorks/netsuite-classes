@@ -24,8 +24,8 @@ class IssueRelatedIssuesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'issueRelatedIssues' => 'IssueRelatedIssues[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

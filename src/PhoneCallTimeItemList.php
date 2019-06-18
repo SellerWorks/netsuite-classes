@@ -24,8 +24,8 @@ class PhoneCallTimeItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'timeItem' => 'TimeItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

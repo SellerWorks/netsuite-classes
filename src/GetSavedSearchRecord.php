@@ -20,7 +20,7 @@ class GetSavedSearchRecord
      */
     public $searchType;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchType' => 'SearchRecordType',
-    ];
+    );
 }

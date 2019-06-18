@@ -64,7 +64,7 @@ class CustomerCurrency
      */
     public $symbolPlacement;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'currency' => 'RecordRef',
         'balance' => 'float',
         'consolBalance' => 'float',
@@ -77,5 +77,5 @@ class CustomerCurrency
         'overrideCurrencyFormat' => 'boolean',
         'displaySymbol' => 'string',
         'symbolPlacement' => 'CurrencySymbolPlacement',
-    ];
+    );
 }

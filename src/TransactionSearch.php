@@ -292,7 +292,7 @@ class TransactionSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TransactionSearchBasic',
         'accountJoin' => 'AccountSearchBasic',
         'accountingPeriodJoin' => 'AccountingPeriodSearchBasic',
@@ -362,5 +362,5 @@ class TransactionSearch extends SearchRecord
         'vendorJoin' => 'VendorSearchBasic',
         'vendorLineJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

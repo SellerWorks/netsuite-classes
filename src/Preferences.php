@@ -36,11 +36,11 @@ class Preferences
      */
     public $runServerSuiteScriptAndTriggerWorkflows;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'warningAsError' => 'boolean',
         'disableMandatoryCustomFieldValidation' => 'boolean',
         'disableSystemNotesForCustomFields' => 'boolean',
         'ignoreReadOnlyFields' => 'boolean',
         'runServerSuiteScriptAndTriggerWorkflows' => 'boolean',
-    ];
+    );
 }

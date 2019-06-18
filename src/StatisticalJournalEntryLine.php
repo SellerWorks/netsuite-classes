@@ -64,7 +64,7 @@ class StatisticalJournalEntryLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'RecordRef',
         'line' => 'integer',
         'location' => 'RecordRef',
@@ -77,5 +77,5 @@ class StatisticalJournalEntryLine
         'lineUnit' => 'RecordRef',
         'previewDebit' => 'string',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

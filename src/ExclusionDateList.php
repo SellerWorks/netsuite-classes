@@ -20,7 +20,7 @@ class ExclusionDateList
      */
     public $exclusionDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'exclusionDate' => 'dateTime[]',
-    ];
+    );
 }

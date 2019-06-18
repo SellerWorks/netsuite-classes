@@ -24,8 +24,8 @@ class SerializedAssemblyItemBillOfMaterialsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'serializedAssemblyItemBillOfMaterials' => 'SerializedAssemblyItemBillOfMaterials[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

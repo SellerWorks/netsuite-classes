@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class ExceededRecordCountFault extends NSSoapFault
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

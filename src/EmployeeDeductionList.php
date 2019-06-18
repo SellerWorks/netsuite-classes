@@ -24,8 +24,8 @@ class EmployeeDeductionList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'employeeDeduction' => 'EmployeeDeduction[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

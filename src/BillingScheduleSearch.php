@@ -20,7 +20,7 @@ class BillingScheduleSearch extends SearchRecord
      */
     public $basic;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'BillingScheduleSearchBasic',
-    ];
+    );
 }

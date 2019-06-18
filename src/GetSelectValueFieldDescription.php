@@ -48,7 +48,7 @@ class GetSelectValueFieldDescription
      */
     public $filterByValueList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'recordType' => 'RecordType',
         'customRecordType' => 'RecordRef',
         'customTransactionType' => 'RecordRef',
@@ -57,5 +57,5 @@ class GetSelectValueFieldDescription
         'customForm' => 'RecordRef',
         'filter' => 'GetSelectValueFilter',
         'filterByValueList' => 'GetSelectFilterByFieldValueList',
-    ];
+    );
 }

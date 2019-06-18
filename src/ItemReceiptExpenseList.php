@@ -24,8 +24,8 @@ class ItemReceiptExpenseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'expense' => 'ItemReceiptExpense[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

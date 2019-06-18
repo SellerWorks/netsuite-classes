@@ -32,10 +32,10 @@ class CalendarEventAttendee
      */
     public $attendance;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'sendEmail' => 'boolean',
         'attendee' => 'RecordRef',
         'response' => 'CalendarEventAttendeeResponse',
         'attendance' => 'CalendarEventAttendeeAttendance',
-    ];
+    );
 }

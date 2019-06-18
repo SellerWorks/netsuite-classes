@@ -56,7 +56,7 @@ class ResourceAllocationSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ResourceAllocationSearchBasic',
         'customerJoin' => 'CustomerSearchBasic',
         'employeeJoin' => 'EmployeeSearchBasic',
@@ -67,5 +67,5 @@ class ResourceAllocationSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

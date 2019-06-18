@@ -136,7 +136,7 @@ class AccountingTransactionSearchBasic extends SearchRecordBasic
      */
     public $vsoeAllocation;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchMultiSelectField',
         'accountingBook' => 'SearchMultiSelectField',
         'accountType' => 'SearchMultiSelectField',
@@ -167,5 +167,5 @@ class AccountingTransactionSearchBasic extends SearchRecordBasic
         'tranIsVsoeBundle' => 'SearchBooleanField',
         'type' => 'SearchEnumMultiSelectField',
         'vsoeAllocation' => 'SearchDoubleField',
-    ];
+    );
 }

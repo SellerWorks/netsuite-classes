@@ -24,8 +24,8 @@ class PaycheckJournalCompanyTaxList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'paycheckJournalCompanyTax' => 'PaycheckJournalCompanyTax[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

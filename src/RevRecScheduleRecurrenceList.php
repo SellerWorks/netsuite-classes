@@ -24,8 +24,8 @@ class RevRecScheduleRecurrenceList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'revRecScheduleRecurrence' => 'RevRecScheduleRecurrence[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

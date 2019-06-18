@@ -72,7 +72,7 @@ class BomRevisionComponentSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'bomQuantity' => 'SearchColumnDoubleField[]',
         'bomRevision' => 'SearchColumnSelectField[]',
         'componentYield' => 'SearchColumnDoubleField[]',
@@ -87,5 +87,5 @@ class BomRevisionComponentSearchRowBasic extends SearchRowBasic
         'units' => 'SearchColumnStringField[]',
         'weight' => 'SearchColumnDoubleField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

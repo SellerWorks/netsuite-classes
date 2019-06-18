@@ -116,7 +116,7 @@ class CheckItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'vendorName' => 'string',
         'line' => 'integer',
@@ -142,5 +142,5 @@ class CheckItem
         'isBillable' => 'boolean',
         'landedCost' => 'LandedCost',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

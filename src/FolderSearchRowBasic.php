@@ -76,7 +76,7 @@ class FolderSearchRowBasic extends SearchRowBasic
      */
     public $subsidiary;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'class' => 'SearchColumnSelectField[]',
         'department' => 'SearchColumnSelectField[]',
         'description' => 'SearchColumnStringField[]',
@@ -92,5 +92,5 @@ class FolderSearchRowBasic extends SearchRowBasic
         'owner' => 'SearchColumnSelectField[]',
         'parent' => 'SearchColumnSelectField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

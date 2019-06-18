@@ -40,12 +40,12 @@ class WinLossReasonSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
         'internalIdNumber' => 'SearchLongField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    ];
+    );
 }

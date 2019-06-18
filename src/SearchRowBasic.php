@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class SearchRowBasic extends SearchRow
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

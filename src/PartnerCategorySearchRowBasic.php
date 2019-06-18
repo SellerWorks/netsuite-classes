@@ -36,11 +36,11 @@ class PartnerCategorySearchRowBasic extends SearchRowBasic
      */
     public $parent;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
         'parent' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

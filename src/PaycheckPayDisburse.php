@@ -36,11 +36,11 @@ class PaycheckPayDisburse
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'method' => 'string',
         'bankName' => 'string',
         'bankAccountDecrypt' => 'string',
         'statusName' => 'string',
         'amount' => 'float',
-    ];
+    );
 }

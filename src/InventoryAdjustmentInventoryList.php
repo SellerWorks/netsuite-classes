@@ -24,8 +24,8 @@ class InventoryAdjustmentInventoryList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inventory' => 'InventoryAdjustmentInventory[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

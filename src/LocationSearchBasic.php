@@ -188,7 +188,7 @@ class LocationSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'address' => 'SearchStringField',
         'allowStorePickup' => 'SearchBooleanField',
         'autoAssignmentRegionSetting' => 'SearchEnumMultiSelectField',
@@ -232,5 +232,5 @@ class LocationSearchBasic extends SearchRecordBasic
         'usesBins' => 'SearchBooleanField',
         'zip' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

@@ -1400,7 +1400,7 @@ class TransactionSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchMultiSelectField',
         'accountType' => 'SearchEnumMultiSelectField',
         'acctCorpCardExp' => 'SearchMultiSelectField',
@@ -1747,5 +1747,5 @@ class TransactionSearchBasic extends SearchRecordBasic
         'vsoePrice' => 'SearchDoubleField',
         'webSite' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

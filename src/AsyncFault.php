@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class AsyncFault extends NSSoapFault
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

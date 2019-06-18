@@ -28,9 +28,9 @@ class SearchPreferences
      */
     public $pageSize;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'bodyFieldsOnly' => 'boolean',
         'returnSearchColumns' => 'boolean',
         'pageSize' => 'integer',
-    ];
+    );
 }

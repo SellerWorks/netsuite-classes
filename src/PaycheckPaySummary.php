@@ -32,10 +32,10 @@ class PaycheckPaySummary
      */
     public $ytdAmount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payItem' => 'string',
         'payItemType' => 'string',
         'amount' => 'float',
         'ytdAmount' => 'float',
-    ];
+    );
 }

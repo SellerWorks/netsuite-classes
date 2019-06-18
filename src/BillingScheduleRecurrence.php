@@ -44,7 +44,7 @@ class BillingScheduleRecurrence
      */
     public $paymentTerms;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'recurrenceId' => 'integer',
         'count' => 'integer',
         'units' => 'BillingScheduleRecurrenceRecurrenceUnits',
@@ -52,5 +52,5 @@ class BillingScheduleRecurrence
         'recurrenceDate' => 'dateTime',
         'amount' => 'float',
         'paymentTerms' => 'RecordRef',
-    ];
+    );
 }

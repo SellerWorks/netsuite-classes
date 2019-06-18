@@ -56,7 +56,7 @@ class EmployeeAccruedTime
      */
     public $expirationDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payrollItem' => 'RecordRef',
         'accruedHours' => 'float',
         'accrualRate' => 'float',
@@ -67,5 +67,5 @@ class EmployeeAccruedTime
         'inactive' => 'boolean',
         'effectiveDate' => 'dateTime',
         'expirationDate' => 'dateTime',
-    ];
+    );
 }

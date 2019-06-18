@@ -24,8 +24,8 @@ class SubscriptionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'subscriptions' => 'Subscriptions[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

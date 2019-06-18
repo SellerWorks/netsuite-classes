@@ -24,8 +24,8 @@ class CustomerPaymentCreditList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'credit' => 'CustomerPaymentCredit[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

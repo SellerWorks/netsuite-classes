@@ -132,7 +132,7 @@ class JournalEntryLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'RecordRef',
         'line' => 'integer',
         'debit' => 'float',
@@ -162,5 +162,5 @@ class JournalEntryLine
         'tax1Amt' => 'float',
         'tax1Acct' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

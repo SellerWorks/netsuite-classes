@@ -24,8 +24,8 @@ class CustomerPaymentDepositList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'deposit' => 'CustomerPaymentDeposit[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

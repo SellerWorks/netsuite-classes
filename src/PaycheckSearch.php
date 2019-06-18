@@ -28,9 +28,9 @@ class PaycheckSearch extends SearchRecord
      */
     public $payrollItemJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'PaycheckSearchBasic',
         'employeeJoin' => 'EmployeeSearchBasic',
         'payrollItemJoin' => 'PayrollItemSearchBasic',
-    ];
+    );
 }

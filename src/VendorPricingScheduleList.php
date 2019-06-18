@@ -24,8 +24,8 @@ class VendorPricingScheduleList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'pricingSchedule' => 'VendorPricingSchedule[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -40,12 +40,12 @@ class OtherCustomFieldFilter
      */
     public $fldFilterNotNull;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'fldFilter' => 'RecordRef',
         'fldFilterChecked' => 'boolean',
         'fldFilterCompareType' => 'CustomizationFilterCompareType',
         'fldFilterVal' => 'string',
         'fldFilterSelList' => 'FldFilterSelList',
         'fldFilterNotNull' => 'boolean',
-    ];
+    );
 }

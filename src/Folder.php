@@ -80,7 +80,7 @@ class Folder extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'department' => 'RecordRef',
         'description' => 'string',
@@ -97,5 +97,5 @@ class Folder extends Record
         'subsidiary' => 'RecordRef',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

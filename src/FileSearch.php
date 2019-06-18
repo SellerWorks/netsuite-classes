@@ -28,9 +28,9 @@ class FileSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'FileSearchBasic',
         'shopperJoin' => 'CustomerSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

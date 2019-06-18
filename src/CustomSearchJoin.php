@@ -24,8 +24,8 @@ class CustomSearchJoin
      */
     public $searchRecordBasic;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customizationRef' => 'CustomizationRef',
         'searchRecordBasic' => 'SearchRecordBasic',
-    ];
+    );
 }

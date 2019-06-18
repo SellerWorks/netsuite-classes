@@ -276,7 +276,7 @@ class EntitySearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
         'address2' => 'SearchColumnStringField[]',
@@ -342,5 +342,5 @@ class EntitySearchRowBasic extends SearchRowBasic
         'type' => 'SearchColumnEnumSelectField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

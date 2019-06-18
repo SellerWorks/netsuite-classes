@@ -48,7 +48,7 @@ class EmployeeEarning
      */
     public $expirationDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payrollItem' => 'RecordRef',
         'payRate' => 'string',
         'primaryEarning' => 'boolean',
@@ -57,5 +57,5 @@ class EmployeeEarning
         'defaultEarning' => 'boolean',
         'effectiveDate' => 'dateTime',
         'expirationDate' => 'dateTime',
-    ];
+    );
 }

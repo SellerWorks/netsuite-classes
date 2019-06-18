@@ -28,9 +28,9 @@ class CustomRecordTypeTabs
      */
     public $tabTitleLanguageValueList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'tabTitle' => 'string',
         'tabParent' => 'RecordRef',
         'tabTitleLanguageValueList' => 'LanguageValueList',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class ExpenseCategoryRatesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'expenseCategoryRates' => 'ExpenseCategoryRates[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

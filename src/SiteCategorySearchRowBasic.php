@@ -68,7 +68,7 @@ class SiteCategorySearchRowBasic extends SearchRowBasic
      */
     public $urlComponent;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'dateViewed' => 'SearchColumnDateField[]',
         'description' => 'SearchColumnStringField[]',
         'excludeFromSitemap' => 'SearchColumnBooleanField[]',
@@ -82,5 +82,5 @@ class SiteCategorySearchRowBasic extends SearchRowBasic
         'pageTitle' => 'SearchColumnStringField[]',
         'sitemapPriority' => 'SearchColumnEnumSelectField[]',
         'urlComponent' => 'SearchColumnStringField[]',
-    ];
+    );
 }

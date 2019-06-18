@@ -20,7 +20,7 @@ class getSelectValueResponse
      */
     public $getSelectValueResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'getSelectValueResult' => 'GetSelectValueResult',
-    ];
+    );
 }

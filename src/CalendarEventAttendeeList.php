@@ -24,8 +24,8 @@ class CalendarEventAttendeeList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'attendee' => 'CalendarEventAttendee[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

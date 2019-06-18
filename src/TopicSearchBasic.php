@@ -44,7 +44,7 @@ class TopicSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -52,5 +52,5 @@ class TopicSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    ];
+    );
 }

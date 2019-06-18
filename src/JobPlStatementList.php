@@ -24,8 +24,8 @@ class JobPlStatementList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'jobPlStatement' => 'JobPlStatement[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

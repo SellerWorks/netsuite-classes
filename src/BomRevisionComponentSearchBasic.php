@@ -72,7 +72,7 @@ class BomRevisionComponentSearchBasic extends SearchRecordBasic
      */
     public $weight;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'bomQuantity' => 'SearchDoubleField',
         'bomRevision' => 'SearchMultiSelectField',
         'componentYield' => 'SearchDoubleField',
@@ -87,5 +87,5 @@ class BomRevisionComponentSearchBasic extends SearchRecordBasic
         'quantity' => 'SearchDoubleField',
         'units' => 'SearchStringField',
         'weight' => 'SearchDoubleField',
-    ];
+    );
 }

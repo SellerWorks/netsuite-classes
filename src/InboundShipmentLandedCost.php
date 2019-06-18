@@ -44,7 +44,7 @@ class InboundShipmentLandedCost
      */
     public $landedCostShipmentItemsList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'landedCostCostCategory' => 'RecordRef',
         'landedCostAmount' => 'float',
         'landedCostCurrency' => 'RecordRef',
@@ -52,5 +52,5 @@ class InboundShipmentLandedCost
         'landedCostEffectiveDate' => 'dateTime',
         'landedCostAllocationMethod' => 'InboundShipmentLandedCostAllocationMethod',
         'landedCostShipmentItemsList' => 'RecordRefList',
-    ];
+    );
 }

@@ -256,7 +256,7 @@ class IssueSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'ageInMonths' => 'SearchLongField',
         'assigned' => 'SearchMultiSelectField',
         'buildBroken' => 'SearchMultiSelectField',
@@ -317,5 +317,5 @@ class IssueSearchBasic extends SearchRecordBasic
         'versionFixed' => 'SearchMultiSelectField',
         'versionTarget' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

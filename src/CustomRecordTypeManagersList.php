@@ -24,8 +24,8 @@ class CustomRecordTypeManagersList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'managers' => 'CustomRecordTypeManagers[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

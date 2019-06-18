@@ -24,8 +24,8 @@ class SiteCategoryList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'siteCategory' => 'SiteCategory[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

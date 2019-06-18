@@ -72,7 +72,7 @@ class ConsolidatedExchangeRate extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'postingPeriod' => 'string',
         'fromSubsidiary' => 'string',
         'fromCurrency' => 'string',
@@ -87,5 +87,5 @@ class ConsolidatedExchangeRate extends Record
         'isEliminationSubsidiary' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

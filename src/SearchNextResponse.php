@@ -20,7 +20,7 @@ class SearchNextResponse
      */
     public $searchResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchResult' => 'SearchResult',
-    ];
+    );
 }

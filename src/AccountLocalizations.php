@@ -36,11 +36,11 @@ class AccountLocalizations
      */
     public $locale;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingContext' => 'RecordRef',
         'acctNumber' => 'string',
         'acctName' => 'string',
         'legalName' => 'string',
         'locale' => 'Language',
-    ];
+    );
 }

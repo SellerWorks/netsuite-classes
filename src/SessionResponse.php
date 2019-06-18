@@ -28,9 +28,9 @@ class SessionResponse
      */
     public $wsRoleList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'userId' => 'RecordRef',
         'wsRoleList' => 'WsRoleList',
-    ];
+    );
 }

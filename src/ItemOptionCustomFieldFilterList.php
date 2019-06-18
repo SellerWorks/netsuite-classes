@@ -24,8 +24,8 @@ class ItemOptionCustomFieldFilterList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'filter' => 'ItemOptionCustomFieldFilter[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

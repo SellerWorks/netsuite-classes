@@ -468,7 +468,7 @@ class VendorSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchColumnStringField[]',
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
@@ -582,5 +582,5 @@ class VendorSearchRowBasic extends SearchRowBasic
         'workCalendar' => 'SearchColumnSelectField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

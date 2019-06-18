@@ -56,7 +56,7 @@ class PostingTransactionSummaryFilter
      */
     public $book;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'period' => 'RecordRefList',
         'account' => 'RecordRefList',
         'parentItem' => 'RecordRefList',
@@ -67,5 +67,5 @@ class PostingTransactionSummaryFilter
         'location' => 'RecordRefList',
         'subsidiary' => 'RecordRefList',
         'book' => 'RecordRefList',
-    ];
+    );
 }

@@ -140,7 +140,7 @@ class Location extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'parent' => 'RecordRef',
         'includeChildren' => 'boolean',
@@ -172,5 +172,5 @@ class Location extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

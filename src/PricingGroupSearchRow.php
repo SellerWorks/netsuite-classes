@@ -24,8 +24,8 @@ class PricingGroupSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'PricingGroupSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

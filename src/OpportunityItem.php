@@ -140,7 +140,7 @@ class OpportunityItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'job' => 'RecordRef',
         'item' => 'RecordRef',
         'line' => 'integer',
@@ -172,5 +172,5 @@ class OpportunityItem
         'expectedShipDate' => 'dateTime',
         'subscription' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

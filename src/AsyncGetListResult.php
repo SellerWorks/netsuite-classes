@@ -20,7 +20,7 @@ class AsyncGetListResult extends AsyncResult
      */
     public $readResponseList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'readResponseList' => 'ReadResponseList',
-    ];
+    );
 }

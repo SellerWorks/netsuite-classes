@@ -100,7 +100,7 @@ class TaxGroupSearchRowBasic extends SearchRowBasic
      */
     public $zip;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'city' => 'SearchColumnStringField[]',
         'country' => 'SearchColumnEnumSelectField[]',
         'county' => 'SearchColumnStringField[]',
@@ -122,5 +122,5 @@ class TaxGroupSearchRowBasic extends SearchRowBasic
         'unitPrice1' => 'SearchColumnDoubleField[]',
         'unitPrice2' => 'SearchColumnDoubleField[]',
         'zip' => 'SearchColumnStringField[]',
-    ];
+    );
 }

@@ -44,7 +44,7 @@ class ItemReceiptExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'markReceived' => 'boolean',
         'orderLine' => 'integer',
         'line' => 'integer',
@@ -52,5 +52,5 @@ class ItemReceiptExpense
         'memo' => 'string',
         'amount' => 'float',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

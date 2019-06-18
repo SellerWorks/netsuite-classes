@@ -56,7 +56,7 @@ class UnitsTypeSearchRowBasic extends SearchRowBasic
      */
     public $unitName;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'abbreviation' => 'SearchColumnStringField[]',
         'baseUnit' => 'SearchColumnBooleanField[]',
         'conversionRate' => 'SearchColumnStringField[]',
@@ -67,5 +67,5 @@ class UnitsTypeSearchRowBasic extends SearchRowBasic
         'pluralAbbreviation' => 'SearchColumnStringField[]',
         'pluralName' => 'SearchColumnStringField[]',
         'unitName' => 'SearchColumnStringField[]',
-    ];
+    );
 }

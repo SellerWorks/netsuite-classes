@@ -48,7 +48,7 @@ class CostCategorySearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -57,5 +57,5 @@ class CostCategorySearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'itemCostType' => 'SearchEnumMultiSelectField',
         'name' => 'SearchStringField',
-    ];
+    );
 }

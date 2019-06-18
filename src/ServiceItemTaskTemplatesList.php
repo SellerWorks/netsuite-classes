@@ -24,8 +24,8 @@ class ServiceItemTaskTemplatesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'taskTemplates' => 'ServiceItemTaskTemplates[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

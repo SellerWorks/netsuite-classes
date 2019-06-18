@@ -60,7 +60,7 @@ class CustomerCreditCards
      */
     public $ccDefault;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'internalId' => 'string',
         'ccNumber' => 'string',
         'ccExpireDate' => 'dateTime',
@@ -72,5 +72,5 @@ class CustomerCreditCards
         'ccMemo' => 'string',
         'validfrom' => 'dateTime',
         'ccDefault' => 'boolean',
-    ];
+    );
 }

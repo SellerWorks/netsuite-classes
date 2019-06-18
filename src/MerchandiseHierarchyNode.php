@@ -36,11 +36,11 @@ class MerchandiseHierarchyNode extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'description' => 'string',
         'hierarchyVersionsList' => 'MerchandiseHierarchyNodeHierarchyVersionsList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

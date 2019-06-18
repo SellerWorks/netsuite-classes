@@ -24,8 +24,8 @@ class VendorTaxRegistrationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'vendorTaxRegistration' => 'VendorTaxRegistration[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

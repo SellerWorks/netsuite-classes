@@ -108,7 +108,7 @@ class TransactionShipGroup
      */
     public $shippingTax2Amt;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'id' => 'integer',
         'isFulfilled' => 'boolean',
         'weight' => 'float',
@@ -132,5 +132,5 @@ class TransactionShipGroup
         'shippingRate' => 'float',
         'shippingTaxAmt' => 'float',
         'shippingTax2Amt' => 'float',
-    ];
+    );
 }

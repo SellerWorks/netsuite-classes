@@ -116,7 +116,7 @@ class InvoiceTime
      */
     public $taxRate2;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -142,5 +142,5 @@ class InvoiceTime
         'taxCode' => 'RecordRef',
         'taxRate1' => 'float',
         'taxRate2' => 'float',
-    ];
+    );
 }

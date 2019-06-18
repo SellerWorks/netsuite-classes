@@ -640,7 +640,7 @@ class OriginatingLeadSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchStringField',
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
@@ -797,5 +797,5 @@ class OriginatingLeadSearchBasic extends SearchRecordBasic
         'webLead' => 'SearchBooleanField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

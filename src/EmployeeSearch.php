@@ -84,7 +84,7 @@ class EmployeeSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'EmployeeSearchBasic',
         'campaignResponseJoin' => 'CampaignSearchBasic',
         'chargeJoin' => 'ChargeSearchBasic',
@@ -102,5 +102,5 @@ class EmployeeSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

@@ -44,7 +44,7 @@ class PaycheckPayEarn
      */
     public $manualEntry;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payItem' => 'RecordRef',
         'line' => 'integer',
         'count' => 'float',
@@ -52,5 +52,5 @@ class PaycheckPayEarn
         'serviceItem' => 'RecordRef',
         'grossAmount' => 'float',
         'manualEntry' => 'boolean',
-    ];
+    );
 }

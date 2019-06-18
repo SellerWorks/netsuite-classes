@@ -20,7 +20,7 @@ class GetResponse
      */
     public $readResponse;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'readResponse' => 'ReadResponse',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class UnitsTypeUomList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'uom' => 'UnitsTypeUom[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

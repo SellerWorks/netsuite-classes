@@ -36,11 +36,11 @@ class CustomListCustomValue
      */
     public $valueLanguageValueList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'value' => 'string',
         'abbreviation' => 'string',
         'isInactive' => 'boolean',
         'valueId' => 'integer',
         'valueLanguageValueList' => 'LanguageValueList',
-    ];
+    );
 }

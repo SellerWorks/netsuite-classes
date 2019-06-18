@@ -24,8 +24,8 @@ class SearchMultiSelectField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'RecordRef[]',
         'operator' => 'SearchMultiSelectFieldOperator',
-    ];
+    );
 }

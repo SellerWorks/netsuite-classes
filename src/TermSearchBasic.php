@@ -76,7 +76,7 @@ class TermSearchBasic extends SearchRecordBasic
      */
     public $preferred;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'dateDriven' => 'SearchBooleanField',
         'dayDiscountExpires' => 'SearchLongField',
         'dayOfMonthNetDue' => 'SearchLongField',
@@ -92,5 +92,5 @@ class TermSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'preferred' => 'SearchBooleanField',
-    ];
+    );
 }

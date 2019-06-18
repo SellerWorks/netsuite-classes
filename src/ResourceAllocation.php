@@ -84,7 +84,7 @@ class ResourceAllocation extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'requestedby' => 'RecordRef',
         'approvalStatus' => 'ResourceAllocationApprovalStatus',
         'nextApprover' => 'RecordRef',
@@ -102,5 +102,5 @@ class ResourceAllocation extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

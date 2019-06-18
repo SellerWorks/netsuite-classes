@@ -68,7 +68,7 @@ class TermSearchRowBasic extends SearchRowBasic
      */
     public $preferred;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'dateDriven' => 'SearchColumnBooleanField[]',
         'dayDiscountExpires' => 'SearchColumnLongField[]',
         'dayOfMonthNetDue' => 'SearchColumnLongField[]',
@@ -82,5 +82,5 @@ class TermSearchRowBasic extends SearchRowBasic
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
         'preferred' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class ManufacturingOperationTaskPredecessorList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'manufacturingOperationTaskPredecessor' => 'ManufacturingOperationTaskPredecessor[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

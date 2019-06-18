@@ -68,7 +68,7 @@ class Term extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'dateDriven' => 'boolean',
         'daysUntilNetDue' => 'integer',
@@ -82,5 +82,5 @@ class Term extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

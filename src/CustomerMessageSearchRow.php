@@ -24,8 +24,8 @@ class CustomerMessageSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomerMessageSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

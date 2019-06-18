@@ -112,7 +112,7 @@ class ItemSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ItemSearchBasic',
         'accountingBookRevRecScheduleJoin' => 'RevRecTemplateSearchBasic',
         'assemblyItemBillOfMaterialsJoin' => 'AssemblyItemBomSearchBasic',
@@ -137,5 +137,5 @@ class ItemSearch extends SearchRecord
         'userNotesJoin' => 'NoteSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

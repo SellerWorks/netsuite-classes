@@ -24,8 +24,8 @@ class InvoiceItemCostList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemCost' => 'InvoiceItemCost[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

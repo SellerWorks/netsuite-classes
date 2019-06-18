@@ -1304,7 +1304,7 @@ class ItemSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accBookRevRecForecastRule' => 'SearchColumnSelectField[]',
         'accountingBook' => 'SearchColumnSelectField[]',
         'accountingBookAmortization' => 'SearchColumnSelectField[]',
@@ -1627,5 +1627,5 @@ class ItemSearchRowBasic extends SearchRowBasic
         'wipVarianceAcct' => 'SearchColumnSelectField[]',
         'yahooProductFeed' => 'SearchColumnBooleanField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

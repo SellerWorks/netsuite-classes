@@ -24,8 +24,8 @@ class CustomRecordTypeFormsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'forms' => 'CustomRecordTypeForms[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

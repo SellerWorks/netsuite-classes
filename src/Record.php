@@ -20,7 +20,7 @@ class Record
      */
     public $nullFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'nullFieldList' => 'NullField',
-    ];
+    );
 }

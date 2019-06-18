@@ -28,9 +28,9 @@ class LotNumberedInventoryItemNumbers
      */
     public $expirationDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'serialNumber' => 'RecordRef',
         'quantityOnHand' => 'float',
         'expirationDate' => 'dateTime',
-    ];
+    );
 }

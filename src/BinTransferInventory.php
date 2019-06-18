@@ -52,7 +52,7 @@ class BinTransferInventory
      */
     public $toBins;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'item' => 'RecordRef',
         'description' => 'string',
@@ -62,5 +62,5 @@ class BinTransferInventory
         'inventoryDetail' => 'InventoryDetail',
         'fromBins' => 'string',
         'toBins' => 'string',
-    ];
+    );
 }

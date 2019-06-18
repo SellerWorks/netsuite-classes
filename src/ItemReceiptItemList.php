@@ -24,8 +24,8 @@ class ItemReceiptItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'ItemReceiptItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

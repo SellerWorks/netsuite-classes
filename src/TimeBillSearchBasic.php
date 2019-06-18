@@ -144,7 +144,7 @@ class TimeBillSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'approvalStatus' => 'SearchMultiSelectField',
         'approved' => 'SearchBooleanField',
         'billable' => 'SearchBooleanField',
@@ -177,5 +177,5 @@ class TimeBillSearchBasic extends SearchRecordBasic
         'type' => 'SearchEnumMultiSelectField',
         'utilized' => 'SearchBooleanField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

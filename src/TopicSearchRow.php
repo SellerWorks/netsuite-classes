@@ -28,9 +28,9 @@ class TopicSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TopicSearchRowBasic',
         'solutionJoin' => 'SolutionSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

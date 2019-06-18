@@ -72,7 +72,7 @@ class PaycheckSearchRowBasic extends SearchRowBasic
      */
     public $taxableWages;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchColumnSelectField[]',
         'amendedDate' => 'SearchColumnDateField[]',
         'amount' => 'SearchColumnDoubleField[]',
@@ -87,5 +87,5 @@ class PaycheckSearchRowBasic extends SearchRowBasic
         'payrollItemType' => 'SearchColumnSelectField[]',
         'subjectWages' => 'SearchColumnDoubleField[]',
         'taxableWages' => 'SearchColumnDoubleField[]',
-    ];
+    );
 }

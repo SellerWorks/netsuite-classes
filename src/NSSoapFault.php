@@ -24,8 +24,8 @@ class NSSoapFault
      */
     public $message;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'code' => 'FaultCodeType',
         'message' => 'string',
-    ];
+    );
 }

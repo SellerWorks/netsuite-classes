@@ -20,7 +20,7 @@ class MapSsoRequest
      */
     public $ssoCredentials;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'ssoCredentials' => 'SsoCredentials',
-    ];
+    );
 }

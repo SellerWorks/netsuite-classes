@@ -432,7 +432,7 @@ class Estimate extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'nexus' => 'RecordRef',
@@ -537,5 +537,5 @@ class Estimate extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

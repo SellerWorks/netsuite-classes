@@ -24,8 +24,8 @@ class CashSaleTimeList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'time' => 'CashSaleTime[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

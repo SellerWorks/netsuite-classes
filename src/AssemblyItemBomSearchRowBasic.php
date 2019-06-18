@@ -32,10 +32,10 @@ class AssemblyItemBomSearchRowBasic extends SearchRowBasic
      */
     public $locations;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assembly' => 'SearchColumnSelectField[]',
         'billOfMaterials' => 'SearchColumnSelectField[]',
         'default' => 'SearchColumnBooleanField[]',
         'locations' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

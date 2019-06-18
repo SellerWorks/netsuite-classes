@@ -24,8 +24,8 @@ class ManufacturingCostDetailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'manufacturingCostDetail' => 'ManufacturingCostDetail[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -28,9 +28,9 @@ class DataCenterUrls
      */
     public $systemDomain;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'restDomain' => 'string',
         'webservicesDomain' => 'string',
         'systemDomain' => 'string',
-    ];
+    );
 }

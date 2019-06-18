@@ -88,7 +88,7 @@ class SubtotalItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'displayName' => 'string',
@@ -107,5 +107,5 @@ class SubtotalItem extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

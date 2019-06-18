@@ -24,8 +24,8 @@ class InvoiceExpCostList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'expCost' => 'InvoiceExpCost[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class PartnerCategorySearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'PartnerCategorySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

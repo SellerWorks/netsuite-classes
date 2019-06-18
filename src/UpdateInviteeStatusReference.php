@@ -24,8 +24,8 @@ class UpdateInviteeStatusReference
      */
     public $responseCode;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'eventId' => 'RecordRef',
         'responseCode' => 'CalendarEventAttendeeResponse',
-    ];
+    );
 }

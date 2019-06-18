@@ -44,7 +44,7 @@ class AssemblyComponent
      */
     public $lineNumber;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'quantity' => 'float',
         'quantityOnHand' => 'float',
@@ -52,5 +52,5 @@ class AssemblyComponent
         'componentNumbers' => 'string',
         'binNumbers' => 'string',
         'lineNumber' => 'integer',
-    ];
+    );
 }

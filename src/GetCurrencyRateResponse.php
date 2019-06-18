@@ -20,7 +20,7 @@ class GetCurrencyRateResponse
      */
     public $getCurrencyRateResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'getCurrencyRateResult' => 'GetCurrencyRateResult',
-    ];
+    );
 }

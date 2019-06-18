@@ -60,7 +60,7 @@ class NoteSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'author' => 'SearchMultiSelectField',
         'direction' => 'SearchBooleanField',
         'externalId' => 'SearchMultiSelectField',
@@ -72,5 +72,5 @@ class NoteSearchBasic extends SearchRecordBasic
         'noteType' => 'SearchMultiSelectField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

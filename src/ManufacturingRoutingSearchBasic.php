@@ -112,7 +112,7 @@ class ManufacturingRoutingSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'autoCalculateLag' => 'SearchBooleanField',
         'billOfMaterials' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
@@ -137,5 +137,5 @@ class ManufacturingRoutingSearchBasic extends SearchRecordBasic
         'setupTime' => 'SearchDoubleField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

@@ -40,12 +40,12 @@ class GetDeletedResult
      */
     public $deletedRecordList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'totalRecords' => 'integer',
         'pageSize' => 'integer',
         'totalPages' => 'integer',
         'pageIndex' => 'integer',
         'deletedRecordList' => 'DeletedRecordList',
-    ];
+    );
 }

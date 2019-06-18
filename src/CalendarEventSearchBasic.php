@@ -104,7 +104,7 @@ class CalendarEventSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accessLevel' => 'SearchEnumMultiSelectField',
         'attendee' => 'SearchMultiSelectField',
         'calendar' => 'SearchMultiSelectField',
@@ -127,5 +127,5 @@ class CalendarEventSearchBasic extends SearchRecordBasic
         'status' => 'SearchEnumMultiSelectField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

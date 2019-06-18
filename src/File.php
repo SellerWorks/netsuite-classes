@@ -140,7 +140,7 @@ class File extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'attachFrom' => 'FileAttachFrom',
         'mediaTypeName' => 'string',
@@ -172,5 +172,5 @@ class File extends Record
         'siteCategoryList' => 'FileSiteCategoryList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

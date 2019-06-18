@@ -44,7 +44,7 @@ class PartnerCategorySearchBasic extends SearchRecordBasic
      */
     public $parent;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -52,5 +52,5 @@ class PartnerCategorySearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'parent' => 'SearchMultiSelectField',
-    ];
+    );
 }

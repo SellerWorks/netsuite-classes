@@ -24,8 +24,8 @@ class CampaignDirectMailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'campaignDirectMail' => 'CampaignDirectMail[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

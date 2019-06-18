@@ -76,7 +76,7 @@ class TaskSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TaskSearchBasic',
         'assignedJoin' => 'EmployeeSearchBasic',
         'caseJoin' => 'SupportCaseSearchBasic',
@@ -92,5 +92,5 @@ class TaskSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

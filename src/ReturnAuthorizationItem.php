@@ -228,7 +228,7 @@ class ReturnAuthorizationItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'job' => 'RecordRef',
         'item' => 'RecordRef',
         'orderLine' => 'integer',
@@ -282,5 +282,5 @@ class ReturnAuthorizationItem
         'vsoePermitDiscount' => 'VsoePermitDiscount',
         'vsoeDelivered' => 'boolean',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

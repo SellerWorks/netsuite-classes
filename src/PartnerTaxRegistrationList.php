@@ -24,8 +24,8 @@ class PartnerTaxRegistrationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'partnerTaxRegistration' => 'PartnerTaxRegistration[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

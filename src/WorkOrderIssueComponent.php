@@ -36,11 +36,11 @@ class WorkOrderIssueComponent
      */
     public $lineNumber;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'operationSequenceNumber' => 'integer',
         'quantity' => 'float',
         'componentInventoryDetail' => 'InventoryDetail',
         'lineNumber' => 'integer',
-    ];
+    );
 }

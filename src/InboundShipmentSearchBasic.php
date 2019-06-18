@@ -184,7 +184,7 @@ class InboundShipmentSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualDeliveryDate' => 'SearchDateField',
         'actualShippingDate' => 'SearchDateField',
         'billOfLading' => 'SearchStringField',
@@ -227,5 +227,5 @@ class InboundShipmentSearchBasic extends SearchRecordBasic
         'vendor' => 'SearchMultiSelectField',
         'vesselNumber' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

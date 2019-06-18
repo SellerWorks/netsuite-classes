@@ -32,10 +32,10 @@ class CustomerSubsidiaryRelationshipSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomerSubsidiaryRelationshipSearchRowBasic',
         'customerJoin' => 'CustomerSearchRowBasic',
         'subsidiaryJoin' => 'SubsidiarySearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

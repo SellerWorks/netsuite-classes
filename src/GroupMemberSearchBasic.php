@@ -20,7 +20,7 @@ class GroupMemberSearchBasic extends SearchRecordBasic
      */
     public $groupId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'groupId' => 'RecordRef',
-    ];
+    );
 }

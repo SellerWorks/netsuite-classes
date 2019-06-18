@@ -28,9 +28,9 @@ class RecordRef extends BaseRef
      */
     public $type;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'internalId' => 'string',
         'externalId' => 'string',
         'type' => 'RecordType',
-    ];
+    );
 }

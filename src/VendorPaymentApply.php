@@ -72,7 +72,7 @@ class VendorPaymentApply
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -87,5 +87,5 @@ class VendorPaymentApply
         'discAmt' => 'float',
         'disc' => 'float',
         'amount' => 'float',
-    ];
+    );
 }

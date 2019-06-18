@@ -24,8 +24,8 @@ class BillingScheduleMilestoneList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billingScheduleMilestone' => 'BillingScheduleMilestone[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

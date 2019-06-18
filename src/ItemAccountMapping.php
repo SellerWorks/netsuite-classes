@@ -76,7 +76,7 @@ class ItemAccountMapping extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'effectiveDate' => 'dateTime',
         'endDate' => 'dateTime',
@@ -92,5 +92,5 @@ class ItemAccountMapping extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

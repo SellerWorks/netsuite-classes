@@ -24,8 +24,8 @@ class EntityCustomFieldFilterList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'filter' => 'EntityCustomFieldFilter[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -52,7 +52,7 @@ class ManufacturingCostTemplate extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'subsidiary' => 'RecordRef',
         'name' => 'string',
@@ -62,5 +62,5 @@ class ManufacturingCostTemplate extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

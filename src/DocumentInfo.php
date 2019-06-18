@@ -20,7 +20,7 @@ class DocumentInfo
      */
     public $nsId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'nsId' => 'string',
-    ];
+    );
 }

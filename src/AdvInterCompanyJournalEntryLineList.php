@@ -24,8 +24,8 @@ class AdvInterCompanyJournalEntryLineList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'AdvInterCompanyJournalEntryLine[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

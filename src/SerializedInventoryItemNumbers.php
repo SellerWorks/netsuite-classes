@@ -20,7 +20,7 @@ class SerializedInventoryItemNumbers
      */
     public $serialNumber;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'serialNumber' => 'RecordRef',
-    ];
+    );
 }

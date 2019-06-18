@@ -44,7 +44,7 @@ class TimeSheetTimeGrid
      */
     public $saturday;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'sunday' => 'TimeEntry',
         'monday' => 'TimeEntry',
         'tuesday' => 'TimeEntry',
@@ -52,5 +52,5 @@ class TimeSheetTimeGrid
         'thursday' => 'TimeEntry',
         'friday' => 'TimeEntry',
         'saturday' => 'TimeEntry',
-    ];
+    );
 }

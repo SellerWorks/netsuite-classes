@@ -36,11 +36,11 @@ class LocationSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'LocationSearchRowBasic',
         'addressJoin' => 'AddressSearchRowBasic',
         'returnAddressJoin' => 'AddressSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

@@ -48,7 +48,7 @@ class ContactCategorySearchBasic extends SearchRecordBasic
      */
     public $sync;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -57,5 +57,5 @@ class ContactCategorySearchBasic extends SearchRecordBasic
         'name' => 'SearchStringField',
         'private' => 'SearchBooleanField',
         'sync' => 'SearchBooleanField',
-    ];
+    );
 }

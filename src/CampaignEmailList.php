@@ -24,8 +24,8 @@ class CampaignEmailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'campaignEmail' => 'CampaignEmail[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

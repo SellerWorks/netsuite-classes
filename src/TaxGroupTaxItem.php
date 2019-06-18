@@ -32,10 +32,10 @@ class TaxGroupTaxItem
      */
     public $taxType;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'taxName' => 'RecordRef',
         'rate' => 'float',
         'basis' => 'float',
         'taxType' => 'string',
-    ];
+    );
 }

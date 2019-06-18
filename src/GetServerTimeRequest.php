@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class GetServerTimeRequest
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

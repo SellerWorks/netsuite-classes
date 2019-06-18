@@ -40,12 +40,12 @@ class PeriodEndJournalLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'RecordRef',
         'debit' => 'float',
         'credit' => 'float',
         'memo' => 'string',
         'line' => 'integer',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

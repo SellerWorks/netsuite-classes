@@ -24,8 +24,8 @@ class ReadResponseList
      */
     public $readResponse;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'readResponse' => 'ReadResponse[]',
-    ];
+    );
 }

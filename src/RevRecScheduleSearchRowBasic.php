@@ -136,7 +136,7 @@ class RevRecScheduleSearchRowBasic extends SearchRowBasic
      */
     public $useForeignAmounts;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'SearchColumnSelectField[]',
         'amorStatus' => 'SearchColumnEnumSelectField[]',
         'amorTemplate' => 'SearchColumnStringField[]',
@@ -167,5 +167,5 @@ class RevRecScheduleSearchRowBasic extends SearchRowBasic
         'srcTranPostPeriod' => 'SearchColumnStringField[]',
         'startOffset' => 'SearchColumnLongField[]',
         'useForeignAmounts' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

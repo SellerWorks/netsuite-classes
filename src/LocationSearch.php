@@ -36,11 +36,11 @@ class LocationSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'LocationSearchBasic',
         'addressJoin' => 'AddressSearchBasic',
         'returnAddressJoin' => 'AddressSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

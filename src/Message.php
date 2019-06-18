@@ -100,7 +100,7 @@ class Message extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'author' => 'RecordRef',
         'authorEmail' => 'string',
         'recipient' => 'RecordRef',
@@ -122,5 +122,5 @@ class Message extends Record
         'dateTime' => 'string',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

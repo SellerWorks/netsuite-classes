@@ -20,7 +20,7 @@ class DetachRequest
      */
     public $detachReference;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'detachReference' => 'DetachReference',
-    ];
+    );
 }

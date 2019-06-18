@@ -52,7 +52,7 @@ class MerchandiseHierarchyNodeSearchBasic extends SearchRecordBasic
      */
     public $parentNode;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -62,5 +62,5 @@ class MerchandiseHierarchyNodeSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'name' => 'SearchStringField',
         'parentNode' => 'SearchMultiSelectField',
-    ];
+    );
 }

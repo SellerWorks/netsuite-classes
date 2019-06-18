@@ -1428,7 +1428,7 @@ class TransactionSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'abbrev' => 'SearchColumnStringField[]',
         'account' => 'SearchColumnSelectField[]',
         'accountType' => 'SearchColumnEnumSelectField[]',
@@ -1782,5 +1782,5 @@ class TransactionSearchRowBasic extends SearchRowBasic
         'vsoePrice' => 'SearchColumnDoubleField[]',
         'webSite' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

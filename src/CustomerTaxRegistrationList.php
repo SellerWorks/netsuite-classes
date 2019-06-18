@@ -24,8 +24,8 @@ class CustomerTaxRegistrationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customerTaxRegistration' => 'CustomerTaxRegistration[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

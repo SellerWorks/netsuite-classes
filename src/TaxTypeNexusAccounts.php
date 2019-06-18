@@ -28,9 +28,9 @@ class TaxTypeNexusAccounts
      */
     public $receivablesAccount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'nexus' => 'RecordRef',
         'payablesAccount' => 'RecordRef',
         'receivablesAccount' => 'RecordRef',
-    ];
+    );
 }

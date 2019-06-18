@@ -44,7 +44,7 @@ class PaycheckJournalCompanyTax
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'id' => 'integer',
         'payrollItem' => 'RecordRef',
         'amount' => 'float',
@@ -52,5 +52,5 @@ class PaycheckJournalCompanyTax
         'class' => 'RecordRef',
         'location' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

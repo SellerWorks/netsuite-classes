@@ -24,8 +24,8 @@ class EstimateShipGroupList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'shipGroup' => 'TransactionShipGroup[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

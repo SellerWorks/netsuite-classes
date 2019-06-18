@@ -80,7 +80,7 @@ class ResourceAllocationSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'allocationType' => 'SearchColumnSelectField[]',
         'allocationUnit' => 'SearchColumnEnumSelectField[]',
         'approvalStatus' => 'SearchColumnEnumSelectField[]',
@@ -97,5 +97,5 @@ class ResourceAllocationSearchRowBasic extends SearchRowBasic
         'resource' => 'SearchColumnSelectField[]',
         'startDate' => 'SearchColumnDateField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

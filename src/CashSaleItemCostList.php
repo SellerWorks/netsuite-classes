@@ -24,8 +24,8 @@ class CashSaleItemCostList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemCost' => 'CashSaleItemCost[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

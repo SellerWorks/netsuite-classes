@@ -24,8 +24,8 @@ class TaskContactList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'contact' => 'TaskContact[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class WorkOrderItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'WorkOrderItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

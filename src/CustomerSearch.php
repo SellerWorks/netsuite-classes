@@ -164,7 +164,7 @@ class CustomerSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomerSearchBasic',
         'billingAccountJoin' => 'BillingAccountSearchBasic',
         'billingScheduleJoin' => 'BillingScheduleSearchBasic',
@@ -202,5 +202,5 @@ class CustomerSearch extends SearchRecord
         'webSiteCategoryJoin' => 'SiteCategorySearchBasic',
         'webSiteItemJoin' => 'ItemSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

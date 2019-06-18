@@ -548,7 +548,7 @@ class NonInventorySaleItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'salesDescription' => 'string',
@@ -682,5 +682,5 @@ class NonInventorySaleItem extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

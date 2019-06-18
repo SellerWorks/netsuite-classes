@@ -20,7 +20,7 @@ class InitializeRequest
      */
     public $initializeRecord;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'initializeRecord' => 'InitializeRecord',
-    ];
+    );
 }

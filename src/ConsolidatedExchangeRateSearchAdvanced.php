@@ -32,10 +32,10 @@ class ConsolidatedExchangeRateSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'ConsolidatedExchangeRateSearch',
         'columns' => 'ConsolidatedExchangeRateSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

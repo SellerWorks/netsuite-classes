@@ -36,11 +36,11 @@ class CurrencyRate extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'baseCurrency' => 'RecordRef',
         'transactionCurrency' => 'RecordRef',
         'exchangeRate' => 'float',
         'effectiveDate' => 'dateTime',
         'internalId' => 'string',
-    ];
+    );
 }

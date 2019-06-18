@@ -24,8 +24,8 @@ class PeriodDemandPlan
      */
     public $dayOfTheWeek;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'quantity' => 'float',
         'dayOfTheWeek' => 'DayOfTheWeek',
-    ];
+    );
 }

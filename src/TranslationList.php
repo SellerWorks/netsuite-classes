@@ -24,8 +24,8 @@ class TranslationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'translation' => 'Translation[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

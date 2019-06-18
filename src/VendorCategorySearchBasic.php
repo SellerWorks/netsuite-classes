@@ -44,7 +44,7 @@ class VendorCategorySearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -52,5 +52,5 @@ class VendorCategorySearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'isTaxAgency' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    ];
+    );
 }

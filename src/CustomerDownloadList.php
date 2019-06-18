@@ -24,8 +24,8 @@ class CustomerDownloadList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'download' => 'CustomerDownload[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

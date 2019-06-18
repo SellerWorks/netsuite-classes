@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class SearchStringFieldOperator
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
     /**
      * @var string
      */

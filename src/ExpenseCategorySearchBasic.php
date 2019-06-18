@@ -60,7 +60,7 @@ class ExpenseCategorySearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchMultiSelectField',
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
@@ -72,5 +72,5 @@ class ExpenseCategorySearchBasic extends SearchRecordBasic
         'rateRequired' => 'SearchBooleanField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

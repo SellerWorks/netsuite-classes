@@ -24,8 +24,8 @@ class AccountingPeriodFiscalCalendarsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingPeriodFiscalCalendars' => 'AccountingPeriodFiscalCalendars[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -28,9 +28,9 @@ class GetDeletedFilter
      */
     public $scriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'deletedDate' => 'SearchDateField',
         'type' => 'SearchEnumMultiSelectField',
         'scriptId' => 'SearchStringField',
-    ];
+    );
 }

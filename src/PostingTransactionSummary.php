@@ -60,7 +60,7 @@ class PostingTransactionSummary
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'period' => 'RecordRef',
         'account' => 'RecordRef',
         'parentItem' => 'RecordRef',
@@ -72,5 +72,5 @@ class PostingTransactionSummary
         'subsidiary' => 'RecordRef',
         'book' => 'RecordRef',
         'amount' => 'float',
-    ];
+    );
 }

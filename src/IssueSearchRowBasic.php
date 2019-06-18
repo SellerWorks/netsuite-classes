@@ -220,7 +220,7 @@ class IssueSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'ageInMonths' => 'SearchColumnLongField[]',
         'assigned' => 'SearchColumnSelectField[]',
         'buildBroken' => 'SearchColumnSelectField[]',
@@ -272,5 +272,5 @@ class IssueSearchRowBasic extends SearchRowBasic
         'versionFixed' => 'SearchColumnSelectField[]',
         'versionTarget' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

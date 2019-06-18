@@ -68,7 +68,7 @@ class TaxTypeSearchRowBasic extends SearchRowBasic
      */
     public $taxInNetAmount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'country' => 'SearchColumnEnumSelectField[]',
         'description' => 'SearchColumnStringField[]',
         'doesNotAddToTotal' => 'SearchColumnBooleanField[]',
@@ -82,5 +82,5 @@ class TaxTypeSearchRowBasic extends SearchRowBasic
         'receivablesAccount' => 'SearchColumnSelectField[]',
         'reverseCharge' => 'SearchColumnBooleanField[]',
         'taxInNetAmount' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

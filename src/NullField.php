@@ -20,7 +20,7 @@ class NullField
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string[]',
-    ];
+    );
 }

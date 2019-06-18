@@ -24,8 +24,8 @@ class CustomerPaymentApplyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'CustomerPaymentApply[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

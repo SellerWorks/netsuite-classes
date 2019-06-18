@@ -80,7 +80,7 @@ class FileSearchRowBasic extends SearchRowBasic
      */
     public $url;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'availableWithoutLogin' => 'SearchColumnBooleanField[]',
         'created' => 'SearchColumnDateField[]',
         'dateViewed' => 'SearchColumnDateField[]',
@@ -97,5 +97,5 @@ class FileSearchRowBasic extends SearchRowBasic
         'name' => 'SearchColumnStringField[]',
         'owner' => 'SearchColumnSelectField[]',
         'url' => 'SearchColumnStringField[]',
-    ];
+    );
 }

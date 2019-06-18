@@ -24,8 +24,8 @@ class SiteCategoryTranslationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'translation' => 'SiteCategoryTranslation[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

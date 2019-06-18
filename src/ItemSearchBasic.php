@@ -1180,7 +1180,7 @@ class ItemSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accBookRevRecForecastRule' => 'SearchMultiSelectField',
         'account' => 'SearchMultiSelectField',
         'accountingBook' => 'SearchMultiSelectField',
@@ -1472,5 +1472,5 @@ class ItemSearchBasic extends SearchRecordBasic
         'weight' => 'SearchDoubleField',
         'yahooProductFeed' => 'SearchBooleanField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

@@ -100,7 +100,7 @@ class PhoneCallSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accessLevel' => 'SearchColumnStringField[]',
         'assigned' => 'SearchColumnSelectField[]',
         'company' => 'SearchColumnSelectField[]',
@@ -122,5 +122,5 @@ class PhoneCallSearchRowBasic extends SearchRowBasic
         'title' => 'SearchColumnStringField[]',
         'transaction' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

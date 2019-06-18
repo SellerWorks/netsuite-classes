@@ -188,7 +188,7 @@ class SupportCase extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'escalationMessage' => 'string',
         'lastReopenedDate' => 'dateTime',
         'endDate' => 'dateTime',
@@ -232,5 +232,5 @@ class SupportCase extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -20,7 +20,7 @@ class DeletedRecordList
      */
     public $deletedRecord;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'deletedRecord' => 'DeletedRecord[]',
-    ];
+    );
 }

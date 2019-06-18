@@ -196,7 +196,7 @@ class ProjectTaskSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualWork' => 'SearchColumnDoubleField[]',
         'company' => 'SearchColumnSelectField[]',
         'constraintType' => 'SearchColumnEnumSelectField[]',
@@ -242,5 +242,5 @@ class ProjectTaskSearchRowBasic extends SearchRowBasic
         'successorType' => 'SearchColumnStringField[]',
         'title' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

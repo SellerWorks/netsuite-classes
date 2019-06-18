@@ -32,10 +32,10 @@ class AssemblyItemBomSearchBasic extends SearchRecordBasic
      */
     public $locations;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assembly' => 'SearchMultiSelectField',
         'billOfMaterials' => 'SearchMultiSelectField',
         'default' => 'SearchBooleanField',
         'locations' => 'SearchMultiSelectField',
-    ];
+    );
 }

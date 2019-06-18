@@ -88,7 +88,7 @@ class OpportunitySearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'OpportunitySearchBasic',
         'actualJoin' => 'TransactionSearchBasic',
         'callJoin' => 'PhoneCallSearchBasic',
@@ -107,5 +107,5 @@ class OpportunitySearch extends SearchRecord
         'taskJoin' => 'TaskSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

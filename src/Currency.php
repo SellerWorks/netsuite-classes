@@ -76,7 +76,7 @@ class Currency extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'symbol' => 'string',
         'isBaseCurrency' => 'boolean',
@@ -92,5 +92,5 @@ class Currency extends Record
         'currencyPrecision' => 'CurrencyCurrencyPrecision',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

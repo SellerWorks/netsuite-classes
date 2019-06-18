@@ -112,7 +112,7 @@ class CashSaleExpCost
      */
     public $taxRate2;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -137,5 +137,5 @@ class CashSaleExpCost
         'taxCode' => 'RecordRef',
         'taxRate1' => 'float',
         'taxRate2' => 'float',
-    ];
+    );
 }

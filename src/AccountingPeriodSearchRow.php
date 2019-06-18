@@ -28,9 +28,9 @@ class AccountingPeriodSearchRow extends SearchRow
      */
     public $userNotesJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'AccountingPeriodSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
-    ];
+    );
 }

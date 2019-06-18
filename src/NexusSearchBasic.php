@@ -60,7 +60,7 @@ class NexusSearchBasic extends SearchRecordBasic
      */
     public $taxDateFromFulfillment;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'country' => 'SearchEnumMultiSelectField',
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
@@ -72,5 +72,5 @@ class NexusSearchBasic extends SearchRecordBasic
         'state' => 'SearchMultiSelectField',
         'taxAgency' => 'SearchMultiSelectField',
         'taxDateFromFulfillment' => 'SearchBooleanField',
-    ];
+    );
 }

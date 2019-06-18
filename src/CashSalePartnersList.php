@@ -24,8 +24,8 @@ class CashSalePartnersList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'partners' => 'Partners[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -28,9 +28,9 @@ class ServiceItemTaskTemplates
      */
     public $taskDuration;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'taskName' => 'string',
         'taskStartOffset' => 'integer',
         'taskDuration' => 'Duration',
-    ];
+    );
 }

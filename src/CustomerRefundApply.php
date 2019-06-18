@@ -56,7 +56,7 @@ class CustomerRefundApply
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -67,5 +67,5 @@ class CustomerRefundApply
         'due' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    ];
+    );
 }

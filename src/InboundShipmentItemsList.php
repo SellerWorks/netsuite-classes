@@ -24,8 +24,8 @@ class InboundShipmentItemsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inboundShipmentItems' => 'InboundShipmentItems[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

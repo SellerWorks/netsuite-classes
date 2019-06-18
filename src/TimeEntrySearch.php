@@ -92,7 +92,7 @@ class TimeEntrySearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TimeEntrySearchBasic',
         'callJoin' => 'PhoneCallSearchBasic',
         'caseJoin' => 'SupportCaseSearchBasic',
@@ -112,5 +112,5 @@ class TimeEntrySearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

@@ -100,7 +100,7 @@ class InterCompanyTransferOrderItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'line' => 'integer',
         'quantityAvailable' => 'float',
@@ -122,5 +122,5 @@ class InterCompanyTransferOrderItem
         'lastPurchasePrice' => 'float',
         'averageCost' => 'float',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

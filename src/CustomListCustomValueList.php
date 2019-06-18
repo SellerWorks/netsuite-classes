@@ -24,8 +24,8 @@ class CustomListCustomValueList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customValue' => 'CustomListCustomValue[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

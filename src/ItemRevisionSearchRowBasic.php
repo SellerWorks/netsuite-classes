@@ -48,7 +48,7 @@ class ItemRevisionSearchRowBasic extends SearchRowBasic
      */
     public $obsoleteDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'effectiveDate' => 'SearchColumnDateField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
@@ -57,5 +57,5 @@ class ItemRevisionSearchRowBasic extends SearchRowBasic
         'memo' => 'SearchColumnStringField[]',
         'name' => 'SearchColumnStringField[]',
         'obsoleteDate' => 'SearchColumnDateField[]',
-    ];
+    );
 }

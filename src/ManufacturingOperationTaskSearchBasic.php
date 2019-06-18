@@ -136,7 +136,7 @@ class ManufacturingOperationTaskSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualRunTime' => 'SearchDoubleField',
         'actualSetupTime' => 'SearchDoubleField',
         'completedQuantity' => 'SearchDoubleField',
@@ -167,5 +167,5 @@ class ManufacturingOperationTaskSearchBasic extends SearchRecordBasic
         'status' => 'SearchMultiSelectField',
         'workOrder' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

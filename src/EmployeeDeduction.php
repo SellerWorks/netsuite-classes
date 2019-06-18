@@ -40,12 +40,12 @@ class EmployeeDeduction
      */
     public $expirationDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payrollItem' => 'RecordRef',
         'rate' => 'string',
         'limit' => 'float',
         'inactive' => 'boolean',
         'effectiveDate' => 'dateTime',
         'expirationDate' => 'dateTime',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class InboundShipmentLandedCostList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inboundShipmentLandedCost' => 'InboundShipmentLandedCost[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

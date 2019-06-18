@@ -120,7 +120,7 @@ class ExpenseReportExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'expenseDate' => 'dateTime',
         'category' => 'RecordRef',
@@ -147,5 +147,5 @@ class ExpenseReportExpense
         'receipt' => 'boolean',
         'refNumber' => 'integer',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

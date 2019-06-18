@@ -128,7 +128,7 @@ class TransferOrderItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'line' => 'integer',
         'quantityAvailable' => 'float',
@@ -157,5 +157,5 @@ class TransferOrderItem
         'expectedShipDate' => 'dateTime',
         'expectedReceiptDate' => 'dateTime',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

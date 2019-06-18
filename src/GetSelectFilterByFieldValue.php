@@ -28,9 +28,9 @@ class GetSelectFilterByFieldValue
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'sublist' => 'string',
         'field' => 'string',
         'internalId' => 'string',
-    ];
+    );
 }

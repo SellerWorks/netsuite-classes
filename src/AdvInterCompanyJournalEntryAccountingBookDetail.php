@@ -32,10 +32,10 @@ class AdvInterCompanyJournalEntryAccountingBookDetail
      */
     public $exchangeRate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'RecordRef',
         'currency' => 'RecordRef',
         'subsidiary' => 'RecordRef',
         'exchangeRate' => 'float',
-    ];
+    );
 }

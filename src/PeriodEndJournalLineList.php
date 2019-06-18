@@ -24,8 +24,8 @@ class PeriodEndJournalLineList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'periodEndJournalLine' => 'PeriodEndJournalLine[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

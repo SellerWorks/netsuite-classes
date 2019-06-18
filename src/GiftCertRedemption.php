@@ -32,10 +32,10 @@ class GiftCertRedemption
      */
     public $giftCertAvailable;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'authCode' => 'RecordRef',
         'authCodeApplied' => 'float',
         'authCodeAmtRemaining' => 'float',
         'giftCertAvailable' => 'float',
-    ];
+    );
 }

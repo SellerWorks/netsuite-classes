@@ -36,11 +36,11 @@ class VendorAddressbook
      */
     public $addressbookAddress;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'defaultShipping' => 'boolean',
         'defaultBilling' => 'boolean',
         'label' => 'string',
         'internalId' => 'string',
         'addressbookAddress' => 'Address',
-    ];
+    );
 }

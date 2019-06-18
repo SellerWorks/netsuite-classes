@@ -80,7 +80,7 @@ class MessageSearchRowBasic extends SearchRowBasic
      */
     public $subject;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'author' => 'SearchColumnSelectField[]',
         'authorEmail' => 'SearchColumnStringField[]',
         'bcc' => 'SearchColumnStringField[]',
@@ -97,5 +97,5 @@ class MessageSearchRowBasic extends SearchRowBasic
         'recipient' => 'SearchColumnSelectField[]',
         'recipientEmail' => 'SearchColumnStringField[]',
         'subject' => 'SearchColumnStringField[]',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class DepositOtherList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'depositOther' => 'DepositOther[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -56,7 +56,7 @@ class UsageSearchRowBasic extends SearchRowBasic
      */
     public $subscriptionPlan;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customer' => 'SearchColumnSelectField[]',
         'date' => 'SearchColumnDateField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -67,5 +67,5 @@ class UsageSearchRowBasic extends SearchRowBasic
         'subscription' => 'SearchColumnSelectField[]',
         'subscriptionLine' => 'SearchColumnSelectField[]',
         'subscriptionPlan' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

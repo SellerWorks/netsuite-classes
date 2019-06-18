@@ -24,8 +24,8 @@ class GetDataCenterUrlsResult
      */
     public $dataCenterUrls;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'dataCenterUrls' => 'DataCenterUrls',
-    ];
+    );
 }

@@ -96,7 +96,7 @@ class Note extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'title' => 'string',
         'noteType' => 'RecordRef',
         'direction' => 'NoteDirection',
@@ -117,5 +117,5 @@ class Note extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

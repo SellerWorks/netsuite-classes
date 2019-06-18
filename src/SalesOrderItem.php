@@ -348,7 +348,7 @@ class SalesOrderItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'job' => 'RecordRef',
         'subscription' => 'RecordRef',
         'item' => 'RecordRef',
@@ -432,5 +432,5 @@ class SalesOrderItem
         'taxDetailsReference' => 'string',
         'chargeType' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

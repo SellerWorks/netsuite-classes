@@ -72,7 +72,7 @@ class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic
      */
     public $toSubsidiary;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'SearchColumnStringField[]',
         'averageRate' => 'SearchColumnStringField[]',
         'closed' => 'SearchColumnBooleanField[]',
@@ -87,5 +87,5 @@ class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic
         'periodStartDate' => 'SearchColumnDateField[]',
         'toCurrency' => 'SearchColumnStringField[]',
         'toSubsidiary' => 'SearchColumnStringField[]',
-    ];
+    );
 }

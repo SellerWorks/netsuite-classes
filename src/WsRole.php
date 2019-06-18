@@ -32,10 +32,10 @@ class WsRole
      */
     public $isLoggedInRole;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'role' => 'RecordRef',
         'isDefault' => 'boolean',
         'isInactive' => 'boolean',
         'isLoggedInRole' => 'boolean',
-    ];
+    );
 }

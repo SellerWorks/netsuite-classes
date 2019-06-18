@@ -60,7 +60,7 @@ class CampaignDirectMail
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'internalId' => 'string',
         'campaignGroup' => 'RecordRef',
         'template' => 'RecordRef',
@@ -72,5 +72,5 @@ class CampaignDirectMail
         'dateScheduled' => 'dateTime',
         'promoCode' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

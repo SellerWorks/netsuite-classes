@@ -24,8 +24,8 @@ class CustomerSalesTeamList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'salesTeam' => 'CustomerSalesTeam[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

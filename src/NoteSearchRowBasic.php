@@ -52,7 +52,7 @@ class NoteSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'author' => 'SearchColumnSelectField[]',
         'direction' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -62,5 +62,5 @@ class NoteSearchRowBasic extends SearchRowBasic
         'noteType' => 'SearchColumnStringField[]',
         'title' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

@@ -48,7 +48,7 @@ class HcmJobSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchColumnStringField[]',
         'employmentCategory' => 'SearchColumnSelectField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -57,5 +57,5 @@ class HcmJobSearchRowBasic extends SearchRowBasic
         'jobId' => 'SearchColumnStringField[]',
         'title' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

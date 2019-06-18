@@ -28,9 +28,9 @@ class CustomRecordTranslations
      */
     public $label;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'locale' => 'Language',
         'language' => 'string',
         'label' => 'string',
-    ];
+    );
 }

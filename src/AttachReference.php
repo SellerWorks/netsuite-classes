@@ -20,7 +20,7 @@ class AttachReference
      */
     public $attachTo;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'attachTo' => 'BaseRef',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class GetCurrencyRateResult
      */
     public $currencyRateList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'currencyRateList' => 'CurrencyRateList',
-    ];
+    );
 }

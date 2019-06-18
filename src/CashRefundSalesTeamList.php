@@ -24,8 +24,8 @@ class CashRefundSalesTeamList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'salesTeam' => 'CashRefundSalesTeam[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

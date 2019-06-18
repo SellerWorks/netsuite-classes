@@ -52,7 +52,7 @@ class SiteCategorySearchBasic extends SearchRecordBasic
      */
     public $sitemapPriority;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'dateViewed' => 'SearchDateField',
         'description' => 'SearchStringField',
         'excludeFromSitemap' => 'SearchBooleanField',
@@ -62,5 +62,5 @@ class SiteCategorySearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'name' => 'SearchMultiSelectField',
         'sitemapPriority' => 'SearchEnumMultiSelectField',
-    ];
+    );
 }

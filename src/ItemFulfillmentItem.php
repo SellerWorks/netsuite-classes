@@ -112,7 +112,7 @@ class ItemFulfillmentItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'jobName' => 'string',
         'itemReceive' => 'boolean',
         'itemName' => 'string',
@@ -137,5 +137,5 @@ class ItemFulfillmentItem
         'shipAddress' => 'RecordRef',
         'shipMethod' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

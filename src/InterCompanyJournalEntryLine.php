@@ -124,7 +124,7 @@ class InterCompanyJournalEntryLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'lineSubsidiary' => 'RecordRef',
         'account' => 'RecordRef',
         'line' => 'integer',
@@ -152,5 +152,5 @@ class InterCompanyJournalEntryLine
         'tax1Amt' => 'float',
         'tax1Acct' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

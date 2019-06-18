@@ -24,8 +24,8 @@ class OtherNameCategorySearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'OtherNameCategorySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

@@ -28,9 +28,9 @@ class SubsidiaryAccountingBookDetail
      */
     public $bookStatus;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'RecordRef',
         'currency' => 'RecordRef',
         'bookStatus' => 'AccountingBookStatus',
-    ];
+    );
 }

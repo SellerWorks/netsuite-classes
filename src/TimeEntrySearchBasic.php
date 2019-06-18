@@ -136,7 +136,7 @@ class TimeEntrySearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'approvalStatus' => 'SearchMultiSelectField',
         'billable' => 'SearchBooleanField',
         'billingClass' => 'SearchMultiSelectField',
@@ -167,5 +167,5 @@ class TimeEntrySearchBasic extends SearchRecordBasic
         'type' => 'SearchEnumMultiSelectField',
         'utilized' => 'SearchBooleanField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

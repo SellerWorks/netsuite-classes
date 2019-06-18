@@ -88,7 +88,7 @@ class AddressSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'address' => 'SearchStringField',
         'address1' => 'SearchStringField',
         'address2' => 'SearchStringField',
@@ -107,5 +107,5 @@ class AddressSearchBasic extends SearchRecordBasic
         'state' => 'SearchStringField',
         'zip' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

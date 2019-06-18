@@ -56,7 +56,7 @@ class BomRevisionSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billOfMaterials' => 'SearchColumnSelectField[]',
         'createdDate' => 'SearchColumnDateField[]',
         'effectiveEndDate' => 'SearchColumnDateField[]',
@@ -67,5 +67,5 @@ class BomRevisionSearchRowBasic extends SearchRowBasic
         'memo' => 'SearchColumnStringField[]',
         'name' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

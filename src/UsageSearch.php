@@ -36,11 +36,11 @@ class UsageSearch extends SearchRecord
      */
     public $subscriptionPlanJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'UsageSearchBasic',
         'chargeJoin' => 'ChargeSearchBasic',
         'customerJoin' => 'CustomerSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'subscriptionPlanJoin' => 'ItemSearchBasic',
-    ];
+    );
 }

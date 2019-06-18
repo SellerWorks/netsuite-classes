@@ -20,7 +20,7 @@ class ChangePasswordRequest
      */
     public $changePassword;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'changePassword' => 'ChangePassword',
-    ];
+    );
 }

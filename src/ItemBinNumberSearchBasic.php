@@ -32,10 +32,10 @@ class ItemBinNumberSearchBasic extends SearchRecordBasic
      */
     public $quantityOnHand;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'binNumber' => 'SearchMultiSelectField',
         'location' => 'SearchMultiSelectField',
         'quantityAvailable' => 'SearchDoubleField',
         'quantityOnHand' => 'SearchDoubleField',
-    ];
+    );
 }

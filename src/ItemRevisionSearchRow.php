@@ -28,9 +28,9 @@ class ItemRevisionSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ItemRevisionSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

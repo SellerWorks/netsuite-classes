@@ -24,8 +24,8 @@ class DepositCashBackList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'depositCashBack' => 'DepositCashBack[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

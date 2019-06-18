@@ -84,7 +84,7 @@ class AccountingPeriodSearchBasic extends SearchRecordBasic
      */
     public $startDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'allLocked' => 'SearchBooleanField',
         'allowNonGlChanges' => 'SearchBooleanField',
         'apLocked' => 'SearchBooleanField',
@@ -102,5 +102,5 @@ class AccountingPeriodSearchBasic extends SearchRecordBasic
         'payrollLocked' => 'SearchBooleanField',
         'periodName' => 'SearchStringField',
         'startDate' => 'SearchDateField',
-    ];
+    );
 }

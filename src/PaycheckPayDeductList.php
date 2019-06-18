@@ -24,8 +24,8 @@ class PaycheckPayDeductList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'paycheckPayDeduct' => 'PaycheckPayDeduct[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

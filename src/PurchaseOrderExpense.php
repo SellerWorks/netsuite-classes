@@ -100,7 +100,7 @@ class PurchaseOrderExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'category' => 'RecordRef',
         'linkedOrderList' => 'RecordRefList',
@@ -122,5 +122,5 @@ class PurchaseOrderExpense
         'grossAmt' => 'float',
         'taxDetailsReference' => 'string',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

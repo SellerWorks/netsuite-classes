@@ -20,7 +20,7 @@ class PriceList
      */
     public $price;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'price' => 'Price[]',
-    ];
+    );
 }

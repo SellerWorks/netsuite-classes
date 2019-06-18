@@ -96,7 +96,7 @@ class PaymentCardToken extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'entity' => 'RecordRef',
         'mask' => 'string',
         'paymentMethod' => 'RecordRef',
@@ -117,5 +117,5 @@ class PaymentCardToken extends Record
         'cardExpirationDate' => 'dateTime',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

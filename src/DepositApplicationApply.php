@@ -60,7 +60,7 @@ class DepositApplicationApply
      */
     public $amount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'doc' => 'integer',
         'line' => 'integer',
         'apply' => 'boolean',
@@ -72,5 +72,5 @@ class DepositApplicationApply
         'due' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    ];
+    );
 }

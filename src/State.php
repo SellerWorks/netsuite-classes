@@ -32,10 +32,10 @@ class State extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'country' => 'Country',
         'fullName' => 'string',
         'shortname' => 'string',
         'internalId' => 'string',
-    ];
+    );
 }

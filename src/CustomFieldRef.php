@@ -24,8 +24,8 @@ class CustomFieldRef
      */
     public $scriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'internalId' => 'string',
         'scriptId' => 'string',
-    ];
+    );
 }

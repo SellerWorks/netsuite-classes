@@ -28,9 +28,9 @@ class GetCustomizationIdResult
      */
     public $customizationRefList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'status' => 'Status',
         'totalRecords' => 'integer',
         'customizationRefList' => 'CustomizationRefList',
-    ];
+    );
 }

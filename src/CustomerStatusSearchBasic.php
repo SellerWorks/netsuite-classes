@@ -52,7 +52,7 @@ class CustomerStatusSearchBasic extends SearchRecordBasic
      */
     public $probability;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -62,5 +62,5 @@ class CustomerStatusSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'probability' => 'SearchDoubleField',
-    ];
+    );
 }

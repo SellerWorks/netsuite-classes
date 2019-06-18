@@ -40,12 +40,12 @@ class PriceLevelSearchRowBasic extends SearchRowBasic
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'discountPct' => 'SearchColumnDoubleField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'isOnline' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
-    ];
+    );
 }

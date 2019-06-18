@@ -20,7 +20,7 @@ class SearchCustomFieldList
      */
     public $customField;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customField' => 'SearchCustomField[]',
-    ];
+    );
 }

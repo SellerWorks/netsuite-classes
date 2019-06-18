@@ -24,8 +24,8 @@ class SalesOrderItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'SalesOrderItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

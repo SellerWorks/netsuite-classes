@@ -88,7 +88,7 @@ class EntityGroupSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'email' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -107,5 +107,5 @@ class EntityGroupSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'workCalendar' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

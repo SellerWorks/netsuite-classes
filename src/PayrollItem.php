@@ -64,7 +64,7 @@ class PayrollItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'subsidiary' => 'RecordRef',
         'itemType' => 'RecordRef',
         'name' => 'string',
@@ -77,5 +77,5 @@ class PayrollItem extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

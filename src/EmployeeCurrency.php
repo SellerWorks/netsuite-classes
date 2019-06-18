@@ -20,7 +20,7 @@ class EmployeeCurrency
      */
     public $currency;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'currency' => 'RecordRef',
-    ];
+    );
 }

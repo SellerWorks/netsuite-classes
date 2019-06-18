@@ -60,7 +60,7 @@ class CustomTransactionLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'RecordRef',
         'line' => 'integer',
         'debit' => 'float',
@@ -72,5 +72,5 @@ class CustomTransactionLine
         'class' => 'RecordRef',
         'location' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

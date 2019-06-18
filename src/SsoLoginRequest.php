@@ -20,7 +20,7 @@ class SsoLoginRequest
      */
     public $ssoPassport;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'ssoPassport' => 'SsoPassport',
-    ];
+    );
 }

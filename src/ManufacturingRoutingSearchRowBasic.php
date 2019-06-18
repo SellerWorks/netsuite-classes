@@ -104,7 +104,7 @@ class ManufacturingRoutingSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'autoCalculateLag' => 'SearchColumnBooleanField[]',
         'billOfMaterials' => 'SearchColumnSelectField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -127,5 +127,5 @@ class ManufacturingRoutingSearchRowBasic extends SearchRowBasic
         'setupTime' => 'SearchColumnDoubleField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

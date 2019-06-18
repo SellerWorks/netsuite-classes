@@ -492,7 +492,7 @@ class EmployeeSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
         'addressLabel' => 'SearchStringField',
@@ -612,5 +612,5 @@ class EmployeeSearchBasic extends SearchRecordBasic
         'workplace' => 'SearchMultiSelectField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

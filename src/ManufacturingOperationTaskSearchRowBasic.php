@@ -136,7 +136,7 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualRunTime' => 'SearchColumnDoubleField[]',
         'actualSetupTime' => 'SearchColumnDoubleField[]',
         'completedQuantity' => 'SearchColumnDoubleField[]',
@@ -167,5 +167,5 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
         'status' => 'SearchColumnSelectField[]',
         'workOrder' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

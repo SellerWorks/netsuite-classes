@@ -84,7 +84,7 @@ class InboundShipment extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'shipmentNumber' => 'string',
         'externalDocumentNumber' => 'string',
@@ -102,5 +102,5 @@ class InboundShipment extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -52,7 +52,7 @@ class HcmJobSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -62,5 +62,5 @@ class HcmJobSearchBasic extends SearchRecordBasic
         'jobId' => 'SearchStringField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

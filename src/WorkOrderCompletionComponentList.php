@@ -24,8 +24,8 @@ class WorkOrderCompletionComponentList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'workOrderCompletionComponent' => 'WorkOrderCompletionComponent[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

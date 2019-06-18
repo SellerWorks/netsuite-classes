@@ -124,7 +124,7 @@ class PurchaseRequisitionItem
      */
     public $expandItemGroup;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'line' => 'integer',
         'item' => 'RecordRef',
         'vendorName' => 'string',
@@ -152,5 +152,5 @@ class PurchaseRequisitionItem
         'expectedReceiptDate' => 'dateTime',
         'isClosed' => 'boolean',
         'expandItemGroup' => 'boolean',
-    ];
+    );
 }

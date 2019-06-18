@@ -20,7 +20,7 @@ class GetSavedSearchRequest
      */
     public $record;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'record' => 'GetSavedSearchRecord',
-    ];
+    );
 }

@@ -20,7 +20,7 @@ class UpdateInviteeStatusListRequest
      */
     public $updateInviteeStatusReference;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'updateInviteeStatusReference' => 'UpdateInviteeStatusReference[]',
-    ];
+    );
 }

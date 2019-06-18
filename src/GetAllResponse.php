@@ -20,7 +20,7 @@ class GetAllResponse
      */
     public $getAllResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'getAllResult' => 'GetAllResult',
-    ];
+    );
 }

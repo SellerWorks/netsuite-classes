@@ -52,7 +52,7 @@ class CouponCodeSearchRowBasic extends SearchRowBasic
      */
     public $used;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'code' => 'SearchColumnStringField[]',
         'dateSent' => 'SearchColumnDateField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -62,5 +62,5 @@ class CouponCodeSearchRowBasic extends SearchRowBasic
         'recipient' => 'SearchColumnStringField[]',
         'useCount' => 'SearchColumnLongField[]',
         'used' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

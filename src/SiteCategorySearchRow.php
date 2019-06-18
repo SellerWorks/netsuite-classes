@@ -28,9 +28,9 @@ class SiteCategorySearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'SiteCategorySearchRowBasic',
         'shopperJoin' => 'CustomerSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    ];
+    );
 }

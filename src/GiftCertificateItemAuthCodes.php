@@ -24,8 +24,8 @@ class GiftCertificateItemAuthCodes
      */
     public $used;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'authCode' => 'string',
         'used' => 'boolean',
-    ];
+    );
 }

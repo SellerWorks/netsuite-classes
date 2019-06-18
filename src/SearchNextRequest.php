@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class SearchNextRequest
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

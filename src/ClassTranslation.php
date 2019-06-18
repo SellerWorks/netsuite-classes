@@ -28,9 +28,9 @@ class ClassTranslation
      */
     public $name;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'locale' => 'string',
         'language' => 'string',
         'name' => 'string',
-    ];
+    );
 }

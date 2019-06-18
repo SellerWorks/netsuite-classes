@@ -20,7 +20,7 @@ class InitializeRefList
      */
     public $initializeRef;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'initializeRef' => 'InitializeRef[]',
-    ];
+    );
 }

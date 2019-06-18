@@ -196,7 +196,7 @@ class CustomRecordType extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'recordName' => 'string',
         'includeName' => 'boolean',
         'showId' => 'boolean',
@@ -242,5 +242,5 @@ class CustomRecordType extends Record
         'scriptId' => 'string',
         'customFieldList' => 'CustomRecordTypeFieldList',
         'internalId' => 'string',
-    ];
+    );
 }

@@ -32,10 +32,10 @@ class CustomTransactionRef extends BaseRef
      */
     public $scriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'internalId' => 'string',
         'externalId' => 'string',
         'typeId' => 'string',
         'scriptId' => 'string',
-    ];
+    );
 }

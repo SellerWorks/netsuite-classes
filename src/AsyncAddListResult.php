@@ -20,7 +20,7 @@ class AsyncAddListResult extends AsyncResult
      */
     public $writeResponseList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'writeResponseList' => 'WriteResponseList',
-    ];
+    );
 }

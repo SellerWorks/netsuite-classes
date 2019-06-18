@@ -48,7 +48,7 @@ class ProjectTaskAssignee
      */
     public $price;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'resource' => 'RecordRef',
         'units' => 'float',
         'serviceItem' => 'RecordRef',
@@ -57,5 +57,5 @@ class ProjectTaskAssignee
         'unitPrice' => 'float',
         'cost' => 'float',
         'price' => 'float',
-    ];
+    );
 }

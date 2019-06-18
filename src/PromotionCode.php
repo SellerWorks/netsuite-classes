@@ -124,7 +124,7 @@ class PromotionCode extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'implementation' => 'RecordRef',
         'customForm' => 'RecordRef',
         'useType' => 'PromotionCodeUseType',
@@ -152,5 +152,5 @@ class PromotionCode extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

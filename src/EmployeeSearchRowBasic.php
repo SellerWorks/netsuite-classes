@@ -592,7 +592,7 @@ class EmployeeSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchColumnStringField[]',
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
@@ -737,5 +737,5 @@ class EmployeeSearchRowBasic extends SearchRowBasic
         'workplace' => 'SearchColumnSelectField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class DeletedRecord
      */
     public $record;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'deletedDate' => 'dateTime',
         'record' => 'BaseRef',
-    ];
+    );
 }

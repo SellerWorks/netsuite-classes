@@ -20,7 +20,7 @@ class GetCustomizationIdResponse
      */
     public $getCustomizationIdResult;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'getCustomizationIdResult' => 'GetCustomizationIdResult',
-    ];
+    );
 }

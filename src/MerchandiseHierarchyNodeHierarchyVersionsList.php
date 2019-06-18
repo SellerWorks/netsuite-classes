@@ -24,8 +24,8 @@ class MerchandiseHierarchyNodeHierarchyVersionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'merchandiseHierarchyNodeHierarchyVersions' => 'MerchandiseHierarchyNodeHierarchyVersions[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

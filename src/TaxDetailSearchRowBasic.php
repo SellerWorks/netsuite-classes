@@ -52,7 +52,7 @@ class TaxDetailSearchRowBasic extends SearchRowBasic
      */
     public $tranId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchColumnStringField[]',
         'details' => 'SearchColumnStringField[]',
         'lineNumber' => 'SearchColumnLongField[]',
@@ -62,5 +62,5 @@ class TaxDetailSearchRowBasic extends SearchRowBasic
         'taxRate' => 'SearchColumnDoubleField[]',
         'taxType' => 'SearchColumnSelectField[]',
         'tranId' => 'SearchColumnLongField[]',
-    ];
+    );
 }

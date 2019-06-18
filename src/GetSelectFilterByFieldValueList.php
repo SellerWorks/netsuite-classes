@@ -20,7 +20,7 @@ class GetSelectFilterByFieldValueList
      */
     public $filterBy;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'filterBy' => 'GetSelectFilterByFieldValue[]',
-    ];
+    );
 }

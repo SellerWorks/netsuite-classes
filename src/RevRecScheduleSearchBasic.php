@@ -132,7 +132,7 @@ class RevRecScheduleSearchBasic extends SearchRecordBasic
      */
     public $useForeignAmounts;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBook' => 'SearchMultiSelectField',
         'amorStatus' => 'SearchEnumMultiSelectField',
         'amortizedAmount' => 'SearchDoubleField',
@@ -162,5 +162,5 @@ class RevRecScheduleSearchBasic extends SearchRecordBasic
         'startOffset' => 'SearchLongField',
         'templateName' => 'SearchStringField',
         'useForeignAmounts' => 'SearchBooleanField',
-    ];
+    );
 }

@@ -52,7 +52,7 @@ class TimeSheetSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'approvalStatus' => 'SearchColumnSelectField[]',
         'employee' => 'SearchColumnSelectField[]',
         'endDate' => 'SearchColumnDateField[]',
@@ -62,5 +62,5 @@ class TimeSheetSearchRowBasic extends SearchRowBasic
         'startDate' => 'SearchColumnDateField[]',
         'totalHours' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

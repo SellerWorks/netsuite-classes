@@ -24,8 +24,8 @@ class CheckExpenseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'expense' => 'CheckExpense[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

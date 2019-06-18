@@ -32,10 +32,10 @@ class SsoPassport
      */
     public $partnerUserId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'authenticationToken' => 'string',
         'partnerId' => 'string',
         'partnerAccount' => 'string',
         'partnerUserId' => 'string',
-    ];
+    );
 }

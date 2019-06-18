@@ -24,8 +24,8 @@ class CreditMemoItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'CreditMemoItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -184,7 +184,7 @@ class CampaignSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'audience' => 'SearchMultiSelectField',
         'baseCost' => 'SearchDoubleField',
         'campaignEventType' => 'SearchEnumMultiSelectField',
@@ -227,5 +227,5 @@ class CampaignSearchBasic extends SearchRecordBasic
         'title' => 'SearchStringField',
         'vertical' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

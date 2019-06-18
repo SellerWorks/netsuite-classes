@@ -24,8 +24,8 @@ class SupportCaseSolutionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'solutions' => 'SupportCaseSolutions[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

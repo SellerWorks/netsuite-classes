@@ -24,8 +24,8 @@ class LotNumberedAssemblyItemBillOfMaterialsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'lotNumberedAssemblyItemBillOfMaterials' => 'LotNumberedAssemblyItemBillOfMaterials[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

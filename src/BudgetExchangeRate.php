@@ -40,12 +40,12 @@ class BudgetExchangeRate
      */
     public $historicalRate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'period' => 'RecordRef',
         'fromSubsidiary' => 'RecordRef',
         'toSubsidiary' => 'RecordRef',
         'currentRate' => 'float',
         'averageRate' => 'float',
         'historicalRate' => 'float',
-    ];
+    );
 }

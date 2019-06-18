@@ -28,9 +28,9 @@ class SearchLongCustomField extends SearchCustomField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'integer',
         'searchValue2' => 'integer',
         'operator' => 'SearchLongFieldOperator',
-    ];
+    );
 }

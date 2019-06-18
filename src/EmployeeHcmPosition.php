@@ -52,7 +52,7 @@ class EmployeeHcmPosition
      */
     public $location;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'position' => 'RecordRef',
         'primaryPosition' => 'boolean',
         'positionId' => 'string',
@@ -62,5 +62,5 @@ class EmployeeHcmPosition
         'reportsTo' => 'RecordRef',
         'subsidiary' => 'RecordRef',
         'location' => 'RecordRef',
-    ];
+    );
 }

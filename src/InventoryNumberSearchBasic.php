@@ -76,7 +76,7 @@ class InventoryNumberSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'expirationDate' => 'SearchDateField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -92,5 +92,5 @@ class InventoryNumberSearchBasic extends SearchRecordBasic
         'quantityOnHand' => 'SearchDoubleField',
         'quantityOnOrder' => 'SearchDoubleField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

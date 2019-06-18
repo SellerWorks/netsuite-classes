@@ -20,7 +20,7 @@ class ItemAvailabilityList
      */
     public $itemAvailability;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemAvailability' => 'ItemAvailability[]',
-    ];
+    );
 }

@@ -164,7 +164,7 @@ class Contact extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'entityId' => 'string',
         'contactSource' => 'RecordRef',
@@ -202,5 +202,5 @@ class Contact extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

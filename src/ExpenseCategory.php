@@ -68,7 +68,7 @@ class ExpenseCategory extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'name' => 'string',
         'description' => 'string',
@@ -82,5 +82,5 @@ class ExpenseCategory extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -44,7 +44,7 @@ class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic
      */
     public $parentNode;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'hierarchyLevel' => 'SearchColumnSelectField[]',
@@ -52,5 +52,5 @@ class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic
         'internalId' => 'SearchColumnSelectField[]',
         'name' => 'SearchColumnStringField[]',
         'parentNode' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

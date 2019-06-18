@@ -184,7 +184,7 @@ class LocationSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'address1' => 'SearchColumnStringField[]',
         'address2' => 'SearchColumnStringField[]',
         'address3' => 'SearchColumnStringField[]',
@@ -227,5 +227,5 @@ class LocationSearchRowBasic extends SearchRowBasic
         'usesBins' => 'SearchColumnBooleanField[]',
         'zip' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class JobTypeSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'JobTypeSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class SalesRoleSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'SalesRoleSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

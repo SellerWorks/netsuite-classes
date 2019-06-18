@@ -44,7 +44,7 @@ class Bin extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'binNumber' => 'string',
         'location' => 'RecordRef',
         'memo' => 'string',
@@ -52,5 +52,5 @@ class Bin extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

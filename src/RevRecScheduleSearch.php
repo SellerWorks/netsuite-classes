@@ -40,12 +40,12 @@ class RevRecScheduleSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'RevRecScheduleSearchBasic',
         'appliedToTransactionJoin' => 'TransactionSearchBasic',
         'customerJoin' => 'CustomerSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'transactionJoin' => 'TransactionSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

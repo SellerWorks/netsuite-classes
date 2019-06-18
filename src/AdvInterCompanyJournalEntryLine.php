@@ -132,7 +132,7 @@ class AdvInterCompanyJournalEntryLine
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'lineSubsidiary' => 'RecordRef',
         'account' => 'RecordRef',
         'line' => 'integer',
@@ -162,5 +162,5 @@ class AdvInterCompanyJournalEntryLine
         'tax1Acct' => 'RecordRef',
         'lineFxRate' => 'float',
         'customFieldList' => 'CustomFieldList',
-    ];
+    );
 }

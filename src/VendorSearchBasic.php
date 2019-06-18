@@ -332,7 +332,7 @@ class VendorSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchStringField',
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
@@ -412,5 +412,5 @@ class VendorSearchBasic extends SearchRecordBasic
         'workCalendar' => 'SearchMultiSelectField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

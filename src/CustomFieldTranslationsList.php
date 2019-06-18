@@ -24,8 +24,8 @@ class CustomFieldTranslationsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'translations' => 'CustomFieldTranslations[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

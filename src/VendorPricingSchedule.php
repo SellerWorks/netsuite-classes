@@ -24,8 +24,8 @@ class VendorPricingSchedule
      */
     public $scheduleDiscount;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'scheduleName' => 'string',
         'scheduleDiscount' => 'float',
-    ];
+    );
 }

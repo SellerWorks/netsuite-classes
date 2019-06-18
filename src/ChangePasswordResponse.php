@@ -20,7 +20,7 @@ class ChangePasswordResponse
      */
     public $sessionResponse;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'sessionResponse' => 'SessionResponse',
-    ];
+    );
 }

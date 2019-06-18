@@ -24,8 +24,8 @@ class EmployeeRatesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'employeeRates' => 'EmployeeRates[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

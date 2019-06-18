@@ -48,7 +48,7 @@ class CustomListSearchBasic extends SearchRecordBasic
      */
     public $scriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
         'internalIdNumber' => 'SearchLongField',
@@ -57,5 +57,5 @@ class CustomListSearchBasic extends SearchRecordBasic
         'name' => 'SearchStringField',
         'owner' => 'SearchMultiSelectField',
         'scriptId' => 'SearchStringField',
-    ];
+    );
 }

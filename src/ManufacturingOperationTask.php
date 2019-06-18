@@ -120,7 +120,7 @@ class ManufacturingOperationTask extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'manufacturingWorkCenter' => 'RecordRef',
         'manufacturingCostTemplate' => 'RecordRef',
@@ -147,5 +147,5 @@ class ManufacturingOperationTask extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

@@ -104,7 +104,7 @@ class PaycheckJournal extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'subsidiary' => 'RecordRef',
         'currency' => 'RecordRef',
         'exchangeRate' => 'float',
@@ -127,5 +127,5 @@ class PaycheckJournal extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

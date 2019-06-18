@@ -24,8 +24,8 @@ class JobResourcesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'jobResources' => 'JobResources[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

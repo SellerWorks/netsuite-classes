@@ -24,8 +24,8 @@ class TaxGroupSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TaxGroupSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

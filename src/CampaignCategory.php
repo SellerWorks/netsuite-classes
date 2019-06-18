@@ -48,7 +48,7 @@ class CampaignCategory extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'parent' => 'RecordRef',
         'leadSource' => 'RecordRef',
@@ -57,5 +57,5 @@ class CampaignCategory extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

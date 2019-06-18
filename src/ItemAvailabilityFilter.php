@@ -24,8 +24,8 @@ class ItemAvailabilityFilter
      */
     public $lastQtyAvailableChange;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRefList',
         'lastQtyAvailableChange' => 'dateTime',
-    ];
+    );
 }

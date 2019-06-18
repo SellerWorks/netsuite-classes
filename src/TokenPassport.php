@@ -40,12 +40,12 @@ class TokenPassport
      */
     public $signature;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'string',
         'consumerKey' => 'string',
         'token' => 'string',
         'nonce' => 'string',
         'timestamp' => 'integer',
         'signature' => 'TokenPassportSignature',
-    ];
+    );
 }

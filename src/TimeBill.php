@@ -144,7 +144,7 @@ class TimeBill extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'employee' => 'RecordRef',
         'tranDate' => 'dateTime',
@@ -177,5 +177,5 @@ class TimeBill extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

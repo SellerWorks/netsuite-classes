@@ -144,7 +144,7 @@ class Account extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'acctType' => 'AccountType',
         'unitsType' => 'RecordRef',
         'unit' => 'RecordRef',
@@ -177,5 +177,5 @@ class Account extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

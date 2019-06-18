@@ -20,7 +20,7 @@ class CustomRecordTypeParents
      */
     public $childDescr;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'childDescr' => 'string',
-    ];
+    );
 }

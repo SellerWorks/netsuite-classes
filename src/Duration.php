@@ -24,8 +24,8 @@ class Duration
      */
     public $unit;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'timeSpan' => 'float',
         'unit' => 'DurationUnit',
-    ];
+    );
 }

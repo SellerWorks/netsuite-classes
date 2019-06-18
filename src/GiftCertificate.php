@@ -60,7 +60,7 @@ class GiftCertificate extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'giftCertCode' => 'string',
         'sender' => 'string',
         'name' => 'string',
@@ -72,5 +72,5 @@ class GiftCertificate extends Record
         'originalAmount' => 'float',
         'amountRemaining' => 'float',
         'internalId' => 'string',
-    ];
+    );
 }

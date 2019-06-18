@@ -36,11 +36,11 @@ class UnitsType extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'isInactive' => 'boolean',
         'uomList' => 'UnitsTypeUomList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

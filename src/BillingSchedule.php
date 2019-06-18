@@ -148,7 +148,7 @@ class BillingSchedule extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'scheduleType' => 'BillingScheduleType',
         'name' => 'string',
         'recurrencePattern' => 'BillingScheduleRecurrencePattern',
@@ -182,5 +182,5 @@ class BillingSchedule extends Record
         'milestoneList' => 'BillingScheduleMilestoneList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

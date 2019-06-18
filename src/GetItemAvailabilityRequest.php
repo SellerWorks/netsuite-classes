@@ -20,7 +20,7 @@ class GetItemAvailabilityRequest
      */
     public $itemAvailabilityFilter;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemAvailabilityFilter' => 'ItemAvailabilityFilter',
-    ];
+    );
 }

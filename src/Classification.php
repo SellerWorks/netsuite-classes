@@ -52,7 +52,7 @@ class Classification extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'name' => 'string',
         'includeChildren' => 'boolean',
         'parent' => 'RecordRef',
@@ -62,5 +62,5 @@ class Classification extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

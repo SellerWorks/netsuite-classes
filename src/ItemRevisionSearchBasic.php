@@ -48,7 +48,7 @@ class ItemRevisionSearchBasic extends SearchRecordBasic
      */
     public $obsoleteDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'effectiveDate' => 'SearchDateField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -57,5 +57,5 @@ class ItemRevisionSearchBasic extends SearchRecordBasic
         'item' => 'SearchMultiSelectField',
         'name' => 'SearchStringField',
         'obsoleteDate' => 'SearchDateField',
-    ];
+    );
 }

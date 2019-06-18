@@ -24,8 +24,8 @@ class SearchEnumMultiSelectField
      */
     public $operator;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'string[]',
         'operator' => 'SearchEnumMultiSelectFieldOperator',
-    ];
+    );
 }

@@ -72,7 +72,7 @@ class RevRecTemplateSearchRowBasic extends SearchRowBasic
      */
     public $useForeignAmounts;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'amorMethod' => 'SearchColumnStringField[]',
         'amorPeriod' => 'SearchColumnStringField[]',
         'amorStartOffset' => 'SearchColumnStringField[]',
@@ -87,5 +87,5 @@ class RevRecTemplateSearchRowBasic extends SearchRowBasic
         'periodOffset' => 'SearchColumnStringField[]',
         'targetAccount' => 'SearchColumnStringField[]',
         'useForeignAmounts' => 'SearchColumnBooleanField[]',
-    ];
+    );
 }

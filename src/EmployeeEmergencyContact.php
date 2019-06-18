@@ -36,11 +36,11 @@ class EmployeeEmergencyContact
      */
     public $phone;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'id' => 'integer',
         'contact' => 'string',
         'relationship' => 'string',
         'address' => 'string',
         'phone' => 'string',
-    ];
+    );
 }

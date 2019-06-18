@@ -36,11 +36,11 @@ class PaycheckPayPto
      */
     public $hoursBalance;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'payItem' => 'integer',
         'payItemName' => 'string',
         'hoursAccrued' => 'float',
         'hoursUsed' => 'float',
         'hoursBalance' => 'float',
-    ];
+    );
 }

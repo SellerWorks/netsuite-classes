@@ -32,10 +32,10 @@ class DemandPlan
      */
     public $periodDemandPlanList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
         'calculatedQuantity' => 'float',
         'periodDemandPlanList' => 'PeriodDemandPlanList',
-    ];
+    );
 }

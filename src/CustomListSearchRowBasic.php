@@ -44,7 +44,7 @@ class CustomListSearchRowBasic extends SearchRowBasic
      */
     public $scriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchColumnStringField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
@@ -52,5 +52,5 @@ class CustomListSearchRowBasic extends SearchRowBasic
         'name' => 'SearchColumnStringField[]',
         'owner' => 'SearchColumnSelectField[]',
         'scriptId' => 'SearchColumnStringField[]',
-    ];
+    );
 }

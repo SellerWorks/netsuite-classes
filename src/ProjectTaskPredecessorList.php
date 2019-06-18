@@ -24,8 +24,8 @@ class ProjectTaskPredecessorList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'projectTaskPredecessor' => 'ProjectTaskPredecessor[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

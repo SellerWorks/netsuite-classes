@@ -24,8 +24,8 @@ class BillingRatesMatrix
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billingRates' => 'BillingRates[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

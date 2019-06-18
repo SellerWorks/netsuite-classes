@@ -24,8 +24,8 @@ class LocationBusinessHoursList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'locationBusinessHours' => 'LocationBusinessHours[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

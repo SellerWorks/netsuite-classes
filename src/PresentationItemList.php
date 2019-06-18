@@ -24,8 +24,8 @@ class PresentationItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'presentationItem' => 'PresentationItem[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

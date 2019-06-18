@@ -20,7 +20,7 @@ class CustomFieldList
      */
     public $customField;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customField' => 'CustomFieldRef[]',
-    ];
+    );
 }

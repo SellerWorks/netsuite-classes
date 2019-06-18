@@ -24,8 +24,8 @@ class PartnerPromoCodeList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'promoCode' => 'PartnerPromoCode[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -44,7 +44,7 @@ class ManufacturingRoutingSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'ManufacturingRoutingSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'locationJoin' => 'LocationSearchBasic',
@@ -52,5 +52,5 @@ class ManufacturingRoutingSearch extends SearchRecord
         'manufacturingWorkCenterJoin' => 'EntityGroupSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

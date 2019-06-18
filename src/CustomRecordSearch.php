@@ -44,7 +44,7 @@ class CustomRecordSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomRecordSearchBasic',
         'fileJoin' => 'FileSearchBasic',
         'messagesJoin' => 'MessageSearchBasic',
@@ -52,5 +52,5 @@ class CustomRecordSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

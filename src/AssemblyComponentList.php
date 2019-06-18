@@ -24,8 +24,8 @@ class AssemblyComponentList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'component' => 'AssemblyComponent[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

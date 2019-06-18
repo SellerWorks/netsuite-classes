@@ -20,7 +20,7 @@ class SearchColumnEnumMultiSelectCustomField extends SearchColumnCustomField
      */
     public $searchValue;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchValue' => 'string[]',
-    ];
+    );
 }

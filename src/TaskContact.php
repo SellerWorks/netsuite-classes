@@ -24,8 +24,8 @@ class TaskContact
      */
     public $contact;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'company' => 'RecordRef',
         'contact' => 'RecordRef',
-    ];
+    );
 }

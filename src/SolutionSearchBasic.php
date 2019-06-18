@@ -92,7 +92,7 @@ class SolutionSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'abstract' => 'SearchStringField',
         'assigned' => 'SearchMultiSelectField',
         'caseCount' => 'SearchLongField',
@@ -112,5 +112,5 @@ class SolutionSearchBasic extends SearchRecordBasic
         'title' => 'SearchStringField',
         'topic' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

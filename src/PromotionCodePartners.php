@@ -24,8 +24,8 @@ class PromotionCodePartners
      */
     public $code;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'partner' => 'RecordRef',
         'code' => 'string',
-    ];
+    );
 }

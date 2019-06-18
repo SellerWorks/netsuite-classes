@@ -32,10 +32,10 @@ class OpportunitySalesTeam
      */
     public $contribution;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'employee' => 'RecordRef',
         'salesRole' => 'RecordRef',
         'isPrimary' => 'boolean',
         'contribution' => 'float',
-    ];
+    );
 }

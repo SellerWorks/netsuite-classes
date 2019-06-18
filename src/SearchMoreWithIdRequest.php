@@ -24,8 +24,8 @@ class SearchMoreWithIdRequest
      */
     public $pageIndex;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'searchId' => 'string',
         'pageIndex' => 'integer',
-    ];
+    );
 }

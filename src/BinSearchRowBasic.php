@@ -44,7 +44,7 @@ class BinSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'binNumber' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'inactive' => 'SearchColumnBooleanField[]',
@@ -52,5 +52,5 @@ class BinSearchRowBasic extends SearchRowBasic
         'location' => 'SearchColumnStringField[]',
         'memo' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

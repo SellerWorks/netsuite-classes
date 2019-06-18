@@ -104,7 +104,7 @@ class ProjectTaskAssignmentSearchRowBasic extends SearchRowBasic
      */
     public $workCalendar;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actualWork' => 'SearchColumnDoubleField[]',
         'cost' => 'SearchColumnDoubleField[]',
         'costBase' => 'SearchColumnDoubleField[]',
@@ -127,5 +127,5 @@ class ProjectTaskAssignmentSearchRowBasic extends SearchRowBasic
         'unitPriceBase' => 'SearchColumnDoubleField[]',
         'units' => 'SearchColumnDoubleField[]',
         'workCalendar' => 'SearchColumnSelectField[]',
-    ];
+    );
 }

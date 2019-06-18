@@ -60,7 +60,7 @@ class Nexus extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'country' => 'Country',
         'state' => 'RecordRef',
         'taxAgency' => 'RecordRef',
@@ -72,5 +72,5 @@ class Nexus extends Record
         'taxDateFromFulfillment' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

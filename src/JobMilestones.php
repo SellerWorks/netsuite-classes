@@ -36,11 +36,11 @@ class JobMilestones
      */
     public $milestoneComments;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'milestoneName' => 'string',
         'milestoneOrder' => 'string',
         'milestoneEstComplete' => 'dateTime',
         'milestoneCompleted' => 'boolean',
         'milestoneComments' => 'string',
-    ];
+    );
 }

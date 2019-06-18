@@ -20,7 +20,7 @@ class AddRequest
      */
     public $record;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'record' => 'Record',
-    ];
+    );
 }

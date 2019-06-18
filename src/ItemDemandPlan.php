@@ -76,7 +76,7 @@ class ItemDemandPlan extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'subsidiary' => 'RecordRef',
         'location' => 'RecordRef',
@@ -92,5 +92,5 @@ class ItemDemandPlan extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

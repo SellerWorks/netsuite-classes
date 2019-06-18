@@ -48,7 +48,7 @@ class CustomerMessageSearchBasic extends SearchRecordBasic
      */
     public $preferred;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -57,5 +57,5 @@ class CustomerMessageSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'preferred' => 'SearchBooleanField',
-    ];
+    );
 }

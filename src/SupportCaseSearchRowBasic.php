@@ -156,7 +156,7 @@ class SupportCaseSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assigned' => 'SearchColumnSelectField[]',
         'awaitingReply' => 'SearchColumnBooleanField[]',
         'caseNumber' => 'SearchColumnStringField[]',
@@ -192,5 +192,5 @@ class SupportCaseSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'title' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

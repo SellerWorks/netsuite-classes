@@ -24,8 +24,8 @@ class CrmCustomFieldFilterList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'filter' => 'CrmCustomFieldFilter[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

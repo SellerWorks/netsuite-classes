@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class AsyncResult
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

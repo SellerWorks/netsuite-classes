@@ -68,7 +68,7 @@ class CustomRecordTypePermissions
      */
     public $restrictSublistView;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'permittedRole' => 'RecordRef',
         'permittedLevel' => 'CustomRecordTypePermissionsPermittedLevel',
         'restriction' => 'CustomRecordTypePermissionsRestriction',
@@ -82,5 +82,5 @@ class CustomRecordTypePermissions
         'restrictDashboardView' => 'boolean',
         'sublistView' => 'RecordRef',
         'restrictSublistView' => 'boolean',
-    ];
+    );
 }

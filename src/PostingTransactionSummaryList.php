@@ -20,7 +20,7 @@ class PostingTransactionSummaryList
      */
     public $postingTransactionSummary;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'postingTransactionSummary' => 'PostingTransactionSummary[]',
-    ];
+    );
 }

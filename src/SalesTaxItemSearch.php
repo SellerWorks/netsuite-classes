@@ -32,10 +32,10 @@ class SalesTaxItemSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'SalesTaxItemSearchBasic',
         'taxTypeJoin' => 'TaxTypeSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+    );
 }

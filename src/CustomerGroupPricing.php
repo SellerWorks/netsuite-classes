@@ -24,8 +24,8 @@ class CustomerGroupPricing
      */
     public $level;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'group' => 'RecordRef',
         'level' => 'RecordRef',
-    ];
+    );
 }

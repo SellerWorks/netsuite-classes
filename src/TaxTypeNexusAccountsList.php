@@ -24,8 +24,8 @@ class TaxTypeNexusAccountsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'taxTypeNexusAccounts' => 'TaxTypeNexusAccounts[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

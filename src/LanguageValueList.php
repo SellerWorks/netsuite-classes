@@ -24,8 +24,8 @@ class LanguageValueList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'languageValue' => 'LanguageValue[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

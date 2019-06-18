@@ -28,9 +28,9 @@ class BillingRates
      */
     public $rateList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'currency' => 'RecordRef',
         'billingClass' => 'RecordRef',
         'rateList' => 'RateList',
-    ];
+    );
 }

@@ -464,7 +464,7 @@ class JobSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountNumber' => 'SearchColumnStringField[]',
         'actualTime' => 'SearchColumnDoubleField[]',
         'address' => 'SearchColumnStringField[]',
@@ -577,5 +577,5 @@ class JobSearchRowBasic extends SearchRowBasic
         'usePercentCompleteOverride' => 'SearchColumnBooleanField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

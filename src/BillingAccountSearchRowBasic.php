@@ -108,7 +108,7 @@ class BillingAccountSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'billingSchedule' => 'SearchColumnSelectField[]',
         'cashSaleForm' => 'SearchColumnSelectField[]',
         'class' => 'SearchColumnSelectField[]',
@@ -132,5 +132,5 @@ class BillingAccountSearchRowBasic extends SearchRowBasic
         'startDate' => 'SearchColumnDateField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

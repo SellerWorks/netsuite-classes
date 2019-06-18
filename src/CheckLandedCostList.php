@@ -24,8 +24,8 @@ class CheckLandedCostList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'landedCost' => 'LandedCostSummary[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -36,11 +36,11 @@ class TimeSheetSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'TimeSheetSearchRowBasic',
         'employeeJoin' => 'EmployeeSearchRowBasic',
         'timeBillJoin' => 'TimeBillSearchRowBasic',
         'timeEntryJoin' => 'TimeEntrySearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

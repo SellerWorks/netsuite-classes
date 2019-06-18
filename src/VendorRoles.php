@@ -20,7 +20,7 @@ class VendorRoles
      */
     public $selectedRole;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'selectedRole' => 'RecordRef',
-    ];
+    );
 }

@@ -24,8 +24,8 @@ class DeletionReason
      */
     public $deletionReasonMemo;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'deletionReasonCode' => 'RecordRef',
         'deletionReasonMemo' => 'string',
-    ];
+    );
 }

@@ -32,10 +32,10 @@ class ManufacturingRoutingSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'ManufacturingRoutingSearch',
         'columns' => 'ManufacturingRoutingSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

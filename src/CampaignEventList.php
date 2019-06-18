@@ -24,8 +24,8 @@ class CampaignEventList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'campaignEvent' => 'CampaignEvent[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

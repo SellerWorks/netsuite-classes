@@ -80,7 +80,7 @@ class Solution extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customForm' => 'RecordRef',
         'solutionCode' => 'string',
         'title' => 'string',
@@ -97,5 +97,5 @@ class Solution extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

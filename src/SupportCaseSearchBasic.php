@@ -176,7 +176,7 @@ class SupportCaseSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assigned' => 'SearchMultiSelectField',
         'awaitingReply' => 'SearchBooleanField',
         'caseNumber' => 'SearchStringField',
@@ -217,5 +217,5 @@ class SupportCaseSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    ];
+    );
 }

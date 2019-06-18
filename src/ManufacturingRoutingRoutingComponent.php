@@ -60,7 +60,7 @@ class ManufacturingRoutingRoutingComponent
      */
     public $item;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'itemName' => 'string',
         'revision' => 'string',
         'description' => 'string',
@@ -72,5 +72,5 @@ class ManufacturingRoutingRoutingComponent
         'operationSequenceNumber' => 'integer',
         'component' => 'string',
         'item' => 'string',
-    ];
+    );
 }

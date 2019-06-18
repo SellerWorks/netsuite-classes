@@ -56,7 +56,7 @@ class JobSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'JobSearchRowBasic',
         'billingAccountJoin' => 'BillingAccountSearchRowBasic',
         'billingScheduleJoin' => 'BillingScheduleSearchRowBasic',
@@ -67,5 +67,5 @@ class JobSearchRow extends SearchRow
         'taskJoin' => 'TaskSearchRowBasic',
         'timeJoin' => 'TimeBillSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+    );
 }

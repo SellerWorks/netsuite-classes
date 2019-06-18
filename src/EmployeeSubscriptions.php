@@ -28,9 +28,9 @@ class EmployeeSubscriptions
      */
     public $lastModifiedDate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'subscribed' => 'string',
         'subscription' => 'string',
         'lastModifiedDate' => 'dateTime',
-    ];
+    );
 }

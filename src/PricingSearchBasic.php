@@ -56,7 +56,7 @@ class PricingSearchBasic extends SearchRecordBasic
      */
     public $rate;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'assignedPriceLevel' => 'SearchBooleanField',
         'currency' => 'SearchMultiSelectField',
         'customer' => 'SearchMultiSelectField',
@@ -67,5 +67,5 @@ class PricingSearchBasic extends SearchRecordBasic
         'minimumQuantity' => 'SearchDoubleField',
         'priceLevel' => 'SearchMultiSelectField',
         'rate' => 'SearchDoubleField',
-    ];
+    );
 }

@@ -268,7 +268,7 @@ class OpportunitySearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'actionItem' => 'SearchColumnStringField[]',
         'availableOffline' => 'SearchColumnBooleanField[]',
         'buyingReason' => 'SearchColumnStringField[]',
@@ -332,5 +332,5 @@ class OpportunitySearchRowBasic extends SearchRowBasic
         'winLossReason' => 'SearchColumnSelectField[]',
         'wonBy' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

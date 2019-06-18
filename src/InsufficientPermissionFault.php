@@ -15,6 +15,6 @@ namespace SellerWorks\Netsuite\Model;
  */
 class InsufficientPermissionFault extends NSSoapFault
 {
-    public static $paramtypesmap = [
-    ];
+    public static $paramtypesmap = array(
+    );
 }

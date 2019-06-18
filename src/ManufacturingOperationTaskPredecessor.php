@@ -44,7 +44,7 @@ class ManufacturingOperationTaskPredecessor
      */
     public $lagUnits;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'task' => 'RecordRef',
         'type' => 'ManufacturingOperationTaskPredecessorPredecessorType',
         'startDate' => 'dateTime',
@@ -52,5 +52,5 @@ class ManufacturingOperationTaskPredecessor
         'lagType' => 'ManufacturingLagType',
         'lagAmount' => 'integer',
         'lagUnits' => 'string',
-    ];
+    );
 }

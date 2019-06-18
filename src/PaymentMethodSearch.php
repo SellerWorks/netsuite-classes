@@ -24,8 +24,8 @@ class PaymentMethodSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'PaymentMethodSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

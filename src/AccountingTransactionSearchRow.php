@@ -32,10 +32,10 @@ class AccountingTransactionSearchRow extends SearchRow
      */
     public $transactionJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'AccountingTransactionSearchRowBasic',
         'accountJoin' => 'AccountSearchRowBasic',
         'revRecScheduleJoin' => 'RevRecScheduleSearchRowBasic',
         'transactionJoin' => 'TransactionSearchRowBasic',
-    ];
+    );
 }

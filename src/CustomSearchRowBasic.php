@@ -24,8 +24,8 @@ class CustomSearchRowBasic
      */
     public $searchRowBasic;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'customizationRef' => 'CustomizationRef',
         'searchRowBasic' => 'SearchRowBasic',
-    ];
+    );
 }

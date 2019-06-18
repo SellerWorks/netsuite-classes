@@ -172,7 +172,7 @@ class Budget extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'year' => 'RecordRef',
         'customer' => 'RecordRef',
         'item' => 'RecordRef',
@@ -212,5 +212,5 @@ class Budget extends Record
         'accountingBook' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
-    ];
+    );
 }

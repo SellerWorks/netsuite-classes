@@ -20,7 +20,7 @@ class ApplicationInfo
      */
     public $applicationId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'applicationId' => 'string',
-    ];
+    );
 }

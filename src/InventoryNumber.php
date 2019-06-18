@@ -56,7 +56,7 @@ class InventoryNumber extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'inventoryNumber' => 'string',
         'item' => 'RecordRef',
         'status' => 'string',
@@ -67,5 +67,5 @@ class InventoryNumber extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    ];
+    );
 }

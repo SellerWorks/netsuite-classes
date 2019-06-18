@@ -72,7 +72,7 @@ class CustomSegment extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'label' => 'string',
         'scriptId' => 'string',
         'recordScriptId' => 'string',
@@ -87,5 +87,5 @@ class CustomSegment extends Record
         'isMandatory' => 'boolean',
         'defaultSelection' => 'RecordRef',
         'internalId' => 'string',
-    ];
+    );
 }

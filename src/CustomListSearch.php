@@ -24,8 +24,8 @@ class CustomListSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'basic' => 'CustomListSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    ];
+    );
 }

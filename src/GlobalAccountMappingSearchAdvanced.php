@@ -32,10 +32,10 @@ class GlobalAccountMappingSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'GlobalAccountMappingSearch',
         'columns' => 'GlobalAccountMappingSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

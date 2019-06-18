@@ -24,8 +24,8 @@ class LotNumberedInventoryItemHierarchyVersionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'lotNumberedInventoryItemHierarchyVersions' => 'LotNumberedInventoryItemHierarchyVersions[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

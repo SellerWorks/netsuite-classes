@@ -32,10 +32,10 @@ class ManufacturingOperationTaskSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'ManufacturingOperationTaskSearch',
         'columns' => 'ManufacturingOperationTaskSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

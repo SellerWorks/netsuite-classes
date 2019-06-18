@@ -92,7 +92,7 @@ class ItemMember
      */
     public $memberKey;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'memberDescr' => 'string',
         'componentYield' => 'float',
         'bomQuantity' => 'float',
@@ -112,5 +112,5 @@ class ItemMember
         'obsoleteRevision' => 'RecordRef',
         'lineNumber' => 'integer',
         'memberKey' => 'string',
-    ];
+    );
 }

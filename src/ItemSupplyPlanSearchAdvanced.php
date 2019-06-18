@@ -32,10 +32,10 @@ class ItemSupplyPlanSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'criteria' => 'ItemSupplyPlanSearch',
         'columns' => 'ItemSupplyPlanSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    ];
+    );
 }

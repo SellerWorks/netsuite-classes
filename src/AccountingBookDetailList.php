@@ -24,8 +24,8 @@ class AccountingBookDetailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'accountingBookDetail' => 'AccountingBookDetail[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

@@ -96,7 +96,7 @@ class BudgetSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'account' => 'SearchColumnStringField[]',
         'accountingBook' => 'SearchColumnStringField[]',
         'amount' => 'SearchColumnDoubleField[]',
@@ -117,5 +117,5 @@ class BudgetSearchRowBasic extends SearchRowBasic
         'year' => 'SearchColumnStringField[]',
         'year2' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+    );
 }

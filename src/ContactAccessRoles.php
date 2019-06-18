@@ -44,7 +44,7 @@ class ContactAccessRoles
      */
     public $sendEmail;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'giveAccess' => 'boolean',
         'contact' => 'RecordRef',
         'email' => 'string',
@@ -52,5 +52,5 @@ class ContactAccessRoles
         'password' => 'string',
         'password2' => 'string',
         'sendEmail' => 'boolean',
-    ];
+    );
 }

@@ -32,10 +32,10 @@ class SiteCategory_accounting
      */
     public $categoryDescription;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'website' => 'RecordRef',
         'category' => 'RecordRef',
         'isDefault' => 'boolean',
         'categoryDescription' => 'string',
-    ];
+    );
 }

@@ -44,7 +44,7 @@ class JobTypeSearchBasic extends SearchRecordBasic
      */
     public $parent;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -52,5 +52,5 @@ class JobTypeSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'parent' => 'SearchMultiSelectField',
-    ];
+    );
 }

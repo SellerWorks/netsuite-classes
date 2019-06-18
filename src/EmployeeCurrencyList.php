@@ -24,8 +24,8 @@ class EmployeeCurrencyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'employeeCurrency' => 'EmployeeCurrency[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }

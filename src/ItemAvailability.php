@@ -60,7 +60,7 @@ class ItemAvailability
      */
     public $quantityAvailable;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'item' => 'RecordRef',
         'lastQtyAvailableChange' => 'dateTime',
         'locationId' => 'RecordRef',
@@ -72,5 +72,5 @@ class ItemAvailability
         'quantityCommitted' => 'float',
         'quantityBackOrdered' => 'float',
         'quantityAvailable' => 'float',
-    ];
+    );
 }

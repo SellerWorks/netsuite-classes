@@ -24,8 +24,8 @@ class InventoryNumberLocationsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = [
+    public static $paramtypesmap = array(
         'locations' => 'InventoryNumberLocations[]',
         'replaceAll' => 'boolean',
-    ];
+    );
 }
