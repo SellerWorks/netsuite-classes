@@ -11,190 +11,161 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleSearchRowBasic
+ * RevRecScheduleSearchRowBasic.
  */
-class RevRecScheduleSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $accountingBook;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $amorStatus;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $amorTemplate;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $amortizedAmount;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $amorType;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $deferredAmount;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $destAcct;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $initialAmt;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isRecognized;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $jeDoc;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $lineSequenceNumber;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $nameUrl;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $pctComplete;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $pctRecognition;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $periodOffset;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $recurAmount;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $recurFxAmount;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $schedDate;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $scheduleNumber;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $sourceAcct;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $srcDocLine;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $srcTran;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $srcTranPostPeriod;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $startOffset;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $useForeignAmounts;
+class RevRecScheduleSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $accountingBook;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $amorStatus;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $amorTemplate;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $amortizedAmount;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $amorType;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $amount;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $currency;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $deferredAmount;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $destAcct;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $initialAmt;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isRecognized;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $jeDoc;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $lineSequenceNumber;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $nameUrl;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $pctComplete;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $pctRecognition;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $periodOffset;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $recurAmount;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $recurFxAmount;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $schedDate;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $scheduleNumber;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $sourceAcct;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $srcDocLine;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $srcTran;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $srcTranPostPeriod;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $startOffset;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $useForeignAmounts;
 
-	static $paramtypesmap = array(
-		"accountingBook" => "SearchColumnSelectField[]",
-		"amorStatus" => "SearchColumnEnumSelectField[]",
-		"amorTemplate" => "SearchColumnStringField[]",
-		"amortizedAmount" => "SearchColumnDoubleField[]",
-		"amorType" => "SearchColumnEnumSelectField[]",
-		"amount" => "SearchColumnDoubleField[]",
-		"currency" => "SearchColumnStringField[]",
-		"deferredAmount" => "SearchColumnDoubleField[]",
-		"destAcct" => "SearchColumnStringField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"initialAmt" => "SearchColumnDoubleField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isRecognized" => "SearchColumnBooleanField[]",
-		"jeDoc" => "SearchColumnStringField[]",
-		"lineSequenceNumber" => "SearchColumnLongField[]",
-		"name" => "SearchColumnStringField[]",
-		"nameUrl" => "SearchColumnStringField[]",
-		"pctComplete" => "SearchColumnDoubleField[]",
-		"pctRecognition" => "SearchColumnDoubleField[]",
-		"periodOffset" => "SearchColumnLongField[]",
-		"recurAmount" => "SearchColumnDoubleField[]",
-		"recurFxAmount" => "SearchColumnDoubleField[]",
-		"schedDate" => "SearchColumnDateField[]",
-		"scheduleNumber" => "SearchColumnStringField[]",
-		"sourceAcct" => "SearchColumnStringField[]",
-		"srcDocLine" => "SearchColumnStringField[]",
-		"srcTran" => "SearchColumnStringField[]",
-		"srcTranPostPeriod" => "SearchColumnStringField[]",
-		"startOffset" => "SearchColumnLongField[]",
-		"useForeignAmounts" => "SearchColumnBooleanField[]",
-	);
+    public static $paramtypesmap = [
+        'accountingBook' => 'SearchColumnSelectField[]',
+        'amorStatus' => 'SearchColumnEnumSelectField[]',
+        'amorTemplate' => 'SearchColumnStringField[]',
+        'amortizedAmount' => 'SearchColumnDoubleField[]',
+        'amorType' => 'SearchColumnEnumSelectField[]',
+        'amount' => 'SearchColumnDoubleField[]',
+        'currency' => 'SearchColumnStringField[]',
+        'deferredAmount' => 'SearchColumnDoubleField[]',
+        'destAcct' => 'SearchColumnStringField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'initialAmt' => 'SearchColumnDoubleField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isRecognized' => 'SearchColumnBooleanField[]',
+        'jeDoc' => 'SearchColumnStringField[]',
+        'lineSequenceNumber' => 'SearchColumnLongField[]',
+        'name' => 'SearchColumnStringField[]',
+        'nameUrl' => 'SearchColumnStringField[]',
+        'pctComplete' => 'SearchColumnDoubleField[]',
+        'pctRecognition' => 'SearchColumnDoubleField[]',
+        'periodOffset' => 'SearchColumnLongField[]',
+        'recurAmount' => 'SearchColumnDoubleField[]',
+        'recurFxAmount' => 'SearchColumnDoubleField[]',
+        'schedDate' => 'SearchColumnDateField[]',
+        'scheduleNumber' => 'SearchColumnStringField[]',
+        'sourceAcct' => 'SearchColumnStringField[]',
+        'srcDocLine' => 'SearchColumnStringField[]',
+        'srcTran' => 'SearchColumnStringField[]',
+        'srcTranPostPeriod' => 'SearchColumnStringField[]',
+        'startOffset' => 'SearchColumnLongField[]',
+        'useForeignAmounts' => 'SearchColumnBooleanField[]',
+    ];
 }

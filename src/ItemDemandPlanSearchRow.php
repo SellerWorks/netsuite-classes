@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemDemandPlanSearchRow
+ * ItemDemandPlanSearchRow.
  */
-class ItemDemandPlanSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var ItemDemandPlanSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $lastAlternateSourceItemJoin;
-	/**
-	 * @access public
-	 * @var LocationSearchRowBasic
-	 */
-	public $locationJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class ItemDemandPlanSearchRow extends SearchRow
+{
+    /**
+     * @var ItemDemandPlanSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $itemJoin;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $lastAlternateSourceItemJoin;
+    /**
+     * @var LocationSearchRowBasic
+     */
+    public $locationJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "ItemDemandPlanSearchRowBasic",
-		"itemJoin" => "ItemSearchRowBasic",
-		"lastAlternateSourceItemJoin" => "ItemSearchRowBasic",
-		"locationJoin" => "LocationSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'ItemDemandPlanSearchRowBasic',
+        'itemJoin' => 'ItemSearchRowBasic',
+        'lastAlternateSourceItemJoin' => 'ItemSearchRowBasic',
+        'locationJoin' => 'LocationSearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

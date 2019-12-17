@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * IssueVersionList
+ * IssueVersionList.
  */
-class IssueVersionList {
-	/**
-	 * @access public
-	 * @var IssueVersion[]
-	 */
-	public $issueVersion;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class IssueVersionList
+{
+    /**
+     * @var IssueVersion[]
+     */
+    public $issueVersion;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"issueVersion" => "IssueVersion[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'issueVersion' => 'IssueVersion[]',
+        'replaceAll' => 'boolean',
+    ];
 }

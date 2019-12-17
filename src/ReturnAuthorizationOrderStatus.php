@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ReturnAuthorizationOrderStatus
+ * ReturnAuthorizationOrderStatus.
  */
-class ReturnAuthorizationOrderStatus {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _pendingApproval = "_pendingApproval";
-	/**
-	 * @var string
-	 */
-	const _pendingReceipt = "_pendingReceipt";
+class ReturnAuthorizationOrderStatus
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _pendingApproval = '_pendingApproval';
+    /**
+     * @var string
+     */
+    const _pendingReceipt = '_pendingReceipt';
 }

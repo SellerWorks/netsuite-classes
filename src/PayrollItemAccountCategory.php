@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItemAccountCategory
+ * PayrollItemAccountCategory.
  */
-class PayrollItemAccountCategory {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _expense = "_expense";
-	/**
-	 * @var string
-	 */
-	const _liability = "_liability";
+class PayrollItemAccountCategory
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _expense = '_expense';
+    /**
+     * @var string
+     */
+    const _liability = '_liability';
 }

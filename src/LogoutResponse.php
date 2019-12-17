@@ -13,14 +13,15 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * LogoutResponse
  */
-class LogoutResponse {
-	/**
-	 * @access public
-	 * @var SessionResponse
-	 */
-	public $sessionResponse;
+class LogoutResponse
+{
+    /**
+     * @access public
+     * @var SessionResponse
+     */
+    public $sessionResponse;
 
-	static $paramtypesmap = array(
-		"sessionResponse" => "SessionResponse",
-	);
+    public static $paramtypesmap = array(
+        "sessionResponse" => "SessionResponse",
+    );
 }

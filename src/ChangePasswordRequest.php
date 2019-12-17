@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChangePasswordRequest
+ * ChangePasswordRequest.
  */
-class ChangePasswordRequest {
-	/**
-	 * @access public
-	 * @var ChangePassword
-	 */
-	public $changePassword;
+class ChangePasswordRequest
+{
+    /**
+     * @var ChangePassword
+     */
+    public $changePassword;
 
-	static $paramtypesmap = array(
-		"changePassword" => "ChangePassword",
-	);
+    public static $paramtypesmap = [
+        'changePassword' => 'ChangePassword',
+    ];
 }

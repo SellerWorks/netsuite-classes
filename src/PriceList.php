@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PriceList
+ * PriceList.
  */
-class PriceList {
-	/**
-	 * @access public
-	 * @var Price[]
-	 */
-	public $price;
+class PriceList
+{
+    /**
+     * @var Price[]
+     */
+    public $price;
 
-	static $paramtypesmap = array(
-		"price" => "Price[]",
-	);
+    public static $paramtypesmap = [
+        'price' => 'Price[]',
+    ];
 }

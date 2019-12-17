@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncUpsertListResult
+ * AsyncUpsertListResult.
  */
-class AsyncUpsertListResult extends AsyncResult {
-	/**
-	 * @access public
-	 * @var WriteResponseList
-	 */
-	public $writeResponseList;
+class AsyncUpsertListResult extends AsyncResult
+{
+    /**
+     * @var WriteResponseList
+     */
+    public $writeResponseList;
 
-	static $paramtypesmap = array(
-		"writeResponseList" => "WriteResponseList",
-	);
+    public static $paramtypesmap = [
+        'writeResponseList' => 'WriteResponseList',
+    ];
 }

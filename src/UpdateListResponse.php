@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UpdateListResponse
+ * UpdateListResponse.
  */
-class UpdateListResponse {
-	/**
-	 * @access public
-	 * @var WriteResponseList
-	 */
-	public $writeResponseList;
+class UpdateListResponse
+{
+    /**
+     * @var WriteResponseList
+     */
+    public $writeResponseList;
 
-	static $paramtypesmap = array(
-		"writeResponseList" => "WriteResponseList",
-	);
+    public static $paramtypesmap = [
+        'writeResponseList' => 'WriteResponseList',
+    ];
 }

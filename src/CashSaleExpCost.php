@@ -11,154 +11,131 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashSaleExpCost
+ * CashSaleExpCost.
  */
-class CashSaleExpCost {
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $apply;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $doc;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $line;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $taxDetailsReference;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $billedDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $jobDisp;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $employeeDisp;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $categoryDisp;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $originalAmount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxAmount;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $taxableDisp;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revRecSchedule;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $revRecStartDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $revRecEndDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $grossAmt;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $tax1Amt;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxCode;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxRate1;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxRate2;
+class CashSaleExpCost
+{
+    /**
+     * @var bool
+     */
+    public $apply;
+    /**
+     * @var int
+     */
+    public $doc;
+    /**
+     * @var int
+     */
+    public $line;
+    /**
+     * @var string
+     */
+    public $taxDetailsReference;
+    /**
+     * @var dateTime
+     */
+    public $billedDate;
+    /**
+     * @var string
+     */
+    public $jobDisp;
+    /**
+     * @var string
+     */
+    public $employeeDisp;
+    /**
+     * @var string
+     */
+    public $categoryDisp;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var string
+     */
+    public $department;
+    /**
+     * @var string
+     */
+    public $class;
+    /**
+     * @var string
+     */
+    public $location;
+    /**
+     * @var float
+     */
+    public $originalAmount;
+    /**
+     * @var float
+     */
+    public $amount;
+    /**
+     * @var float
+     */
+    public $taxAmount;
+    /**
+     * @var string
+     */
+    public $taxableDisp;
+    /**
+     * @var RecordRef
+     */
+    public $revRecSchedule;
+    /**
+     * @var dateTime
+     */
+    public $revRecStartDate;
+    /**
+     * @var dateTime
+     */
+    public $revRecEndDate;
+    /**
+     * @var float
+     */
+    public $grossAmt;
+    /**
+     * @var float
+     */
+    public $tax1Amt;
+    /**
+     * @var RecordRef
+     */
+    public $taxCode;
+    /**
+     * @var float
+     */
+    public $taxRate1;
+    /**
+     * @var float
+     */
+    public $taxRate2;
 
-	static $paramtypesmap = array(
-		"apply" => "boolean",
-		"doc" => "integer",
-		"line" => "integer",
-		"taxDetailsReference" => "string",
-		"billedDate" => "dateTime",
-		"jobDisp" => "string",
-		"employeeDisp" => "string",
-		"categoryDisp" => "string",
-		"memo" => "string",
-		"department" => "string",
-		"class" => "string",
-		"location" => "string",
-		"originalAmount" => "float",
-		"amount" => "float",
-		"taxAmount" => "float",
-		"taxableDisp" => "string",
-		"revRecSchedule" => "RecordRef",
-		"revRecStartDate" => "dateTime",
-		"revRecEndDate" => "dateTime",
-		"grossAmt" => "float",
-		"tax1Amt" => "float",
-		"taxCode" => "RecordRef",
-		"taxRate1" => "float",
-		"taxRate2" => "float",
-	);
+    public static $paramtypesmap = [
+        'apply' => 'boolean',
+        'doc' => 'integer',
+        'line' => 'integer',
+        'taxDetailsReference' => 'string',
+        'billedDate' => 'dateTime',
+        'jobDisp' => 'string',
+        'employeeDisp' => 'string',
+        'categoryDisp' => 'string',
+        'memo' => 'string',
+        'department' => 'string',
+        'class' => 'string',
+        'location' => 'string',
+        'originalAmount' => 'float',
+        'amount' => 'float',
+        'taxAmount' => 'float',
+        'taxableDisp' => 'string',
+        'revRecSchedule' => 'RecordRef',
+        'revRecStartDate' => 'dateTime',
+        'revRecEndDate' => 'dateTime',
+        'grossAmt' => 'float',
+        'tax1Amt' => 'float',
+        'taxCode' => 'RecordRef',
+        'taxRate1' => 'float',
+        'taxRate2' => 'float',
+    ];
 }

@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberBinSearchBasic
+ * InventoryNumberBinSearchBasic.
  */
-class InventoryNumberBinSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $binNumber;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $inventoryNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityAvailable;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityOnHand;
+class InventoryNumberBinSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $binNumber;
+    /**
+     * @var SearchStringField
+     */
+    public $inventoryNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $location;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityAvailable;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityOnHand;
 
-	static $paramtypesmap = array(
-		"binNumber" => "SearchMultiSelectField",
-		"inventoryNumber" => "SearchStringField",
-		"location" => "SearchMultiSelectField",
-		"quantityAvailable" => "SearchDoubleField",
-		"quantityOnHand" => "SearchDoubleField",
-	);
+    public static $paramtypesmap = [
+        'binNumber' => 'SearchMultiSelectField',
+        'inventoryNumber' => 'SearchStringField',
+        'location' => 'SearchMultiSelectField',
+        'quantityAvailable' => 'SearchDoubleField',
+        'quantityOnHand' => 'SearchDoubleField',
+    ];
 }

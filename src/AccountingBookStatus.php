@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingBookStatus
+ * AccountingBookStatus.
  */
-class AccountingBookStatus {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _active = "_active";
-	/**
-	 * @var string
-	 */
-	const _inactive = "_inactive";
-	/**
-	 * @var string
-	 */
-	const _pending = "_pending";
+class AccountingBookStatus
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _active = '_active';
+    /**
+     * @var string
+     */
+    const _inactive = '_inactive';
+    /**
+     * @var string
+     */
+    const _pending = '_pending';
 }

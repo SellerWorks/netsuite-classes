@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentLandedCostList
+ * InboundShipmentLandedCostList.
  */
-class InboundShipmentLandedCostList {
-	/**
-	 * @access public
-	 * @var InboundShipmentLandedCost[]
-	 */
-	public $inboundShipmentLandedCost;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class InboundShipmentLandedCostList
+{
+    /**
+     * @var InboundShipmentLandedCost[]
+     */
+    public $inboundShipmentLandedCost;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"inboundShipmentLandedCost" => "InboundShipmentLandedCost[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'inboundShipmentLandedCost' => 'InboundShipmentLandedCost[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldDepartmentAccessList
+ * CustomFieldDepartmentAccessList.
  */
-class CustomFieldDepartmentAccessList {
-	/**
-	 * @access public
-	 * @var CustomFieldDepartmentAccess[]
-	 */
-	public $deptAccess;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomFieldDepartmentAccessList
+{
+    /**
+     * @var CustomFieldDepartmentAccess[]
+     */
+    public $deptAccess;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"deptAccess" => "CustomFieldDepartmentAccess[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'deptAccess' => 'CustomFieldDepartmentAccess[]',
+        'replaceAll' => 'boolean',
+    ];
 }

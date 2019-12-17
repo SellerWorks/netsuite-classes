@@ -11,136 +11,116 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryCostRevaluation
+ * InventoryCostRevaluation.
  */
-class InventoryCostRevaluation extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $postingPeriod;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $total;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $inventoryValue;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $unitCost;
-	/**
-	 * @access public
-	 * @var InventoryCostRevaluationCostComponentList
-	 */
-	public $costComponentList;
-	/**
-	 * @access public
-	 * @var AccountingBookDetailList
-	 */
-	public $accountingBookDetailList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class InventoryCostRevaluation extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var RecordRef
+     */
+    public $postingPeriod;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var RecordRef
+     */
+    public $account;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var float
+     */
+    public $total;
+    /**
+     * @var float
+     */
+    public $inventoryValue;
+    /**
+     * @var float
+     */
+    public $unitCost;
+    /**
+     * @var InventoryCostRevaluationCostComponentList
+     */
+    public $costComponentList;
+    /**
+     * @var AccountingBookDetailList
+     */
+    public $accountingBookDetailList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"customForm" => "RecordRef",
-		"subsidiary" => "RecordRef",
-		"tranDate" => "dateTime",
-		"postingPeriod" => "RecordRef",
-		"tranId" => "string",
-		"account" => "RecordRef",
-		"item" => "RecordRef",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"memo" => "string",
-		"total" => "float",
-		"inventoryValue" => "float",
-		"unitCost" => "float",
-		"costComponentList" => "InventoryCostRevaluationCostComponentList",
-		"accountingBookDetailList" => "AccountingBookDetailList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'customForm' => 'RecordRef',
+        'subsidiary' => 'RecordRef',
+        'tranDate' => 'dateTime',
+        'postingPeriod' => 'RecordRef',
+        'tranId' => 'string',
+        'account' => 'RecordRef',
+        'item' => 'RecordRef',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'memo' => 'string',
+        'total' => 'float',
+        'inventoryValue' => 'float',
+        'unitCost' => 'float',
+        'costComponentList' => 'InventoryCostRevaluationCostComponentList',
+        'accountingBookDetailList' => 'AccountingBookDetailList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

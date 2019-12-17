@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetCustomizationIdResult
+ * GetCustomizationIdResult.
  */
-class GetCustomizationIdResult {
-	/**
-	 * @access public
-	 * @var Status
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $totalRecords;
-	/**
-	 * @access public
-	 * @var CustomizationRefList
-	 */
-	public $customizationRefList;
+class GetCustomizationIdResult
+{
+    /**
+     * @var Status
+     */
+    public $status;
+    /**
+     * @var int
+     */
+    public $totalRecords;
+    /**
+     * @var CustomizationRefList
+     */
+    public $customizationRefList;
 
-	static $paramtypesmap = array(
-		"status" => "Status",
-		"totalRecords" => "integer",
-		"customizationRefList" => "CustomizationRefList",
-	);
+    public static $paramtypesmap = [
+        'status' => 'Status',
+        'totalRecords' => 'integer',
+        'customizationRefList' => 'CustomizationRefList',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentSearchAdvanced
+ * InboundShipmentSearchAdvanced.
  */
-class InboundShipmentSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var InboundShipmentSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var InboundShipmentSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class InboundShipmentSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var InboundShipmentSearch
+     */
+    public $criteria;
+    /**
+     * @var InboundShipmentSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "InboundShipmentSearch",
-		"columns" => "InboundShipmentSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'InboundShipmentSearch',
+        'columns' => 'InboundShipmentSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

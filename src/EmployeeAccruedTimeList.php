@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeAccruedTimeList
+ * EmployeeAccruedTimeList.
  */
-class EmployeeAccruedTimeList {
-	/**
-	 * @access public
-	 * @var EmployeeAccruedTime[]
-	 */
-	public $employeeAccruedTime;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class EmployeeAccruedTimeList
+{
+    /**
+     * @var EmployeeAccruedTime[]
+     */
+    public $employeeAccruedTime;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"employeeAccruedTime" => "EmployeeAccruedTime[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'employeeAccruedTime' => 'EmployeeAccruedTime[]',
+        'replaceAll' => 'boolean',
+    ];
 }

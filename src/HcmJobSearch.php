@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * HcmJobSearch
+ * HcmJobSearch.
  */
-class HcmJobSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var HcmJobSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $employeeJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class HcmJobSearch extends SearchRecord
+{
+    /**
+     * @var HcmJobSearchBasic
+     */
+    public $basic;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $employeeJoin;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "HcmJobSearchBasic",
-		"employeeJoin" => "EmployeeSearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'HcmJobSearchBasic',
+        'employeeJoin' => 'EmployeeSearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

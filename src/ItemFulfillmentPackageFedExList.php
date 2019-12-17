@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageFedExList
+ * ItemFulfillmentPackageFedExList.
  */
-class ItemFulfillmentPackageFedExList {
-	/**
-	 * @access public
-	 * @var ItemFulfillmentPackageFedEx[]
-	 */
-	public $packageFedEx;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class ItemFulfillmentPackageFedExList
+{
+    /**
+     * @var ItemFulfillmentPackageFedEx[]
+     */
+    public $packageFedEx;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"packageFedEx" => "ItemFulfillmentPackageFedEx[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'packageFedEx' => 'ItemFulfillmentPackageFedEx[]',
+        'replaceAll' => 'boolean',
+    ];
 }

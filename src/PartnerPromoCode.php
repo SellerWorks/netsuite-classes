@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerPromoCode
+ * PartnerPromoCode.
  */
-class PartnerPromoCode {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $promoCode;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $discount;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
+class PartnerPromoCode
+{
+    /**
+     * @var RecordRef
+     */
+    public $promoCode;
+    /**
+     * @var string
+     */
+    public $discount;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
 
-	static $paramtypesmap = array(
-		"promoCode" => "RecordRef",
-		"discount" => "string",
-		"endDate" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'promoCode' => 'RecordRef',
+        'discount' => 'string',
+        'endDate' => 'dateTime',
+    ];
 }

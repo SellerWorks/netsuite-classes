@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DocumentInfo
+ * DocumentInfo.
  */
-class DocumentInfo {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $nsId;
+class DocumentInfo
+{
+    /**
+     * @var string
+     */
+    public $nsId;
 
-	static $paramtypesmap = array(
-		"nsId" => "string",
-	);
+    public static $paramtypesmap = [
+        'nsId' => 'string',
+    ];
 }

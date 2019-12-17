@@ -11,166 +11,141 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AdvInterCompanyJournalEntry
+ * AdvInterCompanyJournalEntry.
  */
-class AdvInterCompanyJournalEntry extends Record {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $postingPeriod;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $reversalDate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $reversalDefer;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parentExpenseAlloc;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isBookSpecific;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $accountingBook;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $reversalEntry;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $createdFrom;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $approved;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $performAutoBalance;
-	/**
-	 * @access public
-	 * @var AdvInterCompanyJournalEntryLineList
-	 */
-	public $lineList;
-	/**
-	 * @access public
-	 * @var AdvInterCompanyJournalEntryAccountingBookDetailList
-	 */
-	public $accountingBookDetailList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class AdvInterCompanyJournalEntry extends Record
+{
+    /**
+     * @var RecordRef
+     */
+    public $postingPeriod;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var dateTime
+     */
+    public $reversalDate;
+    /**
+     * @var bool
+     */
+    public $reversalDefer;
+    /**
+     * @var RecordRef
+     */
+    public $parentExpenseAlloc;
+    /**
+     * @var bool
+     */
+    public $isBookSpecific;
+    /**
+     * @var RecordRef
+     */
+    public $accountingBook;
+    /**
+     * @var string
+     */
+    public $reversalEntry;
+    /**
+     * @var RecordRef
+     */
+    public $createdFrom;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var bool
+     */
+    public $approved;
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var bool
+     */
+    public $performAutoBalance;
+    /**
+     * @var AdvInterCompanyJournalEntryLineList
+     */
+    public $lineList;
+    /**
+     * @var AdvInterCompanyJournalEntryAccountingBookDetailList
+     */
+    public $accountingBookDetailList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"postingPeriod" => "RecordRef",
-		"customForm" => "RecordRef",
-		"tranDate" => "dateTime",
-		"currency" => "RecordRef",
-		"tranId" => "string",
-		"reversalDate" => "dateTime",
-		"reversalDefer" => "boolean",
-		"parentExpenseAlloc" => "RecordRef",
-		"isBookSpecific" => "boolean",
-		"accountingBook" => "RecordRef",
-		"reversalEntry" => "string",
-		"createdFrom" => "RecordRef",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"subsidiary" => "RecordRef",
-		"memo" => "string",
-		"approved" => "boolean",
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"performAutoBalance" => "boolean",
-		"lineList" => "AdvInterCompanyJournalEntryLineList",
-		"accountingBookDetailList" => "AdvInterCompanyJournalEntryAccountingBookDetailList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'postingPeriod' => 'RecordRef',
+        'customForm' => 'RecordRef',
+        'tranDate' => 'dateTime',
+        'currency' => 'RecordRef',
+        'tranId' => 'string',
+        'reversalDate' => 'dateTime',
+        'reversalDefer' => 'boolean',
+        'parentExpenseAlloc' => 'RecordRef',
+        'isBookSpecific' => 'boolean',
+        'accountingBook' => 'RecordRef',
+        'reversalEntry' => 'string',
+        'createdFrom' => 'RecordRef',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'subsidiary' => 'RecordRef',
+        'memo' => 'string',
+        'approved' => 'boolean',
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'performAutoBalance' => 'boolean',
+        'lineList' => 'AdvInterCompanyJournalEntryLineList',
+        'accountingBookDetailList' => 'AdvInterCompanyJournalEntryAccountingBookDetailList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

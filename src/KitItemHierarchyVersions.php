@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * KitItemHierarchyVersions
+ * KitItemHierarchyVersions.
  */
-class KitItemHierarchyVersions {
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isIncluded;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $hierarchyVersion;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $hierarchyNode;
+class KitItemHierarchyVersions
+{
+    /**
+     * @var bool
+     */
+    public $isIncluded;
+    /**
+     * @var RecordRef
+     */
+    public $hierarchyVersion;
+    /**
+     * @var dateTime
+     */
+    public $startDate;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
+    /**
+     * @var RecordRef
+     */
+    public $hierarchyNode;
 
-	static $paramtypesmap = array(
-		"isIncluded" => "boolean",
-		"hierarchyVersion" => "RecordRef",
-		"startDate" => "dateTime",
-		"endDate" => "dateTime",
-		"hierarchyNode" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'isIncluded' => 'boolean',
+        'hierarchyVersion' => 'RecordRef',
+        'startDate' => 'dateTime',
+        'endDate' => 'dateTime',
+        'hierarchyNode' => 'RecordRef',
+    ];
 }

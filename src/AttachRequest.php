@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AttachRequest
+ * AttachRequest.
  */
-class AttachRequest {
-	/**
-	 * @access public
-	 * @var AttachReference
-	 */
-	public $attachReference;
+class AttachRequest
+{
+    /**
+     * @var AttachReference
+     */
+    public $attachReference;
 
-	static $paramtypesmap = array(
-		"attachReference" => "AttachReference",
-	);
+    public static $paramtypesmap = [
+        'attachReference' => 'AttachReference',
+    ];
 }

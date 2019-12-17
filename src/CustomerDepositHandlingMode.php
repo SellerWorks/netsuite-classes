@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerDepositHandlingMode
+ * CustomerDepositHandlingMode.
  */
-class CustomerDepositHandlingMode {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _process = "_process";
-	/**
-	 * @var string
-	 */
-	const _recordExternalEvent = "_recordExternalEvent";
-	/**
-	 * @var string
-	 */
-	const _saveOnly = "_saveOnly";
+class CustomerDepositHandlingMode
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _process = '_process';
+    /**
+     * @var string
+     */
+    const _recordExternalEvent = '_recordExternalEvent';
+    /**
+     * @var string
+     */
+    const _saveOnly = '_saveOnly';
 }

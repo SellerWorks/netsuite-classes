@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeRolesList
+ * EmployeeRolesList.
  */
-class EmployeeRolesList {
-	/**
-	 * @access public
-	 * @var EmployeeRoles[]
-	 */
-	public $roles;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class EmployeeRolesList
+{
+    /**
+     * @var EmployeeRoles[]
+     */
+    public $roles;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"roles" => "EmployeeRoles[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'roles' => 'EmployeeRoles[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LotNumberedAssemblyItemHierarchyVersionsList
+ * LotNumberedAssemblyItemHierarchyVersionsList.
  */
-class LotNumberedAssemblyItemHierarchyVersionsList {
-	/**
-	 * @access public
-	 * @var LotNumberedAssemblyItemHierarchyVersions[]
-	 */
-	public $lotNumberedAssemblyItemHierarchyVersions;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class LotNumberedAssemblyItemHierarchyVersionsList
+{
+    /**
+     * @var LotNumberedAssemblyItemHierarchyVersions[]
+     */
+    public $lotNumberedAssemblyItemHierarchyVersions;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"lotNumberedAssemblyItemHierarchyVersions" => "LotNumberedAssemblyItemHierarchyVersions[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'lotNumberedAssemblyItemHierarchyVersions' => 'LotNumberedAssemblyItemHierarchyVersions[]',
+        'replaceAll' => 'boolean',
+    ];
 }

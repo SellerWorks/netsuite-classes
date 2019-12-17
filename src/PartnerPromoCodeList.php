@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerPromoCodeList
+ * PartnerPromoCodeList.
  */
-class PartnerPromoCodeList {
-	/**
-	 * @access public
-	 * @var PartnerPromoCode[]
-	 */
-	public $promoCode;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PartnerPromoCodeList
+{
+    /**
+     * @var PartnerPromoCode[]
+     */
+    public $promoCode;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"promoCode" => "PartnerPromoCode[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'promoCode' => 'PartnerPromoCode[]',
+        'replaceAll' => 'boolean',
+    ];
 }

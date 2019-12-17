@@ -11,136 +11,116 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InterCompanyTransferOrderItem
+ * InterCompanyTransferOrderItem.
  */
-class InterCompanyTransferOrderItem {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $line;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityAvailable;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityOnHand;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityBackOrdered;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityCommitted;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityFulfilled;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityReceived;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantity;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $rate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $units;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var InventoryDetail
-	 */
-	public $inventoryDetail;
-	/**
-	 * @access public
-	 * @var TransferOrderItemCommitInventory
-	 */
-	public $commitInventory;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $options;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $lastPurchasePrice;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $averageCost;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
+class InterCompanyTransferOrderItem
+{
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var int
+     */
+    public $line;
+    /**
+     * @var float
+     */
+    public $quantityAvailable;
+    /**
+     * @var float
+     */
+    public $quantityOnHand;
+    /**
+     * @var float
+     */
+    public $quantityBackOrdered;
+    /**
+     * @var float
+     */
+    public $quantityCommitted;
+    /**
+     * @var float
+     */
+    public $quantityFulfilled;
+    /**
+     * @var float
+     */
+    public $quantityReceived;
+    /**
+     * @var float
+     */
+    public $quantity;
+    /**
+     * @var float
+     */
+    public $rate;
+    /**
+     * @var RecordRef
+     */
+    public $units;
+    /**
+     * @var float
+     */
+    public $amount;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var InventoryDetail
+     */
+    public $inventoryDetail;
+    /**
+     * @var TransferOrderItemCommitInventory
+     */
+    public $commitInventory;
+    /**
+     * @var CustomFieldList
+     */
+    public $options;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var float
+     */
+    public $lastPurchasePrice;
+    /**
+     * @var float
+     */
+    public $averageCost;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"item" => "RecordRef",
-		"line" => "integer",
-		"quantityAvailable" => "float",
-		"quantityOnHand" => "float",
-		"quantityBackOrdered" => "float",
-		"quantityCommitted" => "float",
-		"quantityFulfilled" => "float",
-		"quantityReceived" => "float",
-		"quantity" => "float",
-		"rate" => "float",
-		"units" => "RecordRef",
-		"amount" => "float",
-		"description" => "string",
-		"inventoryDetail" => "InventoryDetail",
-		"commitInventory" => "TransferOrderItemCommitInventory",
-		"options" => "CustomFieldList",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"lastPurchasePrice" => "float",
-		"averageCost" => "float",
-		"customFieldList" => "CustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'item' => 'RecordRef',
+        'line' => 'integer',
+        'quantityAvailable' => 'float',
+        'quantityOnHand' => 'float',
+        'quantityBackOrdered' => 'float',
+        'quantityCommitted' => 'float',
+        'quantityFulfilled' => 'float',
+        'quantityReceived' => 'float',
+        'quantity' => 'float',
+        'rate' => 'float',
+        'units' => 'RecordRef',
+        'amount' => 'float',
+        'description' => 'string',
+        'inventoryDetail' => 'InventoryDetail',
+        'commitInventory' => 'TransferOrderItemCommitInventory',
+        'options' => 'CustomFieldList',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'lastPurchasePrice' => 'float',
+        'averageCost' => 'float',
+        'customFieldList' => 'CustomFieldList',
+    ];
 }

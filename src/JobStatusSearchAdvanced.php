@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobStatusSearchAdvanced
+ * JobStatusSearchAdvanced.
  */
-class JobStatusSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var JobStatusSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var JobStatusSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class JobStatusSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var JobStatusSearch
+     */
+    public $criteria;
+    /**
+     * @var JobStatusSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "JobStatusSearch",
-		"columns" => "JobStatusSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'JobStatusSearch',
+        'columns' => 'JobStatusSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

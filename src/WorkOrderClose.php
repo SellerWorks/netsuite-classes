@@ -11,130 +11,111 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderClose
+ * WorkOrderClose.
  */
-class WorkOrderClose extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantity;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $orderQuantity;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $scrapQuantity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $createdFrom;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $postingPeriod;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revision;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class WorkOrderClose extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var float
+     */
+    public $quantity;
+    /**
+     * @var float
+     */
+    public $orderQuantity;
+    /**
+     * @var float
+     */
+    public $scrapQuantity;
+    /**
+     * @var RecordRef
+     */
+    public $createdFrom;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var RecordRef
+     */
+    public $postingPeriod;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $revision;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"customForm" => "RecordRef",
-		"tranId" => "string",
-		"item" => "RecordRef",
-		"quantity" => "float",
-		"orderQuantity" => "float",
-		"scrapQuantity" => "float",
-		"createdFrom" => "RecordRef",
-		"tranDate" => "dateTime",
-		"postingPeriod" => "RecordRef",
-		"memo" => "string",
-		"subsidiary" => "RecordRef",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"revision" => "RecordRef",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'customForm' => 'RecordRef',
+        'tranId' => 'string',
+        'item' => 'RecordRef',
+        'quantity' => 'float',
+        'orderQuantity' => 'float',
+        'scrapQuantity' => 'float',
+        'createdFrom' => 'RecordRef',
+        'tranDate' => 'dateTime',
+        'postingPeriod' => 'RecordRef',
+        'memo' => 'string',
+        'subsidiary' => 'RecordRef',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'revision' => 'RecordRef',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

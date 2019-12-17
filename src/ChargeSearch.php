@@ -11,94 +11,81 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChargeSearch
+ * ChargeSearch.
  */
-class ChargeSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var ChargeSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var BillingAccountSearchBasic
-	 */
-	public $billingAccountJoin;
-	/**
-	 * @access public
-	 * @var BillingScheduleSearchBasic
-	 */
-	public $billingScheduleJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $chargeEmployeeJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchBasic
-	 */
-	public $invoiceJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var JobSearchBasic
-	 */
-	public $jobJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchBasic
-	 */
-	public $salesOrderJoin;
-	/**
-	 * @access public
-	 * @var TimeBillSearchBasic
-	 */
-	public $timeJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchBasic
-	 */
-	public $transactionJoin;
-	/**
-	 * @access public
-	 * @var UsageSearchBasic
-	 */
-	public $usageJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class ChargeSearch extends SearchRecord
+{
+    /**
+     * @var ChargeSearchBasic
+     */
+    public $basic;
+    /**
+     * @var BillingAccountSearchBasic
+     */
+    public $billingAccountJoin;
+    /**
+     * @var BillingScheduleSearchBasic
+     */
+    public $billingScheduleJoin;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $chargeEmployeeJoin;
+    /**
+     * @var CustomerSearchBasic
+     */
+    public $customerJoin;
+    /**
+     * @var TransactionSearchBasic
+     */
+    public $invoiceJoin;
+    /**
+     * @var ItemSearchBasic
+     */
+    public $itemJoin;
+    /**
+     * @var JobSearchBasic
+     */
+    public $jobJoin;
+    /**
+     * @var TransactionSearchBasic
+     */
+    public $salesOrderJoin;
+    /**
+     * @var TimeBillSearchBasic
+     */
+    public $timeJoin;
+    /**
+     * @var TransactionSearchBasic
+     */
+    public $transactionJoin;
+    /**
+     * @var UsageSearchBasic
+     */
+    public $usageJoin;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $userJoin;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "ChargeSearchBasic",
-		"billingAccountJoin" => "BillingAccountSearchBasic",
-		"billingScheduleJoin" => "BillingScheduleSearchBasic",
-		"chargeEmployeeJoin" => "EmployeeSearchBasic",
-		"customerJoin" => "CustomerSearchBasic",
-		"invoiceJoin" => "TransactionSearchBasic",
-		"itemJoin" => "ItemSearchBasic",
-		"jobJoin" => "JobSearchBasic",
-		"salesOrderJoin" => "TransactionSearchBasic",
-		"timeJoin" => "TimeBillSearchBasic",
-		"transactionJoin" => "TransactionSearchBasic",
-		"usageJoin" => "UsageSearchBasic",
-		"userJoin" => "EmployeeSearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'ChargeSearchBasic',
+        'billingAccountJoin' => 'BillingAccountSearchBasic',
+        'billingScheduleJoin' => 'BillingScheduleSearchBasic',
+        'chargeEmployeeJoin' => 'EmployeeSearchBasic',
+        'customerJoin' => 'CustomerSearchBasic',
+        'invoiceJoin' => 'TransactionSearchBasic',
+        'itemJoin' => 'ItemSearchBasic',
+        'jobJoin' => 'JobSearchBasic',
+        'salesOrderJoin' => 'TransactionSearchBasic',
+        'timeJoin' => 'TimeBillSearchBasic',
+        'transactionJoin' => 'TransactionSearchBasic',
+        'usageJoin' => 'UsageSearchBasic',
+        'userJoin' => 'EmployeeSearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

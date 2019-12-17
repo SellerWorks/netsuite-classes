@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignResponse
+ * CampaignResponse.
  */
-class CampaignResponse extends Record {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $leadSource;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $campaignEvent;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $campaignResponseDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $channel;
-	/**
-	 * @access public
-	 * @var CampaignResponseResponse
-	 */
-	public $response;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $note;
-	/**
-	 * @access public
-	 * @var CampaignResponseResponsesList
-	 */
-	public $responsesList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class CampaignResponse extends Record
+{
+    /**
+     * @var RecordRef
+     */
+    public $entity;
+    /**
+     * @var RecordRef
+     */
+    public $leadSource;
+    /**
+     * @var RecordRef
+     */
+    public $campaignEvent;
+    /**
+     * @var dateTime
+     */
+    public $campaignResponseDate;
+    /**
+     * @var string
+     */
+    public $channel;
+    /**
+     * @var CampaignResponseResponse
+     */
+    public $response;
+    /**
+     * @var string
+     */
+    public $note;
+    /**
+     * @var CampaignResponseResponsesList
+     */
+    public $responsesList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"entity" => "RecordRef",
-		"leadSource" => "RecordRef",
-		"campaignEvent" => "RecordRef",
-		"campaignResponseDate" => "dateTime",
-		"channel" => "string",
-		"response" => "CampaignResponseResponse",
-		"note" => "string",
-		"responsesList" => "CampaignResponseResponsesList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'entity' => 'RecordRef',
+        'leadSource' => 'RecordRef',
+        'campaignEvent' => 'RecordRef',
+        'campaignResponseDate' => 'dateTime',
+        'channel' => 'string',
+        'response' => 'CampaignResponseResponse',
+        'note' => 'string',
+        'responsesList' => 'CampaignResponseResponsesList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

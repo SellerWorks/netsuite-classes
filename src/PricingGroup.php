@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PricingGroup
+ * PricingGroup.
  */
-class PricingGroup extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class PricingGroup extends Record
+{
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"name" => "string",
-		"isInactive" => "boolean",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'name' => 'string',
+        'isInactive' => 'boolean',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

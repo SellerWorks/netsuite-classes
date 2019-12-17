@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderItemCommitInventory
+ * SalesOrderItemCommitInventory.
  */
-class SalesOrderItemCommitInventory {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _availableQty = "_availableQty";
-	/**
-	 * @var string
-	 */
-	const _completeQty = "_completeQty";
-	/**
-	 * @var string
-	 */
-	const _doNotCommit = "_doNotCommit";
+class SalesOrderItemCommitInventory
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _availableQty = '_availableQty';
+    /**
+     * @var string
+     */
+    const _completeQty = '_completeQty';
+    /**
+     * @var string
+     */
+    const _doNotCommit = '_doNotCommit';
 }

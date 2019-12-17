@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CouponCodeSearchRowBasic
+ * CouponCodeSearchRowBasic.
  */
-class CouponCodeSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $code;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $dateSent;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $id;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $promotion;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $recipient;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $useCount;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $used;
+class CouponCodeSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $code;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $dateSent;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $id;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $promotion;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $recipient;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $useCount;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $used;
 
-	static $paramtypesmap = array(
-		"code" => "SearchColumnStringField[]",
-		"dateSent" => "SearchColumnDateField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"id" => "SearchColumnLongField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"promotion" => "SearchColumnStringField[]",
-		"recipient" => "SearchColumnStringField[]",
-		"useCount" => "SearchColumnLongField[]",
-		"used" => "SearchColumnBooleanField[]",
-	);
+    public static $paramtypesmap = [
+        'code' => 'SearchColumnStringField[]',
+        'dateSent' => 'SearchColumnDateField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'id' => 'SearchColumnLongField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'promotion' => 'SearchColumnStringField[]',
+        'recipient' => 'SearchColumnStringField[]',
+        'useCount' => 'SearchColumnLongField[]',
+        'used' => 'SearchColumnBooleanField[]',
+    ];
 }

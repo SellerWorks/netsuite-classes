@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRateSearchBasic
+ * CurrencyRateSearchBasic.
  */
-class CurrencyRateSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $baseCurrency;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $effectiveDate;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $exchangeRate;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $transactionCurrency;
+class CurrencyRateSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $baseCurrency;
+    /**
+     * @var SearchDateField
+     */
+    public $effectiveDate;
+    /**
+     * @var SearchDoubleField
+     */
+    public $exchangeRate;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $transactionCurrency;
 
-	static $paramtypesmap = array(
-		"baseCurrency" => "SearchMultiSelectField",
-		"effectiveDate" => "SearchDateField",
-		"exchangeRate" => "SearchDoubleField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"transactionCurrency" => "SearchMultiSelectField",
-	);
+    public static $paramtypesmap = [
+        'baseCurrency' => 'SearchMultiSelectField',
+        'effectiveDate' => 'SearchDateField',
+        'exchangeRate' => 'SearchDoubleField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'transactionCurrency' => 'SearchMultiSelectField',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeCompanyContributionList
+ * EmployeeCompanyContributionList.
  */
-class EmployeeCompanyContributionList {
-	/**
-	 * @access public
-	 * @var EmployeeCompanyContribution[]
-	 */
-	public $employeeCompanyContribution;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class EmployeeCompanyContributionList
+{
+    /**
+     * @var EmployeeCompanyContribution[]
+     */
+    public $employeeCompanyContribution;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"employeeCompanyContribution" => "EmployeeCompanyContribution[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'employeeCompanyContribution' => 'EmployeeCompanyContribution[]',
+        'replaceAll' => 'boolean',
+    ];
 }

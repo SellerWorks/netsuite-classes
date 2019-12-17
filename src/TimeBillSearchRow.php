@@ -11,130 +11,111 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeBillSearchRow
+ * TimeBillSearchRow.
  */
-class TimeBillSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var TimeBillSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var PhoneCallSearchRowBasic
-	 */
-	public $callJoin;
-	/**
-	 * @access public
-	 * @var SupportCaseSearchRowBasic
-	 */
-	public $caseJoin;
-	/**
-	 * @access public
-	 * @var ChargeSearchRowBasic
-	 */
-	public $chargeJoin;
-	/**
-	 * @access public
-	 * @var ClassificationSearchRowBasic
-	 */
-	public $classJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchRowBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var DepartmentSearchRowBasic
-	 */
-	public $departmentJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $employeeJoin;
-	/**
-	 * @access public
-	 * @var CalendarEventSearchRowBasic
-	 */
-	public $eventJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var JobSearchRowBasic
-	 */
-	public $jobJoin;
-	/**
-	 * @access public
-	 * @var LocationSearchRowBasic
-	 */
-	public $locationJoin;
-	/**
-	 * @access public
-	 * @var ProjectTaskSearchRowBasic
-	 */
-	public $projectTaskJoin;
-	/**
-	 * @access public
-	 * @var ProjectTaskAssignmentSearchRowBasic
-	 */
-	public $projectTaskAssignmentJoin;
-	/**
-	 * @access public
-	 * @var ResourceAllocationSearchRowBasic
-	 */
-	public $resourceAllocationJoin;
-	/**
-	 * @access public
-	 * @var TaskSearchRowBasic
-	 */
-	public $taskJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var VendorSearchRowBasic
-	 */
-	public $vendorJoin;
-	/**
-	 * @access public
-	 * @var TimeSheetSearchRowBasic
-	 */
-	public $timeSheetJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class TimeBillSearchRow extends SearchRow
+{
+    /**
+     * @var TimeBillSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var PhoneCallSearchRowBasic
+     */
+    public $callJoin;
+    /**
+     * @var SupportCaseSearchRowBasic
+     */
+    public $caseJoin;
+    /**
+     * @var ChargeSearchRowBasic
+     */
+    public $chargeJoin;
+    /**
+     * @var ClassificationSearchRowBasic
+     */
+    public $classJoin;
+    /**
+     * @var CustomerSearchRowBasic
+     */
+    public $customerJoin;
+    /**
+     * @var DepartmentSearchRowBasic
+     */
+    public $departmentJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $employeeJoin;
+    /**
+     * @var CalendarEventSearchRowBasic
+     */
+    public $eventJoin;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $itemJoin;
+    /**
+     * @var JobSearchRowBasic
+     */
+    public $jobJoin;
+    /**
+     * @var LocationSearchRowBasic
+     */
+    public $locationJoin;
+    /**
+     * @var ProjectTaskSearchRowBasic
+     */
+    public $projectTaskJoin;
+    /**
+     * @var ProjectTaskAssignmentSearchRowBasic
+     */
+    public $projectTaskAssignmentJoin;
+    /**
+     * @var ResourceAllocationSearchRowBasic
+     */
+    public $resourceAllocationJoin;
+    /**
+     * @var TaskSearchRowBasic
+     */
+    public $taskJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
+    /**
+     * @var VendorSearchRowBasic
+     */
+    public $vendorJoin;
+    /**
+     * @var TimeSheetSearchRowBasic
+     */
+    public $timeSheetJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "TimeBillSearchRowBasic",
-		"callJoin" => "PhoneCallSearchRowBasic",
-		"caseJoin" => "SupportCaseSearchRowBasic",
-		"chargeJoin" => "ChargeSearchRowBasic",
-		"classJoin" => "ClassificationSearchRowBasic",
-		"customerJoin" => "CustomerSearchRowBasic",
-		"departmentJoin" => "DepartmentSearchRowBasic",
-		"employeeJoin" => "EmployeeSearchRowBasic",
-		"eventJoin" => "CalendarEventSearchRowBasic",
-		"itemJoin" => "ItemSearchRowBasic",
-		"jobJoin" => "JobSearchRowBasic",
-		"locationJoin" => "LocationSearchRowBasic",
-		"projectTaskJoin" => "ProjectTaskSearchRowBasic",
-		"projectTaskAssignmentJoin" => "ProjectTaskAssignmentSearchRowBasic",
-		"resourceAllocationJoin" => "ResourceAllocationSearchRowBasic",
-		"taskJoin" => "TaskSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-		"vendorJoin" => "VendorSearchRowBasic",
-		"timeSheetJoin" => "TimeSheetSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'TimeBillSearchRowBasic',
+        'callJoin' => 'PhoneCallSearchRowBasic',
+        'caseJoin' => 'SupportCaseSearchRowBasic',
+        'chargeJoin' => 'ChargeSearchRowBasic',
+        'classJoin' => 'ClassificationSearchRowBasic',
+        'customerJoin' => 'CustomerSearchRowBasic',
+        'departmentJoin' => 'DepartmentSearchRowBasic',
+        'employeeJoin' => 'EmployeeSearchRowBasic',
+        'eventJoin' => 'CalendarEventSearchRowBasic',
+        'itemJoin' => 'ItemSearchRowBasic',
+        'jobJoin' => 'JobSearchRowBasic',
+        'locationJoin' => 'LocationSearchRowBasic',
+        'projectTaskJoin' => 'ProjectTaskSearchRowBasic',
+        'projectTaskAssignmentJoin' => 'ProjectTaskAssignmentSearchRowBasic',
+        'resourceAllocationJoin' => 'ResourceAllocationSearchRowBasic',
+        'taskJoin' => 'TaskSearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+        'vendorJoin' => 'VendorSearchRowBasic',
+        'timeSheetJoin' => 'TimeSheetSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

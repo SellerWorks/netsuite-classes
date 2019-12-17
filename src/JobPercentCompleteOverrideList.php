@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobPercentCompleteOverrideList
+ * JobPercentCompleteOverrideList.
  */
-class JobPercentCompleteOverrideList {
-	/**
-	 * @access public
-	 * @var JobPercentCompleteOverride[]
-	 */
-	public $jobPercentCompleteOverride;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class JobPercentCompleteOverrideList
+{
+    /**
+     * @var JobPercentCompleteOverride[]
+     */
+    public $jobPercentCompleteOverride;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"jobPercentCompleteOverride" => "JobPercentCompleteOverride[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'jobPercentCompleteOverride' => 'JobPercentCompleteOverride[]',
+        'replaceAll' => 'boolean',
+    ];
 }

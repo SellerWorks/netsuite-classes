@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DemandPlanMatrix
+ * DemandPlanMatrix.
  */
-class DemandPlanMatrix {
-	/**
-	 * @access public
-	 * @var DemandPlan[]
-	 */
-	public $demandPlan;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class DemandPlanMatrix
+{
+    /**
+     * @var DemandPlan[]
+     */
+    public $demandPlan;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"demandPlan" => "DemandPlan[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'demandPlan' => 'DemandPlan[]',
+        'replaceAll' => 'boolean',
+    ];
 }

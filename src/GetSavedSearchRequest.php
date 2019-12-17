@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSavedSearchRequest
+ * GetSavedSearchRequest.
  */
-class GetSavedSearchRequest {
-	/**
-	 * @access public
-	 * @var GetSavedSearchRecord
-	 */
-	public $record;
+class GetSavedSearchRequest
+{
+    /**
+     * @var GetSavedSearchRecord
+     */
+    public $record;
 
-	static $paramtypesmap = array(
-		"record" => "GetSavedSearchRecord",
-	);
+    public static $paramtypesmap = [
+        'record' => 'GetSavedSearchRecord',
+    ];
 }

@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FairValuePriceFairValueRangePolicy
+ * FairValuePriceFairValueRangePolicy.
  */
-class FairValuePriceFairValueRangePolicy {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _boundary = "_boundary";
-	/**
-	 * @var string
-	 */
-	const _fairValue = "_fairValue";
-	/**
-	 * @var string
-	 */
-	const _high = "_high";
-	/**
-	 * @var string
-	 */
-	const _low = "_low";
+class FairValuePriceFairValueRangePolicy
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _boundary = '_boundary';
+    /**
+     * @var string
+     */
+    const _fairValue = '_fairValue';
+    /**
+     * @var string
+     */
+    const _high = '_high';
+    /**
+     * @var string
+     */
+    const _low = '_low';
 }

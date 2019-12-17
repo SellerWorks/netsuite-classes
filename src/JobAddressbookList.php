@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * JobAddressbookList
  */
-class JobAddressbookList {
-	/**
-	 * @access public
-	 * @var JobAddressbook[]
-	 */
-	public $addressbook;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class JobAddressbookList
+{
+    /**
+     * @access public
+     * @var JobAddressbook[]
+     */
+    public $addressbook;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"addressbook" => "JobAddressbook[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "addressbook" => "JobAddressbook[]",
+        "replaceAll" => "boolean",
+    );
 }

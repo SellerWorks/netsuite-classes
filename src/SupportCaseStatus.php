@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseStatus
+ * SupportCaseStatus.
  */
-class SupportCaseStatus extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $insertBefore;
-	/**
-	 * @access public
-	 * @var SupportCaseStatusStage
-	 */
-	public $stage;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $caseOnHold;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $autoCloseCase;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class SupportCaseStatus extends Record
+{
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var RecordRef
+     */
+    public $insertBefore;
+    /**
+     * @var SupportCaseStatusStage
+     */
+    public $stage;
+    /**
+     * @var bool
+     */
+    public $caseOnHold;
+    /**
+     * @var bool
+     */
+    public $autoCloseCase;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"name" => "string",
-		"insertBefore" => "RecordRef",
-		"stage" => "SupportCaseStatusStage",
-		"caseOnHold" => "boolean",
-		"autoCloseCase" => "boolean",
-		"description" => "string",
-		"isInactive" => "boolean",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'name' => 'string',
+        'insertBefore' => 'RecordRef',
+        'stage' => 'SupportCaseStatusStage',
+        'caseOnHold' => 'boolean',
+        'autoCloseCase' => 'boolean',
+        'description' => 'string',
+        'isInactive' => 'boolean',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

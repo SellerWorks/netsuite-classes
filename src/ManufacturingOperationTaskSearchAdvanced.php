@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskSearchAdvanced
+ * ManufacturingOperationTaskSearchAdvanced.
  */
-class ManufacturingOperationTaskSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var ManufacturingOperationTaskSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var ManufacturingOperationTaskSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class ManufacturingOperationTaskSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var ManufacturingOperationTaskSearch
+     */
+    public $criteria;
+    /**
+     * @var ManufacturingOperationTaskSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "ManufacturingOperationTaskSearch",
-		"columns" => "ManufacturingOperationTaskSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'ManufacturingOperationTaskSearch',
+        'columns' => 'ManufacturingOperationTaskSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

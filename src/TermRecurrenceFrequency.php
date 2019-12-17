@@ -13,24 +13,24 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * TermRecurrenceFrequency
  */
-class TermRecurrenceFrequency {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _annually = "_annually";
-	/**
-	 * @var string
-	 */
-	const _daily = "_daily";
-	/**
-	 * @var string
-	 */
-	const _monthly = "_monthly";
-	/**
-	 * @var string
-	 */
-	const _weekly = "_weekly";
+class TermRecurrenceFrequency
+{
+    public static $paramtypesmap = array(
+    );
+    /**
+     * @var string
+     */
+    const _annually = "_annually";
+    /**
+     * @var string
+     */
+    const _daily = "_daily";
+    /**
+     * @var string
+     */
+    const _monthly = "_monthly";
+    /**
+     * @var string
+     */
+    const _weekly = "_weekly";
 }

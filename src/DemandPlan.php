@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DemandPlan
+ * DemandPlan.
  */
-class DemandPlan {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $calculatedQuantity;
-	/**
-	 * @access public
-	 * @var PeriodDemandPlanList
-	 */
-	public $periodDemandPlanList;
+class DemandPlan
+{
+    /**
+     * @var dateTime
+     */
+    public $startDate;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
+    /**
+     * @var float
+     */
+    public $calculatedQuantity;
+    /**
+     * @var PeriodDemandPlanList
+     */
+    public $periodDemandPlanList;
 
-	static $paramtypesmap = array(
-		"startDate" => "dateTime",
-		"endDate" => "dateTime",
-		"calculatedQuantity" => "float",
-		"periodDemandPlanList" => "PeriodDemandPlanList",
-	);
+    public static $paramtypesmap = [
+        'startDate' => 'dateTime',
+        'endDate' => 'dateTime',
+        'calculatedQuantity' => 'float',
+        'periodDemandPlanList' => 'PeriodDemandPlanList',
+    ];
 }

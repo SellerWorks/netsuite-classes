@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChargeSearchAdvanced
+ * ChargeSearchAdvanced.
  */
-class ChargeSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var ChargeSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var ChargeSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class ChargeSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var ChargeSearch
+     */
+    public $criteria;
+    /**
+     * @var ChargeSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "ChargeSearch",
-		"columns" => "ChargeSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'ChargeSearch',
+        'columns' => 'ChargeSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

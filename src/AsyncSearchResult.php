@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncSearchResult
+ * AsyncSearchResult.
  */
-class AsyncSearchResult extends AsyncResult {
-	/**
-	 * @access public
-	 * @var SearchResult
-	 */
-	public $searchResult;
+class AsyncSearchResult extends AsyncResult
+{
+    /**
+     * @var SearchResult
+     */
+    public $searchResult;
 
-	static $paramtypesmap = array(
-		"searchResult" => "SearchResult",
-	);
+    public static $paramtypesmap = [
+        'searchResult' => 'SearchResult',
+    ];
 }

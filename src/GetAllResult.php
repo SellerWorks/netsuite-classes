@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetAllResult
+ * GetAllResult.
  */
-class GetAllResult {
-	/**
-	 * @access public
-	 * @var Status
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $totalRecords;
-	/**
-	 * @access public
-	 * @var RecordList
-	 */
-	public $recordList;
+class GetAllResult
+{
+    /**
+     * @var Status
+     */
+    public $status;
+    /**
+     * @var int
+     */
+    public $totalRecords;
+    /**
+     * @var RecordList
+     */
+    public $recordList;
 
-	static $paramtypesmap = array(
-		"status" => "Status",
-		"totalRecords" => "integer",
-		"recordList" => "RecordList",
-	);
+    public static $paramtypesmap = [
+        'status' => 'Status',
+        'totalRecords' => 'integer',
+        'recordList' => 'RecordList',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ExclusionDateList
+ * ExclusionDateList.
  */
-class ExclusionDateList {
-	/**
-	 * @access public
-	 * @var dateTime[]
-	 */
-	public $exclusionDate;
+class ExclusionDateList
+{
+    /**
+     * @var dateTime[]
+     */
+    public $exclusionDate;
 
-	static $paramtypesmap = array(
-		"exclusionDate" => "dateTime[]",
-	);
+    public static $paramtypesmap = [
+        'exclusionDate' => 'dateTime[]',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCategorySearchAdvanced
+ * VendorCategorySearchAdvanced.
  */
-class VendorCategorySearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var VendorCategorySearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var VendorCategorySearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class VendorCategorySearchAdvanced extends SearchRecord
+{
+    /**
+     * @var VendorCategorySearch
+     */
+    public $criteria;
+    /**
+     * @var VendorCategorySearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "VendorCategorySearch",
-		"columns" => "VendorCategorySearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'VendorCategorySearch',
+        'columns' => 'VendorCategorySearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

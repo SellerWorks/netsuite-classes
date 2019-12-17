@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyItemBomSearchRowBasic
+ * AssemblyItemBomSearchRowBasic.
  */
-class AssemblyItemBomSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $assembly;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $billOfMaterials;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $default;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $locations;
+class AssemblyItemBomSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $assembly;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $billOfMaterials;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $default;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $locations;
 
-	static $paramtypesmap = array(
-		"assembly" => "SearchColumnSelectField[]",
-		"billOfMaterials" => "SearchColumnSelectField[]",
-		"default" => "SearchColumnBooleanField[]",
-		"locations" => "SearchColumnSelectField[]",
-	);
+    public static $paramtypesmap = [
+        'assembly' => 'SearchColumnSelectField[]',
+        'billOfMaterials' => 'SearchColumnSelectField[]',
+        'default' => 'SearchColumnBooleanField[]',
+        'locations' => 'SearchColumnSelectField[]',
+    ];
 }

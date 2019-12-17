@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StatisticalJournalEntryLineList
+ * StatisticalJournalEntryLineList.
  */
-class StatisticalJournalEntryLineList {
-	/**
-	 * @access public
-	 * @var StatisticalJournalEntryLine[]
-	 */
-	public $statisticalJournalEntryLine;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class StatisticalJournalEntryLineList
+{
+    /**
+     * @var StatisticalJournalEntryLine[]
+     */
+    public $statisticalJournalEntryLine;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"statisticalJournalEntryLine" => "StatisticalJournalEntryLine[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'statisticalJournalEntryLine' => 'StatisticalJournalEntryLine[]',
+        'replaceAll' => 'boolean',
+    ];
 }

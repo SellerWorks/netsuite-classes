@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PeriodDemandPlan
+ * PeriodDemandPlan.
  */
-class PeriodDemandPlan {
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantity;
-	/**
-	 * @access public
-	 * @var DayOfTheWeek
-	 */
-	public $dayOfTheWeek;
+class PeriodDemandPlan
+{
+    /**
+     * @var float
+     */
+    public $quantity;
+    /**
+     * @var DayOfTheWeek
+     */
+    public $dayOfTheWeek;
 
-	static $paramtypesmap = array(
-		"quantity" => "float",
-		"dayOfTheWeek" => "DayOfTheWeek",
-	);
+    public static $paramtypesmap = [
+        'quantity' => 'float',
+        'dayOfTheWeek' => 'DayOfTheWeek',
+    ];
 }

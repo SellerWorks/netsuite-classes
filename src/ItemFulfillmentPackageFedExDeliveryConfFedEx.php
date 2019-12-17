@@ -11,14 +11,14 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageFedExDeliveryConfFedEx
+ * ItemFulfillmentPackageFedExDeliveryConfFedEx.
  */
-class ItemFulfillmentPackageFedExDeliveryConfFedEx {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _signatureRequired = "_signatureRequired";
+class ItemFulfillmentPackageFedExDeliveryConfFedEx
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _signatureRequired = '_signatureRequired';
 }

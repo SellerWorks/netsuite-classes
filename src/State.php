@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * State
+ * State.
  */
-class State extends Record {
-	/**
-	 * @access public
-	 * @var Country
-	 */
-	public $country;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $fullName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $shortname;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
+class State extends Record
+{
+    /**
+     * @var Country
+     */
+    public $country;
+    /**
+     * @var string
+     */
+    public $fullName;
+    /**
+     * @var string
+     */
+    public $shortname;
+    /**
+     * @var string
+     */
+    public $internalId;
 
-	static $paramtypesmap = array(
-		"country" => "Country",
-		"fullName" => "string",
-		"shortname" => "string",
-		"internalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'country' => 'Country',
+        'fullName' => 'string',
+        'shortname' => 'string',
+        'internalId' => 'string',
+    ];
 }

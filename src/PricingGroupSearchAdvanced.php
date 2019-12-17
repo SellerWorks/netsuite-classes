@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PricingGroupSearchAdvanced
+ * PricingGroupSearchAdvanced.
  */
-class PricingGroupSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var PricingGroupSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var PricingGroupSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class PricingGroupSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var PricingGroupSearch
+     */
+    public $criteria;
+    /**
+     * @var PricingGroupSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "PricingGroupSearch",
-		"columns" => "PricingGroupSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'PricingGroupSearch',
+        'columns' => 'PricingGroupSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

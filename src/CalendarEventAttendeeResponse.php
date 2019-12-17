@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAttendeeResponse
+ * CalendarEventAttendeeResponse.
  */
-class CalendarEventAttendeeResponse {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _accepted = "_accepted";
-	/**
-	 * @var string
-	 */
-	const _declined = "_declined";
-	/**
-	 * @var string
-	 */
-	const _noResponse = "_noResponse";
-	/**
-	 * @var string
-	 */
-	const _tentative = "_tentative";
+class CalendarEventAttendeeResponse
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _accepted = '_accepted';
+    /**
+     * @var string
+     */
+    const _declined = '_declined';
+    /**
+     * @var string
+     */
+    const _noResponse = '_noResponse';
+    /**
+     * @var string
+     */
+    const _tentative = '_tentative';
 }

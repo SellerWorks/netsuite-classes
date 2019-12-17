@@ -11,124 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallSearchBasic
+ * PhoneCallSearchBasic.
  */
-class PhoneCallSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $assigned;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $company;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $completedDate;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $createdBy;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isPrivate;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $owner;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $phone;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $priority;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class PhoneCallSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $assigned;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $company;
+    /**
+     * @var SearchDateField
+     */
+    public $completedDate;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $contact;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $createdBy;
+    /**
+     * @var SearchDateField
+     */
+    public $createdDate;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isPrivate;
+    /**
+     * @var SearchDateField
+     */
+    public $lastModifiedDate;
+    /**
+     * @var SearchBooleanField
+     */
+    public $owner;
+    /**
+     * @var SearchStringField
+     */
+    public $phone;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $priority;
+    /**
+     * @var SearchDateField
+     */
+    public $startDate;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $status;
+    /**
+     * @var SearchStringField
+     */
+    public $title;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"assigned" => "SearchMultiSelectField",
-		"company" => "SearchMultiSelectField",
-		"completedDate" => "SearchDateField",
-		"contact" => "SearchMultiSelectField",
-		"createdBy" => "SearchMultiSelectField",
-		"createdDate" => "SearchDateField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isPrivate" => "SearchBooleanField",
-		"lastModifiedDate" => "SearchDateField",
-		"owner" => "SearchBooleanField",
-		"phone" => "SearchStringField",
-		"priority" => "SearchEnumMultiSelectField",
-		"startDate" => "SearchDateField",
-		"status" => "SearchEnumMultiSelectField",
-		"title" => "SearchStringField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'assigned' => 'SearchMultiSelectField',
+        'company' => 'SearchMultiSelectField',
+        'completedDate' => 'SearchDateField',
+        'contact' => 'SearchMultiSelectField',
+        'createdBy' => 'SearchMultiSelectField',
+        'createdDate' => 'SearchDateField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isPrivate' => 'SearchBooleanField',
+        'lastModifiedDate' => 'SearchDateField',
+        'owner' => 'SearchBooleanField',
+        'phone' => 'SearchStringField',
+        'priority' => 'SearchEnumMultiSelectField',
+        'startDate' => 'SearchDateField',
+        'status' => 'SearchEnumMultiSelectField',
+        'title' => 'SearchStringField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

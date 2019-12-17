@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumber
+ * InventoryNumber.
  */
-class InventoryNumber extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $inventoryNumber;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $units;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $expirationDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var InventoryNumberLocationsList
-	 */
-	public $locationsList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class InventoryNumber extends Record
+{
+    /**
+     * @var string
+     */
+    public $inventoryNumber;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var string
+     */
+    public $status;
+    /**
+     * @var string
+     */
+    public $units;
+    /**
+     * @var dateTime
+     */
+    public $expirationDate;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var InventoryNumberLocationsList
+     */
+    public $locationsList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"inventoryNumber" => "string",
-		"item" => "RecordRef",
-		"status" => "string",
-		"units" => "string",
-		"expirationDate" => "dateTime",
-		"memo" => "string",
-		"locationsList" => "InventoryNumberLocationsList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'inventoryNumber' => 'string',
+        'item' => 'RecordRef',
+        'status' => 'string',
+        'units' => 'string',
+        'expirationDate' => 'dateTime',
+        'memo' => 'string',
+        'locationsList' => 'InventoryNumberLocationsList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

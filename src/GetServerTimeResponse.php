@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetServerTimeResponse
+ * GetServerTimeResponse.
  */
-class GetServerTimeResponse {
-	/**
-	 * @access public
-	 * @var GetServerTimeResult
-	 */
-	public $getServerTimeResult;
+class GetServerTimeResponse
+{
+    /**
+     * @var GetServerTimeResult
+     */
+    public $getServerTimeResult;
 
-	static $paramtypesmap = array(
-		"getServerTimeResult" => "GetServerTimeResult",
-	);
+    public static $paramtypesmap = [
+        'getServerTimeResult' => 'GetServerTimeResult',
+    ];
 }

@@ -11,76 +11,66 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PostingTransactionSummary
+ * PostingTransactionSummary.
  */
-class PostingTransactionSummary {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $period;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parentItem;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $book;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
+class PostingTransactionSummary
+{
+    /**
+     * @var RecordRef
+     */
+    public $period;
+    /**
+     * @var RecordRef
+     */
+    public $account;
+    /**
+     * @var RecordRef
+     */
+    public $parentItem;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var RecordRef
+     */
+    public $entity;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var RecordRef
+     */
+    public $book;
+    /**
+     * @var float
+     */
+    public $amount;
 
-	static $paramtypesmap = array(
-		"period" => "RecordRef",
-		"account" => "RecordRef",
-		"parentItem" => "RecordRef",
-		"item" => "RecordRef",
-		"entity" => "RecordRef",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"subsidiary" => "RecordRef",
-		"book" => "RecordRef",
-		"amount" => "float",
-	);
+    public static $paramtypesmap = [
+        'period' => 'RecordRef',
+        'account' => 'RecordRef',
+        'parentItem' => 'RecordRef',
+        'item' => 'RecordRef',
+        'entity' => 'RecordRef',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'subsidiary' => 'RecordRef',
+        'book' => 'RecordRef',
+        'amount' => 'float',
+    ];
 }

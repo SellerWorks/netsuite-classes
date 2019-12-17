@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CheckLandedCostList
+ * CheckLandedCostList.
  */
-class CheckLandedCostList {
-	/**
-	 * @access public
-	 * @var LandedCostSummary[]
-	 */
-	public $landedCost;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CheckLandedCostList
+{
+    /**
+     * @var LandedCostSummary[]
+     */
+    public $landedCost;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"landedCost" => "LandedCostSummary[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'landedCost' => 'LandedCostSummary[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldRoleAccessList
+ * CustomFieldRoleAccessList.
  */
-class CustomFieldRoleAccessList {
-	/**
-	 * @access public
-	 * @var CustomFieldRoleAccess[]
-	 */
-	public $roleAccess;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomFieldRoleAccessList
+{
+    /**
+     * @var CustomFieldRoleAccess[]
+     */
+    public $roleAccess;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"roleAccess" => "CustomFieldRoleAccess[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'roleAccess' => 'CustomFieldRoleAccess[]',
+        'replaceAll' => 'boolean',
+    ];
 }

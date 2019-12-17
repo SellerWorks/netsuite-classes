@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventResourceList
+ * CalendarEventResourceList.
  */
-class CalendarEventResourceList {
-	/**
-	 * @access public
-	 * @var CalendarEventResource[]
-	 */
-	public $resource;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CalendarEventResourceList
+{
+    /**
+     * @var CalendarEventResource[]
+     */
+    public $resource;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"resource" => "CalendarEventResource[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'resource' => 'CalendarEventResource[]',
+        'replaceAll' => 'boolean',
+    ];
 }

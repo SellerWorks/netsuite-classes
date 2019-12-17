@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAtpMethod
+ * ItemAtpMethod.
  */
-class ItemAtpMethod {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _cumulativeAtpWithLookAhead = "_cumulativeAtpWithLookAhead";
-	/**
-	 * @var string
-	 */
-	const _discreteAtp = "_discreteAtp";
+class ItemAtpMethod
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _cumulativeAtpWithLookAhead = '_cumulativeAtpWithLookAhead';
+    /**
+     * @var string
+     */
+    const _discreteAtp = '_discreteAtp';
 }

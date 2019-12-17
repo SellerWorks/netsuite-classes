@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * OtherChargeSaleItemHierarchyVersionsList
  */
-class OtherChargeSaleItemHierarchyVersionsList {
-	/**
-	 * @access public
-	 * @var OtherChargeSaleItemHierarchyVersions[]
-	 */
-	public $otherChargeSaleItemHierarchyVersions;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class OtherChargeSaleItemHierarchyVersionsList
+{
+    /**
+     * @access public
+     * @var OtherChargeSaleItemHierarchyVersions[]
+     */
+    public $otherChargeSaleItemHierarchyVersions;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"otherChargeSaleItemHierarchyVersions" => "OtherChargeSaleItemHierarchyVersions[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "otherChargeSaleItemHierarchyVersions" => "OtherChargeSaleItemHierarchyVersions[]",
+        "replaceAll" => "boolean",
+    );
 }

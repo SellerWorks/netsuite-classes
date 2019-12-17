@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationBusinessHoursList
+ * LocationBusinessHoursList.
  */
-class LocationBusinessHoursList {
-	/**
-	 * @access public
-	 * @var LocationBusinessHours[]
-	 */
-	public $locationBusinessHours;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class LocationBusinessHoursList
+{
+    /**
+     * @var LocationBusinessHours[]
+     */
+    public $locationBusinessHours;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"locationBusinessHours" => "LocationBusinessHours[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'locationBusinessHours' => 'LocationBusinessHours[]',
+        'replaceAll' => 'boolean',
+    ];
 }

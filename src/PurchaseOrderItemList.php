@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PurchaseOrderItemList
+ * PurchaseOrderItemList.
  */
-class PurchaseOrderItemList {
-	/**
-	 * @access public
-	 * @var PurchaseOrderItem[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PurchaseOrderItemList
+{
+    /**
+     * @var PurchaseOrderItem[]
+     */
+    public $item;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"item" => "PurchaseOrderItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'item' => 'PurchaseOrderItem[]',
+        'replaceAll' => 'boolean',
+    ];
 }

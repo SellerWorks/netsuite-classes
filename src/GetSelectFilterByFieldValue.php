@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectFilterByFieldValue
+ * GetSelectFilterByFieldValue.
  */
-class GetSelectFilterByFieldValue {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $sublist;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $field;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
+class GetSelectFilterByFieldValue
+{
+    /**
+     * @var string
+     */
+    public $sublist;
+    /**
+     * @var string
+     */
+    public $field;
+    /**
+     * @var string
+     */
+    public $internalId;
 
-	static $paramtypesmap = array(
-		"sublist" => "string",
-		"field" => "string",
-		"internalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'sublist' => 'string',
+        'field' => 'string',
+        'internalId' => 'string',
+    ];
 }

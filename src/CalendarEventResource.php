@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventResource
+ * CalendarEventResource.
  */
-class CalendarEventResource {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $resource;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $location;
+class CalendarEventResource
+{
+    /**
+     * @var RecordRef
+     */
+    public $resource;
+    /**
+     * @var string
+     */
+    public $location;
 
-	static $paramtypesmap = array(
-		"resource" => "RecordRef",
-		"location" => "string",
-	);
+    public static $paramtypesmap = [
+        'resource' => 'RecordRef',
+        'location' => 'string',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AdvInterCompanyJournalEntryAccountingBookDetailList
+ * AdvInterCompanyJournalEntryAccountingBookDetailList.
  */
-class AdvInterCompanyJournalEntryAccountingBookDetailList {
-	/**
-	 * @access public
-	 * @var AdvInterCompanyJournalEntryAccountingBookDetail[]
-	 */
-	public $interCompanyJournalEntryAccountingBookDetail;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class AdvInterCompanyJournalEntryAccountingBookDetailList
+{
+    /**
+     * @var AdvInterCompanyJournalEntryAccountingBookDetail[]
+     */
+    public $interCompanyJournalEntryAccountingBookDetail;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"interCompanyJournalEntryAccountingBookDetail" => "AdvInterCompanyJournalEntryAccountingBookDetail[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'interCompanyJournalEntryAccountingBookDetail' => 'AdvInterCompanyJournalEntryAccountingBookDetail[]',
+        'replaceAll' => 'boolean',
+    ];
 }

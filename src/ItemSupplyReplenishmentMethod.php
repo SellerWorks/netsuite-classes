@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyReplenishmentMethod
+ * ItemSupplyReplenishmentMethod.
  */
-class ItemSupplyReplenishmentMethod {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _reorderPoint = "_reorderPoint";
-	/**
-	 * @var string
-	 */
-	const _timePhased = "_timePhased";
+class ItemSupplyReplenishmentMethod
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _reorderPoint = '_reorderPoint';
+    /**
+     * @var string
+     */
+    const _timePhased = '_timePhased';
 }

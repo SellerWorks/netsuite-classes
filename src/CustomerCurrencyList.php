@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerCurrencyList
+ * CustomerCurrencyList.
  */
-class CustomerCurrencyList {
-	/**
-	 * @access public
-	 * @var CustomerCurrency[]
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomerCurrencyList
+{
+    /**
+     * @var CustomerCurrency[]
+     */
+    public $currency;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"currency" => "CustomerCurrency[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'currency' => 'CustomerCurrency[]',
+        'replaceAll' => 'boolean',
+    ];
 }

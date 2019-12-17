@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomTransactionLineList
+ * CustomTransactionLineList.
  */
-class CustomTransactionLineList {
-	/**
-	 * @access public
-	 * @var CustomTransactionLine[]
-	 */
-	public $customTransactionLine;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomTransactionLineList
+{
+    /**
+     * @var CustomTransactionLine[]
+     */
+    public $customTransactionLine;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"customTransactionLine" => "CustomTransactionLine[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'customTransactionLine' => 'CustomTransactionLine[]',
+        'replaceAll' => 'boolean',
+    ];
 }

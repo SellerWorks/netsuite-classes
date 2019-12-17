@@ -11,178 +11,151 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCall
+ * PhoneCall.
  */
-class PhoneCall extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $message;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $company;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $supportCase;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $transaction;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $milestone;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $owner;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $assigned;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $sendEmail;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $timedEvent;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $completedDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $phone;
-	/**
-	 * @access public
-	 * @var PhoneCallStatus
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var PhoneCallPriority
-	 */
-	public $priority;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $accessLevel;
-	/**
-	 * @access public
-	 * @var PhoneCallReminderType
-	 */
-	public $reminderType;
-	/**
-	 * @access public
-	 * @var PhoneCallReminderMinutes
-	 */
-	public $reminderMinutes;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var PhoneCallContactList
-	 */
-	public $contactList;
-	/**
-	 * @access public
-	 * @var PhoneCallTimeItemList
-	 */
-	public $timeItemList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class PhoneCall extends Record
+{
+    /**
+     * @var string
+     */
+    public $message;
+    /**
+     * @var RecordRef
+     */
+    public $company;
+    /**
+     * @var RecordRef
+     */
+    public $contact;
+    /**
+     * @var RecordRef
+     */
+    public $supportCase;
+    /**
+     * @var RecordRef
+     */
+    public $transaction;
+    /**
+     * @var RecordRef
+     */
+    public $milestone;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var string
+     */
+    public $title;
+    /**
+     * @var RecordRef
+     */
+    public $owner;
+    /**
+     * @var RecordRef
+     */
+    public $assigned;
+    /**
+     * @var bool
+     */
+    public $sendEmail;
+    /**
+     * @var dateTime
+     */
+    public $startDate;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
+    /**
+     * @var bool
+     */
+    public $timedEvent;
+    /**
+     * @var dateTime
+     */
+    public $completedDate;
+    /**
+     * @var string
+     */
+    public $phone;
+    /**
+     * @var PhoneCallStatus
+     */
+    public $status;
+    /**
+     * @var PhoneCallPriority
+     */
+    public $priority;
+    /**
+     * @var bool
+     */
+    public $accessLevel;
+    /**
+     * @var PhoneCallReminderType
+     */
+    public $reminderType;
+    /**
+     * @var PhoneCallReminderMinutes
+     */
+    public $reminderMinutes;
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var PhoneCallContactList
+     */
+    public $contactList;
+    /**
+     * @var PhoneCallTimeItemList
+     */
+    public $timeItemList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"message" => "string",
-		"company" => "RecordRef",
-		"contact" => "RecordRef",
-		"supportCase" => "RecordRef",
-		"transaction" => "RecordRef",
-		"milestone" => "RecordRef",
-		"customForm" => "RecordRef",
-		"title" => "string",
-		"owner" => "RecordRef",
-		"assigned" => "RecordRef",
-		"sendEmail" => "boolean",
-		"startDate" => "dateTime",
-		"endDate" => "dateTime",
-		"timedEvent" => "boolean",
-		"completedDate" => "dateTime",
-		"phone" => "string",
-		"status" => "PhoneCallStatus",
-		"priority" => "PhoneCallPriority",
-		"accessLevel" => "boolean",
-		"reminderType" => "PhoneCallReminderType",
-		"reminderMinutes" => "PhoneCallReminderMinutes",
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"contactList" => "PhoneCallContactList",
-		"timeItemList" => "PhoneCallTimeItemList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'message' => 'string',
+        'company' => 'RecordRef',
+        'contact' => 'RecordRef',
+        'supportCase' => 'RecordRef',
+        'transaction' => 'RecordRef',
+        'milestone' => 'RecordRef',
+        'customForm' => 'RecordRef',
+        'title' => 'string',
+        'owner' => 'RecordRef',
+        'assigned' => 'RecordRef',
+        'sendEmail' => 'boolean',
+        'startDate' => 'dateTime',
+        'endDate' => 'dateTime',
+        'timedEvent' => 'boolean',
+        'completedDate' => 'dateTime',
+        'phone' => 'string',
+        'status' => 'PhoneCallStatus',
+        'priority' => 'PhoneCallPriority',
+        'accessLevel' => 'boolean',
+        'reminderType' => 'PhoneCallReminderType',
+        'reminderMinutes' => 'PhoneCallReminderMinutes',
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'contactList' => 'PhoneCallContactList',
+        'timeItemList' => 'PhoneCallTimeItemList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

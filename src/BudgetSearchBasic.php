@@ -11,112 +11,96 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetSearchBasic
+ * BudgetSearchBasic.
  */
-class BudgetSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $accountingBook;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $category;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $global;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $year;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $year2;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class BudgetSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $account;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $accountingBook;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $category;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $class;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $currency;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $customer;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $department;
+    /**
+     * @var SearchBooleanField
+     */
+    public $global;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $item;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $location;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $subsidiary;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $year;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $year2;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"account" => "SearchMultiSelectField",
-		"accountingBook" => "SearchMultiSelectField",
-		"amount" => "SearchDoubleField",
-		"category" => "SearchMultiSelectField",
-		"class" => "SearchMultiSelectField",
-		"currency" => "SearchMultiSelectField",
-		"customer" => "SearchMultiSelectField",
-		"department" => "SearchMultiSelectField",
-		"global" => "SearchBooleanField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"item" => "SearchMultiSelectField",
-		"location" => "SearchMultiSelectField",
-		"subsidiary" => "SearchMultiSelectField",
-		"year" => "SearchMultiSelectField",
-		"year2" => "SearchMultiSelectField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'account' => 'SearchMultiSelectField',
+        'accountingBook' => 'SearchMultiSelectField',
+        'amount' => 'SearchDoubleField',
+        'category' => 'SearchMultiSelectField',
+        'class' => 'SearchMultiSelectField',
+        'currency' => 'SearchMultiSelectField',
+        'customer' => 'SearchMultiSelectField',
+        'department' => 'SearchMultiSelectField',
+        'global' => 'SearchBooleanField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'item' => 'SearchMultiSelectField',
+        'location' => 'SearchMultiSelectField',
+        'subsidiary' => 'SearchMultiSelectField',
+        'year' => 'SearchMultiSelectField',
+        'year2' => 'SearchMultiSelectField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

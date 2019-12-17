@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecTemplateRecurrenceList
+ * RevRecTemplateRecurrenceList.
  */
-class RevRecTemplateRecurrenceList {
-	/**
-	 * @access public
-	 * @var RevRecTemplateRecurrence[]
-	 */
-	public $revRecTemplateRecurrence;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class RevRecTemplateRecurrenceList
+{
+    /**
+     * @var RevRecTemplateRecurrence[]
+     */
+    public $revRecTemplateRecurrence;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"revRecTemplateRecurrence" => "RevRecTemplateRecurrence[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'revRecTemplateRecurrence' => 'RevRecTemplateRecurrence[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencySymbolPlacement
+ * CurrencySymbolPlacement.
  */
-class CurrencySymbolPlacement {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _afterNumber = "_afterNumber";
-	/**
-	 * @var string
-	 */
-	const _beforeNumber = "_beforeNumber";
+class CurrencySymbolPlacement
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _afterNumber = '_afterNumber';
+    /**
+     * @var string
+     */
+    const _beforeNumber = '_beforeNumber';
 }

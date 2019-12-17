@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignEventList
+ * CampaignEventList.
  */
-class CampaignEventList {
-	/**
-	 * @access public
-	 * @var CampaignEvent[]
-	 */
-	public $campaignEvent;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CampaignEventList
+{
+    /**
+     * @var CampaignEvent[]
+     */
+    public $campaignEvent;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"campaignEvent" => "CampaignEvent[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'campaignEvent' => 'CampaignEvent[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchRowList
+ * SearchRowList.
  */
-class SearchRowList {
-	/**
-	 * @access public
-	 * @var SearchRow[]
-	 */
-	public $searchRow;
+class SearchRowList
+{
+    /**
+     * @var SearchRow[]
+     */
+    public $searchRow;
 
-	static $paramtypesmap = array(
-		"searchRow" => "SearchRow[]",
-	);
+    public static $paramtypesmap = [
+        'searchRow' => 'SearchRow[]',
+    ];
 }

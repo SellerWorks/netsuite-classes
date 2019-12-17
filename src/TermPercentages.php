@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TermPercentages
+ * TermPercentages.
  */
-class TermPercentages {
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $percentage;
+class TermPercentages
+{
+    /**
+     * @var float
+     */
+    public $percentage;
 
-	static $paramtypesmap = array(
-		"percentage" => "float",
-	);
+    public static $paramtypesmap = [
+        'percentage' => 'float',
+    ];
 }

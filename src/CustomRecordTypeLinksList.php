@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeLinksList
+ * CustomRecordTypeLinksList.
  */
-class CustomRecordTypeLinksList {
-	/**
-	 * @access public
-	 * @var CustomRecordTypeLinks[]
-	 */
-	public $links;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomRecordTypeLinksList
+{
+    /**
+     * @var CustomRecordTypeLinks[]
+     */
+    public $links;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"links" => "CustomRecordTypeLinks[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'links' => 'CustomRecordTypeLinks[]',
+        'replaceAll' => 'boolean',
+    ];
 }

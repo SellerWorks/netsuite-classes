@@ -11,112 +11,96 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomSearchBasic
+ * BomSearchBasic.
  */
-class BomSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $availableForAllAssemblies;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $availableForAllLocations;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $includeChildren;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $legacyBomForAssembly;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $restrictToAssemblies;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $restrictToLocations;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $useComponentYield;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $usedOnAssembly;
+class BomSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchBooleanField
+     */
+    public $availableForAllAssemblies;
+    /**
+     * @var SearchBooleanField
+     */
+    public $availableForAllLocations;
+    /**
+     * @var SearchDateField
+     */
+    public $createdDate;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchBooleanField
+     */
+    public $includeChildren;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isInactive;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $legacyBomForAssembly;
+    /**
+     * @var SearchStringField
+     */
+    public $memo;
+    /**
+     * @var SearchStringField
+     */
+    public $name;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $restrictToAssemblies;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $restrictToLocations;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $subsidiary;
+    /**
+     * @var SearchBooleanField
+     */
+    public $useComponentYield;
+    /**
+     * @var SearchBooleanField
+     */
+    public $usedOnAssembly;
 
-	static $paramtypesmap = array(
-		"availableForAllAssemblies" => "SearchBooleanField",
-		"availableForAllLocations" => "SearchBooleanField",
-		"createdDate" => "SearchDateField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"includeChildren" => "SearchBooleanField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isInactive" => "SearchBooleanField",
-		"legacyBomForAssembly" => "SearchMultiSelectField",
-		"memo" => "SearchStringField",
-		"name" => "SearchStringField",
-		"restrictToAssemblies" => "SearchMultiSelectField",
-		"restrictToLocations" => "SearchMultiSelectField",
-		"subsidiary" => "SearchMultiSelectField",
-		"useComponentYield" => "SearchBooleanField",
-		"usedOnAssembly" => "SearchBooleanField",
-	);
+    public static $paramtypesmap = [
+        'availableForAllAssemblies' => 'SearchBooleanField',
+        'availableForAllLocations' => 'SearchBooleanField',
+        'createdDate' => 'SearchDateField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'includeChildren' => 'SearchBooleanField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isInactive' => 'SearchBooleanField',
+        'legacyBomForAssembly' => 'SearchMultiSelectField',
+        'memo' => 'SearchStringField',
+        'name' => 'SearchStringField',
+        'restrictToAssemblies' => 'SearchMultiSelectField',
+        'restrictToLocations' => 'SearchMultiSelectField',
+        'subsidiary' => 'SearchMultiSelectField',
+        'useComponentYield' => 'SearchBooleanField',
+        'usedOnAssembly' => 'SearchBooleanField',
+    ];
 }

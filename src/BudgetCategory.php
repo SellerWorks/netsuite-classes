@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetCategory
+ * BudgetCategory.
  */
-class BudgetCategory extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $budgetType;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
+class BudgetCategory extends Record
+{
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var bool
+     */
+    public $budgetType;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var string
+     */
+    public $internalId;
 
-	static $paramtypesmap = array(
-		"name" => "string",
-		"budgetType" => "boolean",
-		"isInactive" => "boolean",
-		"internalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'name' => 'string',
+        'budgetType' => 'boolean',
+        'isInactive' => 'boolean',
+        'internalId' => 'string',
+    ];
 }

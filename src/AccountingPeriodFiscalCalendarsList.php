@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingPeriodFiscalCalendarsList
+ * AccountingPeriodFiscalCalendarsList.
  */
-class AccountingPeriodFiscalCalendarsList {
-	/**
-	 * @access public
-	 * @var AccountingPeriodFiscalCalendars[]
-	 */
-	public $accountingPeriodFiscalCalendars;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class AccountingPeriodFiscalCalendarsList
+{
+    /**
+     * @var AccountingPeriodFiscalCalendars[]
+     */
+    public $accountingPeriodFiscalCalendars;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"accountingPeriodFiscalCalendars" => "AccountingPeriodFiscalCalendars[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'accountingPeriodFiscalCalendars' => 'AccountingPeriodFiscalCalendars[]',
+        'replaceAll' => 'boolean',
+    ];
 }

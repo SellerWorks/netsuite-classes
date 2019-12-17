@@ -11,148 +11,126 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeEntry
+ * TimeEntry.
  */
-class TimeEntry extends Record {
-	/**
-	 * @access public
-	 * @var Duration
-	 */
-	public $hours;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $caseTaskEvent;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isBillable;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $payrollItem;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $paidExternally;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $price;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $rate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $overrideRate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $billingClass;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $approvalStatus;
-	/**
-	 * @access public
-	 * @var TimeBillTimeType
-	 */
-	public $timeType;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class TimeEntry extends Record
+{
+    /**
+     * @var Duration
+     */
+    public $hours;
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $customer;
+    /**
+     * @var RecordRef
+     */
+    public $caseTaskEvent;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var bool
+     */
+    public $isBillable;
+    /**
+     * @var RecordRef
+     */
+    public $payrollItem;
+    /**
+     * @var bool
+     */
+    public $paidExternally;
+    /**
+     * @var RecordRef
+     */
+    public $price;
+    /**
+     * @var float
+     */
+    public $rate;
+    /**
+     * @var bool
+     */
+    public $overrideRate;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var string
+     */
+    public $billingClass;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var RecordRef
+     */
+    public $approvalStatus;
+    /**
+     * @var TimeBillTimeType
+     */
+    public $timeType;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"hours" => "Duration",
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"customer" => "RecordRef",
-		"caseTaskEvent" => "RecordRef",
-		"item" => "RecordRef",
-		"isBillable" => "boolean",
-		"payrollItem" => "RecordRef",
-		"paidExternally" => "boolean",
-		"price" => "RecordRef",
-		"rate" => "float",
-		"overrideRate" => "boolean",
-		"memo" => "string",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"billingClass" => "string",
-		"subsidiary" => "RecordRef",
-		"approvalStatus" => "RecordRef",
-		"timeType" => "TimeBillTimeType",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'hours' => 'Duration',
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'customer' => 'RecordRef',
+        'caseTaskEvent' => 'RecordRef',
+        'item' => 'RecordRef',
+        'isBillable' => 'boolean',
+        'payrollItem' => 'RecordRef',
+        'paidExternally' => 'boolean',
+        'price' => 'RecordRef',
+        'rate' => 'float',
+        'overrideRate' => 'boolean',
+        'memo' => 'string',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'billingClass' => 'string',
+        'subsidiary' => 'RecordRef',
+        'approvalStatus' => 'RecordRef',
+        'timeType' => 'TimeBillTimeType',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

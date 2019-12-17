@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchColumnSelectField
+ * SearchColumnSelectField.
  */
-class SearchColumnSelectField extends SearchColumnField {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $searchValue;
+class SearchColumnSelectField extends SearchColumnField
+{
+    /**
+     * @var RecordRef
+     */
+    public $searchValue;
 
-	static $paramtypesmap = array(
-		"searchValue" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'searchValue' => 'RecordRef',
+    ];
 }

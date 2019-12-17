@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaskSearchAdvanced
+ * TaskSearchAdvanced.
  */
-class TaskSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var TaskSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var TaskSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class TaskSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var TaskSearch
+     */
+    public $criteria;
+    /**
+     * @var TaskSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "TaskSearch",
-		"columns" => "TaskSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'TaskSearch',
+        'columns' => 'TaskSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorSubsidiaryRelationshipSearch
+ * VendorSubsidiaryRelationshipSearch.
  */
-class VendorSubsidiaryRelationshipSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var VendorSubsidiaryRelationshipSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var SubsidiarySearchBasic
-	 */
-	public $subsidiaryJoin;
-	/**
-	 * @access public
-	 * @var VendorSearchBasic
-	 */
-	public $vendorJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class VendorSubsidiaryRelationshipSearch extends SearchRecord
+{
+    /**
+     * @var VendorSubsidiaryRelationshipSearchBasic
+     */
+    public $basic;
+    /**
+     * @var SubsidiarySearchBasic
+     */
+    public $subsidiaryJoin;
+    /**
+     * @var VendorSearchBasic
+     */
+    public $vendorJoin;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "VendorSubsidiaryRelationshipSearchBasic",
-		"subsidiaryJoin" => "SubsidiarySearchBasic",
-		"vendorJoin" => "VendorSearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'VendorSubsidiaryRelationshipSearchBasic',
+        'subsidiaryJoin' => 'SubsidiarySearchBasic',
+        'vendorJoin' => 'VendorSearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

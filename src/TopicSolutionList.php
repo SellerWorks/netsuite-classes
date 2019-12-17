@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TopicSolutionList
+ * TopicSolutionList.
  */
-class TopicSolutionList {
-	/**
-	 * @access public
-	 * @var TopicSolution[]
-	 */
-	public $solution;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class TopicSolutionList
+{
+    /**
+     * @var TopicSolution[]
+     */
+    public $solution;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"solution" => "TopicSolution[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'solution' => 'TopicSolution[]',
+        'replaceAll' => 'boolean',
+    ];
 }

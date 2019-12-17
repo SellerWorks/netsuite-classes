@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallContactList
+ * PhoneCallContactList.
  */
-class PhoneCallContactList {
-	/**
-	 * @access public
-	 * @var PhoneCallContact[]
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PhoneCallContactList
+{
+    /**
+     * @var PhoneCallContact[]
+     */
+    public $contact;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"contact" => "PhoneCallContact[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'contact' => 'PhoneCallContact[]',
+        'replaceAll' => 'boolean',
+    ];
 }

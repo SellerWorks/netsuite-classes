@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeEarning
+ * EmployeeEarning.
  */
-class EmployeeEarning {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $payrollItem;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $payRate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $primaryEarning;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $defaultHours;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $inactive;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $defaultEarning;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $effectiveDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $expirationDate;
+class EmployeeEarning
+{
+    /**
+     * @var RecordRef
+     */
+    public $payrollItem;
+    /**
+     * @var string
+     */
+    public $payRate;
+    /**
+     * @var bool
+     */
+    public $primaryEarning;
+    /**
+     * @var float
+     */
+    public $defaultHours;
+    /**
+     * @var bool
+     */
+    public $inactive;
+    /**
+     * @var bool
+     */
+    public $defaultEarning;
+    /**
+     * @var dateTime
+     */
+    public $effectiveDate;
+    /**
+     * @var dateTime
+     */
+    public $expirationDate;
 
-	static $paramtypesmap = array(
-		"payrollItem" => "RecordRef",
-		"payRate" => "string",
-		"primaryEarning" => "boolean",
-		"defaultHours" => "float",
-		"inactive" => "boolean",
-		"defaultEarning" => "boolean",
-		"effectiveDate" => "dateTime",
-		"expirationDate" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'payrollItem' => 'RecordRef',
+        'payRate' => 'string',
+        'primaryEarning' => 'boolean',
+        'defaultHours' => 'float',
+        'inactive' => 'boolean',
+        'defaultEarning' => 'boolean',
+        'effectiveDate' => 'dateTime',
+        'expirationDate' => 'dateTime',
+    ];
 }

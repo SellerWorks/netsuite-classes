@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAvailabilityList
+ * ItemAvailabilityList.
  */
-class ItemAvailabilityList {
-	/**
-	 * @access public
-	 * @var ItemAvailability[]
-	 */
-	public $itemAvailability;
+class ItemAvailabilityList
+{
+    /**
+     * @var ItemAvailability[]
+     */
+    public $itemAvailability;
 
-	static $paramtypesmap = array(
-		"itemAvailability" => "ItemAvailability[]",
-	);
+    public static $paramtypesmap = [
+        'itemAvailability' => 'ItemAvailability[]',
+    ];
 }

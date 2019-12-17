@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskPredecessor
+ * ProjectTaskPredecessor.
  */
-class ProjectTaskPredecessor {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $task;
-	/**
-	 * @access public
-	 * @var ProjectTaskPredecessorPredecessorType
-	 */
-	public $type;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $lagDays;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
+class ProjectTaskPredecessor
+{
+    /**
+     * @var RecordRef
+     */
+    public $task;
+    /**
+     * @var ProjectTaskPredecessorPredecessorType
+     */
+    public $type;
+    /**
+     * @var float
+     */
+    public $lagDays;
+    /**
+     * @var dateTime
+     */
+    public $startDate;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
 
-	static $paramtypesmap = array(
-		"task" => "RecordRef",
-		"type" => "ProjectTaskPredecessorPredecessorType",
-		"lagDays" => "float",
-		"startDate" => "dateTime",
-		"endDate" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'task' => 'RecordRef',
+        'type' => 'ProjectTaskPredecessorPredecessorType',
+        'lagDays' => 'float',
+        'startDate' => 'dateTime',
+        'endDate' => 'dateTime',
+    ];
 }

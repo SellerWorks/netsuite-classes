@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDeletedResponse
+ * GetDeletedResponse.
  */
-class GetDeletedResponse {
-	/**
-	 * @access public
-	 * @var GetDeletedResult
-	 */
-	public $getDeletedResult;
+class GetDeletedResponse
+{
+    /**
+     * @var GetDeletedResult
+     */
+    public $getDeletedResult;
 
-	static $paramtypesmap = array(
-		"getDeletedResult" => "GetDeletedResult",
-	);
+    public static $paramtypesmap = [
+        'getDeletedResult' => 'GetDeletedResult',
+    ];
 }

@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactCategorySearchRowBasic
+ * ContactCategorySearchRowBasic.
  */
-class ContactCategorySearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $private;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $sync;
+class ContactCategorySearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $private;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $sync;
 
-	static $paramtypesmap = array(
-		"externalId" => "SearchColumnSelectField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"name" => "SearchColumnStringField[]",
-		"private" => "SearchColumnBooleanField[]",
-		"sync" => "SearchColumnBooleanField[]",
-	);
+    public static $paramtypesmap = [
+        'externalId' => 'SearchColumnSelectField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'name' => 'SearchColumnStringField[]',
+        'private' => 'SearchColumnBooleanField[]',
+        'sync' => 'SearchColumnBooleanField[]',
+    ];
 }

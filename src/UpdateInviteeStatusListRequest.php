@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UpdateInviteeStatusListRequest
+ * UpdateInviteeStatusListRequest.
  */
-class UpdateInviteeStatusListRequest {
-	/**
-	 * @access public
-	 * @var UpdateInviteeStatusReference[]
-	 */
-	public $updateInviteeStatusReference;
+class UpdateInviteeStatusListRequest
+{
+    /**
+     * @var UpdateInviteeStatusReference[]
+     */
+    public $updateInviteeStatusReference;
 
-	static $paramtypesmap = array(
-		"updateInviteeStatusReference" => "UpdateInviteeStatusReference[]",
-	);
+    public static $paramtypesmap = [
+        'updateInviteeStatusReference' => 'UpdateInviteeStatusReference[]',
+    ];
 }

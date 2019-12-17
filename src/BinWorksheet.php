@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BinWorksheet
+ * BinWorksheet.
  */
-class BinWorksheet extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var BinWorksheetItemList
-	 */
-	public $itemList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class BinWorksheet extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var BinWorksheetItemList
+     */
+    public $itemList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"tranDate" => "dateTime",
-		"memo" => "string",
-		"location" => "RecordRef",
-		"tranId" => "string",
-		"itemList" => "BinWorksheetItemList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'tranDate' => 'dateTime',
+        'memo' => 'string',
+        'location' => 'RecordRef',
+        'tranId' => 'string',
+        'itemList' => 'BinWorksheetItemList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ConsolidatedExchangeRateSearchAdvanced
+ * ConsolidatedExchangeRateSearchAdvanced.
  */
-class ConsolidatedExchangeRateSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var ConsolidatedExchangeRateSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var ConsolidatedExchangeRateSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class ConsolidatedExchangeRateSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var ConsolidatedExchangeRateSearch
+     */
+    public $criteria;
+    /**
+     * @var ConsolidatedExchangeRateSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "ConsolidatedExchangeRateSearch",
-		"columns" => "ConsolidatedExchangeRateSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'ConsolidatedExchangeRateSearch',
+        'columns' => 'ConsolidatedExchangeRateSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentCardType
+ * PaymentCardType.
  */
-class PaymentCardType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _credit = "_credit";
-	/**
-	 * @var string
-	 */
-	const _debit = "_debit";
+class PaymentCardType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _credit = '_credit';
+    /**
+     * @var string
+     */
+    const _debit = '_debit';
 }

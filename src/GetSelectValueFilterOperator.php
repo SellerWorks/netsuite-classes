@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectValueFilterOperator
+ * GetSelectValueFilterOperator.
  */
-class GetSelectValueFilterOperator {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const contains = "contains";
-	/**
-	 * @var string
-	 */
-	const is = "is";
-	/**
-	 * @var string
-	 */
-	const startsWith = "startsWith";
+class GetSelectValueFilterOperator
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const contains = 'contains';
+    /**
+     * @var string
+     */
+    const is = 'is';
+    /**
+     * @var string
+     */
+    const startsWith = 'startsWith';
 }

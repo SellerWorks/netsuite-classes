@@ -11,100 +11,86 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleSearchRowBasic
+ * BillingScheduleSearchRowBasic.
  */
-class BillingScheduleSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $applyToSubtotal;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $frequency;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $inArrears;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $initialAmount;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $initialTerms;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isPublic;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $recurrenceCount;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $recurrencePattern;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $recurrenceTerms;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $repeatEvery;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $type;
+class BillingScheduleSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $applyToSubtotal;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $frequency;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $inArrears;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $initialAmount;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $initialTerms;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isPublic;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $recurrenceCount;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $recurrencePattern;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $recurrenceTerms;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $repeatEvery;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $type;
 
-	static $paramtypesmap = array(
-		"applyToSubtotal" => "SearchColumnBooleanField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"frequency" => "SearchColumnEnumSelectField[]",
-		"inArrears" => "SearchColumnBooleanField[]",
-		"initialAmount" => "SearchColumnStringField[]",
-		"initialTerms" => "SearchColumnStringField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"isPublic" => "SearchColumnBooleanField[]",
-		"name" => "SearchColumnStringField[]",
-		"recurrenceCount" => "SearchColumnLongField[]",
-		"recurrencePattern" => "SearchColumnEnumSelectField[]",
-		"recurrenceTerms" => "SearchColumnStringField[]",
-		"repeatEvery" => "SearchColumnLongField[]",
-		"type" => "SearchColumnEnumSelectField[]",
-	);
+    public static $paramtypesmap = [
+        'applyToSubtotal' => 'SearchColumnBooleanField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'frequency' => 'SearchColumnEnumSelectField[]',
+        'inArrears' => 'SearchColumnBooleanField[]',
+        'initialAmount' => 'SearchColumnStringField[]',
+        'initialTerms' => 'SearchColumnStringField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'isPublic' => 'SearchColumnBooleanField[]',
+        'name' => 'SearchColumnStringField[]',
+        'recurrenceCount' => 'SearchColumnLongField[]',
+        'recurrencePattern' => 'SearchColumnEnumSelectField[]',
+        'recurrenceTerms' => 'SearchColumnStringField[]',
+        'repeatEvery' => 'SearchColumnLongField[]',
+        'type' => 'SearchColumnEnumSelectField[]',
+    ];
 }

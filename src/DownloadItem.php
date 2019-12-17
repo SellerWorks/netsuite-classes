@@ -11,466 +11,391 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DownloadItem
+ * DownloadItem.
  */
-class DownloadItem extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $salesDescription;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $quantityPricingSchedule;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $deferredRevenueAccount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $onSpecial;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $itemId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $upcCode;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $displayName;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parent;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isOnline;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isGcoCompliant;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $offerSupport;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $availableToPartners;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $subsidiaryList;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $includeChildren;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $incomeAccount;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $numOfAllowedDownloads;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $daysBeforeExpiration;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $immediateDownload;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isTaxable;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $issueProduct;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxSchedule;
-	/**
-	 * @access public
-	 * @var ItemCostEstimateType
-	 */
-	public $costEstimateType;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $costEstimate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $billingSchedule;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isFulfillable;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $useMarginalRates;
-	/**
-	 * @access public
-	 * @var ItemOverallQuantityPricingType
-	 */
-	public $overallQuantityPricingType;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $pricingGroup;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revRecSchedule;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $vsoePrice;
-	/**
-	 * @access public
-	 * @var VsoeSopGroup
-	 */
-	public $vsoeSopGroup;
-	/**
-	 * @access public
-	 * @var VsoeDeferral
-	 */
-	public $vsoeDeferral;
-	/**
-	 * @access public
-	 * @var VsoePermitDiscount
-	 */
-	public $vsoePermitDiscount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $vsoeDelivered;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $itemRevenueCategory;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $deferRevRec;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revenueRecognitionRule;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revRecForecastRule;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $revenueAllocationGroup;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $createRevenuePlansOn;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $directRevenuePosting;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $storeDisplayName;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $storeDisplayThumbnail;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $storeDisplayImage;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $featuredDescription;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $storeDescription;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $storeDetailedDescription;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $storeItemTemplate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $pageTitle;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $metaTagHtml;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $excludeFromSitemap;
-	/**
-	 * @access public
-	 * @var SitemapPriority
-	 */
-	public $sitemapPriority;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $searchKeywords;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isDonationItem;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $showDefaultDonationAmount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $maxDonationAmount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $dontShowPrice;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $noPriceMessage;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $outOfStockMessage;
-	/**
-	 * @access public
-	 * @var ItemOutOfStockBehavior
-	 */
-	public $outOfStockBehavior;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $relatedItemsDescription;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $specialsDescription;
-	/**
-	 * @access public
-	 * @var PricingMatrix
-	 */
-	public $pricingMatrix;
-	/**
-	 * @access public
-	 * @var ItemAccountingBookDetailList
-	 */
-	public $accountingBookDetailList;
-	/**
-	 * @access public
-	 * @var SiteCategoryList
-	 */
-	public $siteCategoryList;
-	/**
-	 * @access public
-	 * @var PresentationItemList
-	 */
-	public $presentationItemList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class DownloadItem extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var string
+     */
+    public $salesDescription;
+    /**
+     * @var RecordRef
+     */
+    public $quantityPricingSchedule;
+    /**
+     * @var RecordRef
+     */
+    public $deferredRevenueAccount;
+    /**
+     * @var bool
+     */
+    public $onSpecial;
+    /**
+     * @var string
+     */
+    public $itemId;
+    /**
+     * @var string
+     */
+    public $upcCode;
+    /**
+     * @var string
+     */
+    public $displayName;
+    /**
+     * @var RecordRef
+     */
+    public $parent;
+    /**
+     * @var bool
+     */
+    public $isOnline;
+    /**
+     * @var bool
+     */
+    public $isGcoCompliant;
+    /**
+     * @var bool
+     */
+    public $offerSupport;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var bool
+     */
+    public $availableToPartners;
+    /**
+     * @var RecordRefList
+     */
+    public $subsidiaryList;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var bool
+     */
+    public $includeChildren;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $incomeAccount;
+    /**
+     * @var int
+     */
+    public $numOfAllowedDownloads;
+    /**
+     * @var int
+     */
+    public $daysBeforeExpiration;
+    /**
+     * @var bool
+     */
+    public $immediateDownload;
+    /**
+     * @var bool
+     */
+    public $isTaxable;
+    /**
+     * @var RecordRef
+     */
+    public $issueProduct;
+    /**
+     * @var RecordRef
+     */
+    public $taxSchedule;
+    /**
+     * @var ItemCostEstimateType
+     */
+    public $costEstimateType;
+    /**
+     * @var float
+     */
+    public $costEstimate;
+    /**
+     * @var RecordRef
+     */
+    public $billingSchedule;
+    /**
+     * @var bool
+     */
+    public $isFulfillable;
+    /**
+     * @var bool
+     */
+    public $useMarginalRates;
+    /**
+     * @var ItemOverallQuantityPricingType
+     */
+    public $overallQuantityPricingType;
+    /**
+     * @var RecordRef
+     */
+    public $pricingGroup;
+    /**
+     * @var RecordRef
+     */
+    public $revRecSchedule;
+    /**
+     * @var float
+     */
+    public $vsoePrice;
+    /**
+     * @var VsoeSopGroup
+     */
+    public $vsoeSopGroup;
+    /**
+     * @var VsoeDeferral
+     */
+    public $vsoeDeferral;
+    /**
+     * @var VsoePermitDiscount
+     */
+    public $vsoePermitDiscount;
+    /**
+     * @var bool
+     */
+    public $vsoeDelivered;
+    /**
+     * @var RecordRef
+     */
+    public $itemRevenueCategory;
+    /**
+     * @var bool
+     */
+    public $deferRevRec;
+    /**
+     * @var RecordRef
+     */
+    public $revenueRecognitionRule;
+    /**
+     * @var RecordRef
+     */
+    public $revRecForecastRule;
+    /**
+     * @var RecordRef
+     */
+    public $revenueAllocationGroup;
+    /**
+     * @var RecordRef
+     */
+    public $createRevenuePlansOn;
+    /**
+     * @var bool
+     */
+    public $directRevenuePosting;
+    /**
+     * @var string
+     */
+    public $storeDisplayName;
+    /**
+     * @var RecordRef
+     */
+    public $storeDisplayThumbnail;
+    /**
+     * @var RecordRef
+     */
+    public $storeDisplayImage;
+    /**
+     * @var string
+     */
+    public $featuredDescription;
+    /**
+     * @var string
+     */
+    public $storeDescription;
+    /**
+     * @var string
+     */
+    public $storeDetailedDescription;
+    /**
+     * @var RecordRef
+     */
+    public $storeItemTemplate;
+    /**
+     * @var string
+     */
+    public $pageTitle;
+    /**
+     * @var string
+     */
+    public $metaTagHtml;
+    /**
+     * @var bool
+     */
+    public $excludeFromSitemap;
+    /**
+     * @var SitemapPriority
+     */
+    public $sitemapPriority;
+    /**
+     * @var string
+     */
+    public $searchKeywords;
+    /**
+     * @var bool
+     */
+    public $isDonationItem;
+    /**
+     * @var bool
+     */
+    public $showDefaultDonationAmount;
+    /**
+     * @var float
+     */
+    public $maxDonationAmount;
+    /**
+     * @var bool
+     */
+    public $dontShowPrice;
+    /**
+     * @var string
+     */
+    public $noPriceMessage;
+    /**
+     * @var string
+     */
+    public $outOfStockMessage;
+    /**
+     * @var ItemOutOfStockBehavior
+     */
+    public $outOfStockBehavior;
+    /**
+     * @var string
+     */
+    public $relatedItemsDescription;
+    /**
+     * @var string
+     */
+    public $specialsDescription;
+    /**
+     * @var PricingMatrix
+     */
+    public $pricingMatrix;
+    /**
+     * @var ItemAccountingBookDetailList
+     */
+    public $accountingBookDetailList;
+    /**
+     * @var SiteCategoryList
+     */
+    public $siteCategoryList;
+    /**
+     * @var PresentationItemList
+     */
+    public $presentationItemList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"customForm" => "RecordRef",
-		"salesDescription" => "string",
-		"quantityPricingSchedule" => "RecordRef",
-		"deferredRevenueAccount" => "RecordRef",
-		"onSpecial" => "boolean",
-		"itemId" => "string",
-		"upcCode" => "string",
-		"displayName" => "string",
-		"parent" => "RecordRef",
-		"isOnline" => "boolean",
-		"isGcoCompliant" => "boolean",
-		"offerSupport" => "boolean",
-		"isInactive" => "boolean",
-		"availableToPartners" => "boolean",
-		"subsidiaryList" => "RecordRefList",
-		"department" => "RecordRef",
-		"includeChildren" => "boolean",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"incomeAccount" => "RecordRef",
-		"numOfAllowedDownloads" => "integer",
-		"daysBeforeExpiration" => "integer",
-		"immediateDownload" => "boolean",
-		"isTaxable" => "boolean",
-		"issueProduct" => "RecordRef",
-		"taxSchedule" => "RecordRef",
-		"costEstimateType" => "ItemCostEstimateType",
-		"costEstimate" => "float",
-		"billingSchedule" => "RecordRef",
-		"isFulfillable" => "boolean",
-		"useMarginalRates" => "boolean",
-		"overallQuantityPricingType" => "ItemOverallQuantityPricingType",
-		"pricingGroup" => "RecordRef",
-		"revRecSchedule" => "RecordRef",
-		"vsoePrice" => "float",
-		"vsoeSopGroup" => "VsoeSopGroup",
-		"vsoeDeferral" => "VsoeDeferral",
-		"vsoePermitDiscount" => "VsoePermitDiscount",
-		"vsoeDelivered" => "boolean",
-		"itemRevenueCategory" => "RecordRef",
-		"deferRevRec" => "boolean",
-		"revenueRecognitionRule" => "RecordRef",
-		"revRecForecastRule" => "RecordRef",
-		"revenueAllocationGroup" => "RecordRef",
-		"createRevenuePlansOn" => "RecordRef",
-		"directRevenuePosting" => "boolean",
-		"storeDisplayName" => "string",
-		"storeDisplayThumbnail" => "RecordRef",
-		"storeDisplayImage" => "RecordRef",
-		"featuredDescription" => "string",
-		"storeDescription" => "string",
-		"storeDetailedDescription" => "string",
-		"storeItemTemplate" => "RecordRef",
-		"pageTitle" => "string",
-		"metaTagHtml" => "string",
-		"excludeFromSitemap" => "boolean",
-		"sitemapPriority" => "SitemapPriority",
-		"searchKeywords" => "string",
-		"isDonationItem" => "boolean",
-		"showDefaultDonationAmount" => "boolean",
-		"maxDonationAmount" => "float",
-		"dontShowPrice" => "boolean",
-		"noPriceMessage" => "string",
-		"outOfStockMessage" => "string",
-		"outOfStockBehavior" => "ItemOutOfStockBehavior",
-		"relatedItemsDescription" => "string",
-		"specialsDescription" => "string",
-		"pricingMatrix" => "PricingMatrix",
-		"accountingBookDetailList" => "ItemAccountingBookDetailList",
-		"siteCategoryList" => "SiteCategoryList",
-		"presentationItemList" => "PresentationItemList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'customForm' => 'RecordRef',
+        'salesDescription' => 'string',
+        'quantityPricingSchedule' => 'RecordRef',
+        'deferredRevenueAccount' => 'RecordRef',
+        'onSpecial' => 'boolean',
+        'itemId' => 'string',
+        'upcCode' => 'string',
+        'displayName' => 'string',
+        'parent' => 'RecordRef',
+        'isOnline' => 'boolean',
+        'isGcoCompliant' => 'boolean',
+        'offerSupport' => 'boolean',
+        'isInactive' => 'boolean',
+        'availableToPartners' => 'boolean',
+        'subsidiaryList' => 'RecordRefList',
+        'department' => 'RecordRef',
+        'includeChildren' => 'boolean',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'incomeAccount' => 'RecordRef',
+        'numOfAllowedDownloads' => 'integer',
+        'daysBeforeExpiration' => 'integer',
+        'immediateDownload' => 'boolean',
+        'isTaxable' => 'boolean',
+        'issueProduct' => 'RecordRef',
+        'taxSchedule' => 'RecordRef',
+        'costEstimateType' => 'ItemCostEstimateType',
+        'costEstimate' => 'float',
+        'billingSchedule' => 'RecordRef',
+        'isFulfillable' => 'boolean',
+        'useMarginalRates' => 'boolean',
+        'overallQuantityPricingType' => 'ItemOverallQuantityPricingType',
+        'pricingGroup' => 'RecordRef',
+        'revRecSchedule' => 'RecordRef',
+        'vsoePrice' => 'float',
+        'vsoeSopGroup' => 'VsoeSopGroup',
+        'vsoeDeferral' => 'VsoeDeferral',
+        'vsoePermitDiscount' => 'VsoePermitDiscount',
+        'vsoeDelivered' => 'boolean',
+        'itemRevenueCategory' => 'RecordRef',
+        'deferRevRec' => 'boolean',
+        'revenueRecognitionRule' => 'RecordRef',
+        'revRecForecastRule' => 'RecordRef',
+        'revenueAllocationGroup' => 'RecordRef',
+        'createRevenuePlansOn' => 'RecordRef',
+        'directRevenuePosting' => 'boolean',
+        'storeDisplayName' => 'string',
+        'storeDisplayThumbnail' => 'RecordRef',
+        'storeDisplayImage' => 'RecordRef',
+        'featuredDescription' => 'string',
+        'storeDescription' => 'string',
+        'storeDetailedDescription' => 'string',
+        'storeItemTemplate' => 'RecordRef',
+        'pageTitle' => 'string',
+        'metaTagHtml' => 'string',
+        'excludeFromSitemap' => 'boolean',
+        'sitemapPriority' => 'SitemapPriority',
+        'searchKeywords' => 'string',
+        'isDonationItem' => 'boolean',
+        'showDefaultDonationAmount' => 'boolean',
+        'maxDonationAmount' => 'float',
+        'dontShowPrice' => 'boolean',
+        'noPriceMessage' => 'string',
+        'outOfStockMessage' => 'string',
+        'outOfStockBehavior' => 'ItemOutOfStockBehavior',
+        'relatedItemsDescription' => 'string',
+        'specialsDescription' => 'string',
+        'pricingMatrix' => 'PricingMatrix',
+        'accountingBookDetailList' => 'ItemAccountingBookDetailList',
+        'siteCategoryList' => 'SiteCategoryList',
+        'presentationItemList' => 'PresentationItemList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

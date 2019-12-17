@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignSubscription
+ * CampaignSubscription.
  */
-class CampaignSubscription extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $subscribedByDefault;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $unsubscribed;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalDescription;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class CampaignSubscription extends Record
+{
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var bool
+     */
+    public $subscribedByDefault;
+    /**
+     * @var bool
+     */
+    public $unsubscribed;
+    /**
+     * @var string
+     */
+    public $externalName;
+    /**
+     * @var string
+     */
+    public $externalDescription;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"name" => "string",
-		"description" => "string",
-		"subscribedByDefault" => "boolean",
-		"unsubscribed" => "boolean",
-		"externalName" => "string",
-		"externalDescription" => "string",
-		"isInactive" => "boolean",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'name' => 'string',
+        'description' => 'string',
+        'subscribedByDefault' => 'boolean',
+        'unsubscribed' => 'boolean',
+        'externalName' => 'string',
+        'externalDescription' => 'string',
+        'isInactive' => 'boolean',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

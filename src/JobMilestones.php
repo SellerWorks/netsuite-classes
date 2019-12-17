@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobMilestones
+ * JobMilestones.
  */
-class JobMilestones {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $milestoneName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $milestoneOrder;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $milestoneEstComplete;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $milestoneCompleted;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $milestoneComments;
+class JobMilestones
+{
+    /**
+     * @var string
+     */
+    public $milestoneName;
+    /**
+     * @var string
+     */
+    public $milestoneOrder;
+    /**
+     * @var dateTime
+     */
+    public $milestoneEstComplete;
+    /**
+     * @var bool
+     */
+    public $milestoneCompleted;
+    /**
+     * @var string
+     */
+    public $milestoneComments;
 
-	static $paramtypesmap = array(
-		"milestoneName" => "string",
-		"milestoneOrder" => "string",
-		"milestoneEstComplete" => "dateTime",
-		"milestoneCompleted" => "boolean",
-		"milestoneComments" => "string",
-	);
+    public static $paramtypesmap = [
+        'milestoneName' => 'string',
+        'milestoneOrder' => 'string',
+        'milestoneEstComplete' => 'dateTime',
+        'milestoneCompleted' => 'boolean',
+        'milestoneComments' => 'string',
+    ];
 }

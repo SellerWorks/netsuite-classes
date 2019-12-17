@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItemSearchAdvanced
+ * PayrollItemSearchAdvanced.
  */
-class PayrollItemSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var PayrollItemSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var PayrollItemSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class PayrollItemSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var PayrollItemSearch
+     */
+    public $criteria;
+    /**
+     * @var PayrollItemSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "PayrollItemSearch",
-		"columns" => "PayrollItemSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'PayrollItemSearch',
+        'columns' => 'PayrollItemSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

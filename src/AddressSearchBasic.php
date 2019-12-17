@@ -11,118 +11,101 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AddressSearchBasic
+ * AddressSearchBasic.
  */
-class AddressSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $address;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $address1;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $address2;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $address3;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $addressee;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $attention;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $city;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $country;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $countryCode;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $override;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $phone;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $state;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $zip;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class AddressSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchStringField
+     */
+    public $address;
+    /**
+     * @var SearchStringField
+     */
+    public $address1;
+    /**
+     * @var SearchStringField
+     */
+    public $address2;
+    /**
+     * @var SearchStringField
+     */
+    public $address3;
+    /**
+     * @var SearchStringField
+     */
+    public $addressee;
+    /**
+     * @var SearchStringField
+     */
+    public $attention;
+    /**
+     * @var SearchStringField
+     */
+    public $city;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $country;
+    /**
+     * @var SearchStringField
+     */
+    public $countryCode;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $override;
+    /**
+     * @var SearchStringField
+     */
+    public $phone;
+    /**
+     * @var SearchStringField
+     */
+    public $state;
+    /**
+     * @var SearchStringField
+     */
+    public $zip;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"address" => "SearchStringField",
-		"address1" => "SearchStringField",
-		"address2" => "SearchStringField",
-		"address3" => "SearchStringField",
-		"addressee" => "SearchStringField",
-		"attention" => "SearchStringField",
-		"city" => "SearchStringField",
-		"country" => "SearchEnumMultiSelectField",
-		"countryCode" => "SearchStringField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"override" => "SearchBooleanField",
-		"phone" => "SearchStringField",
-		"state" => "SearchStringField",
-		"zip" => "SearchStringField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'address' => 'SearchStringField',
+        'address1' => 'SearchStringField',
+        'address2' => 'SearchStringField',
+        'address3' => 'SearchStringField',
+        'addressee' => 'SearchStringField',
+        'attention' => 'SearchStringField',
+        'city' => 'SearchStringField',
+        'country' => 'SearchEnumMultiSelectField',
+        'countryCode' => 'SearchStringField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'override' => 'SearchBooleanField',
+        'phone' => 'SearchStringField',
+        'state' => 'SearchStringField',
+        'zip' => 'SearchStringField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

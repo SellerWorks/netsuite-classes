@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeLinks
+ * CustomRecordTypeLinks.
  */
-class CustomRecordTypeLinks {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $linkCenter;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $linkSection;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $linkLabel;
+class CustomRecordTypeLinks
+{
+    /**
+     * @var RecordRef
+     */
+    public $linkCenter;
+    /**
+     * @var RecordRef
+     */
+    public $linkSection;
+    /**
+     * @var string
+     */
+    public $linkLabel;
 
-	static $paramtypesmap = array(
-		"linkCenter" => "RecordRef",
-		"linkSection" => "RecordRef",
-		"linkLabel" => "string",
-	);
+    public static $paramtypesmap = [
+        'linkCenter' => 'RecordRef',
+        'linkSection' => 'RecordRef',
+        'linkLabel' => 'string',
+    ];
 }

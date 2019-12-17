@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemRevisionSearchRowBasic
+ * ItemRevisionSearchRowBasic.
  */
-class ItemRevisionSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $effectiveDate;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $obsoleteDate;
+class ItemRevisionSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $effectiveDate;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $item;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $memo;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $obsoleteDate;
 
-	static $paramtypesmap = array(
-		"effectiveDate" => "SearchColumnDateField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"item" => "SearchColumnSelectField[]",
-		"memo" => "SearchColumnStringField[]",
-		"name" => "SearchColumnStringField[]",
-		"obsoleteDate" => "SearchColumnDateField[]",
-	);
+    public static $paramtypesmap = [
+        'effectiveDate' => 'SearchColumnDateField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'item' => 'SearchColumnSelectField[]',
+        'memo' => 'SearchColumnStringField[]',
+        'name' => 'SearchColumnStringField[]',
+        'obsoleteDate' => 'SearchColumnDateField[]',
+    ];
 }

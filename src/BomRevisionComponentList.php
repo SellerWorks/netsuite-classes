@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomRevisionComponentList
+ * BomRevisionComponentList.
  */
-class BomRevisionComponentList {
-	/**
-	 * @access public
-	 * @var BomRevisionComponent[]
-	 */
-	public $bomRevisionComponent;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class BomRevisionComponentList
+{
+    /**
+     * @var BomRevisionComponent[]
+     */
+    public $bomRevisionComponent;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"bomRevisionComponent" => "BomRevisionComponent[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'bomRevisionComponent' => 'BomRevisionComponent[]',
+        'replaceAll' => 'boolean',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Pricing
+ * Pricing.
  */
-class Pricing {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $priceLevel;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $discount;
-	/**
-	 * @access public
-	 * @var PriceList
-	 */
-	public $priceList;
+class Pricing
+{
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var RecordRef
+     */
+    public $priceLevel;
+    /**
+     * @var float
+     */
+    public $discount;
+    /**
+     * @var PriceList
+     */
+    public $priceList;
 
-	static $paramtypesmap = array(
-		"currency" => "RecordRef",
-		"priceLevel" => "RecordRef",
-		"discount" => "float",
-		"priceList" => "PriceList",
-	);
+    public static $paramtypesmap = [
+        'currency' => 'RecordRef',
+        'priceLevel' => 'RecordRef',
+        'discount' => 'float',
+        'priceList' => 'PriceList',
+    ];
 }

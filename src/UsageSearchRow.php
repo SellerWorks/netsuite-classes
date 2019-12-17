@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UsageSearchRow
+ * UsageSearchRow.
  */
-class UsageSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var UsageSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var ChargeSearchRowBasic
-	 */
-	public $chargeJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchRowBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $subscriptionPlanJoin;
+class UsageSearchRow extends SearchRow
+{
+    /**
+     * @var UsageSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var ChargeSearchRowBasic
+     */
+    public $chargeJoin;
+    /**
+     * @var CustomerSearchRowBasic
+     */
+    public $customerJoin;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $itemJoin;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $subscriptionPlanJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "UsageSearchRowBasic",
-		"chargeJoin" => "ChargeSearchRowBasic",
-		"customerJoin" => "CustomerSearchRowBasic",
-		"itemJoin" => "ItemSearchRowBasic",
-		"subscriptionPlanJoin" => "ItemSearchRowBasic",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'UsageSearchRowBasic',
+        'chargeJoin' => 'ChargeSearchRowBasic',
+        'customerJoin' => 'CustomerSearchRowBasic',
+        'itemJoin' => 'ItemSearchRowBasic',
+        'subscriptionPlanJoin' => 'ItemSearchRowBasic',
+    ];
 }

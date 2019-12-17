@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxGroupSearch
+ * TaxGroupSearch.
  */
-class TaxGroupSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var TaxGroupSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $userJoin;
+class TaxGroupSearch extends SearchRecord
+{
+    /**
+     * @var TaxGroupSearchBasic
+     */
+    public $basic;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $userJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "TaxGroupSearchBasic",
-		"userJoin" => "EmployeeSearchBasic",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'TaxGroupSearchBasic',
+        'userJoin' => 'EmployeeSearchBasic',
+    ];
 }

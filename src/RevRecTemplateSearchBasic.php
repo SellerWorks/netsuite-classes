@@ -11,106 +11,91 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecTemplateSearchBasic
+ * RevRecTemplateSearchBasic.
  */
-class RevRecTemplateSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $amorMethod;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $amorPeriod;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $amorStartOffset;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $amorTermSrc;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $amorType;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $contraAccount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $deferralAccount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $periodOffset;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $targetAccount;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $useForeignAmounts;
+class RevRecTemplateSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $amorMethod;
+    /**
+     * @var SearchLongField
+     */
+    public $amorPeriod;
+    /**
+     * @var SearchLongField
+     */
+    public $amorStartOffset;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $amorTermSrc;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $amorType;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $contraAccount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $deferralAccount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isInactive;
+    /**
+     * @var SearchStringField
+     */
+    public $name;
+    /**
+     * @var SearchLongField
+     */
+    public $periodOffset;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $targetAccount;
+    /**
+     * @var SearchBooleanField
+     */
+    public $useForeignAmounts;
 
-	static $paramtypesmap = array(
-		"amorMethod" => "SearchEnumMultiSelectField",
-		"amorPeriod" => "SearchLongField",
-		"amorStartOffset" => "SearchLongField",
-		"amorTermSrc" => "SearchEnumMultiSelectField",
-		"amorType" => "SearchEnumMultiSelectField",
-		"contraAccount" => "SearchMultiSelectField",
-		"deferralAccount" => "SearchMultiSelectField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isInactive" => "SearchBooleanField",
-		"name" => "SearchStringField",
-		"periodOffset" => "SearchLongField",
-		"targetAccount" => "SearchMultiSelectField",
-		"useForeignAmounts" => "SearchBooleanField",
-	);
+    public static $paramtypesmap = [
+        'amorMethod' => 'SearchEnumMultiSelectField',
+        'amorPeriod' => 'SearchLongField',
+        'amorStartOffset' => 'SearchLongField',
+        'amorTermSrc' => 'SearchEnumMultiSelectField',
+        'amorType' => 'SearchEnumMultiSelectField',
+        'contraAccount' => 'SearchMultiSelectField',
+        'deferralAccount' => 'SearchMultiSelectField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isInactive' => 'SearchBooleanField',
+        'name' => 'SearchStringField',
+        'periodOffset' => 'SearchLongField',
+        'targetAccount' => 'SearchMultiSelectField',
+        'useForeignAmounts' => 'SearchBooleanField',
+    ];
 }

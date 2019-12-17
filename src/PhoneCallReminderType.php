@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallReminderType
+ * PhoneCallReminderType.
  */
-class PhoneCallReminderType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _eMail = "_eMail";
-	/**
-	 * @var string
-	 */
-	const _popupWindow = "_popupWindow";
+class PhoneCallReminderType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _eMail = '_eMail';
+    /**
+     * @var string
+     */
+    const _popupWindow = '_popupWindow';
 }

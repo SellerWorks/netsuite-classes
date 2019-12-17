@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheetSearch
+ * TimeSheetSearch.
  */
-class TimeSheetSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var TimeSheetSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $employeeJoin;
-	/**
-	 * @access public
-	 * @var TimeBillSearchBasic
-	 */
-	public $timeBillJoin;
-	/**
-	 * @access public
-	 * @var TimeEntrySearchBasic
-	 */
-	public $timeEntryJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class TimeSheetSearch extends SearchRecord
+{
+    /**
+     * @var TimeSheetSearchBasic
+     */
+    public $basic;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $employeeJoin;
+    /**
+     * @var TimeBillSearchBasic
+     */
+    public $timeBillJoin;
+    /**
+     * @var TimeEntrySearchBasic
+     */
+    public $timeEntryJoin;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "TimeSheetSearchBasic",
-		"employeeJoin" => "EmployeeSearchBasic",
-		"timeBillJoin" => "TimeBillSearchBasic",
-		"timeEntryJoin" => "TimeEntrySearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'TimeSheetSearchBasic',
+        'employeeJoin' => 'EmployeeSearchBasic',
+        'timeBillJoin' => 'TimeBillSearchBasic',
+        'timeEntryJoin' => 'TimeEntrySearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

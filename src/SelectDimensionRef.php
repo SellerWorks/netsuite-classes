@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SelectDimensionRef
+ * SelectDimensionRef.
  */
-class SelectDimensionRef extends DimensionRef {
-	/**
-	 * @access public
-	 * @var ListOrRecordRef
-	 */
-	public $value;
+class SelectDimensionRef extends DimensionRef
+{
+    /**
+     * @var ListOrRecordRef
+     */
+    public $value;
 
-	static $paramtypesmap = array(
-		"value" => "ListOrRecordRef",
-	);
+    public static $paramtypesmap = [
+        'value' => 'ListOrRecordRef',
+    ];
 }

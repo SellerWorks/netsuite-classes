@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * getSelectValueResponse
+ * getSelectValueResponse.
  */
-class getSelectValueResponse {
-	/**
-	 * @access public
-	 * @var GetSelectValueResult
-	 */
-	public $getSelectValueResult;
+class getSelectValueResponse
+{
+    /**
+     * @var GetSelectValueResult
+     */
+    public $getSelectValueResult;
 
-	static $paramtypesmap = array(
-		"getSelectValueResult" => "GetSelectValueResult",
-	);
+    public static $paramtypesmap = [
+        'getSelectValueResult' => 'GetSelectValueResult',
+    ];
 }

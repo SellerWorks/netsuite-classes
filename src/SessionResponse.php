@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SessionResponse
+ * SessionResponse.
  */
-class SessionResponse {
-	/**
-	 * @access public
-	 * @var Status
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $userId;
-	/**
-	 * @access public
-	 * @var WsRoleList
-	 */
-	public $wsRoleList;
+class SessionResponse
+{
+    /**
+     * @var Status
+     */
+    public $status;
+    /**
+     * @var RecordRef
+     */
+    public $userId;
+    /**
+     * @var WsRoleList
+     */
+    public $wsRoleList;
 
-	static $paramtypesmap = array(
-		"status" => "Status",
-		"userId" => "RecordRef",
-		"wsRoleList" => "WsRoleList",
-	);
+    public static $paramtypesmap = [
+        'status' => 'Status',
+        'userId' => 'RecordRef',
+        'wsRoleList' => 'WsRoleList',
+    ];
 }

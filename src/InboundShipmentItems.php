@@ -11,124 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentItems
+ * InboundShipmentItems.
  */
-class InboundShipmentItems {
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $id;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $purchaseOrder;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $shipmentItem;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $shipmentItemDescription;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $poVendor;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $receivingLocation;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityReceived;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityExpected;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityRemaining;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $unit;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $poRate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $expectedRate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $shipmentItemExchangeRate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $shipmentItemEffectiveDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $unitLandedCost;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $totalUnitCost;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $shipmentItemAmount;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $poCurrency;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $incoterm;
+class InboundShipmentItems
+{
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var RecordRef
+     */
+    public $purchaseOrder;
+    /**
+     * @var RecordRef
+     */
+    public $shipmentItem;
+    /**
+     * @var string
+     */
+    public $shipmentItemDescription;
+    /**
+     * @var string
+     */
+    public $poVendor;
+    /**
+     * @var RecordRef
+     */
+    public $receivingLocation;
+    /**
+     * @var float
+     */
+    public $quantityReceived;
+    /**
+     * @var float
+     */
+    public $quantityExpected;
+    /**
+     * @var float
+     */
+    public $quantityRemaining;
+    /**
+     * @var RecordRef
+     */
+    public $unit;
+    /**
+     * @var float
+     */
+    public $poRate;
+    /**
+     * @var float
+     */
+    public $expectedRate;
+    /**
+     * @var float
+     */
+    public $shipmentItemExchangeRate;
+    /**
+     * @var dateTime
+     */
+    public $shipmentItemEffectiveDate;
+    /**
+     * @var float
+     */
+    public $unitLandedCost;
+    /**
+     * @var float
+     */
+    public $totalUnitCost;
+    /**
+     * @var float
+     */
+    public $shipmentItemAmount;
+    /**
+     * @var RecordRef
+     */
+    public $poCurrency;
+    /**
+     * @var RecordRef
+     */
+    public $incoterm;
 
-	static $paramtypesmap = array(
-		"id" => "integer",
-		"purchaseOrder" => "RecordRef",
-		"shipmentItem" => "RecordRef",
-		"shipmentItemDescription" => "string",
-		"poVendor" => "string",
-		"receivingLocation" => "RecordRef",
-		"quantityReceived" => "float",
-		"quantityExpected" => "float",
-		"quantityRemaining" => "float",
-		"unit" => "RecordRef",
-		"poRate" => "float",
-		"expectedRate" => "float",
-		"shipmentItemExchangeRate" => "float",
-		"shipmentItemEffectiveDate" => "dateTime",
-		"unitLandedCost" => "float",
-		"totalUnitCost" => "float",
-		"shipmentItemAmount" => "float",
-		"poCurrency" => "RecordRef",
-		"incoterm" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'id' => 'integer',
+        'purchaseOrder' => 'RecordRef',
+        'shipmentItem' => 'RecordRef',
+        'shipmentItemDescription' => 'string',
+        'poVendor' => 'string',
+        'receivingLocation' => 'RecordRef',
+        'quantityReceived' => 'float',
+        'quantityExpected' => 'float',
+        'quantityRemaining' => 'float',
+        'unit' => 'RecordRef',
+        'poRate' => 'float',
+        'expectedRate' => 'float',
+        'shipmentItemExchangeRate' => 'float',
+        'shipmentItemEffectiveDate' => 'dateTime',
+        'unitLandedCost' => 'float',
+        'totalUnitCost' => 'float',
+        'shipmentItemAmount' => 'float',
+        'poCurrency' => 'RecordRef',
+        'incoterm' => 'RecordRef',
+    ];
 }

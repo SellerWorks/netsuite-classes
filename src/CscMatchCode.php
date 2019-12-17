@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CscMatchCode
+ * CscMatchCode.
  */
-class CscMatchCode {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _n = "_n";
-	/**
-	 * @var string
-	 */
-	const _x = "_x";
-	/**
-	 * @var string
-	 */
-	const _y = "_y";
+class CscMatchCode
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _n = '_n';
+    /**
+     * @var string
+     */
+    const _x = '_x';
+    /**
+     * @var string
+     */
+    const _y = '_y';
 }

@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomerDownloadList
  */
-class CustomerDownloadList {
-	/**
-	 * @access public
-	 * @var CustomerDownload[]
-	 */
-	public $download;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomerDownloadList
+{
+    /**
+     * @access public
+     * @var CustomerDownload[]
+     */
+    public $download;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"download" => "CustomerDownload[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "download" => "CustomerDownload[]",
+        "replaceAll" => "boolean",
+    );
 }

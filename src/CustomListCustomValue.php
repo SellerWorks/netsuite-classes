@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListCustomValue
+ * CustomListCustomValue.
  */
-class CustomListCustomValue {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $value;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $abbreviation;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $valueId;
-	/**
-	 * @access public
-	 * @var LanguageValueList
-	 */
-	public $valueLanguageValueList;
+class CustomListCustomValue
+{
+    /**
+     * @var string
+     */
+    public $value;
+    /**
+     * @var string
+     */
+    public $abbreviation;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var int
+     */
+    public $valueId;
+    /**
+     * @var LanguageValueList
+     */
+    public $valueLanguageValueList;
 
-	static $paramtypesmap = array(
-		"value" => "string",
-		"abbreviation" => "string",
-		"isInactive" => "boolean",
-		"valueId" => "integer",
-		"valueLanguageValueList" => "LanguageValueList",
-	);
+    public static $paramtypesmap = [
+        'value' => 'string',
+        'abbreviation' => 'string',
+        'isInactive' => 'boolean',
+        'valueId' => 'integer',
+        'valueLanguageValueList' => 'LanguageValueList',
+    ];
 }

@@ -11,52 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryDetailSearchBasic
+ * InventoryDetailSearchBasic.
  */
-class InventoryDetailSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $binNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $inventoryNumber;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantity;
+class InventoryDetailSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $binNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $inventoryNumber;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantity;
 
-	static $paramtypesmap = array(
-		"binNumber" => "SearchMultiSelectField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"inventoryNumber" => "SearchMultiSelectField",
-		"quantity" => "SearchDoubleField",
-	);
+    public static $paramtypesmap = [
+        'binNumber' => 'SearchMultiSelectField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'inventoryNumber' => 'SearchMultiSelectField',
+        'quantity' => 'SearchDoubleField',
+    ];
 }

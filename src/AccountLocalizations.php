@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountLocalizations
+ * AccountLocalizations.
  */
-class AccountLocalizations {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $accountingContext;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $acctNumber;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $acctName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $legalName;
-	/**
-	 * @access public
-	 * @var Language
-	 */
-	public $locale;
+class AccountLocalizations
+{
+    /**
+     * @var RecordRef
+     */
+    public $accountingContext;
+    /**
+     * @var string
+     */
+    public $acctNumber;
+    /**
+     * @var string
+     */
+    public $acctName;
+    /**
+     * @var string
+     */
+    public $legalName;
+    /**
+     * @var Language
+     */
+    public $locale;
 
-	static $paramtypesmap = array(
-		"accountingContext" => "RecordRef",
-		"acctNumber" => "string",
-		"acctName" => "string",
-		"legalName" => "string",
-		"locale" => "Language",
-	);
+    public static $paramtypesmap = [
+        'accountingContext' => 'RecordRef',
+        'acctNumber' => 'string',
+        'acctName' => 'string',
+        'legalName' => 'string',
+        'locale' => 'Language',
+    ];
 }

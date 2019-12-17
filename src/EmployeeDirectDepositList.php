@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeDirectDepositList
+ * EmployeeDirectDepositList.
  */
-class EmployeeDirectDepositList {
-	/**
-	 * @access public
-	 * @var EmployeeDirectDeposit[]
-	 */
-	public $employeeDirectDeposit;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class EmployeeDirectDepositList
+{
+    /**
+     * @var EmployeeDirectDeposit[]
+     */
+    public $employeeDirectDeposit;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"employeeDirectDeposit" => "EmployeeDirectDeposit[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'employeeDirectDeposit' => 'EmployeeDirectDeposit[]',
+        'replaceAll' => 'boolean',
+    ];
 }

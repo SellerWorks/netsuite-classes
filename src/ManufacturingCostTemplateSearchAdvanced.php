@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostTemplateSearchAdvanced
+ * ManufacturingCostTemplateSearchAdvanced.
  */
-class ManufacturingCostTemplateSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var ManufacturingCostTemplateSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var ManufacturingCostTemplateSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class ManufacturingCostTemplateSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var ManufacturingCostTemplateSearch
+     */
+    public $criteria;
+    /**
+     * @var ManufacturingCostTemplateSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "ManufacturingCostTemplateSearch",
-		"columns" => "ManufacturingCostTemplateSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'ManufacturingCostTemplateSearch',
+        'columns' => 'ManufacturingCostTemplateSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

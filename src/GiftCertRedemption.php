@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GiftCertRedemption
+ * GiftCertRedemption.
  */
-class GiftCertRedemption {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $authCode;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $authCodeApplied;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $authCodeAmtRemaining;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $giftCertAvailable;
+class GiftCertRedemption
+{
+    /**
+     * @var RecordRef
+     */
+    public $authCode;
+    /**
+     * @var float
+     */
+    public $authCodeApplied;
+    /**
+     * @var float
+     */
+    public $authCodeAmtRemaining;
+    /**
+     * @var float
+     */
+    public $giftCertAvailable;
 
-	static $paramtypesmap = array(
-		"authCode" => "RecordRef",
-		"authCodeApplied" => "float",
-		"authCodeAmtRemaining" => "float",
-		"giftCertAvailable" => "float",
-	);
+    public static $paramtypesmap = [
+        'authCode' => 'RecordRef',
+        'authCodeApplied' => 'float',
+        'authCodeAmtRemaining' => 'float',
+        'giftCertAvailable' => 'float',
+    ];
 }

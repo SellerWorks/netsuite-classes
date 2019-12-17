@@ -13,38 +13,39 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * PaycheckPayDeduct
  */
-class PaycheckPayDeduct {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $payItem;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $line;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $wageBase;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $manualEntry;
+class PaycheckPayDeduct
+{
+    /**
+     * @access public
+     * @var RecordRef
+     */
+    public $payItem;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $line;
+    /**
+     * @access public
+     * @var float
+     */
+    public $wageBase;
+    /**
+     * @access public
+     * @var float
+     */
+    public $amount;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $manualEntry;
 
-	static $paramtypesmap = array(
-		"payItem" => "RecordRef",
-		"line" => "integer",
-		"wageBase" => "float",
-		"amount" => "float",
-		"manualEntry" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "payItem" => "RecordRef",
+        "line" => "integer",
+        "wageBase" => "float",
+        "amount" => "float",
+        "manualEntry" => "boolean",
+    );
 }

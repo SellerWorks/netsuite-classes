@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FairValuePriceSearchRow
+ * FairValuePriceSearchRow.
  */
-class FairValuePriceSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var FairValuePriceSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var ItemSearchRowBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class FairValuePriceSearchRow extends SearchRow
+{
+    /**
+     * @var FairValuePriceSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var ItemSearchRowBasic
+     */
+    public $itemJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "FairValuePriceSearchRowBasic",
-		"itemJoin" => "ItemSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'FairValuePriceSearchRowBasic',
+        'itemJoin' => 'ItemSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

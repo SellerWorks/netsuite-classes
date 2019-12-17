@@ -13,74 +13,75 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * TaxDetails
  */
-class TaxDetails {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $taxDetailsReference;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $lineType;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $lineName;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $netAmount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $grossAmount;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxType;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxCode;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxBasis;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxRate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxAmount;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $calcDetail;
+class TaxDetails
+{
+    /**
+     * @access public
+     * @var string
+     */
+    public $taxDetailsReference;
+    /**
+     * @access public
+     * @var string
+     */
+    public $lineType;
+    /**
+     * @access public
+     * @var string
+     */
+    public $lineName;
+    /**
+     * @access public
+     * @var float
+     */
+    public $netAmount;
+    /**
+     * @access public
+     * @var float
+     */
+    public $grossAmount;
+    /**
+     * @access public
+     * @var RecordRef
+     */
+    public $taxType;
+    /**
+     * @access public
+     * @var RecordRef
+     */
+    public $taxCode;
+    /**
+     * @access public
+     * @var float
+     */
+    public $taxBasis;
+    /**
+     * @access public
+     * @var float
+     */
+    public $taxRate;
+    /**
+     * @access public
+     * @var float
+     */
+    public $taxAmount;
+    /**
+     * @access public
+     * @var string
+     */
+    public $calcDetail;
 
-	static $paramtypesmap = array(
-		"taxDetailsReference" => "string",
-		"lineType" => "string",
-		"lineName" => "string",
-		"netAmount" => "float",
-		"grossAmount" => "float",
-		"taxType" => "RecordRef",
-		"taxCode" => "RecordRef",
-		"taxBasis" => "float",
-		"taxRate" => "float",
-		"taxAmount" => "float",
-		"calcDetail" => "string",
-	);
+    public static $paramtypesmap = array(
+        "taxDetailsReference" => "string",
+        "lineType" => "string",
+        "lineName" => "string",
+        "netAmount" => "float",
+        "grossAmount" => "float",
+        "taxType" => "RecordRef",
+        "taxCode" => "RecordRef",
+        "taxBasis" => "float",
+        "taxRate" => "float",
+        "taxAmount" => "float",
+        "calcDetail" => "string",
+    );
 }

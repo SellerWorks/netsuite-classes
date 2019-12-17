@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchColumnLongField
+ * SearchColumnLongField.
  */
-class SearchColumnLongField extends SearchColumnField {
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $searchValue;
+class SearchColumnLongField extends SearchColumnField
+{
+    /**
+     * @var int
+     */
+    public $searchValue;
 
-	static $paramtypesmap = array(
-		"searchValue" => "integer",
-	);
+    public static $paramtypesmap = [
+        'searchValue' => 'integer',
+    ];
 }

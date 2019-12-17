@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchStringCustomField
+ * SearchStringCustomField.
  */
-class SearchStringCustomField extends SearchCustomField {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $searchValue;
-	/**
-	 * @access public
-	 * @var SearchStringFieldOperator
-	 */
-	public $operator;
+class SearchStringCustomField extends SearchCustomField
+{
+    /**
+     * @var string
+     */
+    public $searchValue;
+    /**
+     * @var SearchStringFieldOperator
+     */
+    public $operator;
 
-	static $paramtypesmap = array(
-		"searchValue" => "string",
-		"operator" => "SearchStringFieldOperator",
-	);
+    public static $paramtypesmap = [
+        'searchValue' => 'string',
+        'operator' => 'SearchStringFieldOperator',
+    ];
 }

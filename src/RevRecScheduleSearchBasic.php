@@ -11,184 +11,156 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleSearchBasic
+ * RevRecScheduleSearchBasic.
  */
-class RevRecScheduleSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $accountingBook;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $amorStatus;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amortizedAmount;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $amorType;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $deferredAmount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $destAcct;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $initialAmt;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isRecognized;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $jeDoc;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $pctComplete;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $pctRecognition;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $periodOffset;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $postPeriod;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $schedDate;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $scheduleNumber;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $scheduleNumberText;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $sourceAcct;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $srcTranPostPeriod;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $srcTranType;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $startOffset;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $templateName;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $useForeignAmounts;
+class RevRecScheduleSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $accountingBook;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $amorStatus;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amortizedAmount;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $amorType;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $currency;
+    /**
+     * @var SearchDoubleField
+     */
+    public $deferredAmount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $destAcct;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchDoubleField
+     */
+    public $initialAmt;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isRecognized;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $jeDoc;
+    /**
+     * @var SearchStringField
+     */
+    public $name;
+    /**
+     * @var SearchDoubleField
+     */
+    public $pctComplete;
+    /**
+     * @var SearchDoubleField
+     */
+    public $pctRecognition;
+    /**
+     * @var SearchLongField
+     */
+    public $periodOffset;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $postPeriod;
+    /**
+     * @var SearchDateField
+     */
+    public $schedDate;
+    /**
+     * @var SearchLongField
+     */
+    public $scheduleNumber;
+    /**
+     * @var SearchStringField
+     */
+    public $scheduleNumberText;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $sourceAcct;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $srcTranPostPeriod;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $srcTranType;
+    /**
+     * @var SearchLongField
+     */
+    public $startOffset;
+    /**
+     * @var SearchStringField
+     */
+    public $templateName;
+    /**
+     * @var SearchBooleanField
+     */
+    public $useForeignAmounts;
 
-	static $paramtypesmap = array(
-		"accountingBook" => "SearchMultiSelectField",
-		"amorStatus" => "SearchEnumMultiSelectField",
-		"amortizedAmount" => "SearchDoubleField",
-		"amorType" => "SearchEnumMultiSelectField",
-		"amount" => "SearchDoubleField",
-		"currency" => "SearchMultiSelectField",
-		"deferredAmount" => "SearchDoubleField",
-		"destAcct" => "SearchMultiSelectField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"initialAmt" => "SearchDoubleField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isRecognized" => "SearchBooleanField",
-		"jeDoc" => "SearchMultiSelectField",
-		"name" => "SearchStringField",
-		"pctComplete" => "SearchDoubleField",
-		"pctRecognition" => "SearchDoubleField",
-		"periodOffset" => "SearchLongField",
-		"postPeriod" => "SearchMultiSelectField",
-		"schedDate" => "SearchDateField",
-		"scheduleNumber" => "SearchLongField",
-		"scheduleNumberText" => "SearchStringField",
-		"sourceAcct" => "SearchMultiSelectField",
-		"srcTranPostPeriod" => "SearchMultiSelectField",
-		"srcTranType" => "SearchMultiSelectField",
-		"startOffset" => "SearchLongField",
-		"templateName" => "SearchStringField",
-		"useForeignAmounts" => "SearchBooleanField",
-	);
+    public static $paramtypesmap = [
+        'accountingBook' => 'SearchMultiSelectField',
+        'amorStatus' => 'SearchEnumMultiSelectField',
+        'amortizedAmount' => 'SearchDoubleField',
+        'amorType' => 'SearchEnumMultiSelectField',
+        'amount' => 'SearchDoubleField',
+        'currency' => 'SearchMultiSelectField',
+        'deferredAmount' => 'SearchDoubleField',
+        'destAcct' => 'SearchMultiSelectField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'initialAmt' => 'SearchDoubleField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isRecognized' => 'SearchBooleanField',
+        'jeDoc' => 'SearchMultiSelectField',
+        'name' => 'SearchStringField',
+        'pctComplete' => 'SearchDoubleField',
+        'pctRecognition' => 'SearchDoubleField',
+        'periodOffset' => 'SearchLongField',
+        'postPeriod' => 'SearchMultiSelectField',
+        'schedDate' => 'SearchDateField',
+        'scheduleNumber' => 'SearchLongField',
+        'scheduleNumberText' => 'SearchStringField',
+        'sourceAcct' => 'SearchMultiSelectField',
+        'srcTranPostPeriod' => 'SearchMultiSelectField',
+        'srcTranType' => 'SearchMultiSelectField',
+        'startOffset' => 'SearchLongField',
+        'templateName' => 'SearchStringField',
+        'useForeignAmounts' => 'SearchBooleanField',
+    ];
 }

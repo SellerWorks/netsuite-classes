@@ -11,76 +11,66 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GiftCertificate
+ * GiftCertificate.
  */
-class GiftCertificate extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $giftCertCode;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $sender;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $message;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $expirationDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $originalAmount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amountRemaining;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
+class GiftCertificate extends Record
+{
+    /**
+     * @var string
+     */
+    public $giftCertCode;
+    /**
+     * @var string
+     */
+    public $sender;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var string
+     */
+    public $email;
+    /**
+     * @var string
+     */
+    public $message;
+    /**
+     * @var dateTime
+     */
+    public $expirationDate;
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var float
+     */
+    public $originalAmount;
+    /**
+     * @var float
+     */
+    public $amountRemaining;
+    /**
+     * @var string
+     */
+    public $internalId;
 
-	static $paramtypesmap = array(
-		"giftCertCode" => "string",
-		"sender" => "string",
-		"name" => "string",
-		"email" => "string",
-		"message" => "string",
-		"expirationDate" => "dateTime",
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"originalAmount" => "float",
-		"amountRemaining" => "float",
-		"internalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'giftCertCode' => 'string',
+        'sender' => 'string',
+        'name' => 'string',
+        'email' => 'string',
+        'message' => 'string',
+        'expirationDate' => 'dateTime',
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'originalAmount' => 'float',
+        'amountRemaining' => 'float',
+        'internalId' => 'string',
+    ];
 }

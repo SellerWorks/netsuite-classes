@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetSearchAdvanced
+ * BudgetSearchAdvanced.
  */
-class BudgetSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var BudgetSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var BudgetSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class BudgetSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var BudgetSearch
+     */
+    public $criteria;
+    /**
+     * @var BudgetSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "BudgetSearch",
-		"columns" => "BudgetSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'BudgetSearch',
+        'columns' => 'BudgetSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerGroupPricing
+ * CustomerGroupPricing.
  */
-class CustomerGroupPricing {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $group;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $level;
+class CustomerGroupPricing
+{
+    /**
+     * @var RecordRef
+     */
+    public $group;
+    /**
+     * @var RecordRef
+     */
+    public $level;
 
-	static $paramtypesmap = array(
-		"group" => "RecordRef",
-		"level" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'group' => 'RecordRef',
+        'level' => 'RecordRef',
+    ];
 }

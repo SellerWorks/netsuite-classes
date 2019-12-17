@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WinLossReasonSearchAdvanced
+ * WinLossReasonSearchAdvanced.
  */
-class WinLossReasonSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var WinLossReasonSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var WinLossReasonSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class WinLossReasonSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var WinLossReasonSearch
+     */
+    public $criteria;
+    /**
+     * @var WinLossReasonSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "WinLossReasonSearch",
-		"columns" => "WinLossReasonSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'WinLossReasonSearch',
+        'columns' => 'WinLossReasonSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

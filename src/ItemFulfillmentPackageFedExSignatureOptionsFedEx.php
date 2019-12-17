@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageFedExSignatureOptionsFedEx
+ * ItemFulfillmentPackageFedExSignatureOptionsFedEx.
  */
-class ItemFulfillmentPackageFedExSignatureOptionsFedEx {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _adult = "_adult";
-	/**
-	 * @var string
-	 */
-	const _direct = "_direct";
-	/**
-	 * @var string
-	 */
-	const _indirect = "_indirect";
+class ItemFulfillmentPackageFedExSignatureOptionsFedEx
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _adult = '_adult';
+    /**
+     * @var string
+     */
+    const _direct = '_direct';
+    /**
+     * @var string
+     */
+    const _indirect = '_indirect';
 }

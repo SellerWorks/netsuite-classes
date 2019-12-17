@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChangeEmailRequest
+ * ChangeEmailRequest.
  */
-class ChangeEmailRequest {
-	/**
-	 * @access public
-	 * @var ChangeEmail
-	 */
-	public $changeEmail;
+class ChangeEmailRequest
+{
+    /**
+     * @var ChangeEmail
+     */
+    public $changeEmail;
 
-	static $paramtypesmap = array(
-		"changeEmail" => "ChangeEmail",
-	);
+    public static $paramtypesmap = [
+        'changeEmail' => 'ChangeEmail',
+    ];
 }

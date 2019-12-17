@@ -11,130 +11,111 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Note
+ * Note.
  */
-class Note extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $noteType;
-	/**
-	 * @access public
-	 * @var NoteDirection
-	 */
-	public $direction;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $noteDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $note;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $activity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $author;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $folder;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $media;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $record;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $recordType;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $topic;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $transaction;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class Note extends Record
+{
+    /**
+     * @var string
+     */
+    public $title;
+    /**
+     * @var RecordRef
+     */
+    public $noteType;
+    /**
+     * @var NoteDirection
+     */
+    public $direction;
+    /**
+     * @var dateTime
+     */
+    public $noteDate;
+    /**
+     * @var string
+     */
+    public $note;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $activity;
+    /**
+     * @var RecordRef
+     */
+    public $author;
+    /**
+     * @var RecordRef
+     */
+    public $entity;
+    /**
+     * @var RecordRef
+     */
+    public $folder;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var RecordRef
+     */
+    public $media;
+    /**
+     * @var RecordRef
+     */
+    public $record;
+    /**
+     * @var RecordRef
+     */
+    public $recordType;
+    /**
+     * @var RecordRef
+     */
+    public $topic;
+    /**
+     * @var RecordRef
+     */
+    public $transaction;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"title" => "string",
-		"noteType" => "RecordRef",
-		"direction" => "NoteDirection",
-		"noteDate" => "dateTime",
-		"note" => "string",
-		"lastModifiedDate" => "dateTime",
-		"activity" => "RecordRef",
-		"author" => "RecordRef",
-		"entity" => "RecordRef",
-		"folder" => "RecordRef",
-		"item" => "RecordRef",
-		"media" => "RecordRef",
-		"record" => "RecordRef",
-		"recordType" => "RecordRef",
-		"topic" => "RecordRef",
-		"transaction" => "RecordRef",
-		"customForm" => "RecordRef",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'title' => 'string',
+        'noteType' => 'RecordRef',
+        'direction' => 'NoteDirection',
+        'noteDate' => 'dateTime',
+        'note' => 'string',
+        'lastModifiedDate' => 'dateTime',
+        'activity' => 'RecordRef',
+        'author' => 'RecordRef',
+        'entity' => 'RecordRef',
+        'folder' => 'RecordRef',
+        'item' => 'RecordRef',
+        'media' => 'RecordRef',
+        'record' => 'RecordRef',
+        'recordType' => 'RecordRef',
+        'topic' => 'RecordRef',
+        'transaction' => 'RecordRef',
+        'customForm' => 'RecordRef',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

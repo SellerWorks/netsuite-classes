@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldSubAccessList
+ * CustomFieldSubAccessList.
  */
-class CustomFieldSubAccessList {
-	/**
-	 * @access public
-	 * @var CustomFieldSubAccess[]
-	 */
-	public $subAccess;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomFieldSubAccessList
+{
+    /**
+     * @var CustomFieldSubAccess[]
+     */
+    public $subAccess;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"subAccess" => "CustomFieldSubAccess[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'subAccess' => 'CustomFieldSubAccess[]',
+        'replaceAll' => 'boolean',
+    ];
 }

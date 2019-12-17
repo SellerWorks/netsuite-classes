@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPaySummary
+ * PaycheckPaySummary.
  */
-class PaycheckPaySummary {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $payItem;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $payItemType;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $ytdAmount;
+class PaycheckPaySummary
+{
+    /**
+     * @var string
+     */
+    public $payItem;
+    /**
+     * @var string
+     */
+    public $payItemType;
+    /**
+     * @var float
+     */
+    public $amount;
+    /**
+     * @var float
+     */
+    public $ytdAmount;
 
-	static $paramtypesmap = array(
-		"payItem" => "string",
-		"payItemType" => "string",
-		"amount" => "float",
-		"ytdAmount" => "float",
-	);
+    public static $paramtypesmap = [
+        'payItem' => 'string',
+        'payItemType' => 'string',
+        'amount' => 'float',
+        'ytdAmount' => 'float',
+    ];
 }

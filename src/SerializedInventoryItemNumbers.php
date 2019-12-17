@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SerializedInventoryItemNumbers
+ * SerializedInventoryItemNumbers.
  */
-class SerializedInventoryItemNumbers {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $serialNumber;
+class SerializedInventoryItemNumbers
+{
+    /**
+     * @var RecordRef
+     */
+    public $serialNumber;
 
-	static $paramtypesmap = array(
-		"serialNumber" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'serialNumber' => 'RecordRef',
+    ];
 }

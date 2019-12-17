@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationType
+ * CustomizationType.
  */
-class CustomizationType {
-	/**
-	 * @access public
-	 * @var GetCustomizationType
-	 */
-	public $getCustomizationType;
+class CustomizationType
+{
+    /**
+     * @var GetCustomizationType
+     */
+    public $getCustomizationType;
 
-	static $paramtypesmap = array(
-		"getCustomizationType" => "GetCustomizationType",
-	);
+    public static $paramtypesmap = [
+        'getCustomizationType' => 'GetCustomizationType',
+    ];
 }

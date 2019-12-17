@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Rate
+ * Rate.
  */
-class Rate {
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $value;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $priceLevel;
+class Rate
+{
+    /**
+     * @var float
+     */
+    public $value;
+    /**
+     * @var RecordRef
+     */
+    public $priceLevel;
 
-	static $paramtypesmap = array(
-		"value" => "float",
-		"priceLevel" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'value' => 'float',
+        'priceLevel' => 'RecordRef',
+    ];
 }

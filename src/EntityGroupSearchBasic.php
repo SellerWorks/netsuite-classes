@@ -11,118 +11,101 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityGroupSearchBasic
+ * EntityGroupSearchBasic.
  */
-class EntityGroupSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $groupName;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $groupOwner;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $groupType;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isDynamic;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isManufacturingWorkCenter;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isPrivate;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $laborResources;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $machineResources;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $workCalendar;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class EntityGroupSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchStringField
+     */
+    public $email;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchStringField
+     */
+    public $groupName;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $groupOwner;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $groupType;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isDynamic;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isInactive;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isManufacturingWorkCenter;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isPrivate;
+    /**
+     * @var SearchDoubleField
+     */
+    public $laborResources;
+    /**
+     * @var SearchDateField
+     */
+    public $lastModifiedDate;
+    /**
+     * @var SearchDoubleField
+     */
+    public $machineResources;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $subsidiary;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $workCalendar;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"email" => "SearchStringField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"groupName" => "SearchStringField",
-		"groupOwner" => "SearchMultiSelectField",
-		"groupType" => "SearchMultiSelectField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isDynamic" => "SearchBooleanField",
-		"isInactive" => "SearchBooleanField",
-		"isManufacturingWorkCenter" => "SearchBooleanField",
-		"isPrivate" => "SearchBooleanField",
-		"laborResources" => "SearchDoubleField",
-		"lastModifiedDate" => "SearchDateField",
-		"machineResources" => "SearchDoubleField",
-		"subsidiary" => "SearchMultiSelectField",
-		"workCalendar" => "SearchMultiSelectField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'email' => 'SearchStringField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'groupName' => 'SearchStringField',
+        'groupOwner' => 'SearchMultiSelectField',
+        'groupType' => 'SearchMultiSelectField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isDynamic' => 'SearchBooleanField',
+        'isInactive' => 'SearchBooleanField',
+        'isManufacturingWorkCenter' => 'SearchBooleanField',
+        'isPrivate' => 'SearchBooleanField',
+        'laborResources' => 'SearchDoubleField',
+        'lastModifiedDate' => 'SearchDateField',
+        'machineResources' => 'SearchDoubleField',
+        'subsidiary' => 'SearchMultiSelectField',
+        'workCalendar' => 'SearchMultiSelectField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ServiceItemTaskTemplatesList
+ * ServiceItemTaskTemplatesList.
  */
-class ServiceItemTaskTemplatesList {
-	/**
-	 * @access public
-	 * @var ServiceItemTaskTemplates[]
-	 */
-	public $taskTemplates;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class ServiceItemTaskTemplatesList
+{
+    /**
+     * @var ServiceItemTaskTemplates[]
+     */
+    public $taskTemplates;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"taskTemplates" => "ServiceItemTaskTemplates[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'taskTemplates' => 'ServiceItemTaskTemplates[]',
+        'replaceAll' => 'boolean',
+    ];
 }

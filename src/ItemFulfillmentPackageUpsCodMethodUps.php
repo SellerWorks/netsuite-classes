@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageUpsCodMethodUps
+ * ItemFulfillmentPackageUpsCodMethodUps.
  */
-class ItemFulfillmentPackageUpsCodMethodUps {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _cashiersCheckMoneyOrder = "_cashiersCheckMoneyOrder";
-	/**
-	 * @var string
-	 */
-	const _checkCashiersCheckMoneyOrder = "_checkCashiersCheckMoneyOrder";
+class ItemFulfillmentPackageUpsCodMethodUps
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _cashiersCheckMoneyOrder = '_cashiersCheckMoneyOrder';
+    /**
+     * @var string
+     */
+    const _checkCashiersCheckMoneyOrder = '_checkCashiersCheckMoneyOrder';
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DeletedRecord
+ * DeletedRecord.
  */
-class DeletedRecord {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $deletedDate;
-	/**
-	 * @access public
-	 * @var BaseRef
-	 */
-	public $record;
+class DeletedRecord
+{
+    /**
+     * @var dateTime
+     */
+    public $deletedDate;
+    /**
+     * @var BaseRef
+     */
+    public $record;
 
-	static $paramtypesmap = array(
-		"deletedDate" => "dateTime",
-		"record" => "BaseRef",
-	);
+    public static $paramtypesmap = [
+        'deletedDate' => 'dateTime',
+        'record' => 'BaseRef',
+    ];
 }

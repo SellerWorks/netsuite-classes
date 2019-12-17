@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChargeUse
+ * ChargeUse.
  */
-class ChargeUse {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _actual = "_actual";
-	/**
-	 * @var string
-	 */
-	const _forecast = "_forecast";
+class ChargeUse
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _actual = '_actual';
+    /**
+     * @var string
+     */
+    const _forecast = '_forecast';
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiaryTaxRegistrationList
+ * SubsidiaryTaxRegistrationList.
  */
-class SubsidiaryTaxRegistrationList {
-	/**
-	 * @access public
-	 * @var SubsidiaryTaxRegistration[]
-	 */
-	public $subsidiaryTaxRegistration;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class SubsidiaryTaxRegistrationList
+{
+    /**
+     * @var SubsidiaryTaxRegistration[]
+     */
+    public $subsidiaryTaxRegistration;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"subsidiaryTaxRegistration" => "SubsidiaryTaxRegistration[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'subsidiaryTaxRegistration' => 'SubsidiaryTaxRegistration[]',
+        'replaceAll' => 'boolean',
+    ];
 }

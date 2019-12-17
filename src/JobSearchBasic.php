@@ -11,520 +11,436 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobSearchBasic
+ * JobSearchBasic.
  */
-class JobSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $accountNumber;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $actualTime;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $address;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $addressee;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $addressLabel;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $addressPhone;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $allocatePayrollExpenses;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $allowAllResourcesForTasks;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $allowExpenses;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $allowTime;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $applyProjectExpenseTypeToAll;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $attention;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $billingSchedule;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $calculatedEndDate;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $calculatedEndDateBaseline;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $category;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $city;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $comments;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $country;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $county;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $dateCreated;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $defaultTaxReg;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $defaultTaxRegText;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $endDate;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $entityId;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estCost;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $estEndDate;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedGrossProfit;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedGrossProfitPercent;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedLaborCost;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedLaborCostBaseline;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedLaborRevenue;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedTime;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedTimeOverride;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estimatedTimeOverrideBaseline;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $estRevenue;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $fax;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $giveAccess;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $globalSubscriptionStatus;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $image;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $includeCrmTasksInTotals;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isDefaultBilling;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isDefaultShipping;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isExemptTime;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isProductiveTime;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isUtilizedTime;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $jobBillingType;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $jobItem;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $jobPrice;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $jobResource;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $jobResourceRole;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $language;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $lastBaselineDate;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $level;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $limitTimeToAssignees;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $materializeTime;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $parent;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $pctComplete;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $percentTimeComplete;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $permission;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $phone;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $phoneticName;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $projectedEndDateBaseline;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $projectExpenseType;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $revRecForecastRule;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $startDateBaseline;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $state;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $status;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $timeApproval;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $timeRemaining;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $type;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $usePercentCompleteOverride;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $zipCode;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class JobSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchStringField
+     */
+    public $accountNumber;
+    /**
+     * @var SearchDoubleField
+     */
+    public $actualTime;
+    /**
+     * @var SearchStringField
+     */
+    public $address;
+    /**
+     * @var SearchStringField
+     */
+    public $addressee;
+    /**
+     * @var SearchStringField
+     */
+    public $addressLabel;
+    /**
+     * @var SearchStringField
+     */
+    public $addressPhone;
+    /**
+     * @var SearchBooleanField
+     */
+    public $allocatePayrollExpenses;
+    /**
+     * @var SearchBooleanField
+     */
+    public $allowAllResourcesForTasks;
+    /**
+     * @var SearchBooleanField
+     */
+    public $allowExpenses;
+    /**
+     * @var SearchBooleanField
+     */
+    public $allowTime;
+    /**
+     * @var SearchBooleanField
+     */
+    public $applyProjectExpenseTypeToAll;
+    /**
+     * @var SearchStringField
+     */
+    public $attention;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $billingSchedule;
+    /**
+     * @var SearchDateField
+     */
+    public $calculatedEndDate;
+    /**
+     * @var SearchDateField
+     */
+    public $calculatedEndDateBaseline;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $category;
+    /**
+     * @var SearchStringField
+     */
+    public $city;
+    /**
+     * @var SearchStringField
+     */
+    public $comments;
+    /**
+     * @var SearchStringField
+     */
+    public $contact;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $country;
+    /**
+     * @var SearchStringField
+     */
+    public $county;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $customer;
+    /**
+     * @var SearchDateField
+     */
+    public $dateCreated;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $defaultTaxReg;
+    /**
+     * @var SearchStringField
+     */
+    public $defaultTaxRegText;
+    /**
+     * @var SearchStringField
+     */
+    public $email;
+    /**
+     * @var SearchDateField
+     */
+    public $endDate;
+    /**
+     * @var SearchStringField
+     */
+    public $entityId;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estCost;
+    /**
+     * @var SearchDateField
+     */
+    public $estEndDate;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedGrossProfit;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedGrossProfitPercent;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedLaborCost;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedLaborCostBaseline;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedLaborRevenue;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedTime;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedTimeOverride;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estimatedTimeOverrideBaseline;
+    /**
+     * @var SearchDoubleField
+     */
+    public $estRevenue;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchStringField
+     */
+    public $fax;
+    /**
+     * @var SearchBooleanField
+     */
+    public $giveAccess;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $globalSubscriptionStatus;
+    /**
+     * @var SearchStringField
+     */
+    public $image;
+    /**
+     * @var SearchBooleanField
+     */
+    public $includeCrmTasksInTotals;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isDefaultBilling;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isDefaultShipping;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isExemptTime;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isInactive;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isProductiveTime;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isUtilizedTime;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $jobBillingType;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $jobItem;
+    /**
+     * @var SearchDoubleField
+     */
+    public $jobPrice;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $jobResource;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $jobResourceRole;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $language;
+    /**
+     * @var SearchDateField
+     */
+    public $lastBaselineDate;
+    /**
+     * @var SearchDateField
+     */
+    public $lastModifiedDate;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $level;
+    /**
+     * @var SearchBooleanField
+     */
+    public $limitTimeToAssignees;
+    /**
+     * @var SearchBooleanField
+     */
+    public $materializeTime;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $parent;
+    /**
+     * @var SearchLongField
+     */
+    public $pctComplete;
+    /**
+     * @var SearchLongField
+     */
+    public $percentTimeComplete;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $permission;
+    /**
+     * @var SearchStringField
+     */
+    public $phone;
+    /**
+     * @var SearchStringField
+     */
+    public $phoneticName;
+    /**
+     * @var SearchDateField
+     */
+    public $projectedEndDateBaseline;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $projectExpenseType;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $revRecForecastRule;
+    /**
+     * @var SearchDateField
+     */
+    public $startDate;
+    /**
+     * @var SearchDateField
+     */
+    public $startDateBaseline;
+    /**
+     * @var SearchStringField
+     */
+    public $state;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $status;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $subsidiary;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $timeApproval;
+    /**
+     * @var SearchDoubleField
+     */
+    public $timeRemaining;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $type;
+    /**
+     * @var SearchBooleanField
+     */
+    public $usePercentCompleteOverride;
+    /**
+     * @var SearchStringField
+     */
+    public $zipCode;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"accountNumber" => "SearchStringField",
-		"actualTime" => "SearchDoubleField",
-		"address" => "SearchStringField",
-		"addressee" => "SearchStringField",
-		"addressLabel" => "SearchStringField",
-		"addressPhone" => "SearchStringField",
-		"allocatePayrollExpenses" => "SearchBooleanField",
-		"allowAllResourcesForTasks" => "SearchBooleanField",
-		"allowExpenses" => "SearchBooleanField",
-		"allowTime" => "SearchBooleanField",
-		"applyProjectExpenseTypeToAll" => "SearchBooleanField",
-		"attention" => "SearchStringField",
-		"billingSchedule" => "SearchMultiSelectField",
-		"calculatedEndDate" => "SearchDateField",
-		"calculatedEndDateBaseline" => "SearchDateField",
-		"category" => "SearchMultiSelectField",
-		"city" => "SearchStringField",
-		"comments" => "SearchStringField",
-		"contact" => "SearchStringField",
-		"country" => "SearchEnumMultiSelectField",
-		"county" => "SearchStringField",
-		"customer" => "SearchMultiSelectField",
-		"dateCreated" => "SearchDateField",
-		"defaultTaxReg" => "SearchMultiSelectField",
-		"defaultTaxRegText" => "SearchStringField",
-		"email" => "SearchStringField",
-		"endDate" => "SearchDateField",
-		"entityId" => "SearchStringField",
-		"estCost" => "SearchDoubleField",
-		"estEndDate" => "SearchDateField",
-		"estimatedGrossProfit" => "SearchDoubleField",
-		"estimatedGrossProfitPercent" => "SearchDoubleField",
-		"estimatedLaborCost" => "SearchDoubleField",
-		"estimatedLaborCostBaseline" => "SearchDoubleField",
-		"estimatedLaborRevenue" => "SearchDoubleField",
-		"estimatedTime" => "SearchDoubleField",
-		"estimatedTimeOverride" => "SearchDoubleField",
-		"estimatedTimeOverrideBaseline" => "SearchDoubleField",
-		"estRevenue" => "SearchDoubleField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"fax" => "SearchStringField",
-		"giveAccess" => "SearchBooleanField",
-		"globalSubscriptionStatus" => "SearchEnumMultiSelectField",
-		"image" => "SearchStringField",
-		"includeCrmTasksInTotals" => "SearchBooleanField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isDefaultBilling" => "SearchBooleanField",
-		"isDefaultShipping" => "SearchBooleanField",
-		"isExemptTime" => "SearchBooleanField",
-		"isInactive" => "SearchBooleanField",
-		"isProductiveTime" => "SearchBooleanField",
-		"isUtilizedTime" => "SearchBooleanField",
-		"jobBillingType" => "SearchEnumMultiSelectField",
-		"jobItem" => "SearchMultiSelectField",
-		"jobPrice" => "SearchDoubleField",
-		"jobResource" => "SearchMultiSelectField",
-		"jobResourceRole" => "SearchMultiSelectField",
-		"language" => "SearchEnumMultiSelectField",
-		"lastBaselineDate" => "SearchDateField",
-		"lastModifiedDate" => "SearchDateField",
-		"level" => "SearchEnumMultiSelectField",
-		"limitTimeToAssignees" => "SearchBooleanField",
-		"materializeTime" => "SearchBooleanField",
-		"parent" => "SearchMultiSelectField",
-		"pctComplete" => "SearchLongField",
-		"percentTimeComplete" => "SearchLongField",
-		"permission" => "SearchEnumMultiSelectField",
-		"phone" => "SearchStringField",
-		"phoneticName" => "SearchStringField",
-		"projectedEndDateBaseline" => "SearchDateField",
-		"projectExpenseType" => "SearchMultiSelectField",
-		"revRecForecastRule" => "SearchMultiSelectField",
-		"startDate" => "SearchDateField",
-		"startDateBaseline" => "SearchDateField",
-		"state" => "SearchStringField",
-		"status" => "SearchMultiSelectField",
-		"subsidiary" => "SearchMultiSelectField",
-		"timeApproval" => "SearchMultiSelectField",
-		"timeRemaining" => "SearchDoubleField",
-		"type" => "SearchMultiSelectField",
-		"usePercentCompleteOverride" => "SearchBooleanField",
-		"zipCode" => "SearchStringField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'accountNumber' => 'SearchStringField',
+        'actualTime' => 'SearchDoubleField',
+        'address' => 'SearchStringField',
+        'addressee' => 'SearchStringField',
+        'addressLabel' => 'SearchStringField',
+        'addressPhone' => 'SearchStringField',
+        'allocatePayrollExpenses' => 'SearchBooleanField',
+        'allowAllResourcesForTasks' => 'SearchBooleanField',
+        'allowExpenses' => 'SearchBooleanField',
+        'allowTime' => 'SearchBooleanField',
+        'applyProjectExpenseTypeToAll' => 'SearchBooleanField',
+        'attention' => 'SearchStringField',
+        'billingSchedule' => 'SearchMultiSelectField',
+        'calculatedEndDate' => 'SearchDateField',
+        'calculatedEndDateBaseline' => 'SearchDateField',
+        'category' => 'SearchMultiSelectField',
+        'city' => 'SearchStringField',
+        'comments' => 'SearchStringField',
+        'contact' => 'SearchStringField',
+        'country' => 'SearchEnumMultiSelectField',
+        'county' => 'SearchStringField',
+        'customer' => 'SearchMultiSelectField',
+        'dateCreated' => 'SearchDateField',
+        'defaultTaxReg' => 'SearchMultiSelectField',
+        'defaultTaxRegText' => 'SearchStringField',
+        'email' => 'SearchStringField',
+        'endDate' => 'SearchDateField',
+        'entityId' => 'SearchStringField',
+        'estCost' => 'SearchDoubleField',
+        'estEndDate' => 'SearchDateField',
+        'estimatedGrossProfit' => 'SearchDoubleField',
+        'estimatedGrossProfitPercent' => 'SearchDoubleField',
+        'estimatedLaborCost' => 'SearchDoubleField',
+        'estimatedLaborCostBaseline' => 'SearchDoubleField',
+        'estimatedLaborRevenue' => 'SearchDoubleField',
+        'estimatedTime' => 'SearchDoubleField',
+        'estimatedTimeOverride' => 'SearchDoubleField',
+        'estimatedTimeOverrideBaseline' => 'SearchDoubleField',
+        'estRevenue' => 'SearchDoubleField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'fax' => 'SearchStringField',
+        'giveAccess' => 'SearchBooleanField',
+        'globalSubscriptionStatus' => 'SearchEnumMultiSelectField',
+        'image' => 'SearchStringField',
+        'includeCrmTasksInTotals' => 'SearchBooleanField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isDefaultBilling' => 'SearchBooleanField',
+        'isDefaultShipping' => 'SearchBooleanField',
+        'isExemptTime' => 'SearchBooleanField',
+        'isInactive' => 'SearchBooleanField',
+        'isProductiveTime' => 'SearchBooleanField',
+        'isUtilizedTime' => 'SearchBooleanField',
+        'jobBillingType' => 'SearchEnumMultiSelectField',
+        'jobItem' => 'SearchMultiSelectField',
+        'jobPrice' => 'SearchDoubleField',
+        'jobResource' => 'SearchMultiSelectField',
+        'jobResourceRole' => 'SearchMultiSelectField',
+        'language' => 'SearchEnumMultiSelectField',
+        'lastBaselineDate' => 'SearchDateField',
+        'lastModifiedDate' => 'SearchDateField',
+        'level' => 'SearchEnumMultiSelectField',
+        'limitTimeToAssignees' => 'SearchBooleanField',
+        'materializeTime' => 'SearchBooleanField',
+        'parent' => 'SearchMultiSelectField',
+        'pctComplete' => 'SearchLongField',
+        'percentTimeComplete' => 'SearchLongField',
+        'permission' => 'SearchEnumMultiSelectField',
+        'phone' => 'SearchStringField',
+        'phoneticName' => 'SearchStringField',
+        'projectedEndDateBaseline' => 'SearchDateField',
+        'projectExpenseType' => 'SearchMultiSelectField',
+        'revRecForecastRule' => 'SearchMultiSelectField',
+        'startDate' => 'SearchDateField',
+        'startDateBaseline' => 'SearchDateField',
+        'state' => 'SearchStringField',
+        'status' => 'SearchMultiSelectField',
+        'subsidiary' => 'SearchMultiSelectField',
+        'timeApproval' => 'SearchMultiSelectField',
+        'timeRemaining' => 'SearchDoubleField',
+        'type' => 'SearchMultiSelectField',
+        'usePercentCompleteOverride' => 'SearchBooleanField',
+        'zipCode' => 'SearchStringField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

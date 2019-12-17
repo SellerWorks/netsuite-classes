@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * TaxGroupSearchRow
  */
-class TaxGroupSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var TaxGroupSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
+class TaxGroupSearchRow extends SearchRow
+{
+    /**
+     * @access public
+     * @var TaxGroupSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @access public
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "TaxGroupSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-	);
+    public static $paramtypesmap = array(
+        "basic" => "TaxGroupSearchRowBasic",
+        "userJoin" => "EmployeeSearchRowBasic",
+    );
 }

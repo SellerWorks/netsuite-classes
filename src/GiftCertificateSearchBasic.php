@@ -11,118 +11,101 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GiftCertificateSearchBasic
+ * GiftCertificateSearchBasic.
  */
-class GiftCertificateSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amountAvailableBilled;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amountRemaining;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $expirationDate;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $giftCertCode;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $incomeAccount;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isActive;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $liabilityAccount;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $message;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $originalAmount;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $purchaseDate;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $sender;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class GiftCertificateSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchDoubleField
+     */
+    public $amountAvailableBilled;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amountRemaining;
+    /**
+     * @var SearchDateField
+     */
+    public $createdDate;
+    /**
+     * @var SearchStringField
+     */
+    public $email;
+    /**
+     * @var SearchDateField
+     */
+    public $expirationDate;
+    /**
+     * @var SearchStringField
+     */
+    public $giftCertCode;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $incomeAccount;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isActive;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $item;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $liabilityAccount;
+    /**
+     * @var SearchStringField
+     */
+    public $message;
+    /**
+     * @var SearchStringField
+     */
+    public $name;
+    /**
+     * @var SearchDoubleField
+     */
+    public $originalAmount;
+    /**
+     * @var SearchDateField
+     */
+    public $purchaseDate;
+    /**
+     * @var SearchStringField
+     */
+    public $sender;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"amountAvailableBilled" => "SearchDoubleField",
-		"amountRemaining" => "SearchDoubleField",
-		"createdDate" => "SearchDateField",
-		"email" => "SearchStringField",
-		"expirationDate" => "SearchDateField",
-		"giftCertCode" => "SearchStringField",
-		"incomeAccount" => "SearchMultiSelectField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isActive" => "SearchBooleanField",
-		"item" => "SearchMultiSelectField",
-		"liabilityAccount" => "SearchMultiSelectField",
-		"message" => "SearchStringField",
-		"name" => "SearchStringField",
-		"originalAmount" => "SearchDoubleField",
-		"purchaseDate" => "SearchDateField",
-		"sender" => "SearchStringField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'amountAvailableBilled' => 'SearchDoubleField',
+        'amountRemaining' => 'SearchDoubleField',
+        'createdDate' => 'SearchDateField',
+        'email' => 'SearchStringField',
+        'expirationDate' => 'SearchDateField',
+        'giftCertCode' => 'SearchStringField',
+        'incomeAccount' => 'SearchMultiSelectField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isActive' => 'SearchBooleanField',
+        'item' => 'SearchMultiSelectField',
+        'liabilityAccount' => 'SearchMultiSelectField',
+        'message' => 'SearchStringField',
+        'name' => 'SearchStringField',
+        'originalAmount' => 'SearchDoubleField',
+        'purchaseDate' => 'SearchDateField',
+        'sender' => 'SearchStringField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

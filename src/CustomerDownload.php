@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerDownload
+ * CustomerDownload.
  */
-class CustomerDownload {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $file;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $licenseCode;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $remainingDownloads;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $expiration;
+class CustomerDownload
+{
+    /**
+     * @var RecordRef
+     */
+    public $file;
+    /**
+     * @var string
+     */
+    public $licenseCode;
+    /**
+     * @var int
+     */
+    public $remainingDownloads;
+    /**
+     * @var dateTime
+     */
+    public $expiration;
 
-	static $paramtypesmap = array(
-		"file" => "RecordRef",
-		"licenseCode" => "string",
-		"remainingDownloads" => "integer",
-		"expiration" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'file' => 'RecordRef',
+        'licenseCode' => 'string',
+        'remainingDownloads' => 'integer',
+        'expiration' => 'dateTime',
+    ];
 }

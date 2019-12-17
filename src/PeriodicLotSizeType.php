@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PeriodicLotSizeType
+ * PeriodicLotSizeType.
  */
-class PeriodicLotSizeType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _interval = "_interval";
-	/**
-	 * @var string
-	 */
-	const _monthly = "_monthly";
-	/**
-	 * @var string
-	 */
-	const _weekly = "_weekly";
+class PeriodicLotSizeType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _interval = '_interval';
+    /**
+     * @var string
+     */
+    const _monthly = '_monthly';
+    /**
+     * @var string
+     */
+    const _weekly = '_weekly';
 }

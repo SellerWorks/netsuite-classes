@@ -11,82 +11,71 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecSchedule
+ * RevRecSchedule.
  */
-class RevRecSchedule extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var RevRecScheduleAmortizationType
-	 */
-	public $amortizationType;
-	/**
-	 * @access public
-	 * @var RevRecScheduleRecurrenceType
-	 */
-	public $recurrenceType;
-	/**
-	 * @access public
-	 * @var RevRecScheduleRecogIntervalSrc
-	 */
-	public $recogIntervalSrc;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $amortizationPeriod;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $periodOffset;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $revRecOffset;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $initialAmount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var RevRecScheduleRecurrenceList
-	 */
-	public $recurrenceList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class RevRecSchedule extends Record
+{
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var RevRecScheduleAmortizationType
+     */
+    public $amortizationType;
+    /**
+     * @var RevRecScheduleRecurrenceType
+     */
+    public $recurrenceType;
+    /**
+     * @var RevRecScheduleRecogIntervalSrc
+     */
+    public $recogIntervalSrc;
+    /**
+     * @var int
+     */
+    public $amortizationPeriod;
+    /**
+     * @var int
+     */
+    public $periodOffset;
+    /**
+     * @var int
+     */
+    public $revRecOffset;
+    /**
+     * @var float
+     */
+    public $initialAmount;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var RevRecScheduleRecurrenceList
+     */
+    public $recurrenceList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"name" => "string",
-		"amortizationType" => "RevRecScheduleAmortizationType",
-		"recurrenceType" => "RevRecScheduleRecurrenceType",
-		"recogIntervalSrc" => "RevRecScheduleRecogIntervalSrc",
-		"amortizationPeriod" => "integer",
-		"periodOffset" => "integer",
-		"revRecOffset" => "integer",
-		"initialAmount" => "float",
-		"isInactive" => "boolean",
-		"recurrenceList" => "RevRecScheduleRecurrenceList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'name' => 'string',
+        'amortizationType' => 'RevRecScheduleAmortizationType',
+        'recurrenceType' => 'RevRecScheduleRecurrenceType',
+        'recogIntervalSrc' => 'RevRecScheduleRecogIntervalSrc',
+        'amortizationPeriod' => 'integer',
+        'periodOffset' => 'integer',
+        'revRecOffset' => 'integer',
+        'initialAmount' => 'float',
+        'isInactive' => 'boolean',
+        'recurrenceList' => 'RevRecScheduleRecurrenceList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InitializeAuxRefType
+ * InitializeAuxRefType.
  */
-class InitializeAuxRefType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const shippingGroup = "shippingGroup";
-	/**
-	 * @var string
-	 */
-	const arAccount = "arAccount";
-	/**
-	 * @var string
-	 */
-	const apAccount = "apAccount";
-	/**
-	 * @var string
-	 */
-	const itemFulfillment = "itemFulfillment";
-	/**
-	 * @var string
-	 */
-	const tranType = "tranType";
+class InitializeAuxRefType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const shippingGroup = 'shippingGroup';
+    /**
+     * @var string
+     */
+    const arAccount = 'arAccount';
+    /**
+     * @var string
+     */
+    const apAccount = 'apAccount';
+    /**
+     * @var string
+     */
+    const itemFulfillment = 'itemFulfillment';
+    /**
+     * @var string
+     */
+    const tranType = 'tranType';
 }

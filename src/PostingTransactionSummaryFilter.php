@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PostingTransactionSummaryFilter
+ * PostingTransactionSummaryFilter.
  */
-class PostingTransactionSummaryFilter {
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $period;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $parentItem;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $book;
+class PostingTransactionSummaryFilter
+{
+    /**
+     * @var RecordRefList
+     */
+    public $period;
+    /**
+     * @var RecordRefList
+     */
+    public $account;
+    /**
+     * @var RecordRefList
+     */
+    public $parentItem;
+    /**
+     * @var RecordRefList
+     */
+    public $item;
+    /**
+     * @var RecordRefList
+     */
+    public $entity;
+    /**
+     * @var RecordRefList
+     */
+    public $department;
+    /**
+     * @var RecordRefList
+     */
+    public $class;
+    /**
+     * @var RecordRefList
+     */
+    public $location;
+    /**
+     * @var RecordRefList
+     */
+    public $subsidiary;
+    /**
+     * @var RecordRefList
+     */
+    public $book;
 
-	static $paramtypesmap = array(
-		"period" => "RecordRefList",
-		"account" => "RecordRefList",
-		"parentItem" => "RecordRefList",
-		"item" => "RecordRefList",
-		"entity" => "RecordRefList",
-		"department" => "RecordRefList",
-		"class" => "RecordRefList",
-		"location" => "RecordRefList",
-		"subsidiary" => "RecordRefList",
-		"book" => "RecordRefList",
-	);
+    public static $paramtypesmap = [
+        'period' => 'RecordRefList',
+        'account' => 'RecordRefList',
+        'parentItem' => 'RecordRefList',
+        'item' => 'RecordRefList',
+        'entity' => 'RecordRefList',
+        'department' => 'RecordRefList',
+        'class' => 'RecordRefList',
+        'location' => 'RecordRefList',
+        'subsidiary' => 'RecordRefList',
+        'book' => 'RecordRefList',
+    ];
 }

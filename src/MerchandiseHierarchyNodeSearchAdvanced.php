@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNodeSearchAdvanced
+ * MerchandiseHierarchyNodeSearchAdvanced.
  */
-class MerchandiseHierarchyNodeSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var MerchandiseHierarchyNodeSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var MerchandiseHierarchyNodeSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class MerchandiseHierarchyNodeSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var MerchandiseHierarchyNodeSearch
+     */
+    public $criteria;
+    /**
+     * @var MerchandiseHierarchyNodeSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "MerchandiseHierarchyNodeSearch",
-		"columns" => "MerchandiseHierarchyNodeSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'MerchandiseHierarchyNodeSearch',
+        'columns' => 'MerchandiseHierarchyNodeSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

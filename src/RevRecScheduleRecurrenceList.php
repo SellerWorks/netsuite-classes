@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleRecurrenceList
+ * RevRecScheduleRecurrenceList.
  */
-class RevRecScheduleRecurrenceList {
-	/**
-	 * @access public
-	 * @var RevRecScheduleRecurrence[]
-	 */
-	public $revRecScheduleRecurrence;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class RevRecScheduleRecurrenceList
+{
+    /**
+     * @var RevRecScheduleRecurrence[]
+     */
+    public $revRecScheduleRecurrence;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"revRecScheduleRecurrence" => "RevRecScheduleRecurrence[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'revRecScheduleRecurrence' => 'RevRecScheduleRecurrence[]',
+        'replaceAll' => 'boolean',
+    ];
 }

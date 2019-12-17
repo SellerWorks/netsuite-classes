@@ -11,52 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemNumberCustomFieldFilter
+ * ItemNumberCustomFieldFilter.
  */
-class ItemNumberCustomFieldFilter {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $fldFilter;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $fldFilterChecked;
-	/**
-	 * @access public
-	 * @var CustomizationFilterCompareType
-	 */
-	public $fldFilterCompareType;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $fldFilterVal;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $fldFilterNotNull;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $fldfilterNull;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $fldCompareField;
+class ItemNumberCustomFieldFilter
+{
+    /**
+     * @var RecordRef
+     */
+    public $fldFilter;
+    /**
+     * @var bool
+     */
+    public $fldFilterChecked;
+    /**
+     * @var CustomizationFilterCompareType
+     */
+    public $fldFilterCompareType;
+    /**
+     * @var string
+     */
+    public $fldFilterVal;
+    /**
+     * @var bool
+     */
+    public $fldFilterNotNull;
+    /**
+     * @var bool
+     */
+    public $fldfilterNull;
+    /**
+     * @var RecordRef
+     */
+    public $fldCompareField;
 
-	static $paramtypesmap = array(
-		"fldFilter" => "RecordRef",
-		"fldFilterChecked" => "boolean",
-		"fldFilterCompareType" => "CustomizationFilterCompareType",
-		"fldFilterVal" => "string",
-		"fldFilterNotNull" => "boolean",
-		"fldfilterNull" => "boolean",
-		"fldCompareField" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'fldFilter' => 'RecordRef',
+        'fldFilterChecked' => 'boolean',
+        'fldFilterCompareType' => 'CustomizationFilterCompareType',
+        'fldFilterVal' => 'string',
+        'fldFilterNotNull' => 'boolean',
+        'fldfilterNull' => 'boolean',
+        'fldCompareField' => 'RecordRef',
+    ];
 }

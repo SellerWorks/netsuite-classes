@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentMethodSearchAdvanced
+ * PaymentMethodSearchAdvanced.
  */
-class PaymentMethodSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var PaymentMethodSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var PaymentMethodSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class PaymentMethodSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var PaymentMethodSearch
+     */
+    public $criteria;
+    /**
+     * @var PaymentMethodSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "PaymentMethodSearch",
-		"columns" => "PaymentMethodSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'PaymentMethodSearch',
+        'columns' => 'PaymentMethodSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationRefList
+ * CustomizationRefList.
  */
-class CustomizationRefList {
-	/**
-	 * @access public
-	 * @var CustomizationRef[]
-	 */
-	public $customizationRef;
+class CustomizationRefList
+{
+    /**
+     * @var CustomizationRef[]
+     */
+    public $customizationRef;
 
-	static $paramtypesmap = array(
-		"customizationRef" => "CustomizationRef[]",
-	);
+    public static $paramtypesmap = [
+        'customizationRef' => 'CustomizationRef[]',
+    ];
 }

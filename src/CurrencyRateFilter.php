@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRateFilter
+ * CurrencyRateFilter.
  */
-class CurrencyRateFilter {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $baseCurrency;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $fromCurrency;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $effectiveDate;
+class CurrencyRateFilter
+{
+    /**
+     * @var RecordRef
+     */
+    public $baseCurrency;
+    /**
+     * @var RecordRef
+     */
+    public $fromCurrency;
+    /**
+     * @var dateTime
+     */
+    public $effectiveDate;
 
-	static $paramtypesmap = array(
-		"baseCurrency" => "RecordRef",
-		"fromCurrency" => "RecordRef",
-		"effectiveDate" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'baseCurrency' => 'RecordRef',
+        'fromCurrency' => 'RecordRef',
+        'effectiveDate' => 'dateTime',
+    ];
 }

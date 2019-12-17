@@ -11,52 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Bin
+ * Bin.
  */
-class Bin extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $binNumber;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class Bin extends Record
+{
+    /**
+     * @var string
+     */
+    public $binNumber;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"binNumber" => "string",
-		"location" => "RecordRef",
-		"memo" => "string",
-		"isInactive" => "boolean",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'binNumber' => 'string',
+        'location' => 'RecordRef',
+        'memo' => 'string',
+        'isInactive' => 'boolean',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

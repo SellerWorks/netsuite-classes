@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeUseTimeData
+ * EmployeeUseTimeData.
  */
-class EmployeeUseTimeData {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _wage = "_wage";
-	/**
-	 * @var string
-	 */
-	const _salary = "_salary";
+class EmployeeUseTimeData
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _wage = '_wage';
+    /**
+     * @var string
+     */
+    const _salary = '_salary';
 }

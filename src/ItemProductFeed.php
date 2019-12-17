@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemProductFeed
+ * ItemProductFeed.
  */
-class ItemProductFeed {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _googleBase = "_googleBase";
-	/**
-	 * @var string
-	 */
-	const _nexTag = "_nexTag";
-	/**
-	 * @var string
-	 */
-	const _shoppingCom = "_shoppingCom";
-	/**
-	 * @var string
-	 */
-	const _shopzilla = "_shopzilla";
-	/**
-	 * @var string
-	 */
-	const _yahooShopping = "_yahooShopping";
+class ItemProductFeed
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _googleBase = '_googleBase';
+    /**
+     * @var string
+     */
+    const _nexTag = '_nexTag';
+    /**
+     * @var string
+     */
+    const _shoppingCom = '_shoppingCom';
+    /**
+     * @var string
+     */
+    const _shopzilla = '_shopzilla';
+    /**
+     * @var string
+     */
+    const _yahooShopping = '_yahooShopping';
 }

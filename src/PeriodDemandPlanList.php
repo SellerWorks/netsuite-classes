@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PeriodDemandPlanList
+ * PeriodDemandPlanList.
  */
-class PeriodDemandPlanList {
-	/**
-	 * @access public
-	 * @var PeriodDemandPlan[]
-	 */
-	public $periodDemandPlan;
+class PeriodDemandPlanList
+{
+    /**
+     * @var PeriodDemandPlan[]
+     */
+    public $periodDemandPlan;
 
-	static $paramtypesmap = array(
-		"periodDemandPlan" => "PeriodDemandPlan[]",
-	);
+    public static $paramtypesmap = [
+        'periodDemandPlan' => 'PeriodDemandPlan[]',
+    ];
 }

@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerNegativeNumberFormat
+ * CustomerNegativeNumberFormat.
  */
-class CustomerNegativeNumberFormat {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _bracketSurrounded = "_bracketSurrounded";
-	/**
-	 * @var string
-	 */
-	const _minusSigned = "_minusSigned";
+class CustomerNegativeNumberFormat
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _bracketSurrounded = '_bracketSurrounded';
+    /**
+     * @var string
+     */
+    const _minusSigned = '_minusSigned';
 }

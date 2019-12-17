@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DoubleCustomFieldRef
+ * DoubleCustomFieldRef.
  */
-class DoubleCustomFieldRef extends CustomFieldRef {
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $value;
+class DoubleCustomFieldRef extends CustomFieldRef
+{
+    /**
+     * @var float
+     */
+    public $value;
 
-	static $paramtypesmap = array(
-		"value" => "float",
-	);
+    public static $paramtypesmap = [
+        'value' => 'float',
+    ];
 }

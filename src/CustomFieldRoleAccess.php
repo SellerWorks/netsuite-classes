@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldRoleAccess
+ * CustomFieldRoleAccess.
  */
-class CustomFieldRoleAccess {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $role;
-	/**
-	 * @access public
-	 * @var CustomizationAccessLevel
-	 */
-	public $accessLevel;
-	/**
-	 * @access public
-	 * @var CustomizationSearchLevel
-	 */
-	public $searchLevel;
+class CustomFieldRoleAccess
+{
+    /**
+     * @var RecordRef
+     */
+    public $role;
+    /**
+     * @var CustomizationAccessLevel
+     */
+    public $accessLevel;
+    /**
+     * @var CustomizationSearchLevel
+     */
+    public $searchLevel;
 
-	static $paramtypesmap = array(
-		"role" => "RecordRef",
-		"accessLevel" => "CustomizationAccessLevel",
-		"searchLevel" => "CustomizationSearchLevel",
-	);
+    public static $paramtypesmap = [
+        'role' => 'RecordRef',
+        'accessLevel' => 'CustomizationAccessLevel',
+        'searchLevel' => 'CustomizationSearchLevel',
+    ];
 }

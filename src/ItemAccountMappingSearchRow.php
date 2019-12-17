@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAccountMappingSearchRow
+ * ItemAccountMappingSearchRow.
  */
-class ItemAccountMappingSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var ItemAccountMappingSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var ClassificationSearchRowBasic
-	 */
-	public $classJoin;
-	/**
-	 * @access public
-	 * @var DepartmentSearchRowBasic
-	 */
-	public $departmentJoin;
-	/**
-	 * @access public
-	 * @var AccountSearchRowBasic
-	 */
-	public $destinationAccountJoin;
-	/**
-	 * @access public
-	 * @var LocationSearchRowBasic
-	 */
-	public $locationJoin;
-	/**
-	 * @access public
-	 * @var AccountSearchRowBasic
-	 */
-	public $sourceAccountJoin;
-	/**
-	 * @access public
-	 * @var SubsidiarySearchRowBasic
-	 */
-	public $subsidiaryJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class ItemAccountMappingSearchRow extends SearchRow
+{
+    /**
+     * @var ItemAccountMappingSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var ClassificationSearchRowBasic
+     */
+    public $classJoin;
+    /**
+     * @var DepartmentSearchRowBasic
+     */
+    public $departmentJoin;
+    /**
+     * @var AccountSearchRowBasic
+     */
+    public $destinationAccountJoin;
+    /**
+     * @var LocationSearchRowBasic
+     */
+    public $locationJoin;
+    /**
+     * @var AccountSearchRowBasic
+     */
+    public $sourceAccountJoin;
+    /**
+     * @var SubsidiarySearchRowBasic
+     */
+    public $subsidiaryJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "ItemAccountMappingSearchRowBasic",
-		"classJoin" => "ClassificationSearchRowBasic",
-		"departmentJoin" => "DepartmentSearchRowBasic",
-		"destinationAccountJoin" => "AccountSearchRowBasic",
-		"locationJoin" => "LocationSearchRowBasic",
-		"sourceAccountJoin" => "AccountSearchRowBasic",
-		"subsidiaryJoin" => "SubsidiarySearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'ItemAccountMappingSearchRowBasic',
+        'classJoin' => 'ClassificationSearchRowBasic',
+        'departmentJoin' => 'DepartmentSearchRowBasic',
+        'destinationAccountJoin' => 'AccountSearchRowBasic',
+        'locationJoin' => 'LocationSearchRowBasic',
+        'sourceAccountJoin' => 'AccountSearchRowBasic',
+        'subsidiaryJoin' => 'SubsidiarySearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

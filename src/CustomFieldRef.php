@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldRef
+ * CustomFieldRef.
  */
-class CustomFieldRef {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $scriptId;
+class CustomFieldRef
+{
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $scriptId;
 
-	static $paramtypesmap = array(
-		"internalId" => "string",
-		"scriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'internalId' => 'string',
+        'scriptId' => 'string',
+    ];
 }

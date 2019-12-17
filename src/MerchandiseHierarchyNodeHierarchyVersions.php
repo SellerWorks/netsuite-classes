@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNodeHierarchyVersions
+ * MerchandiseHierarchyNodeHierarchyVersions.
  */
-class MerchandiseHierarchyNodeHierarchyVersions {
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isIncluded;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $hierarchyVersion;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $endDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $hierarchyLevel;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parentNode;
+class MerchandiseHierarchyNodeHierarchyVersions
+{
+    /**
+     * @var bool
+     */
+    public $isIncluded;
+    /**
+     * @var RecordRef
+     */
+    public $hierarchyVersion;
+    /**
+     * @var dateTime
+     */
+    public $startDate;
+    /**
+     * @var dateTime
+     */
+    public $endDate;
+    /**
+     * @var RecordRef
+     */
+    public $hierarchyLevel;
+    /**
+     * @var RecordRef
+     */
+    public $parentNode;
 
-	static $paramtypesmap = array(
-		"isIncluded" => "boolean",
-		"hierarchyVersion" => "RecordRef",
-		"startDate" => "dateTime",
-		"endDate" => "dateTime",
-		"hierarchyLevel" => "RecordRef",
-		"parentNode" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'isIncluded' => 'boolean',
+        'hierarchyVersion' => 'RecordRef',
+        'startDate' => 'dateTime',
+        'endDate' => 'dateTime',
+        'hierarchyLevel' => 'RecordRef',
+        'parentNode' => 'RecordRef',
+    ];
 }

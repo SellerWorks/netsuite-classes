@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetBudgetType
+ * BudgetBudgetType.
  */
-class BudgetBudgetType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _global = "_global";
-	/**
-	 * @var string
-	 */
-	const _local = "_local";
+class BudgetBudgetType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _global = '_global';
+    /**
+     * @var string
+     */
+    const _local = '_local';
 }

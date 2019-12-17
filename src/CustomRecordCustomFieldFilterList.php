@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordCustomFieldFilterList
+ * CustomRecordCustomFieldFilterList.
  */
-class CustomRecordCustomFieldFilterList {
-	/**
-	 * @access public
-	 * @var CustomRecordCustomFieldFilter[]
-	 */
-	public $filter;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class CustomRecordCustomFieldFilterList
+{
+    /**
+     * @var CustomRecordCustomFieldFilter[]
+     */
+    public $filter;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"filter" => "CustomRecordCustomFieldFilter[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'filter' => 'CustomRecordCustomFieldFilter[]',
+        'replaceAll' => 'boolean',
+    ];
 }

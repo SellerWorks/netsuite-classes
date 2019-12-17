@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetItemAvailabilityResponse
+ * GetItemAvailabilityResponse.
  */
-class GetItemAvailabilityResponse {
-	/**
-	 * @access public
-	 * @var GetItemAvailabilityResult
-	 */
-	public $getItemAvailabilityResult;
+class GetItemAvailabilityResponse
+{
+    /**
+     * @var GetItemAvailabilityResult
+     */
+    public $getItemAvailabilityResult;
 
-	static $paramtypesmap = array(
-		"getItemAvailabilityResult" => "GetItemAvailabilityResult",
-	);
+    public static $paramtypesmap = [
+        'getItemAvailabilityResult' => 'GetItemAvailabilityResult',
+    ];
 }

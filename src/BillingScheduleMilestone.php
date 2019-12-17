@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleMilestone
+ * BillingScheduleMilestone.
  */
-class BillingScheduleMilestone {
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $milestoneId;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $milestoneAmount;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $milestoneTerms;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $projectTask;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $milestoneDate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $milestoneCompleted;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $milestoneActualCompletionDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $comments;
+class BillingScheduleMilestone
+{
+    /**
+     * @var int
+     */
+    public $milestoneId;
+    /**
+     * @var float
+     */
+    public $milestoneAmount;
+    /**
+     * @var RecordRef
+     */
+    public $milestoneTerms;
+    /**
+     * @var RecordRef
+     */
+    public $projectTask;
+    /**
+     * @var dateTime
+     */
+    public $milestoneDate;
+    /**
+     * @var bool
+     */
+    public $milestoneCompleted;
+    /**
+     * @var dateTime
+     */
+    public $milestoneActualCompletionDate;
+    /**
+     * @var string
+     */
+    public $comments;
 
-	static $paramtypesmap = array(
-		"milestoneId" => "integer",
-		"milestoneAmount" => "float",
-		"milestoneTerms" => "RecordRef",
-		"projectTask" => "RecordRef",
-		"milestoneDate" => "dateTime",
-		"milestoneCompleted" => "boolean",
-		"milestoneActualCompletionDate" => "dateTime",
-		"comments" => "string",
-	);
+    public static $paramtypesmap = [
+        'milestoneId' => 'integer',
+        'milestoneAmount' => 'float',
+        'milestoneTerms' => 'RecordRef',
+        'projectTask' => 'RecordRef',
+        'milestoneDate' => 'dateTime',
+        'milestoneCompleted' => 'boolean',
+        'milestoneActualCompletionDate' => 'dateTime',
+        'comments' => 'string',
+    ];
 }

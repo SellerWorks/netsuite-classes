@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentShipStatus
+ * ItemFulfillmentShipStatus.
  */
-class ItemFulfillmentShipStatus {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _packed = "_packed";
-	/**
-	 * @var string
-	 */
-	const _picked = "_picked";
-	/**
-	 * @var string
-	 */
-	const _shipped = "_shipped";
+class ItemFulfillmentShipStatus
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _packed = '_packed';
+    /**
+     * @var string
+     */
+    const _picked = '_picked';
+    /**
+     * @var string
+     */
+    const _shipped = '_shipped';
 }

@@ -11,52 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListSearchRowBasic
+ * CustomListSearchRowBasic.
  */
-class CustomListSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isOrdered;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $owner;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $scriptId;
+class CustomListSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $description;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isOrdered;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $owner;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $scriptId;
 
-	static $paramtypesmap = array(
-		"description" => "SearchColumnStringField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"isOrdered" => "SearchColumnBooleanField[]",
-		"name" => "SearchColumnStringField[]",
-		"owner" => "SearchColumnSelectField[]",
-		"scriptId" => "SearchColumnStringField[]",
-	);
+    public static $paramtypesmap = [
+        'description' => 'SearchColumnStringField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'isOrdered' => 'SearchColumnBooleanField[]',
+        'name' => 'SearchColumnStringField[]',
+        'owner' => 'SearchColumnSelectField[]',
+        'scriptId' => 'SearchColumnStringField[]',
+    ];
 }

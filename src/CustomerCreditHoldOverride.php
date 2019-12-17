@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerCreditHoldOverride
+ * CustomerCreditHoldOverride.
  */
-class CustomerCreditHoldOverride {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _auto = "_auto";
-	/**
-	 * @var string
-	 */
-	const _on = "_on";
-	/**
-	 * @var string
-	 */
-	const _off = "_off";
+class CustomerCreditHoldOverride
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _auto = '_auto';
+    /**
+     * @var string
+     */
+    const _on = '_on';
+    /**
+     * @var string
+     */
+    const _off = '_off';
 }

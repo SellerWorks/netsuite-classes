@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OpportunityItemList
+ * OpportunityItemList.
  */
-class OpportunityItemList {
-	/**
-	 * @access public
-	 * @var OpportunityItem[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class OpportunityItemList
+{
+    /**
+     * @var OpportunityItem[]
+     */
+    public $item;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"item" => "OpportunityItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'item' => 'OpportunityItem[]',
+        'replaceAll' => 'boolean',
+    ];
 }

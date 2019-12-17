@@ -11,238 +11,201 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeEntrySearchRowBasic
+ * TimeEntrySearchRowBasic.
  */
-class TimeEntrySearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $approvalStatus;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $billingClass;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $billingStatus;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $break;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $caseTaskEvent;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $classNoHierarchy;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $date;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $dateCreated;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $departmentNoHierarchy;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $durationDecimal;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $employee;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $endTime;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $hours;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isBillable;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isExempt;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isProductive;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isUtilized;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $lastModified;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $locationNoHierarchy;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $nextApprover;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $paidExternally;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $payItem;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $payrollDate;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $rate;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $startTime;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $subsidiaryNoHierarchy;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $timeSheet;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $type;
-	/**
-	 * @access public
-	 * @var SearchColumnCustomFieldList
-	 */
-	public $customFieldList;
+class TimeEntrySearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $approvalStatus;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $billingClass;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $billingStatus;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $break;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $caseTaskEvent;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $class;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $classNoHierarchy;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $customer;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $date;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $dateCreated;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $department;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $departmentNoHierarchy;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $durationDecimal;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $employee;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $endTime;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $hours;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isBillable;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isExempt;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isProductive;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isUtilized;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $item;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $lastModified;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $location;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $locationNoHierarchy;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $memo;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $nextApprover;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $paidExternally;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $payItem;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $payrollDate;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $rate;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $startTime;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $subsidiary;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $subsidiaryNoHierarchy;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $timeSheet;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $type;
+    /**
+     * @var SearchColumnCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"approvalStatus" => "SearchColumnSelectField[]",
-		"billingClass" => "SearchColumnSelectField[]",
-		"billingStatus" => "SearchColumnStringField[]",
-		"break" => "SearchColumnStringField[]",
-		"caseTaskEvent" => "SearchColumnSelectField[]",
-		"class" => "SearchColumnSelectField[]",
-		"classNoHierarchy" => "SearchColumnSelectField[]",
-		"customer" => "SearchColumnSelectField[]",
-		"date" => "SearchColumnDateField[]",
-		"dateCreated" => "SearchColumnDateField[]",
-		"department" => "SearchColumnSelectField[]",
-		"departmentNoHierarchy" => "SearchColumnSelectField[]",
-		"durationDecimal" => "SearchColumnDoubleField[]",
-		"employee" => "SearchColumnSelectField[]",
-		"endTime" => "SearchColumnDateField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"hours" => "SearchColumnStringField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isBillable" => "SearchColumnBooleanField[]",
-		"isExempt" => "SearchColumnBooleanField[]",
-		"isProductive" => "SearchColumnBooleanField[]",
-		"isUtilized" => "SearchColumnBooleanField[]",
-		"item" => "SearchColumnStringField[]",
-		"lastModified" => "SearchColumnDateField[]",
-		"location" => "SearchColumnSelectField[]",
-		"locationNoHierarchy" => "SearchColumnSelectField[]",
-		"memo" => "SearchColumnStringField[]",
-		"nextApprover" => "SearchColumnSelectField[]",
-		"paidExternally" => "SearchColumnBooleanField[]",
-		"payItem" => "SearchColumnSelectField[]",
-		"payrollDate" => "SearchColumnDateField[]",
-		"rate" => "SearchColumnDoubleField[]",
-		"startTime" => "SearchColumnDateField[]",
-		"subsidiary" => "SearchColumnStringField[]",
-		"subsidiaryNoHierarchy" => "SearchColumnStringField[]",
-		"timeSheet" => "SearchColumnStringField[]",
-		"type" => "SearchColumnEnumSelectField[]",
-		"customFieldList" => "SearchColumnCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'approvalStatus' => 'SearchColumnSelectField[]',
+        'billingClass' => 'SearchColumnSelectField[]',
+        'billingStatus' => 'SearchColumnStringField[]',
+        'break' => 'SearchColumnStringField[]',
+        'caseTaskEvent' => 'SearchColumnSelectField[]',
+        'class' => 'SearchColumnSelectField[]',
+        'classNoHierarchy' => 'SearchColumnSelectField[]',
+        'customer' => 'SearchColumnSelectField[]',
+        'date' => 'SearchColumnDateField[]',
+        'dateCreated' => 'SearchColumnDateField[]',
+        'department' => 'SearchColumnSelectField[]',
+        'departmentNoHierarchy' => 'SearchColumnSelectField[]',
+        'durationDecimal' => 'SearchColumnDoubleField[]',
+        'employee' => 'SearchColumnSelectField[]',
+        'endTime' => 'SearchColumnDateField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'hours' => 'SearchColumnStringField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isBillable' => 'SearchColumnBooleanField[]',
+        'isExempt' => 'SearchColumnBooleanField[]',
+        'isProductive' => 'SearchColumnBooleanField[]',
+        'isUtilized' => 'SearchColumnBooleanField[]',
+        'item' => 'SearchColumnStringField[]',
+        'lastModified' => 'SearchColumnDateField[]',
+        'location' => 'SearchColumnSelectField[]',
+        'locationNoHierarchy' => 'SearchColumnSelectField[]',
+        'memo' => 'SearchColumnStringField[]',
+        'nextApprover' => 'SearchColumnSelectField[]',
+        'paidExternally' => 'SearchColumnBooleanField[]',
+        'payItem' => 'SearchColumnSelectField[]',
+        'payrollDate' => 'SearchColumnDateField[]',
+        'rate' => 'SearchColumnDoubleField[]',
+        'startTime' => 'SearchColumnDateField[]',
+        'subsidiary' => 'SearchColumnStringField[]',
+        'subsidiaryNoHierarchy' => 'SearchColumnStringField[]',
+        'timeSheet' => 'SearchColumnStringField[]',
+        'type' => 'SearchColumnEnumSelectField[]',
+        'customFieldList' => 'SearchColumnCustomFieldList',
+    ];
 }

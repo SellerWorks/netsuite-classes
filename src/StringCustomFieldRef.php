@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StringCustomFieldRef
+ * StringCustomFieldRef.
  */
-class StringCustomFieldRef extends CustomFieldRef {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $value;
+class StringCustomFieldRef extends CustomFieldRef
+{
+    /**
+     * @var string
+     */
+    public $value;
 
-	static $paramtypesmap = array(
-		"value" => "string",
-	);
+    public static $paramtypesmap = [
+        'value' => 'string',
+    ];
 }

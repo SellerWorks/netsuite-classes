@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldDepartmentAccess
+ * CustomFieldDepartmentAccess.
  */
-class CustomFieldDepartmentAccess {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $dept;
-	/**
-	 * @access public
-	 * @var CustomizationAccessLevel
-	 */
-	public $accessLevel;
-	/**
-	 * @access public
-	 * @var CustomizationSearchLevel
-	 */
-	public $searchLevel;
+class CustomFieldDepartmentAccess
+{
+    /**
+     * @var RecordRef
+     */
+    public $dept;
+    /**
+     * @var CustomizationAccessLevel
+     */
+    public $accessLevel;
+    /**
+     * @var CustomizationSearchLevel
+     */
+    public $searchLevel;
 
-	static $paramtypesmap = array(
-		"dept" => "RecordRef",
-		"accessLevel" => "CustomizationAccessLevel",
-		"searchLevel" => "CustomizationSearchLevel",
-	);
+    public static $paramtypesmap = [
+        'dept' => 'RecordRef',
+        'accessLevel' => 'CustomizationAccessLevel',
+        'searchLevel' => 'CustomizationSearchLevel',
+    ];
 }

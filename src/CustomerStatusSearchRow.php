@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomerStatusSearchRow
  */
-class CustomerStatusSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var CustomerStatusSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
+class CustomerStatusSearchRow extends SearchRow
+{
+    /**
+     * @access public
+     * @var CustomerStatusSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @access public
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "CustomerStatusSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-	);
+    public static $paramtypesmap = array(
+        "basic" => "CustomerStatusSearchRowBasic",
+        "userJoin" => "EmployeeSearchRowBasic",
+    );
 }

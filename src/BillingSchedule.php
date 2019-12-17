@@ -11,208 +11,176 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingSchedule
+ * BillingSchedule.
  */
-class BillingSchedule extends Record {
-	/**
-	 * @access public
-	 * @var BillingScheduleType
-	 */
-	public $scheduleType;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var BillingScheduleRecurrencePattern
-	 */
-	public $recurrencePattern;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $project;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $initialAmount;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $initialTerms;
-	/**
-	 * @access public
-	 * @var BillingScheduleFrequency
-	 */
-	public $frequency;
-	/**
-	 * @access public
-	 * @var RecurrenceDowMaskList
-	 */
-	public $recurrenceDowMaskList;
-	/**
-	 * @access public
-	 * @var BillingScheduleRecurrenceMode
-	 */
-	public $yearMode;
-	/**
-	 * @access public
-	 * @var BillingScheduleYearDowim
-	 */
-	public $yearDowim;
-	/**
-	 * @access public
-	 * @var BillingScheduleYearDow
-	 */
-	public $yearDow;
-	/**
-	 * @access public
-	 * @var BillingScheduleYearDowimMonth
-	 */
-	public $yearDowimMonth;
-	/**
-	 * @access public
-	 * @var BillingScheduleYearMonth
-	 */
-	public $yearMonth;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $yearDom;
-	/**
-	 * @access public
-	 * @var BillingScheduleRecurrenceMode
-	 */
-	public $monthMode;
-	/**
-	 * @access public
-	 * @var BillingScheduleMonthDowim
-	 */
-	public $monthDowim;
-	/**
-	 * @access public
-	 * @var BillingScheduleMonthDow
-	 */
-	public $monthDow;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $monthDom;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $dayPeriod;
-	/**
-	 * @access public
-	 * @var BillingScheduleRepeatEvery
-	 */
-	public $repeatEvery;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $billForActuals;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $numberRemaining;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $inArrears;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $recurrenceTerms;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isPublic;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $applyToSubtotal;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $transaction;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $seriesStartDate;
-	/**
-	 * @access public
-	 * @var BillingScheduleRecurrenceList
-	 */
-	public $recurrenceList;
-	/**
-	 * @access public
-	 * @var BillingScheduleMilestoneList
-	 */
-	public $milestoneList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class BillingSchedule extends Record
+{
+    /**
+     * @var BillingScheduleType
+     */
+    public $scheduleType;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var BillingScheduleRecurrencePattern
+     */
+    public $recurrencePattern;
+    /**
+     * @var RecordRef
+     */
+    public $project;
+    /**
+     * @var string
+     */
+    public $initialAmount;
+    /**
+     * @var RecordRef
+     */
+    public $initialTerms;
+    /**
+     * @var BillingScheduleFrequency
+     */
+    public $frequency;
+    /**
+     * @var RecurrenceDowMaskList
+     */
+    public $recurrenceDowMaskList;
+    /**
+     * @var BillingScheduleRecurrenceMode
+     */
+    public $yearMode;
+    /**
+     * @var BillingScheduleYearDowim
+     */
+    public $yearDowim;
+    /**
+     * @var BillingScheduleYearDow
+     */
+    public $yearDow;
+    /**
+     * @var BillingScheduleYearDowimMonth
+     */
+    public $yearDowimMonth;
+    /**
+     * @var BillingScheduleYearMonth
+     */
+    public $yearMonth;
+    /**
+     * @var int
+     */
+    public $yearDom;
+    /**
+     * @var BillingScheduleRecurrenceMode
+     */
+    public $monthMode;
+    /**
+     * @var BillingScheduleMonthDowim
+     */
+    public $monthDowim;
+    /**
+     * @var BillingScheduleMonthDow
+     */
+    public $monthDow;
+    /**
+     * @var int
+     */
+    public $monthDom;
+    /**
+     * @var int
+     */
+    public $dayPeriod;
+    /**
+     * @var BillingScheduleRepeatEvery
+     */
+    public $repeatEvery;
+    /**
+     * @var bool
+     */
+    public $billForActuals;
+    /**
+     * @var int
+     */
+    public $numberRemaining;
+    /**
+     * @var bool
+     */
+    public $inArrears;
+    /**
+     * @var RecordRef
+     */
+    public $recurrenceTerms;
+    /**
+     * @var bool
+     */
+    public $isPublic;
+    /**
+     * @var bool
+     */
+    public $applyToSubtotal;
+    /**
+     * @var RecordRef
+     */
+    public $transaction;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var dateTime
+     */
+    public $seriesStartDate;
+    /**
+     * @var BillingScheduleRecurrenceList
+     */
+    public $recurrenceList;
+    /**
+     * @var BillingScheduleMilestoneList
+     */
+    public $milestoneList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"scheduleType" => "BillingScheduleType",
-		"name" => "string",
-		"recurrencePattern" => "BillingScheduleRecurrencePattern",
-		"project" => "RecordRef",
-		"initialAmount" => "string",
-		"initialTerms" => "RecordRef",
-		"frequency" => "BillingScheduleFrequency",
-		"recurrenceDowMaskList" => "RecurrenceDowMaskList",
-		"yearMode" => "BillingScheduleRecurrenceMode",
-		"yearDowim" => "BillingScheduleYearDowim",
-		"yearDow" => "BillingScheduleYearDow",
-		"yearDowimMonth" => "BillingScheduleYearDowimMonth",
-		"yearMonth" => "BillingScheduleYearMonth",
-		"yearDom" => "integer",
-		"monthMode" => "BillingScheduleRecurrenceMode",
-		"monthDowim" => "BillingScheduleMonthDowim",
-		"monthDow" => "BillingScheduleMonthDow",
-		"monthDom" => "integer",
-		"dayPeriod" => "integer",
-		"repeatEvery" => "BillingScheduleRepeatEvery",
-		"billForActuals" => "boolean",
-		"numberRemaining" => "integer",
-		"inArrears" => "boolean",
-		"recurrenceTerms" => "RecordRef",
-		"isPublic" => "boolean",
-		"applyToSubtotal" => "boolean",
-		"transaction" => "RecordRef",
-		"isInactive" => "boolean",
-		"seriesStartDate" => "dateTime",
-		"recurrenceList" => "BillingScheduleRecurrenceList",
-		"milestoneList" => "BillingScheduleMilestoneList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'scheduleType' => 'BillingScheduleType',
+        'name' => 'string',
+        'recurrencePattern' => 'BillingScheduleRecurrencePattern',
+        'project' => 'RecordRef',
+        'initialAmount' => 'string',
+        'initialTerms' => 'RecordRef',
+        'frequency' => 'BillingScheduleFrequency',
+        'recurrenceDowMaskList' => 'RecurrenceDowMaskList',
+        'yearMode' => 'BillingScheduleRecurrenceMode',
+        'yearDowim' => 'BillingScheduleYearDowim',
+        'yearDow' => 'BillingScheduleYearDow',
+        'yearDowimMonth' => 'BillingScheduleYearDowimMonth',
+        'yearMonth' => 'BillingScheduleYearMonth',
+        'yearDom' => 'integer',
+        'monthMode' => 'BillingScheduleRecurrenceMode',
+        'monthDowim' => 'BillingScheduleMonthDowim',
+        'monthDow' => 'BillingScheduleMonthDow',
+        'monthDom' => 'integer',
+        'dayPeriod' => 'integer',
+        'repeatEvery' => 'BillingScheduleRepeatEvery',
+        'billForActuals' => 'boolean',
+        'numberRemaining' => 'integer',
+        'inArrears' => 'boolean',
+        'recurrenceTerms' => 'RecordRef',
+        'isPublic' => 'boolean',
+        'applyToSubtotal' => 'boolean',
+        'transaction' => 'RecordRef',
+        'isInactive' => 'boolean',
+        'seriesStartDate' => 'dateTime',
+        'recurrenceList' => 'BillingScheduleRecurrenceList',
+        'milestoneList' => 'BillingScheduleMilestoneList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

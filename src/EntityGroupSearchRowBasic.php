@@ -11,118 +11,101 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityGroupSearchRowBasic
+ * EntityGroupSearchRowBasic.
  */
-class EntityGroupSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $groupName;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $groupType;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isDynamic;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isManufacturingWorkCenter;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isPrivate;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $laborResources;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $machineResources;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $owner;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $savedSearch;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $size;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $workCalendar;
-	/**
-	 * @access public
-	 * @var SearchColumnCustomFieldList
-	 */
-	public $customFieldList;
+class EntityGroupSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $email;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $groupName;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $groupType;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isDynamic;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isManufacturingWorkCenter;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isPrivate;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $laborResources;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $lastModifiedDate;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $machineResources;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $owner;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $savedSearch;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $size;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $subsidiary;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $workCalendar;
+    /**
+     * @var SearchColumnCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"email" => "SearchColumnStringField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"groupName" => "SearchColumnStringField[]",
-		"groupType" => "SearchColumnStringField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isDynamic" => "SearchColumnBooleanField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"isManufacturingWorkCenter" => "SearchColumnBooleanField[]",
-		"isPrivate" => "SearchColumnBooleanField[]",
-		"laborResources" => "SearchColumnDoubleField[]",
-		"lastModifiedDate" => "SearchColumnDateField[]",
-		"machineResources" => "SearchColumnDoubleField[]",
-		"owner" => "SearchColumnSelectField[]",
-		"savedSearch" => "SearchColumnStringField[]",
-		"size" => "SearchColumnLongField[]",
-		"subsidiary" => "SearchColumnSelectField[]",
-		"workCalendar" => "SearchColumnSelectField[]",
-		"customFieldList" => "SearchColumnCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'email' => 'SearchColumnStringField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'groupName' => 'SearchColumnStringField[]',
+        'groupType' => 'SearchColumnStringField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isDynamic' => 'SearchColumnBooleanField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'isManufacturingWorkCenter' => 'SearchColumnBooleanField[]',
+        'isPrivate' => 'SearchColumnBooleanField[]',
+        'laborResources' => 'SearchColumnDoubleField[]',
+        'lastModifiedDate' => 'SearchColumnDateField[]',
+        'machineResources' => 'SearchColumnDoubleField[]',
+        'owner' => 'SearchColumnSelectField[]',
+        'savedSearch' => 'SearchColumnStringField[]',
+        'size' => 'SearchColumnLongField[]',
+        'subsidiary' => 'SearchColumnSelectField[]',
+        'workCalendar' => 'SearchColumnSelectField[]',
+        'customFieldList' => 'SearchColumnCustomFieldList',
+    ];
 }

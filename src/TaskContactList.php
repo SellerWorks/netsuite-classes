@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaskContactList
+ * TaskContactList.
  */
-class TaskContactList {
-	/**
-	 * @access public
-	 * @var TaskContact[]
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class TaskContactList
+{
+    /**
+     * @var TaskContact[]
+     */
+    public $contact;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"contact" => "TaskContact[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'contact' => 'TaskContact[]',
+        'replaceAll' => 'boolean',
+    ];
 }

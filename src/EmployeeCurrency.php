@@ -13,14 +13,15 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * EmployeeCurrency
  */
-class EmployeeCurrency {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
+class EmployeeCurrency
+{
+    /**
+     * @access public
+     * @var RecordRef
+     */
+    public $currency;
 
-	static $paramtypesmap = array(
-		"currency" => "RecordRef",
-	);
+    public static $paramtypesmap = array(
+        "currency" => "RecordRef",
+    );
 }

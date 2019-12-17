@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * BinWorksheetItemList
  */
-class BinWorksheetItemList {
-	/**
-	 * @access public
-	 * @var BinWorksheetItem[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class BinWorksheetItemList
+{
+    /**
+     * @access public
+     * @var BinWorksheetItem[]
+     */
+    public $item;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"item" => "BinWorksheetItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "item" => "BinWorksheetItem[]",
+        "replaceAll" => "boolean",
+    );
 }

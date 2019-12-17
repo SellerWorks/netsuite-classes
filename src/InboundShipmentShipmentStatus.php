@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentShipmentStatus
+ * InboundShipmentShipmentStatus.
  */
-class InboundShipmentShipmentStatus {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _closed = "_closed";
-	/**
-	 * @var string
-	 */
-	const _inTransit = "_inTransit";
-	/**
-	 * @var string
-	 */
-	const _partiallyReceived = "_partiallyReceived";
-	/**
-	 * @var string
-	 */
-	const _received = "_received";
-	/**
-	 * @var string
-	 */
-	const _toBeShipped = "_toBeShipped";
+class InboundShipmentShipmentStatus
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _closed = '_closed';
+    /**
+     * @var string
+     */
+    const _inTransit = '_inTransit';
+    /**
+     * @var string
+     */
+    const _partiallyReceived = '_partiallyReceived';
+    /**
+     * @var string
+     */
+    const _received = '_received';
+    /**
+     * @var string
+     */
+    const _toBeShipped = '_toBeShipped';
 }

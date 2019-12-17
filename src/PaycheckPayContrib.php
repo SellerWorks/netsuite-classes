@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayContrib
+ * PaycheckPayContrib.
  */
-class PaycheckPayContrib {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $payItem;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $line;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $wageBase;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $manualEntry;
+class PaycheckPayContrib
+{
+    /**
+     * @var RecordRef
+     */
+    public $payItem;
+    /**
+     * @var int
+     */
+    public $line;
+    /**
+     * @var float
+     */
+    public $wageBase;
+    /**
+     * @var float
+     */
+    public $amount;
+    /**
+     * @var bool
+     */
+    public $manualEntry;
 
-	static $paramtypesmap = array(
-		"payItem" => "RecordRef",
-		"line" => "integer",
-		"wageBase" => "float",
-		"amount" => "float",
-		"manualEntry" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'payItem' => 'RecordRef',
+        'line' => 'integer',
+        'wageBase' => 'float',
+        'amount' => 'float',
+        'manualEntry' => 'boolean',
+    ];
 }

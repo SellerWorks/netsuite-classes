@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * GetDeletedRequest
  */
-class GetDeletedRequest {
-	/**
-	 * @access public
-	 * @var GetDeletedFilter
-	 */
-	public $getDeletedFilter;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $pageIndex;
+class GetDeletedRequest
+{
+    /**
+     * @access public
+     * @var GetDeletedFilter
+     */
+    public $getDeletedFilter;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $pageIndex;
 
-	static $paramtypesmap = array(
-		"getDeletedFilter" => "GetDeletedFilter",
-		"pageIndex" => "integer",
-	);
+    public static $paramtypesmap = array(
+        "getDeletedFilter" => "GetDeletedFilter",
+        "pageIndex" => "integer",
+    );
 }

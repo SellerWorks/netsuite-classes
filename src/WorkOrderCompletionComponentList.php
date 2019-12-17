@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderCompletionComponentList
+ * WorkOrderCompletionComponentList.
  */
-class WorkOrderCompletionComponentList {
-	/**
-	 * @access public
-	 * @var WorkOrderCompletionComponent[]
-	 */
-	public $workOrderCompletionComponent;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class WorkOrderCompletionComponentList
+{
+    /**
+     * @var WorkOrderCompletionComponent[]
+     */
+    public $workOrderCompletionComponent;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"workOrderCompletionComponent" => "WorkOrderCompletionComponent[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'workOrderCompletionComponent' => 'WorkOrderCompletionComponent[]',
+        'replaceAll' => 'boolean',
+    ];
 }

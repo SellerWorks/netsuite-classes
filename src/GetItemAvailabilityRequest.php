@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetItemAvailabilityRequest
+ * GetItemAvailabilityRequest.
  */
-class GetItemAvailabilityRequest {
-	/**
-	 * @access public
-	 * @var ItemAvailabilityFilter
-	 */
-	public $itemAvailabilityFilter;
+class GetItemAvailabilityRequest
+{
+    /**
+     * @var ItemAvailabilityFilter
+     */
+    public $itemAvailabilityFilter;
 
-	static $paramtypesmap = array(
-		"itemAvailabilityFilter" => "ItemAvailabilityFilter",
-	);
+    public static $paramtypesmap = [
+        'itemAvailabilityFilter' => 'ItemAvailabilityFilter',
+    ];
 }

@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategoryTranslation
+ * SiteCategoryTranslation.
  */
-class SiteCategoryTranslation {
-	/**
-	 * @access public
-	 * @var Language
-	 */
-	public $locale;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $language;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $displayName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $storeDetailedDescription;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $pageTitle;
+class SiteCategoryTranslation
+{
+    /**
+     * @var Language
+     */
+    public $locale;
+    /**
+     * @var string
+     */
+    public $language;
+    /**
+     * @var string
+     */
+    public $displayName;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var string
+     */
+    public $storeDetailedDescription;
+    /**
+     * @var string
+     */
+    public $pageTitle;
 
-	static $paramtypesmap = array(
-		"locale" => "Language",
-		"language" => "string",
-		"displayName" => "string",
-		"description" => "string",
-		"storeDetailedDescription" => "string",
-		"pageTitle" => "string",
-	);
+    public static $paramtypesmap = [
+        'locale' => 'Language',
+        'language' => 'string',
+        'displayName' => 'string',
+        'description' => 'string',
+        'storeDetailedDescription' => 'string',
+        'pageTitle' => 'string',
+    ];
 }

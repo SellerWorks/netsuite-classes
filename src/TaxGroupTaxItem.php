@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxGroupTaxItem
+ * TaxGroupTaxItem.
  */
-class TaxGroupTaxItem {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxName;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $rate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $basis;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $taxType;
+class TaxGroupTaxItem
+{
+    /**
+     * @var RecordRef
+     */
+    public $taxName;
+    /**
+     * @var float
+     */
+    public $rate;
+    /**
+     * @var float
+     */
+    public $basis;
+    /**
+     * @var string
+     */
+    public $taxType;
 
-	static $paramtypesmap = array(
-		"taxName" => "RecordRef",
-		"rate" => "float",
-		"basis" => "float",
-		"taxType" => "string",
-	);
+    public static $paramtypesmap = [
+        'taxName' => 'RecordRef',
+        'rate' => 'float',
+        'basis' => 'float',
+        'taxType' => 'string',
+    ];
 }

@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeTerminationRegretted
+ * EmployeeTerminationRegretted.
  */
-class EmployeeTerminationRegretted {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _no = "_no";
-	/**
-	 * @var string
-	 */
-	const _unspecified = "_unspecified";
-	/**
-	 * @var string
-	 */
-	const _yes = "_yes";
+class EmployeeTerminationRegretted
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _no = '_no';
+    /**
+     * @var string
+     */
+    const _unspecified = '_unspecified';
+    /**
+     * @var string
+     */
+    const _yes = '_yes';
 }

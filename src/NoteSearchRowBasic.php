@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NoteSearchRowBasic
+ * NoteSearchRowBasic.
  */
-class NoteSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $author;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $direction;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $note;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $noteDate;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $noteType;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var SearchColumnCustomFieldList
-	 */
-	public $customFieldList;
+class NoteSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $author;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $direction;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $note;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $noteDate;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $noteType;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $title;
+    /**
+     * @var SearchColumnCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"author" => "SearchColumnSelectField[]",
-		"direction" => "SearchColumnStringField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"note" => "SearchColumnStringField[]",
-		"noteDate" => "SearchColumnDateField[]",
-		"noteType" => "SearchColumnStringField[]",
-		"title" => "SearchColumnStringField[]",
-		"customFieldList" => "SearchColumnCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'author' => 'SearchColumnSelectField[]',
+        'direction' => 'SearchColumnStringField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'note' => 'SearchColumnStringField[]',
+        'noteDate' => 'SearchColumnDateField[]',
+        'noteType' => 'SearchColumnStringField[]',
+        'title' => 'SearchColumnStringField[]',
+        'customFieldList' => 'SearchColumnCustomFieldList',
+    ];
 }

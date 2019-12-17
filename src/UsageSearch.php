@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UsageSearch
+ * UsageSearch.
  */
-class UsageSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var UsageSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var ChargeSearchBasic
-	 */
-	public $chargeJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchBasic
-	 */
-	public $subscriptionPlanJoin;
+class UsageSearch extends SearchRecord
+{
+    /**
+     * @var UsageSearchBasic
+     */
+    public $basic;
+    /**
+     * @var ChargeSearchBasic
+     */
+    public $chargeJoin;
+    /**
+     * @var CustomerSearchBasic
+     */
+    public $customerJoin;
+    /**
+     * @var ItemSearchBasic
+     */
+    public $itemJoin;
+    /**
+     * @var ItemSearchBasic
+     */
+    public $subscriptionPlanJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "UsageSearchBasic",
-		"chargeJoin" => "ChargeSearchBasic",
-		"customerJoin" => "CustomerSearchBasic",
-		"itemJoin" => "ItemSearchBasic",
-		"subscriptionPlanJoin" => "ItemSearchBasic",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'UsageSearchBasic',
+        'chargeJoin' => 'ChargeSearchBasic',
+        'customerJoin' => 'CustomerSearchBasic',
+        'itemJoin' => 'ItemSearchBasic',
+        'subscriptionPlanJoin' => 'ItemSearchBasic',
+    ];
 }

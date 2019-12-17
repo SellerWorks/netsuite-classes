@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingRatesMatrix
+ * BillingRatesMatrix.
  */
-class BillingRatesMatrix {
-	/**
-	 * @access public
-	 * @var BillingRates[]
-	 */
-	public $billingRates;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class BillingRatesMatrix
+{
+    /**
+     * @var BillingRates[]
+     */
+    public $billingRates;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"billingRates" => "BillingRates[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'billingRates' => 'BillingRates[]',
+        'replaceAll' => 'boolean',
+    ];
 }

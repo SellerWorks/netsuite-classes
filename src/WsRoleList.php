@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WsRoleList
+ * WsRoleList.
  */
-class WsRoleList {
-	/**
-	 * @access public
-	 * @var WsRole[]
-	 */
-	public $wsRole;
+class WsRoleList
+{
+    /**
+     * @var WsRole[]
+     */
+    public $wsRole;
 
-	static $paramtypesmap = array(
-		"wsRole" => "WsRole[]",
-	);
+    public static $paramtypesmap = [
+        'wsRole' => 'WsRole[]',
+    ];
 }

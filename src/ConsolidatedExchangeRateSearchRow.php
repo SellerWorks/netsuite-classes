@@ -11,40 +11,36 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ConsolidatedExchangeRateSearchRow
+ * ConsolidatedExchangeRateSearchRow.
  */
-class ConsolidatedExchangeRateSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var ConsolidatedExchangeRateSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var SubsidiarySearchRowBasic
-	 */
-	public $fromSubsidiaryJoin;
-	/**
-	 * @access public
-	 * @var AccountingPeriodSearchRowBasic
-	 */
-	public $periodJoin;
-	/**
-	 * @access public
-	 * @var SubsidiarySearchRowBasic
-	 */
-	public $toSubsidiaryJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
+class ConsolidatedExchangeRateSearchRow extends SearchRow
+{
+    /**
+     * @var ConsolidatedExchangeRateSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var SubsidiarySearchRowBasic
+     */
+    public $fromSubsidiaryJoin;
+    /**
+     * @var AccountingPeriodSearchRowBasic
+     */
+    public $periodJoin;
+    /**
+     * @var SubsidiarySearchRowBasic
+     */
+    public $toSubsidiaryJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "ConsolidatedExchangeRateSearchRowBasic",
-		"fromSubsidiaryJoin" => "SubsidiarySearchRowBasic",
-		"periodJoin" => "AccountingPeriodSearchRowBasic",
-		"toSubsidiaryJoin" => "SubsidiarySearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'ConsolidatedExchangeRateSearchRowBasic',
+        'fromSubsidiaryJoin' => 'SubsidiarySearchRowBasic',
+        'periodJoin' => 'AccountingPeriodSearchRowBasic',
+        'toSubsidiaryJoin' => 'SubsidiarySearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+    ];
 }

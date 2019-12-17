@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectValueFilter
+ * GetSelectValueFilter.
  */
-class GetSelectValueFilter {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $filterValue;
-	/**
-	 * @access public
-	 * @var GetSelectValueFilterOperator
-	 */
-	public $operator;
+class GetSelectValueFilter
+{
+    /**
+     * @var string
+     */
+    public $filterValue;
+    /**
+     * @var GetSelectValueFilterOperator
+     */
+    public $operator;
 
-	static $paramtypesmap = array(
-		"filterValue" => "string",
-		"operator" => "GetSelectValueFilterOperator",
-	);
+    public static $paramtypesmap = [
+        'filterValue' => 'string',
+        'operator' => 'GetSelectValueFilterOperator',
+    ];
 }

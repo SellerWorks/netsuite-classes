@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetAsyncResultRequest
+ * GetAsyncResultRequest.
  */
-class GetAsyncResultRequest {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $jobId;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $pageIndex;
+class GetAsyncResultRequest
+{
+    /**
+     * @var string
+     */
+    public $jobId;
+    /**
+     * @var int
+     */
+    public $pageIndex;
 
-	static $paramtypesmap = array(
-		"jobId" => "string",
-		"pageIndex" => "integer",
-	);
+    public static $paramtypesmap = [
+        'jobId' => 'string',
+        'pageIndex' => 'integer',
+    ];
 }

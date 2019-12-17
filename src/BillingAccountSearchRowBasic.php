@@ -11,148 +11,126 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingAccountSearchRowBasic
+ * BillingAccountSearchRowBasic.
  */
-class BillingAccountSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $billingSchedule;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $cashSaleForm;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $customerDefault;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $dateCreated;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $frequency;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $idNumber;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $inactive;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $invoiceForm;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $lastBillCycleDate;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $lastBillDate;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $nextBillCycleDate;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $startDate;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var SearchColumnCustomFieldList
-	 */
-	public $customFieldList;
+class BillingAccountSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $billingSchedule;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $cashSaleForm;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $class;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $currency;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $customer;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $customerDefault;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $dateCreated;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $department;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $frequency;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $idNumber;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $inactive;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $invoiceForm;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $lastBillCycleDate;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $lastBillDate;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $location;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $memo;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $nextBillCycleDate;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $startDate;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $subsidiary;
+    /**
+     * @var SearchColumnCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"billingSchedule" => "SearchColumnSelectField[]",
-		"cashSaleForm" => "SearchColumnSelectField[]",
-		"class" => "SearchColumnSelectField[]",
-		"currency" => "SearchColumnSelectField[]",
-		"customer" => "SearchColumnSelectField[]",
-		"customerDefault" => "SearchColumnBooleanField[]",
-		"dateCreated" => "SearchColumnDateField[]",
-		"department" => "SearchColumnSelectField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"frequency" => "SearchColumnEnumSelectField[]",
-		"idNumber" => "SearchColumnStringField[]",
-		"inactive" => "SearchColumnBooleanField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"invoiceForm" => "SearchColumnSelectField[]",
-		"lastBillCycleDate" => "SearchColumnDateField[]",
-		"lastBillDate" => "SearchColumnDateField[]",
-		"location" => "SearchColumnSelectField[]",
-		"memo" => "SearchColumnStringField[]",
-		"name" => "SearchColumnStringField[]",
-		"nextBillCycleDate" => "SearchColumnDateField[]",
-		"startDate" => "SearchColumnDateField[]",
-		"subsidiary" => "SearchColumnSelectField[]",
-		"customFieldList" => "SearchColumnCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'billingSchedule' => 'SearchColumnSelectField[]',
+        'cashSaleForm' => 'SearchColumnSelectField[]',
+        'class' => 'SearchColumnSelectField[]',
+        'currency' => 'SearchColumnSelectField[]',
+        'customer' => 'SearchColumnSelectField[]',
+        'customerDefault' => 'SearchColumnBooleanField[]',
+        'dateCreated' => 'SearchColumnDateField[]',
+        'department' => 'SearchColumnSelectField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'frequency' => 'SearchColumnEnumSelectField[]',
+        'idNumber' => 'SearchColumnStringField[]',
+        'inactive' => 'SearchColumnBooleanField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'invoiceForm' => 'SearchColumnSelectField[]',
+        'lastBillCycleDate' => 'SearchColumnDateField[]',
+        'lastBillDate' => 'SearchColumnDateField[]',
+        'location' => 'SearchColumnSelectField[]',
+        'memo' => 'SearchColumnStringField[]',
+        'name' => 'SearchColumnStringField[]',
+        'nextBillCycleDate' => 'SearchColumnDateField[]',
+        'startDate' => 'SearchColumnDateField[]',
+        'subsidiary' => 'SearchColumnSelectField[]',
+        'customFieldList' => 'SearchColumnCustomFieldList',
+    ];
 }

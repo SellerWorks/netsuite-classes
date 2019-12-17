@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCurrencyList
+ * VendorCurrencyList.
  */
-class VendorCurrencyList {
-	/**
-	 * @access public
-	 * @var VendorCurrency[]
-	 */
-	public $vendorCurrency;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class VendorCurrencyList
+{
+    /**
+     * @var VendorCurrency[]
+     */
+    public $vendorCurrency;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"vendorCurrency" => "VendorCurrency[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'vendorCurrency' => 'VendorCurrency[]',
+        'replaceAll' => 'boolean',
+    ];
 }

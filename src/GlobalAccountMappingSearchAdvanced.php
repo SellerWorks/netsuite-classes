@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GlobalAccountMappingSearchAdvanced
+ * GlobalAccountMappingSearchAdvanced.
  */
-class GlobalAccountMappingSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var GlobalAccountMappingSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var GlobalAccountMappingSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class GlobalAccountMappingSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var GlobalAccountMappingSearch
+     */
+    public $criteria;
+    /**
+     * @var GlobalAccountMappingSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "GlobalAccountMappingSearch",
-		"columns" => "GlobalAccountMappingSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'GlobalAccountMappingSearch',
+        'columns' => 'GlobalAccountMappingSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

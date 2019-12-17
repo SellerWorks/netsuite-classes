@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecTemplateSearch
+ * RevRecTemplateSearch.
  */
-class RevRecTemplateSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var RevRecTemplateSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $userJoin;
+class RevRecTemplateSearch extends SearchRecord
+{
+    /**
+     * @var RevRecTemplateSearchBasic
+     */
+    public $basic;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $userJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "RevRecTemplateSearchBasic",
-		"userJoin" => "EmployeeSearchBasic",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'RevRecTemplateSearchBasic',
+        'userJoin' => 'EmployeeSearchBasic',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BooleanCustomFieldRef
+ * BooleanCustomFieldRef.
  */
-class BooleanCustomFieldRef extends CustomFieldRef {
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $value;
+class BooleanCustomFieldRef extends CustomFieldRef
+{
+    /**
+     * @var bool
+     */
+    public $value;
 
-	static $paramtypesmap = array(
-		"value" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'value' => 'boolean',
+    ];
 }

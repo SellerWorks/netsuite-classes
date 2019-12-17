@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAvailabilityFilter
+ * ItemAvailabilityFilter.
  */
-class ItemAvailabilityFilter {
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastQtyAvailableChange;
+class ItemAvailabilityFilter
+{
+    /**
+     * @var RecordRefList
+     */
+    public $item;
+    /**
+     * @var dateTime
+     */
+    public $lastQtyAvailableChange;
 
-	static $paramtypesmap = array(
-		"item" => "RecordRefList",
-		"lastQtyAvailableChange" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'item' => 'RecordRefList',
+        'lastQtyAvailableChange' => 'dateTime',
+    ];
 }

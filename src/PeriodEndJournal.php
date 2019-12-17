@@ -11,142 +11,121 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PeriodEndJournal
+ * PeriodEndJournal.
  */
-class PeriodEndJournal extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $transactionNumber;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $accountingBook;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $trandate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $postingPeriod;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $sourceSubsidiary;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $mainAccount;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $creditTotal;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $debitTotal;
-	/**
-	 * @access public
-	 * @var PeriodEndJournalLineList
-	 */
-	public $lineList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class PeriodEndJournal extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var string
+     */
+    public $transactionNumber;
+    /**
+     * @var RecordRef
+     */
+    public $accountingBook;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var dateTime
+     */
+    public $trandate;
+    /**
+     * @var RecordRef
+     */
+    public $postingPeriod;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var RecordRef
+     */
+    public $sourceSubsidiary;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $mainAccount;
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var float
+     */
+    public $creditTotal;
+    /**
+     * @var float
+     */
+    public $debitTotal;
+    /**
+     * @var PeriodEndJournalLineList
+     */
+    public $lineList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"transactionNumber" => "string",
-		"accountingBook" => "RecordRef",
-		"customForm" => "RecordRef",
-		"tranId" => "string",
-		"trandate" => "dateTime",
-		"postingPeriod" => "RecordRef",
-		"memo" => "string",
-		"subsidiary" => "RecordRef",
-		"sourceSubsidiary" => "RecordRef",
-		"class" => "RecordRef",
-		"department" => "RecordRef",
-		"location" => "RecordRef",
-		"mainAccount" => "RecordRef",
-		"currency" => "RecordRef",
-		"creditTotal" => "float",
-		"debitTotal" => "float",
-		"lineList" => "PeriodEndJournalLineList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'transactionNumber' => 'string',
+        'accountingBook' => 'RecordRef',
+        'customForm' => 'RecordRef',
+        'tranId' => 'string',
+        'trandate' => 'dateTime',
+        'postingPeriod' => 'RecordRef',
+        'memo' => 'string',
+        'subsidiary' => 'RecordRef',
+        'sourceSubsidiary' => 'RecordRef',
+        'class' => 'RecordRef',
+        'department' => 'RecordRef',
+        'location' => 'RecordRef',
+        'mainAccount' => 'RecordRef',
+        'currency' => 'RecordRef',
+        'creditTotal' => 'float',
+        'debitTotal' => 'float',
+        'lineList' => 'PeriodEndJournalLineList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

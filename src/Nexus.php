@@ -11,76 +11,66 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Nexus
+ * Nexus.
  */
-class Nexus extends Record {
-	/**
-	 * @access public
-	 * @var Country
-	 */
-	public $country;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $state;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxAgency;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxAgencyPst;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxCode;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parentNexus;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $taxDateFromFulfillment;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class Nexus extends Record
+{
+    /**
+     * @var Country
+     */
+    public $country;
+    /**
+     * @var RecordRef
+     */
+    public $state;
+    /**
+     * @var RecordRef
+     */
+    public $taxAgency;
+    /**
+     * @var RecordRef
+     */
+    public $taxAgencyPst;
+    /**
+     * @var RecordRef
+     */
+    public $taxCode;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var RecordRef
+     */
+    public $parentNexus;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var bool
+     */
+    public $taxDateFromFulfillment;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"country" => "Country",
-		"state" => "RecordRef",
-		"taxAgency" => "RecordRef",
-		"taxAgencyPst" => "RecordRef",
-		"taxCode" => "RecordRef",
-		"description" => "string",
-		"parentNexus" => "RecordRef",
-		"isInactive" => "boolean",
-		"taxDateFromFulfillment" => "boolean",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'country' => 'Country',
+        'state' => 'RecordRef',
+        'taxAgency' => 'RecordRef',
+        'taxAgencyPst' => 'RecordRef',
+        'taxCode' => 'RecordRef',
+        'description' => 'string',
+        'parentNexus' => 'RecordRef',
+        'isInactive' => 'boolean',
+        'taxDateFromFulfillment' => 'boolean',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

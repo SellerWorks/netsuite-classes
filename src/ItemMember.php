@@ -11,124 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemMember
+ * ItemMember.
  */
-class ItemMember {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memberDescr;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $componentYield;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $bomQuantity;
-	/**
-	 * @access public
-	 * @var ItemSource
-	 */
-	public $itemSource;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $memberUnit;
-	/**
-	 * @access public
-	 * @var VsoeDeferral
-	 */
-	public $vsoeDeferral;
-	/**
-	 * @access public
-	 * @var VsoePermitDiscount
-	 */
-	public $vsoePermitDiscount;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $vsoeDelivered;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $taxSchedule;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $taxcode;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $taxrate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $effectiveDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $obsoleteDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $effectiveRevision;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $obsoleteRevision;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $lineNumber;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memberKey;
+class ItemMember
+{
+    /**
+     * @var string
+     */
+    public $memberDescr;
+    /**
+     * @var float
+     */
+    public $componentYield;
+    /**
+     * @var float
+     */
+    public $bomQuantity;
+    /**
+     * @var ItemSource
+     */
+    public $itemSource;
+    /**
+     * @var float
+     */
+    public $quantity;
+    /**
+     * @var RecordRef
+     */
+    public $memberUnit;
+    /**
+     * @var VsoeDeferral
+     */
+    public $vsoeDeferral;
+    /**
+     * @var VsoePermitDiscount
+     */
+    public $vsoePermitDiscount;
+    /**
+     * @var bool
+     */
+    public $vsoeDelivered;
+    /**
+     * @var RecordRef
+     */
+    public $taxSchedule;
+    /**
+     * @var string
+     */
+    public $taxcode;
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var float
+     */
+    public $taxrate;
+    /**
+     * @var dateTime
+     */
+    public $effectiveDate;
+    /**
+     * @var dateTime
+     */
+    public $obsoleteDate;
+    /**
+     * @var RecordRef
+     */
+    public $effectiveRevision;
+    /**
+     * @var RecordRef
+     */
+    public $obsoleteRevision;
+    /**
+     * @var int
+     */
+    public $lineNumber;
+    /**
+     * @var string
+     */
+    public $memberKey;
 
-	static $paramtypesmap = array(
-		"memberDescr" => "string",
-		"componentYield" => "float",
-		"bomQuantity" => "float",
-		"itemSource" => "ItemSource",
-		"quantity" => "float",
-		"memberUnit" => "RecordRef",
-		"vsoeDeferral" => "VsoeDeferral",
-		"vsoePermitDiscount" => "VsoePermitDiscount",
-		"vsoeDelivered" => "boolean",
-		"taxSchedule" => "RecordRef",
-		"taxcode" => "string",
-		"item" => "RecordRef",
-		"taxrate" => "float",
-		"effectiveDate" => "dateTime",
-		"obsoleteDate" => "dateTime",
-		"effectiveRevision" => "RecordRef",
-		"obsoleteRevision" => "RecordRef",
-		"lineNumber" => "integer",
-		"memberKey" => "string",
-	);
+    public static $paramtypesmap = [
+        'memberDescr' => 'string',
+        'componentYield' => 'float',
+        'bomQuantity' => 'float',
+        'itemSource' => 'ItemSource',
+        'quantity' => 'float',
+        'memberUnit' => 'RecordRef',
+        'vsoeDeferral' => 'VsoeDeferral',
+        'vsoePermitDiscount' => 'VsoePermitDiscount',
+        'vsoeDelivered' => 'boolean',
+        'taxSchedule' => 'RecordRef',
+        'taxcode' => 'string',
+        'item' => 'RecordRef',
+        'taxrate' => 'float',
+        'effectiveDate' => 'dateTime',
+        'obsoleteDate' => 'dateTime',
+        'effectiveRevision' => 'RecordRef',
+        'obsoleteRevision' => 'RecordRef',
+        'lineNumber' => 'integer',
+        'memberKey' => 'string',
+    ];
 }

@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * HcmJobSearchRowBasic
+ * HcmJobSearchRowBasic.
  */
-class HcmJobSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $employmentCategory;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $jobId;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var SearchColumnCustomFieldList
-	 */
-	public $customFieldList;
+class HcmJobSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $description;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $employmentCategory;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $jobId;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $title;
+    /**
+     * @var SearchColumnCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"description" => "SearchColumnStringField[]",
-		"employmentCategory" => "SearchColumnSelectField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"jobId" => "SearchColumnStringField[]",
-		"title" => "SearchColumnStringField[]",
-		"customFieldList" => "SearchColumnCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'description' => 'SearchColumnStringField[]',
+        'employmentCategory' => 'SearchColumnSelectField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'jobId' => 'SearchColumnStringField[]',
+        'title' => 'SearchColumnStringField[]',
+        'customFieldList' => 'SearchColumnCustomFieldList',
+    ];
 }

@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationSearchLevel
+ * CustomizationSearchLevel.
  */
-class CustomizationSearchLevel {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _none = "_none";
-	/**
-	 * @var string
-	 */
-	const _edit = "_edit";
-	/**
-	 * @var string
-	 */
-	const _run = "_run";
+class CustomizationSearchLevel
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _none = '_none';
+    /**
+     * @var string
+     */
+    const _edit = '_edit';
+    /**
+     * @var string
+     */
+    const _run = '_run';
 }

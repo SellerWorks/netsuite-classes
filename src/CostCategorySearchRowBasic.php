@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CostCategorySearchRowBasic
+ * CostCategorySearchRowBasic.
  */
-class CostCategorySearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchColumnEnumSelectField[]
-	 */
-	public $itemCostType;
-	/**
-	 * @access public
-	 * @var SearchColumnStringField[]
-	 */
-	public $name;
+class CostCategorySearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $account;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $isInactive;
+    /**
+     * @var SearchColumnEnumSelectField[]
+     */
+    public $itemCostType;
+    /**
+     * @var SearchColumnStringField[]
+     */
+    public $name;
 
-	static $paramtypesmap = array(
-		"account" => "SearchColumnSelectField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"isInactive" => "SearchColumnBooleanField[]",
-		"itemCostType" => "SearchColumnEnumSelectField[]",
-		"name" => "SearchColumnStringField[]",
-	);
+    public static $paramtypesmap = [
+        'account' => 'SearchColumnSelectField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'isInactive' => 'SearchColumnBooleanField[]',
+        'itemCostType' => 'SearchColumnEnumSelectField[]',
+        'name' => 'SearchColumnStringField[]',
+    ];
 }

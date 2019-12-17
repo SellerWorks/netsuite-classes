@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * getSelectValueRequest
+ * getSelectValueRequest.
  */
-class getSelectValueRequest {
-	/**
-	 * @access public
-	 * @var GetSelectValueFieldDescription
-	 */
-	public $fieldDescription;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $pageIndex;
+class getSelectValueRequest
+{
+    /**
+     * @var GetSelectValueFieldDescription
+     */
+    public $fieldDescription;
+    /**
+     * @var int
+     */
+    public $pageIndex;
 
-	static $paramtypesmap = array(
-		"fieldDescription" => "GetSelectValueFieldDescription",
-		"pageIndex" => "integer",
-	);
+    public static $paramtypesmap = [
+        'fieldDescription' => 'GetSelectValueFieldDescription',
+        'pageIndex' => 'integer',
+    ];
 }

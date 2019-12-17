@@ -13,14 +13,15 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * AddListRequest
  */
-class AddListRequest {
-	/**
-	 * @access public
-	 * @var Record[]
-	 */
-	public $record;
+class AddListRequest
+{
+    /**
+     * @access public
+     * @var Record[]
+     */
+    public $record;
 
-	static $paramtypesmap = array(
-		"record" => "Record[]",
-	);
+    public static $paramtypesmap = array(
+        "record" => "Record[]",
+    );
 }

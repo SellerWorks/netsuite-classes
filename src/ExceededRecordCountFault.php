@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ExceededRecordCountFault
+ * ExceededRecordCountFault.
  */
-class ExceededRecordCountFault extends NSSoapFault {
-
-	static $paramtypesmap = array(
-	);
+class ExceededRecordCountFault extends NSSoapFault
+{
+    public static $paramtypesmap = [
+    ];
 }

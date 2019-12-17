@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomSearchAdvanced
+ * BomSearchAdvanced.
  */
-class BomSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var BomSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var BomSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class BomSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var BomSearch
+     */
+    public $criteria;
+    /**
+     * @var BomSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "BomSearch",
-		"columns" => "BomSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'BomSearch',
+        'columns' => 'BomSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

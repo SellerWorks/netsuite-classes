@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ClassTranslation
+ * ClassTranslation.
  */
-class ClassTranslation {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $locale;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $language;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $name;
+class ClassTranslation
+{
+    /**
+     * @var string
+     */
+    public $locale;
+    /**
+     * @var string
+     */
+    public $language;
+    /**
+     * @var string
+     */
+    public $name;
 
-	static $paramtypesmap = array(
-		"locale" => "string",
-		"language" => "string",
-		"name" => "string",
-	);
+    public static $paramtypesmap = [
+        'locale' => 'string',
+        'language' => 'string',
+        'name' => 'string',
+    ];
 }

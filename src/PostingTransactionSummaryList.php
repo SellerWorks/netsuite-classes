@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PostingTransactionSummaryList
+ * PostingTransactionSummaryList.
  */
-class PostingTransactionSummaryList {
-	/**
-	 * @access public
-	 * @var PostingTransactionSummary[]
-	 */
-	public $postingTransactionSummary;
+class PostingTransactionSummaryList
+{
+    /**
+     * @var PostingTransactionSummary[]
+     */
+    public $postingTransactionSummary;
 
-	static $paramtypesmap = array(
-		"postingTransactionSummary" => "PostingTransactionSummary[]",
-	);
+    public static $paramtypesmap = [
+        'postingTransactionSummary' => 'PostingTransactionSummary[]',
+    ];
 }

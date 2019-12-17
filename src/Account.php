@@ -11,202 +11,171 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Account
+ * Account.
  */
-class Account extends Record {
-	/**
-	 * @access public
-	 * @var AccountType
-	 */
-	public $acctType;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $unitsType;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $unit;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $acctNumber;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $acctName;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $legalName;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $includeChildren;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $exchangeRate;
-	/**
-	 * @access public
-	 * @var ConsolidatedRate
-	 */
-	public $generalRate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $parent;
-	/**
-	 * @access public
-	 * @var ConsolidatedRate
-	 */
-	public $cashFlowRate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $billableExpensesAcct;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $deferralAcct;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $curDocNum;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $restrictToAccountingBookList;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $inventory;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $eliminate;
-	/**
-	 * @access public
-	 * @var RecordRefList
-	 */
-	public $subsidiaryList;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $category1099misc;
-	/**
-	 * @access public
-	 * @var AccountLocalizationsList
-	 */
-	public $localizationsList;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $openingBalance;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $revalue;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class Account extends Record
+{
+    /**
+     * @var AccountType
+     */
+    public $acctType;
+    /**
+     * @var RecordRef
+     */
+    public $unitsType;
+    /**
+     * @var RecordRef
+     */
+    public $unit;
+    /**
+     * @var string
+     */
+    public $acctNumber;
+    /**
+     * @var string
+     */
+    public $acctName;
+    /**
+     * @var string
+     */
+    public $legalName;
+    /**
+     * @var bool
+     */
+    public $includeChildren;
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var string
+     */
+    public $exchangeRate;
+    /**
+     * @var ConsolidatedRate
+     */
+    public $generalRate;
+    /**
+     * @var RecordRef
+     */
+    public $parent;
+    /**
+     * @var ConsolidatedRate
+     */
+    public $cashFlowRate;
+    /**
+     * @var RecordRef
+     */
+    public $billableExpensesAcct;
+    /**
+     * @var RecordRef
+     */
+    public $deferralAcct;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var int
+     */
+    public $curDocNum;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRefList
+     */
+    public $restrictToAccountingBookList;
+    /**
+     * @var bool
+     */
+    public $inventory;
+    /**
+     * @var bool
+     */
+    public $eliminate;
+    /**
+     * @var RecordRefList
+     */
+    public $subsidiaryList;
+    /**
+     * @var RecordRef
+     */
+    public $category1099misc;
+    /**
+     * @var AccountLocalizationsList
+     */
+    public $localizationsList;
+    /**
+     * @var float
+     */
+    public $openingBalance;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var bool
+     */
+    public $revalue;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"acctType" => "AccountType",
-		"unitsType" => "RecordRef",
-		"unit" => "RecordRef",
-		"acctNumber" => "string",
-		"acctName" => "string",
-		"legalName" => "string",
-		"includeChildren" => "boolean",
-		"currency" => "RecordRef",
-		"exchangeRate" => "string",
-		"generalRate" => "ConsolidatedRate",
-		"parent" => "RecordRef",
-		"cashFlowRate" => "ConsolidatedRate",
-		"billableExpensesAcct" => "RecordRef",
-		"deferralAcct" => "RecordRef",
-		"description" => "string",
-		"curDocNum" => "integer",
-		"isInactive" => "boolean",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"restrictToAccountingBookList" => "RecordRefList",
-		"inventory" => "boolean",
-		"eliminate" => "boolean",
-		"subsidiaryList" => "RecordRefList",
-		"category1099misc" => "RecordRef",
-		"localizationsList" => "AccountLocalizationsList",
-		"openingBalance" => "float",
-		"tranDate" => "dateTime",
-		"revalue" => "boolean",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'acctType' => 'AccountType',
+        'unitsType' => 'RecordRef',
+        'unit' => 'RecordRef',
+        'acctNumber' => 'string',
+        'acctName' => 'string',
+        'legalName' => 'string',
+        'includeChildren' => 'boolean',
+        'currency' => 'RecordRef',
+        'exchangeRate' => 'string',
+        'generalRate' => 'ConsolidatedRate',
+        'parent' => 'RecordRef',
+        'cashFlowRate' => 'ConsolidatedRate',
+        'billableExpensesAcct' => 'RecordRef',
+        'deferralAcct' => 'RecordRef',
+        'description' => 'string',
+        'curDocNum' => 'integer',
+        'isInactive' => 'boolean',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'restrictToAccountingBookList' => 'RecordRefList',
+        'inventory' => 'boolean',
+        'eliminate' => 'boolean',
+        'subsidiaryList' => 'RecordRefList',
+        'category1099misc' => 'RecordRef',
+        'localizationsList' => 'AccountLocalizationsList',
+        'openingBalance' => 'float',
+        'tranDate' => 'dateTime',
+        'revalue' => 'boolean',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

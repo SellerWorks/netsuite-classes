@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderItemCreatePo
+ * SalesOrderItemCreatePo.
  */
-class SalesOrderItemCreatePo {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _dropShipment = "_dropShipment";
-	/**
-	 * @var string
-	 */
-	const _specialOrder = "_specialOrder";
+class SalesOrderItemCreatePo
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _dropShipment = '_dropShipment';
+    /**
+     * @var string
+     */
+    const _specialOrder = '_specialOrder';
 }

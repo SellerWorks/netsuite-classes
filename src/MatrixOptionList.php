@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MatrixOptionList
+ * MatrixOptionList.
  */
-class MatrixOptionList {
-	/**
-	 * @access public
-	 * @var SelectCustomFieldRef[]
-	 */
-	public $matrixOption;
+class MatrixOptionList
+{
+    /**
+     * @var SelectCustomFieldRef[]
+     */
+    public $matrixOption;
 
-	static $paramtypesmap = array(
-		"matrixOption" => "SelectCustomFieldRef[]",
-	);
+    public static $paramtypesmap = [
+        'matrixOption' => 'SelectCustomFieldRef[]',
+    ];
 }

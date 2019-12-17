@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRateSearchAdvanced
+ * CurrencyRateSearchAdvanced.
  */
-class CurrencyRateSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var CurrencyRateSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var CurrencyRateSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class CurrencyRateSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var CurrencyRateSearch
+     */
+    public $criteria;
+    /**
+     * @var CurrencyRateSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "CurrencyRateSearch",
-		"columns" => "CurrencyRateSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'CurrencyRateSearch',
+        'columns' => 'CurrencyRateSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,94 +11,81 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckSearchRowBasic
+ * PaycheckSearchRowBasic.
  */
-class PaycheckSearchRowBasic extends SearchRowBasic {
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $amendedDate;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var SearchColumnLongField[]
-	 */
-	public $batchNumber;
-	/**
-	 * @access public
-	 * @var SearchColumnDateField[]
-	 */
-	public $checkDate;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $employee;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchColumnBooleanField[]
-	 */
-	public $hasGLImpact;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $hours;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $payrollItem;
-	/**
-	 * @access public
-	 * @var SearchColumnSelectField[]
-	 */
-	public $payrollItemType;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $subjectWages;
-	/**
-	 * @access public
-	 * @var SearchColumnDoubleField[]
-	 */
-	public $taxableWages;
+class PaycheckSearchRowBasic extends SearchRowBasic
+{
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $account;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $amendedDate;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $amount;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $batchNumber;
+    /**
+     * @var SearchColumnDateField[]
+     */
+    public $checkDate;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $employee;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $externalId;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $hasGLImpact;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $hours;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $internalId;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $payrollItem;
+    /**
+     * @var SearchColumnSelectField[]
+     */
+    public $payrollItemType;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $subjectWages;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $taxableWages;
 
-	static $paramtypesmap = array(
-		"account" => "SearchColumnSelectField[]",
-		"amendedDate" => "SearchColumnDateField[]",
-		"amount" => "SearchColumnDoubleField[]",
-		"batchNumber" => "SearchColumnLongField[]",
-		"checkDate" => "SearchColumnDateField[]",
-		"employee" => "SearchColumnSelectField[]",
-		"externalId" => "SearchColumnSelectField[]",
-		"hasGLImpact" => "SearchColumnBooleanField[]",
-		"hours" => "SearchColumnDoubleField[]",
-		"internalId" => "SearchColumnSelectField[]",
-		"payrollItem" => "SearchColumnSelectField[]",
-		"payrollItemType" => "SearchColumnSelectField[]",
-		"subjectWages" => "SearchColumnDoubleField[]",
-		"taxableWages" => "SearchColumnDoubleField[]",
-	);
+    public static $paramtypesmap = [
+        'account' => 'SearchColumnSelectField[]',
+        'amendedDate' => 'SearchColumnDateField[]',
+        'amount' => 'SearchColumnDoubleField[]',
+        'batchNumber' => 'SearchColumnLongField[]',
+        'checkDate' => 'SearchColumnDateField[]',
+        'employee' => 'SearchColumnSelectField[]',
+        'externalId' => 'SearchColumnSelectField[]',
+        'hasGLImpact' => 'SearchColumnBooleanField[]',
+        'hours' => 'SearchColumnDoubleField[]',
+        'internalId' => 'SearchColumnSelectField[]',
+        'payrollItem' => 'SearchColumnSelectField[]',
+        'payrollItemType' => 'SearchColumnSelectField[]',
+        'subjectWages' => 'SearchColumnDoubleField[]',
+        'taxableWages' => 'SearchColumnDoubleField[]',
+    ];
 }

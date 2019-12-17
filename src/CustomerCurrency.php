@@ -11,82 +11,71 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerCurrency
+ * CustomerCurrency.
  */
-class CustomerCurrency {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $balance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $consolBalance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $depositBalance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $consolDepositBalance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $overdueBalance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $consolOverdueBalance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $unbilledOrders;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $consolUnbilledOrders;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $overrideCurrencyFormat;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $displaySymbol;
-	/**
-	 * @access public
-	 * @var CurrencySymbolPlacement
-	 */
-	public $symbolPlacement;
+class CustomerCurrency
+{
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var float
+     */
+    public $balance;
+    /**
+     * @var float
+     */
+    public $consolBalance;
+    /**
+     * @var float
+     */
+    public $depositBalance;
+    /**
+     * @var float
+     */
+    public $consolDepositBalance;
+    /**
+     * @var float
+     */
+    public $overdueBalance;
+    /**
+     * @var float
+     */
+    public $consolOverdueBalance;
+    /**
+     * @var float
+     */
+    public $unbilledOrders;
+    /**
+     * @var float
+     */
+    public $consolUnbilledOrders;
+    /**
+     * @var bool
+     */
+    public $overrideCurrencyFormat;
+    /**
+     * @var string
+     */
+    public $displaySymbol;
+    /**
+     * @var CurrencySymbolPlacement
+     */
+    public $symbolPlacement;
 
-	static $paramtypesmap = array(
-		"currency" => "RecordRef",
-		"balance" => "float",
-		"consolBalance" => "float",
-		"depositBalance" => "float",
-		"consolDepositBalance" => "float",
-		"overdueBalance" => "float",
-		"consolOverdueBalance" => "float",
-		"unbilledOrders" => "float",
-		"consolUnbilledOrders" => "float",
-		"overrideCurrencyFormat" => "boolean",
-		"displaySymbol" => "string",
-		"symbolPlacement" => "CurrencySymbolPlacement",
-	);
+    public static $paramtypesmap = [
+        'currency' => 'RecordRef',
+        'balance' => 'float',
+        'consolBalance' => 'float',
+        'depositBalance' => 'float',
+        'consolDepositBalance' => 'float',
+        'overdueBalance' => 'float',
+        'consolOverdueBalance' => 'float',
+        'unbilledOrders' => 'float',
+        'consolUnbilledOrders' => 'float',
+        'overrideCurrencyFormat' => 'boolean',
+        'displaySymbol' => 'string',
+        'symbolPlacement' => 'CurrencySymbolPlacement',
+    ];
 }

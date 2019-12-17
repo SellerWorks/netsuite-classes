@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FileSearchAdvanced
+ * FileSearchAdvanced.
  */
-class FileSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var FileSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var FileSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class FileSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var FileSearch
+     */
+    public $criteria;
+    /**
+     * @var FileSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "FileSearch",
-		"columns" => "FileSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'FileSearch',
+        'columns' => 'FileSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

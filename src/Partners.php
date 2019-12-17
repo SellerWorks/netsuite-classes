@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Partners
+ * Partners.
  */
-class Partners {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $partner;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $partnerRole;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isPrimary;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $contribution;
+class Partners
+{
+    /**
+     * @var RecordRef
+     */
+    public $partner;
+    /**
+     * @var RecordRef
+     */
+    public $partnerRole;
+    /**
+     * @var bool
+     */
+    public $isPrimary;
+    /**
+     * @var float
+     */
+    public $contribution;
 
-	static $paramtypesmap = array(
-		"partner" => "RecordRef",
-		"partnerRole" => "RecordRef",
-		"isPrimary" => "boolean",
-		"contribution" => "float",
-	);
+    public static $paramtypesmap = [
+        'partner' => 'RecordRef',
+        'partnerRole' => 'RecordRef',
+        'isPrimary' => 'boolean',
+        'contribution' => 'float',
+    ];
 }

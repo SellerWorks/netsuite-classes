@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RecordRef
+ * RecordRef.
  */
-class RecordRef extends BaseRef {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var RecordType
-	 */
-	public $type;
+class RecordRef extends BaseRef
+{
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
+    /**
+     * @var RecordType
+     */
+    public $type;
 
-	static $paramtypesmap = array(
-		"internalId" => "string",
-		"externalId" => "string",
-		"type" => "RecordType",
-	);
+    public static $paramtypesmap = [
+        'internalId' => 'string',
+        'externalId' => 'string',
+        'type' => 'RecordType',
+    ];
 }

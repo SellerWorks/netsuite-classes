@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FairValuePriceSearchAdvanced
+ * FairValuePriceSearchAdvanced.
  */
-class FairValuePriceSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var FairValuePriceSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var FairValuePriceSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class FairValuePriceSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var FairValuePriceSearch
+     */
+    public $criteria;
+    /**
+     * @var FairValuePriceSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "FairValuePriceSearch",
-		"columns" => "FairValuePriceSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'FairValuePriceSearch',
+        'columns' => 'FairValuePriceSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallContact
+ * PhoneCallContact.
  */
-class PhoneCallContact {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $company;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $phone;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $email;
+class PhoneCallContact
+{
+    /**
+     * @var RecordRef
+     */
+    public $company;
+    /**
+     * @var RecordRef
+     */
+    public $contact;
+    /**
+     * @var string
+     */
+    public $phone;
+    /**
+     * @var string
+     */
+    public $email;
 
-	static $paramtypesmap = array(
-		"company" => "RecordRef",
-		"contact" => "RecordRef",
-		"phone" => "string",
-		"email" => "string",
-	);
+    public static $paramtypesmap = [
+        'company' => 'RecordRef',
+        'contact' => 'RecordRef',
+        'phone' => 'string',
+        'email' => 'string',
+    ];
 }

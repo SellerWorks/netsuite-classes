@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckSearchAdvanced
+ * PaycheckSearchAdvanced.
  */
-class PaycheckSearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var PaycheckSearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var PaycheckSearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class PaycheckSearchAdvanced extends SearchRecord
+{
+    /**
+     * @var PaycheckSearch
+     */
+    public $criteria;
+    /**
+     * @var PaycheckSearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "PaycheckSearch",
-		"columns" => "PaycheckSearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'PaycheckSearch',
+        'columns' => 'PaycheckSearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

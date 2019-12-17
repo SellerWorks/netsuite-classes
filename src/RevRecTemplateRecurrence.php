@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecTemplateRecurrence
+ * RevRecTemplateRecurrence.
  */
-class RevRecTemplateRecurrence {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $incomeaccount;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $periodOffset;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $recamount;
+class RevRecTemplateRecurrence
+{
+    /**
+     * @var RecordRef
+     */
+    public $incomeaccount;
+    /**
+     * @var int
+     */
+    public $periodOffset;
+    /**
+     * @var string
+     */
+    public $recamount;
 
-	static $paramtypesmap = array(
-		"incomeaccount" => "RecordRef",
-		"periodOffset" => "integer",
-		"recamount" => "string",
-	);
+    public static $paramtypesmap = [
+        'incomeaccount' => 'RecordRef',
+        'periodOffset' => 'integer',
+        'recamount' => 'string',
+    ];
 }

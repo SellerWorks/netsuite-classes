@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetAllResponse
+ * GetAllResponse.
  */
-class GetAllResponse {
-	/**
-	 * @access public
-	 * @var GetAllResult
-	 */
-	public $getAllResult;
+class GetAllResponse
+{
+    /**
+     * @var GetAllResult
+     */
+    public $getAllResult;
 
-	static $paramtypesmap = array(
-		"getAllResult" => "GetAllResult",
-	);
+    public static $paramtypesmap = [
+        'getAllResult' => 'GetAllResult',
+    ];
 }

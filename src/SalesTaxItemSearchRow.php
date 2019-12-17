@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesTaxItemSearchRow
+ * SalesTaxItemSearchRow.
  */
-class SalesTaxItemSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var SalesTaxItemSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var TaxTypeSearchRowBasic
-	 */
-	public $taxTypeJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class SalesTaxItemSearchRow extends SearchRow
+{
+    /**
+     * @var SalesTaxItemSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var TaxTypeSearchRowBasic
+     */
+    public $taxTypeJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "SalesTaxItemSearchRowBasic",
-		"taxTypeJoin" => "TaxTypeSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'SalesTaxItemSearchRowBasic',
+        'taxTypeJoin' => 'TaxTypeSearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

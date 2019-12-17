@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerInfo
+ * PartnerInfo.
  */
-class PartnerInfo {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $partnerId;
+class PartnerInfo
+{
+    /**
+     * @var string
+     */
+    public $partnerId;
 
-	static $paramtypesmap = array(
-		"partnerId" => "string",
-	);
+    public static $paramtypesmap = [
+        'partnerId' => 'string',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRateList
+ * CurrencyRateList.
  */
-class CurrencyRateList {
-	/**
-	 * @access public
-	 * @var CurrencyRate[]
-	 */
-	public $currencyRate;
+class CurrencyRateList
+{
+    /**
+     * @var CurrencyRate[]
+     */
+    public $currencyRate;
 
-	static $paramtypesmap = array(
-		"currencyRate" => "CurrencyRate[]",
-	);
+    public static $paramtypesmap = [
+        'currencyRate' => 'CurrencyRate[]',
+    ];
 }

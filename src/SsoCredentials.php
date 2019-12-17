@@ -11,46 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SsoCredentials
+ * SsoCredentials.
  */
-class SsoCredentials {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $email;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $password;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $role;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $authenticationToken;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $partnerId;
+class SsoCredentials
+{
+    /**
+     * @var string
+     */
+    public $email;
+    /**
+     * @var string
+     */
+    public $password;
+    /**
+     * @var string
+     */
+    public $account;
+    /**
+     * @var RecordRef
+     */
+    public $role;
+    /**
+     * @var string
+     */
+    public $authenticationToken;
+    /**
+     * @var string
+     */
+    public $partnerId;
 
-	static $paramtypesmap = array(
-		"email" => "string",
-		"password" => "string",
-		"account" => "string",
-		"role" => "RecordRef",
-		"authenticationToken" => "string",
-		"partnerId" => "string",
-	);
+    public static $paramtypesmap = [
+        'email' => 'string',
+        'password' => 'string',
+        'account' => 'string',
+        'role' => 'RecordRef',
+        'authenticationToken' => 'string',
+        'partnerId' => 'string',
+    ];
 }

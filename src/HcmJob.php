@@ -11,58 +11,51 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * HcmJob
+ * HcmJob.
  */
-class HcmJob extends Record {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $title;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $employmentCategory;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $jobId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class HcmJob extends Record
+{
+    /**
+     * @var string
+     */
+    public $title;
+    /**
+     * @var bool
+     */
+    public $isInactive;
+    /**
+     * @var RecordRef
+     */
+    public $employmentCategory;
+    /**
+     * @var string
+     */
+    public $jobId;
+    /**
+     * @var string
+     */
+    public $description;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"title" => "string",
-		"isInactive" => "boolean",
-		"employmentCategory" => "RecordRef",
-		"jobId" => "string",
-		"description" => "string",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'title' => 'string',
+        'isInactive' => 'boolean',
+        'employmentCategory' => 'RecordRef',
+        'jobId' => 'string',
+        'description' => 'string',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

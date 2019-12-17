@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeTabs
+ * CustomRecordTypeTabs.
  */
-class CustomRecordTypeTabs {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tabTitle;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $tabParent;
-	/**
-	 * @access public
-	 * @var LanguageValueList
-	 */
-	public $tabTitleLanguageValueList;
+class CustomRecordTypeTabs
+{
+    /**
+     * @var string
+     */
+    public $tabTitle;
+    /**
+     * @var RecordRef
+     */
+    public $tabParent;
+    /**
+     * @var LanguageValueList
+     */
+    public $tabTitleLanguageValueList;
 
-	static $paramtypesmap = array(
-		"tabTitle" => "string",
-		"tabParent" => "RecordRef",
-		"tabTitleLanguageValueList" => "LanguageValueList",
-	);
+    public static $paramtypesmap = [
+        'tabTitle' => 'string',
+        'tabParent' => 'RecordRef',
+        'tabTitleLanguageValueList' => 'LanguageValueList',
+    ];
 }

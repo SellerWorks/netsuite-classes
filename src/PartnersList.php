@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnersList
+ * PartnersList.
  */
-class PartnersList {
-	/**
-	 * @access public
-	 * @var Partners[]
-	 */
-	public $partners;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PartnersList
+{
+    /**
+     * @var Partners[]
+     */
+    public $partners;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"partners" => "Partners[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'partners' => 'Partners[]',
+        'replaceAll' => 'boolean',
+    ];
 }

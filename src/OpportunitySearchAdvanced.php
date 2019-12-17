@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OpportunitySearchAdvanced
+ * OpportunitySearchAdvanced.
  */
-class OpportunitySearchAdvanced extends SearchRecord {
-	/**
-	 * @access public
-	 * @var OpportunitySearch
-	 */
-	public $criteria;
-	/**
-	 * @access public
-	 * @var OpportunitySearchRow
-	 */
-	public $columns;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $savedSearchScriptId;
+class OpportunitySearchAdvanced extends SearchRecord
+{
+    /**
+     * @var OpportunitySearch
+     */
+    public $criteria;
+    /**
+     * @var OpportunitySearchRow
+     */
+    public $columns;
+    /**
+     * @var string
+     */
+    public $savedSearchId;
+    /**
+     * @var string
+     */
+    public $savedSearchScriptId;
 
-	static $paramtypesmap = array(
-		"criteria" => "OpportunitySearch",
-		"columns" => "OpportunitySearchRow",
-		"savedSearchId" => "string",
-		"savedSearchScriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'criteria' => 'OpportunitySearch',
+        'columns' => 'OpportunitySearchRow',
+        'savedSearchId' => 'string',
+        'savedSearchScriptId' => 'string',
+    ];
 }

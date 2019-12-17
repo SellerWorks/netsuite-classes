@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ApplicationInfo
+ * ApplicationInfo.
  */
-class ApplicationInfo {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $applicationId;
+class ApplicationInfo
+{
+    /**
+     * @var string
+     */
+    public $applicationId;
 
-	static $paramtypesmap = array(
-		"applicationId" => "string",
-	);
+    public static $paramtypesmap = [
+        'applicationId' => 'string',
+    ];
 }

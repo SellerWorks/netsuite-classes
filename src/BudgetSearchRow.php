@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetSearchRow
+ * BudgetSearchRow.
  */
-class BudgetSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var BudgetSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class BudgetSearchRow extends SearchRow
+{
+    /**
+     * @var BudgetSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "BudgetSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'BudgetSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

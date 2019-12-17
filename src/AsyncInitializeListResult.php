@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncInitializeListResult
+ * AsyncInitializeListResult.
  */
-class AsyncInitializeListResult extends AsyncResult {
-	/**
-	 * @access public
-	 * @var ReadResponseList
-	 */
-	public $readResponseList;
+class AsyncInitializeListResult extends AsyncResult
+{
+    /**
+     * @var ReadResponseList
+     */
+    public $readResponseList;
 
-	static $paramtypesmap = array(
-		"readResponseList" => "ReadResponseList",
-	);
+    public static $paramtypesmap = [
+        'readResponseList' => 'ReadResponseList',
+    ];
 }

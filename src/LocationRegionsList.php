@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationRegionsList
+ * LocationRegionsList.
  */
-class LocationRegionsList {
-	/**
-	 * @access public
-	 * @var LocationRegions[]
-	 */
-	public $locationRegions;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class LocationRegionsList
+{
+    /**
+     * @var LocationRegions[]
+     */
+    public $locationRegions;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"locationRegions" => "LocationRegions[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'locationRegions' => 'LocationRegions[]',
+        'replaceAll' => 'boolean',
+    ];
 }

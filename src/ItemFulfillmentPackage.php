@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackage
+ * ItemFulfillmentPackage.
  */
-class ItemFulfillmentPackage {
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $packageWeight;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $packageDescr;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $packageTrackingNumber;
+class ItemFulfillmentPackage
+{
+    /**
+     * @var float
+     */
+    public $packageWeight;
+    /**
+     * @var string
+     */
+    public $packageDescr;
+    /**
+     * @var string
+     */
+    public $packageTrackingNumber;
 
-	static $paramtypesmap = array(
-		"packageWeight" => "float",
-		"packageDescr" => "string",
-		"packageTrackingNumber" => "string",
-	);
+    public static $paramtypesmap = [
+        'packageWeight' => 'float',
+        'packageDescr' => 'string',
+        'packageTrackingNumber' => 'string',
+    ];
 }

@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseTimeItemList
+ * SupportCaseTimeItemList.
  */
-class SupportCaseTimeItemList {
-	/**
-	 * @access public
-	 * @var TimeItem[]
-	 */
-	public $timeItem;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class SupportCaseTimeItemList
+{
+    /**
+     * @var TimeItem[]
+     */
+    public $timeItem;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"timeItem" => "TimeItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'timeItem' => 'TimeItem[]',
+        'replaceAll' => 'boolean',
+    ];
 }

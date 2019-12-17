@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignSearchRow
+ * CampaignSearchRow.
  */
-class CampaignSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var CampaignSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EntitySearchRowBasic
-	 */
-	public $campaignRecipientJoin;
-	/**
-	 * @access public
-	 * @var FileSearchRowBasic
-	 */
-	public $fileJoin;
-	/**
-	 * @access public
-	 * @var MessageSearchRowBasic
-	 */
-	public $messagesJoin;
-	/**
-	 * @access public
-	 * @var OriginatingLeadSearchRowBasic
-	 */
-	public $originatingLeadJoin;
-	/**
-	 * @access public
-	 * @var PromotionCodeSearchRowBasic
-	 */
-	public $promotionCodeJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchRowBasic
-	 */
-	public $transactionJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var NoteSearchRowBasic
-	 */
-	public $userNotesJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class CampaignSearchRow extends SearchRow
+{
+    /**
+     * @var CampaignSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var EntitySearchRowBasic
+     */
+    public $campaignRecipientJoin;
+    /**
+     * @var FileSearchRowBasic
+     */
+    public $fileJoin;
+    /**
+     * @var MessageSearchRowBasic
+     */
+    public $messagesJoin;
+    /**
+     * @var OriginatingLeadSearchRowBasic
+     */
+    public $originatingLeadJoin;
+    /**
+     * @var PromotionCodeSearchRowBasic
+     */
+    public $promotionCodeJoin;
+    /**
+     * @var TransactionSearchRowBasic
+     */
+    public $transactionJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
+    /**
+     * @var NoteSearchRowBasic
+     */
+    public $userNotesJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "CampaignSearchRowBasic",
-		"campaignRecipientJoin" => "EntitySearchRowBasic",
-		"fileJoin" => "FileSearchRowBasic",
-		"messagesJoin" => "MessageSearchRowBasic",
-		"originatingLeadJoin" => "OriginatingLeadSearchRowBasic",
-		"promotionCodeJoin" => "PromotionCodeSearchRowBasic",
-		"transactionJoin" => "TransactionSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-		"userNotesJoin" => "NoteSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'CampaignSearchRowBasic',
+        'campaignRecipientJoin' => 'EntitySearchRowBasic',
+        'fileJoin' => 'FileSearchRowBasic',
+        'messagesJoin' => 'MessageSearchRowBasic',
+        'originatingLeadJoin' => 'OriginatingLeadSearchRowBasic',
+        'promotionCodeJoin' => 'PromotionCodeSearchRowBasic',
+        'transactionJoin' => 'TransactionSearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+        'userNotesJoin' => 'NoteSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BinSearchBasic
+ * BinSearchBasic.
  */
-class BinSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $binNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $inactive;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class BinSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchStringField
+     */
+    public $binNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchBooleanField
+     */
+    public $inactive;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $location;
+    /**
+     * @var SearchStringField
+     */
+    public $memo;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"binNumber" => "SearchStringField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"inactive" => "SearchBooleanField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"location" => "SearchMultiSelectField",
-		"memo" => "SearchStringField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'binNumber' => 'SearchStringField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'inactive' => 'SearchBooleanField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'location' => 'SearchMultiSelectField',
+        'memo' => 'SearchStringField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

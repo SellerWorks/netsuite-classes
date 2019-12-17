@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemBinNumberSearchBasic
+ * ItemBinNumberSearchBasic.
  */
-class ItemBinNumberSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $binNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityAvailable;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityOnHand;
+class ItemBinNumberSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $binNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $location;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityAvailable;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityOnHand;
 
-	static $paramtypesmap = array(
-		"binNumber" => "SearchMultiSelectField",
-		"location" => "SearchMultiSelectField",
-		"quantityAvailable" => "SearchDoubleField",
-		"quantityOnHand" => "SearchDoubleField",
-	);
+    public static $paramtypesmap = [
+        'binNumber' => 'SearchMultiSelectField',
+        'location' => 'SearchMultiSelectField',
+        'quantityAvailable' => 'SearchDoubleField',
+        'quantityOnHand' => 'SearchDoubleField',
+    ];
 }

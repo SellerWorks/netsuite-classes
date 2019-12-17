@@ -11,100 +11,86 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerSearchRow
+ * PartnerSearchRow.
  */
-class PartnerSearchRow extends SearchRow {
-	/**
-	 * @access public
-	 * @var PartnerSearchRowBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var CampaignSearchRowBasic
-	 */
-	public $campaignResponseJoin;
-	/**
-	 * @access public
-	 * @var ContactSearchRowBasic
-	 */
-	public $contactJoin;
-	/**
-	 * @access public
-	 * @var ContactSearchRowBasic
-	 */
-	public $contactPrimaryJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchRowBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var FileSearchRowBasic
-	 */
-	public $fileJoin;
-	/**
-	 * @access public
-	 * @var MessageSearchRowBasic
-	 */
-	public $messagesJoin;
-	/**
-	 * @access public
-	 * @var MessageSearchRowBasic
-	 */
-	public $messagesFromJoin;
-	/**
-	 * @access public
-	 * @var MessageSearchRowBasic
-	 */
-	public $messagesToJoin;
-	/**
-	 * @access public
-	 * @var OpportunitySearchRowBasic
-	 */
-	public $opportunityJoin;
-	/**
-	 * @access public
-	 * @var EntityTaxRegistrationSearchRowBasic
-	 */
-	public $taxRegistrationJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchRowBasic
-	 */
-	public $transactionJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchRowBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var NoteSearchRowBasic
-	 */
-	public $userNotesJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchRowBasic[]
-	 */
-	public $customSearchJoin;
+class PartnerSearchRow extends SearchRow
+{
+    /**
+     * @var PartnerSearchRowBasic
+     */
+    public $basic;
+    /**
+     * @var CampaignSearchRowBasic
+     */
+    public $campaignResponseJoin;
+    /**
+     * @var ContactSearchRowBasic
+     */
+    public $contactJoin;
+    /**
+     * @var ContactSearchRowBasic
+     */
+    public $contactPrimaryJoin;
+    /**
+     * @var CustomerSearchRowBasic
+     */
+    public $customerJoin;
+    /**
+     * @var FileSearchRowBasic
+     */
+    public $fileJoin;
+    /**
+     * @var MessageSearchRowBasic
+     */
+    public $messagesJoin;
+    /**
+     * @var MessageSearchRowBasic
+     */
+    public $messagesFromJoin;
+    /**
+     * @var MessageSearchRowBasic
+     */
+    public $messagesToJoin;
+    /**
+     * @var OpportunitySearchRowBasic
+     */
+    public $opportunityJoin;
+    /**
+     * @var EntityTaxRegistrationSearchRowBasic
+     */
+    public $taxRegistrationJoin;
+    /**
+     * @var TransactionSearchRowBasic
+     */
+    public $transactionJoin;
+    /**
+     * @var EmployeeSearchRowBasic
+     */
+    public $userJoin;
+    /**
+     * @var NoteSearchRowBasic
+     */
+    public $userNotesJoin;
+    /**
+     * @var CustomSearchRowBasic[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "PartnerSearchRowBasic",
-		"campaignResponseJoin" => "CampaignSearchRowBasic",
-		"contactJoin" => "ContactSearchRowBasic",
-		"contactPrimaryJoin" => "ContactSearchRowBasic",
-		"customerJoin" => "CustomerSearchRowBasic",
-		"fileJoin" => "FileSearchRowBasic",
-		"messagesJoin" => "MessageSearchRowBasic",
-		"messagesFromJoin" => "MessageSearchRowBasic",
-		"messagesToJoin" => "MessageSearchRowBasic",
-		"opportunityJoin" => "OpportunitySearchRowBasic",
-		"taxRegistrationJoin" => "EntityTaxRegistrationSearchRowBasic",
-		"transactionJoin" => "TransactionSearchRowBasic",
-		"userJoin" => "EmployeeSearchRowBasic",
-		"userNotesJoin" => "NoteSearchRowBasic",
-		"customSearchJoin" => "CustomSearchRowBasic[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'PartnerSearchRowBasic',
+        'campaignResponseJoin' => 'CampaignSearchRowBasic',
+        'contactJoin' => 'ContactSearchRowBasic',
+        'contactPrimaryJoin' => 'ContactSearchRowBasic',
+        'customerJoin' => 'CustomerSearchRowBasic',
+        'fileJoin' => 'FileSearchRowBasic',
+        'messagesJoin' => 'MessageSearchRowBasic',
+        'messagesFromJoin' => 'MessageSearchRowBasic',
+        'messagesToJoin' => 'MessageSearchRowBasic',
+        'opportunityJoin' => 'OpportunitySearchRowBasic',
+        'taxRegistrationJoin' => 'EntityTaxRegistrationSearchRowBasic',
+        'transactionJoin' => 'TransactionSearchRowBasic',
+        'userJoin' => 'EmployeeSearchRowBasic',
+        'userNotesJoin' => 'NoteSearchRowBasic',
+        'customSearchJoin' => 'CustomSearchRowBasic[]',
+    ];
 }

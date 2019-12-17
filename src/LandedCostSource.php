@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LandedCostSource
+ * LandedCostSource.
  */
-class LandedCostSource {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _manual = "_manual";
-	/**
-	 * @var string
-	 */
-	const _otherTransaction = "_otherTransaction";
-	/**
-	 * @var string
-	 */
-	const _otherTransactionExcludeTax = "_otherTransactionExcludeTax";
-	/**
-	 * @var string
-	 */
-	const _thisTransaction = "_thisTransaction";
+class LandedCostSource
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _manual = '_manual';
+    /**
+     * @var string
+     */
+    const _otherTransaction = '_otherTransaction';
+    /**
+     * @var string
+     */
+    const _otherTransactionExcludeTax = '_otherTransactionExcludeTax';
+    /**
+     * @var string
+     */
+    const _thisTransaction = '_thisTransaction';
 }

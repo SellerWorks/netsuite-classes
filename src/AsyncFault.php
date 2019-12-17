@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncFault
+ * AsyncFault.
  */
-class AsyncFault extends NSSoapFault {
-
-	static $paramtypesmap = array(
-	);
+class AsyncFault extends NSSoapFault
+{
+    public static $paramtypesmap = [
+    ];
 }

@@ -11,100 +11,86 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberSearchBasic
+ * InventoryNumberSearchBasic.
  */
-class InventoryNumberSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $expirationDate;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $inventoryNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isOnHand;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityAvailable;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityInTransit;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityOnHand;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $quantityOnOrder;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class InventoryNumberSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchDateField
+     */
+    public $expirationDate;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchStringField
+     */
+    public $inventoryNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isOnHand;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $item;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $location;
+    /**
+     * @var SearchStringField
+     */
+    public $memo;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityAvailable;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityInTransit;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityOnHand;
+    /**
+     * @var SearchDoubleField
+     */
+    public $quantityOnOrder;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"expirationDate" => "SearchDateField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"inventoryNumber" => "SearchStringField",
-		"isOnHand" => "SearchBooleanField",
-		"item" => "SearchMultiSelectField",
-		"location" => "SearchMultiSelectField",
-		"memo" => "SearchStringField",
-		"quantityAvailable" => "SearchDoubleField",
-		"quantityInTransit" => "SearchDoubleField",
-		"quantityOnHand" => "SearchDoubleField",
-		"quantityOnOrder" => "SearchDoubleField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'expirationDate' => 'SearchDateField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'inventoryNumber' => 'SearchStringField',
+        'isOnHand' => 'SearchBooleanField',
+        'item' => 'SearchMultiSelectField',
+        'location' => 'SearchMultiSelectField',
+        'memo' => 'SearchStringField',
+        'quantityAvailable' => 'SearchDoubleField',
+        'quantityInTransit' => 'SearchDoubleField',
+        'quantityOnHand' => 'SearchDoubleField',
+        'quantityOnOrder' => 'SearchDoubleField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

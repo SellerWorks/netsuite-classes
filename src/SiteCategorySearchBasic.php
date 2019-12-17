@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategorySearchBasic
+ * SiteCategorySearchBasic.
  */
-class SiteCategorySearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $dateViewed;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $excludeFromSitemap;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchEnumMultiSelectField
-	 */
-	public $sitemapPriority;
+class SiteCategorySearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchDateField
+     */
+    public $dateViewed;
+    /**
+     * @var SearchStringField
+     */
+    public $description;
+    /**
+     * @var SearchBooleanField
+     */
+    public $excludeFromSitemap;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $name;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $sitemapPriority;
 
-	static $paramtypesmap = array(
-		"dateViewed" => "SearchDateField",
-		"description" => "SearchStringField",
-		"excludeFromSitemap" => "SearchBooleanField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"name" => "SearchMultiSelectField",
-		"sitemapPriority" => "SearchEnumMultiSelectField",
-	);
+    public static $paramtypesmap = [
+        'dateViewed' => 'SearchDateField',
+        'description' => 'SearchStringField',
+        'excludeFromSitemap' => 'SearchBooleanField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'name' => 'SearchMultiSelectField',
+        'sitemapPriority' => 'SearchEnumMultiSelectField',
+    ];
 }

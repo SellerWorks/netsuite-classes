@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerItemPricing
+ * CustomerItemPricing.
  */
-class CustomerItemPricing {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $level;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $price;
+class CustomerItemPricing
+{
+    /**
+     * @var RecordRef
+     */
+    public $item;
+    /**
+     * @var RecordRef
+     */
+    public $level;
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var float
+     */
+    public $price;
 
-	static $paramtypesmap = array(
-		"item" => "RecordRef",
-		"level" => "RecordRef",
-		"currency" => "RecordRef",
-		"price" => "float",
-	);
+    public static $paramtypesmap = [
+        'item' => 'RecordRef',
+        'level' => 'RecordRef',
+        'currency' => 'RecordRef',
+        'price' => 'float',
+    ];
 }

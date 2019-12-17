@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderShipGroupList
+ * SalesOrderShipGroupList.
  */
-class SalesOrderShipGroupList {
-	/**
-	 * @access public
-	 * @var TransactionShipGroup[]
-	 */
-	public $shipGroup;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class SalesOrderShipGroupList
+{
+    /**
+     * @var TransactionShipGroup[]
+     */
+    public $shipGroup;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"shipGroup" => "TransactionShipGroup[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'shipGroup' => 'TransactionShipGroup[]',
+        'replaceAll' => 'boolean',
+    ];
 }

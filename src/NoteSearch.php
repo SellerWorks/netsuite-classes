@@ -11,136 +11,116 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NoteSearch
+ * NoteSearch.
  */
-class NoteSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var NoteSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $authorJoin;
-	/**
-	 * @access public
-	 * @var PhoneCallSearchBasic
-	 */
-	public $callJoin;
-	/**
-	 * @access public
-	 * @var CampaignSearchBasic
-	 */
-	public $campaignJoin;
-	/**
-	 * @access public
-	 * @var SupportCaseSearchBasic
-	 */
-	public $caseJoin;
-	/**
-	 * @access public
-	 * @var ContactSearchBasic
-	 */
-	public $contactJoin;
-	/**
-	 * @access public
-	 * @var CustomerSearchBasic
-	 */
-	public $customerJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $employeeJoin;
-	/**
-	 * @access public
-	 * @var EntitySearchBasic
-	 */
-	public $entityJoin;
-	/**
-	 * @access public
-	 * @var CalendarEventSearchBasic
-	 */
-	public $eventJoin;
-	/**
-	 * @access public
-	 * @var IssueSearchBasic
-	 */
-	public $issueJoin;
-	/**
-	 * @access public
-	 * @var ItemSearchBasic
-	 */
-	public $itemJoin;
-	/**
-	 * @access public
-	 * @var OpportunitySearchBasic
-	 */
-	public $opportunityJoin;
-	/**
-	 * @access public
-	 * @var OriginatingLeadSearchBasic
-	 */
-	public $originatingLeadJoin;
-	/**
-	 * @access public
-	 * @var PartnerSearchBasic
-	 */
-	public $partnerJoin;
-	/**
-	 * @access public
-	 * @var SolutionSearchBasic
-	 */
-	public $solutionJoin;
-	/**
-	 * @access public
-	 * @var TaskSearchBasic
-	 */
-	public $taskJoin;
-	/**
-	 * @access public
-	 * @var TransactionSearchBasic
-	 */
-	public $transactionJoin;
-	/**
-	 * @access public
-	 * @var EmployeeSearchBasic
-	 */
-	public $userJoin;
-	/**
-	 * @access public
-	 * @var VendorSearchBasic
-	 */
-	public $vendorJoin;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class NoteSearch extends SearchRecord
+{
+    /**
+     * @var NoteSearchBasic
+     */
+    public $basic;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $authorJoin;
+    /**
+     * @var PhoneCallSearchBasic
+     */
+    public $callJoin;
+    /**
+     * @var CampaignSearchBasic
+     */
+    public $campaignJoin;
+    /**
+     * @var SupportCaseSearchBasic
+     */
+    public $caseJoin;
+    /**
+     * @var ContactSearchBasic
+     */
+    public $contactJoin;
+    /**
+     * @var CustomerSearchBasic
+     */
+    public $customerJoin;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $employeeJoin;
+    /**
+     * @var EntitySearchBasic
+     */
+    public $entityJoin;
+    /**
+     * @var CalendarEventSearchBasic
+     */
+    public $eventJoin;
+    /**
+     * @var IssueSearchBasic
+     */
+    public $issueJoin;
+    /**
+     * @var ItemSearchBasic
+     */
+    public $itemJoin;
+    /**
+     * @var OpportunitySearchBasic
+     */
+    public $opportunityJoin;
+    /**
+     * @var OriginatingLeadSearchBasic
+     */
+    public $originatingLeadJoin;
+    /**
+     * @var PartnerSearchBasic
+     */
+    public $partnerJoin;
+    /**
+     * @var SolutionSearchBasic
+     */
+    public $solutionJoin;
+    /**
+     * @var TaskSearchBasic
+     */
+    public $taskJoin;
+    /**
+     * @var TransactionSearchBasic
+     */
+    public $transactionJoin;
+    /**
+     * @var EmployeeSearchBasic
+     */
+    public $userJoin;
+    /**
+     * @var VendorSearchBasic
+     */
+    public $vendorJoin;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "NoteSearchBasic",
-		"authorJoin" => "EmployeeSearchBasic",
-		"callJoin" => "PhoneCallSearchBasic",
-		"campaignJoin" => "CampaignSearchBasic",
-		"caseJoin" => "SupportCaseSearchBasic",
-		"contactJoin" => "ContactSearchBasic",
-		"customerJoin" => "CustomerSearchBasic",
-		"employeeJoin" => "EmployeeSearchBasic",
-		"entityJoin" => "EntitySearchBasic",
-		"eventJoin" => "CalendarEventSearchBasic",
-		"issueJoin" => "IssueSearchBasic",
-		"itemJoin" => "ItemSearchBasic",
-		"opportunityJoin" => "OpportunitySearchBasic",
-		"originatingLeadJoin" => "OriginatingLeadSearchBasic",
-		"partnerJoin" => "PartnerSearchBasic",
-		"solutionJoin" => "SolutionSearchBasic",
-		"taskJoin" => "TaskSearchBasic",
-		"transactionJoin" => "TransactionSearchBasic",
-		"userJoin" => "EmployeeSearchBasic",
-		"vendorJoin" => "VendorSearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'NoteSearchBasic',
+        'authorJoin' => 'EmployeeSearchBasic',
+        'callJoin' => 'PhoneCallSearchBasic',
+        'campaignJoin' => 'CampaignSearchBasic',
+        'caseJoin' => 'SupportCaseSearchBasic',
+        'contactJoin' => 'ContactSearchBasic',
+        'customerJoin' => 'CustomerSearchBasic',
+        'employeeJoin' => 'EmployeeSearchBasic',
+        'entityJoin' => 'EntitySearchBasic',
+        'eventJoin' => 'CalendarEventSearchBasic',
+        'issueJoin' => 'IssueSearchBasic',
+        'itemJoin' => 'ItemSearchBasic',
+        'opportunityJoin' => 'OpportunitySearchBasic',
+        'originatingLeadJoin' => 'OriginatingLeadSearchBasic',
+        'partnerJoin' => 'PartnerSearchBasic',
+        'solutionJoin' => 'SolutionSearchBasic',
+        'taskJoin' => 'TaskSearchBasic',
+        'transactionJoin' => 'TransactionSearchBasic',
+        'userJoin' => 'EmployeeSearchBasic',
+        'vendorJoin' => 'VendorSearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

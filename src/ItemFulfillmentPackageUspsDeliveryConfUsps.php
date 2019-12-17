@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageUspsDeliveryConfUsps
+ * ItemFulfillmentPackageUspsDeliveryConfUsps.
  */
-class ItemFulfillmentPackageUspsDeliveryConfUsps {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const _deliveryConfirmation = "_deliveryConfirmation";
-	/**
-	 * @var string
-	 */
-	const _signatureConfirmation = "_signatureConfirmation";
+class ItemFulfillmentPackageUspsDeliveryConfUsps
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const _deliveryConfirmation = '_deliveryConfirmation';
+    /**
+     * @var string
+     */
+    const _signatureConfirmation = '_signatureConfirmation';
 }

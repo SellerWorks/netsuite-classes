@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomTransactionRef
+ * CustomTransactionRef.
  */
-class CustomTransactionRef extends BaseRef {
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $typeId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $scriptId;
+class CustomTransactionRef extends BaseRef
+{
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
+    /**
+     * @var string
+     */
+    public $typeId;
+    /**
+     * @var string
+     */
+    public $scriptId;
 
-	static $paramtypesmap = array(
-		"internalId" => "string",
-		"externalId" => "string",
-		"typeId" => "string",
-		"scriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'internalId' => 'string',
+        'externalId' => 'string',
+        'typeId' => 'string',
+        'scriptId' => 'string',
+    ];
 }

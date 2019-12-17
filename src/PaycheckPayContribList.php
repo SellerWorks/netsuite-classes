@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayContribList
+ * PaycheckPayContribList.
  */
-class PaycheckPayContribList {
-	/**
-	 * @access public
-	 * @var PaycheckPayContrib[]
-	 */
-	public $paycheckPayContrib;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PaycheckPayContribList
+{
+    /**
+     * @var PaycheckPayContrib[]
+     */
+    public $paycheckPayContrib;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"paycheckPayContrib" => "PaycheckPayContrib[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'paycheckPayContrib' => 'PaycheckPayContrib[]',
+        'replaceAll' => 'boolean',
+    ];
 }

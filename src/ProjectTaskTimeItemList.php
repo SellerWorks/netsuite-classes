@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskTimeItemList
+ * ProjectTaskTimeItemList.
  */
-class ProjectTaskTimeItemList {
-	/**
-	 * @access public
-	 * @var TimeItem[]
-	 */
-	public $timeItem;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class ProjectTaskTimeItemList
+{
+    /**
+     * @var TimeItem[]
+     */
+    public $timeItem;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"timeItem" => "TimeItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'timeItem' => 'TimeItem[]',
+        'replaceAll' => 'boolean',
+    ];
 }

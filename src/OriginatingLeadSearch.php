@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OriginatingLeadSearch
+ * OriginatingLeadSearch.
  */
-class OriginatingLeadSearch extends SearchRecord {
-	/**
-	 * @access public
-	 * @var OriginatingLeadSearchBasic
-	 */
-	public $basic;
-	/**
-	 * @access public
-	 * @var CustomSearchJoin[]
-	 */
-	public $customSearchJoin;
+class OriginatingLeadSearch extends SearchRecord
+{
+    /**
+     * @var OriginatingLeadSearchBasic
+     */
+    public $basic;
+    /**
+     * @var CustomSearchJoin[]
+     */
+    public $customSearchJoin;
 
-	static $paramtypesmap = array(
-		"basic" => "OriginatingLeadSearchBasic",
-		"customSearchJoin" => "CustomSearchJoin[]",
-	);
+    public static $paramtypesmap = [
+        'basic' => 'OriginatingLeadSearchBasic',
+        'customSearchJoin' => 'CustomSearchJoin[]',
+    ];
 }

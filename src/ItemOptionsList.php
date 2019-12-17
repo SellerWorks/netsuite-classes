@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemOptionsList
+ * ItemOptionsList.
  */
-class ItemOptionsList {
-	/**
-	 * @access public
-	 * @var RecordRef[]
-	 */
-	public $itemOptions;
+class ItemOptionsList
+{
+    /**
+     * @var RecordRef[]
+     */
+    public $itemOptions;
 
-	static $paramtypesmap = array(
-		"itemOptions" => "RecordRef[]",
-	);
+    public static $paramtypesmap = [
+        'itemOptions' => 'RecordRef[]',
+    ];
 }

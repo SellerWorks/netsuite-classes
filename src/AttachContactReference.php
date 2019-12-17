@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AttachContactReference
+ * AttachContactReference.
  */
-class AttachContactReference extends AttachReference {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $contact;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $contactRole;
+class AttachContactReference extends AttachReference
+{
+    /**
+     * @var RecordRef
+     */
+    public $contact;
+    /**
+     * @var RecordRef
+     */
+    public $contactRole;
 
-	static $paramtypesmap = array(
-		"contact" => "RecordRef",
-		"contactRole" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'contact' => 'RecordRef',
+        'contactRole' => 'RecordRef',
+    ];
 }

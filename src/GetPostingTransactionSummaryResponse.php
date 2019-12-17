@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetPostingTransactionSummaryResponse
+ * GetPostingTransactionSummaryResponse.
  */
-class GetPostingTransactionSummaryResponse {
-	/**
-	 * @access public
-	 * @var GetPostingTransactionSummaryResult
-	 */
-	public $getPostingTransactionSummaryResult;
+class GetPostingTransactionSummaryResponse
+{
+    /**
+     * @var GetPostingTransactionSummaryResult
+     */
+    public $getPostingTransactionSummaryResult;
 
-	static $paramtypesmap = array(
-		"getPostingTransactionSummaryResult" => "GetPostingTransactionSummaryResult",
-	);
+    public static $paramtypesmap = [
+        'getPostingTransactionSummaryResult' => 'GetPostingTransactionSummaryResult',
+    ];
 }

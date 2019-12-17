@@ -11,64 +11,56 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesTaxItemSearchBasic
+ * SalesTaxItemSearchBasic.
  */
-class SalesTaxItemSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $description;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $externalId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $externalIdString;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $isInactive;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $itemId;
-	/**
-	 * @access public
-	 * @var SearchStringField
-	 */
-	public $name;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $taxType;
+class SalesTaxItemSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchStringField
+     */
+    public $description;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $externalId;
+    /**
+     * @var SearchStringField
+     */
+    public $externalIdString;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchBooleanField
+     */
+    public $isInactive;
+    /**
+     * @var SearchStringField
+     */
+    public $itemId;
+    /**
+     * @var SearchStringField
+     */
+    public $name;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $taxType;
 
-	static $paramtypesmap = array(
-		"description" => "SearchStringField",
-		"externalId" => "SearchMultiSelectField",
-		"externalIdString" => "SearchStringField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"isInactive" => "SearchBooleanField",
-		"itemId" => "SearchStringField",
-		"name" => "SearchStringField",
-		"taxType" => "SearchMultiSelectField",
-	);
+    public static $paramtypesmap = [
+        'description' => 'SearchStringField',
+        'externalId' => 'SearchMultiSelectField',
+        'externalIdString' => 'SearchStringField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'isInactive' => 'SearchBooleanField',
+        'itemId' => 'SearchStringField',
+        'name' => 'SearchStringField',
+        'taxType' => 'SearchMultiSelectField',
+    ];
 }

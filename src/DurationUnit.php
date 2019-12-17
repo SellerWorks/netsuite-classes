@@ -11,14 +11,14 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DurationUnit
+ * DurationUnit.
  */
-class DurationUnit {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const hour = "hour";
+class DurationUnit
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const hour = 'hour';
 }

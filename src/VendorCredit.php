@@ -11,250 +11,211 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCredit
+ * VendorCredit.
  */
-class VendorCredit extends Record {
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $createdDate;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $lastModifiedDate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $nexus;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiaryTaxRegNum;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $taxRegOverride;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $taxDetailsOverride;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $customForm;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $unApplied;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $billAddressList;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $autoApply;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $applied;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $transactionNumber;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $tranId;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $createdFrom;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $total;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $userTotal;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $currencyName;
-	/**
-	 * @access public
-	 * @var Address
-	 */
-	public $billingAddress;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $tranDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $exchangeRate;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entityTaxRegNum;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $taxPointDate;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $userTaxTotal;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $postingPeriod;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $subsidiary;
-	/**
-	 * @access public
-	 * @var VendorCreditExpenseList
-	 */
-	public $expenseList;
-	/**
-	 * @access public
-	 * @var VendorCreditItemList
-	 */
-	public $itemList;
-	/**
-	 * @access public
-	 * @var AccountingBookDetailList
-	 */
-	public $accountingBookDetailList;
-	/**
-	 * @access public
-	 * @var VendorCreditApplyList
-	 */
-	public $applyList;
-	/**
-	 * @access public
-	 * @var TaxDetailsList
-	 */
-	public $taxDetailsList;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $externalId;
+class VendorCredit extends Record
+{
+    /**
+     * @var dateTime
+     */
+    public $createdDate;
+    /**
+     * @var dateTime
+     */
+    public $lastModifiedDate;
+    /**
+     * @var RecordRef
+     */
+    public $nexus;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiaryTaxRegNum;
+    /**
+     * @var bool
+     */
+    public $taxRegOverride;
+    /**
+     * @var bool
+     */
+    public $taxDetailsOverride;
+    /**
+     * @var RecordRef
+     */
+    public $customForm;
+    /**
+     * @var RecordRef
+     */
+    public $account;
+    /**
+     * @var float
+     */
+    public $unApplied;
+    /**
+     * @var RecordRef
+     */
+    public $billAddressList;
+    /**
+     * @var bool
+     */
+    public $autoApply;
+    /**
+     * @var float
+     */
+    public $applied;
+    /**
+     * @var string
+     */
+    public $transactionNumber;
+    /**
+     * @var string
+     */
+    public $tranId;
+    /**
+     * @var RecordRef
+     */
+    public $createdFrom;
+    /**
+     * @var RecordRef
+     */
+    public $entity;
+    /**
+     * @var float
+     */
+    public $total;
+    /**
+     * @var float
+     */
+    public $userTotal;
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var string
+     */
+    public $currencyName;
+    /**
+     * @var Address
+     */
+    public $billingAddress;
+    /**
+     * @var dateTime
+     */
+    public $tranDate;
+    /**
+     * @var float
+     */
+    public $exchangeRate;
+    /**
+     * @var RecordRef
+     */
+    public $entityTaxRegNum;
+    /**
+     * @var dateTime
+     */
+    public $taxPointDate;
+    /**
+     * @var float
+     */
+    public $userTaxTotal;
+    /**
+     * @var RecordRef
+     */
+    public $postingPeriod;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiary;
+    /**
+     * @var VendorCreditExpenseList
+     */
+    public $expenseList;
+    /**
+     * @var VendorCreditItemList
+     */
+    public $itemList;
+    /**
+     * @var AccountingBookDetailList
+     */
+    public $accountingBookDetailList;
+    /**
+     * @var VendorCreditApplyList
+     */
+    public $applyList;
+    /**
+     * @var TaxDetailsList
+     */
+    public $taxDetailsList;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
+    /**
+     * @var string
+     */
+    public $internalId;
+    /**
+     * @var string
+     */
+    public $externalId;
 
-	static $paramtypesmap = array(
-		"createdDate" => "dateTime",
-		"lastModifiedDate" => "dateTime",
-		"nexus" => "RecordRef",
-		"subsidiaryTaxRegNum" => "RecordRef",
-		"taxRegOverride" => "boolean",
-		"taxDetailsOverride" => "boolean",
-		"customForm" => "RecordRef",
-		"account" => "RecordRef",
-		"unApplied" => "float",
-		"billAddressList" => "RecordRef",
-		"autoApply" => "boolean",
-		"applied" => "float",
-		"transactionNumber" => "string",
-		"tranId" => "string",
-		"createdFrom" => "RecordRef",
-		"entity" => "RecordRef",
-		"total" => "float",
-		"userTotal" => "float",
-		"currency" => "RecordRef",
-		"currencyName" => "string",
-		"billingAddress" => "Address",
-		"tranDate" => "dateTime",
-		"exchangeRate" => "float",
-		"entityTaxRegNum" => "RecordRef",
-		"taxPointDate" => "dateTime",
-		"userTaxTotal" => "float",
-		"postingPeriod" => "RecordRef",
-		"memo" => "string",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"location" => "RecordRef",
-		"subsidiary" => "RecordRef",
-		"expenseList" => "VendorCreditExpenseList",
-		"itemList" => "VendorCreditItemList",
-		"accountingBookDetailList" => "AccountingBookDetailList",
-		"applyList" => "VendorCreditApplyList",
-		"taxDetailsList" => "TaxDetailsList",
-		"customFieldList" => "CustomFieldList",
-		"internalId" => "string",
-		"externalId" => "string",
-	);
+    public static $paramtypesmap = [
+        'createdDate' => 'dateTime',
+        'lastModifiedDate' => 'dateTime',
+        'nexus' => 'RecordRef',
+        'subsidiaryTaxRegNum' => 'RecordRef',
+        'taxRegOverride' => 'boolean',
+        'taxDetailsOverride' => 'boolean',
+        'customForm' => 'RecordRef',
+        'account' => 'RecordRef',
+        'unApplied' => 'float',
+        'billAddressList' => 'RecordRef',
+        'autoApply' => 'boolean',
+        'applied' => 'float',
+        'transactionNumber' => 'string',
+        'tranId' => 'string',
+        'createdFrom' => 'RecordRef',
+        'entity' => 'RecordRef',
+        'total' => 'float',
+        'userTotal' => 'float',
+        'currency' => 'RecordRef',
+        'currencyName' => 'string',
+        'billingAddress' => 'Address',
+        'tranDate' => 'dateTime',
+        'exchangeRate' => 'float',
+        'entityTaxRegNum' => 'RecordRef',
+        'taxPointDate' => 'dateTime',
+        'userTaxTotal' => 'float',
+        'postingPeriod' => 'RecordRef',
+        'memo' => 'string',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'location' => 'RecordRef',
+        'subsidiary' => 'RecordRef',
+        'expenseList' => 'VendorCreditExpenseList',
+        'itemList' => 'VendorCreditItemList',
+        'accountingBookDetailList' => 'AccountingBookDetailList',
+        'applyList' => 'VendorCreditApplyList',
+        'taxDetailsList' => 'TaxDetailsList',
+        'customFieldList' => 'CustomFieldList',
+        'internalId' => 'string',
+        'externalId' => 'string',
+    ];
 }

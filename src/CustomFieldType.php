@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldType
+ * CustomFieldType.
  */
-class CustomFieldType extends Record {
-	/**
-	 * @access public
-	 * @var CustomizationFieldType
-	 */
-	public $fieldType;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $scriptId;
+class CustomFieldType extends Record
+{
+    /**
+     * @var CustomizationFieldType
+     */
+    public $fieldType;
+    /**
+     * @var string
+     */
+    public $scriptId;
 
-	static $paramtypesmap = array(
-		"fieldType" => "CustomizationFieldType",
-		"scriptId" => "string",
-	);
+    public static $paramtypesmap = [
+        'fieldType' => 'CustomizationFieldType',
+        'scriptId' => 'string',
+    ];
 }

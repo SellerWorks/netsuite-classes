@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PricingSearchBasic
+ * PricingSearchBasic.
  */
-class PricingSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchBooleanField
-	 */
-	public $assignedPriceLevel;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $customer;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $internalId;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $internalIdNumber;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $maximumQuantity;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $minimumQuantity;
-	/**
-	 * @access public
-	 * @var SearchMultiSelectField
-	 */
-	public $priceLevel;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $rate;
+class PricingSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchBooleanField
+     */
+    public $assignedPriceLevel;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $currency;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $customer;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $internalId;
+    /**
+     * @var SearchLongField
+     */
+    public $internalIdNumber;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $item;
+    /**
+     * @var SearchDoubleField
+     */
+    public $maximumQuantity;
+    /**
+     * @var SearchDoubleField
+     */
+    public $minimumQuantity;
+    /**
+     * @var SearchMultiSelectField
+     */
+    public $priceLevel;
+    /**
+     * @var SearchDoubleField
+     */
+    public $rate;
 
-	static $paramtypesmap = array(
-		"assignedPriceLevel" => "SearchBooleanField",
-		"currency" => "SearchMultiSelectField",
-		"customer" => "SearchMultiSelectField",
-		"internalId" => "SearchMultiSelectField",
-		"internalIdNumber" => "SearchLongField",
-		"item" => "SearchMultiSelectField",
-		"maximumQuantity" => "SearchDoubleField",
-		"minimumQuantity" => "SearchDoubleField",
-		"priceLevel" => "SearchMultiSelectField",
-		"rate" => "SearchDoubleField",
-	);
+    public static $paramtypesmap = [
+        'assignedPriceLevel' => 'SearchBooleanField',
+        'currency' => 'SearchMultiSelectField',
+        'customer' => 'SearchMultiSelectField',
+        'internalId' => 'SearchMultiSelectField',
+        'internalIdNumber' => 'SearchLongField',
+        'item' => 'SearchMultiSelectField',
+        'maximumQuantity' => 'SearchDoubleField',
+        'minimumQuantity' => 'SearchDoubleField',
+        'priceLevel' => 'SearchMultiSelectField',
+        'rate' => 'SearchDoubleField',
+    ];
 }

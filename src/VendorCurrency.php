@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCurrency
+ * VendorCurrency.
  */
-class VendorCurrency {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $currency;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $balance;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $unbilledOrders;
+class VendorCurrency
+{
+    /**
+     * @var RecordRef
+     */
+    public $currency;
+    /**
+     * @var float
+     */
+    public $balance;
+    /**
+     * @var float
+     */
+    public $unbilledOrders;
 
-	static $paramtypesmap = array(
-		"currency" => "RecordRef",
-		"balance" => "float",
-		"unbilledOrders" => "float",
-	);
+    public static $paramtypesmap = [
+        'currency' => 'RecordRef',
+        'balance' => 'float',
+        'unbilledOrders' => 'float',
+    ];
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DetachBasicReference
+ * DetachBasicReference.
  */
-class DetachBasicReference extends DetachReference {
-	/**
-	 * @access public
-	 * @var BaseRef
-	 */
-	public $detachedRecord;
+class DetachBasicReference extends DetachReference
+{
+    /**
+     * @var BaseRef
+     */
+    public $detachedRecord;
 
-	static $paramtypesmap = array(
-		"detachedRecord" => "BaseRef",
-	);
+    public static $paramtypesmap = [
+        'detachedRecord' => 'BaseRef',
+    ];
 }

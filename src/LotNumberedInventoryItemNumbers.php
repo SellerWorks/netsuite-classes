@@ -11,28 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LotNumberedInventoryItemNumbers
+ * LotNumberedInventoryItemNumbers.
  */
-class LotNumberedInventoryItemNumbers {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $serialNumber;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $quantityOnHand;
-	/**
-	 * @access public
-	 * @var dateTime
-	 */
-	public $expirationDate;
+class LotNumberedInventoryItemNumbers
+{
+    /**
+     * @var RecordRef
+     */
+    public $serialNumber;
+    /**
+     * @var float
+     */
+    public $quantityOnHand;
+    /**
+     * @var dateTime
+     */
+    public $expirationDate;
 
-	static $paramtypesmap = array(
-		"serialNumber" => "RecordRef",
-		"quantityOnHand" => "float",
-		"expirationDate" => "dateTime",
-	);
+    public static $paramtypesmap = [
+        'serialNumber' => 'RecordRef',
+        'quantityOnHand' => 'float',
+        'expirationDate' => 'dateTime',
+    ];
 }

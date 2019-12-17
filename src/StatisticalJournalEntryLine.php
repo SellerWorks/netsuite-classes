@@ -11,82 +11,71 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StatisticalJournalEntryLine
+ * StatisticalJournalEntryLine.
  */
-class StatisticalJournalEntryLine {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $account;
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $line;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $location;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $scheduleNum;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $debit;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $memo;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $entity;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $department;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $class;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $lineUnit;
-	/**
-	 * @access public
-	 * @var string
-	 */
-	public $previewDebit;
-	/**
-	 * @access public
-	 * @var CustomFieldList
-	 */
-	public $customFieldList;
+class StatisticalJournalEntryLine
+{
+    /**
+     * @var RecordRef
+     */
+    public $account;
+    /**
+     * @var int
+     */
+    public $line;
+    /**
+     * @var RecordRef
+     */
+    public $location;
+    /**
+     * @var RecordRef
+     */
+    public $scheduleNum;
+    /**
+     * @var float
+     */
+    public $debit;
+    /**
+     * @var string
+     */
+    public $memo;
+    /**
+     * @var RecordRef
+     */
+    public $entity;
+    /**
+     * @var RecordRef
+     */
+    public $department;
+    /**
+     * @var RecordRef
+     */
+    public $class;
+    /**
+     * @var RecordRef
+     */
+    public $lineUnit;
+    /**
+     * @var string
+     */
+    public $previewDebit;
+    /**
+     * @var CustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"account" => "RecordRef",
-		"line" => "integer",
-		"location" => "RecordRef",
-		"scheduleNum" => "RecordRef",
-		"debit" => "float",
-		"memo" => "string",
-		"entity" => "RecordRef",
-		"department" => "RecordRef",
-		"class" => "RecordRef",
-		"lineUnit" => "RecordRef",
-		"previewDebit" => "string",
-		"customFieldList" => "CustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'account' => 'RecordRef',
+        'line' => 'integer',
+        'location' => 'RecordRef',
+        'scheduleNum' => 'RecordRef',
+        'debit' => 'float',
+        'memo' => 'string',
+        'entity' => 'RecordRef',
+        'department' => 'RecordRef',
+        'class' => 'RecordRef',
+        'lineUnit' => 'RecordRef',
+        'previewDebit' => 'string',
+        'customFieldList' => 'CustomFieldList',
+    ];
 }

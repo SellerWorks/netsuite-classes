@@ -11,70 +11,61 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InstallmentSearchBasic
+ * InstallmentSearchBasic.
  */
-class InstallmentSearchBasic extends SearchRecordBasic {
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amount;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amountPaid;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $amountRemaining;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $daysOverdue;
-	/**
-	 * @access public
-	 * @var SearchDateField
-	 */
-	public $dueDate;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $fxAmount;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $fxAmountPaid;
-	/**
-	 * @access public
-	 * @var SearchDoubleField
-	 */
-	public $fxAmountRemaining;
-	/**
-	 * @access public
-	 * @var SearchLongField
-	 */
-	public $installmentNumber;
-	/**
-	 * @access public
-	 * @var SearchCustomFieldList
-	 */
-	public $customFieldList;
+class InstallmentSearchBasic extends SearchRecordBasic
+{
+    /**
+     * @var SearchDoubleField
+     */
+    public $amount;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amountPaid;
+    /**
+     * @var SearchDoubleField
+     */
+    public $amountRemaining;
+    /**
+     * @var SearchLongField
+     */
+    public $daysOverdue;
+    /**
+     * @var SearchDateField
+     */
+    public $dueDate;
+    /**
+     * @var SearchDoubleField
+     */
+    public $fxAmount;
+    /**
+     * @var SearchDoubleField
+     */
+    public $fxAmountPaid;
+    /**
+     * @var SearchDoubleField
+     */
+    public $fxAmountRemaining;
+    /**
+     * @var SearchLongField
+     */
+    public $installmentNumber;
+    /**
+     * @var SearchCustomFieldList
+     */
+    public $customFieldList;
 
-	static $paramtypesmap = array(
-		"amount" => "SearchDoubleField",
-		"amountPaid" => "SearchDoubleField",
-		"amountRemaining" => "SearchDoubleField",
-		"daysOverdue" => "SearchLongField",
-		"dueDate" => "SearchDateField",
-		"fxAmount" => "SearchDoubleField",
-		"fxAmountPaid" => "SearchDoubleField",
-		"fxAmountRemaining" => "SearchDoubleField",
-		"installmentNumber" => "SearchLongField",
-		"customFieldList" => "SearchCustomFieldList",
-	);
+    public static $paramtypesmap = [
+        'amount' => 'SearchDoubleField',
+        'amountPaid' => 'SearchDoubleField',
+        'amountRemaining' => 'SearchDoubleField',
+        'daysOverdue' => 'SearchLongField',
+        'dueDate' => 'SearchDateField',
+        'fxAmount' => 'SearchDoubleField',
+        'fxAmountPaid' => 'SearchDoubleField',
+        'fxAmountRemaining' => 'SearchDoubleField',
+        'installmentNumber' => 'SearchLongField',
+        'customFieldList' => 'SearchCustomFieldList',
+    ];
 }

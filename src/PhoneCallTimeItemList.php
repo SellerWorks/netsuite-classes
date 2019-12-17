@@ -13,20 +13,21 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * PhoneCallTimeItemList
  */
-class PhoneCallTimeItemList {
-	/**
-	 * @access public
-	 * @var TimeItem[]
-	 */
-	public $timeItem;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class PhoneCallTimeItemList
+{
+    /**
+     * @access public
+     * @var TimeItem[]
+     */
+    public $timeItem;
+    /**
+     * @access public
+     * @var boolean
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"timeItem" => "TimeItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = array(
+        "timeItem" => "TimeItem[]",
+        "replaceAll" => "boolean",
+    );
 }

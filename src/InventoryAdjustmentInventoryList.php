@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryAdjustmentInventoryList
+ * InventoryAdjustmentInventoryList.
  */
-class InventoryAdjustmentInventoryList {
-	/**
-	 * @access public
-	 * @var InventoryAdjustmentInventory[]
-	 */
-	public $inventory;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class InventoryAdjustmentInventoryList
+{
+    /**
+     * @var InventoryAdjustmentInventory[]
+     */
+    public $inventory;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"inventory" => "InventoryAdjustmentInventory[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'inventory' => 'InventoryAdjustmentInventory[]',
+        'replaceAll' => 'boolean',
+    ];
 }

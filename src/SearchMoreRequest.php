@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchMoreRequest
+ * SearchMoreRequest.
  */
-class SearchMoreRequest {
-	/**
-	 * @access public
-	 * @var integer
-	 */
-	public $pageIndex;
+class SearchMoreRequest
+{
+    /**
+     * @var int
+     */
+    public $pageIndex;
 
-	static $paramtypesmap = array(
-		"pageIndex" => "integer",
-	);
+    public static $paramtypesmap = [
+        'pageIndex' => 'integer',
+    ];
 }

@@ -11,34 +11,31 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OpportunitySalesTeam
+ * OpportunitySalesTeam.
  */
-class OpportunitySalesTeam {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $employee;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $salesRole;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $isPrimary;
-	/**
-	 * @access public
-	 * @var float
-	 */
-	public $contribution;
+class OpportunitySalesTeam
+{
+    /**
+     * @var RecordRef
+     */
+    public $employee;
+    /**
+     * @var RecordRef
+     */
+    public $salesRole;
+    /**
+     * @var bool
+     */
+    public $isPrimary;
+    /**
+     * @var float
+     */
+    public $contribution;
 
-	static $paramtypesmap = array(
-		"employee" => "RecordRef",
-		"salesRole" => "RecordRef",
-		"isPrimary" => "boolean",
-		"contribution" => "float",
-	);
+    public static $paramtypesmap = [
+        'employee' => 'RecordRef',
+        'salesRole' => 'RecordRef',
+        'isPrimary' => 'boolean',
+        'contribution' => 'float',
+    ];
 }

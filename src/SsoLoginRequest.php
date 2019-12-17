@@ -13,14 +13,15 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SsoLoginRequest
  */
-class SsoLoginRequest {
-	/**
-	 * @access public
-	 * @var SsoPassport
-	 */
-	public $ssoPassport;
+class SsoLoginRequest
+{
+    /**
+     * @access public
+     * @var SsoPassport
+     */
+    public $ssoPassport;
 
-	static $paramtypesmap = array(
-		"ssoPassport" => "SsoPassport",
-	);
+    public static $paramtypesmap = array(
+        "ssoPassport" => "SsoPassport",
+    );
 }

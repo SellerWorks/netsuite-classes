@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SerializedAssemblyItemBillOfMaterialsList
+ * SerializedAssemblyItemBillOfMaterialsList.
  */
-class SerializedAssemblyItemBillOfMaterialsList {
-	/**
-	 * @access public
-	 * @var SerializedAssemblyItemBillOfMaterials[]
-	 */
-	public $serializedAssemblyItemBillOfMaterials;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class SerializedAssemblyItemBillOfMaterialsList
+{
+    /**
+     * @var SerializedAssemblyItemBillOfMaterials[]
+     */
+    public $serializedAssemblyItemBillOfMaterials;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"serializedAssemblyItemBillOfMaterials" => "SerializedAssemblyItemBillOfMaterials[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'serializedAssemblyItemBillOfMaterials' => 'SerializedAssemblyItemBillOfMaterials[]',
+        'replaceAll' => 'boolean',
+    ];
 }

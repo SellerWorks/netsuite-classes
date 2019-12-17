@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaskContact
+ * TaskContact.
  */
-class TaskContact {
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $company;
-	/**
-	 * @access public
-	 * @var RecordRef
-	 */
-	public $contact;
+class TaskContact
+{
+    /**
+     * @var RecordRef
+     */
+    public $company;
+    /**
+     * @var RecordRef
+     */
+    public $contact;
 
-	static $paramtypesmap = array(
-		"company" => "RecordRef",
-		"contact" => "RecordRef",
-	);
+    public static $paramtypesmap = [
+        'company' => 'RecordRef',
+        'contact' => 'RecordRef',
+    ];
 }

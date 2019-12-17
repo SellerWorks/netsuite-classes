@@ -11,34 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncStatusType
+ * AsyncStatusType.
  */
-class AsyncStatusType {
-
-	static $paramtypesmap = array(
-	);
-	/**
-	 * @var string
-	 */
-	const failed = "failed";
-	/**
-	 * @var string
-	 */
-	const finishedWithErrors = "finishedWithErrors";
-	/**
-	 * @var string
-	 */
-	const pending = "pending";
-	/**
-	 * @var string
-	 */
-	const processing = "processing";
-	/**
-	 * @var string
-	 */
-	const finished = "finished";
-	/**
-	 * @var string
-	 */
-	const retry = "retry";
+class AsyncStatusType
+{
+    public static $paramtypesmap = [
+    ];
+    /**
+     * @var string
+     */
+    const failed = 'failed';
+    /**
+     * @var string
+     */
+    const finishedWithErrors = 'finishedWithErrors';
+    /**
+     * @var string
+     */
+    const pending = 'pending';
+    /**
+     * @var string
+     */
+    const processing = 'processing';
+    /**
+     * @var string
+     */
+    const finished = 'finished';
+    /**
+     * @var string
+     */
+    const retry = 'retry';
 }

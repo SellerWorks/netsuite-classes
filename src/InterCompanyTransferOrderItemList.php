@@ -11,22 +11,21 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InterCompanyTransferOrderItemList
+ * InterCompanyTransferOrderItemList.
  */
-class InterCompanyTransferOrderItemList {
-	/**
-	 * @access public
-	 * @var InterCompanyTransferOrderItem[]
-	 */
-	public $item;
-	/**
-	 * @access public
-	 * @var boolean
-	 */
-	public $replaceAll;
+class InterCompanyTransferOrderItemList
+{
+    /**
+     * @var InterCompanyTransferOrderItem[]
+     */
+    public $item;
+    /**
+     * @var bool
+     */
+    public $replaceAll;
 
-	static $paramtypesmap = array(
-		"item" => "InterCompanyTransferOrderItem[]",
-		"replaceAll" => "boolean",
-	);
+    public static $paramtypesmap = [
+        'item' => 'InterCompanyTransferOrderItem[]',
+        'replaceAll' => 'boolean',
+    ];
 }
