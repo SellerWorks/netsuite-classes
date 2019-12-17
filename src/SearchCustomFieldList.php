@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchCustomFieldList.
+ * SearchCustomFieldList
  */
-class SearchCustomFieldList
-{
-    /**
-     * @var SearchCustomField[]
-     */
-    public $customField;
+class SearchCustomFieldList {
+	/**
+	 * @access public
+	 * @var SearchCustomField[]
+	 */
+	public $customField;
 
-    public static $paramtypesmap = array(
-        'customField' => 'SearchCustomField[]',
-    );
+	static $paramtypesmap = array(
+		"customField" => "SearchCustomField[]",
+	);
 }

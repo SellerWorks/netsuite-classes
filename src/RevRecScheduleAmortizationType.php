@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleAmortizationType.
+ * RevRecScheduleAmortizationType
  */
-class RevRecScheduleAmortizationType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _standard = '_standard';
-    /**
-     * @var string
-     */
-    const _variable = '_variable';
+class RevRecScheduleAmortizationType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _standard = "_standard";
+	/**
+	 * @var string
+	 */
+	const _variable = "_variable";
 }

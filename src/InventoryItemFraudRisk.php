@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryItemFraudRisk.
+ * InventoryItemFraudRisk
  */
-class InventoryItemFraudRisk
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _high = '_high';
-    /**
-     * @var string
-     */
-    const _low = '_low';
-    /**
-     * @var string
-     */
-    const _medium = '_medium';
+class InventoryItemFraudRisk {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _high = "_high";
+	/**
+	 * @var string
+	 */
+	const _low = "_low";
+	/**
+	 * @var string
+	 */
+	const _medium = "_medium";
 }

@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentThirdPartyTypeUps.
+ * ItemFulfillmentThirdPartyTypeUps
  */
-class ItemFulfillmentThirdPartyTypeUps
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _consigneeBilling = '_consigneeBilling';
-    /**
-     * @var string
-     */
-    const _noneSelected = '_noneSelected';
-    /**
-     * @var string
-     */
-    const _thirdPartyBilling = '_thirdPartyBilling';
+class ItemFulfillmentThirdPartyTypeUps {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _consigneeBilling = "_consigneeBilling";
+	/**
+	 * @var string
+	 */
+	const _noneSelected = "_noneSelected";
+	/**
+	 * @var string
+	 */
+	const _thirdPartyBilling = "_thirdPartyBilling";
 }

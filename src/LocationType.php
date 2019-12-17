@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationType.
+ * LocationType
  */
-class LocationType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _store = '_store';
-    /**
-     * @var string
-     */
-    const _warehouse = '_warehouse';
+class LocationType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _store = "_store";
+	/**
+	 * @var string
+	 */
+	const _warehouse = "_warehouse";
 }

@@ -11,826 +11,988 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrder.
+ * SalesOrder
  */
-class SalesOrder extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var RecordRef
-     */
-    public $drAccount;
-    /**
-     * @var RecordRef
-     */
-    public $fxAccount;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $entityTaxRegNum;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var SalesOrderOrderStatus
-     */
-    public $orderStatus;
-    /**
-     * @var dateTime
-     */
-    public $nextBill;
-    /**
-     * @var RecordRef
-     */
-    public $opportunity;
-    /**
-     * @var RecordRef
-     */
-    public $salesRep;
-    /**
-     * @var string
-     */
-    public $contribPct;
-    /**
-     * @var RecordRef
-     */
-    public $partner;
-    /**
-     * @var RecordRef
-     */
-    public $salesGroup;
-    /**
-     * @var bool
-     */
-    public $syncSalesTeams;
-    /**
-     * @var RecordRef
-     */
-    public $leadSource;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $otherRefNum;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var dateTime
-     */
-    public $salesEffectiveDate;
-    /**
-     * @var bool
-     */
-    public $excludeCommission;
-    /**
-     * @var float
-     */
-    public $totalCostEstimate;
-    /**
-     * @var float
-     */
-    public $estGrossProfit;
-    /**
-     * @var float
-     */
-    public $estGrossProfitPercent;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var RecordRef
-     */
-    public $promoCode;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var RecordRef
-     */
-    public $discountItem;
-    /**
-     * @var string
-     */
-    public $discountRate;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var float
-     */
-    public $taxRate;
-    /**
-     * @var bool
-     */
-    public $toBePrinted;
-    /**
-     * @var bool
-     */
-    public $toBeEmailed;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var bool
-     */
-    public $toBeFaxed;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var RecordRef
-     */
-    public $messageSel;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var RecordRef
-     */
-    public $paymentOption;
-    /**
-     * @var string
-     */
-    public $inputAuthCode;
-    /**
-     * @var string
-     */
-    public $inputReferenceCode;
-    /**
-     * @var string
-     */
-    public $checkNumber;
-    /**
-     * @var string
-     */
-    public $paymentCardCsc;
-    /**
-     * @var RecordRef
-     */
-    public $paymentProcessingProfile;
-    /**
-     * @var SalesOrderHandlingMode
-     */
-    public $handlingMode;
-    /**
-     * @var string
-     */
-    public $outputAuthCode;
-    /**
-     * @var string
-     */
-    public $outputReferenceCode;
-    /**
-     * @var SalesOrderPaymentOperation
-     */
-    public $paymentOperation;
-    /**
-     * @var string
-     */
-    public $dynamicDescriptor;
-    /**
-     * @var Address
-     */
-    public $billingAddress;
-    /**
-     * @var RecordRef
-     */
-    public $billAddressList;
-    /**
-     * @var Address
-     */
-    public $shippingAddress;
-    /**
-     * @var bool
-     */
-    public $shipIsResidential;
-    /**
-     * @var RecordRef
-     */
-    public $shipAddressList;
-    /**
-     * @var string
-     */
-    public $fob;
-    /**
-     * @var dateTime
-     */
-    public $shipDate;
-    /**
-     * @var dateTime
-     */
-    public $actualShipDate;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $shippingTax1Rate;
-    /**
-     * @var bool
-     */
-    public $isMultiShipTo;
-    /**
-     * @var string
-     */
-    public $shippingTax2Rate;
-    /**
-     * @var RecordRef
-     */
-    public $shippingTaxCode;
-    /**
-     * @var RecordRef
-     */
-    public $handlingTaxCode;
-    /**
-     * @var float
-     */
-    public $handlingTax1Rate;
-    /**
-     * @var string
-     */
-    public $handlingTax2Rate;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var string
-     */
-    public $trackingNumbers;
-    /**
-     * @var string
-     */
-    public $linkedTrackingNumbers;
-    /**
-     * @var bool
-     */
-    public $shipComplete;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var string
-     */
-    public $shopperIpAddress;
-    /**
-     * @var bool
-     */
-    public $saveOnAuthDecline;
-    /**
-     * @var bool
-     */
-    public $canHaveStackable;
-    /**
-     * @var RecordRef
-     */
-    public $creditCard;
-    /**
-     * @var RevenueStatus
-     */
-    public $revenueStatus;
-    /**
-     * @var float
-     */
-    public $recognizedRevenue;
-    /**
-     * @var float
-     */
-    public $deferredRevenue;
-    /**
-     * @var bool
-     */
-    public $revRecOnRevCommitment;
-    /**
-     * @var RevenueCommitStatus
-     */
-    public $revCommitStatus;
-    /**
-     * @var string
-     */
-    public $ccNumber;
-    /**
-     * @var dateTime
-     */
-    public $ccExpireDate;
-    /**
-     * @var string
-     */
-    public $ccName;
-    /**
-     * @var string
-     */
-    public $ccStreet;
-    /**
-     * @var string
-     */
-    public $ccZipCode;
-    /**
-     * @var string
-     */
-    public $payPalStatus;
-    /**
-     * @var RecordRef
-     */
-    public $creditCardProcessor;
-    /**
-     * @var string
-     */
-    public $payPalTranId;
-    /**
-     * @var bool
-     */
-    public $ccApproved;
-    /**
-     * @var bool
-     */
-    public $getAuth;
-    /**
-     * @var string
-     */
-    public $authCode;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccAvsStreetMatch;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccAvsZipMatch;
-    /**
-     * @var bool
-     */
-    public $isRecurringPayment;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccSecurityCodeMatch;
-    /**
-     * @var float
-     */
-    public $altSalesTotal;
-    /**
-     * @var bool
-     */
-    public $ignoreAvs;
-    /**
-     * @var TransactionPaymentEventResult
-     */
-    public $paymentEventResult;
-    /**
-     * @var TransactionPaymentEventHoldReason
-     */
-    public $paymentEventHoldReason;
-    /**
-     * @var TransactionPaymentEventType
-     */
-    public $paymentEventType;
-    /**
-     * @var dateTime
-     */
-    public $paymentEventDate;
-    /**
-     * @var string
-     */
-    public $paymentEventUpdatedBy;
-    /**
-     * @var float
-     */
-    public $subTotal;
-    /**
-     * @var float
-     */
-    public $discountTotal;
-    /**
-     * @var float
-     */
-    public $taxTotal;
-    /**
-     * @var float
-     */
-    public $altShippingCost;
-    /**
-     * @var float
-     */
-    public $altHandlingCost;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var dateTime
-     */
-    public $revRecStartDate;
-    /**
-     * @var dateTime
-     */
-    public $revRecEndDate;
-    /**
-     * @var string
-     */
-    public $paypalAuthId;
-    /**
-     * @var float
-     */
-    public $balance;
-    /**
-     * @var bool
-     */
-    public $paypalProcess;
-    /**
-     * @var RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var string
-     */
-    public $ccSecurityCode;
-    /**
-     * @var string
-     */
-    public $threeDStatusCode;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $intercoTransaction;
-    /**
-     * @var IntercoStatus
-     */
-    public $intercoStatus;
-    /**
-     * @var string
-     */
-    public $debitCardIssueNo;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiaryTaxRegNum;
-    /**
-     * @var bool
-     */
-    public $taxRegOverride;
-    /**
-     * @var dateTime
-     */
-    public $taxPointDate;
-    /**
-     * @var bool
-     */
-    public $taxDetailsOverride;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $pnRefNum;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var float
-     */
-    public $tax2Total;
-    /**
-     * @var RecordRef
-     */
-    public $terms;
-    /**
-     * @var dateTime
-     */
-    public $validFrom;
-    /**
-     * @var string
-     */
-    public $vatRegNum;
-    /**
-     * @var float
-     */
-    public $giftCertApplied;
-    /**
-     * @var float
-     */
-    public $oneTime;
-    /**
-     * @var float
-     */
-    public $recurWeekly;
-    /**
-     * @var float
-     */
-    public $recurMonthly;
-    /**
-     * @var float
-     */
-    public $recurQuarterly;
-    /**
-     * @var float
-     */
-    public $recurAnnually;
-    /**
-     * @var bool
-     */
-    public $tranIsVsoeBundle;
-    /**
-     * @var bool
-     */
-    public $vsoeAutoCalc;
-    /**
-     * @var bool
-     */
-    public $syncPartnerTeams;
-    /**
-     * @var SalesOrderSalesTeamList
-     */
-    public $salesTeamList;
-    /**
-     * @var SalesOrderPartnersList
-     */
-    public $partnersList;
-    /**
-     * @var GiftCertRedemptionList
-     */
-    public $giftCertRedemptionList;
-    /**
-     * @var PromotionsList
-     */
-    public $promotionsList;
-    /**
-     * @var SalesOrderItemList
-     */
-    public $itemList;
-    /**
-     * @var SalesOrderShipGroupList
-     */
-    public $shipGroupList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var TaxDetailsList
-     */
-    public $taxDetailsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class SalesOrder extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $drAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $fxAccount;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityTaxRegNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createdFrom;
+	/**
+	 * @access public
+	 * @var SalesOrderOrderStatus
+	 */
+	public $orderStatus;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $nextBill;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $opportunity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRep;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $contribPct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncSalesTeams;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $otherRefNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $salesEffectiveDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeCommission;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalCostEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfitPercent;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $promoCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currencyName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $discountItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $discountRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBePrinted;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeEmailed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeFaxed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $messageSel;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentOption;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputReferenceCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $checkNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $paymentCardCsc;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentProcessingProfile;
+	/**
+	 * @access public
+	 * @var SalesOrderHandlingMode
+	 */
+	public $handlingMode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputReferenceCode;
+	/**
+	 * @access public
+	 * @var SalesOrderPaymentOperation
+	 */
+	public $paymentOperation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $dynamicDescriptor;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $billingAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billAddressList;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $shippingAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipIsResidential;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipAddressList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fob;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $shipDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $actualShipDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingTax1Rate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isMultiShipTo;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shippingTax2Rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shippingTaxCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $handlingTaxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingTax1Rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $handlingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingCost;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $trackingNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $linkedTrackingNumbers;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipComplete;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shopperIpAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $saveOnAuthDecline;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $canHaveStackable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCard;
+	/**
+	 * @access public
+	 * @var RevenueStatus
+	 */
+	public $revenueStatus;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recognizedRevenue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $deferredRevenue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $revRecOnRevCommitment;
+	/**
+	 * @access public
+	 * @var RevenueCommitStatus
+	 */
+	public $revCommitStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccNumber;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $ccExpireDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccStreet;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccZipCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCardProcessor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalTranId;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccApproved;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $getAuth;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $authCode;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccAvsStreetMatch;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccAvsZipMatch;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isRecurringPayment;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccSecurityCodeMatch;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altSalesTotal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ignoreAvs;
+	/**
+	 * @access public
+	 * @var TransactionPaymentEventResult
+	 */
+	public $paymentEventResult;
+	/**
+	 * @access public
+	 * @var TransactionPaymentEventHoldReason
+	 */
+	public $paymentEventHoldReason;
+	/**
+	 * @access public
+	 * @var TransactionPaymentEventType
+	 */
+	public $paymentEventType;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $paymentEventDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $paymentEventUpdatedBy;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $subTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $discountTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altShippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altHandlingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecStartDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecEndDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $paypalAuthId;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $paypalProcess;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccSecurityCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $threeDStatusCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $intercoTransaction;
+	/**
+	 * @access public
+	 * @var IntercoStatus
+	 */
+	public $intercoStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $debitCardIssueNo;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxRegOverride;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxDetailsOverride;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $pnRefNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax2Total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $terms;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $validFrom;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNum;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertApplied;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $oneTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurWeekly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurMonthly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurQuarterly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurAnnually;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $tranIsVsoeBundle;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeAutoCalc;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncPartnerTeams;
+	/**
+	 * @access public
+	 * @var SalesOrderSalesTeamList
+	 */
+	public $salesTeamList;
+	/**
+	 * @access public
+	 * @var SalesOrderPartnersList
+	 */
+	public $partnersList;
+	/**
+	 * @access public
+	 * @var GiftCertRedemptionList
+	 */
+	public $giftCertRedemptionList;
+	/**
+	 * @access public
+	 * @var PromotionsList
+	 */
+	public $promotionsList;
+	/**
+	 * @access public
+	 * @var SalesOrderItemList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var SalesOrderShipGroupList
+	 */
+	public $shipGroupList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var TaxDetailsList
+	 */
+	public $taxDetailsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'entity' => 'RecordRef',
-        'job' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'drAccount' => 'RecordRef',
-        'fxAccount' => 'RecordRef',
-        'tranDate' => 'dateTime',
-        'tranId' => 'string',
-        'entityTaxRegNum' => 'RecordRef',
-        'source' => 'string',
-        'createdFrom' => 'RecordRef',
-        'orderStatus' => 'SalesOrderOrderStatus',
-        'nextBill' => 'dateTime',
-        'opportunity' => 'RecordRef',
-        'salesRep' => 'RecordRef',
-        'contribPct' => 'string',
-        'partner' => 'RecordRef',
-        'salesGroup' => 'RecordRef',
-        'syncSalesTeams' => 'boolean',
-        'leadSource' => 'RecordRef',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'otherRefNum' => 'string',
-        'memo' => 'string',
-        'salesEffectiveDate' => 'dateTime',
-        'excludeCommission' => 'boolean',
-        'totalCostEstimate' => 'float',
-        'estGrossProfit' => 'float',
-        'estGrossProfitPercent' => 'float',
-        'exchangeRate' => 'float',
-        'promoCode' => 'RecordRef',
-        'currencyName' => 'string',
-        'discountItem' => 'RecordRef',
-        'discountRate' => 'string',
-        'isTaxable' => 'boolean',
-        'taxItem' => 'RecordRef',
-        'taxRate' => 'float',
-        'toBePrinted' => 'boolean',
-        'toBeEmailed' => 'boolean',
-        'email' => 'string',
-        'toBeFaxed' => 'boolean',
-        'fax' => 'string',
-        'messageSel' => 'RecordRef',
-        'message' => 'string',
-        'paymentOption' => 'RecordRef',
-        'inputAuthCode' => 'string',
-        'inputReferenceCode' => 'string',
-        'checkNumber' => 'string',
-        'paymentCardCsc' => 'string',
-        'paymentProcessingProfile' => 'RecordRef',
-        'handlingMode' => 'SalesOrderHandlingMode',
-        'outputAuthCode' => 'string',
-        'outputReferenceCode' => 'string',
-        'paymentOperation' => 'SalesOrderPaymentOperation',
-        'dynamicDescriptor' => 'string',
-        'billingAddress' => 'Address',
-        'billAddressList' => 'RecordRef',
-        'shippingAddress' => 'Address',
-        'shipIsResidential' => 'boolean',
-        'shipAddressList' => 'RecordRef',
-        'fob' => 'string',
-        'shipDate' => 'dateTime',
-        'actualShipDate' => 'dateTime',
-        'shipMethod' => 'RecordRef',
-        'shippingCost' => 'float',
-        'shippingTax1Rate' => 'float',
-        'isMultiShipTo' => 'boolean',
-        'shippingTax2Rate' => 'string',
-        'shippingTaxCode' => 'RecordRef',
-        'handlingTaxCode' => 'RecordRef',
-        'handlingTax1Rate' => 'float',
-        'handlingTax2Rate' => 'string',
-        'handlingCost' => 'float',
-        'trackingNumbers' => 'string',
-        'linkedTrackingNumbers' => 'string',
-        'shipComplete' => 'boolean',
-        'paymentMethod' => 'RecordRef',
-        'shopperIpAddress' => 'string',
-        'saveOnAuthDecline' => 'boolean',
-        'canHaveStackable' => 'boolean',
-        'creditCard' => 'RecordRef',
-        'revenueStatus' => 'RevenueStatus',
-        'recognizedRevenue' => 'float',
-        'deferredRevenue' => 'float',
-        'revRecOnRevCommitment' => 'boolean',
-        'revCommitStatus' => 'RevenueCommitStatus',
-        'ccNumber' => 'string',
-        'ccExpireDate' => 'dateTime',
-        'ccName' => 'string',
-        'ccStreet' => 'string',
-        'ccZipCode' => 'string',
-        'payPalStatus' => 'string',
-        'creditCardProcessor' => 'RecordRef',
-        'payPalTranId' => 'string',
-        'ccApproved' => 'boolean',
-        'getAuth' => 'boolean',
-        'authCode' => 'string',
-        'ccAvsStreetMatch' => 'AvsMatchCode',
-        'ccAvsZipMatch' => 'AvsMatchCode',
-        'isRecurringPayment' => 'boolean',
-        'ccSecurityCodeMatch' => 'AvsMatchCode',
-        'altSalesTotal' => 'float',
-        'ignoreAvs' => 'boolean',
-        'paymentEventResult' => 'TransactionPaymentEventResult',
-        'paymentEventHoldReason' => 'TransactionPaymentEventHoldReason',
-        'paymentEventType' => 'TransactionPaymentEventType',
-        'paymentEventDate' => 'dateTime',
-        'paymentEventUpdatedBy' => 'string',
-        'subTotal' => 'float',
-        'discountTotal' => 'float',
-        'taxTotal' => 'float',
-        'altShippingCost' => 'float',
-        'altHandlingCost' => 'float',
-        'total' => 'float',
-        'revRecSchedule' => 'RecordRef',
-        'revRecStartDate' => 'dateTime',
-        'revRecEndDate' => 'dateTime',
-        'paypalAuthId' => 'string',
-        'balance' => 'float',
-        'paypalProcess' => 'boolean',
-        'billingSchedule' => 'RecordRef',
-        'ccSecurityCode' => 'string',
-        'threeDStatusCode' => 'string',
-        'class' => 'RecordRef',
-        'department' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'intercoTransaction' => 'RecordRef',
-        'intercoStatus' => 'IntercoStatus',
-        'debitCardIssueNo' => 'string',
-        'lastModifiedDate' => 'dateTime',
-        'nexus' => 'RecordRef',
-        'subsidiaryTaxRegNum' => 'RecordRef',
-        'taxRegOverride' => 'boolean',
-        'taxPointDate' => 'dateTime',
-        'taxDetailsOverride' => 'boolean',
-        'location' => 'RecordRef',
-        'pnRefNum' => 'string',
-        'status' => 'string',
-        'tax2Total' => 'float',
-        'terms' => 'RecordRef',
-        'validFrom' => 'dateTime',
-        'vatRegNum' => 'string',
-        'giftCertApplied' => 'float',
-        'oneTime' => 'float',
-        'recurWeekly' => 'float',
-        'recurMonthly' => 'float',
-        'recurQuarterly' => 'float',
-        'recurAnnually' => 'float',
-        'tranIsVsoeBundle' => 'boolean',
-        'vsoeAutoCalc' => 'boolean',
-        'syncPartnerTeams' => 'boolean',
-        'salesTeamList' => 'SalesOrderSalesTeamList',
-        'partnersList' => 'SalesOrderPartnersList',
-        'giftCertRedemptionList' => 'GiftCertRedemptionList',
-        'promotionsList' => 'PromotionsList',
-        'itemList' => 'SalesOrderItemList',
-        'shipGroupList' => 'SalesOrderShipGroupList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'taxDetailsList' => 'TaxDetailsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"entity" => "RecordRef",
+		"job" => "RecordRef",
+		"currency" => "RecordRef",
+		"drAccount" => "RecordRef",
+		"fxAccount" => "RecordRef",
+		"tranDate" => "dateTime",
+		"tranId" => "string",
+		"entityTaxRegNum" => "RecordRef",
+		"source" => "string",
+		"createdFrom" => "RecordRef",
+		"orderStatus" => "SalesOrderOrderStatus",
+		"nextBill" => "dateTime",
+		"opportunity" => "RecordRef",
+		"salesRep" => "RecordRef",
+		"contribPct" => "string",
+		"partner" => "RecordRef",
+		"salesGroup" => "RecordRef",
+		"syncSalesTeams" => "boolean",
+		"leadSource" => "RecordRef",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"otherRefNum" => "string",
+		"memo" => "string",
+		"salesEffectiveDate" => "dateTime",
+		"excludeCommission" => "boolean",
+		"totalCostEstimate" => "float",
+		"estGrossProfit" => "float",
+		"estGrossProfitPercent" => "float",
+		"exchangeRate" => "float",
+		"promoCode" => "RecordRef",
+		"currencyName" => "string",
+		"discountItem" => "RecordRef",
+		"discountRate" => "string",
+		"isTaxable" => "boolean",
+		"taxItem" => "RecordRef",
+		"taxRate" => "float",
+		"toBePrinted" => "boolean",
+		"toBeEmailed" => "boolean",
+		"email" => "string",
+		"toBeFaxed" => "boolean",
+		"fax" => "string",
+		"messageSel" => "RecordRef",
+		"message" => "string",
+		"paymentOption" => "RecordRef",
+		"inputAuthCode" => "string",
+		"inputReferenceCode" => "string",
+		"checkNumber" => "string",
+		"paymentCardCsc" => "string",
+		"paymentProcessingProfile" => "RecordRef",
+		"handlingMode" => "SalesOrderHandlingMode",
+		"outputAuthCode" => "string",
+		"outputReferenceCode" => "string",
+		"paymentOperation" => "SalesOrderPaymentOperation",
+		"dynamicDescriptor" => "string",
+		"billingAddress" => "Address",
+		"billAddressList" => "RecordRef",
+		"shippingAddress" => "Address",
+		"shipIsResidential" => "boolean",
+		"shipAddressList" => "RecordRef",
+		"fob" => "string",
+		"shipDate" => "dateTime",
+		"actualShipDate" => "dateTime",
+		"shipMethod" => "RecordRef",
+		"shippingCost" => "float",
+		"shippingTax1Rate" => "float",
+		"isMultiShipTo" => "boolean",
+		"shippingTax2Rate" => "string",
+		"shippingTaxCode" => "RecordRef",
+		"handlingTaxCode" => "RecordRef",
+		"handlingTax1Rate" => "float",
+		"handlingTax2Rate" => "string",
+		"handlingCost" => "float",
+		"trackingNumbers" => "string",
+		"linkedTrackingNumbers" => "string",
+		"shipComplete" => "boolean",
+		"paymentMethod" => "RecordRef",
+		"shopperIpAddress" => "string",
+		"saveOnAuthDecline" => "boolean",
+		"canHaveStackable" => "boolean",
+		"creditCard" => "RecordRef",
+		"revenueStatus" => "RevenueStatus",
+		"recognizedRevenue" => "float",
+		"deferredRevenue" => "float",
+		"revRecOnRevCommitment" => "boolean",
+		"revCommitStatus" => "RevenueCommitStatus",
+		"ccNumber" => "string",
+		"ccExpireDate" => "dateTime",
+		"ccName" => "string",
+		"ccStreet" => "string",
+		"ccZipCode" => "string",
+		"payPalStatus" => "string",
+		"creditCardProcessor" => "RecordRef",
+		"payPalTranId" => "string",
+		"ccApproved" => "boolean",
+		"getAuth" => "boolean",
+		"authCode" => "string",
+		"ccAvsStreetMatch" => "AvsMatchCode",
+		"ccAvsZipMatch" => "AvsMatchCode",
+		"isRecurringPayment" => "boolean",
+		"ccSecurityCodeMatch" => "AvsMatchCode",
+		"altSalesTotal" => "float",
+		"ignoreAvs" => "boolean",
+		"paymentEventResult" => "TransactionPaymentEventResult",
+		"paymentEventHoldReason" => "TransactionPaymentEventHoldReason",
+		"paymentEventType" => "TransactionPaymentEventType",
+		"paymentEventDate" => "dateTime",
+		"paymentEventUpdatedBy" => "string",
+		"subTotal" => "float",
+		"discountTotal" => "float",
+		"taxTotal" => "float",
+		"altShippingCost" => "float",
+		"altHandlingCost" => "float",
+		"total" => "float",
+		"revRecSchedule" => "RecordRef",
+		"revRecStartDate" => "dateTime",
+		"revRecEndDate" => "dateTime",
+		"paypalAuthId" => "string",
+		"balance" => "float",
+		"paypalProcess" => "boolean",
+		"billingSchedule" => "RecordRef",
+		"ccSecurityCode" => "string",
+		"threeDStatusCode" => "string",
+		"class" => "RecordRef",
+		"department" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"intercoTransaction" => "RecordRef",
+		"intercoStatus" => "IntercoStatus",
+		"debitCardIssueNo" => "string",
+		"lastModifiedDate" => "dateTime",
+		"nexus" => "RecordRef",
+		"subsidiaryTaxRegNum" => "RecordRef",
+		"taxRegOverride" => "boolean",
+		"taxPointDate" => "dateTime",
+		"taxDetailsOverride" => "boolean",
+		"location" => "RecordRef",
+		"pnRefNum" => "string",
+		"status" => "string",
+		"tax2Total" => "float",
+		"terms" => "RecordRef",
+		"validFrom" => "dateTime",
+		"vatRegNum" => "string",
+		"giftCertApplied" => "float",
+		"oneTime" => "float",
+		"recurWeekly" => "float",
+		"recurMonthly" => "float",
+		"recurQuarterly" => "float",
+		"recurAnnually" => "float",
+		"tranIsVsoeBundle" => "boolean",
+		"vsoeAutoCalc" => "boolean",
+		"syncPartnerTeams" => "boolean",
+		"salesTeamList" => "SalesOrderSalesTeamList",
+		"partnersList" => "SalesOrderPartnersList",
+		"giftCertRedemptionList" => "GiftCertRedemptionList",
+		"promotionsList" => "PromotionsList",
+		"itemList" => "SalesOrderItemList",
+		"shipGroupList" => "SalesOrderShipGroupList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"taxDetailsList" => "TaxDetailsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -11,71 +11,82 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerSubsidiaryRelationshipSearchBasic.
+ * CustomerSubsidiaryRelationshipSearchBasic
  */
-class CustomerSubsidiaryRelationshipSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchDoubleField
-     */
-    public $balance;
-    /**
-     * @var SearchDoubleField
-     */
-    public $depositBalance;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $entity;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isPrimarySub;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $primaryCurrency;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchDoubleField
-     */
-    public $unbilledOrders;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class CustomerSubsidiaryRelationshipSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $depositBalance;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isPrimarySub;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $primaryCurrency;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $unbilledOrders;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'balance' => 'SearchDoubleField',
-        'depositBalance' => 'SearchDoubleField',
-        'entity' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isPrimarySub' => 'SearchBooleanField',
-        'primaryCurrency' => 'SearchMultiSelectField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'unbilledOrders' => 'SearchDoubleField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"balance" => "SearchDoubleField",
+		"depositBalance" => "SearchDoubleField",
+		"entity" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isPrimarySub" => "SearchBooleanField",
+		"primaryCurrency" => "SearchMultiSelectField",
+		"subsidiary" => "SearchMultiSelectField",
+		"unbilledOrders" => "SearchDoubleField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

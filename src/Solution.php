@@ -11,91 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Solution.
+ * Solution
  */
-class Solution extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $solutionCode;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var SolutionStatus
-     */
-    public $status;
-    /**
-     * @var bool
-     */
-    public $displayOnline;
-    /**
-     * @var RecordRef
-     */
-    public $assigned;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $longDescription;
-    /**
-     * @var SolutionTopicsList
-     */
-    public $topicsList;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SolutionsList
-     */
-    public $solutionsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Solution extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $solutionCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SolutionStatus
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $displayOnline;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $assigned;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $longDescription;
+	/**
+	 * @access public
+	 * @var SolutionTopicsList
+	 */
+	public $topicsList;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SolutionsList
+	 */
+	public $solutionsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'customForm' => 'RecordRef',
-        'solutionCode' => 'string',
-        'title' => 'string',
-        'message' => 'string',
-        'status' => 'SolutionStatus',
-        'displayOnline' => 'boolean',
-        'assigned' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'longDescription' => 'string',
-        'topicsList' => 'SolutionTopicsList',
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'solutionsList' => 'SolutionsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"solutionCode" => "string",
+		"title" => "string",
+		"message" => "string",
+		"status" => "SolutionStatus",
+		"displayOnline" => "boolean",
+		"assigned" => "RecordRef",
+		"isInactive" => "boolean",
+		"longDescription" => "string",
+		"topicsList" => "SolutionTopicsList",
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"solutionsList" => "SolutionsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

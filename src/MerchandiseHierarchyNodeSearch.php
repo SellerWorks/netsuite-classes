@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNodeSearch.
+ * MerchandiseHierarchyNodeSearch
  */
-class MerchandiseHierarchyNodeSearch extends SearchRecord
-{
-    /**
-     * @var MerchandiseHierarchyNodeSearchBasic
-     */
-    public $basic;
-    /**
-     * @var MerchandiseHierarchyNodeSearchBasic
-     */
-    public $parentNodeJoin;
+class MerchandiseHierarchyNodeSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var MerchandiseHierarchyNodeSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var MerchandiseHierarchyNodeSearchBasic
+	 */
+	public $parentNodeJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'MerchandiseHierarchyNodeSearchBasic',
-        'parentNodeJoin' => 'MerchandiseHierarchyNodeSearchBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "MerchandiseHierarchyNodeSearchBasic",
+		"parentNodeJoin" => "MerchandiseHierarchyNodeSearchBasic",
+	);
 }

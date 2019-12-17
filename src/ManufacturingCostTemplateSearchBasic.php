@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostTemplateSearchBasic.
+ * ManufacturingCostTemplateSearchBasic
  */
-class ManufacturingCostTemplateSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class ManufacturingCostTemplateSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'item' => 'SearchMultiSelectField',
-        'memo' => 'SearchStringField',
-        'name' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"item" => "SearchMultiSelectField",
+		"memo" => "SearchStringField",
+		"name" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

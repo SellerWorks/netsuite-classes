@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesRoleSearchRow.
+ * SalesRoleSearchRow
  */
-class SalesRoleSearchRow extends SearchRow
-{
-    /**
-     * @var SalesRoleSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
+class SalesRoleSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var SalesRoleSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'SalesRoleSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "SalesRoleSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+	);
 }

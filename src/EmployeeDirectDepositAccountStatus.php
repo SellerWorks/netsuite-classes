@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeDirectDepositAccountStatus.
+ * EmployeeDirectDepositAccountStatus
  */
-class EmployeeDirectDepositAccountStatus
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _active = '_active';
-    /**
-     * @var string
-     */
-    const _pending = '_pending';
-    /**
-     * @var string
-     */
-    const _verifying = '_verifying';
-    /**
-     * @var string
-     */
-    const _failed = '_failed';
-    /**
-     * @var string
-     */
-    const _inactive = '_inactive';
+class EmployeeDirectDepositAccountStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _active = "_active";
+	/**
+	 * @var string
+	 */
+	const _pending = "_pending";
+	/**
+	 * @var string
+	 */
+	const _verifying = "_verifying";
+	/**
+	 * @var string
+	 */
+	const _failed = "_failed";
+	/**
+	 * @var string
+	 */
+	const _inactive = "_inactive";
 }

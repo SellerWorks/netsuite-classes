@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingRoutingRoutingStepList.
+ * ManufacturingRoutingRoutingStepList
  */
-class ManufacturingRoutingRoutingStepList
-{
-    /**
-     * @var ManufacturingRoutingRoutingStep[]
-     */
-    public $manufacturingRoutingRoutingStep;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ManufacturingRoutingRoutingStepList {
+	/**
+	 * @access public
+	 * @var ManufacturingRoutingRoutingStep[]
+	 */
+	public $manufacturingRoutingRoutingStep;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'manufacturingRoutingRoutingStep' => 'ManufacturingRoutingRoutingStep[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"manufacturingRoutingRoutingStep" => "ManufacturingRoutingRoutingStep[]",
+		"replaceAll" => "boolean",
+	);
 }

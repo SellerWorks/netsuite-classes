@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxRounding.
+ * TaxRounding
  */
-class TaxRounding
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _roundDown = '_roundDown';
-    /**
-     * @var string
-     */
-    const _roundOff = '_roundOff';
-    /**
-     * @var string
-     */
-    const _roundUp = '_roundUp';
+class TaxRounding {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _roundDown = "_roundDown";
+	/**
+	 * @var string
+	 */
+	const _roundOff = "_roundOff";
+	/**
+	 * @var string
+	 */
+	const _roundUp = "_roundUp";
 }

@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleSearch.
+ * RevRecScheduleSearch
  */
-class RevRecScheduleSearch extends SearchRecord
-{
-    /**
-     * @var RevRecScheduleSearchBasic
-     */
-    public $basic;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $appliedToTransactionJoin;
-    /**
-     * @var CustomerSearchBasic
-     */
-    public $customerJoin;
-    /**
-     * @var ItemSearchBasic
-     */
-    public $itemJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
+class RevRecScheduleSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var RevRecScheduleSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $appliedToTransactionJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchBasic
+	 */
+	public $customerJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'RevRecScheduleSearchBasic',
-        'appliedToTransactionJoin' => 'TransactionSearchBasic',
-        'customerJoin' => 'CustomerSearchBasic',
-        'itemJoin' => 'ItemSearchBasic',
-        'transactionJoin' => 'TransactionSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "RevRecScheduleSearchBasic",
+		"appliedToTransactionJoin" => "TransactionSearchBasic",
+		"customerJoin" => "CustomerSearchBasic",
+		"itemJoin" => "ItemSearchBasic",
+		"transactionJoin" => "TransactionSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+	);
 }

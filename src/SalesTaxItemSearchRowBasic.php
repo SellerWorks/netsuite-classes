@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesTaxItemSearchRowBasic.
+ * SalesTaxItemSearchRowBasic
  */
-class SalesTaxItemSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $itemId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxType;
+class SalesTaxItemSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxType;
 
-    public static $paramtypesmap = array(
-        'description' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'itemId' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'taxType' => 'SearchColumnSelectField[]',
-    );
+	static $paramtypesmap = array(
+		"description" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"itemId" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"taxType" => "SearchColumnSelectField[]",
+	);
 }

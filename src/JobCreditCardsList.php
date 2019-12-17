@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobCreditCardsList.
+ * JobCreditCardsList
  */
-class JobCreditCardsList
-{
-    /**
-     * @var JobCreditCards[]
-     */
-    public $creditCards;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class JobCreditCardsList {
+	/**
+	 * @access public
+	 * @var JobCreditCards[]
+	 */
+	public $creditCards;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'creditCards' => 'JobCreditCards[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"creditCards" => "JobCreditCards[]",
+		"replaceAll" => "boolean",
+	);
 }

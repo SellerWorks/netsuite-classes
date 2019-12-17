@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberSearch.
+ * InventoryNumberSearch
  */
-class InventoryNumberSearch extends SearchRecord
-{
-    /**
-     * @var InventoryNumberSearchBasic
-     */
-    public $basic;
-    /**
-     * @var ItemSearchBasic
-     */
-    public $itemJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class InventoryNumberSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var InventoryNumberSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var ItemSearchBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'InventoryNumberSearchBasic',
-        'itemJoin' => 'ItemSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "InventoryNumberSearchBasic",
+		"itemJoin" => "ItemSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

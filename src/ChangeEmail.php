@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChangeEmail.
+ * ChangeEmail
  */
-class ChangeEmail
-{
-    /**
-     * @var string
-     */
-    public $currentPassword;
-    /**
-     * @var string
-     */
-    public $newEmail;
-    /**
-     * @var string
-     */
-    public $newEmail2;
-    /**
-     * @var bool
-     */
-    public $justThisAccount;
+class ChangeEmail {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currentPassword;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $newEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $newEmail2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $justThisAccount;
 
-    public static $paramtypesmap = array(
-        'currentPassword' => 'string',
-        'newEmail' => 'string',
-        'newEmail2' => 'string',
-        'justThisAccount' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"currentPassword" => "string",
+		"newEmail" => "string",
+		"newEmail2" => "string",
+		"justThisAccount" => "boolean",
+	);
 }

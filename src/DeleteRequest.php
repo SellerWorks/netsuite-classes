@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DeleteRequest.
+ * DeleteRequest
  */
-class DeleteRequest
-{
-    /**
-     * @var BaseRef
-     */
-    public $baseRef;
-    /**
-     * @var DeletionReason
-     */
-    public $deletionReason;
+class DeleteRequest {
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $baseRef;
+	/**
+	 * @access public
+	 * @var DeletionReason
+	 */
+	public $deletionReason;
 
-    public static $paramtypesmap = array(
-        'baseRef' => 'BaseRef',
-        'deletionReason' => 'DeletionReason',
-    );
+	static $paramtypesmap = array(
+		"baseRef" => "BaseRef",
+		"deletionReason" => "DeletionReason",
+	);
 }

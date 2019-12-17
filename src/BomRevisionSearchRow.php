@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomRevisionSearchRow.
+ * BomRevisionSearchRow
  */
-class BomRevisionSearchRow extends SearchRow
-{
-    /**
-     * @var BomRevisionSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var BomSearchRowBasic
-     */
-    public $billOfMaterialsJoin;
-    /**
-     * @var BomRevisionComponentSearchRowBasic
-     */
-    public $componentJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class BomRevisionSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var BomRevisionSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var BomSearchRowBasic
+	 */
+	public $billOfMaterialsJoin;
+	/**
+	 * @access public
+	 * @var BomRevisionComponentSearchRowBasic
+	 */
+	public $componentJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'BomRevisionSearchRowBasic',
-        'billOfMaterialsJoin' => 'BomSearchRowBasic',
-        'componentJoin' => 'BomRevisionComponentSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "BomRevisionSearchRowBasic",
+		"billOfMaterialsJoin" => "BomSearchRowBasic",
+		"componentJoin" => "BomRevisionComponentSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

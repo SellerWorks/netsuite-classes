@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerGroupPricingList.
+ * CustomerGroupPricingList
  */
-class CustomerGroupPricingList
-{
-    /**
-     * @var CustomerGroupPricing[]
-     */
-    public $groupPricing;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomerGroupPricingList {
+	/**
+	 * @access public
+	 * @var CustomerGroupPricing[]
+	 */
+	public $groupPricing;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'groupPricing' => 'CustomerGroupPricing[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"groupPricing" => "CustomerGroupPricing[]",
+		"replaceAll" => "boolean",
+	);
 }

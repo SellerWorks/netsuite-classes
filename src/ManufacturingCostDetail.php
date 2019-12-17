@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostDetail.
+ * ManufacturingCostDetail
  */
-class ManufacturingCostDetail
-{
-    /**
-     * @var RecordRef
-     */
-    public $costCategory;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var float
-     */
-    public $fixedRate;
-    /**
-     * @var float
-     */
-    public $runRate;
+class ManufacturingCostDetail {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $costCategory;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $fixedRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $runRate;
 
-    public static $paramtypesmap = array(
-        'costCategory' => 'RecordRef',
-        'item' => 'RecordRef',
-        'fixedRate' => 'float',
-        'runRate' => 'float',
-    );
+	static $paramtypesmap = array(
+		"costCategory" => "RecordRef",
+		"item" => "RecordRef",
+		"fixedRate" => "float",
+		"runRate" => "float",
+	);
 }

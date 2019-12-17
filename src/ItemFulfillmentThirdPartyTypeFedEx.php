@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentThirdPartyTypeFedEx.
+ * ItemFulfillmentThirdPartyTypeFedEx
  */
-class ItemFulfillmentThirdPartyTypeFedEx
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _billRecipient = '_billRecipient';
-    /**
-     * @var string
-     */
-    const _billThirdParty = '_billThirdParty';
-    /**
-     * @var string
-     */
-    const _noneSelected = '_noneSelected';
+class ItemFulfillmentThirdPartyTypeFedEx {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _billRecipient = "_billRecipient";
+	/**
+	 * @var string
+	 */
+	const _billThirdParty = "_billThirdParty";
+	/**
+	 * @var string
+	 */
+	const _noneSelected = "_noneSelected";
 }

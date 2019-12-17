@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemDemandPlanProjectionMethod.
+ * ItemDemandPlanProjectionMethod
  */
-class ItemDemandPlanProjectionMethod
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _linearRegression = '_linearRegression';
-    /**
-     * @var string
-     */
-    const _movingAverage = '_movingAverage';
-    /**
-     * @var string
-     */
-    const _salesForecast = '_salesForecast';
-    /**
-     * @var string
-     */
-    const _seasonalAverage = '_seasonalAverage';
+class ItemDemandPlanProjectionMethod {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _linearRegression = "_linearRegression";
+	/**
+	 * @var string
+	 */
+	const _movingAverage = "_movingAverage";
+	/**
+	 * @var string
+	 */
+	const _salesForecast = "_salesForecast";
+	/**
+	 * @var string
+	 */
+	const _seasonalAverage = "_seasonalAverage";
 }

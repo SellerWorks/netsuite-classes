@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeDeduction.
+ * EmployeeDeduction
  */
-class EmployeeDeduction
-{
-    /**
-     * @var RecordRef
-     */
-    public $payrollItem;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $limit;
-    /**
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * @var dateTime
-     */
-    public $effectiveDate;
-    /**
-     * @var dateTime
-     */
-    public $expirationDate;
+class EmployeeDeduction {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payrollItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $limit;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expirationDate;
 
-    public static $paramtypesmap = array(
-        'payrollItem' => 'RecordRef',
-        'rate' => 'string',
-        'limit' => 'float',
-        'inactive' => 'boolean',
-        'effectiveDate' => 'dateTime',
-        'expirationDate' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"payrollItem" => "RecordRef",
+		"rate" => "string",
+		"limit" => "float",
+		"inactive" => "boolean",
+		"effectiveDate" => "dateTime",
+		"expirationDate" => "dateTime",
+	);
 }

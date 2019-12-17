@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetPostingTransactionSummaryResult.
+ * GetPostingTransactionSummaryResult
  */
-class GetPostingTransactionSummaryResult
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var int
-     */
-    public $totalRecords;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var int
-     */
-    public $totalPages;
-    /**
-     * @var int
-     */
-    public $pageIndex;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var PostingTransactionSummaryList
-     */
-    public $postingTransactionSummaryList;
+class GetPostingTransactionSummaryResult {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalRecords;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageSize;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalPages;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageIndex;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $operationId;
+	/**
+	 * @access public
+	 * @var PostingTransactionSummaryList
+	 */
+	public $postingTransactionSummaryList;
 
-    public static $paramtypesmap = array(
-        'status' => 'Status',
-        'totalRecords' => 'integer',
-        'pageSize' => 'integer',
-        'totalPages' => 'integer',
-        'pageIndex' => 'integer',
-        'operationId' => 'string',
-        'postingTransactionSummaryList' => 'PostingTransactionSummaryList',
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"totalRecords" => "integer",
+		"pageSize" => "integer",
+		"totalPages" => "integer",
+		"pageIndex" => "integer",
+		"operationId" => "string",
+		"postingTransactionSummaryList" => "PostingTransactionSummaryList",
+	);
 }

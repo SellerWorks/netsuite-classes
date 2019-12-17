@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAttendeeAttendance.
+ * CalendarEventAttendeeAttendance
  */
-class CalendarEventAttendeeAttendance
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _optional = '_optional';
-    /**
-     * @var string
-     */
-    const _required = '_required';
+class CalendarEventAttendeeAttendance {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _optional = "_optional";
+	/**
+	 * @var string
+	 */
+	const _required = "_required";
 }

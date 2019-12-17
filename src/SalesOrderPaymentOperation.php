@@ -11,38 +11,38 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderPaymentOperation.
+ * SalesOrderPaymentOperation
  */
-class SalesOrderPaymentOperation
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _authorization = '_authorization';
-    /**
-     * @var string
-     */
-    const _capture = '_capture';
-    /**
-     * @var string
-     */
-    const _sale = '_sale';
-    /**
-     * @var string
-     */
-    const _refund = '_refund';
-    /**
-     * @var string
-     */
-    const _credit = '_credit';
-    /**
-     * @var string
-     */
-    const _refresh = '_refresh';
-    /**
-     * @var string
-     */
-    const _void = '_void';
+class SalesOrderPaymentOperation {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _authorization = "_authorization";
+	/**
+	 * @var string
+	 */
+	const _capture = "_capture";
+	/**
+	 * @var string
+	 */
+	const _sale = "_sale";
+	/**
+	 * @var string
+	 */
+	const _refund = "_refund";
+	/**
+	 * @var string
+	 */
+	const _credit = "_credit";
+	/**
+	 * @var string
+	 */
+	const _refresh = "_refresh";
+	/**
+	 * @var string
+	 */
+	const _void = "_void";
 }

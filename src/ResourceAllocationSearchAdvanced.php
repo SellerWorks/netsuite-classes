@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ResourceAllocationSearchAdvanced.
+ * ResourceAllocationSearchAdvanced
  */
-class ResourceAllocationSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var ResourceAllocationSearch
-     */
-    public $criteria;
-    /**
-     * @var ResourceAllocationSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class ResourceAllocationSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'ResourceAllocationSearch',
-        'columns' => 'ResourceAllocationSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "ResourceAllocationSearch",
+		"columns" => "ResourceAllocationSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

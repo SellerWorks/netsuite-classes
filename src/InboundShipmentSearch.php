@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentSearch.
+ * InboundShipmentSearch
  */
-class InboundShipmentSearch extends SearchRecord
-{
-    /**
-     * @var InboundShipmentSearchBasic
-     */
-    public $basic;
-    /**
-     * @var ItemSearchBasic
-     */
-    public $itemJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $itemReceiptJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $purchaseOrderJoin;
-    /**
-     * @var VendorSearchBasic
-     */
-    public $vendorJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class InboundShipmentSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var InboundShipmentSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var ItemSearchBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $itemReceiptJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $purchaseOrderJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchBasic
+	 */
+	public $vendorJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'InboundShipmentSearchBasic',
-        'itemJoin' => 'ItemSearchBasic',
-        'itemReceiptJoin' => 'TransactionSearchBasic',
-        'purchaseOrderJoin' => 'TransactionSearchBasic',
-        'vendorJoin' => 'VendorSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "InboundShipmentSearchBasic",
+		"itemJoin" => "ItemSearchBasic",
+		"itemReceiptJoin" => "TransactionSearchBasic",
+		"purchaseOrderJoin" => "TransactionSearchBasic",
+		"vendorJoin" => "VendorSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

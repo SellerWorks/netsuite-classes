@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchMoreWithIdResponse.
+ * SearchMoreWithIdResponse
  */
-class SearchMoreWithIdResponse
-{
-    /**
-     * @var SearchResult
-     */
-    public $searchResult;
+class SearchMoreWithIdResponse {
+	/**
+	 * @access public
+	 * @var SearchResult
+	 */
+	public $searchResult;
 
-    public static $paramtypesmap = array(
-        'searchResult' => 'SearchResult',
-    );
+	static $paramtypesmap = array(
+		"searchResult" => "SearchResult",
+	);
 }

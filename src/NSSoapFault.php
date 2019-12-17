@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NSSoapFault.
+ * NSSoapFault
  */
-class NSSoapFault
-{
-    /**
-     * @var FaultCodeType
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $message;
+class NSSoapFault {
+	/**
+	 * @access public
+	 * @var FaultCodeType
+	 */
+	public $code;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
 
-    public static $paramtypesmap = array(
-        'code' => 'FaultCodeType',
-        'message' => 'string',
-    );
+	static $paramtypesmap = array(
+		"code" => "FaultCodeType",
+		"message" => "string",
+	);
 }

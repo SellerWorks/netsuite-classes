@@ -11,1071 +11,1300 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyItem.
+ * AssemblyItem
  */
-class AssemblyItem extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $upcCode;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $vendorName;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $printItems;
-    /**
-     * @var RecordRef
-     */
-    public $vendor;
-    /**
-     * @var bool
-     */
-    public $isOnline;
-    /**
-     * @var bool
-     */
-    public $isGcoCompliant;
-    /**
-     * @var bool
-     */
-    public $offerSupport;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $availableToPartners;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $cogsAccount;
-    /**
-     * @var RecordRef
-     */
-    public $incomeAccount;
-    /**
-     * @var RecordRef
-     */
-    public $intercoIncomeAccount;
-    /**
-     * @var RecordRef
-     */
-    public $assetAccount;
-    /**
-     * @var bool
-     */
-    public $matchBillToReceipt;
-    /**
-     * @var RecordRef
-     */
-    public $billQtyVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $billPriceVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $billExchRateVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $gainLossAccount;
-    /**
-     * @var RecordRef
-     */
-    public $salesTaxCode;
-    /**
-     * @var bool
-     */
-    public $useComponentYield;
-    /**
-     * @var RecordRef
-     */
-    public $wipVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseTaxCode;
-    /**
-     * @var RecordRef
-     */
-    public $scrapAcct;
-    /**
-     * @var RecordRef
-     */
-    public $taxSchedule;
-    /**
-     * @var RecordRef
-     */
-    public $wipAcct;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var float
-     */
-    public $weight;
-    /**
-     * @var ItemWeightUnit
-     */
-    public $weightUnit;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var ItemCostingMethod
-     */
-    public $costingMethod;
-    /**
-     * @var float
-     */
-    public $rate;
-    /**
-     * @var string
-     */
-    public $costingMethodDisplay;
-    /**
-     * @var RecordRef
-     */
-    public $unitsType;
-    /**
-     * @var RecordRef
-     */
-    public $stockUnit;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseUnit;
-    /**
-     * @var RecordRef
-     */
-    public $saleUnit;
-    /**
-     * @var bool
-     */
-    public $trackLandedCost;
-    /**
-     * @var string
-     */
-    public $matrixItemNameTemplate;
-    /**
-     * @var RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var RecordRef
-     */
-    public $deferredRevenueAccount;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var string
-     */
-    public $stockDescription;
-    /**
-     * @var bool
-     */
-    public $producer;
-    /**
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * @var string
-     */
-    public $mpn;
-    /**
-     * @var bool
-     */
-    public $multManufactureAddr;
-    /**
-     * @var string
-     */
-    public $manufactureraddr1;
-    /**
-     * @var string
-     */
-    public $manufacturerCity;
-    /**
-     * @var string
-     */
-    public $manufacturerState;
-    /**
-     * @var string
-     */
-    public $manufacturerZip;
-    /**
-     * @var Country
-     */
-    public $countryOfManufacture;
-    /**
-     * @var AssemblyItemEffectiveBomControl
-     */
-    public $effectiveBomControl;
-    /**
-     * @var string
-     */
-    public $defaultRevision;
-    /**
-     * @var bool
-     */
-    public $roundUpAsComponent;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantity;
-    /**
-     * @var float
-     */
-    public $purchaseOrderAmount;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantityDiff;
-    /**
-     * @var float
-     */
-    public $receiptQuantity;
-    /**
-     * @var float
-     */
-    public $receiptAmount;
-    /**
-     * @var float
-     */
-    public $receiptQuantityDiff;
-    /**
-     * @var bool
-     */
-    public $isDropShipItem;
-    /**
-     * @var bool
-     */
-    public $isPhantom;
-    /**
-     * @var RecordRef
-     */
-    public $defaultItemShipMethod;
-    /**
-     * @var ShippingCarrier
-     */
-    public $itemCarrier;
-    /**
-     * @var RecordRefList
-     */
-    public $itemShipMethodList;
-    /**
-     * @var string
-     */
-    public $manufacturerTaxId;
-    /**
-     * @var string
-     */
-    public $scheduleBNumber;
-    /**
-     * @var int
-     */
-    public $scheduleBQuantity;
-    /**
-     * @var RecordRef
-     */
-    public $scheduleBCode;
-    /**
-     * @var string
-     */
-    public $manufacturerTariff;
-    /**
-     * @var ItemPreferenceCriterion
-     */
-    public $preferenceCriterion;
-    /**
-     * @var RecordRef
-     */
-    public $issueProduct;
-    /**
-     * @var int
-     */
-    public $minimumQuantity;
-    /**
-     * @var dateTime
-     */
-    public $lastInvtCountDate;
-    /**
-     * @var dateTime
-     */
-    public $nextInvtCountDate;
-    /**
-     * @var int
-     */
-    public $invtCountInterval;
-    /**
-     * @var ItemInvtClassification
-     */
-    public $invtClassification;
-    /**
-     * @var bool
-     */
-    public $enforceMinQtyInternally;
-    /**
-     * @var int
-     */
-    public $maximumQuantity;
-    /**
-     * @var RecordRef
-     */
-    public $softDescriptor;
-    /**
-     * @var bool
-     */
-    public $isSpecialWorkOrderItem;
-    /**
-     * @var RecordRef
-     */
-    public $costCategory;
-    /**
-     * @var bool
-     */
-    public $pricesIncludeTax;
-    /**
-     * @var RecordRef
-     */
-    public $prodQtyVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $prodPriceVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $purchasePriceVarianceAcct;
-    /**
-     * @var RecordRef
-     */
-    public $quantityPricingSchedule;
-    /**
-     * @var bool
-     */
-    public $buildEntireAssembly;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var bool
-     */
-    public $useMarginalRates;
-    /**
-     * @var ItemCostEstimateType
-     */
-    public $costEstimateType;
-    /**
-     * @var bool
-     */
-    public $isHazmatItem;
-    /**
-     * @var string
-     */
-    public $hazmatId;
-    /**
-     * @var string
-     */
-    public $hazmatShippingName;
-    /**
-     * @var string
-     */
-    public $hazmatHazardClass;
-    /**
-     * @var HazmatPackingGroup
-     */
-    public $hazmatPackingGroup;
-    /**
-     * @var string
-     */
-    public $hazmatItemUnits;
-    /**
-     * @var float
-     */
-    public $hazmatItemUnitsQty;
-    /**
-     * @var float
-     */
-    public $costEstimate;
-    /**
-     * @var float
-     */
-    public $transferPrice;
-    /**
-     * @var ItemOverallQuantityPricingType
-     */
-    public $overallQuantityPricingType;
-    /**
-     * @var RecordRef
-     */
-    public $pricingGroup;
-    /**
-     * @var RecordRef
-     */
-    public $intercoCogsAccount;
-    /**
-     * @var float
-     */
-    public $vsoePrice;
-    /**
-     * @var VsoeSopGroup
-     */
-    public $vsoeSopGroup;
-    /**
-     * @var VsoeDeferral
-     */
-    public $vsoeDeferral;
-    /**
-     * @var VsoePermitDiscount
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var bool
-     */
-    public $vsoeDelivered;
-    /**
-     * @var RecordRef
-     */
-    public $itemRevenueCategory;
-    /**
-     * @var RecordRef
-     */
-    public $unbuildVarianceAccount;
-    /**
-     * @var bool
-     */
-    public $deferRevRec;
-    /**
-     * @var RecordRef
-     */
-    public $revenueRecognitionRule;
-    /**
-     * @var RecordRef
-     */
-    public $revRecForecastRule;
-    /**
-     * @var RecordRef
-     */
-    public $revenueAllocationGroup;
-    /**
-     * @var RecordRef
-     */
-    public $createRevenuePlansOn;
-    /**
-     * @var bool
-     */
-    public $directRevenuePosting;
-    /**
-     * @var RecordRef
-     */
-    public $dropshipExpenseAccount;
-    /**
-     * @var RecordRef
-     */
-    public $preferredLocation;
-    /**
-     * @var bool
-     */
-    public $isStorePickupAllowed;
-    /**
-     * @var float
-     */
-    public $totalValue;
-    /**
-     * @var bool
-     */
-    public $useBins;
-    /**
-     * @var float
-     */
-    public $averageCost;
-    /**
-     * @var int
-     */
-    public $leadTime;
-    /**
-     * @var bool
-     */
-    public $autoLeadTime;
-    /**
-     * @var int
-     */
-    public $buildTime;
-    /**
-     * @var float
-     */
-    public $lastPurchasePrice;
-    /**
-     * @var string
-     */
-    public $purchaseDescription;
-    /**
-     * @var float
-     */
-    public $safetyStockLevel;
-    /**
-     * @var int
-     */
-    public $safetyStockLevelDays;
-    /**
-     * @var bool
-     */
-    public $seasonalDemand;
-    /**
-     * @var int
-     */
-    public $reorderMultiple;
-    /**
-     * @var float
-     */
-    public $cost;
-    /**
-     * @var float
-     */
-    public $reorderPoint;
-    /**
-     * @var float
-     */
-    public $demandModifier;
-    /**
-     * @var RecordRef
-     */
-    public $distributionNetwork;
-    /**
-     * @var RecordRef
-     */
-    public $distributionCategory;
-    /**
-     * @var float
-     */
-    public $preferredStockLevel;
-    /**
-     * @var bool
-     */
-    public $autoReorderPoint;
-    /**
-     * @var bool
-     */
-    public $autoPreferredStockLevel;
-    /**
-     * @var float
-     */
-    public $preferredStockLevelDays;
-    /**
-     * @var float
-     */
-    public $quantityCommitted;
-    /**
-     * @var bool
-     */
-    public $shipIndividually;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
-    /**
-     * @var RecordRef
-     */
-    public $shipPackage;
-    /**
-     * @var float
-     */
-    public $quantityBackOrdered;
-    /**
-     * @var string
-     */
-    public $storeDisplayName;
-    /**
-     * @var float
-     */
-    public $defaultReturnCost;
-    /**
-     * @var RecordRef
-     */
-    public $supplyReplenishmentMethod;
-    /**
-     * @var RecordRef
-     */
-    public $alternateDemandSourceItem;
-    /**
-     * @var float
-     */
-    public $fixedLotSize;
-    /**
-     * @var RecordRef
-     */
-    public $supplyType;
-    /**
-     * @var int
-     */
-    public $demandTimeFence;
-    /**
-     * @var int
-     */
-    public $supplyTimeFence;
-    /**
-     * @var int
-     */
-    public $rescheduleInDays;
-    /**
-     * @var int
-     */
-    public $rescheduleOutDays;
-    /**
-     * @var RecordRef
-     */
-    public $supplyLotSizingMethod;
-    /**
-     * @var RecordRef
-     */
-    public $demandSource;
-    /**
-     * @var float
-     */
-    public $quantityOnOrder;
-    /**
-     * @var RecordRef
-     */
-    public $storeDisplayThumbnail;
-    /**
-     * @var RecordRef
-     */
-    public $storeDisplayImage;
-    /**
-     * @var string
-     */
-    public $storeDescription;
-    /**
-     * @var string
-     */
-    public $storeDetailedDescription;
-    /**
-     * @var RecordRef
-     */
-    public $storeItemTemplate;
-    /**
-     * @var string
-     */
-    public $pageTitle;
-    /**
-     * @var string
-     */
-    public $urlComponent;
-    /**
-     * @var string
-     */
-    public $metaTagHtml;
-    /**
-     * @var bool
-     */
-    public $excludeFromSitemap;
-    /**
-     * @var SitemapPriority
-     */
-    public $sitemapPriority;
-    /**
-     * @var string
-     */
-    public $searchKeywords;
-    /**
-     * @var bool
-     */
-    public $isDonationItem;
-    /**
-     * @var bool
-     */
-    public $showDefaultDonationAmount;
-    /**
-     * @var float
-     */
-    public $maxDonationAmount;
-    /**
-     * @var bool
-     */
-    public $dontShowPrice;
-    /**
-     * @var string
-     */
-    public $noPriceMessage;
-    /**
-     * @var string
-     */
-    public $outOfStockMessage;
-    /**
-     * @var string
-     */
-    public $shoppingDotComCategory;
-    /**
-     * @var ItemOutOfStockBehavior
-     */
-    public $outOfStockBehavior;
-    /**
-     * @var int
-     */
-    public $shopzillaCategoryId;
-    /**
-     * @var string
-     */
-    public $nexTagCategory;
-    /**
-     * @var ProductFeedList
-     */
-    public $productFeedList;
-    /**
-     * @var string
-     */
-    public $relatedItemsDescription;
-    /**
-     * @var bool
-     */
-    public $onSpecial;
-    /**
-     * @var string
-     */
-    public $specialsDescription;
-    /**
-     * @var string
-     */
-    public $featuredDescription;
-    /**
-     * @var ItemOptionsList
-     */
-    public $itemOptionsList;
-    /**
-     * @var RecordRefList
-     */
-    public $itemNumberOptionsList;
-    /**
-     * @var ItemVendorList
-     */
-    public $itemVendorList;
-    /**
-     * @var PricingMatrix
-     */
-    public $pricingMatrix;
-    /**
-     * @var ItemMemberList
-     */
-    public $memberList;
-    /**
-     * @var ItemAccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var AssemblyItemBillOfMaterialsList
-     */
-    public $billOfMaterialsList;
-    /**
-     * @var InventoryItemLocationsList
-     */
-    public $locationsList;
-    /**
-     * @var SiteCategoryList
-     */
-    public $siteCategoryList;
-    /**
-     * @var InventoryItemBinNumberList
-     */
-    public $binNumberList;
-    /**
-     * @var TranslationList
-     */
-    public $translationsList;
-    /**
-     * @var PresentationItemList
-     */
-    public $presentationItemList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class AssemblyItem extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $upcCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $printItems;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isGcoCompliant;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $offerSupport;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $availableToPartners;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $cogsAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $incomeAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $intercoIncomeAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $assetAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $matchBillToReceipt;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billQtyVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billPriceVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billExchRateVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $gainLossAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesTaxCode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useComponentYield;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $wipVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseTaxCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $scrapAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxSchedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $wipAcct;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $weight;
+	/**
+	 * @access public
+	 * @var ItemWeightUnit
+	 */
+	public $weightUnit;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var ItemCostingMethod
+	 */
+	public $costingMethod;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $costingMethodDisplay;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $unitsType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $stockUnit;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseUnit;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $saleUnit;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $trackLandedCost;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $matrixItemNameTemplate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $deferredRevenueAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $stockDescription;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $producer;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturer;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mpn;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $multManufactureAddr;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufactureraddr1;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerCity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerState;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerZip;
+	/**
+	 * @access public
+	 * @var Country
+	 */
+	public $countryOfManufacture;
+	/**
+	 * @access public
+	 * @var AssemblyItemEffectiveBomControl
+	 */
+	public $effectiveBomControl;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $defaultRevision;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $roundUpAsComponent;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantityDiff;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantityDiff;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDropShipItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPhantom;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultItemShipMethod;
+	/**
+	 * @access public
+	 * @var ShippingCarrier
+	 */
+	public $itemCarrier;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $itemShipMethodList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerTaxId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scheduleBNumber;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $scheduleBQuantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $scheduleBCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerTariff;
+	/**
+	 * @access public
+	 * @var ItemPreferenceCriterion
+	 */
+	public $preferenceCriterion;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $issueProduct;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $minimumQuantity;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastInvtCountDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $nextInvtCountDate;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $invtCountInterval;
+	/**
+	 * @access public
+	 * @var ItemInvtClassification
+	 */
+	public $invtClassification;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $enforceMinQtyInternally;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $maximumQuantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $softDescriptor;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isSpecialWorkOrderItem;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $costCategory;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $pricesIncludeTax;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $prodQtyVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $prodPriceVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchasePriceVarianceAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $quantityPricingSchedule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $buildEntireAssembly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useMarginalRates;
+	/**
+	 * @access public
+	 * @var ItemCostEstimateType
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isHazmatItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatShippingName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatHazardClass;
+	/**
+	 * @access public
+	 * @var HazmatPackingGroup
+	 */
+	public $hazmatPackingGroup;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatItemUnits;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $hazmatItemUnitsQty;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $transferPrice;
+	/**
+	 * @access public
+	 * @var ItemOverallQuantityPricingType
+	 */
+	public $overallQuantityPricingType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $pricingGroup;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $intercoCogsAccount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var VsoeSopGroup
+	 */
+	public $vsoeSopGroup;
+	/**
+	 * @access public
+	 * @var VsoeDeferral
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var VsoePermitDiscount
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $itemRevenueCategory;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $unbuildVarianceAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revenueRecognitionRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecForecastRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revenueAllocationGroup;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createRevenuePlansOn;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $directRevenuePosting;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $dropshipExpenseAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $preferredLocation;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isStorePickupAllowed;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalValue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useBins;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $averageCost;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $leadTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoLeadTime;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $buildTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $lastPurchasePrice;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $purchaseDescription;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $safetyStockLevel;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $safetyStockLevelDays;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $seasonalDemand;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $reorderMultiple;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $reorderPoint;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $demandModifier;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $distributionNetwork;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $distributionCategory;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $preferredStockLevel;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoReorderPoint;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoPreferredStockLevel;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $preferredStockLevelDays;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityCommitted;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipIndividually;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipPackage;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityBackOrdered;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDisplayName;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $defaultReturnCost;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $supplyReplenishmentMethod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $alternateDemandSourceItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $fixedLotSize;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $supplyType;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $demandTimeFence;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $supplyTimeFence;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $rescheduleInDays;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $rescheduleOutDays;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $supplyLotSizingMethod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $demandSource;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnOrder;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeDisplayThumbnail;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeDisplayImage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDetailedDescription;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeItemTemplate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $pageTitle;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $urlComponent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $metaTagHtml;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeFromSitemap;
+	/**
+	 * @access public
+	 * @var SitemapPriority
+	 */
+	public $sitemapPriority;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $searchKeywords;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDonationItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showDefaultDonationAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $maxDonationAmount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $dontShowPrice;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $noPriceMessage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outOfStockMessage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shoppingDotComCategory;
+	/**
+	 * @access public
+	 * @var ItemOutOfStockBehavior
+	 */
+	public $outOfStockBehavior;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $shopzillaCategoryId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $nexTagCategory;
+	/**
+	 * @access public
+	 * @var ProductFeedList
+	 */
+	public $productFeedList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $relatedItemsDescription;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $onSpecial;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $specialsDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $featuredDescription;
+	/**
+	 * @access public
+	 * @var ItemOptionsList
+	 */
+	public $itemOptionsList;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $itemNumberOptionsList;
+	/**
+	 * @access public
+	 * @var ItemVendorList
+	 */
+	public $itemVendorList;
+	/**
+	 * @access public
+	 * @var PricingMatrix
+	 */
+	public $pricingMatrix;
+	/**
+	 * @access public
+	 * @var ItemMemberList
+	 */
+	public $memberList;
+	/**
+	 * @access public
+	 * @var ItemAccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var AssemblyItemBillOfMaterialsList
+	 */
+	public $billOfMaterialsList;
+	/**
+	 * @access public
+	 * @var InventoryItemLocationsList
+	 */
+	public $locationsList;
+	/**
+	 * @access public
+	 * @var SiteCategoryList
+	 */
+	public $siteCategoryList;
+	/**
+	 * @access public
+	 * @var InventoryItemBinNumberList
+	 */
+	public $binNumberList;
+	/**
+	 * @access public
+	 * @var TranslationList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var PresentationItemList
+	 */
+	public $presentationItemList;
+	/**
+	 * @access public
+	 * @var AssemblyItemHierarchyVersionsList
+	 */
+	public $hierarchyVersionsList;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $futureHorizon;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $consumptionUnit;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'itemId' => 'string',
-        'upcCode' => 'string',
-        'displayName' => 'string',
-        'vendorName' => 'string',
-        'parent' => 'RecordRef',
-        'printItems' => 'boolean',
-        'vendor' => 'RecordRef',
-        'isOnline' => 'boolean',
-        'isGcoCompliant' => 'boolean',
-        'offerSupport' => 'boolean',
-        'isInactive' => 'boolean',
-        'availableToPartners' => 'boolean',
-        'subsidiaryList' => 'RecordRefList',
-        'department' => 'RecordRef',
-        'includeChildren' => 'boolean',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'description' => 'string',
-        'cogsAccount' => 'RecordRef',
-        'incomeAccount' => 'RecordRef',
-        'intercoIncomeAccount' => 'RecordRef',
-        'assetAccount' => 'RecordRef',
-        'matchBillToReceipt' => 'boolean',
-        'billQtyVarianceAcct' => 'RecordRef',
-        'billPriceVarianceAcct' => 'RecordRef',
-        'billExchRateVarianceAcct' => 'RecordRef',
-        'gainLossAccount' => 'RecordRef',
-        'salesTaxCode' => 'RecordRef',
-        'useComponentYield' => 'boolean',
-        'wipVarianceAcct' => 'RecordRef',
-        'purchaseTaxCode' => 'RecordRef',
-        'scrapAcct' => 'RecordRef',
-        'taxSchedule' => 'RecordRef',
-        'wipAcct' => 'RecordRef',
-        'shippingCost' => 'float',
-        'handlingCost' => 'float',
-        'weight' => 'float',
-        'weightUnit' => 'ItemWeightUnit',
-        'isTaxable' => 'boolean',
-        'costingMethod' => 'ItemCostingMethod',
-        'rate' => 'float',
-        'costingMethodDisplay' => 'string',
-        'unitsType' => 'RecordRef',
-        'stockUnit' => 'RecordRef',
-        'purchaseUnit' => 'RecordRef',
-        'saleUnit' => 'RecordRef',
-        'trackLandedCost' => 'boolean',
-        'matrixItemNameTemplate' => 'string',
-        'billingSchedule' => 'RecordRef',
-        'deferredRevenueAccount' => 'RecordRef',
-        'revRecSchedule' => 'RecordRef',
-        'stockDescription' => 'string',
-        'producer' => 'boolean',
-        'manufacturer' => 'string',
-        'mpn' => 'string',
-        'multManufactureAddr' => 'boolean',
-        'manufactureraddr1' => 'string',
-        'manufacturerCity' => 'string',
-        'manufacturerState' => 'string',
-        'manufacturerZip' => 'string',
-        'countryOfManufacture' => 'Country',
-        'effectiveBomControl' => 'AssemblyItemEffectiveBomControl',
-        'defaultRevision' => 'string',
-        'roundUpAsComponent' => 'boolean',
-        'purchaseOrderQuantity' => 'float',
-        'purchaseOrderAmount' => 'float',
-        'purchaseOrderQuantityDiff' => 'float',
-        'receiptQuantity' => 'float',
-        'receiptAmount' => 'float',
-        'receiptQuantityDiff' => 'float',
-        'isDropShipItem' => 'boolean',
-        'isPhantom' => 'boolean',
-        'defaultItemShipMethod' => 'RecordRef',
-        'itemCarrier' => 'ShippingCarrier',
-        'itemShipMethodList' => 'RecordRefList',
-        'manufacturerTaxId' => 'string',
-        'scheduleBNumber' => 'string',
-        'scheduleBQuantity' => 'integer',
-        'scheduleBCode' => 'RecordRef',
-        'manufacturerTariff' => 'string',
-        'preferenceCriterion' => 'ItemPreferenceCriterion',
-        'issueProduct' => 'RecordRef',
-        'minimumQuantity' => 'integer',
-        'lastInvtCountDate' => 'dateTime',
-        'nextInvtCountDate' => 'dateTime',
-        'invtCountInterval' => 'integer',
-        'invtClassification' => 'ItemInvtClassification',
-        'enforceMinQtyInternally' => 'boolean',
-        'maximumQuantity' => 'integer',
-        'softDescriptor' => 'RecordRef',
-        'isSpecialWorkOrderItem' => 'boolean',
-        'costCategory' => 'RecordRef',
-        'pricesIncludeTax' => 'boolean',
-        'prodQtyVarianceAcct' => 'RecordRef',
-        'prodPriceVarianceAcct' => 'RecordRef',
-        'purchasePriceVarianceAcct' => 'RecordRef',
-        'quantityPricingSchedule' => 'RecordRef',
-        'buildEntireAssembly' => 'boolean',
-        'quantityOnHand' => 'float',
-        'useMarginalRates' => 'boolean',
-        'costEstimateType' => 'ItemCostEstimateType',
-        'isHazmatItem' => 'boolean',
-        'hazmatId' => 'string',
-        'hazmatShippingName' => 'string',
-        'hazmatHazardClass' => 'string',
-        'hazmatPackingGroup' => 'HazmatPackingGroup',
-        'hazmatItemUnits' => 'string',
-        'hazmatItemUnitsQty' => 'float',
-        'costEstimate' => 'float',
-        'transferPrice' => 'float',
-        'overallQuantityPricingType' => 'ItemOverallQuantityPricingType',
-        'pricingGroup' => 'RecordRef',
-        'intercoCogsAccount' => 'RecordRef',
-        'vsoePrice' => 'float',
-        'vsoeSopGroup' => 'VsoeSopGroup',
-        'vsoeDeferral' => 'VsoeDeferral',
-        'vsoePermitDiscount' => 'VsoePermitDiscount',
-        'vsoeDelivered' => 'boolean',
-        'itemRevenueCategory' => 'RecordRef',
-        'unbuildVarianceAccount' => 'RecordRef',
-        'deferRevRec' => 'boolean',
-        'revenueRecognitionRule' => 'RecordRef',
-        'revRecForecastRule' => 'RecordRef',
-        'revenueAllocationGroup' => 'RecordRef',
-        'createRevenuePlansOn' => 'RecordRef',
-        'directRevenuePosting' => 'boolean',
-        'dropshipExpenseAccount' => 'RecordRef',
-        'preferredLocation' => 'RecordRef',
-        'isStorePickupAllowed' => 'boolean',
-        'totalValue' => 'float',
-        'useBins' => 'boolean',
-        'averageCost' => 'float',
-        'leadTime' => 'integer',
-        'autoLeadTime' => 'boolean',
-        'buildTime' => 'integer',
-        'lastPurchasePrice' => 'float',
-        'purchaseDescription' => 'string',
-        'safetyStockLevel' => 'float',
-        'safetyStockLevelDays' => 'integer',
-        'seasonalDemand' => 'boolean',
-        'reorderMultiple' => 'integer',
-        'cost' => 'float',
-        'reorderPoint' => 'float',
-        'demandModifier' => 'float',
-        'distributionNetwork' => 'RecordRef',
-        'distributionCategory' => 'RecordRef',
-        'preferredStockLevel' => 'float',
-        'autoReorderPoint' => 'boolean',
-        'autoPreferredStockLevel' => 'boolean',
-        'preferredStockLevelDays' => 'float',
-        'quantityCommitted' => 'float',
-        'shipIndividually' => 'boolean',
-        'quantityAvailable' => 'float',
-        'shipPackage' => 'RecordRef',
-        'quantityBackOrdered' => 'float',
-        'storeDisplayName' => 'string',
-        'defaultReturnCost' => 'float',
-        'supplyReplenishmentMethod' => 'RecordRef',
-        'alternateDemandSourceItem' => 'RecordRef',
-        'fixedLotSize' => 'float',
-        'supplyType' => 'RecordRef',
-        'demandTimeFence' => 'integer',
-        'supplyTimeFence' => 'integer',
-        'rescheduleInDays' => 'integer',
-        'rescheduleOutDays' => 'integer',
-        'supplyLotSizingMethod' => 'RecordRef',
-        'demandSource' => 'RecordRef',
-        'quantityOnOrder' => 'float',
-        'storeDisplayThumbnail' => 'RecordRef',
-        'storeDisplayImage' => 'RecordRef',
-        'storeDescription' => 'string',
-        'storeDetailedDescription' => 'string',
-        'storeItemTemplate' => 'RecordRef',
-        'pageTitle' => 'string',
-        'urlComponent' => 'string',
-        'metaTagHtml' => 'string',
-        'excludeFromSitemap' => 'boolean',
-        'sitemapPriority' => 'SitemapPriority',
-        'searchKeywords' => 'string',
-        'isDonationItem' => 'boolean',
-        'showDefaultDonationAmount' => 'boolean',
-        'maxDonationAmount' => 'float',
-        'dontShowPrice' => 'boolean',
-        'noPriceMessage' => 'string',
-        'outOfStockMessage' => 'string',
-        'shoppingDotComCategory' => 'string',
-        'outOfStockBehavior' => 'ItemOutOfStockBehavior',
-        'shopzillaCategoryId' => 'integer',
-        'nexTagCategory' => 'string',
-        'productFeedList' => 'ProductFeedList',
-        'relatedItemsDescription' => 'string',
-        'onSpecial' => 'boolean',
-        'specialsDescription' => 'string',
-        'featuredDescription' => 'string',
-        'itemOptionsList' => 'ItemOptionsList',
-        'itemNumberOptionsList' => 'RecordRefList',
-        'itemVendorList' => 'ItemVendorList',
-        'pricingMatrix' => 'PricingMatrix',
-        'memberList' => 'ItemMemberList',
-        'accountingBookDetailList' => 'ItemAccountingBookDetailList',
-        'billOfMaterialsList' => 'AssemblyItemBillOfMaterialsList',
-        'locationsList' => 'InventoryItemLocationsList',
-        'siteCategoryList' => 'SiteCategoryList',
-        'binNumberList' => 'InventoryItemBinNumberList',
-        'translationsList' => 'TranslationList',
-        'presentationItemList' => 'PresentationItemList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"itemId" => "string",
+		"upcCode" => "string",
+		"displayName" => "string",
+		"vendorName" => "string",
+		"parent" => "RecordRef",
+		"printItems" => "boolean",
+		"vendor" => "RecordRef",
+		"isOnline" => "boolean",
+		"isGcoCompliant" => "boolean",
+		"offerSupport" => "boolean",
+		"isInactive" => "boolean",
+		"availableToPartners" => "boolean",
+		"subsidiaryList" => "RecordRefList",
+		"department" => "RecordRef",
+		"includeChildren" => "boolean",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"description" => "string",
+		"cogsAccount" => "RecordRef",
+		"incomeAccount" => "RecordRef",
+		"intercoIncomeAccount" => "RecordRef",
+		"assetAccount" => "RecordRef",
+		"matchBillToReceipt" => "boolean",
+		"billQtyVarianceAcct" => "RecordRef",
+		"billPriceVarianceAcct" => "RecordRef",
+		"billExchRateVarianceAcct" => "RecordRef",
+		"gainLossAccount" => "RecordRef",
+		"salesTaxCode" => "RecordRef",
+		"useComponentYield" => "boolean",
+		"wipVarianceAcct" => "RecordRef",
+		"purchaseTaxCode" => "RecordRef",
+		"scrapAcct" => "RecordRef",
+		"taxSchedule" => "RecordRef",
+		"wipAcct" => "RecordRef",
+		"shippingCost" => "float",
+		"handlingCost" => "float",
+		"weight" => "float",
+		"weightUnit" => "ItemWeightUnit",
+		"isTaxable" => "boolean",
+		"costingMethod" => "ItemCostingMethod",
+		"rate" => "float",
+		"costingMethodDisplay" => "string",
+		"unitsType" => "RecordRef",
+		"stockUnit" => "RecordRef",
+		"purchaseUnit" => "RecordRef",
+		"saleUnit" => "RecordRef",
+		"trackLandedCost" => "boolean",
+		"matrixItemNameTemplate" => "string",
+		"billingSchedule" => "RecordRef",
+		"deferredRevenueAccount" => "RecordRef",
+		"revRecSchedule" => "RecordRef",
+		"stockDescription" => "string",
+		"producer" => "boolean",
+		"manufacturer" => "string",
+		"mpn" => "string",
+		"multManufactureAddr" => "boolean",
+		"manufactureraddr1" => "string",
+		"manufacturerCity" => "string",
+		"manufacturerState" => "string",
+		"manufacturerZip" => "string",
+		"countryOfManufacture" => "Country",
+		"effectiveBomControl" => "AssemblyItemEffectiveBomControl",
+		"defaultRevision" => "string",
+		"roundUpAsComponent" => "boolean",
+		"purchaseOrderQuantity" => "float",
+		"purchaseOrderAmount" => "float",
+		"purchaseOrderQuantityDiff" => "float",
+		"receiptQuantity" => "float",
+		"receiptAmount" => "float",
+		"receiptQuantityDiff" => "float",
+		"isDropShipItem" => "boolean",
+		"isPhantom" => "boolean",
+		"defaultItemShipMethod" => "RecordRef",
+		"itemCarrier" => "ShippingCarrier",
+		"itemShipMethodList" => "RecordRefList",
+		"manufacturerTaxId" => "string",
+		"scheduleBNumber" => "string",
+		"scheduleBQuantity" => "integer",
+		"scheduleBCode" => "RecordRef",
+		"manufacturerTariff" => "string",
+		"preferenceCriterion" => "ItemPreferenceCriterion",
+		"issueProduct" => "RecordRef",
+		"minimumQuantity" => "integer",
+		"lastInvtCountDate" => "dateTime",
+		"nextInvtCountDate" => "dateTime",
+		"invtCountInterval" => "integer",
+		"invtClassification" => "ItemInvtClassification",
+		"enforceMinQtyInternally" => "boolean",
+		"maximumQuantity" => "integer",
+		"softDescriptor" => "RecordRef",
+		"isSpecialWorkOrderItem" => "boolean",
+		"costCategory" => "RecordRef",
+		"pricesIncludeTax" => "boolean",
+		"prodQtyVarianceAcct" => "RecordRef",
+		"prodPriceVarianceAcct" => "RecordRef",
+		"purchasePriceVarianceAcct" => "RecordRef",
+		"quantityPricingSchedule" => "RecordRef",
+		"buildEntireAssembly" => "boolean",
+		"quantityOnHand" => "float",
+		"useMarginalRates" => "boolean",
+		"costEstimateType" => "ItemCostEstimateType",
+		"isHazmatItem" => "boolean",
+		"hazmatId" => "string",
+		"hazmatShippingName" => "string",
+		"hazmatHazardClass" => "string",
+		"hazmatPackingGroup" => "HazmatPackingGroup",
+		"hazmatItemUnits" => "string",
+		"hazmatItemUnitsQty" => "float",
+		"costEstimate" => "float",
+		"transferPrice" => "float",
+		"overallQuantityPricingType" => "ItemOverallQuantityPricingType",
+		"pricingGroup" => "RecordRef",
+		"intercoCogsAccount" => "RecordRef",
+		"vsoePrice" => "float",
+		"vsoeSopGroup" => "VsoeSopGroup",
+		"vsoeDeferral" => "VsoeDeferral",
+		"vsoePermitDiscount" => "VsoePermitDiscount",
+		"vsoeDelivered" => "boolean",
+		"itemRevenueCategory" => "RecordRef",
+		"unbuildVarianceAccount" => "RecordRef",
+		"deferRevRec" => "boolean",
+		"revenueRecognitionRule" => "RecordRef",
+		"revRecForecastRule" => "RecordRef",
+		"revenueAllocationGroup" => "RecordRef",
+		"createRevenuePlansOn" => "RecordRef",
+		"directRevenuePosting" => "boolean",
+		"dropshipExpenseAccount" => "RecordRef",
+		"preferredLocation" => "RecordRef",
+		"isStorePickupAllowed" => "boolean",
+		"totalValue" => "float",
+		"useBins" => "boolean",
+		"averageCost" => "float",
+		"leadTime" => "integer",
+		"autoLeadTime" => "boolean",
+		"buildTime" => "integer",
+		"lastPurchasePrice" => "float",
+		"purchaseDescription" => "string",
+		"safetyStockLevel" => "float",
+		"safetyStockLevelDays" => "integer",
+		"seasonalDemand" => "boolean",
+		"reorderMultiple" => "integer",
+		"cost" => "float",
+		"reorderPoint" => "float",
+		"demandModifier" => "float",
+		"distributionNetwork" => "RecordRef",
+		"distributionCategory" => "RecordRef",
+		"preferredStockLevel" => "float",
+		"autoReorderPoint" => "boolean",
+		"autoPreferredStockLevel" => "boolean",
+		"preferredStockLevelDays" => "float",
+		"quantityCommitted" => "float",
+		"shipIndividually" => "boolean",
+		"quantityAvailable" => "float",
+		"shipPackage" => "RecordRef",
+		"quantityBackOrdered" => "float",
+		"storeDisplayName" => "string",
+		"defaultReturnCost" => "float",
+		"supplyReplenishmentMethod" => "RecordRef",
+		"alternateDemandSourceItem" => "RecordRef",
+		"fixedLotSize" => "float",
+		"supplyType" => "RecordRef",
+		"demandTimeFence" => "integer",
+		"supplyTimeFence" => "integer",
+		"rescheduleInDays" => "integer",
+		"rescheduleOutDays" => "integer",
+		"supplyLotSizingMethod" => "RecordRef",
+		"demandSource" => "RecordRef",
+		"quantityOnOrder" => "float",
+		"storeDisplayThumbnail" => "RecordRef",
+		"storeDisplayImage" => "RecordRef",
+		"storeDescription" => "string",
+		"storeDetailedDescription" => "string",
+		"storeItemTemplate" => "RecordRef",
+		"pageTitle" => "string",
+		"urlComponent" => "string",
+		"metaTagHtml" => "string",
+		"excludeFromSitemap" => "boolean",
+		"sitemapPriority" => "SitemapPriority",
+		"searchKeywords" => "string",
+		"isDonationItem" => "boolean",
+		"showDefaultDonationAmount" => "boolean",
+		"maxDonationAmount" => "float",
+		"dontShowPrice" => "boolean",
+		"noPriceMessage" => "string",
+		"outOfStockMessage" => "string",
+		"shoppingDotComCategory" => "string",
+		"outOfStockBehavior" => "ItemOutOfStockBehavior",
+		"shopzillaCategoryId" => "integer",
+		"nexTagCategory" => "string",
+		"productFeedList" => "ProductFeedList",
+		"relatedItemsDescription" => "string",
+		"onSpecial" => "boolean",
+		"specialsDescription" => "string",
+		"featuredDescription" => "string",
+		"itemOptionsList" => "ItemOptionsList",
+		"itemNumberOptionsList" => "RecordRefList",
+		"itemVendorList" => "ItemVendorList",
+		"pricingMatrix" => "PricingMatrix",
+		"memberList" => "ItemMemberList",
+		"accountingBookDetailList" => "ItemAccountingBookDetailList",
+		"billOfMaterialsList" => "AssemblyItemBillOfMaterialsList",
+		"locationsList" => "InventoryItemLocationsList",
+		"siteCategoryList" => "SiteCategoryList",
+		"binNumberList" => "InventoryItemBinNumberList",
+		"translationsList" => "TranslationList",
+		"presentationItemList" => "PresentationItemList",
+		"hierarchyVersionsList" => "AssemblyItemHierarchyVersionsList",
+		"futureHorizon" => "integer",
+		"consumptionUnit" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GeneralRateType.
+ * GeneralRateType
  */
-class GeneralRateType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _average = '_average';
-    /**
-     * @var string
-     */
-    const _current = '_current';
-    /**
-     * @var string
-     */
-    const _historical = '_historical';
+class GeneralRateType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _average = "_average";
+	/**
+	 * @var string
+	 */
+	const _current = "_current";
+	/**
+	 * @var string
+	 */
+	const _historical = "_historical";
 }

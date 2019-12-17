@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Address.
+ * Address
  */
-class Address extends Record
-{
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var Country
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $attention;
-    /**
-     * @var string
-     */
-    public $addressee;
-    /**
-     * @var string
-     */
-    public $addrPhone;
-    /**
-     * @var string
-     */
-    public $addr1;
-    /**
-     * @var string
-     */
-    public $addr2;
-    /**
-     * @var string
-     */
-    public $addr3;
-    /**
-     * @var string
-     */
-    public $city;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $zip;
-    /**
-     * @var string
-     */
-    public $addrText;
-    /**
-     * @var bool
-     */
-    public $override;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class Address extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var Country
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $attention;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addressee;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addrPhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addr1;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addr2;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addr3;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $zip;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $addrText;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $override;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'internalId' => 'string',
-        'country' => 'Country',
-        'attention' => 'string',
-        'addressee' => 'string',
-        'addrPhone' => 'string',
-        'addr1' => 'string',
-        'addr2' => 'string',
-        'addr3' => 'string',
-        'city' => 'string',
-        'state' => 'string',
-        'zip' => 'string',
-        'addrText' => 'string',
-        'override' => 'boolean',
-        'customFieldList' => 'CustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"internalId" => "string",
+		"country" => "Country",
+		"attention" => "string",
+		"addressee" => "string",
+		"addrPhone" => "string",
+		"addr1" => "string",
+		"addr2" => "string",
+		"addr3" => "string",
+		"city" => "string",
+		"state" => "string",
+		"zip" => "string",
+		"addrText" => "string",
+		"override" => "boolean",
+		"customFieldList" => "CustomFieldList",
+	);
 }

@@ -11,731 +11,874 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeSearchRowBasic.
+ * EmployeeSearchRowBasic
  */
-class EmployeeSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $accountNumber;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address1;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address2;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address3;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $addressee;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $addressInternalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $addressLabel;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $addressPhone;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $alienNumber;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $allocation;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $altEmail;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $altName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $altPhone;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $approvalLimit;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $approver;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $attention;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $authWorkDate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $baseWage;
-    /**
-     * @var SearchEnumMultiSelectField[]
-     */
-    public $baseWageType;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAddress;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAddress1;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAddress2;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAddress3;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAddressee;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billAttention;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billCity;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $billCountry;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billCountryCode;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $billingClass;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billPhone;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billState;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $billZipCode;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $birthDate;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $birthDay;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $city;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $class;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $comments;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $compensationCurrency;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $concurrentWebServicesUser;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $country;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $countryCode;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $dateCreated;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $defaultAcctCorpCardExp;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $defaultExpenseReportCurrency;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $defaultTaxReg;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $department;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $eligibleForCommission;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $email;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $employeeStatus;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $employeeType;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $entityId;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $entityNumber;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $ethnicity;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $expenseLimit;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $expenseReportCurrency;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $fax;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $firstName;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $gender;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $giveAccess;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $hireDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $homePhone;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $i9Verified;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $image;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isDefaultBilling;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isDefaultShipping;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isJobResource;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isSalesRep;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isSupportRep;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isTemplate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $job;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $laborCost;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $language;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $lastName;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastPaidDate;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastReviewDate;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $level;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $maritalStatus;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $middleName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $mobilePhone;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $nextReviewDate;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $offlineAccess;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $payFrequency;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $permChangeDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $permChangeLevel;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $permission;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $permissionChange;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $phone;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $phoneticName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $positionTitle;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $primaryEarningAmount;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $primaryEarningItem;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $primaryEarningType;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $purchaseOrderApprovalLimit;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $purchaseOrderApprover;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $purchaseOrderLimit;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $releaseDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $residentStatus;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $role;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $roleChange;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $roleChangeAction;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $roleChangeDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $salesRole;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $salutation;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipAddress1;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipAddress2;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipAddress3;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipAddressee;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipAttention;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipCity;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $shipCountry;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipCountryCode;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipPhone;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipState;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $shipZip;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $socialSecurityNumber;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startDateTimeOffCalc;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $state;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subscription;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $subscriptionDate;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $subscriptionStatus;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $supervisor;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $terminationCategory;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $terminationDetails;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $terminationReason;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $terminationRegretted;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $timeApprover;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $timeOffPlan;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $title;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $usePerquest;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $useTimeData;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $visaExpDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $visaType;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $workCalendar;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $workplace;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $zipCode;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class EmployeeSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $accountNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address1;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address2;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address3;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $addressee;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $addressInternalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $addressLabel;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $addressPhone;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $alienNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $allocation;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $altEmail;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $altPhone;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $approvalLimit;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $approver;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $attention;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $authWorkDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $baseWage;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField[]
+	 */
+	public $baseWageType;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAddress;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAddress1;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAddress2;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAddress3;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAddressee;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billAttention;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billCity;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $billCountry;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billCountryCode;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $billingClass;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billPhone;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billState;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $billZipCode;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $birthDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $birthDay;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $compensationCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $concurrentWebServicesUser;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $countryCode;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $defaultAcctCorpCardExp;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $defaultExpenseReportCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $defaultTaxReg;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $eligibleForCommission;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $employeeStatus;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $employeeType;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $entityNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $ethnicity;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $expenseLimit;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $expenseReportCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $firstName;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $gender;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $hireDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $homePhone;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $i9Verified;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isDefaultBilling;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isDefaultShipping;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isJobResource;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isSalesRep;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isSupportRep;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isTemplate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $laborCost;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $language;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $lastName;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastPaidDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastReviewDate;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $level;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $maritalStatus;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $middleName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $mobilePhone;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $nextReviewDate;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $offlineAccess;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $payFrequency;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $permChangeDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $permChangeLevel;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $permission;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $permissionChange;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $positionTitle;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $primaryEarningAmount;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $primaryEarningItem;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $primaryEarningType;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $purchaseOrderApprovalLimit;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $purchaseOrderApprover;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $purchaseOrderLimit;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $releaseDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $residentStatus;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $role;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $roleChange;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $roleChangeAction;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $roleChangeDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $salesRole;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $salutation;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipAddress1;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipAddress2;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipAddress3;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipAddressee;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipAttention;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipCity;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $shipCountry;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipCountryCode;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipPhone;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipState;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $shipZip;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $socialSecurityNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startDateTimeOffCalc;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $subscriptionDate;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $subscriptionStatus;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $supervisor;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $terminationCategory;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $terminationDetails;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $terminationReason;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $terminationRegretted;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $timeApprover;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $timeOffPlan;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $usePerquest;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $useTimeData;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $visaExpDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $visaType;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $workCalendar;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $workplace;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $zipCode;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'accountNumber' => 'SearchColumnStringField[]',
-        'address' => 'SearchColumnStringField[]',
-        'address1' => 'SearchColumnStringField[]',
-        'address2' => 'SearchColumnStringField[]',
-        'address3' => 'SearchColumnStringField[]',
-        'addressee' => 'SearchColumnStringField[]',
-        'addressInternalId' => 'SearchColumnStringField[]',
-        'addressLabel' => 'SearchColumnStringField[]',
-        'addressPhone' => 'SearchColumnStringField[]',
-        'alienNumber' => 'SearchColumnStringField[]',
-        'allocation' => 'SearchColumnDoubleField[]',
-        'altEmail' => 'SearchColumnStringField[]',
-        'altName' => 'SearchColumnStringField[]',
-        'altPhone' => 'SearchColumnStringField[]',
-        'approvalLimit' => 'SearchColumnDoubleField[]',
-        'approver' => 'SearchColumnSelectField[]',
-        'attention' => 'SearchColumnStringField[]',
-        'authWorkDate' => 'SearchColumnDateField[]',
-        'baseWage' => 'SearchColumnDoubleField[]',
-        'baseWageType' => 'SearchEnumMultiSelectField[]',
-        'billAddress' => 'SearchColumnStringField[]',
-        'billAddress1' => 'SearchColumnStringField[]',
-        'billAddress2' => 'SearchColumnStringField[]',
-        'billAddress3' => 'SearchColumnStringField[]',
-        'billAddressee' => 'SearchColumnStringField[]',
-        'billAttention' => 'SearchColumnStringField[]',
-        'billCity' => 'SearchColumnStringField[]',
-        'billCountry' => 'SearchColumnEnumSelectField[]',
-        'billCountryCode' => 'SearchColumnStringField[]',
-        'billingClass' => 'SearchColumnSelectField[]',
-        'billPhone' => 'SearchColumnStringField[]',
-        'billState' => 'SearchColumnStringField[]',
-        'billZipCode' => 'SearchColumnStringField[]',
-        'birthDate' => 'SearchColumnDateField[]',
-        'birthDay' => 'SearchColumnDateField[]',
-        'city' => 'SearchColumnStringField[]',
-        'class' => 'SearchColumnSelectField[]',
-        'comments' => 'SearchColumnStringField[]',
-        'compensationCurrency' => 'SearchColumnEnumSelectField[]',
-        'concurrentWebServicesUser' => 'SearchColumnBooleanField[]',
-        'country' => 'SearchColumnEnumSelectField[]',
-        'countryCode' => 'SearchColumnStringField[]',
-        'dateCreated' => 'SearchColumnDateField[]',
-        'defaultAcctCorpCardExp' => 'SearchColumnSelectField[]',
-        'defaultExpenseReportCurrency' => 'SearchColumnSelectField[]',
-        'defaultTaxReg' => 'SearchColumnStringField[]',
-        'department' => 'SearchColumnSelectField[]',
-        'eligibleForCommission' => 'SearchColumnBooleanField[]',
-        'email' => 'SearchColumnStringField[]',
-        'employeeStatus' => 'SearchColumnSelectField[]',
-        'employeeType' => 'SearchColumnSelectField[]',
-        'entityId' => 'SearchColumnStringField[]',
-        'entityNumber' => 'SearchColumnLongField[]',
-        'ethnicity' => 'SearchColumnSelectField[]',
-        'expenseLimit' => 'SearchColumnDoubleField[]',
-        'expenseReportCurrency' => 'SearchColumnSelectField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'fax' => 'SearchColumnStringField[]',
-        'firstName' => 'SearchColumnStringField[]',
-        'gender' => 'SearchColumnEnumSelectField[]',
-        'giveAccess' => 'SearchColumnBooleanField[]',
-        'globalSubscriptionStatus' => 'SearchColumnEnumSelectField[]',
-        'hireDate' => 'SearchColumnDateField[]',
-        'homePhone' => 'SearchColumnStringField[]',
-        'i9Verified' => 'SearchColumnBooleanField[]',
-        'image' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isDefaultBilling' => 'SearchColumnBooleanField[]',
-        'isDefaultShipping' => 'SearchColumnBooleanField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'isJobResource' => 'SearchColumnBooleanField[]',
-        'isSalesRep' => 'SearchColumnBooleanField[]',
-        'isSupportRep' => 'SearchColumnBooleanField[]',
-        'isTemplate' => 'SearchColumnBooleanField[]',
-        'job' => 'SearchColumnSelectField[]',
-        'laborCost' => 'SearchColumnDoubleField[]',
-        'language' => 'SearchColumnEnumSelectField[]',
-        'lastModifiedDate' => 'SearchColumnDateField[]',
-        'lastName' => 'SearchColumnStringField[]',
-        'lastPaidDate' => 'SearchColumnDateField[]',
-        'lastReviewDate' => 'SearchColumnDateField[]',
-        'level' => 'SearchColumnEnumSelectField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'maritalStatus' => 'SearchColumnSelectField[]',
-        'middleName' => 'SearchColumnStringField[]',
-        'mobilePhone' => 'SearchColumnStringField[]',
-        'nextReviewDate' => 'SearchColumnDateField[]',
-        'offlineAccess' => 'SearchColumnBooleanField[]',
-        'payFrequency' => 'SearchColumnEnumSelectField[]',
-        'permChangeDate' => 'SearchColumnDateField[]',
-        'permChangeLevel' => 'SearchColumnStringField[]',
-        'permission' => 'SearchColumnEnumSelectField[]',
-        'permissionChange' => 'SearchColumnEnumSelectField[]',
-        'phone' => 'SearchColumnStringField[]',
-        'phoneticName' => 'SearchColumnStringField[]',
-        'positionTitle' => 'SearchColumnStringField[]',
-        'primaryEarningAmount' => 'SearchColumnDoubleField[]',
-        'primaryEarningItem' => 'SearchColumnStringField[]',
-        'primaryEarningType' => 'SearchColumnStringField[]',
-        'purchaseOrderApprovalLimit' => 'SearchColumnDoubleField[]',
-        'purchaseOrderApprover' => 'SearchColumnSelectField[]',
-        'purchaseOrderLimit' => 'SearchColumnDoubleField[]',
-        'releaseDate' => 'SearchColumnDateField[]',
-        'residentStatus' => 'SearchColumnSelectField[]',
-        'role' => 'SearchColumnSelectField[]',
-        'roleChange' => 'SearchColumnStringField[]',
-        'roleChangeAction' => 'SearchColumnStringField[]',
-        'roleChangeDate' => 'SearchColumnDateField[]',
-        'salesRole' => 'SearchColumnSelectField[]',
-        'salutation' => 'SearchColumnStringField[]',
-        'shipAddress1' => 'SearchColumnStringField[]',
-        'shipAddress2' => 'SearchColumnStringField[]',
-        'shipAddress3' => 'SearchColumnStringField[]',
-        'shipAddressee' => 'SearchColumnStringField[]',
-        'shipAttention' => 'SearchColumnStringField[]',
-        'shipCity' => 'SearchColumnStringField[]',
-        'shipCountry' => 'SearchColumnEnumSelectField[]',
-        'shipCountryCode' => 'SearchColumnStringField[]',
-        'shipPhone' => 'SearchColumnStringField[]',
-        'shipState' => 'SearchColumnStringField[]',
-        'shipZip' => 'SearchColumnStringField[]',
-        'socialSecurityNumber' => 'SearchColumnStringField[]',
-        'startDateTimeOffCalc' => 'SearchColumnDateField[]',
-        'state' => 'SearchColumnEnumSelectField[]',
-        'subscription' => 'SearchColumnSelectField[]',
-        'subscriptionDate' => 'SearchColumnDateField[]',
-        'subscriptionStatus' => 'SearchColumnBooleanField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'supervisor' => 'SearchColumnSelectField[]',
-        'terminationCategory' => 'SearchColumnEnumSelectField[]',
-        'terminationDetails' => 'SearchColumnStringField[]',
-        'terminationReason' => 'SearchColumnSelectField[]',
-        'terminationRegretted' => 'SearchColumnEnumSelectField[]',
-        'timeApprover' => 'SearchColumnSelectField[]',
-        'timeOffPlan' => 'SearchColumnStringField[]',
-        'title' => 'SearchColumnStringField[]',
-        'usePerquest' => 'SearchColumnBooleanField[]',
-        'useTimeData' => 'SearchColumnBooleanField[]',
-        'visaExpDate' => 'SearchColumnDateField[]',
-        'visaType' => 'SearchColumnSelectField[]',
-        'workCalendar' => 'SearchColumnStringField[]',
-        'workplace' => 'SearchColumnSelectField[]',
-        'zipCode' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"accountNumber" => "SearchColumnStringField[]",
+		"address" => "SearchColumnStringField[]",
+		"address1" => "SearchColumnStringField[]",
+		"address2" => "SearchColumnStringField[]",
+		"address3" => "SearchColumnStringField[]",
+		"addressee" => "SearchColumnStringField[]",
+		"addressInternalId" => "SearchColumnStringField[]",
+		"addressLabel" => "SearchColumnStringField[]",
+		"addressPhone" => "SearchColumnStringField[]",
+		"alienNumber" => "SearchColumnStringField[]",
+		"allocation" => "SearchColumnDoubleField[]",
+		"altEmail" => "SearchColumnStringField[]",
+		"altName" => "SearchColumnStringField[]",
+		"altPhone" => "SearchColumnStringField[]",
+		"approvalLimit" => "SearchColumnDoubleField[]",
+		"approver" => "SearchColumnSelectField[]",
+		"attention" => "SearchColumnStringField[]",
+		"authWorkDate" => "SearchColumnDateField[]",
+		"baseWage" => "SearchColumnDoubleField[]",
+		"baseWageType" => "SearchEnumMultiSelectField[]",
+		"billAddress" => "SearchColumnStringField[]",
+		"billAddress1" => "SearchColumnStringField[]",
+		"billAddress2" => "SearchColumnStringField[]",
+		"billAddress3" => "SearchColumnStringField[]",
+		"billAddressee" => "SearchColumnStringField[]",
+		"billAttention" => "SearchColumnStringField[]",
+		"billCity" => "SearchColumnStringField[]",
+		"billCountry" => "SearchColumnEnumSelectField[]",
+		"billCountryCode" => "SearchColumnStringField[]",
+		"billingClass" => "SearchColumnSelectField[]",
+		"billPhone" => "SearchColumnStringField[]",
+		"billState" => "SearchColumnStringField[]",
+		"billZipCode" => "SearchColumnStringField[]",
+		"birthDate" => "SearchColumnDateField[]",
+		"birthDay" => "SearchColumnDateField[]",
+		"city" => "SearchColumnStringField[]",
+		"class" => "SearchColumnSelectField[]",
+		"comments" => "SearchColumnStringField[]",
+		"compensationCurrency" => "SearchColumnEnumSelectField[]",
+		"concurrentWebServicesUser" => "SearchColumnBooleanField[]",
+		"country" => "SearchColumnEnumSelectField[]",
+		"countryCode" => "SearchColumnStringField[]",
+		"dateCreated" => "SearchColumnDateField[]",
+		"defaultAcctCorpCardExp" => "SearchColumnSelectField[]",
+		"defaultExpenseReportCurrency" => "SearchColumnSelectField[]",
+		"defaultTaxReg" => "SearchColumnStringField[]",
+		"department" => "SearchColumnSelectField[]",
+		"eligibleForCommission" => "SearchColumnBooleanField[]",
+		"email" => "SearchColumnStringField[]",
+		"employeeStatus" => "SearchColumnSelectField[]",
+		"employeeType" => "SearchColumnSelectField[]",
+		"entityId" => "SearchColumnStringField[]",
+		"entityNumber" => "SearchColumnLongField[]",
+		"ethnicity" => "SearchColumnSelectField[]",
+		"expenseLimit" => "SearchColumnDoubleField[]",
+		"expenseReportCurrency" => "SearchColumnSelectField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"fax" => "SearchColumnStringField[]",
+		"firstName" => "SearchColumnStringField[]",
+		"gender" => "SearchColumnEnumSelectField[]",
+		"giveAccess" => "SearchColumnBooleanField[]",
+		"globalSubscriptionStatus" => "SearchColumnEnumSelectField[]",
+		"hireDate" => "SearchColumnDateField[]",
+		"homePhone" => "SearchColumnStringField[]",
+		"i9Verified" => "SearchColumnBooleanField[]",
+		"image" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isDefaultBilling" => "SearchColumnBooleanField[]",
+		"isDefaultShipping" => "SearchColumnBooleanField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"isJobResource" => "SearchColumnBooleanField[]",
+		"isSalesRep" => "SearchColumnBooleanField[]",
+		"isSupportRep" => "SearchColumnBooleanField[]",
+		"isTemplate" => "SearchColumnBooleanField[]",
+		"job" => "SearchColumnSelectField[]",
+		"laborCost" => "SearchColumnDoubleField[]",
+		"language" => "SearchColumnEnumSelectField[]",
+		"lastModifiedDate" => "SearchColumnDateField[]",
+		"lastName" => "SearchColumnStringField[]",
+		"lastPaidDate" => "SearchColumnDateField[]",
+		"lastReviewDate" => "SearchColumnDateField[]",
+		"level" => "SearchColumnEnumSelectField[]",
+		"location" => "SearchColumnSelectField[]",
+		"maritalStatus" => "SearchColumnSelectField[]",
+		"middleName" => "SearchColumnStringField[]",
+		"mobilePhone" => "SearchColumnStringField[]",
+		"nextReviewDate" => "SearchColumnDateField[]",
+		"offlineAccess" => "SearchColumnBooleanField[]",
+		"payFrequency" => "SearchColumnEnumSelectField[]",
+		"permChangeDate" => "SearchColumnDateField[]",
+		"permChangeLevel" => "SearchColumnStringField[]",
+		"permission" => "SearchColumnEnumSelectField[]",
+		"permissionChange" => "SearchColumnEnumSelectField[]",
+		"phone" => "SearchColumnStringField[]",
+		"phoneticName" => "SearchColumnStringField[]",
+		"positionTitle" => "SearchColumnStringField[]",
+		"primaryEarningAmount" => "SearchColumnDoubleField[]",
+		"primaryEarningItem" => "SearchColumnStringField[]",
+		"primaryEarningType" => "SearchColumnStringField[]",
+		"purchaseOrderApprovalLimit" => "SearchColumnDoubleField[]",
+		"purchaseOrderApprover" => "SearchColumnSelectField[]",
+		"purchaseOrderLimit" => "SearchColumnDoubleField[]",
+		"releaseDate" => "SearchColumnDateField[]",
+		"residentStatus" => "SearchColumnSelectField[]",
+		"role" => "SearchColumnSelectField[]",
+		"roleChange" => "SearchColumnStringField[]",
+		"roleChangeAction" => "SearchColumnStringField[]",
+		"roleChangeDate" => "SearchColumnDateField[]",
+		"salesRole" => "SearchColumnSelectField[]",
+		"salutation" => "SearchColumnStringField[]",
+		"shipAddress1" => "SearchColumnStringField[]",
+		"shipAddress2" => "SearchColumnStringField[]",
+		"shipAddress3" => "SearchColumnStringField[]",
+		"shipAddressee" => "SearchColumnStringField[]",
+		"shipAttention" => "SearchColumnStringField[]",
+		"shipCity" => "SearchColumnStringField[]",
+		"shipCountry" => "SearchColumnEnumSelectField[]",
+		"shipCountryCode" => "SearchColumnStringField[]",
+		"shipPhone" => "SearchColumnStringField[]",
+		"shipState" => "SearchColumnStringField[]",
+		"shipZip" => "SearchColumnStringField[]",
+		"socialSecurityNumber" => "SearchColumnStringField[]",
+		"startDateTimeOffCalc" => "SearchColumnDateField[]",
+		"state" => "SearchColumnEnumSelectField[]",
+		"subscription" => "SearchColumnSelectField[]",
+		"subscriptionDate" => "SearchColumnDateField[]",
+		"subscriptionStatus" => "SearchColumnBooleanField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"supervisor" => "SearchColumnSelectField[]",
+		"terminationCategory" => "SearchColumnEnumSelectField[]",
+		"terminationDetails" => "SearchColumnStringField[]",
+		"terminationReason" => "SearchColumnSelectField[]",
+		"terminationRegretted" => "SearchColumnEnumSelectField[]",
+		"timeApprover" => "SearchColumnSelectField[]",
+		"timeOffPlan" => "SearchColumnStringField[]",
+		"title" => "SearchColumnStringField[]",
+		"usePerquest" => "SearchColumnBooleanField[]",
+		"useTimeData" => "SearchColumnBooleanField[]",
+		"visaExpDate" => "SearchColumnDateField[]",
+		"visaType" => "SearchColumnSelectField[]",
+		"workCalendar" => "SearchColumnStringField[]",
+		"workplace" => "SearchColumnSelectField[]",
+		"zipCode" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

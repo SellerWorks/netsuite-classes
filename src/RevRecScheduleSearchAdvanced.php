@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleSearchAdvanced.
+ * RevRecScheduleSearchAdvanced
  */
-class RevRecScheduleSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var RevRecScheduleSearch
-     */
-    public $criteria;
-    /**
-     * @var RevRecScheduleSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class RevRecScheduleSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var RevRecScheduleSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var RevRecScheduleSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'RevRecScheduleSearch',
-        'columns' => 'RevRecScheduleSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "RevRecScheduleSearch",
+		"columns" => "RevRecScheduleSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GiftCertRedemptionList.
+ * GiftCertRedemptionList
  */
-class GiftCertRedemptionList
-{
-    /**
-     * @var GiftCertRedemption[]
-     */
-    public $giftCertRedemption;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class GiftCertRedemptionList {
+	/**
+	 * @access public
+	 * @var GiftCertRedemption[]
+	 */
+	public $giftCertRedemption;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'giftCertRedemption' => 'GiftCertRedemption[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"giftCertRedemption" => "GiftCertRedemption[]",
+		"replaceAll" => "boolean",
+	);
 }

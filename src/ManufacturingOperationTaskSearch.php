@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskSearch.
+ * ManufacturingOperationTaskSearch
  */
-class ManufacturingOperationTaskSearch extends SearchRecord
-{
-    /**
-     * @var ManufacturingOperationTaskSearchBasic
-     */
-    public $basic;
-    /**
-     * @var ManufacturingOperationTaskSearchBasic
-     */
-    public $predecessorJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $workOrderJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class ManufacturingOperationTaskSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ManufacturingOperationTaskSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var ManufacturingOperationTaskSearchBasic
+	 */
+	public $predecessorJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $workOrderJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'ManufacturingOperationTaskSearchBasic',
-        'predecessorJoin' => 'ManufacturingOperationTaskSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'workOrderJoin' => 'TransactionSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "ManufacturingOperationTaskSearchBasic",
+		"predecessorJoin" => "ManufacturingOperationTaskSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"workOrderJoin" => "TransactionSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

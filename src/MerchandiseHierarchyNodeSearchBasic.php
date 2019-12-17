@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNodeSearchBasic.
+ * MerchandiseHierarchyNodeSearchBasic
  */
-class MerchandiseHierarchyNodeSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $hierarchyLevel;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $hierarchyVersion;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $parentNode;
+class MerchandiseHierarchyNodeSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $hierarchyLevel;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $hierarchyVersion;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $parentNode;
 
-    public static $paramtypesmap = array(
-        'description' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'hierarchyLevel' => 'SearchMultiSelectField',
-        'hierarchyVersion' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'name' => 'SearchStringField',
-        'parentNode' => 'SearchMultiSelectField',
-    );
+	static $paramtypesmap = array(
+		"description" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"hierarchyLevel" => "SearchMultiSelectField",
+		"hierarchyVersion" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"name" => "SearchStringField",
+		"parentNode" => "SearchMultiSelectField",
+	);
 }

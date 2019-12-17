@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepartmentSearchBasic.
+ * DepartmentSearchBasic
  */
-class DepartmentSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchStringField
-     */
-    public $nameNoHierarchy;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class DepartmentSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $nameNoHierarchy;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'name' => 'SearchStringField',
-        'nameNoHierarchy' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"name" => "SearchStringField",
+		"nameNoHierarchy" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

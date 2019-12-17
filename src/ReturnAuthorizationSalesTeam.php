@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ReturnAuthorizationSalesTeam.
+ * ReturnAuthorizationSalesTeam
  */
-class ReturnAuthorizationSalesTeam
-{
-    /**
-     * @var RecordRef
-     */
-    public $employee;
-    /**
-     * @var RecordRef
-     */
-    public $salesRole;
-    /**
-     * @var bool
-     */
-    public $isPrimary;
-    /**
-     * @var float
-     */
-    public $contribution;
+class ReturnAuthorizationSalesTeam {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRole;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPrimary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $contribution;
 
-    public static $paramtypesmap = array(
-        'employee' => 'RecordRef',
-        'salesRole' => 'RecordRef',
-        'isPrimary' => 'boolean',
-        'contribution' => 'float',
-    );
+	static $paramtypesmap = array(
+		"employee" => "RecordRef",
+		"salesRole" => "RecordRef",
+		"isPrimary" => "boolean",
+		"contribution" => "float",
+	);
 }

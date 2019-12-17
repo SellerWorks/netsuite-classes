@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Status.
+ * Status
  */
-class Status
-{
-    /**
-     * @var StatusDetail[]
-     */
-    public $statusDetail;
-    /**
-     * @var bool
-     */
-    public $isSuccess;
+class Status {
+	/**
+	 * @access public
+	 * @var StatusDetail[]
+	 */
+	public $statusDetail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isSuccess;
 
-    public static $paramtypesmap = array(
-        'statusDetail' => 'StatusDetail[]',
-        'isSuccess' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"statusDetail" => "StatusDetail[]",
+		"isSuccess" => "boolean",
+	);
 }

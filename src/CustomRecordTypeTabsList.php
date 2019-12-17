@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeTabsList.
+ * CustomRecordTypeTabsList
  */
-class CustomRecordTypeTabsList
-{
-    /**
-     * @var CustomRecordTypeTabs[]
-     */
-    public $tabs;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomRecordTypeTabsList {
+	/**
+	 * @access public
+	 * @var CustomRecordTypeTabs[]
+	 */
+	public $tabs;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'tabs' => 'CustomRecordTypeTabs[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"tabs" => "CustomRecordTypeTabs[]",
+		"replaceAll" => "boolean",
+	);
 }

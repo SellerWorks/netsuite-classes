@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostTemplateSearchRowBasic.
+ * ManufacturingCostTemplateSearchRowBasic
  */
-class ManufacturingCostTemplateSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class ManufacturingCostTemplateSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"item" => "SearchColumnSelectField[]",
+		"memo" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

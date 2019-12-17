@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityTaxRegistrationSearchRowBasic.
+ * EntityTaxRegistrationSearchRowBasic
  */
-class EntityTaxRegistrationSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $address;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $id;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $nexusCountry;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $taxRegistrationNumber;
+class EntityTaxRegistrationSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $address;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $nexusCountry;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $taxRegistrationNumber;
 
-    public static $paramtypesmap = array(
-        'address' => 'SearchColumnSelectField[]',
-        'id' => 'SearchColumnLongField[]',
-        'nexusCountry' => 'SearchColumnEnumSelectField[]',
-        'taxRegistrationNumber' => 'SearchColumnStringField[]',
-    );
+	static $paramtypesmap = array(
+		"address" => "SearchColumnSelectField[]",
+		"id" => "SearchColumnLongField[]",
+		"nexusCountry" => "SearchColumnEnumSelectField[]",
+		"taxRegistrationNumber" => "SearchColumnStringField[]",
+	);
 }

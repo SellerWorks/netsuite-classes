@@ -11,251 +11,298 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashRefundItem.
+ * CashRefundItem
  */
-class CashRefundItem
-{
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var int
-     */
-    public $orderLine;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $binNumbers;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $price;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $taxCode;
-    /**
-     * @var string
-     */
-    public $taxRate1;
-    /**
-     * @var string
-     */
-    public $taxRate2;
-    /**
-     * @var float
-     */
-    public $tax1Amt;
-    /**
-     * @var float
-     */
-    public $grossAmt;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var dateTime
-     */
-    public $revRecStartDate;
-    /**
-     * @var dateTime
-     */
-    public $revRecEndDate;
-    /**
-     * @var RecordRef
-     */
-    public $catchUpPeriod;
-    /**
-     * @var bool
-     */
-    public $deferRevRec;
-    /**
-     * @var string
-     */
-    public $giftCertFrom;
-    /**
-     * @var ItemCostEstimateType
-     */
-    public $costEstimateType;
-    /**
-     * @var float
-     */
-    public $costEstimate;
-    /**
-     * @var string
-     */
-    public $taxDetailsReference;
-    /**
-     * @var string
-     */
-    public $giftCertRecipientName;
-    /**
-     * @var string
-     */
-    public $giftCertRecipientEmail;
-    /**
-     * @var string
-     */
-    public $giftCertMessage;
-    /**
-     * @var float
-     */
-    public $taxAmount;
-    /**
-     * @var string
-     */
-    public $giftCertNumber;
-    /**
-     * @var VsoeSopGroup
-     */
-    public $vsoeSopGroup;
-    /**
-     * @var bool
-     */
-    public $vsoeIsEstimate;
-    /**
-     * @var float
-     */
-    public $vsoePrice;
-    /**
-     * @var float
-     */
-    public $vsoeAmount;
-    /**
-     * @var float
-     */
-    public $vsoeAllocation;
-    /**
-     * @var VsoeDeferral
-     */
-    public $vsoeDeferral;
-    /**
-     * @var VsoePermitDiscount
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var bool
-     */
-    public $vsoeDelivered;
-    /**
-     * @var RecordRef
-     */
-    public $chargeType;
-    /**
-     * @var RecordRefList
-     */
-    public $chargesList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class CashRefundItem {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $orderLine;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $binNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxRate1;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxRate2;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax1Amt;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $grossAmt;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecStartDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecEndDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $catchUpPeriod;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertFrom;
+	/**
+	 * @access public
+	 * @var ItemCostEstimateType
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxDetailsReference;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertRecipientName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertRecipientEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertMessage;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxAmount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertNumber;
+	/**
+	 * @access public
+	 * @var VsoeSopGroup
+	 */
+	public $vsoeSopGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeIsEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoeAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoeAllocation;
+	/**
+	 * @access public
+	 * @var VsoeDeferral
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var VsoePermitDiscount
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $chargeType;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $chargesList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'job' => 'RecordRef',
-        'item' => 'RecordRef',
-        'line' => 'integer',
-        'orderLine' => 'integer',
-        'quantity' => 'float',
-        'units' => 'RecordRef',
-        'inventoryDetail' => 'InventoryDetail',
-        'binNumbers' => 'string',
-        'serialNumbers' => 'string',
-        'description' => 'string',
-        'price' => 'RecordRef',
-        'rate' => 'string',
-        'amount' => 'float',
-        'taxCode' => 'RecordRef',
-        'taxRate1' => 'string',
-        'taxRate2' => 'string',
-        'tax1Amt' => 'float',
-        'grossAmt' => 'float',
-        'isTaxable' => 'boolean',
-        'options' => 'CustomFieldList',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'revRecSchedule' => 'RecordRef',
-        'revRecStartDate' => 'dateTime',
-        'revRecEndDate' => 'dateTime',
-        'catchUpPeriod' => 'RecordRef',
-        'deferRevRec' => 'boolean',
-        'giftCertFrom' => 'string',
-        'costEstimateType' => 'ItemCostEstimateType',
-        'costEstimate' => 'float',
-        'taxDetailsReference' => 'string',
-        'giftCertRecipientName' => 'string',
-        'giftCertRecipientEmail' => 'string',
-        'giftCertMessage' => 'string',
-        'taxAmount' => 'float',
-        'giftCertNumber' => 'string',
-        'vsoeSopGroup' => 'VsoeSopGroup',
-        'vsoeIsEstimate' => 'boolean',
-        'vsoePrice' => 'float',
-        'vsoeAmount' => 'float',
-        'vsoeAllocation' => 'float',
-        'vsoeDeferral' => 'VsoeDeferral',
-        'vsoePermitDiscount' => 'VsoePermitDiscount',
-        'vsoeDelivered' => 'boolean',
-        'chargeType' => 'RecordRef',
-        'chargesList' => 'RecordRefList',
-        'customFieldList' => 'CustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"job" => "RecordRef",
+		"item" => "RecordRef",
+		"line" => "integer",
+		"orderLine" => "integer",
+		"quantity" => "float",
+		"units" => "RecordRef",
+		"inventoryDetail" => "InventoryDetail",
+		"binNumbers" => "string",
+		"serialNumbers" => "string",
+		"description" => "string",
+		"price" => "RecordRef",
+		"rate" => "string",
+		"amount" => "float",
+		"taxCode" => "RecordRef",
+		"taxRate1" => "string",
+		"taxRate2" => "string",
+		"tax1Amt" => "float",
+		"grossAmt" => "float",
+		"isTaxable" => "boolean",
+		"options" => "CustomFieldList",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"revRecSchedule" => "RecordRef",
+		"revRecStartDate" => "dateTime",
+		"revRecEndDate" => "dateTime",
+		"catchUpPeriod" => "RecordRef",
+		"deferRevRec" => "boolean",
+		"giftCertFrom" => "string",
+		"costEstimateType" => "ItemCostEstimateType",
+		"costEstimate" => "float",
+		"taxDetailsReference" => "string",
+		"giftCertRecipientName" => "string",
+		"giftCertRecipientEmail" => "string",
+		"giftCertMessage" => "string",
+		"taxAmount" => "float",
+		"giftCertNumber" => "string",
+		"vsoeSopGroup" => "VsoeSopGroup",
+		"vsoeIsEstimate" => "boolean",
+		"vsoePrice" => "float",
+		"vsoeAmount" => "float",
+		"vsoeAllocation" => "float",
+		"vsoeDeferral" => "VsoeDeferral",
+		"vsoePermitDiscount" => "VsoePermitDiscount",
+		"vsoeDelivered" => "boolean",
+		"chargeType" => "RecordRef",
+		"chargesList" => "RecordRefList",
+		"customFieldList" => "CustomFieldList",
+	);
 }

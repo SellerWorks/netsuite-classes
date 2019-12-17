@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentHazmatTypeFedEx.
+ * ItemFulfillmentHazmatTypeFedEx
  */
-class ItemFulfillmentHazmatTypeFedEx
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _dangerousGoods = '_dangerousGoods';
-    /**
-     * @var string
-     */
-    const _hazmat = '_hazmat';
+class ItemFulfillmentHazmatTypeFedEx {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _dangerousGoods = "_dangerousGoods";
+	/**
+	 * @var string
+	 */
+	const _hazmat = "_hazmat";
 }

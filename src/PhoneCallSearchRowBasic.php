@@ -11,116 +11,136 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallSearchRowBasic.
+ * PhoneCallSearchRowBasic
  */
-class PhoneCallSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $accessLevel;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $assigned;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $company;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $completedDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $contact;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $createdDate;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $endDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $markdone;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $message;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $owner;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $phone;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $priority;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startDate;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startTime;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $status;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $title;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $transaction;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class PhoneCallSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $accessLevel;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $assigned;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $company;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $completedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $contact;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $markdone;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $owner;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $priority;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startTime;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $transaction;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'accessLevel' => 'SearchColumnStringField[]',
-        'assigned' => 'SearchColumnSelectField[]',
-        'company' => 'SearchColumnSelectField[]',
-        'completedDate' => 'SearchColumnDateField[]',
-        'contact' => 'SearchColumnSelectField[]',
-        'createdDate' => 'SearchColumnDateField[]',
-        'endDate' => 'SearchColumnDateField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'lastModifiedDate' => 'SearchColumnDateField[]',
-        'markdone' => 'SearchColumnStringField[]',
-        'message' => 'SearchColumnStringField[]',
-        'owner' => 'SearchColumnSelectField[]',
-        'phone' => 'SearchColumnStringField[]',
-        'priority' => 'SearchColumnEnumSelectField[]',
-        'startDate' => 'SearchColumnDateField[]',
-        'startTime' => 'SearchColumnDateField[]',
-        'status' => 'SearchColumnEnumSelectField[]',
-        'title' => 'SearchColumnStringField[]',
-        'transaction' => 'SearchColumnSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"accessLevel" => "SearchColumnStringField[]",
+		"assigned" => "SearchColumnSelectField[]",
+		"company" => "SearchColumnSelectField[]",
+		"completedDate" => "SearchColumnDateField[]",
+		"contact" => "SearchColumnSelectField[]",
+		"createdDate" => "SearchColumnDateField[]",
+		"endDate" => "SearchColumnDateField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"lastModifiedDate" => "SearchColumnDateField[]",
+		"markdone" => "SearchColumnStringField[]",
+		"message" => "SearchColumnStringField[]",
+		"owner" => "SearchColumnSelectField[]",
+		"phone" => "SearchColumnStringField[]",
+		"priority" => "SearchColumnEnumSelectField[]",
+		"startDate" => "SearchColumnDateField[]",
+		"startTime" => "SearchColumnDateField[]",
+		"status" => "SearchColumnEnumSelectField[]",
+		"title" => "SearchColumnStringField[]",
+		"transaction" => "SearchColumnSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorTaxRegistrationList.
+ * VendorTaxRegistrationList
  */
-class VendorTaxRegistrationList
-{
-    /**
-     * @var VendorTaxRegistration[]
-     */
-    public $vendorTaxRegistration;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class VendorTaxRegistrationList {
+	/**
+	 * @access public
+	 * @var VendorTaxRegistration[]
+	 */
+	public $vendorTaxRegistration;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'vendorTaxRegistration' => 'VendorTaxRegistration[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"vendorTaxRegistration" => "VendorTaxRegistration[]",
+		"replaceAll" => "boolean",
+	);
 }

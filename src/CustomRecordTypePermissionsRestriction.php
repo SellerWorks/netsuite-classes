@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypePermissionsRestriction.
+ * CustomRecordTypePermissionsRestriction
  */
-class CustomRecordTypePermissionsRestriction
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _editingOnly = '_editingOnly';
-    /**
-     * @var string
-     */
-    const _viewingAndEditing = '_viewingAndEditing';
+class CustomRecordTypePermissionsRestriction {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _editingOnly = "_editingOnly";
+	/**
+	 * @var string
+	 */
+	const _viewingAndEditing = "_viewingAndEditing";
 }

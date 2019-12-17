@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentExportTypeUps.
+ * ItemFulfillmentExportTypeUps
  */
-class ItemFulfillmentExportTypeUps
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _domesticExports = '_domesticExports';
-    /**
-     * @var string
-     */
-    const _foreignExports = '_foreignExports';
-    /**
-     * @var string
-     */
-    const _foreignMilitarySales = '_foreignMilitarySales';
+class ItemFulfillmentExportTypeUps {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _domesticExports = "_domesticExports";
+	/**
+	 * @var string
+	 */
+	const _foreignExports = "_foreignExports";
+	/**
+	 * @var string
+	 */
+	const _foreignMilitarySales = "_foreignMilitarySales";
 }

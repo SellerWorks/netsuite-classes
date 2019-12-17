@@ -11,616 +11,736 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashRefund.
+ * CashRefund
  */
-class CashRefund extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiaryTaxRegNum;
-    /**
-     * @var bool
-     */
-    public $taxRegOverride;
-    /**
-     * @var bool
-     */
-    public $taxDetailsOverride;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var string
-     */
-    public $vatRegNum;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $entityTaxRegNum;
-    /**
-     * @var dateTime
-     */
-    public $taxPointDate;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $leadSource;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $salesRep;
-    /**
-     * @var RecordRef
-     */
-    public $partner;
-    /**
-     * @var string
-     */
-    public $contribPct;
-    /**
-     * @var string
-     */
-    public $otherRefNum;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var dateTime
-     */
-    public $salesEffectiveDate;
-    /**
-     * @var bool
-     */
-    public $refundCheck;
-    /**
-     * @var bool
-     */
-    public $toPrint2;
-    /**
-     * @var bool
-     */
-    public $excludeCommission;
-    /**
-     * @var float
-     */
-    public $totalCostEstimate;
-    /**
-     * @var float
-     */
-    public $estGrossProfit;
-    /**
-     * @var float
-     */
-    public $estGrossProfitPercent;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var RecordRef
-     */
-    public $promoCode;
-    /**
-     * @var RecordRef
-     */
-    public $discountItem;
-    /**
-     * @var string
-     */
-    public $discountRate;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var float
-     */
-    public $taxRate;
-    /**
-     * @var bool
-     */
-    public $toBePrinted;
-    /**
-     * @var bool
-     */
-    public $toBeEmailed;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var bool
-     */
-    public $toBeFaxed;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var RecordRef
-     */
-    public $messageSel;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var RecordRef
-     */
-    public $paymentOption;
-    /**
-     * @var string
-     */
-    public $inputAuthCode;
-    /**
-     * @var string
-     */
-    public $inputReferenceCode;
-    /**
-     * @var string
-     */
-    public $checkNumber;
-    /**
-     * @var string
-     */
-    public $paymentCardCsc;
-    /**
-     * @var RecordRef
-     */
-    public $paymentProcessingProfile;
-    /**
-     * @var CashRefundHandlingMode
-     */
-    public $handlingMode;
-    /**
-     * @var string
-     */
-    public $outputAuthCode;
-    /**
-     * @var string
-     */
-    public $outputReferenceCode;
-    /**
-     * @var CashRefundPaymentOperation
-     */
-    public $paymentOperation;
-    /**
-     * @var string
-     */
-    public $dynamicDescriptor;
-    /**
-     * @var Address
-     */
-    public $billingAddress;
-    /**
-     * @var RecordRef
-     */
-    public $billAddressList;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var RecordRef
-     */
-    public $shippingTaxCode;
-    /**
-     * @var float
-     */
-    public $shippingTax1Rate;
-    /**
-     * @var string
-     */
-    public $shippingTax2Rate;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var RecordRef
-     */
-    public $handlingTaxCode;
-    /**
-     * @var float
-     */
-    public $handlingTax1Rate;
-    /**
-     * @var string
-     */
-    public $handlingTax2Rate;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var RecordRef
-     */
-    public $salesGroup;
-    /**
-     * @var bool
-     */
-    public $syncSalesTeams;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var RevenueStatus
-     */
-    public $revenueStatus;
-    /**
-     * @var float
-     */
-    public $recognizedRevenue;
-    /**
-     * @var float
-     */
-    public $deferredRevenue;
-    /**
-     * @var bool
-     */
-    public $revRecOnRevCommitment;
-    /**
-     * @var RecordRef
-     */
-    public $creditCard;
-    /**
-     * @var bool
-     */
-    public $chargeIt;
-    /**
-     * @var string
-     */
-    public $ccNumber;
-    /**
-     * @var dateTime
-     */
-    public $ccExpireDate;
-    /**
-     * @var string
-     */
-    public $ccName;
-    /**
-     * @var string
-     */
-    public $ccStreet;
-    /**
-     * @var string
-     */
-    public $ccZipCode;
-    /**
-     * @var bool
-     */
-    public $ccApproved;
-    /**
-     * @var RecordRef
-     */
-    public $creditCardProcessor;
-    /**
-     * @var string
-     */
-    public $debitCardIssueNo;
-    /**
-     * @var string
-     */
-    public $pnRefNum;
-    /**
-     * @var dateTime
-     */
-    public $validFrom;
-    /**
-     * @var string
-     */
-    public $payPalTranId;
-    /**
-     * @var float
-     */
-    public $subTotal;
-    /**
-     * @var bool
-     */
-    public $ccIsPurchaseCardBin;
-    /**
-     * @var float
-     */
-    public $discountTotal;
-    /**
-     * @var bool
-     */
-    public $ccProcessAsPurchaseCard;
-    /**
-     * @var float
-     */
-    public $taxTotal;
-    /**
-     * @var float
-     */
-    public $tax2Total;
-    /**
-     * @var float
-     */
-    public $altShippingCost;
-    /**
-     * @var string
-     */
-    public $payPalStatus;
-    /**
-     * @var float
-     */
-    public $altHandlingCost;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var string
-     */
-    public $payPalAuthId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $giftCert;
-    /**
-     * @var float
-     */
-    public $giftCertTotal;
-    /**
-     * @var float
-     */
-    public $giftCertApplied;
-    /**
-     * @var float
-     */
-    public $giftCertAvailable;
-    /**
-     * @var bool
-     */
-    public $tranIsVsoeBundle;
-    /**
-     * @var bool
-     */
-    public $payPalProcess;
-    /**
-     * @var bool
-     */
-    public $vsoeAutoCalc;
-    /**
-     * @var bool
-     */
-    public $syncPartnerTeams;
-    /**
-     * @var CashRefundItemList
-     */
-    public $itemList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CashRefundSalesTeamList
-     */
-    public $salesTeamList;
-    /**
-     * @var CashRefundPartnersList
-     */
-    public $partnersList;
-    /**
-     * @var TaxDetailsList
-     */
-    public $taxDetailsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CashRefund extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxRegOverride;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxDetailsOverride;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityTaxRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createdFrom;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRep;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $contribPct;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $otherRefNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $salesEffectiveDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $refundCheck;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toPrint2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeCommission;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalCostEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfitPercent;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currencyName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $promoCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $discountItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $discountRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBePrinted;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeEmailed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeFaxed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $messageSel;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentOption;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputReferenceCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $checkNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $paymentCardCsc;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentProcessingProfile;
+	/**
+	 * @access public
+	 * @var CashRefundHandlingMode
+	 */
+	public $handlingMode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputReferenceCode;
+	/**
+	 * @access public
+	 * @var CashRefundPaymentOperation
+	 */
+	public $paymentOperation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $dynamicDescriptor;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $billingAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billAddressList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shippingTaxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingTax1Rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shippingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $handlingTaxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingTax1Rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $handlingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingCost;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncSalesTeams;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var RevenueStatus
+	 */
+	public $revenueStatus;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recognizedRevenue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $deferredRevenue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $revRecOnRevCommitment;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCard;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $chargeIt;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccNumber;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $ccExpireDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccStreet;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccZipCode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccApproved;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCardProcessor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $debitCardIssueNo;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $pnRefNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $validFrom;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalTranId;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $subTotal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccIsPurchaseCardBin;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $discountTotal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccProcessAsPurchaseCard;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax2Total;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altShippingCost;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalStatus;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altHandlingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalAuthId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $giftCert;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertApplied;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertAvailable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $tranIsVsoeBundle;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $payPalProcess;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeAutoCalc;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncPartnerTeams;
+	/**
+	 * @access public
+	 * @var CashRefundItemList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CashRefundSalesTeamList
+	 */
+	public $salesTeamList;
+	/**
+	 * @access public
+	 * @var CashRefundPartnersList
+	 */
+	public $partnersList;
+	/**
+	 * @access public
+	 * @var TaxDetailsList
+	 */
+	public $taxDetailsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'nexus' => 'RecordRef',
-        'subsidiaryTaxRegNum' => 'RecordRef',
-        'taxRegOverride' => 'boolean',
-        'taxDetailsOverride' => 'boolean',
-        'customForm' => 'RecordRef',
-        'entity' => 'RecordRef',
-        'vatRegNum' => 'string',
-        'tranDate' => 'dateTime',
-        'tranId' => 'string',
-        'entityTaxRegNum' => 'RecordRef',
-        'taxPointDate' => 'dateTime',
-        'source' => 'string',
-        'createdFrom' => 'RecordRef',
-        'postingPeriod' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'leadSource' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'salesRep' => 'RecordRef',
-        'partner' => 'RecordRef',
-        'contribPct' => 'string',
-        'otherRefNum' => 'string',
-        'memo' => 'string',
-        'salesEffectiveDate' => 'dateTime',
-        'refundCheck' => 'boolean',
-        'toPrint2' => 'boolean',
-        'excludeCommission' => 'boolean',
-        'totalCostEstimate' => 'float',
-        'estGrossProfit' => 'float',
-        'estGrossProfitPercent' => 'float',
-        'account' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'exchangeRate' => 'float',
-        'currencyName' => 'string',
-        'promoCode' => 'RecordRef',
-        'discountItem' => 'RecordRef',
-        'discountRate' => 'string',
-        'isTaxable' => 'boolean',
-        'taxItem' => 'RecordRef',
-        'taxRate' => 'float',
-        'toBePrinted' => 'boolean',
-        'toBeEmailed' => 'boolean',
-        'email' => 'string',
-        'toBeFaxed' => 'boolean',
-        'fax' => 'string',
-        'messageSel' => 'RecordRef',
-        'message' => 'string',
-        'paymentOption' => 'RecordRef',
-        'inputAuthCode' => 'string',
-        'inputReferenceCode' => 'string',
-        'checkNumber' => 'string',
-        'paymentCardCsc' => 'string',
-        'paymentProcessingProfile' => 'RecordRef',
-        'handlingMode' => 'CashRefundHandlingMode',
-        'outputAuthCode' => 'string',
-        'outputReferenceCode' => 'string',
-        'paymentOperation' => 'CashRefundPaymentOperation',
-        'dynamicDescriptor' => 'string',
-        'billingAddress' => 'Address',
-        'billAddressList' => 'RecordRef',
-        'shipMethod' => 'RecordRef',
-        'shippingTaxCode' => 'RecordRef',
-        'shippingTax1Rate' => 'float',
-        'shippingTax2Rate' => 'string',
-        'shippingCost' => 'float',
-        'handlingTaxCode' => 'RecordRef',
-        'handlingTax1Rate' => 'float',
-        'handlingTax2Rate' => 'string',
-        'handlingCost' => 'float',
-        'salesGroup' => 'RecordRef',
-        'syncSalesTeams' => 'boolean',
-        'paymentMethod' => 'RecordRef',
-        'revenueStatus' => 'RevenueStatus',
-        'recognizedRevenue' => 'float',
-        'deferredRevenue' => 'float',
-        'revRecOnRevCommitment' => 'boolean',
-        'creditCard' => 'RecordRef',
-        'chargeIt' => 'boolean',
-        'ccNumber' => 'string',
-        'ccExpireDate' => 'dateTime',
-        'ccName' => 'string',
-        'ccStreet' => 'string',
-        'ccZipCode' => 'string',
-        'ccApproved' => 'boolean',
-        'creditCardProcessor' => 'RecordRef',
-        'debitCardIssueNo' => 'string',
-        'pnRefNum' => 'string',
-        'validFrom' => 'dateTime',
-        'payPalTranId' => 'string',
-        'subTotal' => 'float',
-        'ccIsPurchaseCardBin' => 'boolean',
-        'discountTotal' => 'float',
-        'ccProcessAsPurchaseCard' => 'boolean',
-        'taxTotal' => 'float',
-        'tax2Total' => 'float',
-        'altShippingCost' => 'float',
-        'payPalStatus' => 'string',
-        'altHandlingCost' => 'float',
-        'total' => 'float',
-        'payPalAuthId' => 'string',
-        'status' => 'string',
-        'job' => 'RecordRef',
-        'giftCert' => 'RecordRef',
-        'giftCertTotal' => 'float',
-        'giftCertApplied' => 'float',
-        'giftCertAvailable' => 'float',
-        'tranIsVsoeBundle' => 'boolean',
-        'payPalProcess' => 'boolean',
-        'vsoeAutoCalc' => 'boolean',
-        'syncPartnerTeams' => 'boolean',
-        'itemList' => 'CashRefundItemList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'salesTeamList' => 'CashRefundSalesTeamList',
-        'partnersList' => 'CashRefundPartnersList',
-        'taxDetailsList' => 'TaxDetailsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"nexus" => "RecordRef",
+		"subsidiaryTaxRegNum" => "RecordRef",
+		"taxRegOverride" => "boolean",
+		"taxDetailsOverride" => "boolean",
+		"customForm" => "RecordRef",
+		"entity" => "RecordRef",
+		"vatRegNum" => "string",
+		"tranDate" => "dateTime",
+		"tranId" => "string",
+		"entityTaxRegNum" => "RecordRef",
+		"taxPointDate" => "dateTime",
+		"source" => "string",
+		"createdFrom" => "RecordRef",
+		"postingPeriod" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"leadSource" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"salesRep" => "RecordRef",
+		"partner" => "RecordRef",
+		"contribPct" => "string",
+		"otherRefNum" => "string",
+		"memo" => "string",
+		"salesEffectiveDate" => "dateTime",
+		"refundCheck" => "boolean",
+		"toPrint2" => "boolean",
+		"excludeCommission" => "boolean",
+		"totalCostEstimate" => "float",
+		"estGrossProfit" => "float",
+		"estGrossProfitPercent" => "float",
+		"account" => "RecordRef",
+		"currency" => "RecordRef",
+		"exchangeRate" => "float",
+		"currencyName" => "string",
+		"promoCode" => "RecordRef",
+		"discountItem" => "RecordRef",
+		"discountRate" => "string",
+		"isTaxable" => "boolean",
+		"taxItem" => "RecordRef",
+		"taxRate" => "float",
+		"toBePrinted" => "boolean",
+		"toBeEmailed" => "boolean",
+		"email" => "string",
+		"toBeFaxed" => "boolean",
+		"fax" => "string",
+		"messageSel" => "RecordRef",
+		"message" => "string",
+		"paymentOption" => "RecordRef",
+		"inputAuthCode" => "string",
+		"inputReferenceCode" => "string",
+		"checkNumber" => "string",
+		"paymentCardCsc" => "string",
+		"paymentProcessingProfile" => "RecordRef",
+		"handlingMode" => "CashRefundHandlingMode",
+		"outputAuthCode" => "string",
+		"outputReferenceCode" => "string",
+		"paymentOperation" => "CashRefundPaymentOperation",
+		"dynamicDescriptor" => "string",
+		"billingAddress" => "Address",
+		"billAddressList" => "RecordRef",
+		"shipMethod" => "RecordRef",
+		"shippingTaxCode" => "RecordRef",
+		"shippingTax1Rate" => "float",
+		"shippingTax2Rate" => "string",
+		"shippingCost" => "float",
+		"handlingTaxCode" => "RecordRef",
+		"handlingTax1Rate" => "float",
+		"handlingTax2Rate" => "string",
+		"handlingCost" => "float",
+		"salesGroup" => "RecordRef",
+		"syncSalesTeams" => "boolean",
+		"paymentMethod" => "RecordRef",
+		"revenueStatus" => "RevenueStatus",
+		"recognizedRevenue" => "float",
+		"deferredRevenue" => "float",
+		"revRecOnRevCommitment" => "boolean",
+		"creditCard" => "RecordRef",
+		"chargeIt" => "boolean",
+		"ccNumber" => "string",
+		"ccExpireDate" => "dateTime",
+		"ccName" => "string",
+		"ccStreet" => "string",
+		"ccZipCode" => "string",
+		"ccApproved" => "boolean",
+		"creditCardProcessor" => "RecordRef",
+		"debitCardIssueNo" => "string",
+		"pnRefNum" => "string",
+		"validFrom" => "dateTime",
+		"payPalTranId" => "string",
+		"subTotal" => "float",
+		"ccIsPurchaseCardBin" => "boolean",
+		"discountTotal" => "float",
+		"ccProcessAsPurchaseCard" => "boolean",
+		"taxTotal" => "float",
+		"tax2Total" => "float",
+		"altShippingCost" => "float",
+		"payPalStatus" => "string",
+		"altHandlingCost" => "float",
+		"total" => "float",
+		"payPalAuthId" => "string",
+		"status" => "string",
+		"job" => "RecordRef",
+		"giftCert" => "RecordRef",
+		"giftCertTotal" => "float",
+		"giftCertApplied" => "float",
+		"giftCertAvailable" => "float",
+		"tranIsVsoeBundle" => "boolean",
+		"payPalProcess" => "boolean",
+		"vsoeAutoCalc" => "boolean",
+		"syncPartnerTeams" => "boolean",
+		"itemList" => "CashRefundItemList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"salesTeamList" => "CashRefundSalesTeamList",
+		"partnersList" => "CashRefundPartnersList",
+		"taxDetailsList" => "TaxDetailsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

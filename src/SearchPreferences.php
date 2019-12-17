@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchPreferences.
+ * SearchPreferences
  */
-class SearchPreferences
-{
-    /**
-     * @var bool
-     */
-    public $bodyFieldsOnly;
-    /**
-     * @var bool
-     */
-    public $returnSearchColumns;
-    /**
-     * @var int
-     */
-    public $pageSize;
+class SearchPreferences {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $bodyFieldsOnly;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $returnSearchColumns;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageSize;
 
-    public static $paramtypesmap = array(
-        'bodyFieldsOnly' => 'boolean',
-        'returnSearchColumns' => 'boolean',
-        'pageSize' => 'integer',
-    );
+	static $paramtypesmap = array(
+		"bodyFieldsOnly" => "boolean",
+		"returnSearchColumns" => "boolean",
+		"pageSize" => "integer",
+	);
 }

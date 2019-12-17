@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeChildren.
+ * CustomRecordTypeChildren
  */
-class CustomRecordTypeChildren
-{
-    /**
-     * @var string
-     */
-    public $childDescr;
-    /**
-     * @var RecordRef
-     */
-    public $childTab;
+class CustomRecordTypeChildren {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $childDescr;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $childTab;
 
-    public static $paramtypesmap = array(
-        'childDescr' => 'string',
-        'childTab' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"childDescr" => "string",
+		"childTab" => "RecordRef",
+	);
 }

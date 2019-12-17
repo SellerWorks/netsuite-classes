@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ReturnAuthorizationSalesTeamList.
+ * ReturnAuthorizationSalesTeamList
  */
-class ReturnAuthorizationSalesTeamList
-{
-    /**
-     * @var ReturnAuthorizationSalesTeam[]
-     */
-    public $salesTeam;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ReturnAuthorizationSalesTeamList {
+	/**
+	 * @access public
+	 * @var ReturnAuthorizationSalesTeam[]
+	 */
+	public $salesTeam;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'salesTeam' => 'ReturnAuthorizationSalesTeam[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"salesTeam" => "ReturnAuthorizationSalesTeam[]",
+		"replaceAll" => "boolean",
+	);
 }

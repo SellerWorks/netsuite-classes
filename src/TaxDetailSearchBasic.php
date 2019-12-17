@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxDetailSearchBasic.
+ * TaxDetailSearchBasic
  */
-class TaxDetailSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchLongField
-     */
-    public $lineNumber;
-    /**
-     * @var SearchDoubleField
-     */
-    public $taxAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $taxBasis;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxCode;
-    /**
-     * @var SearchDoubleField
-     */
-    public $taxRate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $tranId;
+class TaxDetailSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $lineNumber;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $taxAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $taxBasis;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $tranId;
 
-    public static $paramtypesmap = array(
-        'account' => 'SearchMultiSelectField',
-        'lineNumber' => 'SearchLongField',
-        'taxAmount' => 'SearchDoubleField',
-        'taxBasis' => 'SearchDoubleField',
-        'taxCode' => 'SearchMultiSelectField',
-        'taxRate' => 'SearchDoubleField',
-        'taxType' => 'SearchMultiSelectField',
-        'tranId' => 'SearchMultiSelectField',
-    );
+	static $paramtypesmap = array(
+		"account" => "SearchMultiSelectField",
+		"lineNumber" => "SearchLongField",
+		"taxAmount" => "SearchDoubleField",
+		"taxBasis" => "SearchDoubleField",
+		"taxCode" => "SearchMultiSelectField",
+		"taxRate" => "SearchDoubleField",
+		"taxType" => "SearchMultiSelectField",
+		"tranId" => "SearchMultiSelectField",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactAddressbookList.
+ * ContactAddressbookList
  */
-class ContactAddressbookList
-{
-    /**
-     * @var ContactAddressbook[]
-     */
-    public $addressbook;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ContactAddressbookList {
+	/**
+	 * @access public
+	 * @var ContactAddressbook[]
+	 */
+	public $addressbook;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'addressbook' => 'ContactAddressbook[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"addressbook" => "ContactAddressbook[]",
+		"replaceAll" => "boolean",
+	);
 }

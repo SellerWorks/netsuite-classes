@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetCustomizationIdRequest.
+ * GetCustomizationIdRequest
  */
-class GetCustomizationIdRequest
-{
-    /**
-     * @var CustomizationType
-     */
-    public $customizationType;
-    /**
-     * @var bool
-     */
-    public $includeInactives;
+class GetCustomizationIdRequest {
+	/**
+	 * @access public
+	 * @var CustomizationType
+	 */
+	public $customizationType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeInactives;
 
-    public static $paramtypesmap = array(
-        'customizationType' => 'CustomizationType',
-        'includeInactives' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"customizationType" => "CustomizationType",
+		"includeInactives" => "boolean",
+	);
 }

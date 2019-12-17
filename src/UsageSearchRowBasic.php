@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UsageSearchRowBasic.
+ * UsageSearchRowBasic
  */
-class UsageSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $customer;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $date;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantity;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subscription;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subscriptionLine;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subscriptionPlan;
+class UsageSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $date;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subscriptionLine;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subscriptionPlan;
 
-    public static $paramtypesmap = array(
-        'customer' => 'SearchColumnSelectField[]',
-        'date' => 'SearchColumnDateField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'quantity' => 'SearchColumnDoubleField[]',
-        'subscription' => 'SearchColumnSelectField[]',
-        'subscriptionLine' => 'SearchColumnSelectField[]',
-        'subscriptionPlan' => 'SearchColumnSelectField[]',
-    );
+	static $paramtypesmap = array(
+		"customer" => "SearchColumnSelectField[]",
+		"date" => "SearchColumnDateField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"item" => "SearchColumnSelectField[]",
+		"memo" => "SearchColumnStringField[]",
+		"quantity" => "SearchColumnDoubleField[]",
+		"subscription" => "SearchColumnSelectField[]",
+		"subscriptionLine" => "SearchColumnSelectField[]",
+		"subscriptionPlan" => "SearchColumnSelectField[]",
+	);
 }

@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemWeightUnit.
+ * ItemWeightUnit
  */
-class ItemWeightUnit
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _g = '_g';
-    /**
-     * @var string
-     */
-    const _kg = '_kg';
-    /**
-     * @var string
-     */
-    const _lb = '_lb';
-    /**
-     * @var string
-     */
-    const _oz = '_oz';
+class ItemWeightUnit {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _g = "_g";
+	/**
+	 * @var string
+	 */
+	const _kg = "_kg";
+	/**
+	 * @var string
+	 */
+	const _lb = "_lb";
+	/**
+	 * @var string
+	 */
+	const _oz = "_oz";
 }

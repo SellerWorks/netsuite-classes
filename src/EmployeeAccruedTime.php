@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeAccruedTime.
+ * EmployeeAccruedTime
  */
-class EmployeeAccruedTime
-{
-    /**
-     * @var RecordRef
-     */
-    public $payrollItem;
-    /**
-     * @var float
-     */
-    public $accruedHours;
-    /**
-     * @var float
-     */
-    public $accrualRate;
-    /**
-     * @var float
-     */
-    public $monetaryRate;
-    /**
-     * @var bool
-     */
-    public $resetAccruedHoursAtYearEnd;
-    /**
-     * @var EmployeeAccruedTimeAccrualMethod
-     */
-    public $accrualMethod;
-    /**
-     * @var float
-     */
-    public $maximumAccruedHours;
-    /**
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * @var dateTime
-     */
-    public $effectiveDate;
-    /**
-     * @var dateTime
-     */
-    public $expirationDate;
+class EmployeeAccruedTime {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payrollItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $accruedHours;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $accrualRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $monetaryRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $resetAccruedHoursAtYearEnd;
+	/**
+	 * @access public
+	 * @var EmployeeAccruedTimeAccrualMethod
+	 */
+	public $accrualMethod;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $maximumAccruedHours;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expirationDate;
 
-    public static $paramtypesmap = array(
-        'payrollItem' => 'RecordRef',
-        'accruedHours' => 'float',
-        'accrualRate' => 'float',
-        'monetaryRate' => 'float',
-        'resetAccruedHoursAtYearEnd' => 'boolean',
-        'accrualMethod' => 'EmployeeAccruedTimeAccrualMethod',
-        'maximumAccruedHours' => 'float',
-        'inactive' => 'boolean',
-        'effectiveDate' => 'dateTime',
-        'expirationDate' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"payrollItem" => "RecordRef",
+		"accruedHours" => "float",
+		"accrualRate" => "float",
+		"monetaryRate" => "float",
+		"resetAccruedHoursAtYearEnd" => "boolean",
+		"accrualMethod" => "EmployeeAccruedTimeAccrualMethod",
+		"maximumAccruedHours" => "float",
+		"inactive" => "boolean",
+		"effectiveDate" => "dateTime",
+		"expirationDate" => "dateTime",
+	);
 }

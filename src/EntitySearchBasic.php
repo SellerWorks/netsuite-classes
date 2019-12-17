@@ -11,191 +11,226 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntitySearchBasic.
+ * EntitySearchBasic
  */
-class EntitySearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchStringField
-     */
-    public $address;
-    /**
-     * @var SearchStringField
-     */
-    public $addressee;
-    /**
-     * @var SearchStringField
-     */
-    public $addressLabel;
-    /**
-     * @var SearchStringField
-     */
-    public $addressPhone;
-    /**
-     * @var SearchStringField
-     */
-    public $attention;
-    /**
-     * @var SearchStringField
-     */
-    public $city;
-    /**
-     * @var SearchStringField
-     */
-    public $comments;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $country;
-    /**
-     * @var SearchStringField
-     */
-    public $county;
-    /**
-     * @var SearchDateField
-     */
-    public $dateCreated;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $defaultTaxReg;
-    /**
-     * @var SearchStringField
-     */
-    public $defaultTaxRegText;
-    /**
-     * @var SearchStringField
-     */
-    public $email;
-    /**
-     * @var SearchStringField
-     */
-    public $entityId;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchStringField
-     */
-    public $fax;
-    /**
-     * @var SearchBooleanField
-     */
-    public $giveAccess;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var SearchStringField
-     */
-    public $image;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDefaultBilling;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDefaultShipping;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $language;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $level;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $permission;
-    /**
-     * @var SearchStringField
-     */
-    public $phone;
-    /**
-     * @var SearchStringField
-     */
-    public $phoneticName;
-    /**
-     * @var SearchStringField
-     */
-    public $state;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchStringField
-     */
-    public $zipCode;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class EntitySearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $address;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressee;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressLabel;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressPhone;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $attention;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $county;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $defaultTaxReg;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $defaultTaxRegText;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDefaultBilling;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDefaultShipping;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $language;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $level;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $permission;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $zipCode;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'address' => 'SearchStringField',
-        'addressee' => 'SearchStringField',
-        'addressLabel' => 'SearchStringField',
-        'addressPhone' => 'SearchStringField',
-        'attention' => 'SearchStringField',
-        'city' => 'SearchStringField',
-        'comments' => 'SearchStringField',
-        'country' => 'SearchEnumMultiSelectField',
-        'county' => 'SearchStringField',
-        'dateCreated' => 'SearchDateField',
-        'defaultTaxReg' => 'SearchMultiSelectField',
-        'defaultTaxRegText' => 'SearchStringField',
-        'email' => 'SearchStringField',
-        'entityId' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'fax' => 'SearchStringField',
-        'giveAccess' => 'SearchBooleanField',
-        'globalSubscriptionStatus' => 'SearchEnumMultiSelectField',
-        'image' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isDefaultBilling' => 'SearchBooleanField',
-        'isDefaultShipping' => 'SearchBooleanField',
-        'isInactive' => 'SearchBooleanField',
-        'language' => 'SearchEnumMultiSelectField',
-        'lastModifiedDate' => 'SearchDateField',
-        'level' => 'SearchEnumMultiSelectField',
-        'permission' => 'SearchEnumMultiSelectField',
-        'phone' => 'SearchStringField',
-        'phoneticName' => 'SearchStringField',
-        'state' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'type' => 'SearchEnumMultiSelectField',
-        'zipCode' => 'SearchStringField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"address" => "SearchStringField",
+		"addressee" => "SearchStringField",
+		"addressLabel" => "SearchStringField",
+		"addressPhone" => "SearchStringField",
+		"attention" => "SearchStringField",
+		"city" => "SearchStringField",
+		"comments" => "SearchStringField",
+		"country" => "SearchEnumMultiSelectField",
+		"county" => "SearchStringField",
+		"dateCreated" => "SearchDateField",
+		"defaultTaxReg" => "SearchMultiSelectField",
+		"defaultTaxRegText" => "SearchStringField",
+		"email" => "SearchStringField",
+		"entityId" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"fax" => "SearchStringField",
+		"giveAccess" => "SearchBooleanField",
+		"globalSubscriptionStatus" => "SearchEnumMultiSelectField",
+		"image" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isDefaultBilling" => "SearchBooleanField",
+		"isDefaultShipping" => "SearchBooleanField",
+		"isInactive" => "SearchBooleanField",
+		"language" => "SearchEnumMultiSelectField",
+		"lastModifiedDate" => "SearchDateField",
+		"level" => "SearchEnumMultiSelectField",
+		"permission" => "SearchEnumMultiSelectField",
+		"phone" => "SearchStringField",
+		"phoneticName" => "SearchStringField",
+		"state" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"type" => "SearchEnumMultiSelectField",
+		"zipCode" => "SearchStringField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleSearchAdvanced.
+ * BillingScheduleSearchAdvanced
  */
-class BillingScheduleSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var BillingScheduleSearch
-     */
-    public $criteria;
-    /**
-     * @var BillingScheduleSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class BillingScheduleSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var BillingScheduleSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var BillingScheduleSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'BillingScheduleSearch',
-        'columns' => 'BillingScheduleSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "BillingScheduleSearch",
+		"columns" => "BillingScheduleSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

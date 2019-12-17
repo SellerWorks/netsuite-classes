@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UpdateInviteeStatusReference.
+ * UpdateInviteeStatusReference
  */
-class UpdateInviteeStatusReference
-{
-    /**
-     * @var RecordRef
-     */
-    public $eventId;
-    /**
-     * @var CalendarEventAttendeeResponse
-     */
-    public $responseCode;
+class UpdateInviteeStatusReference {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $eventId;
+	/**
+	 * @access public
+	 * @var CalendarEventAttendeeResponse
+	 */
+	public $responseCode;
 
-    public static $paramtypesmap = array(
-        'eventId' => 'RecordRef',
-        'responseCode' => 'CalendarEventAttendeeResponse',
-    );
+	static $paramtypesmap = array(
+		"eventId" => "RecordRef",
+		"responseCode" => "CalendarEventAttendeeResponse",
+	);
 }

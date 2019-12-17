@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorReturnAuthorizationExpenseList.
+ * VendorReturnAuthorizationExpenseList
  */
-class VendorReturnAuthorizationExpenseList
-{
-    /**
-     * @var VendorReturnAuthorizationExpense[]
-     */
-    public $expense;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class VendorReturnAuthorizationExpenseList {
+	/**
+	 * @access public
+	 * @var VendorReturnAuthorizationExpense[]
+	 */
+	public $expense;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'expense' => 'VendorReturnAuthorizationExpense[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"expense" => "VendorReturnAuthorizationExpense[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,76 +11,88 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategorySearchRowBasic.
+ * SiteCategorySearchRowBasic
  */
-class SiteCategorySearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $dateViewed;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $excludeFromSitemap;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $fullName;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $hidden;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $hits;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $longDescription;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $pageTitle;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $sitemapPriority;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $urlComponent;
+class SiteCategorySearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $dateViewed;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $excludeFromSitemap;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $fullName;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $hidden;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $hits;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $longDescription;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $pageTitle;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $sitemapPriority;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $urlComponent;
 
-    public static $paramtypesmap = array(
-        'dateViewed' => 'SearchColumnDateField[]',
-        'description' => 'SearchColumnStringField[]',
-        'excludeFromSitemap' => 'SearchColumnBooleanField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'fullName' => 'SearchColumnStringField[]',
-        'hidden' => 'SearchColumnBooleanField[]',
-        'hits' => 'SearchColumnLongField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'longDescription' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'pageTitle' => 'SearchColumnStringField[]',
-        'sitemapPriority' => 'SearchColumnEnumSelectField[]',
-        'urlComponent' => 'SearchColumnStringField[]',
-    );
+	static $paramtypesmap = array(
+		"dateViewed" => "SearchColumnDateField[]",
+		"description" => "SearchColumnStringField[]",
+		"excludeFromSitemap" => "SearchColumnBooleanField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"fullName" => "SearchColumnStringField[]",
+		"hidden" => "SearchColumnBooleanField[]",
+		"hits" => "SearchColumnLongField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"longDescription" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"pageTitle" => "SearchColumnStringField[]",
+		"sitemapPriority" => "SearchColumnEnumSelectField[]",
+		"urlComponent" => "SearchColumnStringField[]",
+	);
 }

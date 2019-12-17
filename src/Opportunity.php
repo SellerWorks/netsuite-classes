@@ -11,391 +11,466 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Opportunity.
+ * Opportunity
  */
-class Opportunity extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $estimatedBudget;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $entityTaxRegNum;
-    /**
-     * @var dateTime
-     */
-    public $taxPointDate;
-    /**
-     * @var float
-     */
-    public $oneTime;
-    /**
-     * @var float
-     */
-    public $recurWeekly;
-    /**
-     * @var float
-     */
-    public $recurMonthly;
-    /**
-     * @var float
-     */
-    public $recurQuarterly;
-    /**
-     * @var float
-     */
-    public $recurAnnually;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var RecordRef
-     */
-    public $salesRep;
-    /**
-     * @var string
-     */
-    public $contribPct;
-    /**
-     * @var RecordRef
-     */
-    public $partner;
-    /**
-     * @var RecordRef
-     */
-    public $salesGroup;
-    /**
-     * @var bool
-     */
-    public $syncSalesTeams;
-    /**
-     * @var RecordRef
-     */
-    public $leadSource;
-    /**
-     * @var RecordRef
-     */
-    public $entityStatus;
-    /**
-     * @var float
-     */
-    public $probability;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var dateTime
-     */
-    public $expectedCloseDate;
-    /**
-     * @var int
-     */
-    public $daysOpen;
-    /**
-     * @var RecordRef
-     */
-    public $forecastType;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var float
-     */
-    public $projectedTotal;
-    /**
-     * @var float
-     */
-    public $rangeLow;
-    /**
-     * @var float
-     */
-    public $rangeHigh;
-    /**
-     * @var float
-     */
-    public $projAltSalesAmt;
-    /**
-     * @var float
-     */
-    public $altSalesRangeLow;
-    /**
-     * @var float
-     */
-    public $altSalesRangeHigh;
-    /**
-     * @var float
-     */
-    public $weightedTotal;
-    /**
-     * @var string
-     */
-    public $actionItem;
-    /**
-     * @var RecordRef
-     */
-    public $winLossReason;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var float
-     */
-    public $taxTotal;
-    /**
-     * @var bool
-     */
-    public $isBudgetApproved;
-    /**
-     * @var float
-     */
-    public $tax2Total;
-    /**
-     * @var RecordRef
-     */
-    public $salesReadiness;
-    /**
-     * @var float
-     */
-    public $totalCostEstimate;
-    /**
-     * @var RecordRef
-     */
-    public $buyingTimeFrame;
-    /**
-     * @var float
-     */
-    public $estGrossProfit;
-    /**
-     * @var RecordRef
-     */
-    public $buyingReason;
-    /**
-     * @var float
-     */
-    public $estGrossProfitPercent;
-    /**
-     * @var Address
-     */
-    public $billingAddress;
-    /**
-     * @var RecordRef
-     */
-    public $billAddressList;
-    /**
-     * @var Address
-     */
-    public $shippingAddress;
-    /**
-     * @var bool
-     */
-    public $shipIsResidential;
-    /**
-     * @var RecordRef
-     */
-    public $shipAddressList;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var dateTime
-     */
-    public $closeDate;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiaryTaxRegNum;
-    /**
-     * @var bool
-     */
-    public $taxRegOverride;
-    /**
-     * @var bool
-     */
-    public $taxDetailsOverride;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $vatRegNum;
-    /**
-     * @var bool
-     */
-    public $syncPartnerTeams;
-    /**
-     * @var OpportunitySalesTeamList
-     */
-    public $salesTeamList;
-    /**
-     * @var OpportunityPartnersList
-     */
-    public $partnersList;
-    /**
-     * @var OpportunityItemList
-     */
-    public $itemList;
-    /**
-     * @var OpportunityCompetitorsList
-     */
-    public $competitorsList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var TaxDetailsList
-     */
-    public $taxDetailsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Opportunity extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedBudget;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityTaxRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $oneTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurWeekly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurMonthly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurQuarterly;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recurAnnually;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRep;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $contribPct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncSalesTeams;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityStatus;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $probability;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expectedCloseDate;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $daysOpen;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $forecastType;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currencyName;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $projectedTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rangeLow;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rangeHigh;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $projAltSalesAmt;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altSalesRangeLow;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altSalesRangeHigh;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $weightedTotal;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $actionItem;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $winLossReason;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxTotal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBudgetApproved;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax2Total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesReadiness;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalCostEstimate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $buyingTimeFrame;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfit;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $buyingReason;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfitPercent;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $billingAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billAddressList;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $shippingAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipIsResidential;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipAddressList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $closeDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxRegOverride;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxDetailsOverride;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNum;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncPartnerTeams;
+	/**
+	 * @access public
+	 * @var OpportunitySalesTeamList
+	 */
+	public $salesTeamList;
+	/**
+	 * @access public
+	 * @var OpportunityPartnersList
+	 */
+	public $partnersList;
+	/**
+	 * @access public
+	 * @var OpportunityItemList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var OpportunityCompetitorsList
+	 */
+	public $competitorsList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var TaxDetailsList
+	 */
+	public $taxDetailsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'customForm' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'estimatedBudget' => 'float',
-        'entity' => 'RecordRef',
-        'job' => 'RecordRef',
-        'title' => 'string',
-        'tranId' => 'string',
-        'entityTaxRegNum' => 'RecordRef',
-        'taxPointDate' => 'dateTime',
-        'oneTime' => 'float',
-        'recurWeekly' => 'float',
-        'recurMonthly' => 'float',
-        'recurQuarterly' => 'float',
-        'recurAnnually' => 'float',
-        'source' => 'string',
-        'salesRep' => 'RecordRef',
-        'contribPct' => 'string',
-        'partner' => 'RecordRef',
-        'salesGroup' => 'RecordRef',
-        'syncSalesTeams' => 'boolean',
-        'leadSource' => 'RecordRef',
-        'entityStatus' => 'RecordRef',
-        'probability' => 'float',
-        'tranDate' => 'dateTime',
-        'expectedCloseDate' => 'dateTime',
-        'daysOpen' => 'integer',
-        'forecastType' => 'RecordRef',
-        'currencyName' => 'string',
-        'exchangeRate' => 'float',
-        'projectedTotal' => 'float',
-        'rangeLow' => 'float',
-        'rangeHigh' => 'float',
-        'projAltSalesAmt' => 'float',
-        'altSalesRangeLow' => 'float',
-        'altSalesRangeHigh' => 'float',
-        'weightedTotal' => 'float',
-        'actionItem' => 'string',
-        'winLossReason' => 'RecordRef',
-        'memo' => 'string',
-        'taxTotal' => 'float',
-        'isBudgetApproved' => 'boolean',
-        'tax2Total' => 'float',
-        'salesReadiness' => 'RecordRef',
-        'totalCostEstimate' => 'float',
-        'buyingTimeFrame' => 'RecordRef',
-        'estGrossProfit' => 'float',
-        'buyingReason' => 'RecordRef',
-        'estGrossProfitPercent' => 'float',
-        'billingAddress' => 'Address',
-        'billAddressList' => 'RecordRef',
-        'shippingAddress' => 'Address',
-        'shipIsResidential' => 'boolean',
-        'shipAddressList' => 'RecordRef',
-        'class' => 'RecordRef',
-        'closeDate' => 'dateTime',
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'nexus' => 'RecordRef',
-        'subsidiaryTaxRegNum' => 'RecordRef',
-        'taxRegOverride' => 'boolean',
-        'taxDetailsOverride' => 'boolean',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'status' => 'string',
-        'vatRegNum' => 'string',
-        'syncPartnerTeams' => 'boolean',
-        'salesTeamList' => 'OpportunitySalesTeamList',
-        'partnersList' => 'OpportunityPartnersList',
-        'itemList' => 'OpportunityItemList',
-        'competitorsList' => 'OpportunityCompetitorsList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'taxDetailsList' => 'TaxDetailsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"currency" => "RecordRef",
+		"estimatedBudget" => "float",
+		"entity" => "RecordRef",
+		"job" => "RecordRef",
+		"title" => "string",
+		"tranId" => "string",
+		"entityTaxRegNum" => "RecordRef",
+		"taxPointDate" => "dateTime",
+		"oneTime" => "float",
+		"recurWeekly" => "float",
+		"recurMonthly" => "float",
+		"recurQuarterly" => "float",
+		"recurAnnually" => "float",
+		"source" => "string",
+		"salesRep" => "RecordRef",
+		"contribPct" => "string",
+		"partner" => "RecordRef",
+		"salesGroup" => "RecordRef",
+		"syncSalesTeams" => "boolean",
+		"leadSource" => "RecordRef",
+		"entityStatus" => "RecordRef",
+		"probability" => "float",
+		"tranDate" => "dateTime",
+		"expectedCloseDate" => "dateTime",
+		"daysOpen" => "integer",
+		"forecastType" => "RecordRef",
+		"currencyName" => "string",
+		"exchangeRate" => "float",
+		"projectedTotal" => "float",
+		"rangeLow" => "float",
+		"rangeHigh" => "float",
+		"projAltSalesAmt" => "float",
+		"altSalesRangeLow" => "float",
+		"altSalesRangeHigh" => "float",
+		"weightedTotal" => "float",
+		"actionItem" => "string",
+		"winLossReason" => "RecordRef",
+		"memo" => "string",
+		"taxTotal" => "float",
+		"isBudgetApproved" => "boolean",
+		"tax2Total" => "float",
+		"salesReadiness" => "RecordRef",
+		"totalCostEstimate" => "float",
+		"buyingTimeFrame" => "RecordRef",
+		"estGrossProfit" => "float",
+		"buyingReason" => "RecordRef",
+		"estGrossProfitPercent" => "float",
+		"billingAddress" => "Address",
+		"billAddressList" => "RecordRef",
+		"shippingAddress" => "Address",
+		"shipIsResidential" => "boolean",
+		"shipAddressList" => "RecordRef",
+		"class" => "RecordRef",
+		"closeDate" => "dateTime",
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"nexus" => "RecordRef",
+		"subsidiaryTaxRegNum" => "RecordRef",
+		"taxRegOverride" => "boolean",
+		"taxDetailsOverride" => "boolean",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"status" => "string",
+		"vatRegNum" => "string",
+		"syncPartnerTeams" => "boolean",
+		"salesTeamList" => "OpportunitySalesTeamList",
+		"partnersList" => "OpportunityPartnersList",
+		"itemList" => "OpportunityItemList",
+		"competitorsList" => "OpportunityCompetitorsList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"taxDetailsList" => "TaxDetailsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

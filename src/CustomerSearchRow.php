@@ -11,196 +11,232 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerSearchRow.
+ * CustomerSearchRow
  */
-class CustomerSearchRow extends SearchRow
-{
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var BillingAccountSearchRowBasic
-     */
-    public $billingAccountJoin;
-    /**
-     * @var BillingScheduleSearchRowBasic
-     */
-    public $billingScheduleJoin;
-    /**
-     * @var PhoneCallSearchRowBasic
-     */
-    public $callJoin;
-    /**
-     * @var CampaignSearchRowBasic
-     */
-    public $campaignResponseJoin;
-    /**
-     * @var SupportCaseSearchRowBasic
-     */
-    public $caseJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactPrimaryJoin;
-    /**
-     * @var CalendarEventSearchRowBasic
-     */
-    public $eventJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $hostedPageJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var CampaignSearchRowBasic
-     */
-    public $leadSourceJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesFromJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesToJoin;
-    /**
-     * @var MseSubsidiarySearchRowBasic
-     */
-    public $mseSubsidiaryJoin;
-    /**
-     * @var OpportunitySearchRowBasic
-     */
-    public $opportunityJoin;
-    /**
-     * @var OriginatingLeadSearchRowBasic
-     */
-    public $originatingLeadJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $parentCustomerJoin;
-    /**
-     * @var PartnerSearchRowBasic
-     */
-    public $partnerJoin;
-    /**
-     * @var PricingSearchRowBasic
-     */
-    public $pricingJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $purchasedItemJoin;
-    /**
-     * @var ResourceAllocationSearchRowBasic
-     */
-    public $resourceAllocationJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $salesRepJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $subCustomerJoin;
-    /**
-     * @var TaskSearchRowBasic
-     */
-    public $taskJoin;
-    /**
-     * @var EntityTaxRegistrationSearchRowBasic
-     */
-    public $taxRegistrationJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $topLevelParentJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $upsellItemJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var SiteCategorySearchRowBasic
-     */
-    public $webSiteCategoryJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $webSiteItemJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class CustomerSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var BillingAccountSearchRowBasic
+	 */
+	public $billingAccountJoin;
+	/**
+	 * @access public
+	 * @var BillingScheduleSearchRowBasic
+	 */
+	public $billingScheduleJoin;
+	/**
+	 * @access public
+	 * @var PhoneCallSearchRowBasic
+	 */
+	public $callJoin;
+	/**
+	 * @access public
+	 * @var CampaignSearchRowBasic
+	 */
+	public $campaignResponseJoin;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchRowBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactPrimaryJoin;
+	/**
+	 * @access public
+	 * @var CalendarEventSearchRowBasic
+	 */
+	public $eventJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $hostedPageJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var CampaignSearchRowBasic
+	 */
+	public $leadSourceJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesFromJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesToJoin;
+	/**
+	 * @access public
+	 * @var MseSubsidiarySearchRowBasic
+	 */
+	public $mseSubsidiaryJoin;
+	/**
+	 * @access public
+	 * @var OpportunitySearchRowBasic
+	 */
+	public $opportunityJoin;
+	/**
+	 * @access public
+	 * @var OriginatingLeadSearchRowBasic
+	 */
+	public $originatingLeadJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $parentCustomerJoin;
+	/**
+	 * @access public
+	 * @var PartnerSearchRowBasic
+	 */
+	public $partnerJoin;
+	/**
+	 * @access public
+	 * @var PricingSearchRowBasic
+	 */
+	public $pricingJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $purchasedItemJoin;
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearchRowBasic
+	 */
+	public $resourceAllocationJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $salesRepJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $subCustomerJoin;
+	/**
+	 * @access public
+	 * @var TaskSearchRowBasic
+	 */
+	public $taskJoin;
+	/**
+	 * @access public
+	 * @var EntityTaxRegistrationSearchRowBasic
+	 */
+	public $taxRegistrationJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $topLevelParentJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $upsellItemJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var SiteCategorySearchRowBasic
+	 */
+	public $webSiteCategoryJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $webSiteItemJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'CustomerSearchRowBasic',
-        'billingAccountJoin' => 'BillingAccountSearchRowBasic',
-        'billingScheduleJoin' => 'BillingScheduleSearchRowBasic',
-        'callJoin' => 'PhoneCallSearchRowBasic',
-        'campaignResponseJoin' => 'CampaignSearchRowBasic',
-        'caseJoin' => 'SupportCaseSearchRowBasic',
-        'contactJoin' => 'ContactSearchRowBasic',
-        'contactPrimaryJoin' => 'ContactSearchRowBasic',
-        'eventJoin' => 'CalendarEventSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'hostedPageJoin' => 'FileSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'leadSourceJoin' => 'CampaignSearchRowBasic',
-        'messagesJoin' => 'MessageSearchRowBasic',
-        'messagesFromJoin' => 'MessageSearchRowBasic',
-        'messagesToJoin' => 'MessageSearchRowBasic',
-        'mseSubsidiaryJoin' => 'MseSubsidiarySearchRowBasic',
-        'opportunityJoin' => 'OpportunitySearchRowBasic',
-        'originatingLeadJoin' => 'OriginatingLeadSearchRowBasic',
-        'parentCustomerJoin' => 'CustomerSearchRowBasic',
-        'partnerJoin' => 'PartnerSearchRowBasic',
-        'pricingJoin' => 'PricingSearchRowBasic',
-        'purchasedItemJoin' => 'ItemSearchRowBasic',
-        'resourceAllocationJoin' => 'ResourceAllocationSearchRowBasic',
-        'salesRepJoin' => 'EmployeeSearchRowBasic',
-        'subCustomerJoin' => 'CustomerSearchRowBasic',
-        'taskJoin' => 'TaskSearchRowBasic',
-        'taxRegistrationJoin' => 'EntityTaxRegistrationSearchRowBasic',
-        'timeJoin' => 'TimeBillSearchRowBasic',
-        'topLevelParentJoin' => 'CustomerSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'upsellItemJoin' => 'ItemSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'webSiteCategoryJoin' => 'SiteCategorySearchRowBasic',
-        'webSiteItemJoin' => 'ItemSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "CustomerSearchRowBasic",
+		"billingAccountJoin" => "BillingAccountSearchRowBasic",
+		"billingScheduleJoin" => "BillingScheduleSearchRowBasic",
+		"callJoin" => "PhoneCallSearchRowBasic",
+		"campaignResponseJoin" => "CampaignSearchRowBasic",
+		"caseJoin" => "SupportCaseSearchRowBasic",
+		"contactJoin" => "ContactSearchRowBasic",
+		"contactPrimaryJoin" => "ContactSearchRowBasic",
+		"eventJoin" => "CalendarEventSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"hostedPageJoin" => "FileSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"leadSourceJoin" => "CampaignSearchRowBasic",
+		"messagesJoin" => "MessageSearchRowBasic",
+		"messagesFromJoin" => "MessageSearchRowBasic",
+		"messagesToJoin" => "MessageSearchRowBasic",
+		"mseSubsidiaryJoin" => "MseSubsidiarySearchRowBasic",
+		"opportunityJoin" => "OpportunitySearchRowBasic",
+		"originatingLeadJoin" => "OriginatingLeadSearchRowBasic",
+		"parentCustomerJoin" => "CustomerSearchRowBasic",
+		"partnerJoin" => "PartnerSearchRowBasic",
+		"pricingJoin" => "PricingSearchRowBasic",
+		"purchasedItemJoin" => "ItemSearchRowBasic",
+		"resourceAllocationJoin" => "ResourceAllocationSearchRowBasic",
+		"salesRepJoin" => "EmployeeSearchRowBasic",
+		"subCustomerJoin" => "CustomerSearchRowBasic",
+		"taskJoin" => "TaskSearchRowBasic",
+		"taxRegistrationJoin" => "EntityTaxRegistrationSearchRowBasic",
+		"timeJoin" => "TimeBillSearchRowBasic",
+		"topLevelParentJoin" => "CustomerSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"upsellItemJoin" => "ItemSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"webSiteCategoryJoin" => "SiteCategorySearchRowBasic",
+		"webSiteItemJoin" => "ItemSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

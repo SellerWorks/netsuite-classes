@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostTemplate.
+ * ManufacturingCostTemplate
  */
-class ManufacturingCostTemplate extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var ManufacturingCostDetailList
-     */
-    public $costDetailList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ManufacturingCostTemplate extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var ManufacturingCostDetailList
+	 */
+	public $costDetailList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'customForm' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'name' => 'string',
-        'memo' => 'string',
-        'isInactive' => 'boolean',
-        'costDetailList' => 'ManufacturingCostDetailList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"name" => "string",
+		"memo" => "string",
+		"isInactive" => "boolean",
+		"costDetailList" => "ManufacturingCostDetailList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

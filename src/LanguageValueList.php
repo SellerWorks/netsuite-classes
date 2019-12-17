@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LanguageValueList.
+ * LanguageValueList
  */
-class LanguageValueList
-{
-    /**
-     * @var LanguageValue[]
-     */
-    public $languageValue;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class LanguageValueList {
+	/**
+	 * @access public
+	 * @var LanguageValue[]
+	 */
+	public $languageValue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'languageValue' => 'LanguageValue[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"languageValue" => "LanguageValue[]",
+		"replaceAll" => "boolean",
+	);
 }

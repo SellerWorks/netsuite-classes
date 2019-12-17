@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UpsertRequest.
+ * UpsertRequest
  */
-class UpsertRequest
-{
-    /**
-     * @var Record
-     */
-    public $record;
+class UpsertRequest {
+	/**
+	 * @access public
+	 * @var Record
+	 */
+	public $record;
 
-    public static $paramtypesmap = array(
-        'record' => 'Record',
-    );
+	static $paramtypesmap = array(
+		"record" => "Record",
+	);
 }

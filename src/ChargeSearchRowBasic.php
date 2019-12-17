@@ -11,136 +11,160 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChargeSearchRowBasic.
+ * ChargeSearchRowBasic
  */
-class ChargeSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $amount;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $billingAccount;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $billingItem;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $billTo;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $chargeDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $chargeType;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $class;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $createdDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $currency;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $department;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $modifiedDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $postingPeriod;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $quantity;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $rate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $rule;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $runId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $salesOrder;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $stage;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subscriptionLine;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $use;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class ChargeSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $billingAccount;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $billingItem;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $billTo;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $chargeDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $chargeType;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $modifiedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $rule;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $runId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $salesOrder;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $stage;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subscriptionLine;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $use;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'amount' => 'SearchColumnDoubleField[]',
-        'billingAccount' => 'SearchColumnSelectField[]',
-        'billingItem' => 'SearchColumnSelectField[]',
-        'billTo' => 'SearchColumnSelectField[]',
-        'chargeDate' => 'SearchColumnDateField[]',
-        'chargeType' => 'SearchColumnSelectField[]',
-        'class' => 'SearchColumnSelectField[]',
-        'createdDate' => 'SearchColumnDateField[]',
-        'currency' => 'SearchColumnSelectField[]',
-        'department' => 'SearchColumnSelectField[]',
-        'description' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'modifiedDate' => 'SearchColumnDateField[]',
-        'postingPeriod' => 'SearchColumnStringField[]',
-        'quantity' => 'SearchColumnStringField[]',
-        'rate' => 'SearchColumnStringField[]',
-        'rule' => 'SearchColumnSelectField[]',
-        'runId' => 'SearchColumnStringField[]',
-        'salesOrder' => 'SearchColumnStringField[]',
-        'stage' => 'SearchColumnEnumSelectField[]',
-        'subscriptionLine' => 'SearchColumnSelectField[]',
-        'use' => 'SearchColumnEnumSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"amount" => "SearchColumnDoubleField[]",
+		"billingAccount" => "SearchColumnSelectField[]",
+		"billingItem" => "SearchColumnSelectField[]",
+		"billTo" => "SearchColumnSelectField[]",
+		"chargeDate" => "SearchColumnDateField[]",
+		"chargeType" => "SearchColumnSelectField[]",
+		"class" => "SearchColumnSelectField[]",
+		"createdDate" => "SearchColumnDateField[]",
+		"currency" => "SearchColumnSelectField[]",
+		"department" => "SearchColumnSelectField[]",
+		"description" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"location" => "SearchColumnSelectField[]",
+		"modifiedDate" => "SearchColumnDateField[]",
+		"postingPeriod" => "SearchColumnStringField[]",
+		"quantity" => "SearchColumnStringField[]",
+		"rate" => "SearchColumnStringField[]",
+		"rule" => "SearchColumnSelectField[]",
+		"runId" => "SearchColumnStringField[]",
+		"salesOrder" => "SearchColumnStringField[]",
+		"stage" => "SearchColumnEnumSelectField[]",
+		"subscriptionLine" => "SearchColumnSelectField[]",
+		"use" => "SearchColumnEnumSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

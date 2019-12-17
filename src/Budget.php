@@ -11,206 +11,244 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Budget.
+ * Budget
  */
-class Budget extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $year;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var BudgetBudgetType
-     */
-    public $budgetType;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $periodAmount1;
-    /**
-     * @var float
-     */
-    public $periodAmount2;
-    /**
-     * @var float
-     */
-    public $periodAmount3;
-    /**
-     * @var float
-     */
-    public $periodAmount4;
-    /**
-     * @var float
-     */
-    public $periodAmount5;
-    /**
-     * @var float
-     */
-    public $periodAmount6;
-    /**
-     * @var float
-     */
-    public $periodAmount7;
-    /**
-     * @var float
-     */
-    public $periodAmount8;
-    /**
-     * @var float
-     */
-    public $periodAmount9;
-    /**
-     * @var float
-     */
-    public $periodAmount10;
-    /**
-     * @var float
-     */
-    public $periodAmount11;
-    /**
-     * @var float
-     */
-    public $periodAmount12;
-    /**
-     * @var float
-     */
-    public $periodAmount13;
-    /**
-     * @var float
-     */
-    public $periodAmount14;
-    /**
-     * @var float
-     */
-    public $periodAmount15;
-    /**
-     * @var float
-     */
-    public $periodAmount16;
-    /**
-     * @var float
-     */
-    public $periodAmount17;
-    /**
-     * @var float
-     */
-    public $periodAmount18;
-    /**
-     * @var float
-     */
-    public $periodAmount19;
-    /**
-     * @var float
-     */
-    public $periodAmount20;
-    /**
-     * @var float
-     */
-    public $periodAmount21;
-    /**
-     * @var float
-     */
-    public $periodAmount22;
-    /**
-     * @var float
-     */
-    public $periodAmount23;
-    /**
-     * @var float
-     */
-    public $periodAmount24;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
+class Budget extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $year;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var BudgetBudgetType
+	 */
+	public $budgetType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount1;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount2;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount3;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount4;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount5;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount6;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount7;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount8;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount9;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount10;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount11;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount12;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount13;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount14;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount15;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount16;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount17;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount18;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount19;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount20;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount21;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount22;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount23;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $periodAmount24;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
 
-    public static $paramtypesmap = array(
-        'year' => 'RecordRef',
-        'customer' => 'RecordRef',
-        'item' => 'RecordRef',
-        'class' => 'RecordRef',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'account' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'category' => 'RecordRef',
-        'budgetType' => 'BudgetBudgetType',
-        'currency' => 'RecordRef',
-        'periodAmount1' => 'float',
-        'periodAmount2' => 'float',
-        'periodAmount3' => 'float',
-        'periodAmount4' => 'float',
-        'periodAmount5' => 'float',
-        'periodAmount6' => 'float',
-        'periodAmount7' => 'float',
-        'periodAmount8' => 'float',
-        'periodAmount9' => 'float',
-        'periodAmount10' => 'float',
-        'periodAmount11' => 'float',
-        'periodAmount12' => 'float',
-        'periodAmount13' => 'float',
-        'periodAmount14' => 'float',
-        'periodAmount15' => 'float',
-        'periodAmount16' => 'float',
-        'periodAmount17' => 'float',
-        'periodAmount18' => 'float',
-        'periodAmount19' => 'float',
-        'periodAmount20' => 'float',
-        'periodAmount21' => 'float',
-        'periodAmount22' => 'float',
-        'periodAmount23' => 'float',
-        'periodAmount24' => 'float',
-        'amount' => 'float',
-        'accountingBook' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"year" => "RecordRef",
+		"customer" => "RecordRef",
+		"item" => "RecordRef",
+		"class" => "RecordRef",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"account" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"category" => "RecordRef",
+		"budgetType" => "BudgetBudgetType",
+		"currency" => "RecordRef",
+		"periodAmount1" => "float",
+		"periodAmount2" => "float",
+		"periodAmount3" => "float",
+		"periodAmount4" => "float",
+		"periodAmount5" => "float",
+		"periodAmount6" => "float",
+		"periodAmount7" => "float",
+		"periodAmount8" => "float",
+		"periodAmount9" => "float",
+		"periodAmount10" => "float",
+		"periodAmount11" => "float",
+		"periodAmount12" => "float",
+		"periodAmount13" => "float",
+		"periodAmount14" => "float",
+		"periodAmount15" => "float",
+		"periodAmount16" => "float",
+		"periodAmount17" => "float",
+		"periodAmount18" => "float",
+		"periodAmount19" => "float",
+		"periodAmount20" => "float",
+		"periodAmount21" => "float",
+		"periodAmount22" => "float",
+		"periodAmount23" => "float",
+		"periodAmount24" => "float",
+		"amount" => "float",
+		"accountingBook" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+	);
 }

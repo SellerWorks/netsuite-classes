@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseEscalateTo.
+ * SupportCaseEscalateTo
  */
-class SupportCaseEscalateTo
-{
-    /**
-     * @var RecordRef
-     */
-    public $escalatee;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $phone;
+class SupportCaseEscalateTo {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $escalatee;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phone;
 
-    public static $paramtypesmap = array(
-        'escalatee' => 'RecordRef',
-        'email' => 'string',
-        'phone' => 'string',
-    );
+	static $paramtypesmap = array(
+		"escalatee" => "RecordRef",
+		"email" => "string",
+		"phone" => "string",
+	);
 }

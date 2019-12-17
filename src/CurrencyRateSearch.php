@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRateSearch.
+ * CurrencyRateSearch
  */
-class CurrencyRateSearch extends SearchRecord
-{
-    /**
-     * @var CurrencyRateSearchBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
+class CurrencyRateSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CurrencyRateSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'CurrencyRateSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "CurrencyRateSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+	);
 }

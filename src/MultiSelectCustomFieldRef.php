@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MultiSelectCustomFieldRef.
+ * MultiSelectCustomFieldRef
  */
-class MultiSelectCustomFieldRef extends CustomFieldRef
-{
-    /**
-     * @var ListOrRecordRef[]
-     */
-    public $value;
+class MultiSelectCustomFieldRef extends CustomFieldRef {
+	/**
+	 * @access public
+	 * @var ListOrRecordRef[]
+	 */
+	public $value;
 
-    public static $paramtypesmap = array(
-        'value' => 'ListOrRecordRef[]',
-    );
+	static $paramtypesmap = array(
+		"value" => "ListOrRecordRef[]",
+	);
 }

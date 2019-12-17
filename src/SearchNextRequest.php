@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchNextRequest.
+ * SearchNextRequest
  */
-class SearchNextRequest
-{
-    public static $paramtypesmap = array(
-    );
+class SearchNextRequest {
+
+	static $paramtypesmap = array(
+	);
 }

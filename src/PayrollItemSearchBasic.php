@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItemSearchBasic.
+ * PayrollItemSearchBasic
  */
-class PayrollItemSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $expenseAccount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $itemTypeNoHierarchy;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $liabilityAccount;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $vendor;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class PayrollItemSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $itemTypeNoHierarchy;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $liabilityAccount;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'expenseAccount' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'itemTypeNoHierarchy' => 'SearchEnumMultiSelectField',
-        'liabilityAccount' => 'SearchMultiSelectField',
-        'name' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'vendor' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"expenseAccount" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"itemTypeNoHierarchy" => "SearchEnumMultiSelectField",
+		"liabilityAccount" => "SearchMultiSelectField",
+		"name" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"vendor" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

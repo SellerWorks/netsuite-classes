@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LandedCostData.
+ * LandedCostData
  */
-class LandedCostData
-{
-    /**
-     * @var RecordRef
-     */
-    public $costCategory;
-    /**
-     * @var float
-     */
-    public $amount;
+class LandedCostData {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $costCategory;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = array(
-        'costCategory' => 'RecordRef',
-        'amount' => 'float',
-    );
+	static $paramtypesmap = array(
+		"costCategory" => "RecordRef",
+		"amount" => "float",
+	);
 }

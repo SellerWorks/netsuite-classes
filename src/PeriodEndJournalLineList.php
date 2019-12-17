@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PeriodEndJournalLineList.
+ * PeriodEndJournalLineList
  */
-class PeriodEndJournalLineList
-{
-    /**
-     * @var PeriodEndJournalLine[]
-     */
-    public $periodEndJournalLine;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class PeriodEndJournalLineList {
+	/**
+	 * @access public
+	 * @var PeriodEndJournalLine[]
+	 */
+	public $periodEndJournalLine;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'periodEndJournalLine' => 'PeriodEndJournalLine[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"periodEndJournalLine" => "PeriodEndJournalLine[]",
+		"replaceAll" => "boolean",
+	);
 }

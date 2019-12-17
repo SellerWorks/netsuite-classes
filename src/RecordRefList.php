@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RecordRefList.
+ * RecordRefList
  */
-class RecordRefList
-{
-    /**
-     * @var RecordRef[]
-     */
-    public $recordRef;
+class RecordRefList {
+	/**
+	 * @access public
+	 * @var RecordRef[]
+	 */
+	public $recordRef;
 
-    public static $paramtypesmap = array(
-        'recordRef' => 'RecordRef[]',
-    );
+	static $paramtypesmap = array(
+		"recordRef" => "RecordRef[]",
+	);
 }

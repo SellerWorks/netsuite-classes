@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheet.
+ * TimeSheet
  */
-class TimeSheet extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $employee;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var Duration
-     */
-    public $totalHours;
-    /**
-     * @var RecordRef
-     */
-    public $approvalStatus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var TimeSheetTimeGridList
-     */
-    public $timeGridList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class TimeSheet extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $totalHours;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var TimeSheetTimeGridList
+	 */
+	public $timeGridList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'customForm' => 'RecordRef',
-        'employee' => 'RecordRef',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'totalHours' => 'Duration',
-        'approvalStatus' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'timeGridList' => 'TimeSheetTimeGridList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"employee" => "RecordRef",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"totalHours" => "Duration",
+		"approvalStatus" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"timeGridList" => "TimeSheetTimeGridList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

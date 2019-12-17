@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationSearch.
+ * LocationSearch
  */
-class LocationSearch extends SearchRecord
-{
-    /**
-     * @var LocationSearchBasic
-     */
-    public $basic;
-    /**
-     * @var AddressSearchBasic
-     */
-    public $addressJoin;
-    /**
-     * @var AddressSearchBasic
-     */
-    public $returnAddressJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class LocationSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var LocationSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var AddressSearchBasic
+	 */
+	public $addressJoin;
+	/**
+	 * @access public
+	 * @var AddressSearchBasic
+	 */
+	public $returnAddressJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'LocationSearchBasic',
-        'addressJoin' => 'AddressSearchBasic',
-        'returnAddressJoin' => 'AddressSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "LocationSearchBasic",
+		"addressJoin" => "AddressSearchBasic",
+		"returnAddressJoin" => "AddressSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

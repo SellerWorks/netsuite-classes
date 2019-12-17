@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionSearchAdvanced.
+ * SolutionSearchAdvanced
  */
-class SolutionSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var SolutionSearch
-     */
-    public $criteria;
-    /**
-     * @var SolutionSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class SolutionSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var SolutionSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var SolutionSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'SolutionSearch',
-        'columns' => 'SolutionSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "SolutionSearch",
+		"columns" => "SolutionSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

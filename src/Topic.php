@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Topic.
+ * Topic
  */
-class Topic extends Record
-{
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var RecordRef
-     */
-    public $parentTopic;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $longDescription;
-    /**
-     * @var TopicSolutionList
-     */
-    public $solutionList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Topic extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parentTopic;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $longDescription;
+	/**
+	 * @access public
+	 * @var TopicSolutionList
+	 */
+	public $solutionList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'title' => 'string',
-        'parentTopic' => 'RecordRef',
-        'description' => 'string',
-        'isInactive' => 'boolean',
-        'longDescription' => 'string',
-        'solutionList' => 'TopicSolutionList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"title" => "string",
+		"parentTopic" => "RecordRef",
+		"description" => "string",
+		"isInactive" => "boolean",
+		"longDescription" => "string",
+		"solutionList" => "TopicSolutionList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

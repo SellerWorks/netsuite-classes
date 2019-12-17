@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationAccessLevel.
+ * CustomizationAccessLevel
  */
-class CustomizationAccessLevel
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _none = '_none';
-    /**
-     * @var string
-     */
-    const _edit = '_edit';
-    /**
-     * @var string
-     */
-    const _view = '_view';
+class CustomizationAccessLevel {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _none = "_none";
+	/**
+	 * @var string
+	 */
+	const _edit = "_edit";
+	/**
+	 * @var string
+	 */
+	const _view = "_view";
 }

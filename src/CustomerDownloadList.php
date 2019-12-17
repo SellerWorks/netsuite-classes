@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerDownloadList.
+ * CustomerDownloadList
  */
-class CustomerDownloadList
-{
-    /**
-     * @var CustomerDownload[]
-     */
-    public $download;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomerDownloadList {
+	/**
+	 * @access public
+	 * @var CustomerDownload[]
+	 */
+	public $download;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'download' => 'CustomerDownload[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"download" => "CustomerDownload[]",
+		"replaceAll" => "boolean",
+	);
 }

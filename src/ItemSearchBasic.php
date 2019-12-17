@@ -11,1466 +11,1768 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSearchBasic.
+ * ItemSearchBasic
  */
-class ItemSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accBookRevRecForecastRule;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBook;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBookAmortization;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBookCreatePlansOn;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBookRevRecRule;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBookRevRecSchedule;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $allowedShippingMethod;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $alternateDemandSourceItem;
-    /**
-     * @var SearchDoubleField
-     */
-    public $atpLeadTime;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $atpMethod;
-    /**
-     * @var SearchBooleanField
-     */
-    public $autoLeadTime;
-    /**
-     * @var SearchBooleanField
-     */
-    public $autoPreferredStockLevel;
-    /**
-     * @var SearchBooleanField
-     */
-    public $autoReorderPoint;
-    /**
-     * @var SearchBooleanField
-     */
-    public $availableToPartners;
-    /**
-     * @var SearchDoubleField
-     */
-    public $averageCost;
-    /**
-     * @var SearchLongField
-     */
-    public $backwardConsumptionDays;
-    /**
-     * @var SearchStringField
-     */
-    public $binNumber;
-    /**
-     * @var SearchDoubleField
-     */
-    public $binOnHandAvail;
-    /**
-     * @var SearchDoubleField
-     */
-    public $binOnHandCount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $bomQuantity;
-    /**
-     * @var SearchBooleanField
-     */
-    public $buildEntireAssembly;
-    /**
-     * @var SearchDoubleField
-     */
-    public $buildTime;
-    /**
-     * @var SearchDoubleField
-     */
-    public $buyItNowPrice;
-    /**
-     * @var SearchStringField
-     */
-    public $caption;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $category;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $class;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $component;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $componentOf;
-    /**
-     * @var SearchDoubleField
-     */
-    public $componentYield;
-    /**
-     * @var SearchBooleanField
-     */
-    public $contingentRevenueHandling;
-    /**
-     * @var SearchBooleanField
-     */
-    public $copyDescription;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $correlatedItem;
-    /**
-     * @var SearchDoubleField
-     */
-    public $correlatedItemCorrelation;
-    /**
-     * @var SearchLongField
-     */
-    public $correlatedItemCount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $correlatedItemLift;
-    /**
-     * @var SearchDoubleField
-     */
-    public $correlatedItemPurchaseRate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $cost;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $costAccountingStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $costCategory;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costEstimate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $costEstimateType;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $costingMethod;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $countryOfManufacture;
-    /**
-     * @var SearchDateField
-     */
-    public $created;
-    /**
-     * @var SearchBooleanField
-     */
-    public $createJob;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $createRevenuePlansOn;
-    /**
-     * @var SearchDateField
-     */
-    public $dateViewed;
-    /**
-     * @var SearchDoubleField
-     */
-    public $daysBeforeExpiration;
-    /**
-     * @var SearchDoubleField
-     */
-    public $defaultReturnCost;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $defaultShippingMethod;
-    /**
-     * @var SearchBooleanField
-     */
-    public $deferRevRec;
-    /**
-     * @var SearchDoubleField
-     */
-    public $demandModifier;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $demandSource;
-    /**
-     * @var SearchLongField
-     */
-    public $demandTimeFence;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $department;
-    /**
-     * @var SearchBooleanField
-     */
-    public $directRevenuePosting;
-    /**
-     * @var SearchBooleanField
-     */
-    public $displayIneBayStore;
-    /**
-     * @var SearchStringField
-     */
-    public $displayName;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $distributionCategory;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $distributionNetwork;
-    /**
-     * @var SearchBooleanField
-     */
-    public $dontShowPrice;
-    /**
-     * @var SearchStringField
-     */
-    public $eBayItemDescription;
-    /**
-     * @var SearchStringField
-     */
-    public $eBayItemSubtitle;
-    /**
-     * @var SearchStringField
-     */
-    public $eBayItemTitle;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $ebayRelistingOption;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $effectiveBomControl;
-    /**
-     * @var SearchDateField
-     */
-    public $effectiveDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $effectiveRevision;
-    /**
-     * @var SearchBooleanField
-     */
-    public $endAuctionsWhenOutOfStock;
-    /**
-     * @var SearchBooleanField
-     */
-    public $excludeFromSitemap;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchStringField
-     */
-    public $featuredDescription;
-    /**
-     * @var SearchStringField
-     */
-    public $feedDescription;
-    /**
-     * @var SearchStringField
-     */
-    public $feedName;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fixedLotSize;
-    /**
-     * @var SearchLongField
-     */
-    public $forwardConsumptionDays;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $fraudRisk;
-    /**
-     * @var SearchBooleanField
-     */
-    public $froogleProductFeed;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxCost;
-    /**
-     * @var SearchBooleanField
-     */
-    public $generateAccruals;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertAuthCode;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertEmail;
-    /**
-     * @var SearchDateField
-     */
-    public $giftCertExpDate;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertFrom;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertMsg;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertOrigAmt;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertRecipient;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $hierarchyNode;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $hierarchyVersion;
-    /**
-     * @var SearchStringField
-     */
-    public $imageUrl;
-    /**
-     * @var SearchBooleanField
-     */
-    public $includeChildren;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $inventoryLocation;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $invtClassification;
-    /**
-     * @var SearchLongField
-     */
-    public $invtCountInterval;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isAvailable;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDropShipItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isFulfillable;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isGcoCompliant;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isLotItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isOnline;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isPreferredVendor;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isSerialItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isSpecialOrderItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isSpecialWorkOrderItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isStorePickupAllowed;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $issueProduct;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isTaxable;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isVsoeBundle;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isWip;
-    /**
-     * @var SearchStringField
-     */
-    public $itemId;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $itemRevenueCategory;
-    /**
-     * @var SearchStringField
-     */
-    public $itemUrl;
-    /**
-     * @var SearchDateField
-     */
-    public $lastInvtCountDate;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $lastPurchasePrice;
-    /**
-     * @var SearchDateField
-     */
-    public $lastQuantityAvailableChange;
-    /**
-     * @var SearchLongField
-     */
-    public $leadTime;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $listingDuration;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchBooleanField
-     */
-    public $locationAllowStorePickup;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationAtpLeadTime;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationAverageCost;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationBuildTime;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationCost;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationCostAccountingStatus;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationDefaultReturnCost;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationDemandSource;
-    /**
-     * @var SearchLongField
-     */
-    public $locationDemandTimeFence;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationFixedLotSize;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $locationInventoryCostTemplate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationInvtClassification;
-    /**
-     * @var SearchLongField
-     */
-    public $locationInvtCountInterval;
-    /**
-     * @var SearchDateField
-     */
-    public $locationLastInvtCountDate;
-    /**
-     * @var SearchLongField
-     */
-    public $locationLeadTime;
-    /**
-     * @var SearchDateField
-     */
-    public $locationNextInvtCountDate;
-    /**
-     * @var SearchLongField
-     */
-    public $locationPeriodicLotSizeDays;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationPeriodicLotSizeType;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationPreferredStockLevel;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQtyAvailForStorePickup;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityAvailable;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityBackOrdered;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityInTransit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityOnHand;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationQuantityOnOrder;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationReorderPoint;
-    /**
-     * @var SearchLongField
-     */
-    public $locationRescheduleInDays;
-    /**
-     * @var SearchLongField
-     */
-    public $locationRescheduleOutDays;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationSafetyStockLevel;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationStorePickupBufferStock;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationSupplyLotSizingMethod;
-    /**
-     * @var SearchLongField
-     */
-    public $locationSupplyTimeFence;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $locationSupplyType;
-    /**
-     * @var SearchDoubleField
-     */
-    public $locationTotalValue;
-    /**
-     * @var SearchLongField
-     */
-    public $locBackwardConsumptionDays;
-    /**
-     * @var SearchLongField
-     */
-    public $locForwardConsumptionDays;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturer;
-    /**
-     * @var SearchStringField
-     */
-    public $manufactureraddr1;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturerCity;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturerState;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturerTariff;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturerTaxId;
-    /**
-     * @var SearchStringField
-     */
-    public $manufacturerZip;
-    /**
-     * @var SearchBooleanField
-     */
-    public $manufacturingChargeItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $matchBillToReceipt;
-    /**
-     * @var SearchBooleanField
-     */
-    public $matrix;
-    /**
-     * @var SearchBooleanField
-     */
-    public $matrixChild;
-    /**
-     * @var SearchLongField
-     */
-    public $maximumQuantity;
-    /**
-     * @var SearchStringField
-     */
-    public $metaTagHtml;
-    /**
-     * @var SearchLongField
-     */
-    public $minimumQuantity;
-    /**
-     * @var SearchBooleanField
-     */
-    public $mossApplies;
-    /**
-     * @var SearchStringField
-     */
-    public $mpn;
-    /**
-     * @var SearchBooleanField
-     */
-    public $multManufactureAddr;
-    /**
-     * @var SearchStringField
-     */
-    public $nexTagCategory;
-    /**
-     * @var SearchBooleanField
-     */
-    public $nexTagProductFeed;
-    /**
-     * @var SearchDateField
-     */
-    public $nextInvtCountDate;
-    /**
-     * @var SearchLongField
-     */
-    public $numActiveListings;
-    /**
-     * @var SearchDoubleField
-     */
-    public $numberAllowedDownloads;
-    /**
-     * @var SearchLongField
-     */
-    public $numCurrentlyListed;
-    /**
-     * @var SearchDateField
-     */
-    public $obsoleteDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $obsoleteRevision;
-    /**
-     * @var SearchBooleanField
-     */
-    public $offerSupport;
-    /**
-     * @var SearchDoubleField
-     */
-    public $onlineCustomerPrice;
-    /**
-     * @var SearchBooleanField
-     */
-    public $onSpecial;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $otherVendor;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $outOfStockBehavior;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $overallQuantityPricingType;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $overheadType;
-    /**
-     * @var SearchStringField
-     */
-    public $pageTitle;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $parent;
-    /**
-     * @var SearchLongField
-     */
-    public $periodicLotSizeDays;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $periodicLotSizeType;
-    /**
-     * @var SearchStringField
-     */
-    public $preferenceCriterion;
-    /**
-     * @var SearchBooleanField
-     */
-    public $preferredBin;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $preferredLocation;
-    /**
-     * @var SearchDoubleField
-     */
-    public $preferredStockLevel;
-    /**
-     * @var SearchLongField
-     */
-    public $preferredStockLevelDays;
-    /**
-     * @var SearchDoubleField
-     */
-    public $price;
-    /**
-     * @var SearchBooleanField
-     */
-    public $pricesIncludeTax;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $pricingGroup;
-    /**
-     * @var SearchLongField
-     */
-    public $primaryCategory;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderQuantityDiff;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $purchaseUnit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityAvailable;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityBackOrdered;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityOnHand;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityOnOrder;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $quantityPricingSchedule;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptQuantityDiff;
-    /**
-     * @var SearchLongField
-     */
-    public $reorderMultiple;
-    /**
-     * @var SearchDoubleField
-     */
-    public $reorderPoint;
-    /**
-     * @var SearchLongField
-     */
-    public $rescheduleInDays;
-    /**
-     * @var SearchLongField
-     */
-    public $rescheduleOutDays;
-    /**
-     * @var SearchDoubleField
-     */
-    public $reservePrice;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $revenueAllocationGroup;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $revenueRecognitionRule;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $revRecForecastRule;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $revRecSchedule;
-    /**
-     * @var SearchBooleanField
-     */
-    public $roundUpAsComponent;
-    /**
-     * @var SearchDoubleField
-     */
-    public $safetyStockLevel;
-    /**
-     * @var SearchLongField
-     */
-    public $safetyStockLevelDays;
-    /**
-     * @var SearchStringField
-     */
-    public $salesDescription;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $saleUnit;
-    /**
-     * @var SearchBooleanField
-     */
-    public $sameAsPrimaryBookAmortization;
-    /**
-     * @var SearchBooleanField
-     */
-    public $sameAsPrimaryBookRevRec;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $scheduleBCode;
-    /**
-     * @var SearchStringField
-     */
-    public $scheduleBNumber;
-    /**
-     * @var SearchStringField
-     */
-    public $scheduleBQuantity;
-    /**
-     * @var SearchStringField
-     */
-    public $searchKeywords;
-    /**
-     * @var SearchBooleanField
-     */
-    public $seasonalDemand;
-    /**
-     * @var SearchBooleanField
-     */
-    public $sellOnEBay;
-    /**
-     * @var SearchStringField
-     */
-    public $serialNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $serialNumberLocation;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shipIndividually;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipPackage;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $shippingCarrier;
-    /**
-     * @var SearchDoubleField
-     */
-    public $shippingRate;
-    /**
-     * @var SearchStringField
-     */
-    public $shoppingDotComCategory;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shoppingProductFeed;
-    /**
-     * @var SearchLongField
-     */
-    public $shopzillaCategoryId;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shopzillaProductFeed;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $sitemapPriority;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $softDescriptor;
-    /**
-     * @var SearchDoubleField
-     */
-    public $startingPrice;
-    /**
-     * @var SearchStringField
-     */
-    public $stockDescription;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $stockUnit;
-    /**
-     * @var SearchStringField
-     */
-    public $storeDescription;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $subType;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $supplyLotSizingMethod;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $supplyReplenishmentMethod;
-    /**
-     * @var SearchLongField
-     */
-    public $supplyTimeFence;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $supplyType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxCode;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxSchedule;
-    /**
-     * @var SearchStringField
-     */
-    public $thumbnailUrl;
-    /**
-     * @var SearchDoubleField
-     */
-    public $totalValue;
-    /**
-     * @var SearchBooleanField
-     */
-    public $trackLandedCost;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferPrice;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $unitsType;
-    /**
-     * @var SearchStringField
-     */
-    public $upcCode;
-    /**
-     * @var SearchStringField
-     */
-    public $urlComponent;
-    /**
-     * @var SearchBooleanField
-     */
-    public $useBins;
-    /**
-     * @var SearchBooleanField
-     */
-    public $useComponentYield;
-    /**
-     * @var SearchBooleanField
-     */
-    public $useMarginalRates;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $vendor;
-    /**
-     * @var SearchStringField
-     */
-    public $vendorCode;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vendorCost;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vendorCostEntered;
-    /**
-     * @var SearchStringField
-     */
-    public $vendorName;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $vendorPriceCurrency;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $vsoeDeferral;
-    /**
-     * @var SearchBooleanField
-     */
-    public $vsoeDelivered;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vsoePrice;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $vsoeSopGroup;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $webSite;
-    /**
-     * @var SearchDoubleField
-     */
-    public $weight;
-    /**
-     * @var SearchBooleanField
-     */
-    public $yahooProductFeed;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class ItemSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accBookRevRecForecastRule;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBookAmortization;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBookCreatePlansOn;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBookRevRecRule;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBookRevRecSchedule;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $allowedShippingMethod;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $alternateDemandSourceItem;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $atpLeadTime;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $atpMethod;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $autoLeadTime;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $autoPreferredStockLevel;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $autoReorderPoint;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $availableToPartners;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $averageCost;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $backwardConsumptionDays;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $binOnHandAvail;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $binOnHandCount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $bomQuantity;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $buildEntireAssembly;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $buildTime;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $buyItNowPrice;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $caption;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $component;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $componentOf;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $componentYield;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $consumptionUnit;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $contingentRevenueHandling;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $copyDescription;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $correlatedItem;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $correlatedItemCorrelation;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $correlatedItemCount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $correlatedItemLift;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $correlatedItemPurchaseRate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $costAccountingStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $costCategory;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $costingMethod;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $countryOfManufacture;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $created;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $createJob;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $createRevenuePlansOn;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateViewed;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $daysBeforeExpiration;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $defaultReturnCost;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $defaultShippingMethod;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $demandModifier;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $demandSource;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $demandTimeFence;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $directRevenuePosting;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $displayIneBayStore;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $distributionCategory;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $distributionNetwork;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $dontShowPrice;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $eBayItemDescription;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $eBayItemSubtitle;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $eBayItemTitle;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $ebayRelistingOption;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $effectiveBomControl;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $effectiveRevision;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $endAuctionsWhenOutOfStock;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $excludeFromSitemap;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $featuredDescription;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $feedDescription;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $feedName;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fixedLotSize;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $forwardConsumptionDays;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $fraudRisk;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $froogleProductFeed;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $futureHorizon;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxCost;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $generateAccruals;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertAuthCode;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertEmail;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $giftCertExpDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertFrom;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertMsg;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertOrigAmt;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertRecipient;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $hierarchyNode;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $hierarchyVersion;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $imageUrl;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $inventoryLocation;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $invtClassification;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $invtCountInterval;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isAvailable;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDropShipItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isFulfillable;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isGcoCompliant;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isLotItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isPreferredVendor;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isSerialItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isSpecialOrderItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isSpecialWorkOrderItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isStorePickupAllowed;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $issueProduct;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isVsoeBundle;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isWip;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $itemRevenueCategory;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $itemUrl;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastInvtCountDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $lastPurchasePrice;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastQuantityAvailableChange;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $leadTime;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $listingDuration;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $locationAllowStorePickup;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationAtpLeadTime;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationAverageCost;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationBuildTime;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationCost;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationCostAccountingStatus;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationDefaultReturnCost;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationDemandSource;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationDemandTimeFence;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationFixedLotSize;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $locationInventoryCostTemplate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationInvtClassification;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationInvtCountInterval;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $locationLastInvtCountDate;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationLeadTime;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $locationNextInvtCountDate;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationPeriodicLotSizeDays;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationPeriodicLotSizeType;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationPreferredStockLevel;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQtyAvailForStorePickup;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityAvailable;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityBackOrdered;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityInTransit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityOnHand;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationQuantityOnOrder;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationReorderPoint;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationRescheduleInDays;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationRescheduleOutDays;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationSafetyStockLevel;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationStorePickupBufferStock;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationSupplyLotSizingMethod;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locationSupplyTimeFence;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $locationSupplyType;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $locationTotalValue;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locBackwardConsumptionDays;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $locForwardConsumptionDays;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturer;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufactureraddr1;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturerCity;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturerState;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturerTariff;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturerTaxId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $manufacturerZip;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $manufacturingChargeItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $matchBillToReceipt;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $matrix;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $matrixChild;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $maximumQuantity;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $metaTagHtml;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $minimumQuantity;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $mossApplies;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $mpn;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $multManufactureAddr;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $nexTagCategory;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $nexTagProductFeed;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $nextInvtCountDate;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $numActiveListings;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $numberAllowedDownloads;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $numCurrentlyListed;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $obsoleteDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $obsoleteRevision;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $offerSupport;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $onlineCustomerPrice;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $onSpecial;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $otherVendor;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $outOfStockBehavior;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $overallQuantityPricingType;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $overheadType;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $pageTitle;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $periodicLotSizeDays;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $periodicLotSizeType;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $preferenceCriterion;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $preferredBin;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $preferredLocation;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $preferredStockLevel;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $preferredStockLevelDays;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $pricesIncludeTax;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $pricingGroup;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $primaryCategory;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderQuantityDiff;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $purchaseUnit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityBackOrdered;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityOnOrder;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $quantityPricingSchedule;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptQuantityDiff;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $reorderMultiple;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $reorderPoint;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $rescheduleInDays;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $rescheduleOutDays;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $reservePrice;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $revenueAllocationGroup;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $revenueRecognitionRule;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $revRecForecastRule;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $roundUpAsComponent;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $safetyStockLevel;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $safetyStockLevelDays;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $salesDescription;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $saleUnit;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $sameAsPrimaryBookAmortization;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $sameAsPrimaryBookRevRec;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $scheduleBCode;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $scheduleBNumber;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $scheduleBQuantity;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $searchKeywords;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $seasonalDemand;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $sellOnEBay;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $serialNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $serialNumberLocation;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shipIndividually;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipPackage;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $shippingCarrier;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $shippingRate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shoppingDotComCategory;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shoppingProductFeed;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $shopzillaCategoryId;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shopzillaProductFeed;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $sitemapPriority;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $softDescriptor;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $startingPrice;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $stockDescription;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $stockUnit;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $storeDescription;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $subType;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $supplyLotSizingMethod;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $supplyReplenishmentMethod;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $supplyTimeFence;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $supplyType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxSchedule;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $thumbnailUrl;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $totalValue;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $trackLandedCost;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferPrice;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $unitsType;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $upcCode;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $urlComponent;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $useBins;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $useComponentYield;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $useMarginalRates;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $vendorCode;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vendorCost;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vendorCostEntered;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $vendorName;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $vendorPriceCurrency;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $vsoeSopGroup;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $webSite;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $weight;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $yahooProductFeed;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'accBookRevRecForecastRule' => 'SearchMultiSelectField',
-        'account' => 'SearchMultiSelectField',
-        'accountingBook' => 'SearchMultiSelectField',
-        'accountingBookAmortization' => 'SearchMultiSelectField',
-        'accountingBookCreatePlansOn' => 'SearchMultiSelectField',
-        'accountingBookRevRecRule' => 'SearchMultiSelectField',
-        'accountingBookRevRecSchedule' => 'SearchMultiSelectField',
-        'allowedShippingMethod' => 'SearchMultiSelectField',
-        'alternateDemandSourceItem' => 'SearchMultiSelectField',
-        'atpLeadTime' => 'SearchDoubleField',
-        'atpMethod' => 'SearchEnumMultiSelectField',
-        'autoLeadTime' => 'SearchBooleanField',
-        'autoPreferredStockLevel' => 'SearchBooleanField',
-        'autoReorderPoint' => 'SearchBooleanField',
-        'availableToPartners' => 'SearchBooleanField',
-        'averageCost' => 'SearchDoubleField',
-        'backwardConsumptionDays' => 'SearchLongField',
-        'binNumber' => 'SearchStringField',
-        'binOnHandAvail' => 'SearchDoubleField',
-        'binOnHandCount' => 'SearchDoubleField',
-        'bomQuantity' => 'SearchDoubleField',
-        'buildEntireAssembly' => 'SearchBooleanField',
-        'buildTime' => 'SearchDoubleField',
-        'buyItNowPrice' => 'SearchDoubleField',
-        'caption' => 'SearchStringField',
-        'category' => 'SearchMultiSelectField',
-        'class' => 'SearchMultiSelectField',
-        'component' => 'SearchMultiSelectField',
-        'componentOf' => 'SearchMultiSelectField',
-        'componentYield' => 'SearchDoubleField',
-        'contingentRevenueHandling' => 'SearchBooleanField',
-        'copyDescription' => 'SearchBooleanField',
-        'correlatedItem' => 'SearchMultiSelectField',
-        'correlatedItemCorrelation' => 'SearchDoubleField',
-        'correlatedItemCount' => 'SearchLongField',
-        'correlatedItemLift' => 'SearchDoubleField',
-        'correlatedItemPurchaseRate' => 'SearchDoubleField',
-        'cost' => 'SearchDoubleField',
-        'costAccountingStatus' => 'SearchEnumMultiSelectField',
-        'costCategory' => 'SearchMultiSelectField',
-        'costEstimate' => 'SearchDoubleField',
-        'costEstimateType' => 'SearchEnumMultiSelectField',
-        'costingMethod' => 'SearchEnumMultiSelectField',
-        'countryOfManufacture' => 'SearchEnumMultiSelectField',
-        'created' => 'SearchDateField',
-        'createJob' => 'SearchBooleanField',
-        'createRevenuePlansOn' => 'SearchMultiSelectField',
-        'dateViewed' => 'SearchDateField',
-        'daysBeforeExpiration' => 'SearchDoubleField',
-        'defaultReturnCost' => 'SearchDoubleField',
-        'defaultShippingMethod' => 'SearchMultiSelectField',
-        'deferRevRec' => 'SearchBooleanField',
-        'demandModifier' => 'SearchDoubleField',
-        'demandSource' => 'SearchEnumMultiSelectField',
-        'demandTimeFence' => 'SearchLongField',
-        'department' => 'SearchMultiSelectField',
-        'directRevenuePosting' => 'SearchBooleanField',
-        'displayIneBayStore' => 'SearchBooleanField',
-        'displayName' => 'SearchStringField',
-        'distributionCategory' => 'SearchMultiSelectField',
-        'distributionNetwork' => 'SearchMultiSelectField',
-        'dontShowPrice' => 'SearchBooleanField',
-        'eBayItemDescription' => 'SearchStringField',
-        'eBayItemSubtitle' => 'SearchStringField',
-        'eBayItemTitle' => 'SearchStringField',
-        'ebayRelistingOption' => 'SearchEnumMultiSelectField',
-        'effectiveBomControl' => 'SearchEnumMultiSelectField',
-        'effectiveDate' => 'SearchDateField',
-        'effectiveRevision' => 'SearchMultiSelectField',
-        'endAuctionsWhenOutOfStock' => 'SearchBooleanField',
-        'excludeFromSitemap' => 'SearchBooleanField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'featuredDescription' => 'SearchStringField',
-        'feedDescription' => 'SearchStringField',
-        'feedName' => 'SearchStringField',
-        'fixedLotSize' => 'SearchDoubleField',
-        'forwardConsumptionDays' => 'SearchLongField',
-        'fraudRisk' => 'SearchEnumMultiSelectField',
-        'froogleProductFeed' => 'SearchBooleanField',
-        'fxCost' => 'SearchDoubleField',
-        'generateAccruals' => 'SearchBooleanField',
-        'giftCertAuthCode' => 'SearchStringField',
-        'giftCertEmail' => 'SearchStringField',
-        'giftCertExpDate' => 'SearchDateField',
-        'giftCertFrom' => 'SearchStringField',
-        'giftCertMsg' => 'SearchStringField',
-        'giftCertOrigAmt' => 'SearchStringField',
-        'giftCertRecipient' => 'SearchStringField',
-        'hierarchyNode' => 'SearchMultiSelectField',
-        'hierarchyVersion' => 'SearchMultiSelectField',
-        'imageUrl' => 'SearchStringField',
-        'includeChildren' => 'SearchBooleanField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'inventoryLocation' => 'SearchMultiSelectField',
-        'invtClassification' => 'SearchEnumMultiSelectField',
-        'invtCountInterval' => 'SearchLongField',
-        'isAvailable' => 'SearchBooleanField',
-        'isDropShipItem' => 'SearchBooleanField',
-        'isFulfillable' => 'SearchBooleanField',
-        'isGcoCompliant' => 'SearchBooleanField',
-        'isInactive' => 'SearchBooleanField',
-        'isLotItem' => 'SearchBooleanField',
-        'isOnline' => 'SearchBooleanField',
-        'isPreferredVendor' => 'SearchBooleanField',
-        'isSerialItem' => 'SearchBooleanField',
-        'isSpecialOrderItem' => 'SearchBooleanField',
-        'isSpecialWorkOrderItem' => 'SearchBooleanField',
-        'isStorePickupAllowed' => 'SearchBooleanField',
-        'issueProduct' => 'SearchMultiSelectField',
-        'isTaxable' => 'SearchBooleanField',
-        'isVsoeBundle' => 'SearchBooleanField',
-        'isWip' => 'SearchBooleanField',
-        'itemId' => 'SearchStringField',
-        'itemRevenueCategory' => 'SearchMultiSelectField',
-        'itemUrl' => 'SearchStringField',
-        'lastInvtCountDate' => 'SearchDateField',
-        'lastModifiedDate' => 'SearchDateField',
-        'lastPurchasePrice' => 'SearchDoubleField',
-        'lastQuantityAvailableChange' => 'SearchDateField',
-        'leadTime' => 'SearchLongField',
-        'listingDuration' => 'SearchEnumMultiSelectField',
-        'location' => 'SearchMultiSelectField',
-        'locationAllowStorePickup' => 'SearchBooleanField',
-        'locationAtpLeadTime' => 'SearchDoubleField',
-        'locationAverageCost' => 'SearchDoubleField',
-        'locationBuildTime' => 'SearchDoubleField',
-        'locationCost' => 'SearchDoubleField',
-        'locationCostAccountingStatus' => 'SearchEnumMultiSelectField',
-        'locationDefaultReturnCost' => 'SearchDoubleField',
-        'locationDemandSource' => 'SearchEnumMultiSelectField',
-        'locationDemandTimeFence' => 'SearchLongField',
-        'locationFixedLotSize' => 'SearchDoubleField',
-        'locationInventoryCostTemplate' => 'SearchMultiSelectField',
-        'locationInvtClassification' => 'SearchEnumMultiSelectField',
-        'locationInvtCountInterval' => 'SearchLongField',
-        'locationLastInvtCountDate' => 'SearchDateField',
-        'locationLeadTime' => 'SearchLongField',
-        'locationNextInvtCountDate' => 'SearchDateField',
-        'locationPeriodicLotSizeDays' => 'SearchLongField',
-        'locationPeriodicLotSizeType' => 'SearchEnumMultiSelectField',
-        'locationPreferredStockLevel' => 'SearchDoubleField',
-        'locationQtyAvailForStorePickup' => 'SearchDoubleField',
-        'locationQuantityAvailable' => 'SearchDoubleField',
-        'locationQuantityBackOrdered' => 'SearchDoubleField',
-        'locationQuantityCommitted' => 'SearchDoubleField',
-        'locationQuantityInTransit' => 'SearchDoubleField',
-        'locationQuantityOnHand' => 'SearchDoubleField',
-        'locationQuantityOnOrder' => 'SearchDoubleField',
-        'locationReorderPoint' => 'SearchDoubleField',
-        'locationRescheduleInDays' => 'SearchLongField',
-        'locationRescheduleOutDays' => 'SearchLongField',
-        'locationSafetyStockLevel' => 'SearchDoubleField',
-        'locationStorePickupBufferStock' => 'SearchDoubleField',
-        'locationSupplyLotSizingMethod' => 'SearchEnumMultiSelectField',
-        'locationSupplyTimeFence' => 'SearchLongField',
-        'locationSupplyType' => 'SearchEnumMultiSelectField',
-        'locationTotalValue' => 'SearchDoubleField',
-        'locBackwardConsumptionDays' => 'SearchLongField',
-        'locForwardConsumptionDays' => 'SearchLongField',
-        'manufacturer' => 'SearchStringField',
-        'manufactureraddr1' => 'SearchStringField',
-        'manufacturerCity' => 'SearchStringField',
-        'manufacturerState' => 'SearchStringField',
-        'manufacturerTariff' => 'SearchStringField',
-        'manufacturerTaxId' => 'SearchStringField',
-        'manufacturerZip' => 'SearchStringField',
-        'manufacturingChargeItem' => 'SearchBooleanField',
-        'matchBillToReceipt' => 'SearchBooleanField',
-        'matrix' => 'SearchBooleanField',
-        'matrixChild' => 'SearchBooleanField',
-        'maximumQuantity' => 'SearchLongField',
-        'metaTagHtml' => 'SearchStringField',
-        'minimumQuantity' => 'SearchLongField',
-        'mossApplies' => 'SearchBooleanField',
-        'mpn' => 'SearchStringField',
-        'multManufactureAddr' => 'SearchBooleanField',
-        'nexTagCategory' => 'SearchStringField',
-        'nexTagProductFeed' => 'SearchBooleanField',
-        'nextInvtCountDate' => 'SearchDateField',
-        'numActiveListings' => 'SearchLongField',
-        'numberAllowedDownloads' => 'SearchDoubleField',
-        'numCurrentlyListed' => 'SearchLongField',
-        'obsoleteDate' => 'SearchDateField',
-        'obsoleteRevision' => 'SearchMultiSelectField',
-        'offerSupport' => 'SearchBooleanField',
-        'onlineCustomerPrice' => 'SearchDoubleField',
-        'onSpecial' => 'SearchBooleanField',
-        'otherVendor' => 'SearchMultiSelectField',
-        'outOfStockBehavior' => 'SearchMultiSelectField',
-        'overallQuantityPricingType' => 'SearchEnumMultiSelectField',
-        'overheadType' => 'SearchEnumMultiSelectField',
-        'pageTitle' => 'SearchStringField',
-        'parent' => 'SearchMultiSelectField',
-        'periodicLotSizeDays' => 'SearchLongField',
-        'periodicLotSizeType' => 'SearchEnumMultiSelectField',
-        'preferenceCriterion' => 'SearchStringField',
-        'preferredBin' => 'SearchBooleanField',
-        'preferredLocation' => 'SearchMultiSelectField',
-        'preferredStockLevel' => 'SearchDoubleField',
-        'preferredStockLevelDays' => 'SearchLongField',
-        'price' => 'SearchDoubleField',
-        'pricesIncludeTax' => 'SearchBooleanField',
-        'pricingGroup' => 'SearchMultiSelectField',
-        'primaryCategory' => 'SearchLongField',
-        'purchaseOrderAmount' => 'SearchDoubleField',
-        'purchaseOrderQuantity' => 'SearchDoubleField',
-        'purchaseOrderQuantityDiff' => 'SearchDoubleField',
-        'purchaseUnit' => 'SearchMultiSelectField',
-        'quantityAvailable' => 'SearchDoubleField',
-        'quantityBackOrdered' => 'SearchDoubleField',
-        'quantityCommitted' => 'SearchDoubleField',
-        'quantityOnHand' => 'SearchDoubleField',
-        'quantityOnOrder' => 'SearchDoubleField',
-        'quantityPricingSchedule' => 'SearchMultiSelectField',
-        'receiptAmount' => 'SearchDoubleField',
-        'receiptQuantity' => 'SearchDoubleField',
-        'receiptQuantityDiff' => 'SearchDoubleField',
-        'reorderMultiple' => 'SearchLongField',
-        'reorderPoint' => 'SearchDoubleField',
-        'rescheduleInDays' => 'SearchLongField',
-        'rescheduleOutDays' => 'SearchLongField',
-        'reservePrice' => 'SearchDoubleField',
-        'revenueAllocationGroup' => 'SearchMultiSelectField',
-        'revenueRecognitionRule' => 'SearchMultiSelectField',
-        'revRecForecastRule' => 'SearchMultiSelectField',
-        'revRecSchedule' => 'SearchMultiSelectField',
-        'roundUpAsComponent' => 'SearchBooleanField',
-        'safetyStockLevel' => 'SearchDoubleField',
-        'safetyStockLevelDays' => 'SearchLongField',
-        'salesDescription' => 'SearchStringField',
-        'saleUnit' => 'SearchMultiSelectField',
-        'sameAsPrimaryBookAmortization' => 'SearchBooleanField',
-        'sameAsPrimaryBookRevRec' => 'SearchBooleanField',
-        'scheduleBCode' => 'SearchEnumMultiSelectField',
-        'scheduleBNumber' => 'SearchStringField',
-        'scheduleBQuantity' => 'SearchStringField',
-        'searchKeywords' => 'SearchStringField',
-        'seasonalDemand' => 'SearchBooleanField',
-        'sellOnEBay' => 'SearchBooleanField',
-        'serialNumber' => 'SearchStringField',
-        'serialNumberLocation' => 'SearchMultiSelectField',
-        'shipIndividually' => 'SearchBooleanField',
-        'shipPackage' => 'SearchMultiSelectField',
-        'shippingCarrier' => 'SearchEnumMultiSelectField',
-        'shippingRate' => 'SearchDoubleField',
-        'shoppingDotComCategory' => 'SearchStringField',
-        'shoppingProductFeed' => 'SearchBooleanField',
-        'shopzillaCategoryId' => 'SearchLongField',
-        'shopzillaProductFeed' => 'SearchBooleanField',
-        'sitemapPriority' => 'SearchEnumMultiSelectField',
-        'softDescriptor' => 'SearchMultiSelectField',
-        'startingPrice' => 'SearchDoubleField',
-        'stockDescription' => 'SearchStringField',
-        'stockUnit' => 'SearchMultiSelectField',
-        'storeDescription' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'subType' => 'SearchEnumMultiSelectField',
-        'supplyLotSizingMethod' => 'SearchEnumMultiSelectField',
-        'supplyReplenishmentMethod' => 'SearchEnumMultiSelectField',
-        'supplyTimeFence' => 'SearchLongField',
-        'supplyType' => 'SearchEnumMultiSelectField',
-        'taxCode' => 'SearchMultiSelectField',
-        'taxSchedule' => 'SearchMultiSelectField',
-        'thumbnailUrl' => 'SearchStringField',
-        'totalValue' => 'SearchDoubleField',
-        'trackLandedCost' => 'SearchBooleanField',
-        'transferPrice' => 'SearchDoubleField',
-        'type' => 'SearchEnumMultiSelectField',
-        'unitsType' => 'SearchMultiSelectField',
-        'upcCode' => 'SearchStringField',
-        'urlComponent' => 'SearchStringField',
-        'useBins' => 'SearchBooleanField',
-        'useComponentYield' => 'SearchBooleanField',
-        'useMarginalRates' => 'SearchBooleanField',
-        'vendor' => 'SearchMultiSelectField',
-        'vendorCode' => 'SearchStringField',
-        'vendorCost' => 'SearchDoubleField',
-        'vendorCostEntered' => 'SearchDoubleField',
-        'vendorName' => 'SearchStringField',
-        'vendorPriceCurrency' => 'SearchMultiSelectField',
-        'vsoeDeferral' => 'SearchEnumMultiSelectField',
-        'vsoeDelivered' => 'SearchBooleanField',
-        'vsoePermitDiscount' => 'SearchEnumMultiSelectField',
-        'vsoePrice' => 'SearchDoubleField',
-        'vsoeSopGroup' => 'SearchEnumMultiSelectField',
-        'webSite' => 'SearchMultiSelectField',
-        'weight' => 'SearchDoubleField',
-        'yahooProductFeed' => 'SearchBooleanField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"accBookRevRecForecastRule" => "SearchMultiSelectField",
+		"account" => "SearchMultiSelectField",
+		"accountingBook" => "SearchMultiSelectField",
+		"accountingBookAmortization" => "SearchMultiSelectField",
+		"accountingBookCreatePlansOn" => "SearchMultiSelectField",
+		"accountingBookRevRecRule" => "SearchMultiSelectField",
+		"accountingBookRevRecSchedule" => "SearchMultiSelectField",
+		"allowedShippingMethod" => "SearchMultiSelectField",
+		"alternateDemandSourceItem" => "SearchMultiSelectField",
+		"atpLeadTime" => "SearchDoubleField",
+		"atpMethod" => "SearchEnumMultiSelectField",
+		"autoLeadTime" => "SearchBooleanField",
+		"autoPreferredStockLevel" => "SearchBooleanField",
+		"autoReorderPoint" => "SearchBooleanField",
+		"availableToPartners" => "SearchBooleanField",
+		"averageCost" => "SearchDoubleField",
+		"backwardConsumptionDays" => "SearchLongField",
+		"binNumber" => "SearchStringField",
+		"binOnHandAvail" => "SearchDoubleField",
+		"binOnHandCount" => "SearchDoubleField",
+		"bomQuantity" => "SearchDoubleField",
+		"buildEntireAssembly" => "SearchBooleanField",
+		"buildTime" => "SearchDoubleField",
+		"buyItNowPrice" => "SearchDoubleField",
+		"caption" => "SearchStringField",
+		"category" => "SearchMultiSelectField",
+		"class" => "SearchMultiSelectField",
+		"component" => "SearchMultiSelectField",
+		"componentOf" => "SearchMultiSelectField",
+		"componentYield" => "SearchDoubleField",
+		"consumptionUnit" => "SearchMultiSelectField",
+		"contingentRevenueHandling" => "SearchBooleanField",
+		"copyDescription" => "SearchBooleanField",
+		"correlatedItem" => "SearchMultiSelectField",
+		"correlatedItemCorrelation" => "SearchDoubleField",
+		"correlatedItemCount" => "SearchLongField",
+		"correlatedItemLift" => "SearchDoubleField",
+		"correlatedItemPurchaseRate" => "SearchDoubleField",
+		"cost" => "SearchDoubleField",
+		"costAccountingStatus" => "SearchEnumMultiSelectField",
+		"costCategory" => "SearchMultiSelectField",
+		"costEstimate" => "SearchDoubleField",
+		"costEstimateType" => "SearchEnumMultiSelectField",
+		"costingMethod" => "SearchEnumMultiSelectField",
+		"countryOfManufacture" => "SearchEnumMultiSelectField",
+		"created" => "SearchDateField",
+		"createJob" => "SearchBooleanField",
+		"createRevenuePlansOn" => "SearchMultiSelectField",
+		"dateViewed" => "SearchDateField",
+		"daysBeforeExpiration" => "SearchDoubleField",
+		"defaultReturnCost" => "SearchDoubleField",
+		"defaultShippingMethod" => "SearchMultiSelectField",
+		"deferRevRec" => "SearchBooleanField",
+		"demandModifier" => "SearchDoubleField",
+		"demandSource" => "SearchEnumMultiSelectField",
+		"demandTimeFence" => "SearchLongField",
+		"department" => "SearchMultiSelectField",
+		"directRevenuePosting" => "SearchBooleanField",
+		"displayIneBayStore" => "SearchBooleanField",
+		"displayName" => "SearchStringField",
+		"distributionCategory" => "SearchMultiSelectField",
+		"distributionNetwork" => "SearchMultiSelectField",
+		"dontShowPrice" => "SearchBooleanField",
+		"eBayItemDescription" => "SearchStringField",
+		"eBayItemSubtitle" => "SearchStringField",
+		"eBayItemTitle" => "SearchStringField",
+		"ebayRelistingOption" => "SearchEnumMultiSelectField",
+		"effectiveBomControl" => "SearchEnumMultiSelectField",
+		"effectiveDate" => "SearchDateField",
+		"effectiveRevision" => "SearchMultiSelectField",
+		"endAuctionsWhenOutOfStock" => "SearchBooleanField",
+		"excludeFromSitemap" => "SearchBooleanField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"featuredDescription" => "SearchStringField",
+		"feedDescription" => "SearchStringField",
+		"feedName" => "SearchStringField",
+		"fixedLotSize" => "SearchDoubleField",
+		"forwardConsumptionDays" => "SearchLongField",
+		"fraudRisk" => "SearchEnumMultiSelectField",
+		"froogleProductFeed" => "SearchBooleanField",
+		"futureHorizon" => "SearchLongField",
+		"fxCost" => "SearchDoubleField",
+		"generateAccruals" => "SearchBooleanField",
+		"giftCertAuthCode" => "SearchStringField",
+		"giftCertEmail" => "SearchStringField",
+		"giftCertExpDate" => "SearchDateField",
+		"giftCertFrom" => "SearchStringField",
+		"giftCertMsg" => "SearchStringField",
+		"giftCertOrigAmt" => "SearchStringField",
+		"giftCertRecipient" => "SearchStringField",
+		"hierarchyNode" => "SearchMultiSelectField",
+		"hierarchyVersion" => "SearchMultiSelectField",
+		"imageUrl" => "SearchStringField",
+		"includeChildren" => "SearchBooleanField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"inventoryLocation" => "SearchMultiSelectField",
+		"invtClassification" => "SearchEnumMultiSelectField",
+		"invtCountInterval" => "SearchLongField",
+		"isAvailable" => "SearchBooleanField",
+		"isDropShipItem" => "SearchBooleanField",
+		"isFulfillable" => "SearchBooleanField",
+		"isGcoCompliant" => "SearchBooleanField",
+		"isInactive" => "SearchBooleanField",
+		"isLotItem" => "SearchBooleanField",
+		"isOnline" => "SearchBooleanField",
+		"isPreferredVendor" => "SearchBooleanField",
+		"isSerialItem" => "SearchBooleanField",
+		"isSpecialOrderItem" => "SearchBooleanField",
+		"isSpecialWorkOrderItem" => "SearchBooleanField",
+		"isStorePickupAllowed" => "SearchBooleanField",
+		"issueProduct" => "SearchMultiSelectField",
+		"isTaxable" => "SearchBooleanField",
+		"isVsoeBundle" => "SearchBooleanField",
+		"isWip" => "SearchBooleanField",
+		"itemId" => "SearchStringField",
+		"itemRevenueCategory" => "SearchMultiSelectField",
+		"itemUrl" => "SearchStringField",
+		"lastInvtCountDate" => "SearchDateField",
+		"lastModifiedDate" => "SearchDateField",
+		"lastPurchasePrice" => "SearchDoubleField",
+		"lastQuantityAvailableChange" => "SearchDateField",
+		"leadTime" => "SearchLongField",
+		"listingDuration" => "SearchEnumMultiSelectField",
+		"location" => "SearchMultiSelectField",
+		"locationAllowStorePickup" => "SearchBooleanField",
+		"locationAtpLeadTime" => "SearchDoubleField",
+		"locationAverageCost" => "SearchDoubleField",
+		"locationBuildTime" => "SearchDoubleField",
+		"locationCost" => "SearchDoubleField",
+		"locationCostAccountingStatus" => "SearchEnumMultiSelectField",
+		"locationDefaultReturnCost" => "SearchDoubleField",
+		"locationDemandSource" => "SearchEnumMultiSelectField",
+		"locationDemandTimeFence" => "SearchLongField",
+		"locationFixedLotSize" => "SearchDoubleField",
+		"locationInventoryCostTemplate" => "SearchMultiSelectField",
+		"locationInvtClassification" => "SearchEnumMultiSelectField",
+		"locationInvtCountInterval" => "SearchLongField",
+		"locationLastInvtCountDate" => "SearchDateField",
+		"locationLeadTime" => "SearchLongField",
+		"locationNextInvtCountDate" => "SearchDateField",
+		"locationPeriodicLotSizeDays" => "SearchLongField",
+		"locationPeriodicLotSizeType" => "SearchEnumMultiSelectField",
+		"locationPreferredStockLevel" => "SearchDoubleField",
+		"locationQtyAvailForStorePickup" => "SearchDoubleField",
+		"locationQuantityAvailable" => "SearchDoubleField",
+		"locationQuantityBackOrdered" => "SearchDoubleField",
+		"locationQuantityCommitted" => "SearchDoubleField",
+		"locationQuantityInTransit" => "SearchDoubleField",
+		"locationQuantityOnHand" => "SearchDoubleField",
+		"locationQuantityOnOrder" => "SearchDoubleField",
+		"locationReorderPoint" => "SearchDoubleField",
+		"locationRescheduleInDays" => "SearchLongField",
+		"locationRescheduleOutDays" => "SearchLongField",
+		"locationSafetyStockLevel" => "SearchDoubleField",
+		"locationStorePickupBufferStock" => "SearchDoubleField",
+		"locationSupplyLotSizingMethod" => "SearchEnumMultiSelectField",
+		"locationSupplyTimeFence" => "SearchLongField",
+		"locationSupplyType" => "SearchEnumMultiSelectField",
+		"locationTotalValue" => "SearchDoubleField",
+		"locBackwardConsumptionDays" => "SearchLongField",
+		"locForwardConsumptionDays" => "SearchLongField",
+		"manufacturer" => "SearchStringField",
+		"manufactureraddr1" => "SearchStringField",
+		"manufacturerCity" => "SearchStringField",
+		"manufacturerState" => "SearchStringField",
+		"manufacturerTariff" => "SearchStringField",
+		"manufacturerTaxId" => "SearchStringField",
+		"manufacturerZip" => "SearchStringField",
+		"manufacturingChargeItem" => "SearchBooleanField",
+		"matchBillToReceipt" => "SearchBooleanField",
+		"matrix" => "SearchBooleanField",
+		"matrixChild" => "SearchBooleanField",
+		"maximumQuantity" => "SearchLongField",
+		"metaTagHtml" => "SearchStringField",
+		"minimumQuantity" => "SearchLongField",
+		"mossApplies" => "SearchBooleanField",
+		"mpn" => "SearchStringField",
+		"multManufactureAddr" => "SearchBooleanField",
+		"nexTagCategory" => "SearchStringField",
+		"nexTagProductFeed" => "SearchBooleanField",
+		"nextInvtCountDate" => "SearchDateField",
+		"numActiveListings" => "SearchLongField",
+		"numberAllowedDownloads" => "SearchDoubleField",
+		"numCurrentlyListed" => "SearchLongField",
+		"obsoleteDate" => "SearchDateField",
+		"obsoleteRevision" => "SearchMultiSelectField",
+		"offerSupport" => "SearchBooleanField",
+		"onlineCustomerPrice" => "SearchDoubleField",
+		"onSpecial" => "SearchBooleanField",
+		"otherVendor" => "SearchMultiSelectField",
+		"outOfStockBehavior" => "SearchMultiSelectField",
+		"overallQuantityPricingType" => "SearchEnumMultiSelectField",
+		"overheadType" => "SearchEnumMultiSelectField",
+		"pageTitle" => "SearchStringField",
+		"parent" => "SearchMultiSelectField",
+		"periodicLotSizeDays" => "SearchLongField",
+		"periodicLotSizeType" => "SearchEnumMultiSelectField",
+		"preferenceCriterion" => "SearchStringField",
+		"preferredBin" => "SearchBooleanField",
+		"preferredLocation" => "SearchMultiSelectField",
+		"preferredStockLevel" => "SearchDoubleField",
+		"preferredStockLevelDays" => "SearchLongField",
+		"price" => "SearchDoubleField",
+		"pricesIncludeTax" => "SearchBooleanField",
+		"pricingGroup" => "SearchMultiSelectField",
+		"primaryCategory" => "SearchLongField",
+		"purchaseOrderAmount" => "SearchDoubleField",
+		"purchaseOrderQuantity" => "SearchDoubleField",
+		"purchaseOrderQuantityDiff" => "SearchDoubleField",
+		"purchaseUnit" => "SearchMultiSelectField",
+		"quantityAvailable" => "SearchDoubleField",
+		"quantityBackOrdered" => "SearchDoubleField",
+		"quantityCommitted" => "SearchDoubleField",
+		"quantityOnHand" => "SearchDoubleField",
+		"quantityOnOrder" => "SearchDoubleField",
+		"quantityPricingSchedule" => "SearchMultiSelectField",
+		"receiptAmount" => "SearchDoubleField",
+		"receiptQuantity" => "SearchDoubleField",
+		"receiptQuantityDiff" => "SearchDoubleField",
+		"reorderMultiple" => "SearchLongField",
+		"reorderPoint" => "SearchDoubleField",
+		"rescheduleInDays" => "SearchLongField",
+		"rescheduleOutDays" => "SearchLongField",
+		"reservePrice" => "SearchDoubleField",
+		"revenueAllocationGroup" => "SearchMultiSelectField",
+		"revenueRecognitionRule" => "SearchMultiSelectField",
+		"revRecForecastRule" => "SearchMultiSelectField",
+		"revRecSchedule" => "SearchMultiSelectField",
+		"roundUpAsComponent" => "SearchBooleanField",
+		"safetyStockLevel" => "SearchDoubleField",
+		"safetyStockLevelDays" => "SearchLongField",
+		"salesDescription" => "SearchStringField",
+		"saleUnit" => "SearchMultiSelectField",
+		"sameAsPrimaryBookAmortization" => "SearchBooleanField",
+		"sameAsPrimaryBookRevRec" => "SearchBooleanField",
+		"scheduleBCode" => "SearchEnumMultiSelectField",
+		"scheduleBNumber" => "SearchStringField",
+		"scheduleBQuantity" => "SearchStringField",
+		"searchKeywords" => "SearchStringField",
+		"seasonalDemand" => "SearchBooleanField",
+		"sellOnEBay" => "SearchBooleanField",
+		"serialNumber" => "SearchStringField",
+		"serialNumberLocation" => "SearchMultiSelectField",
+		"shipIndividually" => "SearchBooleanField",
+		"shipPackage" => "SearchMultiSelectField",
+		"shippingCarrier" => "SearchEnumMultiSelectField",
+		"shippingRate" => "SearchDoubleField",
+		"shoppingDotComCategory" => "SearchStringField",
+		"shoppingProductFeed" => "SearchBooleanField",
+		"shopzillaCategoryId" => "SearchLongField",
+		"shopzillaProductFeed" => "SearchBooleanField",
+		"sitemapPriority" => "SearchEnumMultiSelectField",
+		"softDescriptor" => "SearchMultiSelectField",
+		"startingPrice" => "SearchDoubleField",
+		"stockDescription" => "SearchStringField",
+		"stockUnit" => "SearchMultiSelectField",
+		"storeDescription" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"subType" => "SearchEnumMultiSelectField",
+		"supplyLotSizingMethod" => "SearchEnumMultiSelectField",
+		"supplyReplenishmentMethod" => "SearchEnumMultiSelectField",
+		"supplyTimeFence" => "SearchLongField",
+		"supplyType" => "SearchEnumMultiSelectField",
+		"taxCode" => "SearchMultiSelectField",
+		"taxSchedule" => "SearchMultiSelectField",
+		"thumbnailUrl" => "SearchStringField",
+		"totalValue" => "SearchDoubleField",
+		"trackLandedCost" => "SearchBooleanField",
+		"transferPrice" => "SearchDoubleField",
+		"type" => "SearchEnumMultiSelectField",
+		"unitsType" => "SearchMultiSelectField",
+		"upcCode" => "SearchStringField",
+		"urlComponent" => "SearchStringField",
+		"useBins" => "SearchBooleanField",
+		"useComponentYield" => "SearchBooleanField",
+		"useMarginalRates" => "SearchBooleanField",
+		"vendor" => "SearchMultiSelectField",
+		"vendorCode" => "SearchStringField",
+		"vendorCost" => "SearchDoubleField",
+		"vendorCostEntered" => "SearchDoubleField",
+		"vendorName" => "SearchStringField",
+		"vendorPriceCurrency" => "SearchMultiSelectField",
+		"vsoeDeferral" => "SearchEnumMultiSelectField",
+		"vsoeDelivered" => "SearchBooleanField",
+		"vsoePermitDiscount" => "SearchEnumMultiSelectField",
+		"vsoePrice" => "SearchDoubleField",
+		"vsoeSopGroup" => "SearchEnumMultiSelectField",
+		"webSite" => "SearchMultiSelectField",
+		"weight" => "SearchDoubleField",
+		"yahooProductFeed" => "SearchBooleanField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

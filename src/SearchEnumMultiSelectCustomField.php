@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchEnumMultiSelectCustomField.
+ * SearchEnumMultiSelectCustomField
  */
-class SearchEnumMultiSelectCustomField extends SearchCustomField
-{
-    /**
-     * @var string[]
-     */
-    public $searchValue;
-    /**
-     * @var SearchEnumMultiSelectFieldOperator
-     */
-    public $operator;
+class SearchEnumMultiSelectCustomField extends SearchCustomField {
+	/**
+	 * @access public
+	 * @var string[]
+	 */
+	public $searchValue;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectFieldOperator
+	 */
+	public $operator;
 
-    public static $paramtypesmap = array(
-        'searchValue' => 'string[]',
-        'operator' => 'SearchEnumMultiSelectFieldOperator',
-    );
+	static $paramtypesmap = array(
+		"searchValue" => "string[]",
+		"operator" => "SearchEnumMultiSelectFieldOperator",
+	);
 }

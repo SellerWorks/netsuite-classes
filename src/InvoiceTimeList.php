@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InvoiceTimeList.
+ * InvoiceTimeList
  */
-class InvoiceTimeList
-{
-    /**
-     * @var InvoiceTime[]
-     */
-    public $time;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InvoiceTimeList {
+	/**
+	 * @access public
+	 * @var InvoiceTime[]
+	 */
+	public $time;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'time' => 'InvoiceTime[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"time" => "InvoiceTime[]",
+		"replaceAll" => "boolean",
+	);
 }

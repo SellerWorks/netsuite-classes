@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchDoubleField.
+ * SearchDoubleField
  */
-class SearchDoubleField
-{
-    /**
-     * @var float
-     */
-    public $searchValue;
-    /**
-     * @var float
-     */
-    public $searchValue2;
-    /**
-     * @var SearchDoubleFieldOperator
-     */
-    public $operator;
+class SearchDoubleField {
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $searchValue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $searchValue2;
+	/**
+	 * @access public
+	 * @var SearchDoubleFieldOperator
+	 */
+	public $operator;
 
-    public static $paramtypesmap = array(
-        'searchValue' => 'float',
-        'searchValue2' => 'float',
-        'operator' => 'SearchDoubleFieldOperator',
-    );
+	static $paramtypesmap = array(
+		"searchValue" => "float",
+		"searchValue2" => "float",
+		"operator" => "SearchDoubleFieldOperator",
+	);
 }

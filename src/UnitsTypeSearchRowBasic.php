@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UnitsTypeSearchRowBasic.
+ * UnitsTypeSearchRowBasic
  */
-class UnitsTypeSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $abbreviation;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $baseUnit;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $conversionRate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInActive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $pluralAbbreviation;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $pluralName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $unitName;
+class UnitsTypeSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $abbreviation;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $baseUnit;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $conversionRate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInActive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $pluralAbbreviation;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $pluralName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $unitName;
 
-    public static $paramtypesmap = array(
-        'abbreviation' => 'SearchColumnStringField[]',
-        'baseUnit' => 'SearchColumnBooleanField[]',
-        'conversionRate' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInActive' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
-        'pluralAbbreviation' => 'SearchColumnStringField[]',
-        'pluralName' => 'SearchColumnStringField[]',
-        'unitName' => 'SearchColumnStringField[]',
-    );
+	static $paramtypesmap = array(
+		"abbreviation" => "SearchColumnStringField[]",
+		"baseUnit" => "SearchColumnBooleanField[]",
+		"conversionRate" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInActive" => "SearchColumnBooleanField[]",
+		"name" => "SearchColumnStringField[]",
+		"pluralAbbreviation" => "SearchColumnStringField[]",
+		"pluralName" => "SearchColumnStringField[]",
+		"unitName" => "SearchColumnStringField[]",
+	);
 }

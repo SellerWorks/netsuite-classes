@@ -11,161 +11,190 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskSearchRowBasic.
+ * ManufacturingOperationTaskSearchRowBasic
  */
-class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $actualRunTime;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $actualSetupTime;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $completedQuantity;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $endDate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $estimatedWork;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $id;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $inputQuantity;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $laborResources;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $lagAmount;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $lagType;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $lagUnits;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $machineResources;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $manufacturingCostTemplate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $manufacturingWorkCenter;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $message;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $order;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $predecessor;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $predecessorType;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $remainingQuantity;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $runRate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $runTime;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $sequence;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $setupTime;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $status;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $workOrder;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $actualRunTime;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $actualSetupTime;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $completedQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $estimatedWork;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $inputQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $laborResources;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $lagAmount;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $lagType;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $lagUnits;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $machineResources;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $manufacturingCostTemplate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $manufacturingWorkCenter;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $order;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $predecessor;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $predecessorType;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $remainingQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $runRate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $runTime;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $sequence;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $setupTime;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $workOrder;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'actualRunTime' => 'SearchColumnDoubleField[]',
-        'actualSetupTime' => 'SearchColumnDoubleField[]',
-        'completedQuantity' => 'SearchColumnDoubleField[]',
-        'endDate' => 'SearchColumnDateField[]',
-        'estimatedWork' => 'SearchColumnDoubleField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'id' => 'SearchColumnLongField[]',
-        'inputQuantity' => 'SearchColumnDoubleField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'laborResources' => 'SearchColumnLongField[]',
-        'lagAmount' => 'SearchColumnDoubleField[]',
-        'lagType' => 'SearchColumnEnumSelectField[]',
-        'lagUnits' => 'SearchColumnStringField[]',
-        'machineResources' => 'SearchColumnLongField[]',
-        'manufacturingCostTemplate' => 'SearchColumnSelectField[]',
-        'manufacturingWorkCenter' => 'SearchColumnSelectField[]',
-        'message' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'order' => 'SearchColumnDoubleField[]',
-        'predecessor' => 'SearchColumnSelectField[]',
-        'predecessorType' => 'SearchColumnStringField[]',
-        'remainingQuantity' => 'SearchColumnDoubleField[]',
-        'runRate' => 'SearchColumnDoubleField[]',
-        'runTime' => 'SearchColumnDoubleField[]',
-        'sequence' => 'SearchColumnLongField[]',
-        'setupTime' => 'SearchColumnDoubleField[]',
-        'startDate' => 'SearchColumnDateField[]',
-        'status' => 'SearchColumnSelectField[]',
-        'workOrder' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"actualRunTime" => "SearchColumnDoubleField[]",
+		"actualSetupTime" => "SearchColumnDoubleField[]",
+		"completedQuantity" => "SearchColumnDoubleField[]",
+		"endDate" => "SearchColumnDateField[]",
+		"estimatedWork" => "SearchColumnDoubleField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"id" => "SearchColumnLongField[]",
+		"inputQuantity" => "SearchColumnDoubleField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"laborResources" => "SearchColumnDoubleField[]",
+		"lagAmount" => "SearchColumnDoubleField[]",
+		"lagType" => "SearchColumnEnumSelectField[]",
+		"lagUnits" => "SearchColumnStringField[]",
+		"machineResources" => "SearchColumnDoubleField[]",
+		"manufacturingCostTemplate" => "SearchColumnSelectField[]",
+		"manufacturingWorkCenter" => "SearchColumnSelectField[]",
+		"message" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"order" => "SearchColumnDoubleField[]",
+		"predecessor" => "SearchColumnSelectField[]",
+		"predecessorType" => "SearchColumnStringField[]",
+		"remainingQuantity" => "SearchColumnDoubleField[]",
+		"runRate" => "SearchColumnDoubleField[]",
+		"runTime" => "SearchColumnDoubleField[]",
+		"sequence" => "SearchColumnLongField[]",
+		"setupTime" => "SearchColumnDoubleField[]",
+		"startDate" => "SearchColumnDateField[]",
+		"status" => "SearchColumnSelectField[]",
+		"workOrder" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

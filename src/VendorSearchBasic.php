@@ -11,406 +11,496 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorSearchBasic.
+ * VendorSearchBasic
  */
-class VendorSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchStringField
-     */
-    public $accountNumber;
-    /**
-     * @var SearchStringField
-     */
-    public $address;
-    /**
-     * @var SearchStringField
-     */
-    public $addressee;
-    /**
-     * @var SearchStringField
-     */
-    public $addressLabel;
-    /**
-     * @var SearchStringField
-     */
-    public $addressPhone;
-    /**
-     * @var SearchStringField
-     */
-    public $attention;
-    /**
-     * @var SearchDoubleField
-     */
-    public $balance;
-    /**
-     * @var SearchStringField
-     */
-    public $billAddress;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $category;
-    /**
-     * @var SearchStringField
-     */
-    public $city;
-    /**
-     * @var SearchStringField
-     */
-    public $comments;
-    /**
-     * @var SearchStringField
-     */
-    public $contact;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $country;
-    /**
-     * @var SearchStringField
-     */
-    public $county;
-    /**
-     * @var SearchDoubleField
-     */
-    public $creditLimit;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $currency;
-    /**
-     * @var SearchDoubleField
-     */
-    public $currentExchangeRate;
-    /**
-     * @var SearchDateField
-     */
-    public $dateCreated;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $defaultTaxReg;
-    /**
-     * @var SearchStringField
-     */
-    public $defaultTaxRegText;
-    /**
-     * @var SearchBooleanField
-     */
-    public $eligibleForCommission;
-    /**
-     * @var SearchStringField
-     */
-    public $email;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $emailPreference;
-    /**
-     * @var SearchBooleanField
-     */
-    public $emailTransactions;
-    /**
-     * @var SearchStringField
-     */
-    public $entityId;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $expenseAccount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchStringField
-     */
-    public $fax;
-    /**
-     * @var SearchBooleanField
-     */
-    public $faxTransactions;
-    /**
-     * @var SearchStringField
-     */
-    public $firstName;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxBalance;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxUnbilledOrders;
-    /**
-     * @var SearchBooleanField
-     */
-    public $giveAccess;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $group;
-    /**
-     * @var SearchBooleanField
-     */
-    public $hasDuplicates;
-    /**
-     * @var SearchStringField
-     */
-    public $image;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $incoterm;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $is1099Eligible;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDefaultBilling;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDefaultShipping;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isJobResourceVend;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isPerson;
-    /**
-     * @var SearchDoubleField
-     */
-    public $laborCost;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $language;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchStringField
-     */
-    public $lastName;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $level;
-    /**
-     * @var SearchStringField
-     */
-    public $middleName;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $otherRelationships;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payablesAccount;
-    /**
-     * @var SearchStringField
-     */
-    public $pec;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $permission;
-    /**
-     * @var SearchStringField
-     */
-    public $phone;
-    /**
-     * @var SearchStringField
-     */
-    public $phoneticName;
-    /**
-     * @var SearchBooleanField
-     */
-    public $printTransactions;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $purchaseOrderQuantityDiff;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $receiptQuantityDiff;
-    /**
-     * @var SearchStringField
-     */
-    public $salutation;
-    /**
-     * @var SearchStringField
-     */
-    public $shipAddress;
-    /**
-     * @var SearchStringField
-     */
-    public $state;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchStringField
-     */
-    public $taxIdNum;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $timeApprover;
-    /**
-     * @var SearchStringField
-     */
-    public $title;
-    /**
-     * @var SearchDoubleField
-     */
-    public $unbilledOrders;
-    /**
-     * @var SearchStringField
-     */
-    public $url;
-    /**
-     * @var SearchStringField
-     */
-    public $vatRegNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $workCalendar;
-    /**
-     * @var SearchStringField
-     */
-    public $zipCode;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class VendorSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $accountNumber;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $address;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressee;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressLabel;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $addressPhone;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $attention;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billAddress;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $contact;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $county;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $creditLimit;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $currentExchangeRate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $defaultTaxReg;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $defaultTaxRegText;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $eligibleForCommission;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $emailPreference;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $emailTransactions;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $faxTransactions;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $firstName;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxBalance;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxUnbilledOrders;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $group;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $hasDuplicates;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $incoterm;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $is1099Eligible;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDefaultBilling;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDefaultShipping;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isJobResourceVend;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isPerson;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $laborCost;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $language;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $lastName;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $level;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $middleName;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $otherRelationships;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payablesAccount;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $pec;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $permission;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $predConfidence;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $predictedDays;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $printTransactions;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $purchaseOrderQuantityDiff;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $receiptQuantityDiff;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $salutation;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipAddress;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $taxIdNum;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $timeApprover;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $unbilledOrders;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $url;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $vatRegNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $workCalendar;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $zipCode;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'accountNumber' => 'SearchStringField',
-        'address' => 'SearchStringField',
-        'addressee' => 'SearchStringField',
-        'addressLabel' => 'SearchStringField',
-        'addressPhone' => 'SearchStringField',
-        'attention' => 'SearchStringField',
-        'balance' => 'SearchDoubleField',
-        'billAddress' => 'SearchStringField',
-        'category' => 'SearchMultiSelectField',
-        'city' => 'SearchStringField',
-        'comments' => 'SearchStringField',
-        'contact' => 'SearchStringField',
-        'country' => 'SearchEnumMultiSelectField',
-        'county' => 'SearchStringField',
-        'creditLimit' => 'SearchDoubleField',
-        'currency' => 'SearchMultiSelectField',
-        'currentExchangeRate' => 'SearchDoubleField',
-        'dateCreated' => 'SearchDateField',
-        'defaultTaxReg' => 'SearchMultiSelectField',
-        'defaultTaxRegText' => 'SearchStringField',
-        'eligibleForCommission' => 'SearchBooleanField',
-        'email' => 'SearchStringField',
-        'emailPreference' => 'SearchEnumMultiSelectField',
-        'emailTransactions' => 'SearchBooleanField',
-        'entityId' => 'SearchStringField',
-        'expenseAccount' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'fax' => 'SearchStringField',
-        'faxTransactions' => 'SearchBooleanField',
-        'firstName' => 'SearchStringField',
-        'fxBalance' => 'SearchDoubleField',
-        'fxUnbilledOrders' => 'SearchDoubleField',
-        'giveAccess' => 'SearchBooleanField',
-        'globalSubscriptionStatus' => 'SearchEnumMultiSelectField',
-        'group' => 'SearchMultiSelectField',
-        'hasDuplicates' => 'SearchBooleanField',
-        'image' => 'SearchStringField',
-        'incoterm' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'is1099Eligible' => 'SearchBooleanField',
-        'isDefaultBilling' => 'SearchBooleanField',
-        'isDefaultShipping' => 'SearchBooleanField',
-        'isInactive' => 'SearchBooleanField',
-        'isJobResourceVend' => 'SearchBooleanField',
-        'isPerson' => 'SearchBooleanField',
-        'laborCost' => 'SearchDoubleField',
-        'language' => 'SearchEnumMultiSelectField',
-        'lastModifiedDate' => 'SearchDateField',
-        'lastName' => 'SearchStringField',
-        'level' => 'SearchEnumMultiSelectField',
-        'middleName' => 'SearchStringField',
-        'otherRelationships' => 'SearchEnumMultiSelectField',
-        'payablesAccount' => 'SearchMultiSelectField',
-        'pec' => 'SearchStringField',
-        'permission' => 'SearchEnumMultiSelectField',
-        'phone' => 'SearchStringField',
-        'phoneticName' => 'SearchStringField',
-        'printTransactions' => 'SearchBooleanField',
-        'purchaseOrderAmount' => 'SearchDoubleField',
-        'purchaseOrderQuantity' => 'SearchDoubleField',
-        'purchaseOrderQuantityDiff' => 'SearchDoubleField',
-        'receiptAmount' => 'SearchDoubleField',
-        'receiptQuantity' => 'SearchDoubleField',
-        'receiptQuantityDiff' => 'SearchDoubleField',
-        'salutation' => 'SearchStringField',
-        'shipAddress' => 'SearchStringField',
-        'state' => 'SearchStringField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'taxIdNum' => 'SearchStringField',
-        'timeApprover' => 'SearchMultiSelectField',
-        'title' => 'SearchStringField',
-        'unbilledOrders' => 'SearchDoubleField',
-        'url' => 'SearchStringField',
-        'vatRegNumber' => 'SearchStringField',
-        'workCalendar' => 'SearchMultiSelectField',
-        'zipCode' => 'SearchStringField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"accountNumber" => "SearchStringField",
+		"address" => "SearchStringField",
+		"addressee" => "SearchStringField",
+		"addressLabel" => "SearchStringField",
+		"addressPhone" => "SearchStringField",
+		"attention" => "SearchStringField",
+		"balance" => "SearchDoubleField",
+		"billAddress" => "SearchStringField",
+		"category" => "SearchMultiSelectField",
+		"city" => "SearchStringField",
+		"comments" => "SearchStringField",
+		"contact" => "SearchStringField",
+		"country" => "SearchEnumMultiSelectField",
+		"county" => "SearchStringField",
+		"creditLimit" => "SearchDoubleField",
+		"currency" => "SearchMultiSelectField",
+		"currentExchangeRate" => "SearchDoubleField",
+		"dateCreated" => "SearchDateField",
+		"defaultTaxReg" => "SearchMultiSelectField",
+		"defaultTaxRegText" => "SearchStringField",
+		"eligibleForCommission" => "SearchBooleanField",
+		"email" => "SearchStringField",
+		"emailPreference" => "SearchEnumMultiSelectField",
+		"emailTransactions" => "SearchBooleanField",
+		"entityId" => "SearchStringField",
+		"expenseAccount" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"fax" => "SearchStringField",
+		"faxTransactions" => "SearchBooleanField",
+		"firstName" => "SearchStringField",
+		"fxBalance" => "SearchDoubleField",
+		"fxUnbilledOrders" => "SearchDoubleField",
+		"giveAccess" => "SearchBooleanField",
+		"globalSubscriptionStatus" => "SearchEnumMultiSelectField",
+		"group" => "SearchMultiSelectField",
+		"hasDuplicates" => "SearchBooleanField",
+		"image" => "SearchStringField",
+		"incoterm" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"is1099Eligible" => "SearchBooleanField",
+		"isDefaultBilling" => "SearchBooleanField",
+		"isDefaultShipping" => "SearchBooleanField",
+		"isInactive" => "SearchBooleanField",
+		"isJobResourceVend" => "SearchBooleanField",
+		"isPerson" => "SearchBooleanField",
+		"laborCost" => "SearchDoubleField",
+		"language" => "SearchEnumMultiSelectField",
+		"lastModifiedDate" => "SearchDateField",
+		"lastName" => "SearchStringField",
+		"level" => "SearchEnumMultiSelectField",
+		"middleName" => "SearchStringField",
+		"otherRelationships" => "SearchEnumMultiSelectField",
+		"payablesAccount" => "SearchMultiSelectField",
+		"pec" => "SearchStringField",
+		"permission" => "SearchEnumMultiSelectField",
+		"phone" => "SearchStringField",
+		"phoneticName" => "SearchStringField",
+		"predConfidence" => "SearchDoubleField",
+		"predictedDays" => "SearchDoubleField",
+		"printTransactions" => "SearchBooleanField",
+		"purchaseOrderAmount" => "SearchDoubleField",
+		"purchaseOrderQuantity" => "SearchDoubleField",
+		"purchaseOrderQuantityDiff" => "SearchDoubleField",
+		"receiptAmount" => "SearchDoubleField",
+		"receiptQuantity" => "SearchDoubleField",
+		"receiptQuantityDiff" => "SearchDoubleField",
+		"salutation" => "SearchStringField",
+		"shipAddress" => "SearchStringField",
+		"state" => "SearchStringField",
+		"subsidiary" => "SearchMultiSelectField",
+		"taxIdNum" => "SearchStringField",
+		"timeApprover" => "SearchMultiSelectField",
+		"title" => "SearchStringField",
+		"unbilledOrders" => "SearchDoubleField",
+		"url" => "SearchStringField",
+		"vatRegNumber" => "SearchStringField",
+		"workCalendar" => "SearchMultiSelectField",
+		"zipCode" => "SearchStringField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

@@ -11,111 +11,130 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FolderSearchBasic.
+ * FolderSearchBasic
  */
-class FolderSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $class;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $department;
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $group;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isTopLevel;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchLongField
-     */
-    public $numFiles;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $owner;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $parent;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $predecessor;
-    /**
-     * @var SearchBooleanField
-     */
-    public $private;
-    /**
-     * @var SearchLongField
-     */
-    public $size;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
+class FolderSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $group;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isTopLevel;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $numFiles;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $owner;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $predecessor;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $private;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $size;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
 
-    public static $paramtypesmap = array(
-        'class' => 'SearchMultiSelectField',
-        'department' => 'SearchMultiSelectField',
-        'description' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'group' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'isTopLevel' => 'SearchBooleanField',
-        'lastModifiedDate' => 'SearchDateField',
-        'location' => 'SearchMultiSelectField',
-        'name' => 'SearchStringField',
-        'numFiles' => 'SearchLongField',
-        'owner' => 'SearchMultiSelectField',
-        'parent' => 'SearchMultiSelectField',
-        'predecessor' => 'SearchMultiSelectField',
-        'private' => 'SearchBooleanField',
-        'size' => 'SearchLongField',
-        'subsidiary' => 'SearchMultiSelectField',
-    );
+	static $paramtypesmap = array(
+		"class" => "SearchMultiSelectField",
+		"department" => "SearchMultiSelectField",
+		"description" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"group" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"isTopLevel" => "SearchBooleanField",
+		"lastModifiedDate" => "SearchDateField",
+		"location" => "SearchMultiSelectField",
+		"name" => "SearchStringField",
+		"numFiles" => "SearchLongField",
+		"owner" => "SearchMultiSelectField",
+		"parent" => "SearchMultiSelectField",
+		"predecessor" => "SearchMultiSelectField",
+		"private" => "SearchBooleanField",
+		"size" => "SearchLongField",
+		"subsidiary" => "SearchMultiSelectField",
+	);
 }

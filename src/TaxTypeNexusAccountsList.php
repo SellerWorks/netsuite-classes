@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxTypeNexusAccountsList.
+ * TaxTypeNexusAccountsList
  */
-class TaxTypeNexusAccountsList
-{
-    /**
-     * @var TaxTypeNexusAccounts[]
-     */
-    public $taxTypeNexusAccounts;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class TaxTypeNexusAccountsList {
+	/**
+	 * @access public
+	 * @var TaxTypeNexusAccounts[]
+	 */
+	public $taxTypeNexusAccounts;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'taxTypeNexusAccounts' => 'TaxTypeNexusAccounts[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"taxTypeNexusAccounts" => "TaxTypeNexusAccounts[]",
+		"replaceAll" => "boolean",
+	);
 }

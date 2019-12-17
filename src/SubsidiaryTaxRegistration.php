@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiaryTaxRegistration.
+ * SubsidiaryTaxRegistration
  */
-class SubsidiaryTaxRegistration
-{
-    /**
-     * @var int
-     */
-    public $id;
-    /**
-     * @var Country
-     */
-    public $nexusCountry;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $taxAgency;
-    /**
-     * @var string
-     */
-    public $taxRegistrationNumber;
-    /**
-     * @var RecordRef
-     */
-    public $taxEngine;
-    /**
-     * @var dateTime
-     */
-    public $effectiveFrom;
-    /**
-     * @var dateTime
-     */
-    public $validUntil;
+class SubsidiaryTaxRegistration {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var Country
+	 */
+	public $nexusCountry;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxAgency;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxRegistrationNumber;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxEngine;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveFrom;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $validUntil;
 
-    public static $paramtypesmap = array(
-        'id' => 'integer',
-        'nexusCountry' => 'Country',
-        'nexus' => 'RecordRef',
-        'taxAgency' => 'RecordRef',
-        'taxRegistrationNumber' => 'string',
-        'taxEngine' => 'RecordRef',
-        'effectiveFrom' => 'dateTime',
-        'validUntil' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"id" => "integer",
+		"nexusCountry" => "Country",
+		"nexus" => "RecordRef",
+		"taxAgency" => "RecordRef",
+		"taxRegistrationNumber" => "string",
+		"taxEngine" => "RecordRef",
+		"effectiveFrom" => "dateTime",
+		"validUntil" => "dateTime",
+	);
 }

@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNodeSearchRowBasic.
+ * MerchandiseHierarchyNodeSearchRowBasic
  */
-class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $hierarchyLevel;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $hierarchyVersion;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $parentNode;
+class MerchandiseHierarchyNodeSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $hierarchyLevel;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $hierarchyVersion;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $parentNode;
 
-    public static $paramtypesmap = array(
-        'description' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'hierarchyLevel' => 'SearchColumnSelectField[]',
-        'hierarchyVersion' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'name' => 'SearchColumnStringField[]',
-        'parentNode' => 'SearchColumnSelectField[]',
-    );
+	static $paramtypesmap = array(
+		"description" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"hierarchyLevel" => "SearchColumnSelectField[]",
+		"hierarchyVersion" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"name" => "SearchColumnStringField[]",
+		"parentNode" => "SearchColumnSelectField[]",
+	);
 }

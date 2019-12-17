@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncDeleteListRequest.
+ * AsyncDeleteListRequest
  */
-class AsyncDeleteListRequest
-{
-    /**
-     * @var BaseRef[]
-     */
-    public $baseRef;
-    /**
-     * @var DeletionReason
-     */
-    public $deletionReason;
+class AsyncDeleteListRequest {
+	/**
+	 * @access public
+	 * @var BaseRef[]
+	 */
+	public $baseRef;
+	/**
+	 * @access public
+	 * @var DeletionReason
+	 */
+	public $deletionReason;
 
-    public static $paramtypesmap = array(
-        'baseRef' => 'BaseRef[]',
-        'deletionReason' => 'DeletionReason',
-    );
+	static $paramtypesmap = array(
+		"baseRef" => "BaseRef[]",
+		"deletionReason" => "DeletionReason",
+	);
 }

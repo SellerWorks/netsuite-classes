@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepartmentSearchAdvanced.
+ * DepartmentSearchAdvanced
  */
-class DepartmentSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var DepartmentSearch
-     */
-    public $criteria;
-    /**
-     * @var DepartmentSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class DepartmentSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var DepartmentSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var DepartmentSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'DepartmentSearch',
-        'columns' => 'DepartmentSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "DepartmentSearch",
+		"columns" => "DepartmentSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

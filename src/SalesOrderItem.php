@@ -11,426 +11,508 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderItem.
+ * SalesOrderItem
  */
-class SalesOrderItem
-{
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $subscription;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
-    /**
-     * @var bool
-     */
-    public $expandItemGroup;
-    /**
-     * @var int
-     */
-    public $lineUniqueKey;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $price;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var SalesOrderItemCommitInventory
-     */
-    public $commitInventory;
-    /**
-     * @var float
-     */
-    public $orderPriority;
-    /**
-     * @var string
-     */
-    public $licenseCode;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var SalesOrderItemCreatePo
-     */
-    public $createPo;
-    /**
-     * @var RecordRef
-     */
-    public $createdPo;
-    /**
-     * @var float
-     */
-    public $altSalesAmt;
-    /**
-     * @var bool
-     */
-    public $createWo;
-    /**
-     * @var RecordRef
-     */
-    public $poVendor;
-    /**
-     * @var string
-     */
-    public $poCurrency;
-    /**
-     * @var float
-     */
-    public $poRate;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var dateTime
-     */
-    public $revRecStartDate;
-    /**
-     * @var int
-     */
-    public $revRecTermInMonths;
-    /**
-     * @var dateTime
-     */
-    public $revRecEndDate;
-    /**
-     * @var bool
-     */
-    public $deferRevRec;
-    /**
-     * @var bool
-     */
-    public $isClosed;
-    /**
-     * @var SalesOrderItemFulfillmentChoice
-     */
-    public $itemFulfillmentChoice;
-    /**
-     * @var RecordRef
-     */
-    public $catchUpPeriod;
-    /**
-     * @var RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var bool
-     */
-    public $fromJob;
-    /**
-     * @var float
-     */
-    public $grossAmt;
-    /**
-     * @var float
-     */
-    public $taxAmount;
-    /**
-     * @var bool
-     */
-    public $excludeFromRateRequest;
-    /**
-     * @var bool
-     */
-    public $isEstimate;
-    /**
-     * @var RecordRef
-     */
-    public $inventoryLocation;
-    /**
-     * @var RecordRef
-     */
-    public $inventorySubsidiary;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var float
-     */
-    public $percentComplete;
-    /**
-     * @var ItemCostEstimateType
-     */
-    public $costEstimateType;
-    /**
-     * @var float
-     */
-    public $costEstimate;
-    /**
-     * @var float
-     */
-    public $quantityBackOrdered;
-    /**
-     * @var float
-     */
-    public $quantityBilled;
-    /**
-     * @var float
-     */
-    public $quantityCommitted;
-    /**
-     * @var float
-     */
-    public $quantityFulfilled;
-    /**
-     * @var float
-     */
-    public $quantityPacked;
-    /**
-     * @var float
-     */
-    public $quantityPicked;
-    /**
-     * @var float
-     */
-    public $tax1Amt;
-    /**
-     * @var RecordRef
-     */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
-    /**
-     * @var string
-     */
-    public $giftCertFrom;
-    /**
-     * @var string
-     */
-    public $giftCertRecipientName;
-    /**
-     * @var string
-     */
-    public $giftCertRecipientEmail;
-    /**
-     * @var string
-     */
-    public $giftCertMessage;
-    /**
-     * @var string
-     */
-    public $giftCertNumber;
-    /**
-     * @var int
-     */
-    public $shipGroup;
-    /**
-     * @var bool
-     */
-    public $itemIsFulfilled;
-    /**
-     * @var RecordRef
-     */
-    public $shipAddress;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var VsoeSopGroup
-     */
-    public $vsoeSopGroup;
-    /**
-     * @var bool
-     */
-    public $vsoeIsEstimate;
-    /**
-     * @var float
-     */
-    public $vsoePrice;
-    /**
-     * @var float
-     */
-    public $vsoeAmount;
-    /**
-     * @var float
-     */
-    public $vsoeAllocation;
-    /**
-     * @var VsoeDeferral
-     */
-    public $vsoeDeferral;
-    /**
-     * @var VsoePermitDiscount
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var bool
-     */
-    public $vsoeDelivered;
-    /**
-     * @var dateTime
-     */
-    public $expectedShipDate;
-    /**
-     * @var bool
-     */
-    public $noAutoAssignLocation;
-    /**
-     * @var bool
-     */
-    public $locationAutoAssigned;
-    /**
-     * @var string
-     */
-    public $taxDetailsReference;
-    /**
-     * @var RecordRef
-     */
-    public $chargeType;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class SalesOrderItem {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $expandItemGroup;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $lineUniqueKey;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var SalesOrderItemCommitInventory
+	 */
+	public $commitInventory;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $orderPriority;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $licenseCode;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SalesOrderItemCreatePo
+	 */
+	public $createPo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createdPo;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altSalesAmt;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $createWo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $poVendor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $poCurrency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $poRate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecStartDate;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $revRecTermInMonths;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $revRecEndDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isClosed;
+	/**
+	 * @access public
+	 * @var SalesOrderItemFulfillmentChoice
+	 */
+	public $itemFulfillmentChoice;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $catchUpPeriod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $fromJob;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $grossAmt;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxAmount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeFromRateRequest;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isEstimate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $inventoryLocation;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $inventorySubsidiary;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percentComplete;
+	/**
+	 * @access public
+	 * @var ItemCostEstimateType
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityBackOrdered;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityBilled;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityCommitted;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityFulfilled;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityPacked;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityPicked;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax1Amt;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate1;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate2;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertFrom;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertRecipientName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertRecipientEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertMessage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $giftCertNumber;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $shipGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $itemIsFulfilled;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var VsoeSopGroup
+	 */
+	public $vsoeSopGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeIsEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoeAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoeAllocation;
+	/**
+	 * @access public
+	 * @var VsoeDeferral
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var VsoePermitDiscount
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expectedShipDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $noAutoAssignLocation;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $locationAutoAssigned;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxDetailsReference;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $chargeType;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'job' => 'RecordRef',
-        'subscription' => 'RecordRef',
-        'item' => 'RecordRef',
-        'quantityAvailable' => 'float',
-        'expandItemGroup' => 'boolean',
-        'lineUniqueKey' => 'integer',
-        'quantityOnHand' => 'float',
-        'quantity' => 'float',
-        'units' => 'RecordRef',
-        'inventoryDetail' => 'InventoryDetail',
-        'description' => 'string',
-        'price' => 'RecordRef',
-        'rate' => 'string',
-        'serialNumbers' => 'string',
-        'amount' => 'float',
-        'isTaxable' => 'boolean',
-        'commitInventory' => 'SalesOrderItemCommitInventory',
-        'orderPriority' => 'float',
-        'licenseCode' => 'string',
-        'options' => 'CustomFieldList',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'createPo' => 'SalesOrderItemCreatePo',
-        'createdPo' => 'RecordRef',
-        'altSalesAmt' => 'float',
-        'createWo' => 'boolean',
-        'poVendor' => 'RecordRef',
-        'poCurrency' => 'string',
-        'poRate' => 'float',
-        'revRecSchedule' => 'RecordRef',
-        'revRecStartDate' => 'dateTime',
-        'revRecTermInMonths' => 'integer',
-        'revRecEndDate' => 'dateTime',
-        'deferRevRec' => 'boolean',
-        'isClosed' => 'boolean',
-        'itemFulfillmentChoice' => 'SalesOrderItemFulfillmentChoice',
-        'catchUpPeriod' => 'RecordRef',
-        'billingSchedule' => 'RecordRef',
-        'fromJob' => 'boolean',
-        'grossAmt' => 'float',
-        'taxAmount' => 'float',
-        'excludeFromRateRequest' => 'boolean',
-        'isEstimate' => 'boolean',
-        'inventoryLocation' => 'RecordRef',
-        'inventorySubsidiary' => 'RecordRef',
-        'line' => 'integer',
-        'percentComplete' => 'float',
-        'costEstimateType' => 'ItemCostEstimateType',
-        'costEstimate' => 'float',
-        'quantityBackOrdered' => 'float',
-        'quantityBilled' => 'float',
-        'quantityCommitted' => 'float',
-        'quantityFulfilled' => 'float',
-        'quantityPacked' => 'float',
-        'quantityPicked' => 'float',
-        'tax1Amt' => 'float',
-        'taxCode' => 'RecordRef',
-        'taxRate1' => 'float',
-        'taxRate2' => 'float',
-        'giftCertFrom' => 'string',
-        'giftCertRecipientName' => 'string',
-        'giftCertRecipientEmail' => 'string',
-        'giftCertMessage' => 'string',
-        'giftCertNumber' => 'string',
-        'shipGroup' => 'integer',
-        'itemIsFulfilled' => 'boolean',
-        'shipAddress' => 'RecordRef',
-        'shipMethod' => 'RecordRef',
-        'vsoeSopGroup' => 'VsoeSopGroup',
-        'vsoeIsEstimate' => 'boolean',
-        'vsoePrice' => 'float',
-        'vsoeAmount' => 'float',
-        'vsoeAllocation' => 'float',
-        'vsoeDeferral' => 'VsoeDeferral',
-        'vsoePermitDiscount' => 'VsoePermitDiscount',
-        'vsoeDelivered' => 'boolean',
-        'expectedShipDate' => 'dateTime',
-        'noAutoAssignLocation' => 'boolean',
-        'locationAutoAssigned' => 'boolean',
-        'taxDetailsReference' => 'string',
-        'chargeType' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"job" => "RecordRef",
+		"subscription" => "RecordRef",
+		"item" => "RecordRef",
+		"quantityAvailable" => "float",
+		"expandItemGroup" => "boolean",
+		"lineUniqueKey" => "integer",
+		"quantityOnHand" => "float",
+		"quantity" => "float",
+		"units" => "RecordRef",
+		"inventoryDetail" => "InventoryDetail",
+		"description" => "string",
+		"price" => "RecordRef",
+		"rate" => "string",
+		"serialNumbers" => "string",
+		"amount" => "float",
+		"isTaxable" => "boolean",
+		"commitInventory" => "SalesOrderItemCommitInventory",
+		"orderPriority" => "float",
+		"licenseCode" => "string",
+		"options" => "CustomFieldList",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"createPo" => "SalesOrderItemCreatePo",
+		"createdPo" => "RecordRef",
+		"altSalesAmt" => "float",
+		"createWo" => "boolean",
+		"poVendor" => "RecordRef",
+		"poCurrency" => "string",
+		"poRate" => "float",
+		"revRecSchedule" => "RecordRef",
+		"revRecStartDate" => "dateTime",
+		"revRecTermInMonths" => "integer",
+		"revRecEndDate" => "dateTime",
+		"deferRevRec" => "boolean",
+		"isClosed" => "boolean",
+		"itemFulfillmentChoice" => "SalesOrderItemFulfillmentChoice",
+		"catchUpPeriod" => "RecordRef",
+		"billingSchedule" => "RecordRef",
+		"fromJob" => "boolean",
+		"grossAmt" => "float",
+		"taxAmount" => "float",
+		"excludeFromRateRequest" => "boolean",
+		"isEstimate" => "boolean",
+		"inventoryLocation" => "RecordRef",
+		"inventorySubsidiary" => "RecordRef",
+		"line" => "integer",
+		"percentComplete" => "float",
+		"costEstimateType" => "ItemCostEstimateType",
+		"costEstimate" => "float",
+		"quantityBackOrdered" => "float",
+		"quantityBilled" => "float",
+		"quantityCommitted" => "float",
+		"quantityFulfilled" => "float",
+		"quantityPacked" => "float",
+		"quantityPicked" => "float",
+		"tax1Amt" => "float",
+		"taxCode" => "RecordRef",
+		"taxRate1" => "float",
+		"taxRate2" => "float",
+		"giftCertFrom" => "string",
+		"giftCertRecipientName" => "string",
+		"giftCertRecipientEmail" => "string",
+		"giftCertMessage" => "string",
+		"giftCertNumber" => "string",
+		"shipGroup" => "integer",
+		"itemIsFulfilled" => "boolean",
+		"shipAddress" => "RecordRef",
+		"shipMethod" => "RecordRef",
+		"vsoeSopGroup" => "VsoeSopGroup",
+		"vsoeIsEstimate" => "boolean",
+		"vsoePrice" => "float",
+		"vsoeAmount" => "float",
+		"vsoeAllocation" => "float",
+		"vsoeDeferral" => "VsoeDeferral",
+		"vsoePermitDiscount" => "VsoePermitDiscount",
+		"vsoeDelivered" => "boolean",
+		"expectedShipDate" => "dateTime",
+		"noAutoAssignLocation" => "boolean",
+		"locationAutoAssigned" => "boolean",
+		"taxDetailsReference" => "string",
+		"chargeType" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+	);
 }

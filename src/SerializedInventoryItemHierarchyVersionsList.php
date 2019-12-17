@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SerializedInventoryItemHierarchyVersionsList.
+ * SerializedInventoryItemHierarchyVersionsList
  */
-class SerializedInventoryItemHierarchyVersionsList
-{
-    /**
-     * @var SerializedInventoryItemHierarchyVersions[]
-     */
-    public $serializedInventoryItemHierarchyVersions;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SerializedInventoryItemHierarchyVersionsList {
+	/**
+	 * @access public
+	 * @var SerializedInventoryItemHierarchyVersions[]
+	 */
+	public $serializedInventoryItemHierarchyVersions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'serializedInventoryItemHierarchyVersions' => 'SerializedInventoryItemHierarchyVersions[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"serializedInventoryItemHierarchyVersions" => "SerializedInventoryItemHierarchyVersions[]",
+		"replaceAll" => "boolean",
+	);
 }

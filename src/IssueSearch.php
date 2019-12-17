@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * IssueSearch.
+ * IssueSearch
  */
-class IssueSearch extends SearchRecord
-{
-    /**
-     * @var IssueSearchBasic
-     */
-    public $basic;
-    /**
-     * @var SupportCaseSearchBasic
-     */
-    public $caseJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var FileSearchBasic
-     */
-    public $fileJoin;
-    /**
-     * @var EntityGroupSearchBasic
-     */
-    public $productTeamJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class IssueSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var IssueSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var FileSearchBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var EntityGroupSearchBasic
+	 */
+	public $productTeamJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'IssueSearchBasic',
-        'caseJoin' => 'SupportCaseSearchBasic',
-        'employeeJoin' => 'EmployeeSearchBasic',
-        'fileJoin' => 'FileSearchBasic',
-        'productTeamJoin' => 'EntityGroupSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'userNotesJoin' => 'NoteSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "IssueSearchBasic",
+		"caseJoin" => "SupportCaseSearchBasic",
+		"employeeJoin" => "EmployeeSearchBasic",
+		"fileJoin" => "FileSearchBasic",
+		"productTeamJoin" => "EntityGroupSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"userNotesJoin" => "NoteSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

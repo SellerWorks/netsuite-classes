@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchColumnDateField.
+ * SearchColumnDateField
  */
-class SearchColumnDateField extends SearchColumnField
-{
-    /**
-     * @var dateTime
-     */
-    public $searchValue;
+class SearchColumnDateField extends SearchColumnField {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $searchValue;
 
-    public static $paramtypesmap = array(
-        'searchValue' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"searchValue" => "dateTime",
+	);
 }

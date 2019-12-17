@@ -11,116 +11,136 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxGroupSearchRowBasic.
+ * TaxGroupSearchRowBasic
  */
-class TaxGroupSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $city;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $country;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $county;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $includeChildren;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isDefault;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $itemId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $piggyBack;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $rate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $state;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $stateDisplayName;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiaryNoHierarchy;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxItem1;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxItem2;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxType;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitPrice1;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitPrice2;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $zip;
+class TaxGroupSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $county;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $piggyBack;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $stateDisplayName;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiaryNoHierarchy;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxItem1;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxItem2;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxType;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitPrice1;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitPrice2;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $zip;
 
-    public static $paramtypesmap = array(
-        'city' => 'SearchColumnStringField[]',
-        'country' => 'SearchColumnEnumSelectField[]',
-        'county' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'includeChildren' => 'SearchColumnBooleanField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isDefault' => 'SearchColumnBooleanField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'itemId' => 'SearchColumnStringField[]',
-        'piggyBack' => 'SearchColumnBooleanField[]',
-        'rate' => 'SearchColumnDoubleField[]',
-        'state' => 'SearchColumnSelectField[]',
-        'stateDisplayName' => 'SearchColumnStringField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'subsidiaryNoHierarchy' => 'SearchColumnSelectField[]',
-        'taxItem1' => 'SearchColumnSelectField[]',
-        'taxItem2' => 'SearchColumnSelectField[]',
-        'taxType' => 'SearchColumnSelectField[]',
-        'unitPrice1' => 'SearchColumnDoubleField[]',
-        'unitPrice2' => 'SearchColumnDoubleField[]',
-        'zip' => 'SearchColumnStringField[]',
-    );
+	static $paramtypesmap = array(
+		"city" => "SearchColumnStringField[]",
+		"country" => "SearchColumnEnumSelectField[]",
+		"county" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"includeChildren" => "SearchColumnBooleanField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isDefault" => "SearchColumnBooleanField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"itemId" => "SearchColumnStringField[]",
+		"piggyBack" => "SearchColumnBooleanField[]",
+		"rate" => "SearchColumnDoubleField[]",
+		"state" => "SearchColumnSelectField[]",
+		"stateDisplayName" => "SearchColumnStringField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"subsidiaryNoHierarchy" => "SearchColumnSelectField[]",
+		"taxItem1" => "SearchColumnSelectField[]",
+		"taxItem2" => "SearchColumnSelectField[]",
+		"taxType" => "SearchColumnSelectField[]",
+		"unitPrice1" => "SearchColumnDoubleField[]",
+		"unitPrice2" => "SearchColumnDoubleField[]",
+		"zip" => "SearchColumnStringField[]",
+	);
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DetachReference.
+ * DetachReference
  */
-class DetachReference
-{
-    /**
-     * @var BaseRef
-     */
-    public $detachFrom;
+class DetachReference {
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $detachFrom;
 
-    public static $paramtypesmap = array(
-        'detachFrom' => 'BaseRef',
-    );
+	static $paramtypesmap = array(
+		"detachFrom" => "BaseRef",
+	);
 }

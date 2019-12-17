@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncUpdateListRequest.
+ * AsyncUpdateListRequest
  */
-class AsyncUpdateListRequest
-{
-    /**
-     * @var Record[]
-     */
-    public $record;
+class AsyncUpdateListRequest {
+	/**
+	 * @access public
+	 * @var Record[]
+	 */
+	public $record;
 
-    public static $paramtypesmap = array(
-        'record' => 'Record[]',
-    );
+	static $paramtypesmap = array(
+		"record" => "Record[]",
+	);
 }

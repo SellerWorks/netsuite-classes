@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeSublists.
+ * CustomRecordTypeSublists
  */
-class CustomRecordTypeSublists
-{
-    /**
-     * @var RecordRef
-     */
-    public $recordSearch;
-    /**
-     * @var string
-     */
-    public $recordDescr;
-    /**
-     * @var LanguageValueList
-     */
-    public $recordDescrLanguageValueList;
-    /**
-     * @var RecordRef
-     */
-    public $recordTab;
-    /**
-     * @var string
-     */
-    public $recordId;
+class CustomRecordTypeSublists {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $recordSearch;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recordDescr;
+	/**
+	 * @access public
+	 * @var LanguageValueList
+	 */
+	public $recordDescrLanguageValueList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $recordTab;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recordId;
 
-    public static $paramtypesmap = array(
-        'recordSearch' => 'RecordRef',
-        'recordDescr' => 'string',
-        'recordDescrLanguageValueList' => 'LanguageValueList',
-        'recordTab' => 'RecordRef',
-        'recordId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"recordSearch" => "RecordRef",
+		"recordDescr" => "string",
+		"recordDescrLanguageValueList" => "LanguageValueList",
+		"recordTab" => "RecordRef",
+		"recordId" => "string",
+	);
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetBudgetExchangeRateResponse.
+ * GetBudgetExchangeRateResponse
  */
-class GetBudgetExchangeRateResponse
-{
-    /**
-     * @var GetBudgetExchangeRateResult
-     */
-    public $getBudgetExchangeRateResult;
+class GetBudgetExchangeRateResponse {
+	/**
+	 * @access public
+	 * @var GetBudgetExchangeRateResult
+	 */
+	public $getBudgetExchangeRateResult;
 
-    public static $paramtypesmap = array(
-        'getBudgetExchangeRateResult' => 'GetBudgetExchangeRateResult',
-    );
+	static $paramtypesmap = array(
+		"getBudgetExchangeRateResult" => "GetBudgetExchangeRateResult",
+	);
 }

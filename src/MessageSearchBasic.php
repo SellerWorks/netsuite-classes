@@ -11,91 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MessageSearchBasic.
+ * MessageSearchBasic
  */
-class MessageSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $author;
-    /**
-     * @var SearchStringField
-     */
-    public $authorEmail;
-    /**
-     * @var SearchStringField
-     */
-    public $bcc;
-    /**
-     * @var SearchStringField
-     */
-    public $cc;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchBooleanField
-     */
-    public $hasAttachment;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $internalOnly;
-    /**
-     * @var SearchStringField
-     */
-    public $message;
-    /**
-     * @var SearchDateField
-     */
-    public $messageDate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $messageType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $recipient;
-    /**
-     * @var SearchStringField
-     */
-    public $recipientEmail;
-    /**
-     * @var SearchStringField
-     */
-    public $subject;
+class MessageSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $author;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $authorEmail;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $bcc;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $cc;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $hasAttachment;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $internalOnly;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $messageDate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $messageType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $recipient;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $recipientEmail;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $subject;
 
-    public static $paramtypesmap = array(
-        'author' => 'SearchMultiSelectField',
-        'authorEmail' => 'SearchStringField',
-        'bcc' => 'SearchStringField',
-        'cc' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'hasAttachment' => 'SearchBooleanField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'internalOnly' => 'SearchBooleanField',
-        'message' => 'SearchStringField',
-        'messageDate' => 'SearchDateField',
-        'messageType' => 'SearchEnumMultiSelectField',
-        'recipient' => 'SearchMultiSelectField',
-        'recipientEmail' => 'SearchStringField',
-        'subject' => 'SearchStringField',
-    );
+	static $paramtypesmap = array(
+		"author" => "SearchMultiSelectField",
+		"authorEmail" => "SearchStringField",
+		"bcc" => "SearchStringField",
+		"cc" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"hasAttachment" => "SearchBooleanField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"internalOnly" => "SearchBooleanField",
+		"message" => "SearchStringField",
+		"messageDate" => "SearchDateField",
+		"messageType" => "SearchEnumMultiSelectField",
+		"recipient" => "SearchMultiSelectField",
+		"recipientEmail" => "SearchStringField",
+		"subject" => "SearchStringField",
+	);
 }

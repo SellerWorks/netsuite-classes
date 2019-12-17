@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiarySearchRow.
+ * SubsidiarySearchRow
  */
-class SubsidiarySearchRow extends SearchRow
-{
-    /**
-     * @var SubsidiarySearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var AddressSearchRowBasic
-     */
-    public $addressJoin;
-    /**
-     * @var AccountSearchRowBasic
-     */
-    public $defaultAdvanceToApplyAccountJoin;
-    /**
-     * @var AddressSearchRowBasic
-     */
-    public $returnAddressJoin;
-    /**
-     * @var AddressSearchRowBasic
-     */
-    public $shippingAddressJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class SubsidiarySearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var SubsidiarySearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var AddressSearchRowBasic
+	 */
+	public $addressJoin;
+	/**
+	 * @access public
+	 * @var AccountSearchRowBasic
+	 */
+	public $defaultAdvanceToApplyAccountJoin;
+	/**
+	 * @access public
+	 * @var AddressSearchRowBasic
+	 */
+	public $returnAddressJoin;
+	/**
+	 * @access public
+	 * @var AddressSearchRowBasic
+	 */
+	public $shippingAddressJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'SubsidiarySearchRowBasic',
-        'addressJoin' => 'AddressSearchRowBasic',
-        'defaultAdvanceToApplyAccountJoin' => 'AccountSearchRowBasic',
-        'returnAddressJoin' => 'AddressSearchRowBasic',
-        'shippingAddressJoin' => 'AddressSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "SubsidiarySearchRowBasic",
+		"addressJoin" => "AddressSearchRowBasic",
+		"defaultAdvanceToApplyAccountJoin" => "AccountSearchRowBasic",
+		"returnAddressJoin" => "AddressSearchRowBasic",
+		"shippingAddressJoin" => "AddressSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

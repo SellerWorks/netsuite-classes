@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DataCenterUrls.
+ * DataCenterUrls
  */
-class DataCenterUrls
-{
-    /**
-     * @var string
-     */
-    public $restDomain;
-    /**
-     * @var string
-     */
-    public $webservicesDomain;
-    /**
-     * @var string
-     */
-    public $systemDomain;
+class DataCenterUrls {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $restDomain;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $webservicesDomain;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $systemDomain;
 
-    public static $paramtypesmap = array(
-        'restDomain' => 'string',
-        'webservicesDomain' => 'string',
-        'systemDomain' => 'string',
-    );
+	static $paramtypesmap = array(
+		"restDomain" => "string",
+		"webservicesDomain" => "string",
+		"systemDomain" => "string",
+	);
 }

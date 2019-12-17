@@ -11,71 +11,82 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItem.
+ * PayrollItem
  */
-class PayrollItem extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $itemType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var RecordRef
-     */
-    public $vendor;
-    /**
-     * @var RecordRef
-     */
-    public $expenseAccount;
-    /**
-     * @var RecordRef
-     */
-    public $liabilityAccount;
-    /**
-     * @var bool
-     */
-    public $employeePaid;
-    /**
-     * @var PayrollItemAccountCategory
-     */
-    public $accountCategory;
-    /**
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class PayrollItem extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $itemType;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $liabilityAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $employeePaid;
+	/**
+	 * @access public
+	 * @var PayrollItemAccountCategory
+	 */
+	public $accountCategory;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'subsidiary' => 'RecordRef',
-        'itemType' => 'RecordRef',
-        'name' => 'string',
-        'vendor' => 'RecordRef',
-        'expenseAccount' => 'RecordRef',
-        'liabilityAccount' => 'RecordRef',
-        'employeePaid' => 'boolean',
-        'accountCategory' => 'PayrollItemAccountCategory',
-        'inactive' => 'boolean',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"subsidiary" => "RecordRef",
+		"itemType" => "RecordRef",
+		"name" => "string",
+		"vendor" => "RecordRef",
+		"expenseAccount" => "RecordRef",
+		"liabilityAccount" => "RecordRef",
+		"employeePaid" => "boolean",
+		"accountCategory" => "PayrollItemAccountCategory",
+		"inactive" => "boolean",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

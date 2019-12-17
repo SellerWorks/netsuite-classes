@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CreditMemoApply.
+ * CreditMemoApply
  */
-class CreditMemoApply
-{
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var int
-     */
-    public $doc;
-    /**
-     * @var dateTime
-     */
-    public $applyDate;
-    /**
-     * @var string
-     */
-    public $job;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $refNum;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var float
-     */
-    public $due;
-    /**
-     * @var string
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var int
-     */
-    public $line;
+class CreditMemoApply {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $doc;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $applyDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $refNum;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $due;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
 
-    public static $paramtypesmap = array(
-        'apply' => 'boolean',
-        'doc' => 'integer',
-        'applyDate' => 'dateTime',
-        'job' => 'string',
-        'type' => 'string',
-        'refNum' => 'string',
-        'total' => 'float',
-        'due' => 'float',
-        'currency' => 'string',
-        'amount' => 'float',
-        'line' => 'integer',
-    );
+	static $paramtypesmap = array(
+		"apply" => "boolean",
+		"doc" => "integer",
+		"applyDate" => "dateTime",
+		"job" => "string",
+		"type" => "string",
+		"refNum" => "string",
+		"total" => "float",
+		"due" => "float",
+		"currency" => "string",
+		"amount" => "float",
+		"line" => "integer",
+	);
 }

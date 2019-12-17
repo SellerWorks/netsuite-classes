@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDeletedResult.
+ * GetDeletedResult
  */
-class GetDeletedResult
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var int
-     */
-    public $totalRecords;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var int
-     */
-    public $totalPages;
-    /**
-     * @var int
-     */
-    public $pageIndex;
-    /**
-     * @var DeletedRecordList
-     */
-    public $deletedRecordList;
+class GetDeletedResult {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalRecords;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageSize;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalPages;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageIndex;
+	/**
+	 * @access public
+	 * @var DeletedRecordList
+	 */
+	public $deletedRecordList;
 
-    public static $paramtypesmap = array(
-        'status' => 'Status',
-        'totalRecords' => 'integer',
-        'pageSize' => 'integer',
-        'totalPages' => 'integer',
-        'pageIndex' => 'integer',
-        'deletedRecordList' => 'DeletedRecordList',
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"totalRecords" => "integer",
+		"pageSize" => "integer",
+		"totalPages" => "integer",
+		"pageIndex" => "integer",
+		"deletedRecordList" => "DeletedRecordList",
+	);
 }

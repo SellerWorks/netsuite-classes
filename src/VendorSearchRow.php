@@ -11,96 +11,112 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorSearchRow.
+ * VendorSearchRow
  */
-class VendorSearchRow extends SearchRow
-{
-    /**
-     * @var VendorSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var AccountSearchRowBasic
-     */
-    public $accountJoin;
-    /**
-     * @var CampaignSearchRowBasic
-     */
-    public $campaignResponseJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactPrimaryJoin;
-    /**
-     * @var AccountSearchRowBasic
-     */
-    public $expAccountJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesJoin;
-    /**
-     * @var MseSubsidiarySearchRowBasic
-     */
-    public $mseSubsidiaryJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesFromJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesToJoin;
-    /**
-     * @var EntityTaxRegistrationSearchRowBasic
-     */
-    public $taxRegistrationJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $timeApproverJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class VendorSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var VendorSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var AccountSearchRowBasic
+	 */
+	public $accountJoin;
+	/**
+	 * @access public
+	 * @var CampaignSearchRowBasic
+	 */
+	public $campaignResponseJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactPrimaryJoin;
+	/**
+	 * @access public
+	 * @var AccountSearchRowBasic
+	 */
+	public $expAccountJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesJoin;
+	/**
+	 * @access public
+	 * @var MseSubsidiarySearchRowBasic
+	 */
+	public $mseSubsidiaryJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesFromJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesToJoin;
+	/**
+	 * @access public
+	 * @var EntityTaxRegistrationSearchRowBasic
+	 */
+	public $taxRegistrationJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $timeApproverJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'VendorSearchRowBasic',
-        'accountJoin' => 'AccountSearchRowBasic',
-        'campaignResponseJoin' => 'CampaignSearchRowBasic',
-        'contactJoin' => 'ContactSearchRowBasic',
-        'contactPrimaryJoin' => 'ContactSearchRowBasic',
-        'expAccountJoin' => 'AccountSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'messagesJoin' => 'MessageSearchRowBasic',
-        'mseSubsidiaryJoin' => 'MseSubsidiarySearchRowBasic',
-        'messagesFromJoin' => 'MessageSearchRowBasic',
-        'messagesToJoin' => 'MessageSearchRowBasic',
-        'taxRegistrationJoin' => 'EntityTaxRegistrationSearchRowBasic',
-        'timeApproverJoin' => 'EmployeeSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "VendorSearchRowBasic",
+		"accountJoin" => "AccountSearchRowBasic",
+		"campaignResponseJoin" => "CampaignSearchRowBasic",
+		"contactJoin" => "ContactSearchRowBasic",
+		"contactPrimaryJoin" => "ContactSearchRowBasic",
+		"expAccountJoin" => "AccountSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"messagesJoin" => "MessageSearchRowBasic",
+		"mseSubsidiaryJoin" => "MseSubsidiarySearchRowBasic",
+		"messagesFromJoin" => "MessageSearchRowBasic",
+		"messagesToJoin" => "MessageSearchRowBasic",
+		"taxRegistrationJoin" => "EntityTaxRegistrationSearchRowBasic",
+		"timeApproverJoin" => "EmployeeSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

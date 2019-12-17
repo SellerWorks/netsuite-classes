@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAttendee.
+ * CalendarEventAttendee
  */
-class CalendarEventAttendee
-{
-    /**
-     * @var bool
-     */
-    public $sendEmail;
-    /**
-     * @var RecordRef
-     */
-    public $attendee;
-    /**
-     * @var CalendarEventAttendeeResponse
-     */
-    public $response;
-    /**
-     * @var CalendarEventAttendeeAttendance
-     */
-    public $attendance;
+class CalendarEventAttendee {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sendEmail;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $attendee;
+	/**
+	 * @access public
+	 * @var CalendarEventAttendeeResponse
+	 */
+	public $response;
+	/**
+	 * @access public
+	 * @var CalendarEventAttendeeAttendance
+	 */
+	public $attendance;
 
-    public static $paramtypesmap = array(
-        'sendEmail' => 'boolean',
-        'attendee' => 'RecordRef',
-        'response' => 'CalendarEventAttendeeResponse',
-        'attendance' => 'CalendarEventAttendeeAttendance',
-    );
+	static $paramtypesmap = array(
+		"sendEmail" => "boolean",
+		"attendee" => "RecordRef",
+		"response" => "CalendarEventAttendeeResponse",
+		"attendance" => "CalendarEventAttendeeAttendance",
+	);
 }

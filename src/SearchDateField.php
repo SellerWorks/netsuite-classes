@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchDateField.
+ * SearchDateField
  */
-class SearchDateField
-{
-    /**
-     * @var SearchDate
-     */
-    public $predefinedSearchValue;
-    /**
-     * @var dateTime
-     */
-    public $searchValue;
-    /**
-     * @var dateTime
-     */
-    public $searchValue2;
-    /**
-     * @var SearchDateFieldOperator
-     */
-    public $operator;
+class SearchDateField {
+	/**
+	 * @access public
+	 * @var SearchDate
+	 */
+	public $predefinedSearchValue;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $searchValue;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $searchValue2;
+	/**
+	 * @access public
+	 * @var SearchDateFieldOperator
+	 */
+	public $operator;
 
-    public static $paramtypesmap = array(
-        'predefinedSearchValue' => 'SearchDate',
-        'searchValue' => 'dateTime',
-        'searchValue2' => 'dateTime',
-        'operator' => 'SearchDateFieldOperator',
-    );
+	static $paramtypesmap = array(
+		"predefinedSearchValue" => "SearchDate",
+		"searchValue" => "dateTime",
+		"searchValue2" => "dateTime",
+		"operator" => "SearchDateFieldOperator",
+	);
 }

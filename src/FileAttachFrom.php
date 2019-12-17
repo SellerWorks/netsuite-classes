@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FileAttachFrom.
+ * FileAttachFrom
  */
-class FileAttachFrom
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _computer = '_computer';
-    /**
-     * @var string
-     */
-    const _web = '_web';
+class FileAttachFrom {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _computer = "_computer";
+	/**
+	 * @var string
+	 */
+	const _web = "_web";
 }

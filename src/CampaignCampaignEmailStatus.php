@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignCampaignEmailStatus.
+ * CampaignCampaignEmailStatus
  */
-class CampaignCampaignEmailStatus
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _execute = '_execute';
-    /**
-     * @var string
-     */
-    const _inProgress = '_inProgress';
-    /**
-     * @var string
-     */
-    const _notStarted = '_notStarted';
-    /**
-     * @var string
-     */
-    const _sent = '_sent';
+class CampaignCampaignEmailStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _execute = "_execute";
+	/**
+	 * @var string
+	 */
+	const _inProgress = "_inProgress";
+	/**
+	 * @var string
+	 */
+	const _notStarted = "_notStarted";
+	/**
+	 * @var string
+	 */
+	const _sent = "_sent";
 }

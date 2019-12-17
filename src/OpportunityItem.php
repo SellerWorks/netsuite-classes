@@ -11,166 +11,196 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OpportunityItem.
+ * OpportunityItem
  */
-class OpportunityItem
-{
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $price;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var float
-     */
-    public $altSalesAmt;
-    /**
-     * @var int
-     */
-    public $revRecTermInMonths;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var bool
-     */
-    public $fromJob;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var bool
-     */
-    public $isEstimate;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var ItemCostEstimateType
-     */
-    public $costEstimateType;
-    /**
-     * @var float
-     */
-    public $costEstimate;
-    /**
-     * @var float
-     */
-    public $taxAmount;
-    /**
-     * @var string
-     */
-    public $taxDetailsReference;
-    /**
-     * @var float
-     */
-    public $grossAmt;
-    /**
-     * @var float
-     */
-    public $tax1Amt;
-    /**
-     * @var RecordRef
-     */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
-    /**
-     * @var dateTime
-     */
-    public $expectedShipDate;
-    /**
-     * @var RecordRef
-     */
-    public $subscription;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class OpportunityItem {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altSalesAmt;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $revRecTermInMonths;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $fromJob;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isEstimate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var ItemCostEstimateType
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxAmount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxDetailsReference;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $grossAmt;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax1Amt;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate1;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate2;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expectedShipDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'job' => 'RecordRef',
-        'item' => 'RecordRef',
-        'line' => 'integer',
-        'quantityAvailable' => 'float',
-        'quantityOnHand' => 'float',
-        'quantity' => 'float',
-        'units' => 'RecordRef',
-        'description' => 'string',
-        'price' => 'RecordRef',
-        'rate' => 'string',
-        'amount' => 'float',
-        'altSalesAmt' => 'float',
-        'revRecTermInMonths' => 'integer',
-        'options' => 'CustomFieldList',
-        'fromJob' => 'boolean',
-        'department' => 'RecordRef',
-        'isEstimate' => 'boolean',
-        'location' => 'RecordRef',
-        'class' => 'RecordRef',
-        'costEstimateType' => 'ItemCostEstimateType',
-        'costEstimate' => 'float',
-        'taxAmount' => 'float',
-        'taxDetailsReference' => 'string',
-        'grossAmt' => 'float',
-        'tax1Amt' => 'float',
-        'taxCode' => 'RecordRef',
-        'taxRate1' => 'float',
-        'taxRate2' => 'float',
-        'expectedShipDate' => 'dateTime',
-        'subscription' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"job" => "RecordRef",
+		"item" => "RecordRef",
+		"line" => "integer",
+		"quantityAvailable" => "float",
+		"quantityOnHand" => "float",
+		"quantity" => "float",
+		"units" => "RecordRef",
+		"description" => "string",
+		"price" => "RecordRef",
+		"rate" => "string",
+		"amount" => "float",
+		"altSalesAmt" => "float",
+		"revRecTermInMonths" => "integer",
+		"options" => "CustomFieldList",
+		"fromJob" => "boolean",
+		"department" => "RecordRef",
+		"isEstimate" => "boolean",
+		"location" => "RecordRef",
+		"class" => "RecordRef",
+		"costEstimateType" => "ItemCostEstimateType",
+		"costEstimate" => "float",
+		"taxAmount" => "float",
+		"taxDetailsReference" => "string",
+		"grossAmt" => "float",
+		"tax1Amt" => "float",
+		"taxCode" => "RecordRef",
+		"taxRate1" => "float",
+		"taxRate2" => "float",
+		"expectedShipDate" => "dateTime",
+		"subscription" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+	);
 }

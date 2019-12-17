@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAccessLevel.
+ * CalendarEventAccessLevel
  */
-class CalendarEventAccessLevel
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _private = '_private';
-    /**
-     * @var string
-     */
-    const _public = '_public';
-    /**
-     * @var string
-     */
-    const _showAsBusy = '_showAsBusy';
+class CalendarEventAccessLevel {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _private = "_private";
+	/**
+	 * @var string
+	 */
+	const _public = "_public";
+	/**
+	 * @var string
+	 */
+	const _showAsBusy = "_showAsBusy";
 }

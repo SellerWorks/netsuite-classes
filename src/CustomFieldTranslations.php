@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomFieldTranslations.
+ * CustomFieldTranslations
  */
-class CustomFieldTranslations
-{
-    /**
-     * @var Language
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $localeDescription;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $help;
+class CustomFieldTranslations {
+	/**
+	 * @access public
+	 * @var Language
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $localeDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $label;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $help;
 
-    public static $paramtypesmap = array(
-        'locale' => 'Language',
-        'localeDescription' => 'string',
-        'label' => 'string',
-        'help' => 'string',
-    );
+	static $paramtypesmap = array(
+		"locale" => "Language",
+		"localeDescription" => "string",
+		"label" => "string",
+		"help" => "string",
+	);
 }

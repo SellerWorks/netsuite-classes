@@ -11,121 +11,142 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingRoutingSearchRowBasic.
+ * ManufacturingRoutingSearchRowBasic
  */
-class ManufacturingRoutingSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $autoCalculateLag;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $billOfMaterials;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isDefault;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $lagAmount;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $lagType;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $lagUnits;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $manufacturingCostTemplate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $manufacturingWorkCenter;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $operationName;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $operationYield;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $runRate;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $sequence;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $setupTime;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class ManufacturingRoutingSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $autoCalculateLag;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $billOfMaterials;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $lagAmount;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $lagType;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $lagUnits;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $manufacturingCostTemplate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $manufacturingWorkCenter;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $operationName;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $operationYield;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $runRate;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $sequence;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $setupTime;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'autoCalculateLag' => 'SearchColumnBooleanField[]',
-        'billOfMaterials' => 'SearchColumnSelectField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isDefault' => 'SearchColumnBooleanField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'lagAmount' => 'SearchColumnDoubleField[]',
-        'lagType' => 'SearchColumnEnumSelectField[]',
-        'lagUnits' => 'SearchColumnStringField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'manufacturingCostTemplate' => 'SearchColumnSelectField[]',
-        'manufacturingWorkCenter' => 'SearchColumnSelectField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'operationName' => 'SearchColumnStringField[]',
-        'operationYield' => 'SearchColumnDoubleField[]',
-        'runRate' => 'SearchColumnDoubleField[]',
-        'sequence' => 'SearchColumnLongField[]',
-        'setupTime' => 'SearchColumnDoubleField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"autoCalculateLag" => "SearchColumnBooleanField[]",
+		"billOfMaterials" => "SearchColumnSelectField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isDefault" => "SearchColumnBooleanField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"item" => "SearchColumnSelectField[]",
+		"lagAmount" => "SearchColumnDoubleField[]",
+		"lagType" => "SearchColumnEnumSelectField[]",
+		"lagUnits" => "SearchColumnStringField[]",
+		"location" => "SearchColumnSelectField[]",
+		"manufacturingCostTemplate" => "SearchColumnSelectField[]",
+		"manufacturingWorkCenter" => "SearchColumnSelectField[]",
+		"memo" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"operationName" => "SearchColumnStringField[]",
+		"operationYield" => "SearchColumnDoubleField[]",
+		"runRate" => "SearchColumnDoubleField[]",
+		"sequence" => "SearchColumnLongField[]",
+		"setupTime" => "SearchColumnDoubleField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

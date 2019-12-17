@@ -11,161 +11,190 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JournalEntry.
+ * JournalEntry
  */
-class JournalEntry extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var dateTime
-     */
-    public $reversalDate;
-    /**
-     * @var bool
-     */
-    public $reversalDefer;
-    /**
-     * @var RecordRef
-     */
-    public $parentExpenseAlloc;
-    /**
-     * @var bool
-     */
-    public $isBookSpecific;
-    /**
-     * @var RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var string
-     */
-    public $reversalEntry;
-    /**
-     * @var RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiaryTaxRegNum;
-    /**
-     * @var dateTime
-     */
-    public $taxPointDate;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var RecordRef
-     */
-    public $toSubsidiary;
-    /**
-     * @var bool
-     */
-    public $approved;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var JournalEntryLineList
-     */
-    public $lineList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class JournalEntry extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $reversalDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $reversalDefer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parentExpenseAlloc;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBookSpecific;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $reversalEntry;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createdFrom;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $toSubsidiary;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $approved;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var JournalEntryLineList
+	 */
+	public $lineList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'postingPeriod' => 'RecordRef',
-        'tranDate' => 'dateTime',
-        'currency' => 'RecordRef',
-        'exchangeRate' => 'float',
-        'tranId' => 'string',
-        'reversalDate' => 'dateTime',
-        'reversalDefer' => 'boolean',
-        'parentExpenseAlloc' => 'RecordRef',
-        'isBookSpecific' => 'boolean',
-        'accountingBook' => 'RecordRef',
-        'reversalEntry' => 'string',
-        'createdFrom' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'nexus' => 'RecordRef',
-        'subsidiaryTaxRegNum' => 'RecordRef',
-        'taxPointDate' => 'dateTime',
-        'memo' => 'string',
-        'toSubsidiary' => 'RecordRef',
-        'approved' => 'boolean',
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'lineList' => 'JournalEntryLineList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"postingPeriod" => "RecordRef",
+		"tranDate" => "dateTime",
+		"currency" => "RecordRef",
+		"exchangeRate" => "float",
+		"tranId" => "string",
+		"reversalDate" => "dateTime",
+		"reversalDefer" => "boolean",
+		"parentExpenseAlloc" => "RecordRef",
+		"isBookSpecific" => "boolean",
+		"accountingBook" => "RecordRef",
+		"reversalEntry" => "string",
+		"createdFrom" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"nexus" => "RecordRef",
+		"subsidiaryTaxRegNum" => "RecordRef",
+		"taxPointDate" => "dateTime",
+		"memo" => "string",
+		"toSubsidiary" => "RecordRef",
+		"approved" => "boolean",
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"lineList" => "JournalEntryLineList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

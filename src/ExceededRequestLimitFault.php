@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ExceededRequestLimitFault.
+ * ExceededRequestLimitFault
  */
-class ExceededRequestLimitFault extends NSSoapFault
-{
-    public static $paramtypesmap = array(
-    );
+class ExceededRequestLimitFault extends NSSoapFault {
+
+	static $paramtypesmap = array(
+	);
 }

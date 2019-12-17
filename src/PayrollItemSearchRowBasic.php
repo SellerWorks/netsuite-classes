@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItemSearchRowBasic.
+ * PayrollItemSearchRowBasic
  */
-class PayrollItemSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $expenseAccount;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $itemTypeNoHierarchy;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $liabilityAccount;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $vendor;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class PayrollItemSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $itemTypeNoHierarchy;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $liabilityAccount;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'expenseAccount' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'itemTypeNoHierarchy' => 'SearchColumnStringField[]',
-        'liabilityAccount' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'subsidiary' => 'SearchColumnStringField[]',
-        'vendor' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"expenseAccount" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"itemTypeNoHierarchy" => "SearchColumnStringField[]",
+		"liabilityAccount" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"subsidiary" => "SearchColumnStringField[]",
+		"vendor" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

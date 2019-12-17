@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeHcmPosition.
+ * EmployeeHcmPosition
  */
-class EmployeeHcmPosition
-{
-    /**
-     * @var RecordRef
-     */
-    public $position;
-    /**
-     * @var bool
-     */
-    public $primaryPosition;
-    /**
-     * @var string
-     */
-    public $positionId;
-    /**
-     * @var float
-     */
-    public $positionAllocation;
-    /**
-     * @var float
-     */
-    public $fullTimeEquivalent;
-    /**
-     * @var RecordRef
-     */
-    public $employmentCategory;
-    /**
-     * @var RecordRef
-     */
-    public $reportsTo;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $location;
+class EmployeeHcmPosition {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $position;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $primaryPosition;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $positionId;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $positionAllocation;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $fullTimeEquivalent;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employmentCategory;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $reportsTo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
 
-    public static $paramtypesmap = array(
-        'position' => 'RecordRef',
-        'primaryPosition' => 'boolean',
-        'positionId' => 'string',
-        'positionAllocation' => 'float',
-        'fullTimeEquivalent' => 'float',
-        'employmentCategory' => 'RecordRef',
-        'reportsTo' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'location' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"position" => "RecordRef",
+		"primaryPosition" => "boolean",
+		"positionId" => "string",
+		"positionAllocation" => "float",
+		"fullTimeEquivalent" => "float",
+		"employmentCategory" => "RecordRef",
+		"reportsTo" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"location" => "RecordRef",
+	);
 }

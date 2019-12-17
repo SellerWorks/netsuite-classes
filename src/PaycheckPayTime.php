@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayTime.
+ * PaycheckPayTime
  */
-class PaycheckPayTime
-{
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var int
-     */
-    public $payItem;
-    /**
-     * @var string
-     */
-    public $payItemName;
-    /**
-     * @var dateTime
-     */
-    public $ddate;
-    /**
-     * @var string
-     */
-    public $custJob;
-    /**
-     * @var string
-     */
-    public $serviceItem;
-    /**
-     * @var float
-     */
-    public $count;
-    /**
-     * @var float
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $amount;
+class PaycheckPayTime {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $payItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payItemName;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $ddate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $custJob;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serviceItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $count;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = array(
-        'apply' => 'boolean',
-        'line' => 'integer',
-        'payItem' => 'integer',
-        'payItemName' => 'string',
-        'ddate' => 'dateTime',
-        'custJob' => 'string',
-        'serviceItem' => 'string',
-        'count' => 'float',
-        'rate' => 'float',
-        'amount' => 'float',
-    );
+	static $paramtypesmap = array(
+		"apply" => "boolean",
+		"line" => "integer",
+		"payItem" => "integer",
+		"payItemName" => "string",
+		"ddate" => "dateTime",
+		"custJob" => "string",
+		"serviceItem" => "string",
+		"count" => "float",
+		"rate" => "float",
+		"amount" => "float",
+	);
 }

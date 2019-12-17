@@ -11,171 +11,208 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeBillSearchBasic.
+ * TimeBillSearchBasic
  */
-class TimeBillSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $approvalStatus;
-    /**
-     * @var SearchBooleanField
-     */
-    public $approved;
-    /**
-     * @var SearchBooleanField
-     */
-    public $billable;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $class;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $customer;
-    /**
-     * @var SearchDateField
-     */
-    public $date;
-    /**
-     * @var SearchDateField
-     */
-    public $dateCreated;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $department;
-    /**
-     * @var SearchDoubleField
-     */
-    public $duration;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $employee;
-    /**
-     * @var SearchBooleanField
-     */
-    public $exempt;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModified;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paidByPayroll;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paidExternally;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $productive;
-    /**
-     * @var SearchStringField
-     */
-    public $rejectionNote;
-    /**
-     * @var SearchBooleanField
-     */
-    public $status;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $temporaryLocalJurisdiction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $temporaryStateJurisdiction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $timeSheet;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchBooleanField
-     */
-    public $utilized;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class TimeBillSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $approved;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $billable;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $date;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $duration;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $exempt;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModified;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paidByPayroll;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paidExternally;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $productive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $rejectionNote;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $temporaryLocalJurisdiction;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $temporaryStateJurisdiction;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $timeModified;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $timeSheet;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $utilized;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'approvalStatus' => 'SearchMultiSelectField',
-        'approved' => 'SearchBooleanField',
-        'billable' => 'SearchBooleanField',
-        'class' => 'SearchMultiSelectField',
-        'customer' => 'SearchMultiSelectField',
-        'date' => 'SearchDateField',
-        'dateCreated' => 'SearchDateField',
-        'department' => 'SearchMultiSelectField',
-        'duration' => 'SearchDoubleField',
-        'employee' => 'SearchMultiSelectField',
-        'exempt' => 'SearchBooleanField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'item' => 'SearchMultiSelectField',
-        'lastModified' => 'SearchDateField',
-        'location' => 'SearchMultiSelectField',
-        'memo' => 'SearchStringField',
-        'paidByPayroll' => 'SearchBooleanField',
-        'paidExternally' => 'SearchBooleanField',
-        'payItem' => 'SearchMultiSelectField',
-        'productive' => 'SearchBooleanField',
-        'rejectionNote' => 'SearchStringField',
-        'status' => 'SearchBooleanField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'temporaryLocalJurisdiction' => 'SearchMultiSelectField',
-        'temporaryStateJurisdiction' => 'SearchMultiSelectField',
-        'timeSheet' => 'SearchMultiSelectField',
-        'type' => 'SearchEnumMultiSelectField',
-        'utilized' => 'SearchBooleanField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"approvalStatus" => "SearchMultiSelectField",
+		"approved" => "SearchBooleanField",
+		"billable" => "SearchBooleanField",
+		"class" => "SearchMultiSelectField",
+		"customer" => "SearchMultiSelectField",
+		"date" => "SearchDateField",
+		"dateCreated" => "SearchDateField",
+		"department" => "SearchMultiSelectField",
+		"duration" => "SearchDoubleField",
+		"employee" => "SearchMultiSelectField",
+		"exempt" => "SearchBooleanField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"item" => "SearchMultiSelectField",
+		"lastModified" => "SearchDateField",
+		"location" => "SearchMultiSelectField",
+		"memo" => "SearchStringField",
+		"paidByPayroll" => "SearchBooleanField",
+		"paidExternally" => "SearchBooleanField",
+		"payItem" => "SearchMultiSelectField",
+		"productive" => "SearchBooleanField",
+		"rejectionNote" => "SearchStringField",
+		"status" => "SearchBooleanField",
+		"subsidiary" => "SearchMultiSelectField",
+		"temporaryLocalJurisdiction" => "SearchMultiSelectField",
+		"temporaryStateJurisdiction" => "SearchMultiSelectField",
+		"timeModified" => "SearchBooleanField",
+		"timeSheet" => "SearchMultiSelectField",
+		"type" => "SearchEnumMultiSelectField",
+		"utilized" => "SearchBooleanField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

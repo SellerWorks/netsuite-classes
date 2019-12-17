@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryTransfer.
+ * InventoryTransfer
  */
-class InventoryTransfer extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $transferLocation;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var InventoryTransferInventoryList
-     */
-    public $inventoryList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class InventoryTransfer extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transferLocation;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var InventoryTransferInventoryList
+	 */
+	public $inventoryList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'tranDate' => 'dateTime',
-        'postingPeriod' => 'RecordRef',
-        'tranId' => 'string',
-        'memo' => 'string',
-        'location' => 'RecordRef',
-        'transferLocation' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'inventoryList' => 'InventoryTransferInventoryList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"tranDate" => "dateTime",
+		"postingPeriod" => "RecordRef",
+		"tranId" => "string",
+		"memo" => "string",
+		"location" => "RecordRef",
+		"transferLocation" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"inventoryList" => "InventoryTransferInventoryList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

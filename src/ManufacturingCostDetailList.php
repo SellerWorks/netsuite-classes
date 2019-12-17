@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostDetailList.
+ * ManufacturingCostDetailList
  */
-class ManufacturingCostDetailList
-{
-    /**
-     * @var ManufacturingCostDetail[]
-     */
-    public $manufacturingCostDetail;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ManufacturingCostDetailList {
+	/**
+	 * @access public
+	 * @var ManufacturingCostDetail[]
+	 */
+	public $manufacturingCostDetail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'manufacturingCostDetail' => 'ManufacturingCostDetail[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"manufacturingCostDetail" => "ManufacturingCostDetail[]",
+		"replaceAll" => "boolean",
+	);
 }

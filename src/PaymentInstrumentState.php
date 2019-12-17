@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentInstrumentState.
+ * PaymentInstrumentState
  */
-class PaymentInstrumentState
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _expired = '_expired';
-    /**
-     * @var string
-     */
-    const _invalid = '_invalid';
-    /**
-     * @var string
-     */
-    const _unknown = '_unknown';
-    /**
-     * @var string
-     */
-    const _verified = '_verified';
+class PaymentInstrumentState {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _expired = "_expired";
+	/**
+	 * @var string
+	 */
+	const _invalid = "_invalid";
+	/**
+	 * @var string
+	 */
+	const _unknown = "_unknown";
+	/**
+	 * @var string
+	 */
+	const _verified = "_verified";
 }

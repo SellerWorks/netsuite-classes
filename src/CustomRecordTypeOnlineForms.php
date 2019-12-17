@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeOnlineForms.
+ * CustomRecordTypeOnlineForms
  */
-class CustomRecordTypeOnlineForms
-{
-    /**
-     * @var string
-     */
-    public $onlineFormName;
-    /**
-     * @var string
-     */
-    public $isOnline;
-    /**
-     * @var string
-     */
-    public $templateName;
+class CustomRecordTypeOnlineForms {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $onlineFormName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $templateName;
 
-    public static $paramtypesmap = array(
-        'onlineFormName' => 'string',
-        'isOnline' => 'string',
-        'templateName' => 'string',
-    );
+	static $paramtypesmap = array(
+		"onlineFormName" => "string",
+		"isOnline" => "string",
+		"templateName" => "string",
+	);
 }

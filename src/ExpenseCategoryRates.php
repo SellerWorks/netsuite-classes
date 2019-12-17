@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ExpenseCategoryRates.
+ * ExpenseCategoryRates
  */
-class ExpenseCategoryRates
-{
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $defaultRate;
+class ExpenseCategoryRates {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $defaultRate;
 
-    public static $paramtypesmap = array(
-        'subsidiary' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'defaultRate' => 'float',
-    );
+	static $paramtypesmap = array(
+		"subsidiary" => "RecordRef",
+		"currency" => "RecordRef",
+		"defaultRate" => "float",
+	);
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SsoLoginRequest.
+ * SsoLoginRequest
  */
-class SsoLoginRequest
-{
-    /**
-     * @var SsoPassport
-     */
-    public $ssoPassport;
+class SsoLoginRequest {
+	/**
+	 * @access public
+	 * @var SsoPassport
+	 */
+	public $ssoPassport;
 
-    public static $paramtypesmap = array(
-        'ssoPassport' => 'SsoPassport',
-    );
+	static $paramtypesmap = array(
+		"ssoPassport" => "SsoPassport",
+	);
 }

@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactRoleSearchAdvanced.
+ * ContactRoleSearchAdvanced
  */
-class ContactRoleSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var ContactRoleSearch
-     */
-    public $criteria;
-    /**
-     * @var ContactRoleSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class ContactRoleSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ContactRoleSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var ContactRoleSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'ContactRoleSearch',
-        'columns' => 'ContactRoleSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "ContactRoleSearch",
+		"columns" => "ContactRoleSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaskReminderType.
+ * TaskReminderType
  */
-class TaskReminderType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _eMail = '_eMail';
-    /**
-     * @var string
-     */
-    const _popupWindow = '_popupWindow';
+class TaskReminderType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _eMail = "_eMail";
+	/**
+	 * @var string
+	 */
+	const _popupWindow = "_popupWindow";
 }

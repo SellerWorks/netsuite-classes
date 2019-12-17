@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskAssignee.
+ * ProjectTaskAssignee
  */
-class ProjectTaskAssignee
-{
-    /**
-     * @var RecordRef
-     */
-    public $resource;
-    /**
-     * @var float
-     */
-    public $units;
-    /**
-     * @var RecordRef
-     */
-    public $serviceItem;
-    /**
-     * @var float
-     */
-    public $estimatedWork;
-    /**
-     * @var float
-     */
-    public $unitCost;
-    /**
-     * @var float
-     */
-    public $unitPrice;
-    /**
-     * @var float
-     */
-    public $cost;
-    /**
-     * @var float
-     */
-    public $price;
+class ProjectTaskAssignee {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $resource;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $serviceItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedWork;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unitCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unitPrice;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $price;
 
-    public static $paramtypesmap = array(
-        'resource' => 'RecordRef',
-        'units' => 'float',
-        'serviceItem' => 'RecordRef',
-        'estimatedWork' => 'float',
-        'unitCost' => 'float',
-        'unitPrice' => 'float',
-        'cost' => 'float',
-        'price' => 'float',
-    );
+	static $paramtypesmap = array(
+		"resource" => "RecordRef",
+		"units" => "float",
+		"serviceItem" => "RecordRef",
+		"estimatedWork" => "float",
+		"unitCost" => "float",
+		"unitPrice" => "float",
+		"cost" => "float",
+		"price" => "float",
+	);
 }

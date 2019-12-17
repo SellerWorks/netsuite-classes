@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PayrollItemSearchRow.
+ * PayrollItemSearchRow
  */
-class PayrollItemSearchRow extends SearchRow
-{
-    /**
-     * @var PayrollItemSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class PayrollItemSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var PayrollItemSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'PayrollItemSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "PayrollItemSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

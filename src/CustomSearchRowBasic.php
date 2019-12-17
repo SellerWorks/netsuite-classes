@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomSearchRowBasic.
+ * CustomSearchRowBasic
  */
-class CustomSearchRowBasic
-{
-    /**
-     * @var CustomizationRef
-     */
-    public $customizationRef;
-    /**
-     * @var SearchRowBasic
-     */
-    public $searchRowBasic;
+class CustomSearchRowBasic {
+	/**
+	 * @access public
+	 * @var CustomizationRef
+	 */
+	public $customizationRef;
+	/**
+	 * @access public
+	 * @var SearchRowBasic
+	 */
+	public $searchRowBasic;
 
-    public static $paramtypesmap = array(
-        'customizationRef' => 'CustomizationRef',
-        'searchRowBasic' => 'SearchRowBasic',
-    );
+	static $paramtypesmap = array(
+		"customizationRef" => "CustomizationRef",
+		"searchRowBasic" => "SearchRowBasic",
+	);
 }

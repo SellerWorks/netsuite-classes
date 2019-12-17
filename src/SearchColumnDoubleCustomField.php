@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchColumnDoubleCustomField.
+ * SearchColumnDoubleCustomField
  */
-class SearchColumnDoubleCustomField extends SearchColumnCustomField
-{
-    /**
-     * @var float
-     */
-    public $searchValue;
+class SearchColumnDoubleCustomField extends SearchColumnCustomField {
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $searchValue;
 
-    public static $paramtypesmap = array(
-        'searchValue' => 'float',
-    );
+	static $paramtypesmap = array(
+		"searchValue" => "float",
+	);
 }

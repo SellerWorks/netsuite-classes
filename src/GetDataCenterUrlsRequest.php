@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDataCenterUrlsRequest.
+ * GetDataCenterUrlsRequest
  */
-class GetDataCenterUrlsRequest
-{
-    /**
-     * @var string
-     */
-    public $account;
+class GetDataCenterUrlsRequest {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $account;
 
-    public static $paramtypesmap = array(
-        'account' => 'string',
-    );
+	static $paramtypesmap = array(
+		"account" => "string",
+	);
 }

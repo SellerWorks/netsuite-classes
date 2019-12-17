@@ -11,91 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyPlanSearchBasic.
+ * ItemSupplyPlanSearchBasic
  */
-class ItemSupplyPlanSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchBooleanField
-     */
-    public $orderCreated;
-    /**
-     * @var SearchDateField
-     */
-    public $orderDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $orderType;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantity;
-    /**
-     * @var SearchDateField
-     */
-    public $receiptDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $units;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class ItemSupplyPlanSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $orderCreated;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $orderDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $orderType;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $receiptDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'item' => 'SearchMultiSelectField',
-        'lastModifiedDate' => 'SearchDateField',
-        'location' => 'SearchMultiSelectField',
-        'memo' => 'SearchStringField',
-        'orderCreated' => 'SearchBooleanField',
-        'orderDate' => 'SearchDateField',
-        'orderType' => 'SearchMultiSelectField',
-        'quantity' => 'SearchDoubleField',
-        'receiptDate' => 'SearchDateField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'units' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"item" => "SearchMultiSelectField",
+		"lastModifiedDate" => "SearchDateField",
+		"location" => "SearchMultiSelectField",
+		"memo" => "SearchStringField",
+		"orderCreated" => "SearchBooleanField",
+		"orderDate" => "SearchDateField",
+		"orderType" => "SearchMultiSelectField",
+		"quantity" => "SearchDoubleField",
+		"receiptDate" => "SearchDateField",
+		"subsidiary" => "SearchMultiSelectField",
+		"units" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

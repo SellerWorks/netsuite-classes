@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Preferences.
+ * Preferences
  */
-class Preferences
-{
-    /**
-     * @var bool
-     */
-    public $warningAsError;
-    /**
-     * @var bool
-     */
-    public $disableMandatoryCustomFieldValidation;
-    /**
-     * @var bool
-     */
-    public $disableSystemNotesForCustomFields;
-    /**
-     * @var bool
-     */
-    public $ignoreReadOnlyFields;
-    /**
-     * @var bool
-     */
-    public $runServerSuiteScriptAndTriggerWorkflows;
+class Preferences {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $warningAsError;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $disableMandatoryCustomFieldValidation;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $disableSystemNotesForCustomFields;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ignoreReadOnlyFields;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $runServerSuiteScriptAndTriggerWorkflows;
 
-    public static $paramtypesmap = array(
-        'warningAsError' => 'boolean',
-        'disableMandatoryCustomFieldValidation' => 'boolean',
-        'disableSystemNotesForCustomFields' => 'boolean',
-        'ignoreReadOnlyFields' => 'boolean',
-        'runServerSuiteScriptAndTriggerWorkflows' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"warningAsError" => "boolean",
+		"disableMandatoryCustomFieldValidation" => "boolean",
+		"disableSystemNotesForCustomFields" => "boolean",
+		"ignoreReadOnlyFields" => "boolean",
+		"runServerSuiteScriptAndTriggerWorkflows" => "boolean",
+	);
 }

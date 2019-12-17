@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategory_accounting.
+ * SiteCategory_accounting
  */
-class SiteCategory_accounting
-{
-    /**
-     * @var RecordRef
-     */
-    public $website;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var string
-     */
-    public $categoryDescription;
+class SiteCategory_accounting {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $website;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $categoryDescription;
 
-    public static $paramtypesmap = array(
-        'website' => 'RecordRef',
-        'category' => 'RecordRef',
-        'isDefault' => 'boolean',
-        'categoryDescription' => 'string',
-    );
+	static $paramtypesmap = array(
+		"website" => "RecordRef",
+		"category" => "RecordRef",
+		"isDefault" => "boolean",
+		"categoryDescription" => "string",
+	);
 }

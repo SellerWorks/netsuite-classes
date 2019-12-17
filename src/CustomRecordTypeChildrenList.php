@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeChildrenList.
+ * CustomRecordTypeChildrenList
  */
-class CustomRecordTypeChildrenList
-{
-    /**
-     * @var CustomRecordTypeChildren[]
-     */
-    public $children;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomRecordTypeChildrenList {
+	/**
+	 * @access public
+	 * @var CustomRecordTypeChildren[]
+	 */
+	public $children;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'children' => 'CustomRecordTypeChildren[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"children" => "CustomRecordTypeChildren[]",
+		"replaceAll" => "boolean",
+	);
 }

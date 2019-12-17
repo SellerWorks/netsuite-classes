@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentMethodVisuals.
+ * PaymentMethodVisuals
  */
-class PaymentMethodVisuals
-{
-    /**
-     * @var string
-     */
-    public $flags;
-    /**
-     * @var string
-     */
-    public $location;
+class PaymentMethodVisuals {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $flags;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $location;
 
-    public static $paramtypesmap = array(
-        'flags' => 'string',
-        'location' => 'string',
-    );
+	static $paramtypesmap = array(
+		"flags" => "string",
+		"location" => "string",
+	);
 }

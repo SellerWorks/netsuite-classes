@@ -11,351 +11,418 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerPayment.
+ * CustomerPayment
  */
-class CustomerPayment extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $arAcct;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var float
-     */
-    public $balance;
-    /**
-     * @var float
-     */
-    public $pending;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $payment;
-    /**
-     * @var bool
-     */
-    public $autoApply;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var bool
-     */
-    public $ccIsPurchaseCardBin;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $ccProcessAsPurchaseCard;
-    /**
-     * @var string
-     */
-    public $checkNum;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var RecordRef
-     */
-    public $creditCard;
-    /**
-     * @var bool
-     */
-    public $chargeIt;
-    /**
-     * @var string
-     */
-    public $ccNumber;
-    /**
-     * @var dateTime
-     */
-    public $ccExpireDate;
-    /**
-     * @var string
-     */
-    public $ccName;
-    /**
-     * @var string
-     */
-    public $ccStreet;
-    /**
-     * @var string
-     */
-    public $ccZipCode;
-    /**
-     * @var bool
-     */
-    public $ccApproved;
-    /**
-     * @var string
-     */
-    public $authCode;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccAvsStreetMatch;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccAvsZipMatch;
-    /**
-     * @var bool
-     */
-    public $isRecurringPayment;
-    /**
-     * @var string
-     */
-    public $ccSecurityCode;
-    /**
-     * @var bool
-     */
-    public $ignoreAvs;
-    /**
-     * @var AvsMatchCode
-     */
-    public $ccSecurityCodeMatch;
-    /**
-     * @var string
-     */
-    public $threeDStatusCode;
-    /**
-     * @var string
-     */
-    public $pnRefNum;
-    /**
-     * @var RecordRef
-     */
-    public $creditCardProcessor;
-    /**
-     * @var string
-     */
-    public $debitCardIssueNo;
-    /**
-     * @var dateTime
-     */
-    public $validFrom;
-    /**
-     * @var bool
-     */
-    public $undepFunds;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var float
-     */
-    public $applied;
-    /**
-     * @var float
-     */
-    public $unapplied;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $paymentOption;
-    /**
-     * @var string
-     */
-    public $inputAuthCode;
-    /**
-     * @var string
-     */
-    public $inputReferenceCode;
-    /**
-     * @var string
-     */
-    public $checkNumber;
-    /**
-     * @var string
-     */
-    public $paymentCardCsc;
-    /**
-     * @var RecordRef
-     */
-    public $paymentProcessingProfile;
-    /**
-     * @var CustomerPaymentHandlingMode
-     */
-    public $handlingMode;
-    /**
-     * @var string
-     */
-    public $outputAuthCode;
-    /**
-     * @var string
-     */
-    public $outputReferenceCode;
-    /**
-     * @var CustomerPaymentPaymentOperation
-     */
-    public $paymentOperation;
-    /**
-     * @var string
-     */
-    public $dynamicDescriptor;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var CustomerPaymentApplyList
-     */
-    public $applyList;
-    /**
-     * @var CustomerPaymentCreditList
-     */
-    public $creditList;
-    /**
-     * @var CustomerPaymentDepositList
-     */
-    public $depositList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CustomerPayment extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $arAcct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $pending;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $payment;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoApply;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccIsPurchaseCardBin;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccProcessAsPurchaseCard;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $checkNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currencyName;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCard;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $chargeIt;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccNumber;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $ccExpireDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccStreet;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccZipCode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ccApproved;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $authCode;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccAvsStreetMatch;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccAvsZipMatch;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isRecurringPayment;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $ccSecurityCode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $ignoreAvs;
+	/**
+	 * @access public
+	 * @var AvsMatchCode
+	 */
+	public $ccSecurityCodeMatch;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $threeDStatusCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $pnRefNum;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $creditCardProcessor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $debitCardIssueNo;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $validFrom;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $undepFunds;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $applied;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unapplied;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentOption;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inputReferenceCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $checkNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $paymentCardCsc;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentProcessingProfile;
+	/**
+	 * @access public
+	 * @var CustomerPaymentHandlingMode
+	 */
+	public $handlingMode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputAuthCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outputReferenceCode;
+	/**
+	 * @access public
+	 * @var CustomerPaymentPaymentOperation
+	 */
+	public $paymentOperation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $dynamicDescriptor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var CustomerPaymentApplyList
+	 */
+	public $applyList;
+	/**
+	 * @access public
+	 * @var CustomerPaymentCreditList
+	 */
+	public $creditList;
+	/**
+	 * @access public
+	 * @var CustomerPaymentDepositList
+	 */
+	public $depositList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'arAcct' => 'RecordRef',
-        'customer' => 'RecordRef',
-        'balance' => 'float',
-        'pending' => 'float',
-        'currency' => 'RecordRef',
-        'payment' => 'float',
-        'autoApply' => 'boolean',
-        'tranDate' => 'dateTime',
-        'tranId' => 'string',
-        'postingPeriod' => 'RecordRef',
-        'paymentMethod' => 'RecordRef',
-        'ccIsPurchaseCardBin' => 'boolean',
-        'memo' => 'string',
-        'ccProcessAsPurchaseCard' => 'boolean',
-        'checkNum' => 'string',
-        'currencyName' => 'string',
-        'exchangeRate' => 'float',
-        'creditCard' => 'RecordRef',
-        'chargeIt' => 'boolean',
-        'ccNumber' => 'string',
-        'ccExpireDate' => 'dateTime',
-        'ccName' => 'string',
-        'ccStreet' => 'string',
-        'ccZipCode' => 'string',
-        'ccApproved' => 'boolean',
-        'authCode' => 'string',
-        'ccAvsStreetMatch' => 'AvsMatchCode',
-        'ccAvsZipMatch' => 'AvsMatchCode',
-        'isRecurringPayment' => 'boolean',
-        'ccSecurityCode' => 'string',
-        'ignoreAvs' => 'boolean',
-        'ccSecurityCodeMatch' => 'AvsMatchCode',
-        'threeDStatusCode' => 'string',
-        'pnRefNum' => 'string',
-        'creditCardProcessor' => 'RecordRef',
-        'debitCardIssueNo' => 'string',
-        'validFrom' => 'dateTime',
-        'undepFunds' => 'boolean',
-        'account' => 'RecordRef',
-        'total' => 'float',
-        'subsidiary' => 'RecordRef',
-        'applied' => 'float',
-        'unapplied' => 'float',
-        'class' => 'RecordRef',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'paymentOption' => 'RecordRef',
-        'inputAuthCode' => 'string',
-        'inputReferenceCode' => 'string',
-        'checkNumber' => 'string',
-        'paymentCardCsc' => 'string',
-        'paymentProcessingProfile' => 'RecordRef',
-        'handlingMode' => 'CustomerPaymentHandlingMode',
-        'outputAuthCode' => 'string',
-        'outputReferenceCode' => 'string',
-        'paymentOperation' => 'CustomerPaymentPaymentOperation',
-        'dynamicDescriptor' => 'string',
-        'status' => 'string',
-        'applyList' => 'CustomerPaymentApplyList',
-        'creditList' => 'CustomerPaymentCreditList',
-        'depositList' => 'CustomerPaymentDepositList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"arAcct" => "RecordRef",
+		"customer" => "RecordRef",
+		"balance" => "float",
+		"pending" => "float",
+		"currency" => "RecordRef",
+		"payment" => "float",
+		"autoApply" => "boolean",
+		"tranDate" => "dateTime",
+		"tranId" => "string",
+		"postingPeriod" => "RecordRef",
+		"paymentMethod" => "RecordRef",
+		"ccIsPurchaseCardBin" => "boolean",
+		"memo" => "string",
+		"ccProcessAsPurchaseCard" => "boolean",
+		"checkNum" => "string",
+		"currencyName" => "string",
+		"exchangeRate" => "float",
+		"creditCard" => "RecordRef",
+		"chargeIt" => "boolean",
+		"ccNumber" => "string",
+		"ccExpireDate" => "dateTime",
+		"ccName" => "string",
+		"ccStreet" => "string",
+		"ccZipCode" => "string",
+		"ccApproved" => "boolean",
+		"authCode" => "string",
+		"ccAvsStreetMatch" => "AvsMatchCode",
+		"ccAvsZipMatch" => "AvsMatchCode",
+		"isRecurringPayment" => "boolean",
+		"ccSecurityCode" => "string",
+		"ignoreAvs" => "boolean",
+		"ccSecurityCodeMatch" => "AvsMatchCode",
+		"threeDStatusCode" => "string",
+		"pnRefNum" => "string",
+		"creditCardProcessor" => "RecordRef",
+		"debitCardIssueNo" => "string",
+		"validFrom" => "dateTime",
+		"undepFunds" => "boolean",
+		"account" => "RecordRef",
+		"total" => "float",
+		"subsidiary" => "RecordRef",
+		"applied" => "float",
+		"unapplied" => "float",
+		"class" => "RecordRef",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"paymentOption" => "RecordRef",
+		"inputAuthCode" => "string",
+		"inputReferenceCode" => "string",
+		"checkNumber" => "string",
+		"paymentCardCsc" => "string",
+		"paymentProcessingProfile" => "RecordRef",
+		"handlingMode" => "CustomerPaymentHandlingMode",
+		"outputAuthCode" => "string",
+		"outputReferenceCode" => "string",
+		"paymentOperation" => "CustomerPaymentPaymentOperation",
+		"dynamicDescriptor" => "string",
+		"status" => "string",
+		"applyList" => "CustomerPaymentApplyList",
+		"creditList" => "CustomerPaymentCreditList",
+		"depositList" => "CustomerPaymentDepositList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

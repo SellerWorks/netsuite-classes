@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxGroupSearchAdvanced.
+ * TaxGroupSearchAdvanced
  */
-class TaxGroupSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var TaxGroupSearch
-     */
-    public $criteria;
-    /**
-     * @var TaxGroupSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class TaxGroupSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var TaxGroupSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var TaxGroupSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'TaxGroupSearch',
-        'columns' => 'TaxGroupSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "TaxGroupSearch",
+		"columns" => "TaxGroupSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

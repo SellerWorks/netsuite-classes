@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * IssueVersion.
+ * IssueVersion
  */
-class IssueVersion
-{
-    /**
-     * @var bool
-     */
-    public $primary;
-    /**
-     * @var RecordRef
-     */
-    public $version;
-    /**
-     * @var RecordRef
-     */
-    public $build;
+class IssueVersion {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $primary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $version;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $build;
 
-    public static $paramtypesmap = array(
-        'primary' => 'boolean',
-        'version' => 'RecordRef',
-        'build' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"primary" => "boolean",
+		"version" => "RecordRef",
+		"build" => "RecordRef",
+	);
 }

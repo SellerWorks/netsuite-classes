@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeHrEducation.
+ * EmployeeHrEducation
  */
-class EmployeeHrEducation
-{
-    /**
-     * @var RecordRef
-     */
-    public $education;
-    /**
-     * @var string
-     */
-    public $degree;
-    /**
-     * @var dateTime
-     */
-    public $degreeDate;
+class EmployeeHrEducation {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $education;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $degree;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $degreeDate;
 
-    public static $paramtypesmap = array(
-        'education' => 'RecordRef',
-        'degree' => 'string',
-        'degreeDate' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"education" => "RecordRef",
+		"degree" => "string",
+		"degreeDate" => "dateTime",
+	);
 }

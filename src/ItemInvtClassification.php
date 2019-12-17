@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemInvtClassification.
+ * ItemInvtClassification
  */
-class ItemInvtClassification
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _a = '_a';
-    /**
-     * @var string
-     */
-    const _b = '_b';
-    /**
-     * @var string
-     */
-    const _c = '_c';
+class ItemInvtClassification {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _a = "_a";
+	/**
+	 * @var string
+	 */
+	const _b = "_b";
+	/**
+	 * @var string
+	 */
+	const _c = "_c";
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LandedCost.
+ * LandedCost
  */
-class LandedCost extends Record
-{
-    /**
-     * @var LandedCostDataList
-     */
-    public $landedCostDataList;
+class LandedCost extends Record {
+	/**
+	 * @access public
+	 * @var LandedCostDataList
+	 */
+	public $landedCostDataList;
 
-    public static $paramtypesmap = array(
-        'landedCostDataList' => 'LandedCostDataList',
-    );
+	static $paramtypesmap = array(
+		"landedCostDataList" => "LandedCostDataList",
+	);
 }

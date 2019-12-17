@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BinTransferInventory.
+ * BinTransferInventory
  */
-class BinTransferInventory
-{
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $preferredBin;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var string
-     */
-    public $itemUnitsLabel;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $fromBins;
-    /**
-     * @var string
-     */
-    public $toBins;
+class BinTransferInventory {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $preferredBin;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemUnitsLabel;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fromBins;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $toBins;
 
-    public static $paramtypesmap = array(
-        'line' => 'integer',
-        'item' => 'RecordRef',
-        'description' => 'string',
-        'preferredBin' => 'string',
-        'quantity' => 'float',
-        'itemUnitsLabel' => 'string',
-        'inventoryDetail' => 'InventoryDetail',
-        'fromBins' => 'string',
-        'toBins' => 'string',
-    );
+	static $paramtypesmap = array(
+		"line" => "integer",
+		"item" => "RecordRef",
+		"description" => "string",
+		"preferredBin" => "string",
+		"quantity" => "float",
+		"itemUnitsLabel" => "string",
+		"inventoryDetail" => "InventoryDetail",
+		"fromBins" => "string",
+		"toBins" => "string",
+	);
 }

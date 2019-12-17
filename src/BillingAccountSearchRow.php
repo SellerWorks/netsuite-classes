@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingAccountSearchRow.
+ * BillingAccountSearchRow
  */
-class BillingAccountSearchRow extends SearchRow
-{
-    /**
-     * @var BillingAccountSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class BillingAccountSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var BillingAccountSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'BillingAccountSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "BillingAccountSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

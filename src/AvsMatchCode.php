@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AvsMatchCode.
+ * AvsMatchCode
  */
-class AvsMatchCode
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _n = '_n';
-    /**
-     * @var string
-     */
-    const _x = '_x';
-    /**
-     * @var string
-     */
-    const _y = '_y';
+class AvsMatchCode {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _n = "_n";
+	/**
+	 * @var string
+	 */
+	const _x = "_x";
+	/**
+	 * @var string
+	 */
+	const _y = "_y";
 }

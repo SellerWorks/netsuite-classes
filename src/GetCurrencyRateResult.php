@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetCurrencyRateResult.
+ * GetCurrencyRateResult
  */
-class GetCurrencyRateResult
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var CurrencyRateList
-     */
-    public $currencyRateList;
+class GetCurrencyRateResult {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var CurrencyRateList
+	 */
+	public $currencyRateList;
 
-    public static $paramtypesmap = array(
-        'status' => 'Status',
-        'currencyRateList' => 'CurrencyRateList',
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"currencyRateList" => "CurrencyRateList",
+	);
 }

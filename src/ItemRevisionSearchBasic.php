@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemRevisionSearchBasic.
+ * ItemRevisionSearchBasic
  */
-class ItemRevisionSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchDateField
-     */
-    public $effectiveDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchDateField
-     */
-    public $obsoleteDate;
+class ItemRevisionSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $obsoleteDate;
 
-    public static $paramtypesmap = array(
-        'effectiveDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'item' => 'SearchMultiSelectField',
-        'name' => 'SearchStringField',
-        'obsoleteDate' => 'SearchDateField',
-    );
+	static $paramtypesmap = array(
+		"effectiveDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"item" => "SearchMultiSelectField",
+		"name" => "SearchStringField",
+		"obsoleteDate" => "SearchDateField",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyComponentList.
+ * AssemblyComponentList
  */
-class AssemblyComponentList
-{
-    /**
-     * @var AssemblyComponent[]
-     */
-    public $component;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class AssemblyComponentList {
+	/**
+	 * @access public
+	 * @var AssemblyComponent[]
+	 */
+	public $component;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'component' => 'AssemblyComponent[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"component" => "AssemblyComponent[]",
+		"replaceAll" => "boolean",
+	);
 }

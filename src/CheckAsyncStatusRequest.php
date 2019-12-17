@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CheckAsyncStatusRequest.
+ * CheckAsyncStatusRequest
  */
-class CheckAsyncStatusRequest
-{
-    /**
-     * @var string
-     */
-    public $jobId;
+class CheckAsyncStatusRequest {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $jobId;
 
-    public static $paramtypesmap = array(
-        'jobId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"jobId" => "string",
+	);
 }

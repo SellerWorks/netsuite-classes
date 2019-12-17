@@ -11,221 +11,262 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransferOrder.
+ * TransferOrder
  */
-class TransferOrder extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $subTotal;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var Address
-     */
-    public $shippingAddress;
-    /**
-     * @var bool
-     */
-    public $shipIsResidential;
-    /**
-     * @var RecordRef
-     */
-    public $shipAddressList;
-    /**
-     * @var string
-     */
-    public $fob;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var TransferOrderOrderStatus
-     */
-    public $orderStatus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $employee;
-    /**
-     * @var bool
-     */
-    public $useItemCostAsTransferCost;
-    /**
-     * @var RecordRef
-     */
-    public $incoterm;
-    /**
-     * @var bool
-     */
-    public $firmed;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $transferLocation;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var dateTime
-     */
-    public $shipDate;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var string
-     */
-    public $trackingNumbers;
-    /**
-     * @var string
-     */
-    public $linkedTrackingNumbers;
-    /**
-     * @var bool
-     */
-    public $shipComplete;
-    /**
-     * @var float
-     */
-    public $altShippingCost;
-    /**
-     * @var float
-     */
-    public $shippingTax1Rate;
-    /**
-     * @var float
-     */
-    public $shippingTax2Rate;
-    /**
-     * @var float
-     */
-    public $handlingTax1Rate;
-    /**
-     * @var float
-     */
-    public $handlingTax2Rate;
-    /**
-     * @var RecordRef
-     */
-    public $shippingTaxCode;
-    /**
-     * @var RecordRef
-     */
-    public $handlingTaxCode;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var TransferOrderItemList
-     */
-    public $itemList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class TransferOrder extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $subTotal;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $shippingAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipIsResidential;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipAddressList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fob;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var TransferOrderOrderStatus
+	 */
+	public $orderStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useItemCostAsTransferCost;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $incoterm;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $firmed;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transferLocation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $shipDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $trackingNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $linkedTrackingNumbers;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipComplete;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altShippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingTax1Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingTax1Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingTax2Rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shippingTaxCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $handlingTaxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var TransferOrderItemList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'shippingCost' => 'float',
-        'subTotal' => 'float',
-        'status' => 'string',
-        'shippingAddress' => 'Address',
-        'shipIsResidential' => 'boolean',
-        'shipAddressList' => 'RecordRef',
-        'fob' => 'string',
-        'tranDate' => 'dateTime',
-        'tranId' => 'string',
-        'source' => 'string',
-        'orderStatus' => 'TransferOrderOrderStatus',
-        'subsidiary' => 'RecordRef',
-        'employee' => 'RecordRef',
-        'useItemCostAsTransferCost' => 'boolean',
-        'incoterm' => 'RecordRef',
-        'firmed' => 'boolean',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'transferLocation' => 'RecordRef',
-        'memo' => 'string',
-        'shipDate' => 'dateTime',
-        'shipMethod' => 'RecordRef',
-        'trackingNumbers' => 'string',
-        'linkedTrackingNumbers' => 'string',
-        'shipComplete' => 'boolean',
-        'altShippingCost' => 'float',
-        'shippingTax1Rate' => 'float',
-        'shippingTax2Rate' => 'float',
-        'handlingTax1Rate' => 'float',
-        'handlingTax2Rate' => 'float',
-        'shippingTaxCode' => 'RecordRef',
-        'handlingTaxCode' => 'RecordRef',
-        'total' => 'float',
-        'itemList' => 'TransferOrderItemList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"shippingCost" => "float",
+		"subTotal" => "float",
+		"status" => "string",
+		"shippingAddress" => "Address",
+		"shipIsResidential" => "boolean",
+		"shipAddressList" => "RecordRef",
+		"fob" => "string",
+		"tranDate" => "dateTime",
+		"tranId" => "string",
+		"source" => "string",
+		"orderStatus" => "TransferOrderOrderStatus",
+		"subsidiary" => "RecordRef",
+		"employee" => "RecordRef",
+		"useItemCostAsTransferCost" => "boolean",
+		"incoterm" => "RecordRef",
+		"firmed" => "boolean",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"transferLocation" => "RecordRef",
+		"memo" => "string",
+		"shipDate" => "dateTime",
+		"shipMethod" => "RecordRef",
+		"trackingNumbers" => "string",
+		"linkedTrackingNumbers" => "string",
+		"shipComplete" => "boolean",
+		"altShippingCost" => "float",
+		"shippingTax1Rate" => "float",
+		"shippingTax2Rate" => "float",
+		"handlingTax1Rate" => "float",
+		"handlingTax2Rate" => "float",
+		"shippingTaxCode" => "RecordRef",
+		"handlingTaxCode" => "RecordRef",
+		"total" => "float",
+		"itemList" => "TransferOrderItemList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

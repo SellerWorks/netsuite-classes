@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemDemandSource.
+ * ItemDemandSource
  */
-class ItemDemandSource
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _enteredAndPlannedOrders = '_enteredAndPlannedOrders';
-    /**
-     * @var string
-     */
-    const _forecastAndOrders = '_forecastAndOrders';
-    /**
-     * @var string
-     */
-    const _forecastConsumption = '_forecastConsumption';
-    /**
-     * @var string
-     */
-    const _forecastFromDemandPlan = '_forecastFromDemandPlan';
+class ItemDemandSource {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _enteredAndPlannedOrders = "_enteredAndPlannedOrders";
+	/**
+	 * @var string
+	 */
+	const _forecastAndOrders = "_forecastAndOrders";
+	/**
+	 * @var string
+	 */
+	const _forecastConsumption = "_forecastConsumption";
+	/**
+	 * @var string
+	 */
+	const _forecastFromDemandPlan = "_forecastFromDemandPlan";
 }

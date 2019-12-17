@@ -11,76 +11,88 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepositPayment.
+ * DepositPayment
  */
-class DepositPayment
-{
-    /**
-     * @var bool
-     */
-    public $deposit;
-    /**
-     * @var int
-     */
-    public $id;
-    /**
-     * @var dateTime
-     */
-    public $docDate;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $docNumber;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var string
-     */
-    public $refNum;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $transactionAmount;
-    /**
-     * @var float
-     */
-    public $paymentAmount;
-    /**
-     * @var int
-     */
-    public $lineId;
+class DepositPayment {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $deposit;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $docDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $docNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $refNum;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $transactionAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $paymentAmount;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $lineId;
 
-    public static $paramtypesmap = array(
-        'deposit' => 'boolean',
-        'id' => 'integer',
-        'docDate' => 'dateTime',
-        'type' => 'string',
-        'docNumber' => 'string',
-        'memo' => 'string',
-        'paymentMethod' => 'RecordRef',
-        'refNum' => 'string',
-        'entity' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'transactionAmount' => 'float',
-        'paymentAmount' => 'float',
-        'lineId' => 'integer',
-    );
+	static $paramtypesmap = array(
+		"deposit" => "boolean",
+		"id" => "integer",
+		"docDate" => "dateTime",
+		"type" => "string",
+		"docNumber" => "string",
+		"memo" => "string",
+		"paymentMethod" => "RecordRef",
+		"refNum" => "string",
+		"entity" => "RecordRef",
+		"currency" => "RecordRef",
+		"transactionAmount" => "float",
+		"paymentAmount" => "float",
+		"lineId" => "integer",
+	);
 }

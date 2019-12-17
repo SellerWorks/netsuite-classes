@@ -11,116 +11,136 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Message.
+ * Message
  */
-class Message extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $author;
-    /**
-     * @var string
-     */
-    public $authorEmail;
-    /**
-     * @var RecordRef
-     */
-    public $recipient;
-    /**
-     * @var string
-     */
-    public $recipientEmail;
-    /**
-     * @var string
-     */
-    public $cc;
-    /**
-     * @var string
-     */
-    public $bcc;
-    /**
-     * @var dateTime
-     */
-    public $messageDate;
-    /**
-     * @var string
-     */
-    public $recordName;
-    /**
-     * @var string
-     */
-    public $recordTypeName;
-    /**
-     * @var string
-     */
-    public $subject;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var bool
-     */
-    public $emailed;
-    /**
-     * @var RecordRef
-     */
-    public $activity;
-    /**
-     * @var bool
-     */
-    public $compressAttachments;
-    /**
-     * @var bool
-     */
-    public $incoming;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $transaction;
-    /**
-     * @var MessageMediaItemList
-     */
-    public $mediaItemList;
-    /**
-     * @var string
-     */
-    public $dateTime;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Message extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $author;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $authorEmail;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $recipient;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recipientEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $cc;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bcc;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $messageDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recordName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recordTypeName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $subject;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $emailed;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $activity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $compressAttachments;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $incoming;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transaction;
+	/**
+	 * @access public
+	 * @var MessageMediaItemList
+	 */
+	public $mediaItemList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $dateTime;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'author' => 'RecordRef',
-        'authorEmail' => 'string',
-        'recipient' => 'RecordRef',
-        'recipientEmail' => 'string',
-        'cc' => 'string',
-        'bcc' => 'string',
-        'messageDate' => 'dateTime',
-        'recordName' => 'string',
-        'recordTypeName' => 'string',
-        'subject' => 'string',
-        'message' => 'string',
-        'emailed' => 'boolean',
-        'activity' => 'RecordRef',
-        'compressAttachments' => 'boolean',
-        'incoming' => 'boolean',
-        'lastModifiedDate' => 'dateTime',
-        'transaction' => 'RecordRef',
-        'mediaItemList' => 'MessageMediaItemList',
-        'dateTime' => 'string',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"author" => "RecordRef",
+		"authorEmail" => "string",
+		"recipient" => "RecordRef",
+		"recipientEmail" => "string",
+		"cc" => "string",
+		"bcc" => "string",
+		"messageDate" => "dateTime",
+		"recordName" => "string",
+		"recordTypeName" => "string",
+		"subject" => "string",
+		"message" => "string",
+		"emailed" => "boolean",
+		"activity" => "RecordRef",
+		"compressAttachments" => "boolean",
+		"incoming" => "boolean",
+		"lastModifiedDate" => "dateTime",
+		"transaction" => "RecordRef",
+		"mediaItemList" => "MessageMediaItemList",
+		"dateTime" => "string",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

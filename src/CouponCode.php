@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CouponCode.
+ * CouponCode
  */
-class CouponCode extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $promotion;
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @var RecordRef
-     */
-    public $recipient;
-    /**
-     * @var dateTime
-     */
-    public $dateSent;
-    /**
-     * @var bool
-     */
-    public $used;
-    /**
-     * @var int
-     */
-    public $useCount;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CouponCode extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $promotion;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $code;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $recipient;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateSent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $used;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $useCount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'promotion' => 'RecordRef',
-        'code' => 'string',
-        'recipient' => 'RecordRef',
-        'dateSent' => 'dateTime',
-        'used' => 'boolean',
-        'useCount' => 'integer',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"promotion" => "RecordRef",
+		"code" => "string",
+		"recipient" => "RecordRef",
+		"dateSent" => "dateTime",
+		"used" => "boolean",
+		"useCount" => "integer",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

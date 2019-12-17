@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PricingSearchRowBasic.
+ * PricingSearchRowBasic
  */
-class PricingSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $currency;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $customer;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $maximumQuantity;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $minimumQuantity;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $priceLevel;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $quantityRange;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $saleUnit;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitPrice;
+class PricingSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $maximumQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $minimumQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $priceLevel;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $quantityRange;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $saleUnit;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitPrice;
 
-    public static $paramtypesmap = array(
-        'currency' => 'SearchColumnSelectField[]',
-        'customer' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'maximumQuantity' => 'SearchColumnDoubleField[]',
-        'minimumQuantity' => 'SearchColumnDoubleField[]',
-        'priceLevel' => 'SearchColumnSelectField[]',
-        'quantityRange' => 'SearchColumnStringField[]',
-        'saleUnit' => 'SearchColumnSelectField[]',
-        'unitPrice' => 'SearchColumnDoubleField[]',
-    );
+	static $paramtypesmap = array(
+		"currency" => "SearchColumnSelectField[]",
+		"customer" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"item" => "SearchColumnSelectField[]",
+		"maximumQuantity" => "SearchColumnDoubleField[]",
+		"minimumQuantity" => "SearchColumnDoubleField[]",
+		"priceLevel" => "SearchColumnSelectField[]",
+		"quantityRange" => "SearchColumnStringField[]",
+		"saleUnit" => "SearchColumnSelectField[]",
+		"unitPrice" => "SearchColumnDoubleField[]",
+	);
 }

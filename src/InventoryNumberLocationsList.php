@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberLocationsList.
+ * InventoryNumberLocationsList
  */
-class InventoryNumberLocationsList
-{
-    /**
-     * @var InventoryNumberLocations[]
-     */
-    public $locations;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InventoryNumberLocationsList {
+	/**
+	 * @access public
+	 * @var InventoryNumberLocations[]
+	 */
+	public $locations;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'locations' => 'InventoryNumberLocations[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"locations" => "InventoryNumberLocations[]",
+		"replaceAll" => "boolean",
+	);
 }

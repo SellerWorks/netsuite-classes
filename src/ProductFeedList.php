@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProductFeedList.
+ * ProductFeedList
  */
-class ProductFeedList
-{
-    /**
-     * @var ItemProductFeed[]
-     */
-    public $productFeed;
+class ProductFeedList {
+	/**
+	 * @access public
+	 * @var ItemProductFeed[]
+	 */
+	public $productFeed;
 
-    public static $paramtypesmap = array(
-        'productFeed' => 'ItemProductFeed[]',
-    );
+	static $paramtypesmap = array(
+		"productFeed" => "ItemProductFeed[]",
+	);
 }

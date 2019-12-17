@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemVendor.
+ * ItemVendor
  */
-class ItemVendor
-{
-    /**
-     * @var RecordRef
-     */
-    public $vendor;
-    /**
-     * @var string
-     */
-    public $vendorCode;
-    /**
-     * @var string
-     */
-    public $vendorCurrencyName;
-    /**
-     * @var RecordRef
-     */
-    public $vendorCurrency;
-    /**
-     * @var float
-     */
-    public $purchasePrice;
-    /**
-     * @var bool
-     */
-    public $preferredVendor;
-    /**
-     * @var RecordRef
-     */
-    public $schedule;
-    /**
-     * @var string
-     */
-    public $subsidiary;
+class ItemVendor {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorCurrencyName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vendorCurrency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchasePrice;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $preferredVendor;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $schedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
 
-    public static $paramtypesmap = array(
-        'vendor' => 'RecordRef',
-        'vendorCode' => 'string',
-        'vendorCurrencyName' => 'string',
-        'vendorCurrency' => 'RecordRef',
-        'purchasePrice' => 'float',
-        'preferredVendor' => 'boolean',
-        'schedule' => 'RecordRef',
-        'subsidiary' => 'string',
-    );
+	static $paramtypesmap = array(
+		"vendor" => "RecordRef",
+		"vendorCode" => "string",
+		"vendorCurrencyName" => "string",
+		"vendorCurrency" => "RecordRef",
+		"purchasePrice" => "float",
+		"preferredVendor" => "boolean",
+		"schedule" => "RecordRef",
+		"subsidiary" => "RecordRef",
+	);
 }

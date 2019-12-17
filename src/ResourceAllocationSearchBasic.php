@@ -11,101 +11,118 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ResourceAllocationSearchBasic.
+ * ResourceAllocationSearchBasic
  */
-class ResourceAllocationSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $allocationType;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $allocationUnit;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $approvalStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $customer;
-    /**
-     * @var SearchDateField
-     */
-    public $endDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $nextApprover;
-    /**
-     * @var SearchStringField
-     */
-    public $notes;
-    /**
-     * @var SearchDoubleField
-     */
-    public $numberHours;
-    /**
-     * @var SearchDoubleField
-     */
-    public $percentOfTime;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $project;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $requestedBy;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $resource;
-    /**
-     * @var SearchDateField
-     */
-    public $startDate;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class ResourceAllocationSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $allocationType;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $allocationUnit;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $nextApprover;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $notes;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $numberHours;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $percentOfTime;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $project;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $requestedBy;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $resource;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'allocationType' => 'SearchMultiSelectField',
-        'allocationUnit' => 'SearchEnumMultiSelectField',
-        'approvalStatus' => 'SearchEnumMultiSelectField',
-        'customer' => 'SearchMultiSelectField',
-        'endDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'nextApprover' => 'SearchMultiSelectField',
-        'notes' => 'SearchStringField',
-        'numberHours' => 'SearchDoubleField',
-        'percentOfTime' => 'SearchDoubleField',
-        'project' => 'SearchMultiSelectField',
-        'requestedBy' => 'SearchMultiSelectField',
-        'resource' => 'SearchMultiSelectField',
-        'startDate' => 'SearchDateField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"allocationType" => "SearchMultiSelectField",
+		"allocationUnit" => "SearchEnumMultiSelectField",
+		"approvalStatus" => "SearchEnumMultiSelectField",
+		"customer" => "SearchMultiSelectField",
+		"endDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"nextApprover" => "SearchMultiSelectField",
+		"notes" => "SearchStringField",
+		"numberHours" => "SearchDoubleField",
+		"percentOfTime" => "SearchDoubleField",
+		"project" => "SearchMultiSelectField",
+		"requestedBy" => "SearchMultiSelectField",
+		"resource" => "SearchMultiSelectField",
+		"startDate" => "SearchDateField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

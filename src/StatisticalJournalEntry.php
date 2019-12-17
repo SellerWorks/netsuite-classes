@@ -11,96 +11,112 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StatisticalJournalEntry.
+ * StatisticalJournalEntry
  */
-class StatisticalJournalEntry extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $parentExpenseAlloc;
-    /**
-     * @var bool
-     */
-    public $approved;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var dateTime
-     */
-    public $reversalDate;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $reversalDefer;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $unitsType;
-    /**
-     * @var StatisticalJournalEntryLineList
-     */
-    public $lineList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class StatisticalJournalEntry extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parentExpenseAlloc;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $approved;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $reversalDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $reversalDefer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $unitsType;
+	/**
+	 * @access public
+	 * @var StatisticalJournalEntryLineList
+	 */
+	public $lineList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'tranId' => 'string',
-        'parentExpenseAlloc' => 'RecordRef',
-        'approved' => 'boolean',
-        'tranDate' => 'dateTime',
-        'postingPeriod' => 'RecordRef',
-        'reversalDate' => 'dateTime',
-        'memo' => 'string',
-        'reversalDefer' => 'boolean',
-        'subsidiary' => 'RecordRef',
-        'unitsType' => 'RecordRef',
-        'lineList' => 'StatisticalJournalEntryLineList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"tranId" => "string",
+		"parentExpenseAlloc" => "RecordRef",
+		"approved" => "boolean",
+		"tranDate" => "dateTime",
+		"postingPeriod" => "RecordRef",
+		"reversalDate" => "dateTime",
+		"memo" => "string",
+		"reversalDefer" => "boolean",
+		"subsidiary" => "RecordRef",
+		"unitsType" => "RecordRef",
+		"lineList" => "StatisticalJournalEntryLineList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

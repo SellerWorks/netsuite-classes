@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RateList.
+ * RateList
  */
-class RateList
-{
-    /**
-     * @var Rate[]
-     */
-    public $rate;
+class RateList {
+	/**
+	 * @access public
+	 * @var Rate[]
+	 */
+	public $rate;
 
-    public static $paramtypesmap = array(
-        'rate' => 'Rate[]',
-    );
+	static $paramtypesmap = array(
+		"rate" => "Rate[]",
+	);
 }

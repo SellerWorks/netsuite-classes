@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WriteResponse.
+ * WriteResponse
  */
-class WriteResponse
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var BaseRef
-     */
-    public $baseRef;
+class WriteResponse {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $baseRef;
 
-    public static $paramtypesmap = array(
-        'status' => 'Status',
-        'baseRef' => 'BaseRef',
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"baseRef" => "BaseRef",
+	);
 }

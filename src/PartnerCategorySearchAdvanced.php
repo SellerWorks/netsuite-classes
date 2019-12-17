@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerCategorySearchAdvanced.
+ * PartnerCategorySearchAdvanced
  */
-class PartnerCategorySearchAdvanced extends SearchRecord
-{
-    /**
-     * @var PartnerCategorySearch
-     */
-    public $criteria;
-    /**
-     * @var PartnerCategorySearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class PartnerCategorySearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var PartnerCategorySearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var PartnerCategorySearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'PartnerCategorySearch',
-        'columns' => 'PartnerCategorySearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "PartnerCategorySearch",
+		"columns" => "PartnerCategorySearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

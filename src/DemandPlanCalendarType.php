@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DemandPlanCalendarType.
+ * DemandPlanCalendarType
  */
-class DemandPlanCalendarType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _daily = '_daily';
-    /**
-     * @var string
-     */
-    const _monthly = '_monthly';
-    /**
-     * @var string
-     */
-    const _weekly = '_weekly';
+class DemandPlanCalendarType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _daily = "_daily";
+	/**
+	 * @var string
+	 */
+	const _monthly = "_monthly";
+	/**
+	 * @var string
+	 */
+	const _weekly = "_weekly";
 }

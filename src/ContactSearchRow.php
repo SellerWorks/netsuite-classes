@@ -11,156 +11,184 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactSearchRow.
+ * ContactSearchRow
  */
-class ContactSearchRow extends SearchRow
-{
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var PhoneCallSearchRowBasic
-     */
-    public $callJoin;
-    /**
-     * @var CampaignSearchRowBasic
-     */
-    public $campaignResponseJoin;
-    /**
-     * @var SupportCaseSearchRowBasic
-     */
-    public $caseJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $customerJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $customerPrimaryJoin;
-    /**
-     * @var CalendarEventSearchRowBasic
-     */
-    public $eventJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobPrimaryJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesFromJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesToJoin;
-    /**
-     * @var OpportunitySearchRowBasic
-     */
-    public $opportunityJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $parentCustomerJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $parentJobJoin;
-    /**
-     * @var PartnerSearchRowBasic
-     */
-    public $parentPartnerJoin;
-    /**
-     * @var VendorSearchRowBasic
-     */
-    public $parentVendorJoin;
-    /**
-     * @var PartnerSearchRowBasic
-     */
-    public $partnerJoin;
-    /**
-     * @var PartnerSearchRowBasic
-     */
-    public $partnerPrimaryJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $purchasedItemJoin;
-    /**
-     * @var TaskSearchRowBasic
-     */
-    public $taskJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $upsellItemJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var VendorSearchRowBasic
-     */
-    public $vendorJoin;
-    /**
-     * @var VendorSearchRowBasic
-     */
-    public $vendorPrimaryJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class ContactSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var PhoneCallSearchRowBasic
+	 */
+	public $callJoin;
+	/**
+	 * @access public
+	 * @var CampaignSearchRowBasic
+	 */
+	public $campaignResponseJoin;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchRowBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $customerJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $customerPrimaryJoin;
+	/**
+	 * @access public
+	 * @var CalendarEventSearchRowBasic
+	 */
+	public $eventJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobPrimaryJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesFromJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesToJoin;
+	/**
+	 * @access public
+	 * @var OpportunitySearchRowBasic
+	 */
+	public $opportunityJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $parentCustomerJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $parentJobJoin;
+	/**
+	 * @access public
+	 * @var PartnerSearchRowBasic
+	 */
+	public $parentPartnerJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchRowBasic
+	 */
+	public $parentVendorJoin;
+	/**
+	 * @access public
+	 * @var PartnerSearchRowBasic
+	 */
+	public $partnerJoin;
+	/**
+	 * @access public
+	 * @var PartnerSearchRowBasic
+	 */
+	public $partnerPrimaryJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $purchasedItemJoin;
+	/**
+	 * @access public
+	 * @var TaskSearchRowBasic
+	 */
+	public $taskJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $upsellItemJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchRowBasic
+	 */
+	public $vendorJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchRowBasic
+	 */
+	public $vendorPrimaryJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'ContactSearchRowBasic',
-        'callJoin' => 'PhoneCallSearchRowBasic',
-        'campaignResponseJoin' => 'CampaignSearchRowBasic',
-        'caseJoin' => 'SupportCaseSearchRowBasic',
-        'customerJoin' => 'CustomerSearchRowBasic',
-        'customerPrimaryJoin' => 'CustomerSearchRowBasic',
-        'eventJoin' => 'CalendarEventSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'jobPrimaryJoin' => 'JobSearchRowBasic',
-        'messagesJoin' => 'MessageSearchRowBasic',
-        'messagesFromJoin' => 'MessageSearchRowBasic',
-        'messagesToJoin' => 'MessageSearchRowBasic',
-        'opportunityJoin' => 'OpportunitySearchRowBasic',
-        'parentCustomerJoin' => 'CustomerSearchRowBasic',
-        'parentJobJoin' => 'JobSearchRowBasic',
-        'parentPartnerJoin' => 'PartnerSearchRowBasic',
-        'parentVendorJoin' => 'VendorSearchRowBasic',
-        'partnerJoin' => 'PartnerSearchRowBasic',
-        'partnerPrimaryJoin' => 'PartnerSearchRowBasic',
-        'purchasedItemJoin' => 'ItemSearchRowBasic',
-        'taskJoin' => 'TaskSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'upsellItemJoin' => 'ItemSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'vendorJoin' => 'VendorSearchRowBasic',
-        'vendorPrimaryJoin' => 'VendorSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "ContactSearchRowBasic",
+		"callJoin" => "PhoneCallSearchRowBasic",
+		"campaignResponseJoin" => "CampaignSearchRowBasic",
+		"caseJoin" => "SupportCaseSearchRowBasic",
+		"customerJoin" => "CustomerSearchRowBasic",
+		"customerPrimaryJoin" => "CustomerSearchRowBasic",
+		"eventJoin" => "CalendarEventSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"jobPrimaryJoin" => "JobSearchRowBasic",
+		"messagesJoin" => "MessageSearchRowBasic",
+		"messagesFromJoin" => "MessageSearchRowBasic",
+		"messagesToJoin" => "MessageSearchRowBasic",
+		"opportunityJoin" => "OpportunitySearchRowBasic",
+		"parentCustomerJoin" => "CustomerSearchRowBasic",
+		"parentJobJoin" => "JobSearchRowBasic",
+		"parentPartnerJoin" => "PartnerSearchRowBasic",
+		"parentVendorJoin" => "VendorSearchRowBasic",
+		"partnerJoin" => "PartnerSearchRowBasic",
+		"partnerPrimaryJoin" => "PartnerSearchRowBasic",
+		"purchasedItemJoin" => "ItemSearchRowBasic",
+		"taskJoin" => "TaskSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"upsellItemJoin" => "ItemSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"vendorJoin" => "VendorSearchRowBasic",
+		"vendorPrimaryJoin" => "VendorSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

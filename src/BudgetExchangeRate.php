@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetExchangeRate.
+ * BudgetExchangeRate
  */
-class BudgetExchangeRate
-{
-    /**
-     * @var RecordRef
-     */
-    public $period;
-    /**
-     * @var RecordRef
-     */
-    public $fromSubsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $toSubsidiary;
-    /**
-     * @var float
-     */
-    public $currentRate;
-    /**
-     * @var float
-     */
-    public $averageRate;
-    /**
-     * @var float
-     */
-    public $historicalRate;
+class BudgetExchangeRate {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $period;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $fromSubsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $toSubsidiary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $currentRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $averageRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $historicalRate;
 
-    public static $paramtypesmap = array(
-        'period' => 'RecordRef',
-        'fromSubsidiary' => 'RecordRef',
-        'toSubsidiary' => 'RecordRef',
-        'currentRate' => 'float',
-        'averageRate' => 'float',
-        'historicalRate' => 'float',
-    );
+	static $paramtypesmap = array(
+		"period" => "RecordRef",
+		"fromSubsidiary" => "RecordRef",
+		"toSubsidiary" => "RecordRef",
+		"currentRate" => "float",
+		"averageRate" => "float",
+		"historicalRate" => "float",
+	);
 }

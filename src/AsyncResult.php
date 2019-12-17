@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncResult.
+ * AsyncResult
  */
-class AsyncResult
-{
-    public static $paramtypesmap = array(
-    );
+class AsyncResult {
+
+	static $paramtypesmap = array(
+	);
 }

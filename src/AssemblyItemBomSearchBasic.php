@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyItemBomSearchBasic.
+ * AssemblyItemBomSearchBasic
  */
-class AssemblyItemBomSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $assembly;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $billOfMaterials;
-    /**
-     * @var SearchBooleanField
-     */
-    public $default;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $locations;
+class AssemblyItemBomSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $assembly;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $billOfMaterials;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $default;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $locations;
 
-    public static $paramtypesmap = array(
-        'assembly' => 'SearchMultiSelectField',
-        'billOfMaterials' => 'SearchMultiSelectField',
-        'default' => 'SearchBooleanField',
-        'locations' => 'SearchMultiSelectField',
-    );
+	static $paramtypesmap = array(
+		"assembly" => "SearchMultiSelectField",
+		"billOfMaterials" => "SearchMultiSelectField",
+		"default" => "SearchBooleanField",
+		"locations" => "SearchMultiSelectField",
+	);
 }

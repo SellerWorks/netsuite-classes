@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Subscriptions.
+ * Subscriptions
  */
-class Subscriptions
-{
-    /**
-     * @var bool
-     */
-    public $subscribed;
-    /**
-     * @var RecordRef
-     */
-    public $subscription;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
+class Subscriptions {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $subscribed;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
 
-    public static $paramtypesmap = array(
-        'subscribed' => 'boolean',
-        'subscription' => 'RecordRef',
-        'lastModifiedDate' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"subscribed" => "boolean",
+		"subscription" => "RecordRef",
+		"lastModifiedDate" => "dateTime",
+	);
 }

@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FolderSearchRow.
+ * FolderSearchRow
  */
-class FolderSearchRow extends SearchRow
-{
-    /**
-     * @var FolderSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
+class FolderSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var FolderSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'FolderSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "FolderSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+	);
 }

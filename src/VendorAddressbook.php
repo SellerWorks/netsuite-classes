@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorAddressbook.
+ * VendorAddressbook
  */
-class VendorAddressbook
-{
-    /**
-     * @var bool
-     */
-    public $defaultShipping;
-    /**
-     * @var bool
-     */
-    public $defaultBilling;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var Address
-     */
-    public $addressbookAddress;
+class VendorAddressbook {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $defaultShipping;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $defaultBilling;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $label;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $addressbookAddress;
 
-    public static $paramtypesmap = array(
-        'defaultShipping' => 'boolean',
-        'defaultBilling' => 'boolean',
-        'label' => 'string',
-        'internalId' => 'string',
-        'addressbookAddress' => 'Address',
-    );
+	static $paramtypesmap = array(
+		"defaultShipping" => "boolean",
+		"defaultBilling" => "boolean",
+		"label" => "string",
+		"internalId" => "string",
+		"addressbookAddress" => "Address",
+	);
 }

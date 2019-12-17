@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaskSearchRow.
+ * TaskSearchRow
  */
-class TaskSearchRow extends SearchRow
-{
-    /**
-     * @var TaskSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $assignedJoin;
-    /**
-     * @var SupportCaseSearchRowBasic
-     */
-    public $caseJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $companyCustomerJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var OpportunitySearchRowBasic
-     */
-    public $opportunityJoin;
-    /**
-     * @var OriginatingLeadSearchRowBasic
-     */
-    public $originatingLeadJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class TaskSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var TaskSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $assignedJoin;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchRowBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $companyCustomerJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var OpportunitySearchRowBasic
+	 */
+	public $opportunityJoin;
+	/**
+	 * @access public
+	 * @var OriginatingLeadSearchRowBasic
+	 */
+	public $originatingLeadJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'TaskSearchRowBasic',
-        'assignedJoin' => 'EmployeeSearchRowBasic',
-        'caseJoin' => 'SupportCaseSearchRowBasic',
-        'companyCustomerJoin' => 'CustomerSearchRowBasic',
-        'contactJoin' => 'ContactSearchRowBasic',
-        'employeeJoin' => 'EmployeeSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'opportunityJoin' => 'OpportunitySearchRowBasic',
-        'originatingLeadJoin' => 'OriginatingLeadSearchRowBasic',
-        'timeJoin' => 'TimeBillSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "TaskSearchRowBasic",
+		"assignedJoin" => "EmployeeSearchRowBasic",
+		"caseJoin" => "SupportCaseSearchRowBasic",
+		"companyCustomerJoin" => "CustomerSearchRowBasic",
+		"contactJoin" => "ContactSearchRowBasic",
+		"employeeJoin" => "EmployeeSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"opportunityJoin" => "OpportunitySearchRowBasic",
+		"originatingLeadJoin" => "OriginatingLeadSearchRowBasic",
+		"timeJoin" => "TimeBillSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

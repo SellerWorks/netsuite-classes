@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ResourceAllocationSearch.
+ * ResourceAllocationSearch
  */
-class ResourceAllocationSearch extends SearchRecord
-{
-    /**
-     * @var ResourceAllocationSearchBasic
-     */
-    public $basic;
-    /**
-     * @var CustomerSearchBasic
-     */
-    public $customerJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var JobSearchBasic
-     */
-    public $jobJoin;
-    /**
-     * @var ProjectTaskSearchBasic
-     */
-    public $projectTaskJoin;
-    /**
-     * @var EntitySearchBasic
-     */
-    public $requestedByJoin;
-    /**
-     * @var EntitySearchBasic
-     */
-    public $resourceJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var VendorSearchBasic
-     */
-    public $vendorJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class ResourceAllocationSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var CustomerSearchBasic
+	 */
+	public $customerJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var JobSearchBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchBasic
+	 */
+	public $projectTaskJoin;
+	/**
+	 * @access public
+	 * @var EntitySearchBasic
+	 */
+	public $requestedByJoin;
+	/**
+	 * @access public
+	 * @var EntitySearchBasic
+	 */
+	public $resourceJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchBasic
+	 */
+	public $vendorJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'ResourceAllocationSearchBasic',
-        'customerJoin' => 'CustomerSearchBasic',
-        'employeeJoin' => 'EmployeeSearchBasic',
-        'jobJoin' => 'JobSearchBasic',
-        'projectTaskJoin' => 'ProjectTaskSearchBasic',
-        'requestedByJoin' => 'EntitySearchBasic',
-        'resourceJoin' => 'EntitySearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'vendorJoin' => 'VendorSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "ResourceAllocationSearchBasic",
+		"customerJoin" => "CustomerSearchBasic",
+		"employeeJoin" => "EmployeeSearchBasic",
+		"jobJoin" => "JobSearchBasic",
+		"projectTaskJoin" => "ProjectTaskSearchBasic",
+		"requestedByJoin" => "EntitySearchBasic",
+		"resourceJoin" => "EntitySearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"vendorJoin" => "VendorSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

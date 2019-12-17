@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NexusSearchBasic.
+ * NexusSearchBasic
  */
-class NexusSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $country;
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $parentNexus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $state;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxAgency;
-    /**
-     * @var SearchBooleanField
-     */
-    public $taxDateFromFulfillment;
+class NexusSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $parentNexus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxAgency;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $taxDateFromFulfillment;
 
-    public static $paramtypesmap = array(
-        'country' => 'SearchEnumMultiSelectField',
-        'description' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'parentNexus' => 'SearchMultiSelectField',
-        'state' => 'SearchMultiSelectField',
-        'taxAgency' => 'SearchMultiSelectField',
-        'taxDateFromFulfillment' => 'SearchBooleanField',
-    );
+	static $paramtypesmap = array(
+		"country" => "SearchEnumMultiSelectField",
+		"description" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"parentNexus" => "SearchMultiSelectField",
+		"state" => "SearchMultiSelectField",
+		"taxAgency" => "SearchMultiSelectField",
+		"taxDateFromFulfillment" => "SearchBooleanField",
+	);
 }

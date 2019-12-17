@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Solutions.
+ * Solutions
  */
-class Solutions
-{
-    /**
-     * @var RecordRef
-     */
-    public $solution;
-    /**
-     * @var string
-     */
-    public $message;
+class Solutions {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $solution;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
 
-    public static $paramtypesmap = array(
-        'solution' => 'RecordRef',
-        'message' => 'string',
-    );
+	static $paramtypesmap = array(
+		"solution" => "RecordRef",
+		"message" => "string",
+	);
 }

@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ServiceItemTaskTemplates.
+ * ServiceItemTaskTemplates
  */
-class ServiceItemTaskTemplates
-{
-    /**
-     * @var string
-     */
-    public $taskName;
-    /**
-     * @var int
-     */
-    public $taskStartOffset;
-    /**
-     * @var Duration
-     */
-    public $taskDuration;
+class ServiceItemTaskTemplates {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taskName;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $taskStartOffset;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $taskDuration;
 
-    public static $paramtypesmap = array(
-        'taskName' => 'string',
-        'taskStartOffset' => 'integer',
-        'taskDuration' => 'Duration',
-    );
+	static $paramtypesmap = array(
+		"taskName" => "string",
+		"taskStartOffset" => "integer",
+		"taskDuration" => "Duration",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiaryNexus.
+ * SubsidiaryNexus
  */
-class SubsidiaryNexus
-{
-    /**
-     * @var RecordRef
-     */
-    public $nexusId;
-    /**
-     * @var string
-     */
-    public $country;
+class SubsidiaryNexus {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexusId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $country;
 
-    public static $paramtypesmap = array(
-        'nexusId' => 'RecordRef',
-        'country' => 'string',
-    );
+	static $paramtypesmap = array(
+		"nexusId" => "RecordRef",
+		"country" => "string",
+	);
 }

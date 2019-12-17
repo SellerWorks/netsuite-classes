@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InvoiceExpCostList.
+ * InvoiceExpCostList
  */
-class InvoiceExpCostList
-{
-    /**
-     * @var InvoiceExpCost[]
-     */
-    public $expCost;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InvoiceExpCostList {
+	/**
+	 * @access public
+	 * @var InvoiceExpCost[]
+	 */
+	public $expCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'expCost' => 'InvoiceExpCost[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"expCost" => "InvoiceExpCost[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MerchandiseHierarchyNode.
+ * MerchandiseHierarchyNode
  */
-class MerchandiseHierarchyNode extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var MerchandiseHierarchyNodeHierarchyVersionsList
-     */
-    public $hierarchyVersionsList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class MerchandiseHierarchyNode extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var MerchandiseHierarchyNodeHierarchyVersionsList
+	 */
+	public $hierarchyVersionsList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'name' => 'string',
-        'description' => 'string',
-        'hierarchyVersionsList' => 'MerchandiseHierarchyNodeHierarchyVersionsList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"name" => "string",
+		"description" => "string",
+		"hierarchyVersionsList" => "MerchandiseHierarchyNodeHierarchyVersionsList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

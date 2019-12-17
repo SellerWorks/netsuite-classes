@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategoryList.
+ * SiteCategoryList
  */
-class SiteCategoryList
-{
-    /**
-     * @var SiteCategory[]
-     */
-    public $siteCategory;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SiteCategoryList {
+	/**
+	 * @access public
+	 * @var SiteCategory[]
+	 */
+	public $siteCategory;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'siteCategory' => 'SiteCategory[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"siteCategory" => "SiteCategory[]",
+		"replaceAll" => "boolean",
+	);
 }

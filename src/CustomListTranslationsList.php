@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListTranslationsList.
+ * CustomListTranslationsList
  */
-class CustomListTranslationsList
-{
-    /**
-     * @var CustomListTranslations[]
-     */
-    public $translations;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomListTranslationsList {
+	/**
+	 * @access public
+	 * @var CustomListTranslations[]
+	 */
+	public $translations;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'translations' => 'CustomListTranslations[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"translations" => "CustomListTranslations[]",
+		"replaceAll" => "boolean",
+	);
 }

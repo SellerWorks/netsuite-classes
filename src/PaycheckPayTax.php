@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayTax.
+ * PaycheckPayTax
  */
-class PaycheckPayTax
-{
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var string
-     */
-    public $payTax;
-    /**
-     * @var int
-     */
-    public $payItem;
-    /**
-     * @var float
-     */
-    public $taxableWageBase;
-    /**
-     * @var float
-     */
-    public $taxedWageBase;
-    /**
-     * @var float
-     */
-    public $reportableWageBase;
-    /**
-     * @var bool
-     */
-    public $isExempt;
-    /**
-     * @var bool
-     */
-    public $isResidentTax;
-    /**
-     * @var float
-     */
-    public $amount;
+class PaycheckPayTax {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payTax;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $payItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxableWageBase;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxedWageBase;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $reportableWageBase;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isExempt;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isResidentTax;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = array(
-        'line' => 'integer',
-        'apply' => 'boolean',
-        'payTax' => 'string',
-        'payItem' => 'integer',
-        'taxableWageBase' => 'float',
-        'taxedWageBase' => 'float',
-        'reportableWageBase' => 'float',
-        'isExempt' => 'boolean',
-        'isResidentTax' => 'boolean',
-        'amount' => 'float',
-    );
+	static $paramtypesmap = array(
+		"line" => "integer",
+		"apply" => "boolean",
+		"payTax" => "string",
+		"payItem" => "integer",
+		"taxableWageBase" => "float",
+		"taxedWageBase" => "float",
+		"reportableWageBase" => "float",
+		"isExempt" => "boolean",
+		"isResidentTax" => "boolean",
+		"amount" => "float",
+	);
 }

@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FileSiteCategory.
+ * FileSiteCategory
  */
-class FileSiteCategory
-{
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $categoryDescription;
-    /**
-     * @var RecordRef
-     */
-    public $website;
+class FileSiteCategory {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $categoryDescription;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $website;
 
-    public static $paramtypesmap = array(
-        'isDefault' => 'boolean',
-        'category' => 'RecordRef',
-        'categoryDescription' => 'string',
-        'website' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"isDefault" => "boolean",
+		"category" => "RecordRef",
+		"categoryDescription" => "string",
+		"website" => "RecordRef",
+	);
 }

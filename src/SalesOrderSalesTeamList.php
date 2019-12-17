@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderSalesTeamList.
+ * SalesOrderSalesTeamList
  */
-class SalesOrderSalesTeamList
-{
-    /**
-     * @var SalesOrderSalesTeam[]
-     */
-    public $salesTeam;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SalesOrderSalesTeamList {
+	/**
+	 * @access public
+	 * @var SalesOrderSalesTeam[]
+	 */
+	public $salesTeam;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'salesTeam' => 'SalesOrderSalesTeam[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"salesTeam" => "SalesOrderSalesTeam[]",
+		"replaceAll" => "boolean",
+	);
 }

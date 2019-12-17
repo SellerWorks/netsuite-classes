@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorRoles.
+ * VendorRoles
  */
-class VendorRoles
-{
-    /**
-     * @var RecordRef
-     */
-    public $selectedRole;
+class VendorRoles {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $selectedRole;
 
-    public static $paramtypesmap = array(
-        'selectedRole' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"selectedRole" => "RecordRef",
+	);
 }

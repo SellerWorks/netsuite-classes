@@ -11,626 +11,754 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * KitItem.
+ * KitItem
  */
-class KitItem extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $upcCode;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $printItems;
-    /**
-     * @var bool
-     */
-    public $isOnline;
-    /**
-     * @var bool
-     */
-    public $isGcoCompliant;
-    /**
-     * @var bool
-     */
-    public $offerSupport;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $availableToPartners;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $incomeAccount;
-    /**
-     * @var RecordRef
-     */
-    public $taxSchedule;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var bool
-     */
-    public $deferRevRec;
-    /**
-     * @var RecordRef
-     */
-    public $revenueRecognitionRule;
-    /**
-     * @var RecordRef
-     */
-    public $revRecForecastRule;
-    /**
-     * @var RecordRef
-     */
-    public $revenueAllocationGroup;
-    /**
-     * @var RecordRef
-     */
-    public $createRevenuePlansOn;
-    /**
-     * @var bool
-     */
-    public $directRevenuePosting;
-    /**
-     * @var bool
-     */
-    public $contingentRevenueHandling;
-    /**
-     * @var RecordRef
-     */
-    public $revReclassFXAccount;
-    /**
-     * @var RecordRef
-     */
-    public $salesTaxCode;
-    /**
-     * @var float
-     */
-    public $weight;
-    /**
-     * @var RecordRef
-     */
-    public $weightUnit;
-    /**
-     * @var float
-     */
-    public $rate;
-    /**
-     * @var RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var RecordRef
-     */
-    public $deferredRevenueAccount;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var string
-     */
-    public $stockDescription;
-    /**
-     * @var bool
-     */
-    public $producer;
-    /**
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * @var string
-     */
-    public $mpn;
-    /**
-     * @var bool
-     */
-    public $multManufactureAddr;
-    /**
-     * @var string
-     */
-    public $manufactureraddr1;
-    /**
-     * @var string
-     */
-    public $manufacturerCity;
-    /**
-     * @var string
-     */
-    public $manufacturerState;
-    /**
-     * @var string
-     */
-    public $manufacturerZip;
-    /**
-     * @var Country
-     */
-    public $countryOfManufacture;
-    /**
-     * @var RecordRef
-     */
-    public $defaultItemShipMethod;
-    /**
-     * @var ShippingCarrier
-     */
-    public $itemCarrier;
-    /**
-     * @var RecordRefList
-     */
-    public $itemShipMethodList;
-    /**
-     * @var string
-     */
-    public $manufacturerTaxId;
-    /**
-     * @var string
-     */
-    public $scheduleBNumber;
-    /**
-     * @var int
-     */
-    public $scheduleBQuantity;
-    /**
-     * @var RecordRef
-     */
-    public $scheduleBCode;
-    /**
-     * @var string
-     */
-    public $manufacturerTariff;
-    /**
-     * @var ItemPreferenceCriterion
-     */
-    public $preferenceCriterion;
-    /**
-     * @var RecordRef
-     */
-    public $issueProduct;
-    /**
-     * @var int
-     */
-    public $minimumQuantity;
-    /**
-     * @var bool
-     */
-    public $enforceMinQtyInternally;
-    /**
-     * @var int
-     */
-    public $maximumQuantity;
-    /**
-     * @var RecordRef
-     */
-    public $softDescriptor;
-    /**
-     * @var bool
-     */
-    public $isFulfillable;
-    /**
-     * @var bool
-     */
-    public $pricesIncludeTax;
-    /**
-     * @var RecordRef
-     */
-    public $quantityPricingSchedule;
-    /**
-     * @var bool
-     */
-    public $useMarginalRates;
-    /**
-     * @var ItemCostEstimateType
-     */
-    public $costEstimateType;
-    /**
-     * @var bool
-     */
-    public $isHazmatItem;
-    /**
-     * @var string
-     */
-    public $hazmatId;
-    /**
-     * @var string
-     */
-    public $hazmatShippingName;
-    /**
-     * @var string
-     */
-    public $hazmatHazardClass;
-    /**
-     * @var HazmatPackingGroup
-     */
-    public $hazmatPackingGroup;
-    /**
-     * @var string
-     */
-    public $hazmatItemUnits;
-    /**
-     * @var float
-     */
-    public $hazmatItemUnitsQty;
-    /**
-     * @var float
-     */
-    public $costEstimate;
-    /**
-     * @var ItemOverallQuantityPricingType
-     */
-    public $overallQuantityPricingType;
-    /**
-     * @var RecordRef
-     */
-    public $pricingGroup;
-    /**
-     * @var float
-     */
-    public $vsoePrice;
-    /**
-     * @var VsoeSopGroup
-     */
-    public $vsoeSopGroup;
-    /**
-     * @var VsoeDeferral
-     */
-    public $vsoeDeferral;
-    /**
-     * @var VsoePermitDiscount
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var bool
-     */
-    public $vsoeDelivered;
-    /**
-     * @var RecordRef
-     */
-    public $itemRevenueCategory;
-    /**
-     * @var bool
-     */
-    public $shipIndividually;
-    /**
-     * @var RecordRef
-     */
-    public $shipPackage;
-    /**
-     * @var string
-     */
-    public $storeDisplayName;
-    /**
-     * @var RecordRef
-     */
-    public $storeDisplayThumbnail;
-    /**
-     * @var string
-     */
-    public $outOfStockMessage;
-    /**
-     * @var RecordRef
-     */
-    public $storeDisplayImage;
-    /**
-     * @var string
-     */
-    public $storeDescription;
-    /**
-     * @var string
-     */
-    public $storeDetailedDescription;
-    /**
-     * @var RecordRef
-     */
-    public $storeItemTemplate;
-    /**
-     * @var string
-     */
-    public $pageTitle;
-    /**
-     * @var string
-     */
-    public $urlComponent;
-    /**
-     * @var string
-     */
-    public $metaTagHtml;
-    /**
-     * @var bool
-     */
-    public $excludeFromSitemap;
-    /**
-     * @var SitemapPriority
-     */
-    public $sitemapPriority;
-    /**
-     * @var string
-     */
-    public $searchKeywords;
-    /**
-     * @var ItemOptionsList
-     */
-    public $itemOptionsList;
-    /**
-     * @var bool
-     */
-    public $isDonationItem;
-    /**
-     * @var bool
-     */
-    public $showDefaultDonationAmount;
-    /**
-     * @var float
-     */
-    public $maxDonationAmount;
-    /**
-     * @var bool
-     */
-    public $dontShowPrice;
-    /**
-     * @var string
-     */
-    public $noPriceMessage;
-    /**
-     * @var string
-     */
-    public $shoppingDotComCategory;
-    /**
-     * @var int
-     */
-    public $shopzillaCategoryId;
-    /**
-     * @var ItemOutOfStockBehavior
-     */
-    public $outOfStockBehavior;
-    /**
-     * @var string
-     */
-    public $nexTagCategory;
-    /**
-     * @var ProductFeedList
-     */
-    public $productFeedList;
-    /**
-     * @var string
-     */
-    public $relatedItemsDescription;
-    /**
-     * @var bool
-     */
-    public $onSpecial;
-    /**
-     * @var string
-     */
-    public $specialsDescription;
-    /**
-     * @var string
-     */
-    public $featuredDescription;
-    /**
-     * @var PricingMatrix
-     */
-    public $pricingMatrix;
-    /**
-     * @var SiteCategoryList
-     */
-    public $siteCategoryList;
-    /**
-     * @var ItemMemberList
-     */
-    public $memberList;
-    /**
-     * @var ItemAccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var TranslationList
-     */
-    public $translationsList;
-    /**
-     * @var PresentationItemList
-     */
-    public $presentationItemList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class KitItem extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $upcCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $printItems;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isGcoCompliant;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $offerSupport;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $availableToPartners;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $incomeAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxSchedule;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revenueRecognitionRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecForecastRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revenueAllocationGroup;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createRevenuePlansOn;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $directRevenuePosting;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $contingentRevenueHandling;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revReclassFXAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesTaxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $weight;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $weightUnit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $deferredRevenueAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $stockDescription;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $producer;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturer;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mpn;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $multManufactureAddr;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufactureraddr1;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerCity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerState;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerZip;
+	/**
+	 * @access public
+	 * @var Country
+	 */
+	public $countryOfManufacture;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultItemShipMethod;
+	/**
+	 * @access public
+	 * @var ShippingCarrier
+	 */
+	public $itemCarrier;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $itemShipMethodList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerTaxId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scheduleBNumber;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $scheduleBQuantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $scheduleBCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $manufacturerTariff;
+	/**
+	 * @access public
+	 * @var ItemPreferenceCriterion
+	 */
+	public $preferenceCriterion;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $issueProduct;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $minimumQuantity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $enforceMinQtyInternally;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $maximumQuantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $softDescriptor;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isFulfillable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $pricesIncludeTax;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $quantityPricingSchedule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useMarginalRates;
+	/**
+	 * @access public
+	 * @var ItemCostEstimateType
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isHazmatItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatShippingName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatHazardClass;
+	/**
+	 * @access public
+	 * @var HazmatPackingGroup
+	 */
+	public $hazmatPackingGroup;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $hazmatItemUnits;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $hazmatItemUnitsQty;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var ItemOverallQuantityPricingType
+	 */
+	public $overallQuantityPricingType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $pricingGroup;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var VsoeSopGroup
+	 */
+	public $vsoeSopGroup;
+	/**
+	 * @access public
+	 * @var VsoeDeferral
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var VsoePermitDiscount
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $itemRevenueCategory;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $shipIndividually;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipPackage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDisplayName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeDisplayThumbnail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $outOfStockMessage;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeDisplayImage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $storeDetailedDescription;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $storeItemTemplate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $pageTitle;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $urlComponent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $metaTagHtml;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeFromSitemap;
+	/**
+	 * @access public
+	 * @var SitemapPriority
+	 */
+	public $sitemapPriority;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $searchKeywords;
+	/**
+	 * @access public
+	 * @var ItemOptionsList
+	 */
+	public $itemOptionsList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDonationItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showDefaultDonationAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $maxDonationAmount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $dontShowPrice;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $noPriceMessage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shoppingDotComCategory;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $shopzillaCategoryId;
+	/**
+	 * @access public
+	 * @var ItemOutOfStockBehavior
+	 */
+	public $outOfStockBehavior;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $nexTagCategory;
+	/**
+	 * @access public
+	 * @var ProductFeedList
+	 */
+	public $productFeedList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $relatedItemsDescription;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $onSpecial;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $specialsDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $featuredDescription;
+	/**
+	 * @access public
+	 * @var PricingMatrix
+	 */
+	public $pricingMatrix;
+	/**
+	 * @access public
+	 * @var SiteCategoryList
+	 */
+	public $siteCategoryList;
+	/**
+	 * @access public
+	 * @var ItemMemberList
+	 */
+	public $memberList;
+	/**
+	 * @access public
+	 * @var ItemAccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var TranslationList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var PresentationItemList
+	 */
+	public $presentationItemList;
+	/**
+	 * @access public
+	 * @var KitItemHierarchyVersionsList
+	 */
+	public $hierarchyVersionsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'itemId' => 'string',
-        'upcCode' => 'string',
-        'displayName' => 'string',
-        'parent' => 'RecordRef',
-        'printItems' => 'boolean',
-        'isOnline' => 'boolean',
-        'isGcoCompliant' => 'boolean',
-        'offerSupport' => 'boolean',
-        'isInactive' => 'boolean',
-        'availableToPartners' => 'boolean',
-        'department' => 'RecordRef',
-        'subsidiaryList' => 'RecordRefList',
-        'class' => 'RecordRef',
-        'includeChildren' => 'boolean',
-        'location' => 'RecordRef',
-        'description' => 'string',
-        'incomeAccount' => 'RecordRef',
-        'taxSchedule' => 'RecordRef',
-        'shippingCost' => 'float',
-        'handlingCost' => 'float',
-        'isTaxable' => 'boolean',
-        'deferRevRec' => 'boolean',
-        'revenueRecognitionRule' => 'RecordRef',
-        'revRecForecastRule' => 'RecordRef',
-        'revenueAllocationGroup' => 'RecordRef',
-        'createRevenuePlansOn' => 'RecordRef',
-        'directRevenuePosting' => 'boolean',
-        'contingentRevenueHandling' => 'boolean',
-        'revReclassFXAccount' => 'RecordRef',
-        'salesTaxCode' => 'RecordRef',
-        'weight' => 'float',
-        'weightUnit' => 'RecordRef',
-        'rate' => 'float',
-        'billingSchedule' => 'RecordRef',
-        'deferredRevenueAccount' => 'RecordRef',
-        'revRecSchedule' => 'RecordRef',
-        'stockDescription' => 'string',
-        'producer' => 'boolean',
-        'manufacturer' => 'string',
-        'mpn' => 'string',
-        'multManufactureAddr' => 'boolean',
-        'manufactureraddr1' => 'string',
-        'manufacturerCity' => 'string',
-        'manufacturerState' => 'string',
-        'manufacturerZip' => 'string',
-        'countryOfManufacture' => 'Country',
-        'defaultItemShipMethod' => 'RecordRef',
-        'itemCarrier' => 'ShippingCarrier',
-        'itemShipMethodList' => 'RecordRefList',
-        'manufacturerTaxId' => 'string',
-        'scheduleBNumber' => 'string',
-        'scheduleBQuantity' => 'integer',
-        'scheduleBCode' => 'RecordRef',
-        'manufacturerTariff' => 'string',
-        'preferenceCriterion' => 'ItemPreferenceCriterion',
-        'issueProduct' => 'RecordRef',
-        'minimumQuantity' => 'integer',
-        'enforceMinQtyInternally' => 'boolean',
-        'maximumQuantity' => 'integer',
-        'softDescriptor' => 'RecordRef',
-        'isFulfillable' => 'boolean',
-        'pricesIncludeTax' => 'boolean',
-        'quantityPricingSchedule' => 'RecordRef',
-        'useMarginalRates' => 'boolean',
-        'costEstimateType' => 'ItemCostEstimateType',
-        'isHazmatItem' => 'boolean',
-        'hazmatId' => 'string',
-        'hazmatShippingName' => 'string',
-        'hazmatHazardClass' => 'string',
-        'hazmatPackingGroup' => 'HazmatPackingGroup',
-        'hazmatItemUnits' => 'string',
-        'hazmatItemUnitsQty' => 'float',
-        'costEstimate' => 'float',
-        'overallQuantityPricingType' => 'ItemOverallQuantityPricingType',
-        'pricingGroup' => 'RecordRef',
-        'vsoePrice' => 'float',
-        'vsoeSopGroup' => 'VsoeSopGroup',
-        'vsoeDeferral' => 'VsoeDeferral',
-        'vsoePermitDiscount' => 'VsoePermitDiscount',
-        'vsoeDelivered' => 'boolean',
-        'itemRevenueCategory' => 'RecordRef',
-        'shipIndividually' => 'boolean',
-        'shipPackage' => 'RecordRef',
-        'storeDisplayName' => 'string',
-        'storeDisplayThumbnail' => 'RecordRef',
-        'outOfStockMessage' => 'string',
-        'storeDisplayImage' => 'RecordRef',
-        'storeDescription' => 'string',
-        'storeDetailedDescription' => 'string',
-        'storeItemTemplate' => 'RecordRef',
-        'pageTitle' => 'string',
-        'urlComponent' => 'string',
-        'metaTagHtml' => 'string',
-        'excludeFromSitemap' => 'boolean',
-        'sitemapPriority' => 'SitemapPriority',
-        'searchKeywords' => 'string',
-        'itemOptionsList' => 'ItemOptionsList',
-        'isDonationItem' => 'boolean',
-        'showDefaultDonationAmount' => 'boolean',
-        'maxDonationAmount' => 'float',
-        'dontShowPrice' => 'boolean',
-        'noPriceMessage' => 'string',
-        'shoppingDotComCategory' => 'string',
-        'shopzillaCategoryId' => 'integer',
-        'outOfStockBehavior' => 'ItemOutOfStockBehavior',
-        'nexTagCategory' => 'string',
-        'productFeedList' => 'ProductFeedList',
-        'relatedItemsDescription' => 'string',
-        'onSpecial' => 'boolean',
-        'specialsDescription' => 'string',
-        'featuredDescription' => 'string',
-        'pricingMatrix' => 'PricingMatrix',
-        'siteCategoryList' => 'SiteCategoryList',
-        'memberList' => 'ItemMemberList',
-        'accountingBookDetailList' => 'ItemAccountingBookDetailList',
-        'translationsList' => 'TranslationList',
-        'presentationItemList' => 'PresentationItemList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"itemId" => "string",
+		"upcCode" => "string",
+		"displayName" => "string",
+		"parent" => "RecordRef",
+		"printItems" => "boolean",
+		"isOnline" => "boolean",
+		"isGcoCompliant" => "boolean",
+		"offerSupport" => "boolean",
+		"isInactive" => "boolean",
+		"availableToPartners" => "boolean",
+		"department" => "RecordRef",
+		"subsidiaryList" => "RecordRefList",
+		"class" => "RecordRef",
+		"includeChildren" => "boolean",
+		"location" => "RecordRef",
+		"description" => "string",
+		"incomeAccount" => "RecordRef",
+		"taxSchedule" => "RecordRef",
+		"shippingCost" => "float",
+		"handlingCost" => "float",
+		"isTaxable" => "boolean",
+		"deferRevRec" => "boolean",
+		"revenueRecognitionRule" => "RecordRef",
+		"revRecForecastRule" => "RecordRef",
+		"revenueAllocationGroup" => "RecordRef",
+		"createRevenuePlansOn" => "RecordRef",
+		"directRevenuePosting" => "boolean",
+		"contingentRevenueHandling" => "boolean",
+		"revReclassFXAccount" => "RecordRef",
+		"salesTaxCode" => "RecordRef",
+		"weight" => "float",
+		"weightUnit" => "RecordRef",
+		"rate" => "float",
+		"billingSchedule" => "RecordRef",
+		"deferredRevenueAccount" => "RecordRef",
+		"revRecSchedule" => "RecordRef",
+		"stockDescription" => "string",
+		"producer" => "boolean",
+		"manufacturer" => "string",
+		"mpn" => "string",
+		"multManufactureAddr" => "boolean",
+		"manufactureraddr1" => "string",
+		"manufacturerCity" => "string",
+		"manufacturerState" => "string",
+		"manufacturerZip" => "string",
+		"countryOfManufacture" => "Country",
+		"defaultItemShipMethod" => "RecordRef",
+		"itemCarrier" => "ShippingCarrier",
+		"itemShipMethodList" => "RecordRefList",
+		"manufacturerTaxId" => "string",
+		"scheduleBNumber" => "string",
+		"scheduleBQuantity" => "integer",
+		"scheduleBCode" => "RecordRef",
+		"manufacturerTariff" => "string",
+		"preferenceCriterion" => "ItemPreferenceCriterion",
+		"issueProduct" => "RecordRef",
+		"minimumQuantity" => "integer",
+		"enforceMinQtyInternally" => "boolean",
+		"maximumQuantity" => "integer",
+		"softDescriptor" => "RecordRef",
+		"isFulfillable" => "boolean",
+		"pricesIncludeTax" => "boolean",
+		"quantityPricingSchedule" => "RecordRef",
+		"useMarginalRates" => "boolean",
+		"costEstimateType" => "ItemCostEstimateType",
+		"isHazmatItem" => "boolean",
+		"hazmatId" => "string",
+		"hazmatShippingName" => "string",
+		"hazmatHazardClass" => "string",
+		"hazmatPackingGroup" => "HazmatPackingGroup",
+		"hazmatItemUnits" => "string",
+		"hazmatItemUnitsQty" => "float",
+		"costEstimate" => "float",
+		"overallQuantityPricingType" => "ItemOverallQuantityPricingType",
+		"pricingGroup" => "RecordRef",
+		"vsoePrice" => "float",
+		"vsoeSopGroup" => "VsoeSopGroup",
+		"vsoeDeferral" => "VsoeDeferral",
+		"vsoePermitDiscount" => "VsoePermitDiscount",
+		"vsoeDelivered" => "boolean",
+		"itemRevenueCategory" => "RecordRef",
+		"shipIndividually" => "boolean",
+		"shipPackage" => "RecordRef",
+		"storeDisplayName" => "string",
+		"storeDisplayThumbnail" => "RecordRef",
+		"outOfStockMessage" => "string",
+		"storeDisplayImage" => "RecordRef",
+		"storeDescription" => "string",
+		"storeDetailedDescription" => "string",
+		"storeItemTemplate" => "RecordRef",
+		"pageTitle" => "string",
+		"urlComponent" => "string",
+		"metaTagHtml" => "string",
+		"excludeFromSitemap" => "boolean",
+		"sitemapPriority" => "SitemapPriority",
+		"searchKeywords" => "string",
+		"itemOptionsList" => "ItemOptionsList",
+		"isDonationItem" => "boolean",
+		"showDefaultDonationAmount" => "boolean",
+		"maxDonationAmount" => "float",
+		"dontShowPrice" => "boolean",
+		"noPriceMessage" => "string",
+		"shoppingDotComCategory" => "string",
+		"shopzillaCategoryId" => "integer",
+		"outOfStockBehavior" => "ItemOutOfStockBehavior",
+		"nexTagCategory" => "string",
+		"productFeedList" => "ProductFeedList",
+		"relatedItemsDescription" => "string",
+		"onSpecial" => "boolean",
+		"specialsDescription" => "string",
+		"featuredDescription" => "string",
+		"pricingMatrix" => "PricingMatrix",
+		"siteCategoryList" => "SiteCategoryList",
+		"memberList" => "ItemMemberList",
+		"accountingBookDetailList" => "ItemAccountingBookDetailList",
+		"translationsList" => "TranslationList",
+		"presentationItemList" => "PresentationItemList",
+		"hierarchyVersionsList" => "KitItemHierarchyVersionsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

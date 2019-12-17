@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Duration.
+ * Duration
  */
-class Duration
-{
-    /**
-     * @var float
-     */
-    public $timeSpan;
-    /**
-     * @var DurationUnit
-     */
-    public $unit;
+class Duration {
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $timeSpan;
+	/**
+	 * @access public
+	 * @var DurationUnit
+	 */
+	public $unit;
 
-    public static $paramtypesmap = array(
-        'timeSpan' => 'float',
-        'unit' => 'DurationUnit',
-    );
+	static $paramtypesmap = array(
+		"timeSpan" => "float",
+		"unit" => "DurationUnit",
+	);
 }

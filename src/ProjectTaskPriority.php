@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskPriority.
+ * ProjectTaskPriority
  */
-class ProjectTaskPriority
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _high = '_high';
-    /**
-     * @var string
-     */
-    const _low = '_low';
-    /**
-     * @var string
-     */
-    const _medium = '_medium';
+class ProjectTaskPriority {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _high = "_high";
+	/**
+	 * @var string
+	 */
+	const _low = "_low";
+	/**
+	 * @var string
+	 */
+	const _medium = "_medium";
 }

@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyPlanSearch.
+ * ItemSupplyPlanSearch
  */
-class ItemSupplyPlanSearch extends SearchRecord
-{
-    /**
-     * @var ItemSupplyPlanSearchBasic
-     */
-    public $basic;
-    /**
-     * @var ItemSearchBasic
-     */
-    public $itemJoin;
-    /**
-     * @var LocationSearchBasic
-     */
-    public $locationJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class ItemSupplyPlanSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ItemSupplyPlanSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var ItemSearchBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var LocationSearchBasic
+	 */
+	public $locationJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'ItemSupplyPlanSearchBasic',
-        'itemJoin' => 'ItemSearchBasic',
-        'locationJoin' => 'LocationSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "ItemSupplyPlanSearchBasic",
+		"itemJoin" => "ItemSearchBasic",
+		"locationJoin" => "LocationSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

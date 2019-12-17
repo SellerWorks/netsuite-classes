@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CreditMemoApplyList.
+ * CreditMemoApplyList
  */
-class CreditMemoApplyList
-{
-    /**
-     * @var CreditMemoApply[]
-     */
-    public $apply;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CreditMemoApplyList {
+	/**
+	 * @access public
+	 * @var CreditMemoApply[]
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'apply' => 'CreditMemoApply[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"apply" => "CreditMemoApply[]",
+		"replaceAll" => "boolean",
+	);
 }

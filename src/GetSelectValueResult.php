@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectValueResult.
+ * GetSelectValueResult
  */
-class GetSelectValueResult
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var int
-     */
-    public $totalRecords;
-    /**
-     * @var int
-     */
-    public $totalPages;
-    /**
-     * @var BaseRefList
-     */
-    public $baseRefList;
+class GetSelectValueResult {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalRecords;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $totalPages;
+	/**
+	 * @access public
+	 * @var BaseRefList
+	 */
+	public $baseRefList;
 
-    public static $paramtypesmap = array(
-        'status' => 'Status',
-        'totalRecords' => 'integer',
-        'totalPages' => 'integer',
-        'baseRefList' => 'BaseRefList',
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"totalRecords" => "integer",
+		"totalPages" => "integer",
+		"baseRefList" => "BaseRefList",
+	);
 }

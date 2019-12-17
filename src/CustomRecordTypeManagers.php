@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeManagers.
+ * CustomRecordTypeManagers
  */
-class CustomRecordTypeManagers
-{
-    /**
-     * @var RecordRef
-     */
-    public $managerEmp;
+class CustomRecordTypeManagers {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $managerEmp;
 
-    public static $paramtypesmap = array(
-        'managerEmp' => 'RecordRef',
-    );
+	static $paramtypesmap = array(
+		"managerEmp" => "RecordRef",
+	);
 }

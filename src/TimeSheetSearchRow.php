@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheetSearchRow.
+ * TimeSheetSearchRow
  */
-class TimeSheetSearchRow extends SearchRow
-{
-    /**
-     * @var TimeSheetSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeBillJoin;
-    /**
-     * @var TimeEntrySearchRowBasic
-     */
-    public $timeEntryJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class TimeSheetSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var TimeSheetSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeBillJoin;
+	/**
+	 * @access public
+	 * @var TimeEntrySearchRowBasic
+	 */
+	public $timeEntryJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'TimeSheetSearchRowBasic',
-        'employeeJoin' => 'EmployeeSearchRowBasic',
-        'timeBillJoin' => 'TimeBillSearchRowBasic',
-        'timeEntryJoin' => 'TimeEntrySearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "TimeSheetSearchRowBasic",
+		"employeeJoin" => "EmployeeSearchRowBasic",
+		"timeBillJoin" => "TimeBillSearchRowBasic",
+		"timeEntryJoin" => "TimeEntrySearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

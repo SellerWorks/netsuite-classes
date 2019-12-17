@@ -11,146 +11,172 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PurchaseRequisitionItem.
+ * PurchaseRequisitionItem
  */
-class PurchaseRequisitionItem
-{
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var string
-     */
-    public $vendorName;
-    /**
-     * @var RecordRef
-     */
-    public $poVendor;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var float
-     */
-    public $estimatedRate;
-    /**
-     * @var float
-     */
-    public $estimatedAmount;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $taxCode;
-    /**
-     * @var float
-     */
-    public $taxRate1;
-    /**
-     * @var float
-     */
-    public $taxRate2;
-    /**
-     * @var float
-     */
-    public $grossAmt;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var bool
-     */
-    public $isBillable;
-    /**
-     * @var RecordRefList
-     */
-    public $linkedOrderList;
-    /**
-     * @var string
-     */
-    public $linkedOrderStatus;
-    /**
-     * @var dateTime
-     */
-    public $expectedReceiptDate;
-    /**
-     * @var bool
-     */
-    public $isClosed;
-    /**
-     * @var bool
-     */
-    public $expandItemGroup;
+class PurchaseRequisitionItem {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $poVendor;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedAmount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate1;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate2;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $grossAmt;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBillable;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $linkedOrderList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $linkedOrderStatus;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $expectedReceiptDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isClosed;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $expandItemGroup;
 
-    public static $paramtypesmap = array(
-        'line' => 'integer',
-        'item' => 'RecordRef',
-        'vendorName' => 'string',
-        'poVendor' => 'RecordRef',
-        'quantity' => 'float',
-        'units' => 'RecordRef',
-        'serialNumbers' => 'string',
-        'inventoryDetail' => 'InventoryDetail',
-        'description' => 'string',
-        'estimatedRate' => 'float',
-        'estimatedAmount' => 'float',
-        'rate' => 'string',
-        'amount' => 'float',
-        'taxCode' => 'RecordRef',
-        'taxRate1' => 'float',
-        'taxRate2' => 'float',
-        'grossAmt' => 'float',
-        'options' => 'CustomFieldList',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'customer' => 'RecordRef',
-        'isBillable' => 'boolean',
-        'linkedOrderList' => 'RecordRefList',
-        'linkedOrderStatus' => 'string',
-        'expectedReceiptDate' => 'dateTime',
-        'isClosed' => 'boolean',
-        'expandItemGroup' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"line" => "integer",
+		"item" => "RecordRef",
+		"vendorName" => "string",
+		"poVendor" => "RecordRef",
+		"quantity" => "float",
+		"units" => "RecordRef",
+		"serialNumbers" => "string",
+		"inventoryDetail" => "InventoryDetail",
+		"description" => "string",
+		"estimatedRate" => "float",
+		"estimatedAmount" => "float",
+		"rate" => "string",
+		"amount" => "float",
+		"taxCode" => "RecordRef",
+		"taxRate1" => "float",
+		"taxRate2" => "float",
+		"grossAmt" => "float",
+		"options" => "CustomFieldList",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"customer" => "RecordRef",
+		"isBillable" => "boolean",
+		"linkedOrderList" => "RecordRefList",
+		"linkedOrderStatus" => "string",
+		"expectedReceiptDate" => "dateTime",
+		"isClosed" => "boolean",
+		"expandItemGroup" => "boolean",
+	);
 }

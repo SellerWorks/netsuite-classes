@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListSearchAdvanced.
+ * CustomListSearchAdvanced
  */
-class CustomListSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var CustomListSearch
-     */
-    public $criteria;
-    /**
-     * @var CustomListSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class CustomListSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CustomListSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var CustomListSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'CustomListSearch',
-        'columns' => 'CustomListSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "CustomListSearch",
+		"columns" => "CustomListSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

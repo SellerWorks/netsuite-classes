@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeBaseWageType.
+ * EmployeeBaseWageType
  */
-class EmployeeBaseWageType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _annualSalary = '_annualSalary';
-    /**
-     * @var string
-     */
-    const _hourly = '_hourly';
-    /**
-     * @var string
-     */
-    const _monthlySalary = '_monthlySalary';
+class EmployeeBaseWageType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _annualSalary = "_annualSalary";
+	/**
+	 * @var string
+	 */
+	const _hourly = "_hourly";
+	/**
+	 * @var string
+	 */
+	const _monthlySalary = "_monthlySalary";
 }

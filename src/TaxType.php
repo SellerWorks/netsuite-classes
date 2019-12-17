@@ -11,71 +11,82 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxType.
+ * TaxType
  */
-class TaxType extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $doesNotAddToTotal;
-    /**
-     * @var bool
-     */
-    public $postToItemCost;
-    /**
-     * @var bool
-     */
-    public $taxInNetAmount;
-    /**
-     * @var bool
-     */
-    public $reverseCharge;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var TaxTypeNexusAccountsList
-     */
-    public $nexusAccountsList;
-    /**
-     * @var TaxTypeNexusesTaxList
-     */
-    public $nexusesTaxList;
-    /**
-     * @var Country
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class TaxType extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $doesNotAddToTotal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $postToItemCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxInNetAmount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $reverseCharge;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var TaxTypeNexusAccountsList
+	 */
+	public $nexusAccountsList;
+	/**
+	 * @access public
+	 * @var TaxTypeNexusesTaxList
+	 */
+	public $nexusesTaxList;
+	/**
+	 * @access public
+	 * @var Country
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'name' => 'string',
-        'description' => 'string',
-        'doesNotAddToTotal' => 'boolean',
-        'postToItemCost' => 'boolean',
-        'taxInNetAmount' => 'boolean',
-        'reverseCharge' => 'boolean',
-        'isInactive' => 'boolean',
-        'nexusAccountsList' => 'TaxTypeNexusAccountsList',
-        'nexusesTaxList' => 'TaxTypeNexusesTaxList',
-        'country' => 'Country',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"name" => "string",
+		"description" => "string",
+		"doesNotAddToTotal" => "boolean",
+		"postToItemCost" => "boolean",
+		"taxInNetAmount" => "boolean",
+		"reverseCharge" => "boolean",
+		"isInactive" => "boolean",
+		"nexusAccountsList" => "TaxTypeNexusAccountsList",
+		"nexusesTaxList" => "TaxTypeNexusesTaxList",
+		"country" => "Country",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

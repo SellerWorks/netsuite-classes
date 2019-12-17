@@ -11,1741 +11,2104 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransactionSearchBasic.
+ * TransactionSearchBasic
  */
-class TransactionSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $accountType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $acctCorpCardExp;
-    /**
-     * @var SearchDateField
-     */
-    public $actualShipDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $altSalesAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $altSalesNetAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $amount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $amountPaid;
-    /**
-     * @var SearchDoubleField
-     */
-    public $amountRemaining;
-    /**
-     * @var SearchDoubleField
-     */
-    public $amountUnbilled;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $anyLineItem;
-    /**
-     * @var SearchDoubleField
-     */
-    public $appliedToForeignAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $appliedToIsFxVariance;
-    /**
-     * @var SearchDoubleField
-     */
-    public $appliedToLinkAmount;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $appliedToLinkType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $appliedToTransaction;
-    /**
-     * @var SearchDoubleField
-     */
-    public $applyingForeignAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $applyingIsFxVariance;
-    /**
-     * @var SearchDoubleField
-     */
-    public $applyingLinkAmount;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $applyingLinkType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $applyingTransaction;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $approvalStatus;
-    /**
-     * @var SearchStringField
-     */
-    public $authCode;
-    /**
-     * @var SearchBooleanField
-     */
-    public $autoCalculateLag;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $avsStreetMatch;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $avsZipMatch;
-    /**
-     * @var SearchBooleanField
-     */
-    public $billable;
-    /**
-     * @var SearchStringField
-     */
-    public $billAddress;
-    /**
-     * @var SearchStringField
-     */
-    public $billAddressee;
-    /**
-     * @var SearchStringField
-     */
-    public $billAttention;
-    /**
-     * @var SearchStringField
-     */
-    public $billCity;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $billCountry;
-    /**
-     * @var SearchStringField
-     */
-    public $billCounty;
-    /**
-     * @var SearchDateField
-     */
-    public $billedDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $billingAccount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $billingSchedule;
-    /**
-     * @var SearchBooleanField
-     */
-    public $billingStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $billingTransaction;
-    /**
-     * @var SearchStringField
-     */
-    public $billPhone;
-    /**
-     * @var SearchStringField
-     */
-    public $billState;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $billVarianceStatus;
-    /**
-     * @var SearchStringField
-     */
-    public $billZip;
-    /**
-     * @var SearchStringField
-     */
-    public $binNumber;
-    /**
-     * @var SearchDoubleField
-     */
-    public $binNumberQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $bomQuantity;
-    /**
-     * @var SearchBooleanField
-     */
-    public $bookSpecificTransaction;
-    /**
-     * @var SearchBooleanField
-     */
-    public $buildEntireAssembly;
-    /**
-     * @var SearchDoubleField
-     */
-    public $buildVariance;
-    /**
-     * @var SearchDoubleField
-     */
-    public $built;
-    /**
-     * @var SearchBooleanField
-     */
-    public $canHaveStackablePromotions;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $catchUpPeriod;
-    /**
-     * @var SearchStringField
-     */
-    public $ccCustomerCode;
-    /**
-     * @var SearchDateField
-     */
-    public $ccExpireDate;
-    /**
-     * @var SearchStringField
-     */
-    public $ccName;
-    /**
-     * @var SearchStringField
-     */
-    public $ccNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $chargeType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $class;
-    /**
-     * @var SearchBooleanField
-     */
-    public $cleared;
-    /**
-     * @var SearchBooleanField
-     */
-    public $closed;
-    /**
-     * @var SearchDateField
-     */
-    public $closeDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $cogs;
-    /**
-     * @var SearchDateField
-     */
-    public $commissionEffectiveDate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $commit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $componentYield;
-    /**
-     * @var SearchStringField
-     */
-    public $confirmationNumber;
-    /**
-     * @var SearchLongField
-     */
-    public $contribution;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costComponentAmount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $costComponentCategory;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $costComponentItem;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costComponentQuantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costComponentStandardCost;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costEstimate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $costEstimateRate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $costEstimateType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $createdBy;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $createdFrom;
-    /**
-     * @var SearchDoubleField
-     */
-    public $creditAmount;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $cscMatch;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $currency;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $customerSubOf;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $customForm;
-    /**
-     * @var SearchBooleanField
-     */
-    public $customGL;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $custType;
-    /**
-     * @var SearchDateField
-     */
-    public $dateCreated;
-    /**
-     * @var SearchLongField
-     */
-    public $daysOpen;
-    /**
-     * @var SearchLongField
-     */
-    public $daysOverdue;
-    /**
-     * @var SearchDoubleField
-     */
-    public $debitAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $deferredRevenue;
-    /**
-     * @var SearchBooleanField
-     */
-    public $deferRevRec;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $department;
-    /**
-     * @var SearchDateField
-     */
-    public $depositDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $depositTransaction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $drAccount;
-    /**
-     * @var SearchDateField
-     */
-    public $dueDate;
-    /**
-     * @var SearchStringField
-     */
-    public $email;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $employee;
-    /**
-     * @var SearchDateField
-     */
-    public $endDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $entity;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $entityStatus;
-    /**
-     * @var SearchDoubleField
-     */
-    public $estGrossProfit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $estGrossProfitPct;
-    /**
-     * @var SearchDoubleField
-     */
-    public $exchangeRate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $excludeCommission;
-    /**
-     * @var SearchBooleanField
-     */
-    public $excludeFromRateRequest;
-    /**
-     * @var SearchDateField
-     */
-    public $expectedCloseDate;
-    /**
-     * @var SearchDateField
-     */
-    public $expectedReceiptDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $expenseCategory;
-    /**
-     * @var SearchDateField
-     */
-    public $expenseDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchBooleanField
-     */
-    public $finChrg;
-    /**
-     * @var SearchBooleanField
-     */
-    public $firmed;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $forecastType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $fulfillingTransaction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $fxAccount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxCostEstimate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxCostEstimateRate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxEstGrossProfit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxTranCostEstimate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxVsoeAllocation;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxVsoeAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fxVsoePrice;
-    /**
-     * @var SearchBooleanField
-     */
-    public $gcoAvailabelToCharge;
-    /**
-     * @var SearchBooleanField
-     */
-    public $gcoAvailableToRefund;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $gcoAvsStreetMatch;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $gcoAvsZipMatch;
-    /**
-     * @var SearchLongField
-     */
-    public $gcoBuyerAccountAge;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoBuyerIp;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoChargeAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoChargebackAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoConfirmedChargedTotal;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoConfirmedRefundedTotal;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoCreditcardNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $gcoCscMatch;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoFinancialState;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoFulfillmentState;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoOrderId;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoOrderTotal;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoPromotionAmount;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoPromotionName;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoRefundAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $gcoShippingTotal;
-    /**
-     * @var SearchStringField
-     */
-    public $gcoStateChangedDetail;
-    /**
-     * @var SearchStringField
-     */
-    public $giftCertificate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $grossAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $includeInForecast;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $incoterm;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $intercoStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $intercoTransaction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $inventoryLocation;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $inventorySubsidiary;
-    /**
-     * @var SearchBooleanField
-     */
-    public $inVsoeBundle;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isAllocation;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isBackflush;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isGcoChargeback;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isGcoChargeConfirmed;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isGcoPaymentGuaranteed;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isGcoRefundConfirmed;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInsideDelivery;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInsidePickup;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isIntercompanyAdjustment;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInTransitPayment;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isMultiShipTo;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isPayPalMeth;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isReversal;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isRevRecTransaction;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isScrap;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isShipAddress;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isTransferPriceCosting;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isVsoeAlloc;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isWip;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $itemFulfillmentChoice;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $itemRevision;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $itemSubOf;
-    /**
-     * @var SearchBooleanField
-     */
-    public $landedCostPerLine;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $leadSource;
-    /**
-     * @var SearchLongField
-     */
-    public $lineUniqueKey;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchBooleanField
-     */
-    public $locationAutoAssigned;
-    /**
-     * @var SearchBooleanField
-     */
-    public $mainLine;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $mainName;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $manufacturingRouting;
-    /**
-     * @var SearchBooleanField
-     */
-    public $matchBillToReceipt;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchStringField
-     */
-    public $memoMain;
-    /**
-     * @var SearchBooleanField
-     */
-    public $memorized;
-    /**
-     * @var SearchStringField
-     */
-    public $merchantAccount;
-    /**
-     * @var SearchStringField
-     */
-    public $message;
-    /**
-     * @var SearchBooleanField
-     */
-    public $multiSubsidiary;
-    /**
-     * @var SearchStringField
-     */
-    public $nameText;
-    /**
-     * @var SearchDoubleField
-     */
-    public $netAmount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $nextApprover;
-    /**
-     * @var SearchDateField
-     */
-    public $nextBillDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $noAutoAssignLocation;
-    /**
-     * @var SearchBooleanField
-     */
-    public $nonReimbursable;
-    /**
-     * @var SearchLongField
-     */
-    public $number;
-    /**
-     * @var SearchDoubleField
-     */
-    public $oneTimeTotal;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $opportunity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $orderPriority;
-    /**
-     * @var SearchTextNumberField
-     */
-    public $otherRefNum;
-    /**
-     * @var SearchTextNumberField
-     */
-    public $otherRefNumNonDeposit;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $overheadParentItem;
-    /**
-     * @var SearchLongField
-     */
-    public $packageCount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $paidTransaction;
-    /**
-     * @var SearchLongField
-     */
-    public $parent;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $partner;
-    /**
-     * @var SearchLongField
-     */
-    public $partnerContribution;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $partnerRole;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $partnerTeamMember;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payingTransaction;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paymentApproved;
-    /**
-     * @var SearchDateField
-     */
-    public $paymentEventDate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $paymentEventHoldReason;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paymentEventPurchaseCardUsed;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paymentEventPurchaseDataSent;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $paymentEventResult;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $paymentEventType;
-    /**
-     * @var SearchBooleanField
-     */
-    public $paymentHold;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $paymentMethod;
-    /**
-     * @var SearchStringField
-     */
-    public $paymentOption;
-    /**
-     * @var SearchBooleanField
-     */
-    public $payPalPending;
-    /**
-     * @var SearchStringField
-     */
-    public $payPalStatus;
-    /**
-     * @var SearchStringField
-     */
-    public $payPalTranId;
-    /**
-     * @var SearchStringField
-     */
-    public $pnRefNum;
-    /**
-     * @var SearchStringField
-     */
-    public $poAsText;
-    /**
-     * @var SearchBooleanField
-     */
-    public $posting;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var PostingPeriodDate
-     */
-    public $postingPeriodRelative;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $priceLevel;
-    /**
-     * @var SearchBooleanField
-     */
-    public $printedPickingTicket;
-    /**
-     * @var SearchLongField
-     */
-    public $probability;
-    /**
-     * @var SearchDoubleField
-     */
-    public $projectedAmount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $projectTask;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $promoCode;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $purchaseOrder;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantity;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityBilled;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityPacked;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityPicked;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityRevCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityShipRecv;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recognizedRevenue;
-    /**
-     * @var SearchStringField
-     */
-    public $recordType;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recurAnnuallyTotal;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recurMonthlyTotal;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recurQuarterlyTotal;
-    /**
-     * @var SearchBooleanField
-     */
-    public $recurringBill;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recurWeeklyTotal;
-    /**
-     * @var SearchLongField
-     */
-    public $refNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $revCommitStatus;
-    /**
-     * @var SearchBooleanField
-     */
-    public $revCommittingStatus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $revCommittingTransaction;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $revenueStatus;
-    /**
-     * @var SearchDateField
-     */
-    public $reversalDate;
-    /**
-     * @var SearchStringField
-     */
-    public $reversalNumber;
-    /**
-     * @var SearchDateField
-     */
-    public $revRecEndDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $revRecOnRevCommitment;
-    /**
-     * @var SearchDateField
-     */
-    public $revRecStartDate;
-    /**
-     * @var SearchLongField
-     */
-    public $revRecTermInMonths;
-    /**
-     * @var SearchDateField
-     */
-    public $salesEffectiveDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $salesOrder;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $salesRep;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $salesTeamMember;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $salesTeamRole;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $schedulingMethod;
-    /**
-     * @var SearchStringField
-     */
-    public $serialNumber;
-    /**
-     * @var SearchDoubleField
-     */
-    public $serialNumberCost;
-    /**
-     * @var SearchDoubleField
-     */
-    public $serialNumberCostAdjustment;
-    /**
-     * @var SearchDoubleField
-     */
-    public $serialNumberQuantity;
-    /**
-     * @var SearchStringField
-     */
-    public $serialNumbers;
-    /**
-     * @var SearchStringField
-     */
-    public $shipAddress;
-    /**
-     * @var SearchStringField
-     */
-    public $shipAddressee;
-    /**
-     * @var SearchStringField
-     */
-    public $shipAttention;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $shipCarrier;
-    /**
-     * @var SearchStringField
-     */
-    public $shipCity;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shipComplete;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $shipCountry;
-    /**
-     * @var SearchStringField
-     */
-    public $shipCounty;
-    /**
-     * @var SearchDateField
-     */
-    public $shipDate;
-    /**
-     * @var SearchLongField
-     */
-    public $shipGroup;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipMethod;
-    /**
-     * @var SearchStringField
-     */
-    public $shipPhone;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shipping;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shipRecvStatus;
-    /**
-     * @var SearchBooleanField
-     */
-    public $shipRecvStatusLine;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipState;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipTo;
-    /**
-     * @var SearchStringField
-     */
-    public $shipZip;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $source;
-    /**
-     * @var SearchDateField
-     */
-    public $startDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $statistical;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $status;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subscription;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subscriptionLine;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $taxItem;
-    /**
-     * @var SearchBooleanField
-     */
-    public $taxLine;
-    /**
-     * @var RecordRef
-     */
-    public $taxPeriod;
-    /**
-     * @var PostingPeriodDate
-     */
-    public $taxPeriodRelative;
-    /**
-     * @var SearchDateField
-     */
-    public $taxPointDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $taxRate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $terms;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $termsOfSale;
-    /**
-     * @var SearchStringField
-     */
-    public $title;
-    /**
-     * @var SearchBooleanField
-     */
-    public $toBeEmailed;
-    /**
-     * @var SearchBooleanField
-     */
-    public $toBePrinted;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $toSubsidiary;
-    /**
-     * @var SearchDoubleField
-     */
-    public $totalAmount;
-    /**
-     * @var SearchStringField
-     */
-    public $trackingNumbers;
-    /**
-     * @var SearchDoubleField
-     */
-    public $tranCostEstimate;
-    /**
-     * @var SearchDateField
-     */
-    public $tranDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $tranEstGrossProfit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $tranEstGrossProfitPct;
-    /**
-     * @var SearchDoubleField
-     */
-    public $tranFxEstGrossProfit;
-    /**
-     * @var SearchStringField
-     */
-    public $tranId;
-    /**
-     * @var SearchBooleanField
-     */
-    public $tranIsVsoeBundle;
-    /**
-     * @var SearchBooleanField
-     */
-    public $transactionDiscount;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $transactionLineType;
-    /**
-     * @var SearchStringField
-     */
-    public $transactionNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $transferLocation;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferOrderQuantityCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferOrderQuantityPacked;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferOrderQuantityPicked;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferOrderQuantityReceived;
-    /**
-     * @var SearchDoubleField
-     */
-    public $transferOrderQuantityShipped;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $unit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $unitCostOverride;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $unitsType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $vendType;
-    /**
-     * @var SearchBooleanField
-     */
-    public $visibleToCustomer;
-    /**
-     * @var SearchBooleanField
-     */
-    public $voided;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vsoeAllocation;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vsoeAmount;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $vsoeDeferral;
-    /**
-     * @var SearchBooleanField
-     */
-    public $vsoeDelivered;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $vsoePermitDiscount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vsoePrice;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $webSite;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class TransactionSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $accountType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $acctCorpCardExp;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $actualShipDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $altSalesAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $altSalesNetAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $amountPaid;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $amountRemaining;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $amountUnbilled;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $anyLineItem;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $appliedToForeignAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $appliedToIsFxVariance;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $appliedToLinkAmount;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $appliedToLinkType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $appliedToTransaction;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $applyingForeignAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $applyingIsFxVariance;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $applyingLinkAmount;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $applyingLinkType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $applyingTransaction;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $authCode;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $autoCalculateLag;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $avsStreetMatch;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $avsZipMatch;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $billable;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billAddress;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billAddressee;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billAttention;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billCity;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $billCountry;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billCounty;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $billedDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $billingAccount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $billingStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $billingTransaction;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billPhone;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billState;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $billVarianceStatus;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billZip;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $binNumberQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $bomQuantity;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $bookSpecificTransaction;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $buildEntireAssembly;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $buildVariance;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $built;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $canHaveStackablePromotions;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $catchUpPeriod;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $ccCustomerCode;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $ccExpireDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $ccName;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $ccNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $chargeType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $cleared;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $closed;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $closeDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $cogs;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $commissionEffectiveDate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $commit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $componentYield;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $confirmationNumber;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $contribution;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costComponentAmount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $costComponentCategory;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $costComponentItem;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costComponentQuantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costComponentStandardCost;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costEstimate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $costEstimateRate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $costEstimateType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $createdBy;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $createdFrom;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $creditAmount;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $cscMatch;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $customerSubOf;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $customGL;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $custType;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $daysOpen;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $daysOverdue;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $debitAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $deferredRevenue;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $depositDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $depositTransaction;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $drAccount;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dueDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $entityStatus;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $estGrossProfit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $estGrossProfitPct;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $excludeCommission;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $excludeFromRateRequest;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $expectedCloseDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $expectedReceiptDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $expenseCategory;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $expenseDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $finChrg;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $firmed;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $forecastType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $fulfillingTransaction;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $fxAccount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxCostEstimate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxCostEstimateRate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxEstGrossProfit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxTranCostEstimate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxVsoeAllocation;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxVsoeAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fxVsoePrice;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $gcoAvailabelToCharge;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $gcoAvailableToRefund;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $gcoAvsStreetMatch;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $gcoAvsZipMatch;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $gcoBuyerAccountAge;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoBuyerIp;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoChargeAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoChargebackAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoConfirmedChargedTotal;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoConfirmedRefundedTotal;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoCreditcardNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $gcoCscMatch;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoFinancialState;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoFulfillmentState;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoOrderId;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoOrderTotal;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoPromotionAmount;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoPromotionName;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoRefundAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $gcoShippingTotal;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $gcoStateChangedDetail;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $giftCertificate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $grossAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $includeInForecast;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $incoterm;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $intercoStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $intercoTransaction;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $inventoryLocation;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $inventorySubsidiary;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $inVsoeBundle;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isAllocation;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isBackflush;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isGcoChargeback;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isGcoChargeConfirmed;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isGcoPaymentGuaranteed;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isGcoRefundConfirmed;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInsideDelivery;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInsidePickup;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isIntercompanyAdjustment;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInTransitPayment;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isMultiShipTo;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isPayPalMeth;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isReversal;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isRevRecTransaction;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isScrap;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isShipAddress;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isTransferPriceCosting;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isVsoeAlloc;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isWip;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $itemFulfillmentChoice;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $itemRevision;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $itemSubOf;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $landedCostPerLine;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $lineUniqueKey;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $locationAutoAssigned;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $mainLine;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $mainName;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $manufacturingRouting;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $matchBillToReceipt;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memoMain;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $memorized;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $merchantAccount;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $multiSubsidiary;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $nameText;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $netAmount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $nextApprover;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $nextBillDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $noAutoAssignLocation;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $nonReimbursable;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $number;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $oneTimeTotal;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $opportunity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $orderPriority;
+	/**
+	 * @access public
+	 * @var SearchTextNumberField
+	 */
+	public $otherRefNum;
+	/**
+	 * @access public
+	 * @var SearchTextNumberField
+	 */
+	public $otherRefNumNonDeposit;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $overheadParentItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $overrideInstallments;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $packageCount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $paidTransaction;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $partnerContribution;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $partnerRole;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $partnerTeamMember;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payingTransaction;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paymentApproved;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $paymentEventDate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $paymentEventHoldReason;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paymentEventPurchaseCardUsed;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paymentEventPurchaseDataSent;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $paymentEventResult;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $paymentEventType;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $paymentHold;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $paymentOption;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $payPalPending;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $payPalStatus;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $payPalTranId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $pnRefNum;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $poAsText;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $posting;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var PostingPeriodDate
+	 */
+	public $postingPeriodRelative;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $priceLevel;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $printedPickingTicket;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $probability;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $projectedAmount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $projectTask;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $promoCode;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $purchaseOrder;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityBilled;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityPacked;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityPicked;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityRevCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityShipRecv;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recognizedRevenue;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $recordType;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recurAnnuallyTotal;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recurMonthlyTotal;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recurQuarterlyTotal;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $recurringBill;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recurWeeklyTotal;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $refNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $revCommitStatus;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $revCommittingStatus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $revCommittingTransaction;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $revenueStatus;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $reversalDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $reversalNumber;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $revRecEndDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $revRecOnRevCommitment;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $revRecStartDate;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $revRecTermInMonths;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $salesEffectiveDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $salesOrder;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $salesRep;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $salesTeamMember;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $salesTeamRole;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $schedulingMethod;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $serialNumber;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $serialNumberCost;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $serialNumberCostAdjustment;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $serialNumberQuantity;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipAddress;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipAddressee;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipAttention;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $shipCarrier;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipCity;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shipComplete;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $shipCountry;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipCounty;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $shipDate;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $shipGroup;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipPhone;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shipping;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shipRecvStatus;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $shipRecvStatusLine;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipState;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipTo;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $shipZip;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $statistical;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subscriptionLine;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $taxLine;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxPeriod;
+	/**
+	 * @access public
+	 * @var PostingPeriodDate
+	 */
+	public $taxPeriodRelative;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $terms;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $termsOfSale;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $toBeEmailed;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $toBePrinted;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $toSubsidiary;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $totalAmount;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $trackingNumbers;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $tranCostEstimate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $tranEstGrossProfit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $tranEstGrossProfitPct;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $tranFxEstGrossProfit;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $tranIsVsoeBundle;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $transactionDiscount;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $transactionLineType;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $transactionNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $transferLocation;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferOrderQuantityCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferOrderQuantityPacked;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferOrderQuantityPicked;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferOrderQuantityReceived;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $transferOrderQuantityShipped;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $unit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $unitCostOverride;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $unitsType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $vendType;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $visibleToCustomer;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $voided;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vsoeAllocation;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vsoeAmount;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $vsoeDeferral;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $vsoeDelivered;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $vsoePermitDiscount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vsoePrice;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $webSite;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'account' => 'SearchMultiSelectField',
-        'accountType' => 'SearchEnumMultiSelectField',
-        'acctCorpCardExp' => 'SearchMultiSelectField',
-        'actualShipDate' => 'SearchDateField',
-        'altSalesAmount' => 'SearchDoubleField',
-        'altSalesNetAmount' => 'SearchDoubleField',
-        'amount' => 'SearchDoubleField',
-        'amountPaid' => 'SearchDoubleField',
-        'amountRemaining' => 'SearchDoubleField',
-        'amountUnbilled' => 'SearchDoubleField',
-        'anyLineItem' => 'SearchMultiSelectField',
-        'appliedToForeignAmount' => 'SearchDoubleField',
-        'appliedToIsFxVariance' => 'SearchBooleanField',
-        'appliedToLinkAmount' => 'SearchDoubleField',
-        'appliedToLinkType' => 'SearchEnumMultiSelectField',
-        'appliedToTransaction' => 'SearchMultiSelectField',
-        'applyingForeignAmount' => 'SearchDoubleField',
-        'applyingIsFxVariance' => 'SearchBooleanField',
-        'applyingLinkAmount' => 'SearchDoubleField',
-        'applyingLinkType' => 'SearchEnumMultiSelectField',
-        'applyingTransaction' => 'SearchMultiSelectField',
-        'approvalStatus' => 'SearchEnumMultiSelectField',
-        'authCode' => 'SearchStringField',
-        'autoCalculateLag' => 'SearchBooleanField',
-        'avsStreetMatch' => 'SearchEnumMultiSelectField',
-        'avsZipMatch' => 'SearchEnumMultiSelectField',
-        'billable' => 'SearchBooleanField',
-        'billAddress' => 'SearchStringField',
-        'billAddressee' => 'SearchStringField',
-        'billAttention' => 'SearchStringField',
-        'billCity' => 'SearchStringField',
-        'billCountry' => 'SearchEnumMultiSelectField',
-        'billCounty' => 'SearchStringField',
-        'billedDate' => 'SearchDateField',
-        'billingAccount' => 'SearchMultiSelectField',
-        'billingSchedule' => 'SearchMultiSelectField',
-        'billingStatus' => 'SearchBooleanField',
-        'billingTransaction' => 'SearchMultiSelectField',
-        'billPhone' => 'SearchStringField',
-        'billState' => 'SearchStringField',
-        'billVarianceStatus' => 'SearchEnumMultiSelectField',
-        'billZip' => 'SearchStringField',
-        'binNumber' => 'SearchStringField',
-        'binNumberQuantity' => 'SearchDoubleField',
-        'bomQuantity' => 'SearchDoubleField',
-        'bookSpecificTransaction' => 'SearchBooleanField',
-        'buildEntireAssembly' => 'SearchBooleanField',
-        'buildVariance' => 'SearchDoubleField',
-        'built' => 'SearchDoubleField',
-        'canHaveStackablePromotions' => 'SearchBooleanField',
-        'catchUpPeriod' => 'SearchMultiSelectField',
-        'ccCustomerCode' => 'SearchStringField',
-        'ccExpireDate' => 'SearchDateField',
-        'ccName' => 'SearchStringField',
-        'ccNumber' => 'SearchStringField',
-        'chargeType' => 'SearchEnumMultiSelectField',
-        'class' => 'SearchMultiSelectField',
-        'cleared' => 'SearchBooleanField',
-        'closed' => 'SearchBooleanField',
-        'closeDate' => 'SearchDateField',
-        'cogs' => 'SearchBooleanField',
-        'commissionEffectiveDate' => 'SearchDateField',
-        'commit' => 'SearchEnumMultiSelectField',
-        'componentYield' => 'SearchDoubleField',
-        'confirmationNumber' => 'SearchStringField',
-        'contribution' => 'SearchLongField',
-        'costComponentAmount' => 'SearchDoubleField',
-        'costComponentCategory' => 'SearchMultiSelectField',
-        'costComponentItem' => 'SearchMultiSelectField',
-        'costComponentQuantity' => 'SearchDoubleField',
-        'costComponentStandardCost' => 'SearchDoubleField',
-        'costEstimate' => 'SearchDoubleField',
-        'costEstimateRate' => 'SearchDoubleField',
-        'costEstimateType' => 'SearchEnumMultiSelectField',
-        'createdBy' => 'SearchMultiSelectField',
-        'createdFrom' => 'SearchMultiSelectField',
-        'creditAmount' => 'SearchDoubleField',
-        'cscMatch' => 'SearchEnumMultiSelectField',
-        'currency' => 'SearchMultiSelectField',
-        'customerSubOf' => 'SearchMultiSelectField',
-        'customForm' => 'SearchMultiSelectField',
-        'customGL' => 'SearchBooleanField',
-        'custType' => 'SearchMultiSelectField',
-        'dateCreated' => 'SearchDateField',
-        'daysOpen' => 'SearchLongField',
-        'daysOverdue' => 'SearchLongField',
-        'debitAmount' => 'SearchDoubleField',
-        'deferredRevenue' => 'SearchDoubleField',
-        'deferRevRec' => 'SearchBooleanField',
-        'department' => 'SearchMultiSelectField',
-        'depositDate' => 'SearchDateField',
-        'depositTransaction' => 'SearchMultiSelectField',
-        'drAccount' => 'SearchMultiSelectField',
-        'dueDate' => 'SearchDateField',
-        'email' => 'SearchStringField',
-        'employee' => 'SearchMultiSelectField',
-        'endDate' => 'SearchDateField',
-        'entity' => 'SearchMultiSelectField',
-        'entityStatus' => 'SearchMultiSelectField',
-        'estGrossProfit' => 'SearchDoubleField',
-        'estGrossProfitPct' => 'SearchDoubleField',
-        'exchangeRate' => 'SearchDoubleField',
-        'excludeCommission' => 'SearchBooleanField',
-        'excludeFromRateRequest' => 'SearchBooleanField',
-        'expectedCloseDate' => 'SearchDateField',
-        'expectedReceiptDate' => 'SearchDateField',
-        'expenseCategory' => 'SearchMultiSelectField',
-        'expenseDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'finChrg' => 'SearchBooleanField',
-        'firmed' => 'SearchBooleanField',
-        'forecastType' => 'SearchEnumMultiSelectField',
-        'fulfillingTransaction' => 'SearchMultiSelectField',
-        'fxAccount' => 'SearchMultiSelectField',
-        'fxAmount' => 'SearchDoubleField',
-        'fxCostEstimate' => 'SearchDoubleField',
-        'fxCostEstimateRate' => 'SearchDoubleField',
-        'fxEstGrossProfit' => 'SearchDoubleField',
-        'fxTranCostEstimate' => 'SearchDoubleField',
-        'fxVsoeAllocation' => 'SearchDoubleField',
-        'fxVsoeAmount' => 'SearchDoubleField',
-        'fxVsoePrice' => 'SearchDoubleField',
-        'gcoAvailabelToCharge' => 'SearchBooleanField',
-        'gcoAvailableToRefund' => 'SearchBooleanField',
-        'gcoAvsStreetMatch' => 'SearchEnumMultiSelectField',
-        'gcoAvsZipMatch' => 'SearchEnumMultiSelectField',
-        'gcoBuyerAccountAge' => 'SearchLongField',
-        'gcoBuyerIp' => 'SearchStringField',
-        'gcoChargeAmount' => 'SearchDoubleField',
-        'gcoChargebackAmount' => 'SearchDoubleField',
-        'gcoConfirmedChargedTotal' => 'SearchDoubleField',
-        'gcoConfirmedRefundedTotal' => 'SearchDoubleField',
-        'gcoCreditcardNumber' => 'SearchStringField',
-        'gcoCscMatch' => 'SearchEnumMultiSelectField',
-        'gcoFinancialState' => 'SearchStringField',
-        'gcoFulfillmentState' => 'SearchStringField',
-        'gcoOrderId' => 'SearchStringField',
-        'gcoOrderTotal' => 'SearchDoubleField',
-        'gcoPromotionAmount' => 'SearchDoubleField',
-        'gcoPromotionName' => 'SearchStringField',
-        'gcoRefundAmount' => 'SearchDoubleField',
-        'gcoShippingTotal' => 'SearchDoubleField',
-        'gcoStateChangedDetail' => 'SearchStringField',
-        'giftCertificate' => 'SearchStringField',
-        'grossAmount' => 'SearchDoubleField',
-        'includeInForecast' => 'SearchBooleanField',
-        'incoterm' => 'SearchMultiSelectField',
-        'intercoStatus' => 'SearchEnumMultiSelectField',
-        'intercoTransaction' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'inventoryLocation' => 'SearchMultiSelectField',
-        'inventorySubsidiary' => 'SearchMultiSelectField',
-        'inVsoeBundle' => 'SearchBooleanField',
-        'isAllocation' => 'SearchBooleanField',
-        'isBackflush' => 'SearchBooleanField',
-        'isGcoChargeback' => 'SearchBooleanField',
-        'isGcoChargeConfirmed' => 'SearchBooleanField',
-        'isGcoPaymentGuaranteed' => 'SearchBooleanField',
-        'isGcoRefundConfirmed' => 'SearchBooleanField',
-        'isInsideDelivery' => 'SearchBooleanField',
-        'isInsidePickup' => 'SearchBooleanField',
-        'isIntercompanyAdjustment' => 'SearchBooleanField',
-        'isInTransitPayment' => 'SearchBooleanField',
-        'isMultiShipTo' => 'SearchBooleanField',
-        'isPayPalMeth' => 'SearchBooleanField',
-        'isReversal' => 'SearchBooleanField',
-        'isRevRecTransaction' => 'SearchBooleanField',
-        'isScrap' => 'SearchBooleanField',
-        'isShipAddress' => 'SearchBooleanField',
-        'isTransferPriceCosting' => 'SearchBooleanField',
-        'isVsoeAlloc' => 'SearchBooleanField',
-        'isWip' => 'SearchBooleanField',
-        'item' => 'SearchMultiSelectField',
-        'itemFulfillmentChoice' => 'SearchEnumMultiSelectField',
-        'itemRevision' => 'SearchMultiSelectField',
-        'itemSubOf' => 'SearchMultiSelectField',
-        'landedCostPerLine' => 'SearchBooleanField',
-        'lastModifiedDate' => 'SearchDateField',
-        'leadSource' => 'SearchMultiSelectField',
-        'lineUniqueKey' => 'SearchLongField',
-        'location' => 'SearchMultiSelectField',
-        'locationAutoAssigned' => 'SearchBooleanField',
-        'mainLine' => 'SearchBooleanField',
-        'mainName' => 'SearchMultiSelectField',
-        'manufacturingRouting' => 'SearchMultiSelectField',
-        'matchBillToReceipt' => 'SearchBooleanField',
-        'memo' => 'SearchStringField',
-        'memoMain' => 'SearchStringField',
-        'memorized' => 'SearchBooleanField',
-        'merchantAccount' => 'SearchStringField',
-        'message' => 'SearchStringField',
-        'multiSubsidiary' => 'SearchBooleanField',
-        'nameText' => 'SearchStringField',
-        'netAmount' => 'SearchDoubleField',
-        'nextApprover' => 'SearchMultiSelectField',
-        'nextBillDate' => 'SearchDateField',
-        'noAutoAssignLocation' => 'SearchBooleanField',
-        'nonReimbursable' => 'SearchBooleanField',
-        'number' => 'SearchLongField',
-        'oneTimeTotal' => 'SearchDoubleField',
-        'opportunity' => 'SearchMultiSelectField',
-        'orderPriority' => 'SearchDoubleField',
-        'otherRefNum' => 'SearchTextNumberField',
-        'otherRefNumNonDeposit' => 'SearchTextNumberField',
-        'overheadParentItem' => 'SearchMultiSelectField',
-        'packageCount' => 'SearchLongField',
-        'paidTransaction' => 'SearchMultiSelectField',
-        'parent' => 'SearchLongField',
-        'partner' => 'SearchMultiSelectField',
-        'partnerContribution' => 'SearchLongField',
-        'partnerRole' => 'SearchMultiSelectField',
-        'partnerTeamMember' => 'SearchMultiSelectField',
-        'payingTransaction' => 'SearchMultiSelectField',
-        'paymentApproved' => 'SearchBooleanField',
-        'paymentEventDate' => 'SearchDateField',
-        'paymentEventHoldReason' => 'SearchEnumMultiSelectField',
-        'paymentEventPurchaseCardUsed' => 'SearchBooleanField',
-        'paymentEventPurchaseDataSent' => 'SearchBooleanField',
-        'paymentEventResult' => 'SearchEnumMultiSelectField',
-        'paymentEventType' => 'SearchEnumMultiSelectField',
-        'paymentHold' => 'SearchBooleanField',
-        'paymentMethod' => 'SearchMultiSelectField',
-        'paymentOption' => 'SearchStringField',
-        'payPalPending' => 'SearchBooleanField',
-        'payPalStatus' => 'SearchStringField',
-        'payPalTranId' => 'SearchStringField',
-        'pnRefNum' => 'SearchStringField',
-        'poAsText' => 'SearchStringField',
-        'posting' => 'SearchBooleanField',
-        'postingPeriod' => 'RecordRef',
-        'postingPeriodRelative' => 'PostingPeriodDate',
-        'priceLevel' => 'SearchMultiSelectField',
-        'printedPickingTicket' => 'SearchBooleanField',
-        'probability' => 'SearchLongField',
-        'projectedAmount' => 'SearchDoubleField',
-        'projectTask' => 'SearchMultiSelectField',
-        'promoCode' => 'SearchMultiSelectField',
-        'purchaseOrder' => 'SearchMultiSelectField',
-        'quantity' => 'SearchDoubleField',
-        'quantityBilled' => 'SearchDoubleField',
-        'quantityCommitted' => 'SearchDoubleField',
-        'quantityPacked' => 'SearchDoubleField',
-        'quantityPicked' => 'SearchDoubleField',
-        'quantityRevCommitted' => 'SearchDoubleField',
-        'quantityShipRecv' => 'SearchDoubleField',
-        'recognizedRevenue' => 'SearchDoubleField',
-        'recordType' => 'SearchStringField',
-        'recurAnnuallyTotal' => 'SearchDoubleField',
-        'recurMonthlyTotal' => 'SearchDoubleField',
-        'recurQuarterlyTotal' => 'SearchDoubleField',
-        'recurringBill' => 'SearchBooleanField',
-        'recurWeeklyTotal' => 'SearchDoubleField',
-        'refNumber' => 'SearchLongField',
-        'revCommitStatus' => 'SearchEnumMultiSelectField',
-        'revCommittingStatus' => 'SearchBooleanField',
-        'revCommittingTransaction' => 'SearchMultiSelectField',
-        'revenueStatus' => 'SearchEnumMultiSelectField',
-        'reversalDate' => 'SearchDateField',
-        'reversalNumber' => 'SearchStringField',
-        'revRecEndDate' => 'SearchDateField',
-        'revRecOnRevCommitment' => 'SearchBooleanField',
-        'revRecStartDate' => 'SearchDateField',
-        'revRecTermInMonths' => 'SearchLongField',
-        'salesEffectiveDate' => 'SearchDateField',
-        'salesOrder' => 'SearchMultiSelectField',
-        'salesRep' => 'SearchMultiSelectField',
-        'salesTeamMember' => 'SearchMultiSelectField',
-        'salesTeamRole' => 'SearchMultiSelectField',
-        'schedulingMethod' => 'SearchEnumMultiSelectField',
-        'serialNumber' => 'SearchStringField',
-        'serialNumberCost' => 'SearchDoubleField',
-        'serialNumberCostAdjustment' => 'SearchDoubleField',
-        'serialNumberQuantity' => 'SearchDoubleField',
-        'serialNumbers' => 'SearchStringField',
-        'shipAddress' => 'SearchStringField',
-        'shipAddressee' => 'SearchStringField',
-        'shipAttention' => 'SearchStringField',
-        'shipCarrier' => 'SearchEnumMultiSelectField',
-        'shipCity' => 'SearchStringField',
-        'shipComplete' => 'SearchBooleanField',
-        'shipCountry' => 'SearchEnumMultiSelectField',
-        'shipCounty' => 'SearchStringField',
-        'shipDate' => 'SearchDateField',
-        'shipGroup' => 'SearchLongField',
-        'shipMethod' => 'SearchMultiSelectField',
-        'shipPhone' => 'SearchStringField',
-        'shipping' => 'SearchBooleanField',
-        'shipRecvStatus' => 'SearchBooleanField',
-        'shipRecvStatusLine' => 'SearchBooleanField',
-        'shipState' => 'SearchMultiSelectField',
-        'shipTo' => 'SearchMultiSelectField',
-        'shipZip' => 'SearchStringField',
-        'source' => 'SearchEnumMultiSelectField',
-        'startDate' => 'SearchDateField',
-        'statistical' => 'SearchBooleanField',
-        'status' => 'SearchEnumMultiSelectField',
-        'subscription' => 'SearchMultiSelectField',
-        'subscriptionLine' => 'SearchMultiSelectField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'taxItem' => 'SearchMultiSelectField',
-        'taxLine' => 'SearchBooleanField',
-        'taxPeriod' => 'RecordRef',
-        'taxPeriodRelative' => 'PostingPeriodDate',
-        'taxPointDate' => 'SearchDateField',
-        'taxRate' => 'SearchDoubleField',
-        'terms' => 'SearchMultiSelectField',
-        'termsOfSale' => 'SearchEnumMultiSelectField',
-        'title' => 'SearchStringField',
-        'toBeEmailed' => 'SearchBooleanField',
-        'toBePrinted' => 'SearchBooleanField',
-        'toSubsidiary' => 'SearchMultiSelectField',
-        'totalAmount' => 'SearchDoubleField',
-        'trackingNumbers' => 'SearchStringField',
-        'tranCostEstimate' => 'SearchDoubleField',
-        'tranDate' => 'SearchDateField',
-        'tranEstGrossProfit' => 'SearchDoubleField',
-        'tranEstGrossProfitPct' => 'SearchDoubleField',
-        'tranFxEstGrossProfit' => 'SearchDoubleField',
-        'tranId' => 'SearchStringField',
-        'tranIsVsoeBundle' => 'SearchBooleanField',
-        'transactionDiscount' => 'SearchBooleanField',
-        'transactionLineType' => 'SearchEnumMultiSelectField',
-        'transactionNumber' => 'SearchStringField',
-        'transferLocation' => 'SearchMultiSelectField',
-        'transferOrderQuantityCommitted' => 'SearchDoubleField',
-        'transferOrderQuantityPacked' => 'SearchDoubleField',
-        'transferOrderQuantityPicked' => 'SearchDoubleField',
-        'transferOrderQuantityReceived' => 'SearchDoubleField',
-        'transferOrderQuantityShipped' => 'SearchDoubleField',
-        'type' => 'SearchEnumMultiSelectField',
-        'unit' => 'SearchMultiSelectField',
-        'unitCostOverride' => 'SearchDoubleField',
-        'unitsType' => 'SearchMultiSelectField',
-        'vendType' => 'SearchMultiSelectField',
-        'visibleToCustomer' => 'SearchBooleanField',
-        'voided' => 'SearchBooleanField',
-        'vsoeAllocation' => 'SearchDoubleField',
-        'vsoeAmount' => 'SearchDoubleField',
-        'vsoeDeferral' => 'SearchEnumMultiSelectField',
-        'vsoeDelivered' => 'SearchBooleanField',
-        'vsoePermitDiscount' => 'SearchEnumMultiSelectField',
-        'vsoePrice' => 'SearchDoubleField',
-        'webSite' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"account" => "SearchMultiSelectField",
+		"accountType" => "SearchEnumMultiSelectField",
+		"acctCorpCardExp" => "SearchMultiSelectField",
+		"actualShipDate" => "SearchDateField",
+		"altSalesAmount" => "SearchDoubleField",
+		"altSalesNetAmount" => "SearchDoubleField",
+		"amount" => "SearchDoubleField",
+		"amountPaid" => "SearchDoubleField",
+		"amountRemaining" => "SearchDoubleField",
+		"amountUnbilled" => "SearchDoubleField",
+		"anyLineItem" => "SearchMultiSelectField",
+		"appliedToForeignAmount" => "SearchDoubleField",
+		"appliedToIsFxVariance" => "SearchBooleanField",
+		"appliedToLinkAmount" => "SearchDoubleField",
+		"appliedToLinkType" => "SearchEnumMultiSelectField",
+		"appliedToTransaction" => "SearchMultiSelectField",
+		"applyingForeignAmount" => "SearchDoubleField",
+		"applyingIsFxVariance" => "SearchBooleanField",
+		"applyingLinkAmount" => "SearchDoubleField",
+		"applyingLinkType" => "SearchEnumMultiSelectField",
+		"applyingTransaction" => "SearchMultiSelectField",
+		"approvalStatus" => "SearchEnumMultiSelectField",
+		"authCode" => "SearchStringField",
+		"autoCalculateLag" => "SearchBooleanField",
+		"avsStreetMatch" => "SearchEnumMultiSelectField",
+		"avsZipMatch" => "SearchEnumMultiSelectField",
+		"billable" => "SearchBooleanField",
+		"billAddress" => "SearchStringField",
+		"billAddressee" => "SearchStringField",
+		"billAttention" => "SearchStringField",
+		"billCity" => "SearchStringField",
+		"billCountry" => "SearchEnumMultiSelectField",
+		"billCounty" => "SearchStringField",
+		"billedDate" => "SearchDateField",
+		"billingAccount" => "SearchMultiSelectField",
+		"billingSchedule" => "SearchMultiSelectField",
+		"billingStatus" => "SearchBooleanField",
+		"billingTransaction" => "SearchMultiSelectField",
+		"billPhone" => "SearchStringField",
+		"billState" => "SearchStringField",
+		"billVarianceStatus" => "SearchEnumMultiSelectField",
+		"billZip" => "SearchStringField",
+		"binNumber" => "SearchStringField",
+		"binNumberQuantity" => "SearchDoubleField",
+		"bomQuantity" => "SearchDoubleField",
+		"bookSpecificTransaction" => "SearchBooleanField",
+		"buildEntireAssembly" => "SearchBooleanField",
+		"buildVariance" => "SearchDoubleField",
+		"built" => "SearchDoubleField",
+		"canHaveStackablePromotions" => "SearchBooleanField",
+		"catchUpPeriod" => "SearchMultiSelectField",
+		"ccCustomerCode" => "SearchStringField",
+		"ccExpireDate" => "SearchDateField",
+		"ccName" => "SearchStringField",
+		"ccNumber" => "SearchStringField",
+		"chargeType" => "SearchEnumMultiSelectField",
+		"class" => "SearchMultiSelectField",
+		"cleared" => "SearchBooleanField",
+		"closed" => "SearchBooleanField",
+		"closeDate" => "SearchDateField",
+		"cogs" => "SearchBooleanField",
+		"commissionEffectiveDate" => "SearchDateField",
+		"commit" => "SearchEnumMultiSelectField",
+		"componentYield" => "SearchDoubleField",
+		"confirmationNumber" => "SearchStringField",
+		"contribution" => "SearchLongField",
+		"costComponentAmount" => "SearchDoubleField",
+		"costComponentCategory" => "SearchMultiSelectField",
+		"costComponentItem" => "SearchMultiSelectField",
+		"costComponentQuantity" => "SearchDoubleField",
+		"costComponentStandardCost" => "SearchDoubleField",
+		"costEstimate" => "SearchDoubleField",
+		"costEstimateRate" => "SearchDoubleField",
+		"costEstimateType" => "SearchEnumMultiSelectField",
+		"createdBy" => "SearchMultiSelectField",
+		"createdFrom" => "SearchMultiSelectField",
+		"creditAmount" => "SearchDoubleField",
+		"cscMatch" => "SearchEnumMultiSelectField",
+		"currency" => "SearchMultiSelectField",
+		"customerSubOf" => "SearchMultiSelectField",
+		"customForm" => "SearchMultiSelectField",
+		"customGL" => "SearchBooleanField",
+		"custType" => "SearchMultiSelectField",
+		"dateCreated" => "SearchDateField",
+		"daysOpen" => "SearchLongField",
+		"daysOverdue" => "SearchLongField",
+		"debitAmount" => "SearchDoubleField",
+		"deferredRevenue" => "SearchDoubleField",
+		"deferRevRec" => "SearchBooleanField",
+		"department" => "SearchMultiSelectField",
+		"depositDate" => "SearchDateField",
+		"depositTransaction" => "SearchMultiSelectField",
+		"drAccount" => "SearchMultiSelectField",
+		"dueDate" => "SearchDateField",
+		"email" => "SearchStringField",
+		"employee" => "SearchMultiSelectField",
+		"endDate" => "SearchDateField",
+		"entity" => "SearchMultiSelectField",
+		"entityStatus" => "SearchMultiSelectField",
+		"estGrossProfit" => "SearchDoubleField",
+		"estGrossProfitPct" => "SearchDoubleField",
+		"exchangeRate" => "SearchDoubleField",
+		"excludeCommission" => "SearchBooleanField",
+		"excludeFromRateRequest" => "SearchBooleanField",
+		"expectedCloseDate" => "SearchDateField",
+		"expectedReceiptDate" => "SearchDateField",
+		"expenseCategory" => "SearchMultiSelectField",
+		"expenseDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"finChrg" => "SearchBooleanField",
+		"firmed" => "SearchBooleanField",
+		"forecastType" => "SearchEnumMultiSelectField",
+		"fulfillingTransaction" => "SearchMultiSelectField",
+		"fxAccount" => "SearchMultiSelectField",
+		"fxAmount" => "SearchDoubleField",
+		"fxCostEstimate" => "SearchDoubleField",
+		"fxCostEstimateRate" => "SearchDoubleField",
+		"fxEstGrossProfit" => "SearchDoubleField",
+		"fxTranCostEstimate" => "SearchDoubleField",
+		"fxVsoeAllocation" => "SearchDoubleField",
+		"fxVsoeAmount" => "SearchDoubleField",
+		"fxVsoePrice" => "SearchDoubleField",
+		"gcoAvailabelToCharge" => "SearchBooleanField",
+		"gcoAvailableToRefund" => "SearchBooleanField",
+		"gcoAvsStreetMatch" => "SearchEnumMultiSelectField",
+		"gcoAvsZipMatch" => "SearchEnumMultiSelectField",
+		"gcoBuyerAccountAge" => "SearchLongField",
+		"gcoBuyerIp" => "SearchStringField",
+		"gcoChargeAmount" => "SearchDoubleField",
+		"gcoChargebackAmount" => "SearchDoubleField",
+		"gcoConfirmedChargedTotal" => "SearchDoubleField",
+		"gcoConfirmedRefundedTotal" => "SearchDoubleField",
+		"gcoCreditcardNumber" => "SearchStringField",
+		"gcoCscMatch" => "SearchEnumMultiSelectField",
+		"gcoFinancialState" => "SearchStringField",
+		"gcoFulfillmentState" => "SearchStringField",
+		"gcoOrderId" => "SearchStringField",
+		"gcoOrderTotal" => "SearchDoubleField",
+		"gcoPromotionAmount" => "SearchDoubleField",
+		"gcoPromotionName" => "SearchStringField",
+		"gcoRefundAmount" => "SearchDoubleField",
+		"gcoShippingTotal" => "SearchDoubleField",
+		"gcoStateChangedDetail" => "SearchStringField",
+		"giftCertificate" => "SearchStringField",
+		"grossAmount" => "SearchDoubleField",
+		"includeInForecast" => "SearchBooleanField",
+		"incoterm" => "SearchMultiSelectField",
+		"intercoStatus" => "SearchEnumMultiSelectField",
+		"intercoTransaction" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"inventoryLocation" => "SearchMultiSelectField",
+		"inventorySubsidiary" => "SearchMultiSelectField",
+		"inVsoeBundle" => "SearchBooleanField",
+		"isAllocation" => "SearchBooleanField",
+		"isBackflush" => "SearchBooleanField",
+		"isGcoChargeback" => "SearchBooleanField",
+		"isGcoChargeConfirmed" => "SearchBooleanField",
+		"isGcoPaymentGuaranteed" => "SearchBooleanField",
+		"isGcoRefundConfirmed" => "SearchBooleanField",
+		"isInsideDelivery" => "SearchBooleanField",
+		"isInsidePickup" => "SearchBooleanField",
+		"isIntercompanyAdjustment" => "SearchBooleanField",
+		"isInTransitPayment" => "SearchBooleanField",
+		"isMultiShipTo" => "SearchBooleanField",
+		"isPayPalMeth" => "SearchBooleanField",
+		"isReversal" => "SearchBooleanField",
+		"isRevRecTransaction" => "SearchBooleanField",
+		"isScrap" => "SearchBooleanField",
+		"isShipAddress" => "SearchBooleanField",
+		"isTransferPriceCosting" => "SearchBooleanField",
+		"isVsoeAlloc" => "SearchBooleanField",
+		"isWip" => "SearchBooleanField",
+		"item" => "SearchMultiSelectField",
+		"itemFulfillmentChoice" => "SearchEnumMultiSelectField",
+		"itemRevision" => "SearchMultiSelectField",
+		"itemSubOf" => "SearchMultiSelectField",
+		"landedCostPerLine" => "SearchBooleanField",
+		"lastModifiedDate" => "SearchDateField",
+		"leadSource" => "SearchMultiSelectField",
+		"lineUniqueKey" => "SearchLongField",
+		"location" => "SearchMultiSelectField",
+		"locationAutoAssigned" => "SearchBooleanField",
+		"mainLine" => "SearchBooleanField",
+		"mainName" => "SearchMultiSelectField",
+		"manufacturingRouting" => "SearchMultiSelectField",
+		"matchBillToReceipt" => "SearchBooleanField",
+		"memo" => "SearchStringField",
+		"memoMain" => "SearchStringField",
+		"memorized" => "SearchBooleanField",
+		"merchantAccount" => "SearchStringField",
+		"message" => "SearchStringField",
+		"multiSubsidiary" => "SearchBooleanField",
+		"nameText" => "SearchStringField",
+		"netAmount" => "SearchDoubleField",
+		"nextApprover" => "SearchMultiSelectField",
+		"nextBillDate" => "SearchDateField",
+		"nexus" => "SearchMultiSelectField",
+		"noAutoAssignLocation" => "SearchBooleanField",
+		"nonReimbursable" => "SearchBooleanField",
+		"number" => "SearchLongField",
+		"oneTimeTotal" => "SearchDoubleField",
+		"opportunity" => "SearchMultiSelectField",
+		"orderPriority" => "SearchDoubleField",
+		"otherRefNum" => "SearchTextNumberField",
+		"otherRefNumNonDeposit" => "SearchTextNumberField",
+		"overheadParentItem" => "SearchMultiSelectField",
+		"overrideInstallments" => "SearchBooleanField",
+		"packageCount" => "SearchLongField",
+		"paidTransaction" => "SearchMultiSelectField",
+		"parent" => "SearchLongField",
+		"partner" => "SearchMultiSelectField",
+		"partnerContribution" => "SearchLongField",
+		"partnerRole" => "SearchMultiSelectField",
+		"partnerTeamMember" => "SearchMultiSelectField",
+		"payingTransaction" => "SearchMultiSelectField",
+		"paymentApproved" => "SearchBooleanField",
+		"paymentEventDate" => "SearchDateField",
+		"paymentEventHoldReason" => "SearchEnumMultiSelectField",
+		"paymentEventPurchaseCardUsed" => "SearchBooleanField",
+		"paymentEventPurchaseDataSent" => "SearchBooleanField",
+		"paymentEventResult" => "SearchEnumMultiSelectField",
+		"paymentEventType" => "SearchEnumMultiSelectField",
+		"paymentHold" => "SearchBooleanField",
+		"paymentMethod" => "SearchMultiSelectField",
+		"paymentOption" => "SearchStringField",
+		"payPalPending" => "SearchBooleanField",
+		"payPalStatus" => "SearchStringField",
+		"payPalTranId" => "SearchStringField",
+		"pnRefNum" => "SearchStringField",
+		"poAsText" => "SearchStringField",
+		"posting" => "SearchBooleanField",
+		"postingPeriod" => "RecordRef",
+		"postingPeriodRelative" => "PostingPeriodDate",
+		"priceLevel" => "SearchMultiSelectField",
+		"printedPickingTicket" => "SearchBooleanField",
+		"probability" => "SearchLongField",
+		"projectedAmount" => "SearchDoubleField",
+		"projectTask" => "SearchMultiSelectField",
+		"promoCode" => "SearchMultiSelectField",
+		"purchaseOrder" => "SearchMultiSelectField",
+		"quantity" => "SearchDoubleField",
+		"quantityBilled" => "SearchDoubleField",
+		"quantityCommitted" => "SearchDoubleField",
+		"quantityPacked" => "SearchDoubleField",
+		"quantityPicked" => "SearchDoubleField",
+		"quantityRevCommitted" => "SearchDoubleField",
+		"quantityShipRecv" => "SearchDoubleField",
+		"recognizedRevenue" => "SearchDoubleField",
+		"recordType" => "SearchStringField",
+		"recurAnnuallyTotal" => "SearchDoubleField",
+		"recurMonthlyTotal" => "SearchDoubleField",
+		"recurQuarterlyTotal" => "SearchDoubleField",
+		"recurringBill" => "SearchBooleanField",
+		"recurWeeklyTotal" => "SearchDoubleField",
+		"refNumber" => "SearchLongField",
+		"revCommitStatus" => "SearchEnumMultiSelectField",
+		"revCommittingStatus" => "SearchBooleanField",
+		"revCommittingTransaction" => "SearchMultiSelectField",
+		"revenueStatus" => "SearchEnumMultiSelectField",
+		"reversalDate" => "SearchDateField",
+		"reversalNumber" => "SearchStringField",
+		"revRecEndDate" => "SearchDateField",
+		"revRecOnRevCommitment" => "SearchBooleanField",
+		"revRecStartDate" => "SearchDateField",
+		"revRecTermInMonths" => "SearchLongField",
+		"salesEffectiveDate" => "SearchDateField",
+		"salesOrder" => "SearchMultiSelectField",
+		"salesRep" => "SearchMultiSelectField",
+		"salesTeamMember" => "SearchMultiSelectField",
+		"salesTeamRole" => "SearchMultiSelectField",
+		"schedulingMethod" => "SearchEnumMultiSelectField",
+		"serialNumber" => "SearchStringField",
+		"serialNumberCost" => "SearchDoubleField",
+		"serialNumberCostAdjustment" => "SearchDoubleField",
+		"serialNumberQuantity" => "SearchDoubleField",
+		"serialNumbers" => "SearchStringField",
+		"shipAddress" => "SearchStringField",
+		"shipAddressee" => "SearchStringField",
+		"shipAttention" => "SearchStringField",
+		"shipCarrier" => "SearchEnumMultiSelectField",
+		"shipCity" => "SearchStringField",
+		"shipComplete" => "SearchBooleanField",
+		"shipCountry" => "SearchEnumMultiSelectField",
+		"shipCounty" => "SearchStringField",
+		"shipDate" => "SearchDateField",
+		"shipGroup" => "SearchLongField",
+		"shipMethod" => "SearchMultiSelectField",
+		"shipPhone" => "SearchStringField",
+		"shipping" => "SearchBooleanField",
+		"shipRecvStatus" => "SearchBooleanField",
+		"shipRecvStatusLine" => "SearchBooleanField",
+		"shipState" => "SearchMultiSelectField",
+		"shipTo" => "SearchMultiSelectField",
+		"shipZip" => "SearchStringField",
+		"source" => "SearchEnumMultiSelectField",
+		"startDate" => "SearchDateField",
+		"statistical" => "SearchBooleanField",
+		"status" => "SearchEnumMultiSelectField",
+		"subscription" => "SearchMultiSelectField",
+		"subsidiaryTaxRegNum" => "SearchMultiSelectField",
+		"subscriptionLine" => "SearchMultiSelectField",
+		"subsidiary" => "SearchMultiSelectField",
+		"taxItem" => "SearchMultiSelectField",
+		"taxLine" => "SearchBooleanField",
+		"taxPeriod" => "RecordRef",
+		"taxPeriodRelative" => "PostingPeriodDate",
+		"taxPointDate" => "SearchDateField",
+		"taxRate" => "SearchDoubleField",
+		"terms" => "SearchMultiSelectField",
+		"termsOfSale" => "SearchEnumMultiSelectField",
+		"title" => "SearchStringField",
+		"toBeEmailed" => "SearchBooleanField",
+		"toBePrinted" => "SearchBooleanField",
+		"toSubsidiary" => "SearchMultiSelectField",
+		"totalAmount" => "SearchDoubleField",
+		"trackingNumbers" => "SearchStringField",
+		"tranCostEstimate" => "SearchDoubleField",
+		"tranDate" => "SearchDateField",
+		"tranEstGrossProfit" => "SearchDoubleField",
+		"tranEstGrossProfitPct" => "SearchDoubleField",
+		"tranFxEstGrossProfit" => "SearchDoubleField",
+		"tranId" => "SearchStringField",
+		"tranIsVsoeBundle" => "SearchBooleanField",
+		"transactionDiscount" => "SearchBooleanField",
+		"transactionLineType" => "SearchEnumMultiSelectField",
+		"transactionNumber" => "SearchStringField",
+		"transferLocation" => "SearchMultiSelectField",
+		"transferOrderQuantityCommitted" => "SearchDoubleField",
+		"transferOrderQuantityPacked" => "SearchDoubleField",
+		"transferOrderQuantityPicked" => "SearchDoubleField",
+		"transferOrderQuantityReceived" => "SearchDoubleField",
+		"transferOrderQuantityShipped" => "SearchDoubleField",
+		"type" => "SearchEnumMultiSelectField",
+		"unit" => "SearchMultiSelectField",
+		"unitCostOverride" => "SearchDoubleField",
+		"unitsType" => "SearchMultiSelectField",
+		"vendType" => "SearchMultiSelectField",
+		"visibleToCustomer" => "SearchBooleanField",
+		"voided" => "SearchBooleanField",
+		"vsoeAllocation" => "SearchDoubleField",
+		"vsoeAmount" => "SearchDoubleField",
+		"vsoeDeferral" => "SearchEnumMultiSelectField",
+		"vsoeDelivered" => "SearchBooleanField",
+		"vsoePermitDiscount" => "SearchEnumMultiSelectField",
+		"vsoePrice" => "SearchDoubleField",
+		"webSite" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

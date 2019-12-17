@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FldFilterSelList.
+ * FldFilterSelList
  */
-class FldFilterSelList
-{
-    /**
-     * @var RecordRef[]
-     */
-    public $fldFilterSel;
+class FldFilterSelList {
+	/**
+	 * @access public
+	 * @var RecordRef[]
+	 */
+	public $fldFilterSel;
 
-    public static $paramtypesmap = array(
-        'fldFilterSel' => 'RecordRef[]',
-    );
+	static $paramtypesmap = array(
+		"fldFilterSel" => "RecordRef[]",
+	);
 }

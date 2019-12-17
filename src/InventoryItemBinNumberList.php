@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryItemBinNumberList.
+ * InventoryItemBinNumberList
  */
-class InventoryItemBinNumberList
-{
-    /**
-     * @var InventoryItemBinNumber[]
-     */
-    public $binNumber;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InventoryItemBinNumberList {
+	/**
+	 * @access public
+	 * @var InventoryItemBinNumber[]
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'binNumber' => 'InventoryItemBinNumber[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"binNumber" => "InventoryItemBinNumber[]",
+		"replaceAll" => "boolean",
+	);
 }

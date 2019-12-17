@@ -11,171 +11,202 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesTaxItem.
+ * SalesTaxItem
  */
-class SalesTaxItem extends Record
-{
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var RecordRef
-     */
-    public $taxType;
-    /**
-     * @var RecordRef
-     */
-    public $taxAgency;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseAccount;
-    /**
-     * @var RecordRef
-     */
-    public $saleAccount;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var dateTime
-     */
-    public $effectiveFrom;
-    /**
-     * @var dateTime
-     */
-    public $validUntil;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var bool
-     */
-    public $eccode;
-    /**
-     * @var bool
-     */
-    public $reverseCharge;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $service;
-    /**
-     * @var bool
-     */
-    public $exempt;
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var bool
-     */
-    public $excludeFromTaxReports;
-    /**
-     * @var SalesTaxItemAvailable
-     */
-    public $available;
-    /**
-     * @var bool
-     */
-    public $export;
-    /**
-     * @var RecordRef
-     */
-    public $taxAccount;
-    /**
-     * @var string
-     */
-    public $county;
-    /**
-     * @var string
-     */
-    public $city;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $zip;
-    /**
-     * @var RecordRef
-     */
-    public $nexusCountry;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class SalesTaxItem extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxAgency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $saleAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveFrom;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $validUntil;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $eccode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $reverseCharge;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $service;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $exempt;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeFromTaxReports;
+	/**
+	 * @access public
+	 * @var SalesTaxItemAvailable
+	 */
+	public $available;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $export;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxAccount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $county;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $zip;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexusCountry;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'itemId' => 'string',
-        'displayName' => 'string',
-        'description' => 'string',
-        'rate' => 'string',
-        'taxType' => 'RecordRef',
-        'taxAgency' => 'RecordRef',
-        'purchaseAccount' => 'RecordRef',
-        'saleAccount' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'effectiveFrom' => 'dateTime',
-        'validUntil' => 'dateTime',
-        'subsidiaryList' => 'RecordRefList',
-        'includeChildren' => 'boolean',
-        'eccode' => 'boolean',
-        'reverseCharge' => 'boolean',
-        'parent' => 'RecordRef',
-        'service' => 'boolean',
-        'exempt' => 'boolean',
-        'isDefault' => 'boolean',
-        'excludeFromTaxReports' => 'boolean',
-        'available' => 'SalesTaxItemAvailable',
-        'export' => 'boolean',
-        'taxAccount' => 'RecordRef',
-        'county' => 'string',
-        'city' => 'string',
-        'state' => 'string',
-        'zip' => 'string',
-        'nexusCountry' => 'RecordRef',
-        'name' => 'string',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"itemId" => "string",
+		"displayName" => "string",
+		"description" => "string",
+		"rate" => "string",
+		"taxType" => "RecordRef",
+		"taxAgency" => "RecordRef",
+		"purchaseAccount" => "RecordRef",
+		"saleAccount" => "RecordRef",
+		"isInactive" => "boolean",
+		"effectiveFrom" => "dateTime",
+		"validUntil" => "dateTime",
+		"subsidiaryList" => "RecordRefList",
+		"includeChildren" => "boolean",
+		"eccode" => "boolean",
+		"reverseCharge" => "boolean",
+		"parent" => "RecordRef",
+		"service" => "boolean",
+		"exempt" => "boolean",
+		"isDefault" => "boolean",
+		"excludeFromTaxReports" => "boolean",
+		"available" => "SalesTaxItemAvailable",
+		"export" => "boolean",
+		"taxAccount" => "RecordRef",
+		"county" => "string",
+		"city" => "string",
+		"state" => "string",
+		"zip" => "string",
+		"nexusCountry" => "RecordRef",
+		"name" => "string",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

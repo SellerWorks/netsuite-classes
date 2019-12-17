@@ -11,221 +11,262 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentSearchBasic.
+ * InboundShipmentSearchBasic
  */
-class InboundShipmentSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchDateField
-     */
-    public $actualDeliveryDate;
-    /**
-     * @var SearchDateField
-     */
-    public $actualShippingDate;
-    /**
-     * @var SearchStringField
-     */
-    public $billOfLading;
-    /**
-     * @var SearchDateField
-     */
-    public $createdDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $currency;
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchDateField
-     */
-    public $expectedDeliveryDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $expectedRate;
-    /**
-     * @var SearchDateField
-     */
-    public $expectedShippingDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalDocumentNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $incoterm;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchDateField
-     */
-    public $itemEffectiveDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $itemExchangeRate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $landedCostAllocationMethod;
-    /**
-     * @var SearchDoubleField
-     */
-    public $landedCostAmount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $landedCostCostCategory;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $landedCostCurrency;
-    /**
-     * @var SearchDateField
-     */
-    public $landedCostEffectiveDate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $landedCostExchangeRate;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchDoubleField
-     */
-    public $poAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $poRate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $purchaseOrder;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityBilled;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityExpected;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityReceived;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityRemaining;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $receivingLocation;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipmentBaseCurrency;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $shipmentNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $status;
-    /**
-     * @var SearchDoubleField
-     */
-    public $totalUnitCost;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $unit;
-    /**
-     * @var SearchDoubleField
-     */
-    public $unitLandedCost;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $vendor;
-    /**
-     * @var SearchStringField
-     */
-    public $vesselNumber;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class InboundShipmentSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $actualDeliveryDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $actualShippingDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $billOfLading;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $expectedDeliveryDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $expectedRate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $expectedShippingDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalDocumentNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $incoterm;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $itemEffectiveDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $itemExchangeRate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $landedCostAllocationMethod;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $landedCostAmount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $landedCostCostCategory;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $landedCostCurrency;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $landedCostEffectiveDate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $landedCostExchangeRate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $poAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $poRate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $purchaseOrder;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityBilled;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityExpected;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityReceived;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityRemaining;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $receivingLocation;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipmentBaseCurrency;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $shipmentNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $totalUnitCost;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $unit;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $unitLandedCost;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $vesselNumber;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = array(
-        'actualDeliveryDate' => 'SearchDateField',
-        'actualShippingDate' => 'SearchDateField',
-        'billOfLading' => 'SearchStringField',
-        'createdDate' => 'SearchDateField',
-        'currency' => 'SearchMultiSelectField',
-        'description' => 'SearchStringField',
-        'expectedDeliveryDate' => 'SearchDateField',
-        'expectedRate' => 'SearchDoubleField',
-        'expectedShippingDate' => 'SearchDateField',
-        'externalDocumentNumber' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'incoterm' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'item' => 'SearchMultiSelectField',
-        'itemEffectiveDate' => 'SearchDateField',
-        'itemExchangeRate' => 'SearchDoubleField',
-        'landedCostAllocationMethod' => 'SearchEnumMultiSelectField',
-        'landedCostAmount' => 'SearchDoubleField',
-        'landedCostCostCategory' => 'SearchMultiSelectField',
-        'landedCostCurrency' => 'SearchMultiSelectField',
-        'landedCostEffectiveDate' => 'SearchDateField',
-        'landedCostExchangeRate' => 'SearchDoubleField',
-        'memo' => 'SearchStringField',
-        'poAmount' => 'SearchDoubleField',
-        'poRate' => 'SearchDoubleField',
-        'purchaseOrder' => 'SearchMultiSelectField',
-        'quantityBilled' => 'SearchDoubleField',
-        'quantityExpected' => 'SearchDoubleField',
-        'quantityReceived' => 'SearchDoubleField',
-        'quantityRemaining' => 'SearchDoubleField',
-        'receivingLocation' => 'SearchMultiSelectField',
-        'shipmentBaseCurrency' => 'SearchMultiSelectField',
-        'shipmentNumber' => 'SearchMultiSelectField',
-        'status' => 'SearchEnumMultiSelectField',
-        'totalUnitCost' => 'SearchDoubleField',
-        'unit' => 'SearchMultiSelectField',
-        'unitLandedCost' => 'SearchDoubleField',
-        'vendor' => 'SearchMultiSelectField',
-        'vesselNumber' => 'SearchStringField',
-        'customFieldList' => 'SearchCustomFieldList',
-    );
+	static $paramtypesmap = array(
+		"actualDeliveryDate" => "SearchDateField",
+		"actualShippingDate" => "SearchDateField",
+		"billOfLading" => "SearchStringField",
+		"createdDate" => "SearchDateField",
+		"currency" => "SearchMultiSelectField",
+		"description" => "SearchStringField",
+		"expectedDeliveryDate" => "SearchDateField",
+		"expectedRate" => "SearchDoubleField",
+		"expectedShippingDate" => "SearchDateField",
+		"externalDocumentNumber" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"incoterm" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"item" => "SearchMultiSelectField",
+		"itemEffectiveDate" => "SearchDateField",
+		"itemExchangeRate" => "SearchDoubleField",
+		"landedCostAllocationMethod" => "SearchEnumMultiSelectField",
+		"landedCostAmount" => "SearchDoubleField",
+		"landedCostCostCategory" => "SearchMultiSelectField",
+		"landedCostCurrency" => "SearchMultiSelectField",
+		"landedCostEffectiveDate" => "SearchDateField",
+		"landedCostExchangeRate" => "SearchDoubleField",
+		"memo" => "SearchStringField",
+		"poAmount" => "SearchDoubleField",
+		"poRate" => "SearchDoubleField",
+		"purchaseOrder" => "SearchMultiSelectField",
+		"quantityBilled" => "SearchDoubleField",
+		"quantityExpected" => "SearchDoubleField",
+		"quantityReceived" => "SearchDoubleField",
+		"quantityRemaining" => "SearchDoubleField",
+		"receivingLocation" => "SearchMultiSelectField",
+		"shipmentBaseCurrency" => "SearchMultiSelectField",
+		"shipmentNumber" => "SearchMultiSelectField",
+		"status" => "SearchEnumMultiSelectField",
+		"totalUnitCost" => "SearchDoubleField",
+		"unit" => "SearchMultiSelectField",
+		"unitLandedCost" => "SearchDoubleField",
+		"vendor" => "SearchMultiSelectField",
+		"vesselNumber" => "SearchStringField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemOverheadType.
+ * ItemOverheadType
  */
-class ItemOverheadType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _amountBaseUnit = '_amountBaseUnit';
-    /**
-     * @var string
-     */
-    const _percentOfMaterial = '_percentOfMaterial';
-    /**
-     * @var string
-     */
-    const _percentOfTotal = '_percentOfTotal';
+class ItemOverheadType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _amountBaseUnit = "_amountBaseUnit";
+	/**
+	 * @var string
+	 */
+	const _percentOfMaterial = "_percentOfMaterial";
+	/**
+	 * @var string
+	 */
+	const _percentOfTotal = "_percentOfTotal";
 }

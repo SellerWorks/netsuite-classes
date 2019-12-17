@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSubType.
+ * ItemSubType
  */
-class ItemSubType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _forPurchase = '_forPurchase';
-    /**
-     * @var string
-     */
-    const _forResale = '_forResale';
-    /**
-     * @var string
-     */
-    const _forSale = '_forSale';
+class ItemSubType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _forPurchase = "_forPurchase";
+	/**
+	 * @var string
+	 */
+	const _forResale = "_forResale";
+	/**
+	 * @var string
+	 */
+	const _forSale = "_forSale";
 }

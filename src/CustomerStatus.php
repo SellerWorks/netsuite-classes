@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerStatus.
+ * CustomerStatus
  */
-class CustomerStatus extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var CustomerStatusStage
-     */
-    public $stage;
-    /**
-     * @var float
-     */
-    public $probability;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $includeInLeadReports;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CustomerStatus extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var CustomerStatusStage
+	 */
+	public $stage;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $probability;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeInLeadReports;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'name' => 'string',
-        'stage' => 'CustomerStatusStage',
-        'probability' => 'float',
-        'description' => 'string',
-        'includeInLeadReports' => 'boolean',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"name" => "string",
+		"stage" => "CustomerStatusStage",
+		"probability" => "float",
+		"description" => "string",
+		"includeInLeadReports" => "boolean",
+		"isInactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

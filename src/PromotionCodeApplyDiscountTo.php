@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeApplyDiscountTo.
+ * PromotionCodeApplyDiscountTo
  */
-class PromotionCodeApplyDiscountTo
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _allSales = '_allSales';
-    /**
-     * @var string
-     */
-    const _firstSaleOnly = '_firstSaleOnly';
+class PromotionCodeApplyDiscountTo {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _allSales = "_allSales";
+	/**
+	 * @var string
+	 */
+	const _firstSaleOnly = "_firstSaleOnly";
 }

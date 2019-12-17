@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorPricingScheduleList.
+ * VendorPricingScheduleList
  */
-class VendorPricingScheduleList
-{
-    /**
-     * @var VendorPricingSchedule[]
-     */
-    public $pricingSchedule;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class VendorPricingScheduleList {
+	/**
+	 * @access public
+	 * @var VendorPricingSchedule[]
+	 */
+	public $pricingSchedule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'pricingSchedule' => 'VendorPricingSchedule[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"pricingSchedule" => "VendorPricingSchedule[]",
+		"replaceAll" => "boolean",
+	);
 }

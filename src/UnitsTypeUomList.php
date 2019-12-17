@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UnitsTypeUomList.
+ * UnitsTypeUomList
  */
-class UnitsTypeUomList
-{
-    /**
-     * @var UnitsTypeUom[]
-     */
-    public $uom;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class UnitsTypeUomList {
+	/**
+	 * @access public
+	 * @var UnitsTypeUom[]
+	 */
+	public $uom;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'uom' => 'UnitsTypeUom[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"uom" => "UnitsTypeUom[]",
+		"replaceAll" => "boolean",
+	);
 }

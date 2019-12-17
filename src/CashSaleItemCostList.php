@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashSaleItemCostList.
+ * CashSaleItemCostList
  */
-class CashSaleItemCostList
-{
-    /**
-     * @var CashSaleItemCost[]
-     */
-    public $itemCost;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CashSaleItemCostList {
+	/**
+	 * @access public
+	 * @var CashSaleItemCost[]
+	 */
+	public $itemCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'itemCost' => 'CashSaleItemCost[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"itemCost" => "CashSaleItemCost[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DateCustomFieldRef.
+ * DateCustomFieldRef
  */
-class DateCustomFieldRef extends CustomFieldRef
-{
-    /**
-     * @var dateTime
-     */
-    public $value;
+class DateCustomFieldRef extends CustomFieldRef {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $value;
 
-    public static $paramtypesmap = array(
-        'value' => 'dateTime',
-    );
+	static $paramtypesmap = array(
+		"value" => "dateTime",
+	);
 }

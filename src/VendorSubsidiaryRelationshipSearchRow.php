@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorSubsidiaryRelationshipSearchRow.
+ * VendorSubsidiaryRelationshipSearchRow
  */
-class VendorSubsidiaryRelationshipSearchRow extends SearchRow
-{
-    /**
-     * @var VendorSubsidiaryRelationshipSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var SubsidiarySearchRowBasic
-     */
-    public $subsidiaryJoin;
-    /**
-     * @var VendorSearchRowBasic
-     */
-    public $vendorJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class VendorSubsidiaryRelationshipSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var VendorSubsidiaryRelationshipSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var SubsidiarySearchRowBasic
+	 */
+	public $subsidiaryJoin;
+	/**
+	 * @access public
+	 * @var VendorSearchRowBasic
+	 */
+	public $vendorJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'VendorSubsidiaryRelationshipSearchRowBasic',
-        'subsidiaryJoin' => 'SubsidiarySearchRowBasic',
-        'vendorJoin' => 'VendorSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "VendorSubsidiaryRelationshipSearchRowBasic",
+		"subsidiaryJoin" => "SubsidiarySearchRowBasic",
+		"vendorJoin" => "VendorSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

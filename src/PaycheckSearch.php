@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckSearch.
+ * PaycheckSearch
  */
-class PaycheckSearch extends SearchRecord
-{
-    /**
-     * @var PaycheckSearchBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var PayrollItemSearchBasic
-     */
-    public $payrollItemJoin;
+class PaycheckSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var PaycheckSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var PayrollItemSearchBasic
+	 */
+	public $payrollItemJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'PaycheckSearchBasic',
-        'employeeJoin' => 'EmployeeSearchBasic',
-        'payrollItemJoin' => 'PayrollItemSearchBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "PaycheckSearchBasic",
+		"employeeJoin" => "EmployeeSearchBasic",
+		"payrollItemJoin" => "PayrollItemSearchBasic",
+	);
 }

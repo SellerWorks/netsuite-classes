@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAccountingBookDetail.
+ * ItemAccountingBookDetail
  */
-class ItemAccountingBookDetail
-{
-    /**
-     * @var RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var RecordRef
-     */
-    public $createRevenuePlansOn;
-    /**
-     * @var RecordRef
-     */
-    public $revenueRecognitionRule;
-    /**
-     * @var RecordRef
-     */
-    public $revRecForecastRule;
-    /**
-     * @var RecordRef
-     */
-    public $revRecSchedule;
-    /**
-     * @var bool
-     */
-    public $sameAsPrimaryRevRec;
-    /**
-     * @var RecordRef
-     */
-    public $amortizationTemplate;
-    /**
-     * @var bool
-     */
-    public $sameAsPrimaryAmortization;
+class ItemAccountingBookDetail {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createRevenuePlansOn;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revenueRecognitionRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecForecastRule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecSchedule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sameAsPrimaryRevRec;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $amortizationTemplate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sameAsPrimaryAmortization;
 
-    public static $paramtypesmap = array(
-        'accountingBook' => 'RecordRef',
-        'createRevenuePlansOn' => 'RecordRef',
-        'revenueRecognitionRule' => 'RecordRef',
-        'revRecForecastRule' => 'RecordRef',
-        'revRecSchedule' => 'RecordRef',
-        'sameAsPrimaryRevRec' => 'boolean',
-        'amortizationTemplate' => 'RecordRef',
-        'sameAsPrimaryAmortization' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"accountingBook" => "RecordRef",
+		"createRevenuePlansOn" => "RecordRef",
+		"revenueRecognitionRule" => "RecordRef",
+		"revRecForecastRule" => "RecordRef",
+		"revRecSchedule" => "RecordRef",
+		"sameAsPrimaryRevRec" => "boolean",
+		"amortizationTemplate" => "RecordRef",
+		"sameAsPrimaryAmortization" => "boolean",
+	);
 }

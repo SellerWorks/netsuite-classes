@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EstimateItemList.
+ * EstimateItemList
  */
-class EstimateItemList
-{
-    /**
-     * @var EstimateItem[]
-     */
-    public $item;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class EstimateItemList {
+	/**
+	 * @access public
+	 * @var EstimateItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'item' => 'EstimateItem[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"item" => "EstimateItem[]",
+		"replaceAll" => "boolean",
+	);
 }

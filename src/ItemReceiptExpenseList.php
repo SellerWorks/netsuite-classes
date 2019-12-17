@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemReceiptExpenseList.
+ * ItemReceiptExpenseList
  */
-class ItemReceiptExpenseList
-{
-    /**
-     * @var ItemReceiptExpense[]
-     */
-    public $expense;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ItemReceiptExpenseList {
+	/**
+	 * @access public
+	 * @var ItemReceiptExpense[]
+	 */
+	public $expense;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'expense' => 'ItemReceiptExpense[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"expense" => "ItemReceiptExpense[]",
+		"replaceAll" => "boolean",
+	);
 }

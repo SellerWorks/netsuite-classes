@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingTransactionSearchAdvanced.
+ * AccountingTransactionSearchAdvanced
  */
-class AccountingTransactionSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var AccountingTransactionSearch
-     */
-    public $criteria;
-    /**
-     * @var AccountingTransactionSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class AccountingTransactionSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var AccountingTransactionSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var AccountingTransactionSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'AccountingTransactionSearch',
-        'columns' => 'AccountingTransactionSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "AccountingTransactionSearch",
+		"columns" => "AccountingTransactionSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

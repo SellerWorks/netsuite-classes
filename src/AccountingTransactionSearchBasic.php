@@ -11,161 +11,190 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingTransactionSearchBasic.
+ * AccountingTransactionSearchBasic
  */
-class AccountingTransactionSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBook;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountType;
-    /**
-     * @var SearchDoubleField
-     */
-    public $altSalesAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $altSalesNetAmount;
-    /**
-     * @var SearchDoubleField
-     */
-    public $amount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $bookSpecificTransaction;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $catchUpPeriod;
-    /**
-     * @var SearchDoubleField
-     */
-    public $creditAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $customGL;
-    /**
-     * @var SearchDoubleField
-     */
-    public $debitAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $deferRevRec;
-    /**
-     * @var SearchDoubleField
-     */
-    public $exchangeRate;
-    /**
-     * @var SearchDoubleField
-     */
-    public $grossAmount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $multiSubsidiary;
-    /**
-     * @var SearchDoubleField
-     */
-    public $netAmount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $posting;
-    /**
-     * @var SearchDoubleField
-     */
-    public $quantityRevCommitted;
-    /**
-     * @var SearchDoubleField
-     */
-    public $recognizedRevenue;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $revCommitStatus;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $revenueStatus;
-    /**
-     * @var SearchDateField
-     */
-    public $revRecEndDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $revRecOnRevCommitment;
-    /**
-     * @var SearchDateField
-     */
-    public $revRecStartDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchBooleanField
-     */
-    public $tranIsVsoeBundle;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchDoubleField
-     */
-    public $vsoeAllocation;
+class AccountingTransactionSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountType;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $altSalesAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $altSalesNetAmount;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $bookSpecificTransaction;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $catchUpPeriod;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $creditAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $customGL;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $debitAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $deferRevRec;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $grossAmount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $multiSubsidiary;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $netAmount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $posting;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $quantityRevCommitted;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $recognizedRevenue;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $revCommitStatus;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $revenueStatus;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $revRecEndDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $revRecOnRevCommitment;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $revRecStartDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $tranIsVsoeBundle;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $vsoeAllocation;
 
-    public static $paramtypesmap = array(
-        'account' => 'SearchMultiSelectField',
-        'accountingBook' => 'SearchMultiSelectField',
-        'accountType' => 'SearchMultiSelectField',
-        'altSalesAmount' => 'SearchDoubleField',
-        'altSalesNetAmount' => 'SearchDoubleField',
-        'amount' => 'SearchDoubleField',
-        'bookSpecificTransaction' => 'SearchBooleanField',
-        'catchUpPeriod' => 'SearchMultiSelectField',
-        'creditAmount' => 'SearchDoubleField',
-        'customGL' => 'SearchBooleanField',
-        'debitAmount' => 'SearchDoubleField',
-        'deferRevRec' => 'SearchBooleanField',
-        'exchangeRate' => 'SearchDoubleField',
-        'grossAmount' => 'SearchDoubleField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'multiSubsidiary' => 'SearchBooleanField',
-        'netAmount' => 'SearchDoubleField',
-        'posting' => 'SearchBooleanField',
-        'quantityRevCommitted' => 'SearchDoubleField',
-        'recognizedRevenue' => 'SearchDoubleField',
-        'revCommitStatus' => 'SearchEnumMultiSelectField',
-        'revenueStatus' => 'SearchEnumMultiSelectField',
-        'revRecEndDate' => 'SearchDateField',
-        'revRecOnRevCommitment' => 'SearchBooleanField',
-        'revRecStartDate' => 'SearchDateField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'tranIsVsoeBundle' => 'SearchBooleanField',
-        'type' => 'SearchEnumMultiSelectField',
-        'vsoeAllocation' => 'SearchDoubleField',
-    );
+	static $paramtypesmap = array(
+		"account" => "SearchMultiSelectField",
+		"accountingBook" => "SearchMultiSelectField",
+		"accountType" => "SearchMultiSelectField",
+		"altSalesAmount" => "SearchDoubleField",
+		"altSalesNetAmount" => "SearchDoubleField",
+		"amount" => "SearchDoubleField",
+		"bookSpecificTransaction" => "SearchBooleanField",
+		"catchUpPeriod" => "SearchMultiSelectField",
+		"creditAmount" => "SearchDoubleField",
+		"customGL" => "SearchBooleanField",
+		"debitAmount" => "SearchDoubleField",
+		"deferRevRec" => "SearchBooleanField",
+		"exchangeRate" => "SearchDoubleField",
+		"grossAmount" => "SearchDoubleField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"multiSubsidiary" => "SearchBooleanField",
+		"netAmount" => "SearchDoubleField",
+		"posting" => "SearchBooleanField",
+		"quantityRevCommitted" => "SearchDoubleField",
+		"recognizedRevenue" => "SearchDoubleField",
+		"revCommitStatus" => "SearchEnumMultiSelectField",
+		"revenueStatus" => "SearchEnumMultiSelectField",
+		"revRecEndDate" => "SearchDateField",
+		"revRecOnRevCommitment" => "SearchBooleanField",
+		"revRecStartDate" => "SearchDateField",
+		"subsidiary" => "SearchMultiSelectField",
+		"tranIsVsoeBundle" => "SearchBooleanField",
+		"type" => "SearchEnumMultiSelectField",
+		"vsoeAllocation" => "SearchDoubleField",
+	);
 }

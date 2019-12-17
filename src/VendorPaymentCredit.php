@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorPaymentCredit.
+ * VendorPaymentCredit
  */
-class VendorPaymentCredit
-{
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var int
-     */
-    public $doc;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var dateTime
-     */
-    public $creditDate;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $refNum;
-    /**
-     * @var string
-     */
-    public $appliedTo;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var float
-     */
-    public $due;
-    /**
-     * @var string
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $amount;
+class VendorPaymentCredit {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $doc;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $creditDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $refNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $appliedTo;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $due;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = array(
-        'apply' => 'boolean',
-        'doc' => 'integer',
-        'line' => 'integer',
-        'creditDate' => 'dateTime',
-        'type' => 'string',
-        'refNum' => 'string',
-        'appliedTo' => 'string',
-        'total' => 'float',
-        'due' => 'float',
-        'currency' => 'string',
-        'amount' => 'float',
-    );
+	static $paramtypesmap = array(
+		"apply" => "boolean",
+		"doc" => "integer",
+		"line" => "integer",
+		"creditDate" => "dateTime",
+		"type" => "string",
+		"refNum" => "string",
+		"appliedTo" => "string",
+		"total" => "float",
+		"due" => "float",
+		"currency" => "string",
+		"amount" => "float",
+	);
 }

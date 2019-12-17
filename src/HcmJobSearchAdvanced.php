@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * HcmJobSearchAdvanced.
+ * HcmJobSearchAdvanced
  */
-class HcmJobSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var HcmJobSearch
-     */
-    public $criteria;
-    /**
-     * @var HcmJobSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class HcmJobSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var HcmJobSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var HcmJobSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'HcmJobSearch',
-        'columns' => 'HcmJobSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "HcmJobSearch",
+		"columns" => "HcmJobSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

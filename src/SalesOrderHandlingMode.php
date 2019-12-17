@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderHandlingMode.
+ * SalesOrderHandlingMode
  */
-class SalesOrderHandlingMode
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _process = '_process';
-    /**
-     * @var string
-     */
-    const _recordExternalEvent = '_recordExternalEvent';
-    /**
-     * @var string
-     */
-    const _saveOnly = '_saveOnly';
+class SalesOrderHandlingMode {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _process = "_process";
+	/**
+	 * @var string
+	 */
+	const _recordExternalEvent = "_recordExternalEvent";
+	/**
+	 * @var string
+	 */
+	const _saveOnly = "_saveOnly";
 }

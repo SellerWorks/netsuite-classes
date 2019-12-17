@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepositCashBackList.
+ * DepositCashBackList
  */
-class DepositCashBackList
-{
-    /**
-     * @var DepositCashBack[]
-     */
-    public $depositCashBack;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class DepositCashBackList {
+	/**
+	 * @access public
+	 * @var DepositCashBack[]
+	 */
+	public $depositCashBack;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'depositCashBack' => 'DepositCashBack[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"depositCashBack" => "DepositCashBack[]",
+		"replaceAll" => "boolean",
+	);
 }

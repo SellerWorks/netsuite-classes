@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionSearchRow.
+ * SolutionSearchRow
  */
-class SolutionSearchRow extends SearchRow
-{
-    /**
-     * @var SolutionSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var SupportCaseSearchRowBasic
-     */
-    public $caseJoin;
-    /**
-     * @var SolutionSearchRowBasic
-     */
-    public $relatedSolutionJoin;
-    /**
-     * @var TopicSearchRowBasic
-     */
-    public $topicJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class SolutionSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var SolutionSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchRowBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var SolutionSearchRowBasic
+	 */
+	public $relatedSolutionJoin;
+	/**
+	 * @access public
+	 * @var TopicSearchRowBasic
+	 */
+	public $topicJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'SolutionSearchRowBasic',
-        'caseJoin' => 'SupportCaseSearchRowBasic',
-        'relatedSolutionJoin' => 'SolutionSearchRowBasic',
-        'topicJoin' => 'TopicSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+	static $paramtypesmap = array(
+		"basic" => "SolutionSearchRowBasic",
+		"caseJoin" => "SupportCaseSearchRowBasic",
+		"relatedSolutionJoin" => "SolutionSearchRowBasic",
+		"topicJoin" => "TopicSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

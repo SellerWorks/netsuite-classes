@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCreditItemList.
+ * VendorCreditItemList
  */
-class VendorCreditItemList
-{
-    /**
-     * @var VendorCreditItem[]
-     */
-    public $item;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class VendorCreditItemList {
+	/**
+	 * @access public
+	 * @var VendorCreditItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'item' => 'VendorCreditItem[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"item" => "VendorCreditItem[]",
+		"replaceAll" => "boolean",
+	);
 }

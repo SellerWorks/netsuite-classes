@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheetSearchAdvanced.
+ * TimeSheetSearchAdvanced
  */
-class TimeSheetSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var TimeSheetSearch
-     */
-    public $criteria;
-    /**
-     * @var TimeSheetSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class TimeSheetSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var TimeSheetSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var TimeSheetSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        'criteria' => 'TimeSheetSearch',
-        'columns' => 'TimeSheetSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"criteria" => "TimeSheetSearch",
+		"columns" => "TimeSheetSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

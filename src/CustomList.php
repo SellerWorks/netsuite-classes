@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomList.
+ * CustomList
  */
-class CustomList extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var RecordRef
-     */
-    public $owner;
-    /**
-     * @var bool
-     */
-    public $isOrdered;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $isMatrixOption;
-    /**
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * @var bool
-     */
-    public $convertToCustomRecord;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var CustomListCustomValueList
-     */
-    public $customValueList;
-    /**
-     * @var CustomListTranslationsList
-     */
-    public $translationsList;
-    /**
-     * @var string
-     */
-    public $internalId;
+class CustomList extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $owner;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOrdered;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isMatrixOption;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scriptId;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $convertToCustomRecord;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var CustomListCustomValueList
+	 */
+	public $customValueList;
+	/**
+	 * @access public
+	 * @var CustomListTranslationsList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
 
-    public static $paramtypesmap = array(
-        'name' => 'string',
-        'owner' => 'RecordRef',
-        'isOrdered' => 'boolean',
-        'description' => 'string',
-        'isMatrixOption' => 'boolean',
-        'scriptId' => 'string',
-        'convertToCustomRecord' => 'boolean',
-        'isInactive' => 'boolean',
-        'customValueList' => 'CustomListCustomValueList',
-        'translationsList' => 'CustomListTranslationsList',
-        'internalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"name" => "string",
+		"owner" => "RecordRef",
+		"isOrdered" => "boolean",
+		"description" => "string",
+		"isMatrixOption" => "boolean",
+		"scriptId" => "string",
+		"convertToCustomRecord" => "boolean",
+		"isInactive" => "boolean",
+		"customValueList" => "CustomListCustomValueList",
+		"translationsList" => "CustomListTranslationsList",
+		"internalId" => "string",
+	);
 }

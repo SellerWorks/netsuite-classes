@@ -11,196 +11,232 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Campaign.
+ * Campaign
  */
-class Campaign extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $campaignId;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var RecordRef
-     */
-    public $owner;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @var float
-     */
-    public $baseCost;
-    /**
-     * @var float
-     */
-    public $cost;
-    /**
-     * @var float
-     */
-    public $expectedRevenue;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $local;
-    /**
-     * @var float
-     */
-    public $totalRevenue;
-    /**
-     * @var float
-     */
-    public $roi;
-    /**
-     * @var float
-     */
-    public $profit;
-    /**
-     * @var float
-     */
-    public $costPerCustomer;
-    /**
-     * @var float
-     */
-    public $convCostPerCustomer;
-    /**
-     * @var int
-     */
-    public $conversions;
-    /**
-     * @var int
-     */
-    public $leadsGenerated;
-    /**
-     * @var int
-     */
-    public $uniqueVisitors;
-    /**
-     * @var RecordRef
-     */
-    public $vertical;
-    /**
-     * @var RecordRef
-     */
-    public $audience;
-    /**
-     * @var RecordRef
-     */
-    public $offer;
-    /**
-     * @var RecordRef
-     */
-    public $promotionCode;
-    /**
-     * @var RecordRefList
-     */
-    public $itemList;
-    /**
-     * @var RecordRef
-     */
-    public $family;
-    /**
-     * @var RecordRef
-     */
-    public $searchEngine;
-    /**
-     * @var string
-     */
-    public $keyword;
-    /**
-     * @var CampaignEmailList
-     */
-    public $campaignEmailList;
-    /**
-     * @var CampaignDirectMailList
-     */
-    public $campaignDirectMailList;
-    /**
-     * @var CampaignEventList
-     */
-    public $campaignEventList;
-    /**
-     * @var CampaignEventResponseList
-     */
-    public $eventResponseList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Campaign extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $campaignId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $owner;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $url;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $baseCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $expectedRevenue;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $local;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalRevenue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $roi;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $profit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $costPerCustomer;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $convCostPerCustomer;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $conversions;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $leadsGenerated;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $uniqueVisitors;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vertical;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $audience;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $offer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $promotionCode;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $family;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $searchEngine;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $keyword;
+	/**
+	 * @access public
+	 * @var CampaignEmailList
+	 */
+	public $campaignEmailList;
+	/**
+	 * @access public
+	 * @var CampaignDirectMailList
+	 */
+	public $campaignDirectMailList;
+	/**
+	 * @access public
+	 * @var CampaignEventList
+	 */
+	public $campaignEventList;
+	/**
+	 * @access public
+	 * @var CampaignEventResponseList
+	 */
+	public $eventResponseList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        'customForm' => 'RecordRef',
-        'campaignId' => 'string',
-        'title' => 'string',
-        'category' => 'RecordRef',
-        'owner' => 'RecordRef',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'url' => 'string',
-        'baseCost' => 'float',
-        'cost' => 'float',
-        'expectedRevenue' => 'float',
-        'message' => 'string',
-        'isInactive' => 'boolean',
-        'local' => 'boolean',
-        'totalRevenue' => 'float',
-        'roi' => 'float',
-        'profit' => 'float',
-        'costPerCustomer' => 'float',
-        'convCostPerCustomer' => 'float',
-        'conversions' => 'integer',
-        'leadsGenerated' => 'integer',
-        'uniqueVisitors' => 'integer',
-        'vertical' => 'RecordRef',
-        'audience' => 'RecordRef',
-        'offer' => 'RecordRef',
-        'promotionCode' => 'RecordRef',
-        'itemList' => 'RecordRefList',
-        'family' => 'RecordRef',
-        'searchEngine' => 'RecordRef',
-        'keyword' => 'string',
-        'campaignEmailList' => 'CampaignEmailList',
-        'campaignDirectMailList' => 'CampaignDirectMailList',
-        'campaignEventList' => 'CampaignEventList',
-        'eventResponseList' => 'CampaignEventResponseList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    );
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"campaignId" => "string",
+		"title" => "string",
+		"category" => "RecordRef",
+		"owner" => "RecordRef",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"url" => "string",
+		"baseCost" => "float",
+		"cost" => "float",
+		"expectedRevenue" => "float",
+		"message" => "string",
+		"isInactive" => "boolean",
+		"local" => "boolean",
+		"totalRevenue" => "float",
+		"roi" => "float",
+		"profit" => "float",
+		"costPerCustomer" => "float",
+		"convCostPerCustomer" => "float",
+		"conversions" => "integer",
+		"leadsGenerated" => "integer",
+		"uniqueVisitors" => "integer",
+		"vertical" => "RecordRef",
+		"audience" => "RecordRef",
+		"offer" => "RecordRef",
+		"promotionCode" => "RecordRef",
+		"itemList" => "RecordRefList",
+		"family" => "RecordRef",
+		"searchEngine" => "RecordRef",
+		"keyword" => "string",
+		"campaignEmailList" => "CampaignEmailList",
+		"campaignDirectMailList" => "CampaignDirectMailList",
+		"campaignEventList" => "CampaignEventList",
+		"eventResponseList" => "CampaignEventResponseList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

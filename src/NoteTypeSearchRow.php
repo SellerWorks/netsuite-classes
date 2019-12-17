@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NoteTypeSearchRow.
+ * NoteTypeSearchRow
  */
-class NoteTypeSearchRow extends SearchRow
-{
-    /**
-     * @var NoteTypeSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
+class NoteTypeSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var NoteTypeSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'NoteTypeSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "NoteTypeSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+	);
 }

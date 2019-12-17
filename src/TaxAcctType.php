@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxAcctType.
+ * TaxAcctType
  */
-class TaxAcctType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _sale = '_sale';
-    /**
-     * @var string
-     */
-    const _purchase = '_purchase';
+class TaxAcctType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _sale = "_sale";
+	/**
+	 * @var string
+	 */
+	const _purchase = "_purchase";
 }

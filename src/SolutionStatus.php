@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionStatus.
+ * SolutionStatus
  */
-class SolutionStatus
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _approved = '_approved';
-    /**
-     * @var string
-     */
-    const _unapproved = '_unapproved';
+class SolutionStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _approved = "_approved";
+	/**
+	 * @var string
+	 */
+	const _unapproved = "_unapproved";
 }

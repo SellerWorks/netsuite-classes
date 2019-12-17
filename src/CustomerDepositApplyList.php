@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerDepositApplyList.
+ * CustomerDepositApplyList
  */
-class CustomerDepositApplyList
-{
-    /**
-     * @var CustomerDepositApply[]
-     */
-    public $customerDepositApply;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomerDepositApplyList {
+	/**
+	 * @access public
+	 * @var CustomerDepositApply[]
+	 */
+	public $customerDepositApply;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'customerDepositApply' => 'CustomerDepositApply[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"customerDepositApply" => "CustomerDepositApply[]",
+		"replaceAll" => "boolean",
+	);
 }

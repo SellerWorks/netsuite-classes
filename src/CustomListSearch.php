@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListSearch.
+ * CustomListSearch
  */
-class CustomListSearch extends SearchRecord
-{
-    /**
-     * @var CustomListSearchBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
+class CustomListSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CustomListSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        'basic' => 'CustomListSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-    );
+	static $paramtypesmap = array(
+		"basic" => "CustomListSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+	);
 }

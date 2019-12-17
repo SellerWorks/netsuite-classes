@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityGroupType.
+ * EntityGroupType
  */
-class EntityGroupType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _contact = '_contact';
-    /**
-     * @var string
-     */
-    const _customer = '_customer';
-    /**
-     * @var string
-     */
-    const _employee = '_employee';
-    /**
-     * @var string
-     */
-    const _partner = '_partner';
-    /**
-     * @var string
-     */
-    const _vendor = '_vendor';
+class EntityGroupType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _contact = "_contact";
+	/**
+	 * @var string
+	 */
+	const _customer = "_customer";
+	/**
+	 * @var string
+	 */
+	const _employee = "_employee";
+	/**
+	 * @var string
+	 */
+	const _partner = "_partner";
+	/**
+	 * @var string
+	 */
+	const _vendor = "_vendor";
 }

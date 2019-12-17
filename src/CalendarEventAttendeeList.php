@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAttendeeList.
+ * CalendarEventAttendeeList
  */
-class CalendarEventAttendeeList
-{
-    /**
-     * @var CalendarEventAttendee[]
-     */
-    public $attendee;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CalendarEventAttendeeList {
+	/**
+	 * @access public
+	 * @var CalendarEventAttendee[]
+	 */
+	public $attendee;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        'attendee' => 'CalendarEventAttendee[]',
-        'replaceAll' => 'boolean',
-    );
+	static $paramtypesmap = array(
+		"attendee" => "CalendarEventAttendee[]",
+		"replaceAll" => "boolean",
+	);
 }
