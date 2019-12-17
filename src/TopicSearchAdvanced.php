@@ -32,10 +32,10 @@ class TopicSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'TopicSearch',
         'columns' => 'TopicSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

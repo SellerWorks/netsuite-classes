@@ -28,9 +28,9 @@ class FolderSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'FolderSearchBasic',
         'fileJoin' => 'FileSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

@@ -56,7 +56,7 @@ class JobSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'JobSearchBasic',
         'billingAccountJoin' => 'BillingAccountSearchBasic',
         'billingScheduleJoin' => 'BillingScheduleSearchBasic',
@@ -67,5 +67,5 @@ class JobSearch extends SearchRecord
         'taskJoin' => 'TaskSearchBasic',
         'timeJoin' => 'TimeBillSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

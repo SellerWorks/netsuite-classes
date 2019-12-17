@@ -20,7 +20,7 @@ class BaseRef
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
-    );
+    ];
 }

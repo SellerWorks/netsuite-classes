@@ -24,8 +24,8 @@ class ItemFulfillmentPackageFedExList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'packageFedEx' => 'ItemFulfillmentPackageFedEx[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class ManufacturingCostTemplateSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ManufacturingCostTemplateSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

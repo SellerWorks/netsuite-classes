@@ -20,7 +20,7 @@ class CategoryList
      */
     public $category;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'category' => 'RecordRef[]',
-    );
+    ];
 }

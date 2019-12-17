@@ -32,10 +32,10 @@ class PriceLevelSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'PriceLevelSearch',
         'columns' => 'PriceLevelSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

@@ -176,7 +176,7 @@ class EstimateItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'job' => 'RecordRef',
         'item' => 'RecordRef',
         'line' => 'integer',
@@ -217,5 +217,5 @@ class EstimateItem
         'expectedShipDate' => 'dateTime',
         'chargeType' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

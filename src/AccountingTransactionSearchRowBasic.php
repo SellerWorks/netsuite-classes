@@ -140,7 +140,7 @@ class AccountingTransactionSearchRowBasic extends SearchRowBasic
      */
     public $vsoeAllocation;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchColumnSelectField[]',
         'accountingBook' => 'SearchColumnSelectField[]',
         'accountType' => 'SearchColumnStringField[]',
@@ -172,5 +172,5 @@ class AccountingTransactionSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'tranIsVsoeBundle' => 'SearchColumnBooleanField[]',
         'vsoeAllocation' => 'SearchColumnDoubleField[]',
-    );
+    ];
 }

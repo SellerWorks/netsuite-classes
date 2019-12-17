@@ -44,7 +44,7 @@ class GetPostingTransactionSummaryResult
      */
     public $postingTransactionSummaryList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'totalRecords' => 'integer',
         'pageSize' => 'integer',
@@ -52,5 +52,5 @@ class GetPostingTransactionSummaryResult
         'pageIndex' => 'integer',
         'operationId' => 'string',
         'postingTransactionSummaryList' => 'PostingTransactionSummaryList',
-    );
+    ];
 }

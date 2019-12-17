@@ -20,7 +20,7 @@ class SearchColumnStringField extends SearchColumnField
      */
     public $searchValue;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class CustomRecordTypeOnlineFormsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'onlineForms' => 'CustomRecordTypeOnlineForms[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

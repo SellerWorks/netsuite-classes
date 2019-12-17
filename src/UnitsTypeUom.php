@@ -44,7 +44,7 @@ class UnitsTypeUom
      */
     public $baseUnit;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'unitName' => 'string',
         'pluralName' => 'string',
@@ -52,5 +52,5 @@ class UnitsTypeUom
         'pluralAbbreviation' => 'string',
         'conversionRate' => 'float',
         'baseUnit' => 'boolean',
-    );
+    ];
 }

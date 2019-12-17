@@ -84,7 +84,7 @@ class BudgetSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchMultiSelectField',
         'accountingBook' => 'SearchMultiSelectField',
         'amount' => 'SearchDoubleField',
@@ -102,5 +102,5 @@ class BudgetSearchBasic extends SearchRecordBasic
         'year' => 'SearchMultiSelectField',
         'year2' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

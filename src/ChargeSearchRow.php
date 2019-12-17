@@ -72,7 +72,7 @@ class ChargeSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ChargeSearchRowBasic',
         'billingAccountJoin' => 'BillingAccountSearchRowBasic',
         'billingScheduleJoin' => 'BillingScheduleSearchRowBasic',
@@ -87,5 +87,5 @@ class ChargeSearchRow extends SearchRow
         'usageJoin' => 'UsageSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

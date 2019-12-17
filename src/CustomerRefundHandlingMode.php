@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerRefundHandlingMode.
+ * CustomerRefundHandlingMode
  */
 class CustomerRefundHandlingMode
 {
@@ -20,13 +20,13 @@ class CustomerRefundHandlingMode
     /**
      * @var string
      */
-    const _process = '_process';
+    const _process = "_process";
     /**
      * @var string
      */
-    const _recordExternalEvent = '_recordExternalEvent';
+    const _recordExternalEvent = "_recordExternalEvent";
     /**
      * @var string
      */
-    const _saveOnly = '_saveOnly';
+    const _saveOnly = "_saveOnly";
 }

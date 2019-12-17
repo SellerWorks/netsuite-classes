@@ -36,11 +36,11 @@ class ItemSupplyPlanSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ItemSupplyPlanSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'locationJoin' => 'LocationSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

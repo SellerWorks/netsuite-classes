@@ -28,9 +28,9 @@ class FolderSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'FolderSearchRowBasic',
         'fileJoin' => 'FileSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    );
+    ];
 }

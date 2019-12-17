@@ -32,10 +32,10 @@ class CustomerItemPricing
      */
     public $price;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'level' => 'RecordRef',
         'currency' => 'RecordRef',
         'price' => 'float',
-    );
+    ];
 }

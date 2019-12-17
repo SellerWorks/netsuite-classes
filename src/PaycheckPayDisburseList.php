@@ -24,8 +24,8 @@ class PaycheckPayDisburseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'paycheckPayDisburse' => 'PaycheckPayDisburse[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

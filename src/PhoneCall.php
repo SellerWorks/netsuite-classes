@@ -128,7 +128,7 @@ class PhoneCall extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'message' => 'string',
         'company' => 'RecordRef',
         'contact' => 'RecordRef',
@@ -157,5 +157,5 @@ class PhoneCall extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class AccountingPeriodFiscalCalendars
      */
     public $parent;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'fiscalCalendar' => 'RecordRef',
         'parent' => 'RecordRef',
-    );
+    ];
 }

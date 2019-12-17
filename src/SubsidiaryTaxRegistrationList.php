@@ -24,8 +24,8 @@ class SubsidiaryTaxRegistrationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'subsidiaryTaxRegistration' => 'SubsidiaryTaxRegistration[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

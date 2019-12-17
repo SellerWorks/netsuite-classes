@@ -24,8 +24,8 @@ class VendorBillItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'VendorBillItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class OpportunitySearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'OpportunitySearch',
         'columns' => 'OpportunitySearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

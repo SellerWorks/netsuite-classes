@@ -76,7 +76,7 @@ class GeneralToken extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'entity' => 'RecordRef',
         'mask' => 'string',
         'supportedOperationsList' => 'GeneralTokenSupportedOperationsListList',
@@ -92,5 +92,5 @@ class GeneralToken extends Record
         'tokenNamespace' => 'string',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class PromotionCodeCurrencyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'PromotionCodeCurrency[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

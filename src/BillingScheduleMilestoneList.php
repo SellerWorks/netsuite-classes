@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleMilestoneList.
+ * BillingScheduleMilestoneList
  */
 class BillingScheduleMilestoneList
 {
     /**
+     * @access public
      * @var BillingScheduleMilestone[]
      */
     public $billingScheduleMilestone;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'billingScheduleMilestone' => 'BillingScheduleMilestone[]',
-        'replaceAll' => 'boolean',
+        "billingScheduleMilestone" => "BillingScheduleMilestone[]",
+        "replaceAll" => "boolean",
     );
 }

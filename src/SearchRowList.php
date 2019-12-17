@@ -20,7 +20,7 @@ class SearchRowList
      */
     public $searchRow;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchRow' => 'SearchRow[]',
-    );
+    ];
 }

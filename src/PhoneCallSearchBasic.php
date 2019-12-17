@@ -92,7 +92,7 @@ class PhoneCallSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'assigned' => 'SearchMultiSelectField',
         'company' => 'SearchMultiSelectField',
         'completedDate' => 'SearchDateField',
@@ -112,5 +112,5 @@ class PhoneCallSearchBasic extends SearchRecordBasic
         'status' => 'SearchEnumMultiSelectField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

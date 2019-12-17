@@ -40,12 +40,12 @@ class TransactionColumnCustomFieldFilter
      */
     public $fldFilterNotNull;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'fldFilter' => 'RecordRef',
         'fldFilterChecked' => 'boolean',
         'fldFilterCompareType' => 'CustomizationFilterCompareType',
         'fldFilterVal' => 'string',
         'fldFilterSelList' => 'FldFilterSelList',
         'fldFilterNotNull' => 'boolean',
-    );
+    ];
 }

@@ -28,9 +28,9 @@ class BillingAccountSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'BillingAccountSearchBasic',
         'jobJoin' => 'JobSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

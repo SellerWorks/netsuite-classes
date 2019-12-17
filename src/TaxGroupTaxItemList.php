@@ -24,8 +24,8 @@ class TaxGroupTaxItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'taxItem' => 'TaxGroupTaxItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

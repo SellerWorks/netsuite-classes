@@ -816,6 +816,10 @@ class TransactionSearchRowBasic extends SearchRowBasic
      */
     public $nextBillDate;
     /**
+     * @var SearchColumnSelectField[]
+     */
+    public $nexus;
+    /**
      * @var SearchColumnBooleanField[]
      */
     public $noAutoAssignLocation;
@@ -851,6 +855,10 @@ class TransactionSearchRowBasic extends SearchRowBasic
      * @var SearchColumnSelectField[]
      */
     public $overheadParentItem;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $overrideInstallments;
     /**
      * @var SearchColumnLongField[]
      */
@@ -1252,6 +1260,10 @@ class TransactionSearchRowBasic extends SearchRowBasic
      */
     public $subsidiary;
     /**
+     * @var SearchColumnStringField[]
+     */
+    public $subsidiaryTaxRegNum;
+    /**
      * @var SearchColumnDoubleField[]
      */
     public $taxAmount;
@@ -1428,7 +1440,7 @@ class TransactionSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'abbrev' => 'SearchColumnStringField[]',
         'account' => 'SearchColumnSelectField[]',
         'accountType' => 'SearchColumnEnumSelectField[]',
@@ -1629,6 +1641,7 @@ class TransactionSearchRowBasic extends SearchRowBasic
         'netAmountNoTax' => 'SearchColumnDoubleField[]',
         'nextApprover' => 'SearchColumnSelectField[]',
         'nextBillDate' => 'SearchColumnDateField[]',
+        'nexus' => 'SearchColumnSelectField[]',
         'noAutoAssignLocation' => 'SearchColumnBooleanField[]',
         'nonReimbursable' => 'SearchColumnBooleanField[]',
         'oneTimeTotal' => 'SearchColumnDoubleField[]',
@@ -1638,6 +1651,7 @@ class TransactionSearchRowBasic extends SearchRowBasic
         'originator' => 'SearchColumnEnumSelectField[]',
         'otherRefNum' => 'SearchColumnTextNumberField[]',
         'overheadParentItem' => 'SearchColumnSelectField[]',
+        'overrideInstallments' => 'SearchColumnBooleanField[]',
         'packageCount' => 'SearchColumnLongField[]',
         'paidAmount' => 'SearchColumnDoubleField[]',
         'paidTransaction' => 'SearchColumnSelectField[]',
@@ -1738,6 +1752,7 @@ class TransactionSearchRowBasic extends SearchRowBasic
         'subscription' => 'SearchColumnSelectField[]',
         'subscriptionLine' => 'SearchColumnSelectField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
+        'subsidiaryTaxRegNum' => 'SearchColumnStringField[]',
         'taxAmount' => 'SearchColumnDoubleField[]',
         'taxCode' => 'SearchColumnSelectField[]',
         'taxLine' => 'SearchColumnBooleanField[]',
@@ -1782,5 +1797,5 @@ class TransactionSearchRowBasic extends SearchRowBasic
         'vsoePrice' => 'SearchColumnDoubleField[]',
         'webSite' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

@@ -20,7 +20,7 @@ class DimensionList
      */
     public $dimension;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'dimension' => 'DimensionRef[]',
-    );
+    ];
 }

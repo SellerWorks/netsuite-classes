@@ -20,7 +20,7 @@ class RecurrenceDowMaskList
      */
     public $recurrenceDowMask;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'recurrenceDowMask' => 'RecurrenceDow',
-    );
+    ];
 }

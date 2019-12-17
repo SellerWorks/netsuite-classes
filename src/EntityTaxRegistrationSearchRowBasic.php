@@ -32,10 +32,10 @@ class EntityTaxRegistrationSearchRowBasic extends SearchRowBasic
      */
     public $taxRegistrationNumber;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchColumnSelectField[]',
         'id' => 'SearchColumnLongField[]',
         'nexusCountry' => 'SearchColumnEnumSelectField[]',
         'taxRegistrationNumber' => 'SearchColumnStringField[]',
-    );
+    ];
 }

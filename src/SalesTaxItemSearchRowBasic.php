@@ -44,7 +44,7 @@ class SalesTaxItemSearchRowBasic extends SearchRowBasic
      */
     public $taxType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
@@ -52,5 +52,5 @@ class SalesTaxItemSearchRowBasic extends SearchRowBasic
         'itemId' => 'SearchColumnStringField[]',
         'name' => 'SearchColumnStringField[]',
         'taxType' => 'SearchColumnSelectField[]',
-    );
+    ];
 }

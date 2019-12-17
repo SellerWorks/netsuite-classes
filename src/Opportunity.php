@@ -320,7 +320,7 @@ class Opportunity extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'currency' => 'RecordRef',
         'estimatedBudget' => 'float',
@@ -397,5 +397,5 @@ class Opportunity extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

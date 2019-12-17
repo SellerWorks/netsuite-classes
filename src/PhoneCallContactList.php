@@ -24,8 +24,8 @@ class PhoneCallContactList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'contact' => 'PhoneCallContact[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

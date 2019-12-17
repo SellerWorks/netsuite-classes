@@ -11,16 +11,17 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SsoLoginResponse.
+ * SsoLoginResponse
  */
 class SsoLoginResponse
 {
     /**
+     * @access public
      * @var SessionResponse
      */
     public $sessionResponse;
 
     public static $paramtypesmap = array(
-        'sessionResponse' => 'SessionResponse',
+        "sessionResponse" => "SessionResponse",
     );
 }

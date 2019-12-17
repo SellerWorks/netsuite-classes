@@ -20,7 +20,7 @@ class GetCurrencyRateRequest
      */
     public $currencyRateFilter;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currencyRateFilter' => 'CurrencyRateFilter',
-    );
+    ];
 }

@@ -44,7 +44,7 @@ class PriceLevel extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'discountpct' => 'float',
         'updateExistingPrices' => 'boolean',
@@ -52,5 +52,5 @@ class PriceLevel extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

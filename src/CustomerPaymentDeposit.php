@@ -52,7 +52,7 @@ class CustomerPaymentDeposit
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -62,5 +62,5 @@ class CustomerPaymentDeposit
         'remaining' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    );
+    ];
 }

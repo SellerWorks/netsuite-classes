@@ -32,10 +32,10 @@ class PayrollItemSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'PayrollItemSearch',
         'columns' => 'PayrollItemSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

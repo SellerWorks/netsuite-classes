@@ -36,11 +36,11 @@ class InventoryItemBinNumber
      */
     public $preferredBin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'binNumber' => 'RecordRef',
         'onHand' => 'string',
         'onHandAvail' => 'string',
         'location' => 'string',
         'preferredBin' => 'boolean',
-    );
+    ];
 }

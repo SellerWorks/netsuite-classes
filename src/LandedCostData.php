@@ -24,8 +24,8 @@ class LandedCostData
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'costCategory' => 'RecordRef',
         'amount' => 'float',
-    );
+    ];
 }

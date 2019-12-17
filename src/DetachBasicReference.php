@@ -20,7 +20,7 @@ class DetachBasicReference extends DetachReference
      */
     public $detachedRecord;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'detachedRecord' => 'BaseRef',
-    );
+    ];
 }

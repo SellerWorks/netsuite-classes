@@ -60,7 +60,7 @@ class PaycheckSearchBasic extends SearchRecordBasic
      */
     public $payrollItemType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchMultiSelectField',
         'batchNumber' => 'SearchLongField',
         'checkDate' => 'SearchDateField',
@@ -72,5 +72,5 @@ class PaycheckSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'payrollItem' => 'SearchMultiSelectField',
         'payrollItemType' => 'SearchMultiSelectField',
-    );
+    ];
 }

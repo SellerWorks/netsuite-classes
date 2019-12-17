@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class TransactionType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -53,6 +53,14 @@ class TransactionType
      * @var string
      */
     const _custom = '_custom';
+    /**
+     * @var string
+     */
+    const _customPurchase = '_customPurchase';
+    /**
+     * @var string
+     */
+    const _customSale = '_customSale';
     /**
      * @var string
      */

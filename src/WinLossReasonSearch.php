@@ -24,8 +24,8 @@ class WinLossReasonSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'WinLossReasonSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

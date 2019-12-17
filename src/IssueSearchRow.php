@@ -48,7 +48,7 @@ class IssueSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'IssueSearchRowBasic',
         'caseJoin' => 'SupportCaseSearchRowBasic',
         'employeeJoin' => 'EmployeeSearchRowBasic',
@@ -57,5 +57,5 @@ class IssueSearchRow extends SearchRow
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

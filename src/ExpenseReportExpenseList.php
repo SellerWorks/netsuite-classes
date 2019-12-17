@@ -24,8 +24,8 @@ class ExpenseReportExpenseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expense' => 'ExpenseReportExpense[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

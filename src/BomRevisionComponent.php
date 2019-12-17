@@ -40,7 +40,7 @@ class BomRevisionComponent
      */
     public $quantity;
     /**
-     * @var string
+     * @var RecordRef
      */
     public $units;
     /**
@@ -52,15 +52,15 @@ class BomRevisionComponent
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'description' => 'string',
         'componentYield' => 'float',
         'bomQuantity' => 'float',
         'itemSource' => 'ItemSource',
         'quantity' => 'float',
-        'units' => 'string',
+        'units' => 'RecordRef',
         'internalId' => 'string',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

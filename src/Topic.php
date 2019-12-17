@@ -48,7 +48,7 @@ class Topic extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'title' => 'string',
         'parentTopic' => 'RecordRef',
         'description' => 'string',
@@ -57,5 +57,5 @@ class Topic extends Record
         'solutionList' => 'TopicSolutionList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

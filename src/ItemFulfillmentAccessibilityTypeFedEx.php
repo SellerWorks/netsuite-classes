@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentAccessibilityTypeFedEx.
+ * ItemFulfillmentAccessibilityTypeFedEx
  */
 class ItemFulfillmentAccessibilityTypeFedEx
 {
@@ -20,9 +20,9 @@ class ItemFulfillmentAccessibilityTypeFedEx
     /**
      * @var string
      */
-    const _accessible = '_accessible';
+    const _accessible = "_accessible";
     /**
      * @var string
      */
-    const _inaccessible = '_inaccessible';
+    const _inaccessible = "_inaccessible";
 }

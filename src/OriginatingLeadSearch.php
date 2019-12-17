@@ -24,8 +24,8 @@ class OriginatingLeadSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'OriginatingLeadSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

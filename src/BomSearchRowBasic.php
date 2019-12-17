@@ -84,7 +84,7 @@ class BomSearchRowBasic extends SearchRowBasic
      */
     public $usedOnAssembly;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'availableForAllAssemblies' => 'SearchColumnBooleanField[]',
         'availableForAllLocations' => 'SearchColumnBooleanField[]',
         'createdDate' => 'SearchColumnDateField[]',
@@ -102,5 +102,5 @@ class BomSearchRowBasic extends SearchRowBasic
         'subsidiaryNoHierarchy' => 'SearchColumnSelectField[]',
         'useComponentYield' => 'SearchColumnBooleanField[]',
         'usedOnAssembly' => 'SearchColumnBooleanField[]',
-    );
+    ];
 }

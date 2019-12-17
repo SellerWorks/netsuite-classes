@@ -24,8 +24,8 @@ class ProjectTaskTimeItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'timeItem' => 'TimeItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

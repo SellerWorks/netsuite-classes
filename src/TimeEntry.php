@@ -108,7 +108,7 @@ class TimeEntry extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'hours' => 'Duration',
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
@@ -132,5 +132,5 @@ class TimeEntry extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

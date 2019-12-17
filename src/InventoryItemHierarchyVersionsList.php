@@ -24,8 +24,8 @@ class InventoryItemHierarchyVersionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'inventoryItemHierarchyVersions' => 'InventoryItemHierarchyVersions[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

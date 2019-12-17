@@ -24,8 +24,8 @@ class VendorBillExpenseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expense' => 'VendorBillExpense[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

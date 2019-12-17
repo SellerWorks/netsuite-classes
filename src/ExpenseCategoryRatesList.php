@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ExpenseCategoryRatesList.
+ * ExpenseCategoryRatesList
  */
 class ExpenseCategoryRatesList
 {
     /**
+     * @access public
      * @var ExpenseCategoryRates[]
      */
     public $expenseCategoryRates;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'expenseCategoryRates' => 'ExpenseCategoryRates[]',
-        'replaceAll' => 'boolean',
+        "expenseCategoryRates" => "ExpenseCategoryRates[]",
+        "replaceAll" => "boolean",
     );
 }

@@ -20,7 +20,7 @@ class ItemOptionsList
      */
     public $itemOptions;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'itemOptions' => 'RecordRef[]',
-    );
+    ];
 }

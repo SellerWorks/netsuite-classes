@@ -24,8 +24,8 @@ class ReturnAuthorizationSalesTeamList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'salesTeam' => 'ReturnAuthorizationSalesTeam[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

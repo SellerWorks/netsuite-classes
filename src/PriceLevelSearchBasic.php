@@ -48,7 +48,7 @@ class PriceLevelSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'discountPct' => 'SearchDoubleField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -57,5 +57,5 @@ class PriceLevelSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'isOnline' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    );
+    ];
 }

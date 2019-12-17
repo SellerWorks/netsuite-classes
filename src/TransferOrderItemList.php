@@ -24,8 +24,8 @@ class TransferOrderItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'TransferOrderItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

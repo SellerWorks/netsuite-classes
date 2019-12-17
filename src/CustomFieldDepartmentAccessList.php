@@ -24,8 +24,8 @@ class CustomFieldDepartmentAccessList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'deptAccess' => 'CustomFieldDepartmentAccess[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

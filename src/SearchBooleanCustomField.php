@@ -20,7 +20,7 @@ class SearchBooleanCustomField extends SearchCustomField
      */
     public $searchValue;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'boolean',
-    );
+    ];
 }

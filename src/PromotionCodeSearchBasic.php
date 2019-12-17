@@ -88,7 +88,7 @@ class PromotionCodeSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'applyDiscountTo' => 'SearchEnumMultiSelectField',
         'code' => 'SearchStringField',
         'description' => 'SearchStringField',
@@ -107,5 +107,5 @@ class PromotionCodeSearchBasic extends SearchRecordBasic
         'partner' => 'SearchMultiSelectField',
         'startDate' => 'SearchDateField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

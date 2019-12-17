@@ -48,7 +48,7 @@ class IssueSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'IssueSearchBasic',
         'caseJoin' => 'SupportCaseSearchBasic',
         'employeeJoin' => 'EmployeeSearchBasic',
@@ -57,5 +57,5 @@ class IssueSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

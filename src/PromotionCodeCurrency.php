@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeCurrency.
+ * PromotionCodeCurrency
  */
 class PromotionCodeCurrency
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $currency;
     /**
+     * @access public
      * @var float
      */
     public $minimumOrderAmount;
 
     public static $paramtypesmap = array(
-        'currency' => 'RecordRef',
-        'minimumOrderAmount' => 'float',
+        "currency" => "RecordRef",
+        "minimumOrderAmount" => "float",
     );
 }

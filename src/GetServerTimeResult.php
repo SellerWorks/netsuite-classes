@@ -24,8 +24,8 @@ class GetServerTimeResult
      */
     public $serverTime;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'serverTime' => 'dateTime',
-    );
+    ];
 }

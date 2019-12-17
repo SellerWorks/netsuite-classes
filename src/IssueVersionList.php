@@ -24,8 +24,8 @@ class IssueVersionList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'issueVersion' => 'IssueVersion[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

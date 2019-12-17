@@ -28,9 +28,9 @@ class PromotionCodeSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'PromotionCodeSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

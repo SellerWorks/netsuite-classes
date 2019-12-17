@@ -80,7 +80,7 @@ class AddressSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
         'address2' => 'SearchColumnStringField[]',
@@ -97,5 +97,5 @@ class AddressSearchRowBasic extends SearchRowBasic
         'state' => 'SearchColumnStringField[]',
         'zip' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

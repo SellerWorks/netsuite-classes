@@ -48,7 +48,7 @@ class ItemAccountingBookDetail
      */
     public $sameAsPrimaryAmortization;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingBook' => 'RecordRef',
         'createRevenuePlansOn' => 'RecordRef',
         'revenueRecognitionRule' => 'RecordRef',
@@ -57,5 +57,5 @@ class ItemAccountingBookDetail
         'sameAsPrimaryRevRec' => 'boolean',
         'amortizationTemplate' => 'RecordRef',
         'sameAsPrimaryAmortization' => 'boolean',
-    );
+    ];
 }

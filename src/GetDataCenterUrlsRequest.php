@@ -20,7 +20,7 @@ class GetDataCenterUrlsRequest
      */
     public $account;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'string',
-    );
+    ];
 }

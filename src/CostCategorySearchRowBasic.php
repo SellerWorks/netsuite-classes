@@ -40,12 +40,12 @@ class CostCategorySearchRowBasic extends SearchRowBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchColumnSelectField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'itemCostType' => 'SearchColumnEnumSelectField[]',
         'name' => 'SearchColumnStringField[]',
-    );
+    ];
 }

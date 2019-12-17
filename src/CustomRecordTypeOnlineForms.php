@@ -28,9 +28,9 @@ class CustomRecordTypeOnlineForms
      */
     public $templateName;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'onlineFormName' => 'string',
         'isOnline' => 'string',
         'templateName' => 'string',
-    );
+    ];
 }

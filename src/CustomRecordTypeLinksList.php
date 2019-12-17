@@ -24,8 +24,8 @@ class CustomRecordTypeLinksList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'links' => 'CustomRecordTypeLinks[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

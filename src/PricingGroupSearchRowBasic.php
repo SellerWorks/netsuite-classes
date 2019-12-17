@@ -32,10 +32,10 @@ class PricingGroupSearchRowBasic extends SearchRowBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
-    );
+    ];
 }

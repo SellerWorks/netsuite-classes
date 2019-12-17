@@ -40,12 +40,12 @@ class CustomerMessageSearchRowBasic extends SearchRowBasic
      */
     public $preferred;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
         'preferred' => 'SearchColumnStringField[]',
-    );
+    ];
 }

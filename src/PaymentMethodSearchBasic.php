@@ -52,7 +52,7 @@ class PaymentMethodSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchMultiSelectField',
         'creditCard' => 'SearchBooleanField',
         'externalId' => 'SearchMultiSelectField',
@@ -62,5 +62,5 @@ class PaymentMethodSearchBasic extends SearchRecordBasic
         'isDebitCard' => 'SearchBooleanField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    );
+    ];
 }

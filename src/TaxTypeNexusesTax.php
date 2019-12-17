@@ -32,10 +32,10 @@ class TaxTypeNexusesTax
      */
     public $purchTaxAcct;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'nexus' => 'RecordRef',
         'description' => 'string',
         'saleTaxAcct' => 'RecordRef',
         'purchTaxAcct' => 'RecordRef',
-    );
+    ];
 }

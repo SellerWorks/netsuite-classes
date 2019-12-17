@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashSaleExpCostList.
+ * CashSaleExpCostList
  */
 class CashSaleExpCostList
 {
     /**
+     * @access public
      * @var CashSaleExpCost[]
      */
     public $expCost;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'expCost' => 'CashSaleExpCost[]',
-        'replaceAll' => 'boolean',
+        "expCost" => "CashSaleExpCost[]",
+        "replaceAll" => "boolean",
     );
 }

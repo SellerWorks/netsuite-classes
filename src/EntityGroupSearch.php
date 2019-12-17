@@ -32,10 +32,10 @@ class EntityGroupSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'EntityGroupSearchBasic',
         'groupMemberJoin' => 'EntitySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

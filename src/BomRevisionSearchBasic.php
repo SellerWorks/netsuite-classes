@@ -60,7 +60,7 @@ class BomRevisionSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'billOfMaterials' => 'SearchMultiSelectField',
         'createdDate' => 'SearchDateField',
         'effectiveEndDate' => 'SearchDateField',
@@ -72,5 +72,5 @@ class BomRevisionSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'memo' => 'SearchStringField',
         'name' => 'SearchStringField',
-    );
+    ];
 }

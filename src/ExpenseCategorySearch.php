@@ -28,9 +28,9 @@ class ExpenseCategorySearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ExpenseCategorySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

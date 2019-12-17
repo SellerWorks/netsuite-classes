@@ -32,10 +32,10 @@ class ResourceAllocationSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'ResourceAllocationSearch',
         'columns' => 'ResourceAllocationSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

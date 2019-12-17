@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationFieldType.
+ * CustomizationFieldType
  */
 class CustomizationFieldType
 {
@@ -20,89 +20,89 @@ class CustomizationFieldType
     /**
      * @var string
      */
-    const _checkBox = '_checkBox';
+    const _checkBox = "_checkBox";
     /**
      * @var string
      */
-    const _currency = '_currency';
+    const _currency = "_currency";
     /**
      * @var string
      */
-    const _date = '_date';
+    const _date = "_date";
     /**
      * @var string
      */
-    const _datetime = '_datetime';
+    const _datetime = "_datetime";
     /**
      * @var string
      */
-    const _decimalNumber = '_decimalNumber';
+    const _decimalNumber = "_decimalNumber";
     /**
      * @var string
      */
-    const _document = '_document';
+    const _document = "_document";
     /**
      * @var string
      */
-    const _eMailAddress = '_eMailAddress';
+    const _eMailAddress = "_eMailAddress";
     /**
      * @var string
      */
-    const _freeFormText = '_freeFormText';
+    const _freeFormText = "_freeFormText";
     /**
      * @var string
      */
-    const _help = '_help';
+    const _help = "_help";
     /**
      * @var string
      */
-    const _hyperlink = '_hyperlink';
+    const _hyperlink = "_hyperlink";
     /**
      * @var string
      */
-    const _image = '_image';
+    const _image = "_image";
     /**
      * @var string
      */
-    const _inlineHTML = '_inlineHTML';
+    const _inlineHTML = "_inlineHTML";
     /**
      * @var string
      */
-    const _integerNumber = '_integerNumber';
+    const _integerNumber = "_integerNumber";
     /**
      * @var string
      */
-    const _listRecord = '_listRecord';
+    const _listRecord = "_listRecord";
     /**
      * @var string
      */
-    const _longText = '_longText';
+    const _longText = "_longText";
     /**
      * @var string
      */
-    const _multipleSelect = '_multipleSelect';
+    const _multipleSelect = "_multipleSelect";
     /**
      * @var string
      */
-    const _password = '_password';
+    const _password = "_password";
     /**
      * @var string
      */
-    const _percent = '_percent';
+    const _percent = "_percent";
     /**
      * @var string
      */
-    const _phoneNumber = '_phoneNumber';
+    const _phoneNumber = "_phoneNumber";
     /**
      * @var string
      */
-    const _richText = '_richText';
+    const _richText = "_richText";
     /**
      * @var string
      */
-    const _textArea = '_textArea';
+    const _textArea = "_textArea";
     /**
      * @var string
      */
-    const _timeOfDay = '_timeOfDay';
+    const _timeOfDay = "_timeOfDay";
 }

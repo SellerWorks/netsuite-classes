@@ -48,7 +48,7 @@ class SubsidiaryTaxRegistration
      */
     public $validUntil;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'nexusCountry' => 'Country',
         'nexus' => 'RecordRef',
@@ -57,5 +57,5 @@ class SubsidiaryTaxRegistration
         'taxEngine' => 'RecordRef',
         'effectiveFrom' => 'dateTime',
         'validUntil' => 'dateTime',
-    );
+    ];
 }

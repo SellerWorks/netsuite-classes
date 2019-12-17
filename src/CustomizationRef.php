@@ -20,7 +20,7 @@ class CustomizationRef extends RecordRef
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'scriptId' => 'string',
-    );
+    ];
 }

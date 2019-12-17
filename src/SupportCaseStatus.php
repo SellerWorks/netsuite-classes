@@ -52,7 +52,7 @@ class SupportCaseStatus extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'insertBefore' => 'RecordRef',
         'stage' => 'SupportCaseStatusStage',
@@ -62,5 +62,5 @@ class SupportCaseStatus extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

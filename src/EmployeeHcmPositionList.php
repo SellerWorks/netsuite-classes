@@ -24,8 +24,8 @@ class EmployeeHcmPositionList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'employeeHcmPosition' => 'EmployeeHcmPosition[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

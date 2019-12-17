@@ -72,7 +72,7 @@ class GlobalAccountMapping extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'effectiveDate' => 'dateTime',
         'endDate' => 'dateTime',
@@ -87,5 +87,5 @@ class GlobalAccountMapping extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

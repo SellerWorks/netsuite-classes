@@ -48,7 +48,7 @@ class PaycheckJournalEarning
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'payrollItem' => 'RecordRef',
         'hours' => 'float',
@@ -57,5 +57,5 @@ class PaycheckJournalEarning
         'class' => 'RecordRef',
         'location' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

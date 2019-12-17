@@ -28,9 +28,9 @@ class Subscriptions
      */
     public $lastModifiedDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'subscribed' => 'boolean',
         'subscription' => 'RecordRef',
         'lastModifiedDate' => 'dateTime',
-    );
+    ];
 }

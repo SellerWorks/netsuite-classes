@@ -144,6 +144,10 @@ class ItemSearchRowBasic extends SearchRowBasic
      */
     public $componentYield;
     /**
+     * @var SearchColumnSelectField[]
+     */
+    public $consumptionUnit;
+    /**
      * @var SearchColumnBooleanField[]
      */
     public $contingentRevenueHandling;
@@ -359,6 +363,10 @@ class ItemSearchRowBasic extends SearchRowBasic
      * @var SearchColumnBooleanField[]
      */
     public $froogleProductFeed;
+    /**
+     * @var SearchColumnLongField[]
+     */
+    public $futureHorizon;
     /**
      * @var SearchColumnDoubleField[]
      */
@@ -1304,7 +1312,7 @@ class ItemSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accBookRevRecForecastRule' => 'SearchColumnSelectField[]',
         'accountingBook' => 'SearchColumnSelectField[]',
         'accountingBookAmortization' => 'SearchColumnSelectField[]',
@@ -1337,6 +1345,7 @@ class ItemSearchRowBasic extends SearchRowBasic
         'categoryPreferred' => 'SearchColumnStringField[]',
         'class' => 'SearchColumnSelectField[]',
         'componentYield' => 'SearchColumnDoubleField[]',
+        'consumptionUnit' => 'SearchColumnSelectField[]',
         'contingentRevenueHandling' => 'SearchColumnBooleanField[]',
         'copyDescription' => 'SearchColumnBooleanField[]',
         'correlatedItem' => 'SearchColumnSelectField[]',
@@ -1391,6 +1400,7 @@ class ItemSearchRowBasic extends SearchRowBasic
         'forwardConsumptionDays' => 'SearchColumnLongField[]',
         'fraudRisk' => 'SearchColumnEnumSelectField[]',
         'froogleProductFeed' => 'SearchColumnBooleanField[]',
+        'futureHorizon' => 'SearchColumnLongField[]',
         'fxCost' => 'SearchColumnDoubleField[]',
         'gainLossAccount' => 'SearchColumnSelectField[]',
         'generateAccruals' => 'SearchColumnBooleanField[]',
@@ -1627,5 +1637,5 @@ class ItemSearchRowBasic extends SearchRowBasic
         'wipVarianceAcct' => 'SearchColumnSelectField[]',
         'yahooProductFeed' => 'SearchColumnBooleanField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

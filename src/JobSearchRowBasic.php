@@ -448,6 +448,10 @@ class JobSearchRowBasic extends SearchRowBasic
      */
     public $subsidiary;
     /**
+     * @var SearchColumnSelectField[]
+     */
+    public $timeApproval;
+    /**
      * @var SearchColumnDoubleField[]
      */
     public $timeRemaining;
@@ -464,7 +468,7 @@ class JobSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchColumnStringField[]',
         'actualTime' => 'SearchColumnDoubleField[]',
         'address' => 'SearchColumnStringField[]',
@@ -573,9 +577,10 @@ class JobSearchRowBasic extends SearchRowBasic
         'subscriptionDate' => 'SearchColumnDateField[]',
         'subscriptionStatus' => 'SearchColumnBooleanField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
+        'timeApproval' => 'SearchColumnSelectField[]',
         'timeRemaining' => 'SearchColumnDoubleField[]',
         'usePercentCompleteOverride' => 'SearchColumnBooleanField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

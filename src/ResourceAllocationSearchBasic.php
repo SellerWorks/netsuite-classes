@@ -88,7 +88,7 @@ class ResourceAllocationSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'allocationType' => 'SearchMultiSelectField',
         'allocationUnit' => 'SearchEnumMultiSelectField',
         'approvalStatus' => 'SearchEnumMultiSelectField',
@@ -107,5 +107,5 @@ class ResourceAllocationSearchBasic extends SearchRecordBasic
         'resource' => 'SearchMultiSelectField',
         'startDate' => 'SearchDateField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

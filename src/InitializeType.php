@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class InitializeType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -49,6 +49,14 @@ class InitializeType
      * @var string
      */
     const customerRefund = 'customerRefund';
+    /**
+     * @var string
+     */
+    const customPurchase = 'customPurchase';
+    /**
+     * @var string
+     */
+    const customSale = 'customSale';
     /**
      * @var string
      */

@@ -128,6 +128,10 @@ class TimeBillSearchBasic extends SearchRecordBasic
      */
     public $temporaryStateJurisdiction;
     /**
+     * @var SearchBooleanField
+     */
+    public $timeModified;
+    /**
      * @var SearchMultiSelectField
      */
     public $timeSheet;
@@ -144,7 +148,7 @@ class TimeBillSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'approvalStatus' => 'SearchMultiSelectField',
         'approved' => 'SearchBooleanField',
         'billable' => 'SearchBooleanField',
@@ -173,9 +177,10 @@ class TimeBillSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'temporaryLocalJurisdiction' => 'SearchMultiSelectField',
         'temporaryStateJurisdiction' => 'SearchMultiSelectField',
+        'timeModified' => 'SearchBooleanField',
         'timeSheet' => 'SearchMultiSelectField',
         'type' => 'SearchEnumMultiSelectField',
         'utilized' => 'SearchBooleanField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

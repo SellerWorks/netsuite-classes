@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class PermissionCode
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -157,10 +157,6 @@ class PermissionCode
      * @var string
      */
     const _analyticsAdministrator = '_analyticsAdministrator';
-    /**
-     * @var string
-     */
-    const _appDefinitionsAndPackages = '_appDefinitionsAndPackages';
     /**
      * @var string
      */
@@ -1425,10 +1421,6 @@ class PermissionCode
      * @var string
      */
     const _notifications = '_notifications';
-    /**
-     * @var string
-     */
-    const _offlineClient = '_offlineClient';
     /**
      * @var string
      */

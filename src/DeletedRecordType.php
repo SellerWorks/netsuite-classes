@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class DeletedRecordType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -108,7 +108,15 @@ class DeletedRecordType
     /**
      * @var string
      */
+    const customPurchase = 'customPurchase';
+    /**
+     * @var string
+     */
     const customRecord = 'customRecord';
+    /**
+     * @var string
+     */
+    const customSale = 'customSale';
     /**
      * @var string
      */

@@ -80,7 +80,7 @@ class ItemFulfillmentPackageUps
      */
     public $deliveryConfUps;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'packageWeightUps' => 'float',
         'packageDescrUps' => 'string',
         'packageTrackingNumberUps' => 'string',
@@ -97,5 +97,5 @@ class ItemFulfillmentPackageUps
         'codAmountUps' => 'float',
         'codMethodUps' => 'ItemFulfillmentPackageUpsCodMethodUps',
         'deliveryConfUps' => 'ItemFulfillmentPackageUpsDeliveryConfUps',
-    );
+    ];
 }

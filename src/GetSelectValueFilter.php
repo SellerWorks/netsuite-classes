@@ -24,8 +24,8 @@ class GetSelectValueFilter
      */
     public $operator;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'filterValue' => 'string',
         'operator' => 'GetSelectValueFilterOperator',
-    );
+    ];
 }

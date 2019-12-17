@@ -20,7 +20,7 @@ class GetBudgetExchangeRateRequest
      */
     public $budgetExchangeRateFilter;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'budgetExchangeRateFilter' => 'BudgetExchangeRateFilter',
-    );
+    ];
 }

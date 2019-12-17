@@ -52,7 +52,7 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
      */
     public $internalId;
     /**
-     * @var SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
     public $laborResources;
     /**
@@ -68,7 +68,7 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
      */
     public $lagUnits;
     /**
-     * @var SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
     public $machineResources;
     /**
@@ -136,7 +136,7 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'actualRunTime' => 'SearchColumnDoubleField[]',
         'actualSetupTime' => 'SearchColumnDoubleField[]',
         'completedQuantity' => 'SearchColumnDoubleField[]',
@@ -146,11 +146,11 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
         'id' => 'SearchColumnLongField[]',
         'inputQuantity' => 'SearchColumnDoubleField[]',
         'internalId' => 'SearchColumnSelectField[]',
-        'laborResources' => 'SearchColumnLongField[]',
+        'laborResources' => 'SearchColumnDoubleField[]',
         'lagAmount' => 'SearchColumnDoubleField[]',
         'lagType' => 'SearchColumnEnumSelectField[]',
         'lagUnits' => 'SearchColumnStringField[]',
-        'machineResources' => 'SearchColumnLongField[]',
+        'machineResources' => 'SearchColumnDoubleField[]',
         'manufacturingCostTemplate' => 'SearchColumnSelectField[]',
         'manufacturingWorkCenter' => 'SearchColumnSelectField[]',
         'message' => 'SearchColumnStringField[]',
@@ -167,5 +167,5 @@ class ManufacturingOperationTaskSearchRowBasic extends SearchRowBasic
         'status' => 'SearchColumnSelectField[]',
         'workOrder' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

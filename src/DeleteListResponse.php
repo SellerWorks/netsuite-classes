@@ -20,7 +20,7 @@ class DeleteListResponse
      */
     public $writeResponseList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'writeResponseList' => 'WriteResponseList',
-    );
+    ];
 }

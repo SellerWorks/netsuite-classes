@@ -24,8 +24,8 @@ class LandedCostDataList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'landedCostData' => 'LandedCostData[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -28,9 +28,9 @@ class FairValuePriceSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'FairValuePriceSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

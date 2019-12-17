@@ -24,8 +24,8 @@ class MessageMediaItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'mediaItem' => 'File[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

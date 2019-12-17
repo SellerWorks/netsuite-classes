@@ -20,7 +20,7 @@ class RateList
      */
     public $rate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'rate' => 'Rate[]',
-    );
+    ];
 }

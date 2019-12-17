@@ -32,10 +32,10 @@ class PricingGroup extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

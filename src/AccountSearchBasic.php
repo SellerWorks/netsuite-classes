@@ -104,7 +104,7 @@ class AccountSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingContext' => 'SearchMultiSelectField',
         'balance' => 'SearchDoubleField',
         'cashFlowRateType' => 'SearchEnumMultiSelectField',
@@ -127,5 +127,5 @@ class AccountSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'type' => 'SearchEnumMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

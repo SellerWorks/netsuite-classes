@@ -56,7 +56,7 @@ class CampaignSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'CampaignSearchRowBasic',
         'campaignRecipientJoin' => 'EntitySearchRowBasic',
         'fileJoin' => 'FileSearchRowBasic',
@@ -67,5 +67,5 @@ class CampaignSearchRow extends SearchRow
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

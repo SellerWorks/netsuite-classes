@@ -28,9 +28,9 @@ class InitializeRef extends BaseRef
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'type' => 'InitializeRefType',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

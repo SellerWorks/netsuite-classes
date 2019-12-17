@@ -92,7 +92,7 @@ class ItemDemandPlanSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'alternateSourceItem' => 'SearchMultiSelectField',
         'analysisDuration' => 'SearchLongField',
         'demandDate' => 'SearchDateField',
@@ -112,5 +112,5 @@ class ItemDemandPlanSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'units' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

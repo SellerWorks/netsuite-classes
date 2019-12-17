@@ -32,10 +32,10 @@ class CustomerSubsidiaryRelationshipSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'CustomerSubsidiaryRelationshipSearch',
         'columns' => 'CustomerSubsidiaryRelationshipSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

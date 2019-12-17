@@ -28,9 +28,9 @@ class CustomFieldSubAccess
      */
     public $searchLevel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'sub' => 'RecordRef',
         'accessLevel' => 'CustomizationAccessLevel',
         'searchLevel' => 'CustomizationSearchLevel',
-    );
+    ];
 }

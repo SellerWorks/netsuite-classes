@@ -40,12 +40,12 @@ class OtherNameCategorySearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
         'internalIdNumber' => 'SearchLongField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    );
+    ];
 }

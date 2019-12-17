@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * IntercoStatus.
+ * IntercoStatus
  */
 class IntercoStatus
 {
@@ -20,13 +20,13 @@ class IntercoStatus
     /**
      * @var string
      */
-    const _paired = '_paired';
+    const _paired = "_paired";
     /**
      * @var string
      */
-    const _pending = '_pending';
+    const _pending = "_pending";
     /**
      * @var string
      */
-    const _rejected = '_rejected';
+    const _rejected = "_rejected";
 }

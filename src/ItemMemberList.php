@@ -24,8 +24,8 @@ class ItemMemberList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'itemMember' => 'ItemMember[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

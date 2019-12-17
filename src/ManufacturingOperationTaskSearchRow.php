@@ -11,36 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskSearchRow.
+ * ManufacturingOperationTaskSearchRow
  */
 class ManufacturingOperationTaskSearchRow extends SearchRow
 {
     /**
+     * @access public
      * @var ManufacturingOperationTaskSearchRowBasic
      */
     public $basic;
     /**
+     * @access public
      * @var ManufacturingOperationTaskSearchRowBasic
      */
     public $predecessorJoin;
     /**
+     * @access public
      * @var EmployeeSearchRowBasic
      */
     public $userJoin;
     /**
+     * @access public
      * @var TransactionSearchRowBasic
      */
     public $workOrderJoin;
     /**
+     * @access public
      * @var CustomSearchRowBasic[]
      */
     public $customSearchJoin;
 
     public static $paramtypesmap = array(
-        'basic' => 'ManufacturingOperationTaskSearchRowBasic',
-        'predecessorJoin' => 'ManufacturingOperationTaskSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'workOrderJoin' => 'TransactionSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
+        "basic" => "ManufacturingOperationTaskSearchRowBasic",
+        "predecessorJoin" => "ManufacturingOperationTaskSearchRowBasic",
+        "userJoin" => "EmployeeSearchRowBasic",
+        "workOrderJoin" => "TransactionSearchRowBasic",
+        "customSearchJoin" => "CustomSearchRowBasic[]",
     );
 }

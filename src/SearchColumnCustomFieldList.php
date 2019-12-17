@@ -20,7 +20,7 @@ class SearchColumnCustomFieldList
      */
     public $customField;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customField' => 'SearchColumnCustomField[]',
-    );
+    ];
 }

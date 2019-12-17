@@ -124,7 +124,7 @@ class InterCompanyJournalEntry extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'postingPeriod' => 'RecordRef',
         'customForm' => 'RecordRef',
         'tranDate' => 'dateTime',
@@ -152,5 +152,5 @@ class InterCompanyJournalEntry extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

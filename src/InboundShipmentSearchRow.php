@@ -40,12 +40,12 @@ class InboundShipmentSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'InboundShipmentSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'itemReceiptJoin' => 'TransactionSearchRowBasic',
         'purchaseOrderJoin' => 'TransactionSearchRowBasic',
         'vendorJoin' => 'VendorSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

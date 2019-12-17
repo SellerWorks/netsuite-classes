@@ -116,6 +116,10 @@ class ItemGroup extends Record
      */
     public $translationsList;
     /**
+     * @var ItemGroupHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -128,7 +132,7 @@ class ItemGroup extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -154,8 +158,9 @@ class ItemGroup extends Record
         'printItems' => 'boolean',
         'memberList' => 'ItemMemberList',
         'translationsList' => 'TranslationList',
+        'hierarchyVersionsList' => 'ItemGroupHierarchyVersionsList',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

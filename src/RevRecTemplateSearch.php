@@ -24,8 +24,8 @@ class RevRecTemplateSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'RevRecTemplateSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

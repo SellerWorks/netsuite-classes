@@ -160,7 +160,7 @@ class VendorBillItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'vendorName' => 'string',
         'line' => 'integer',
@@ -197,5 +197,5 @@ class VendorBillItem
         'taxDetailsReference' => 'string',
         'landedCost' => 'LandedCost',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

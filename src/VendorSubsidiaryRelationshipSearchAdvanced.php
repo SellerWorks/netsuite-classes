@@ -32,10 +32,10 @@ class VendorSubsidiaryRelationshipSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'VendorSubsidiaryRelationshipSearch',
         'columns' => 'VendorSubsidiaryRelationshipSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

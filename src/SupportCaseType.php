@@ -40,12 +40,12 @@ class SupportCaseType extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'insertBefore' => 'RecordRef',
         'description' => 'string',
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

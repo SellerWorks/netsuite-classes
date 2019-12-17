@@ -28,9 +28,9 @@ class JobPercentCompleteOverride
      */
     public $comments;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'period' => 'RecordRef',
         'percent' => 'float',
         'comments' => 'string',
-    );
+    ];
 }

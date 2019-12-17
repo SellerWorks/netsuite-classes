@@ -20,7 +20,7 @@ class GetAllRecord
      */
     public $recordType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'recordType' => 'GetAllRecordType',
-    );
+    ];
 }

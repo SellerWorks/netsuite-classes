@@ -24,8 +24,8 @@ class ReadResponse
      */
     public $record;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'record' => 'Record',
-    );
+    ];
 }

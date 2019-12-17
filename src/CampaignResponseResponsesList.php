@@ -24,8 +24,8 @@ class CampaignResponseResponsesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'responses' => 'CampaignResponseResponses[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

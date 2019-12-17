@@ -52,7 +52,7 @@ class CustomerDepositApply
      */
     public $job;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'doc' => 'integer',
         'line' => 'integer',
         'apply' => 'boolean',
@@ -62,5 +62,5 @@ class CustomerDepositApply
         'total' => 'float',
         'amount' => 'float',
         'job' => 'string',
-    );
+    ];
 }

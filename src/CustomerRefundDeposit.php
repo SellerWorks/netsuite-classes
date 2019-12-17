@@ -52,7 +52,7 @@ class CustomerRefundDeposit
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'doc' => 'integer',
         'line' => 'integer',
@@ -62,5 +62,5 @@ class CustomerRefundDeposit
         'remaining' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    );
+    ];
 }

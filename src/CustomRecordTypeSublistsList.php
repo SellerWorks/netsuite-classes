@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeSublistsList.
+ * CustomRecordTypeSublistsList
  */
 class CustomRecordTypeSublistsList
 {
     /**
+     * @access public
      * @var CustomRecordTypeSublists[]
      */
     public $sublists;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'sublists' => 'CustomRecordTypeSublists[]',
-        'replaceAll' => 'boolean',
+        "sublists" => "CustomRecordTypeSublists[]",
+        "replaceAll" => "boolean",
     );
 }

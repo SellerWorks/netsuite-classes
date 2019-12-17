@@ -20,7 +20,7 @@ class AttachRequest
      */
     public $attachReference;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'attachReference' => 'AttachReference',
-    );
+    ];
 }

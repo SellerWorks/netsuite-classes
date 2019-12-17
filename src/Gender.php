@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Gender.
+ * Gender
  */
 class Gender
 {
@@ -20,13 +20,13 @@ class Gender
     /**
      * @var string
      */
-    const _omitted = '_omitted';
+    const _omitted = "_omitted";
     /**
      * @var string
      */
-    const _female = '_female';
+    const _female = "_female";
     /**
      * @var string
      */
-    const _male = '_male';
+    const _male = "_male";
 }

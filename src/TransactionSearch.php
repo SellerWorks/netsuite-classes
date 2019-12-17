@@ -136,6 +136,10 @@ class TransactionSearch extends SearchRecord
      */
     public $headerBillingAccountJoin;
     /**
+     * @var InstallmentSearchBasic
+     */
+    public $installmentJoin;
+    /**
      * @var InventoryDetailSearchBasic
      */
     public $inventoryDetailJoin;
@@ -292,7 +296,7 @@ class TransactionSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'TransactionSearchBasic',
         'accountJoin' => 'AccountSearchBasic',
         'accountingPeriodJoin' => 'AccountingPeriodSearchBasic',
@@ -323,6 +327,7 @@ class TransactionSearch extends SearchRecord
         'fromLocationJoin' => 'LocationSearchBasic',
         'fulfillingTransactionJoin' => 'TransactionSearchBasic',
         'headerBillingAccountJoin' => 'BillingAccountSearchBasic',
+        'installmentJoin' => 'InstallmentSearchBasic',
         'inventoryDetailJoin' => 'InventoryDetailSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'itemNumberJoin' => 'InventoryNumberSearchBasic',
@@ -362,5 +367,5 @@ class TransactionSearch extends SearchRecord
         'vendorJoin' => 'VendorSearchBasic',
         'vendorLineJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

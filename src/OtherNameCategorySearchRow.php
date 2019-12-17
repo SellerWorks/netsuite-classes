@@ -24,8 +24,8 @@ class OtherNameCategorySearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'OtherNameCategorySearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    );
+    ];
 }

@@ -168,7 +168,7 @@ class TimeEntrySearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'approvalStatus' => 'SearchColumnSelectField[]',
         'billingClass' => 'SearchColumnSelectField[]',
         'billingStatus' => 'SearchColumnStringField[]',
@@ -207,5 +207,5 @@ class TimeEntrySearchRowBasic extends SearchRowBasic
         'timeSheet' => 'SearchColumnStringField[]',
         'type' => 'SearchColumnEnumSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

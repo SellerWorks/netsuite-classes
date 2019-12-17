@@ -78,6 +78,10 @@ class LocationSearchRowBasic extends SearchRowBasic
     /**
      * @var SearchColumnBooleanField[]
      */
+    public $isIncludeInCt;
+    /**
+     * @var SearchColumnBooleanField[]
+     */
     public $isMonday;
     /**
      * @var SearchColumnBooleanField[]
@@ -184,7 +188,7 @@ class LocationSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address1' => 'SearchColumnStringField[]',
         'address2' => 'SearchColumnStringField[]',
         'address3' => 'SearchColumnStringField[]',
@@ -200,6 +204,7 @@ class LocationSearchRowBasic extends SearchRowBasic
         'internalId' => 'SearchColumnSelectField[]',
         'isFriday' => 'SearchColumnBooleanField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
+        'isIncludeInCt' => 'SearchColumnBooleanField[]',
         'isMonday' => 'SearchColumnBooleanField[]',
         'isOffice' => 'SearchColumnBooleanField[]',
         'isSaturday' => 'SearchColumnBooleanField[]',
@@ -227,5 +232,5 @@ class LocationSearchRowBasic extends SearchRowBasic
         'usesBins' => 'SearchColumnBooleanField[]',
         'zip' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

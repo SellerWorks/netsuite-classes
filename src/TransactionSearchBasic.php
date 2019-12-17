@@ -808,6 +808,10 @@ class TransactionSearchBasic extends SearchRecordBasic
      */
     public $nextBillDate;
     /**
+     * @var SearchMultiSelectField
+     */
+    public $nexus;
+    /**
      * @var SearchBooleanField
      */
     public $noAutoAssignLocation;
@@ -843,6 +847,10 @@ class TransactionSearchBasic extends SearchRecordBasic
      * @var SearchMultiSelectField
      */
     public $overheadParentItem;
+    /**
+     * @var SearchBooleanField
+     */
+    public $overrideInstallments;
     /**
      * @var SearchLongField
      */
@@ -1214,6 +1222,10 @@ class TransactionSearchBasic extends SearchRecordBasic
     /**
      * @var SearchMultiSelectField
      */
+    public $subsidiaryTaxRegNum;
+    /**
+     * @var SearchMultiSelectField
+     */
     public $subscriptionLine;
     /**
      * @var SearchMultiSelectField
@@ -1400,7 +1412,7 @@ class TransactionSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchMultiSelectField',
         'accountType' => 'SearchEnumMultiSelectField',
         'acctCorpCardExp' => 'SearchMultiSelectField',
@@ -1599,6 +1611,7 @@ class TransactionSearchBasic extends SearchRecordBasic
         'netAmount' => 'SearchDoubleField',
         'nextApprover' => 'SearchMultiSelectField',
         'nextBillDate' => 'SearchDateField',
+        'nexus' => 'SearchMultiSelectField',
         'noAutoAssignLocation' => 'SearchBooleanField',
         'nonReimbursable' => 'SearchBooleanField',
         'number' => 'SearchLongField',
@@ -1608,6 +1621,7 @@ class TransactionSearchBasic extends SearchRecordBasic
         'otherRefNum' => 'SearchTextNumberField',
         'otherRefNumNonDeposit' => 'SearchTextNumberField',
         'overheadParentItem' => 'SearchMultiSelectField',
+        'overrideInstallments' => 'SearchBooleanField',
         'packageCount' => 'SearchLongField',
         'paidTransaction' => 'SearchMultiSelectField',
         'parent' => 'SearchLongField',
@@ -1700,6 +1714,7 @@ class TransactionSearchBasic extends SearchRecordBasic
         'statistical' => 'SearchBooleanField',
         'status' => 'SearchEnumMultiSelectField',
         'subscription' => 'SearchMultiSelectField',
+        'subsidiaryTaxRegNum' => 'SearchMultiSelectField',
         'subscriptionLine' => 'SearchMultiSelectField',
         'subsidiary' => 'SearchMultiSelectField',
         'taxItem' => 'SearchMultiSelectField',
@@ -1747,5 +1762,5 @@ class TransactionSearchBasic extends SearchRecordBasic
         'vsoePrice' => 'SearchDoubleField',
         'webSite' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

@@ -56,6 +56,10 @@ class TermSearchBasic extends SearchRecordBasic
      */
     public $externalIdString;
     /**
+     * @var SearchBooleanField
+     */
+    public $installment;
+    /**
      * @var SearchMultiSelectField
      */
     public $internalId;
@@ -75,8 +79,24 @@ class TermSearchBasic extends SearchRecordBasic
      * @var SearchBooleanField
      */
     public $preferred;
+    /**
+     * @var SearchLongField
+     */
+    public $recurrenceCount;
+    /**
+     * @var SearchEnumMultiSelectField
+     */
+    public $recurrenceFrequency;
+    /**
+     * @var SearchLongField
+     */
+    public $repeatEvery;
+    /**
+     * @var SearchBooleanField
+     */
+    public $splitEvenly;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'dateDriven' => 'SearchBooleanField',
         'dayDiscountExpires' => 'SearchLongField',
         'dayOfMonthNetDue' => 'SearchLongField',
@@ -87,10 +107,15 @@ class TermSearchBasic extends SearchRecordBasic
         'dueNextMonthIfWithinDays' => 'SearchLongField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
+        'installment' => 'SearchBooleanField',
         'internalId' => 'SearchMultiSelectField',
         'internalIdNumber' => 'SearchLongField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
         'preferred' => 'SearchBooleanField',
-    );
+        'recurrenceCount' => 'SearchLongField',
+        'recurrenceFrequency' => 'SearchEnumMultiSelectField',
+        'repeatEvery' => 'SearchLongField',
+        'splitEvenly' => 'SearchBooleanField',
+    ];
 }

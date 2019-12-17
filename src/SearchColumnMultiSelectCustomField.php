@@ -20,7 +20,7 @@ class SearchColumnMultiSelectCustomField extends SearchColumnCustomField
      */
     public $searchValue;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'ListOrRecordRef[]',
-    );
+    ];
 }

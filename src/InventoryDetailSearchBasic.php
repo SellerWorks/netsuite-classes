@@ -44,7 +44,7 @@ class InventoryDetailSearchBasic extends SearchRecordBasic
      */
     public $quantity;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'binNumber' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -52,5 +52,5 @@ class InventoryDetailSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'inventoryNumber' => 'SearchMultiSelectField',
         'quantity' => 'SearchDoubleField',
-    );
+    ];
 }

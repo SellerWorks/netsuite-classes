@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeePayFrequency.
+ * EmployeePayFrequency
  */
 class EmployeePayFrequency
 {
@@ -20,73 +20,73 @@ class EmployeePayFrequency
     /**
      * @var string
      */
-    const _annually = '_annually';
+    const _annually = "_annually";
     /**
      * @var string
      */
-    const _custom = '_custom';
+    const _custom = "_custom";
     /**
      * @var string
      */
-    const _daily = '_daily';
+    const _daily = "_daily";
     /**
      * @var string
      */
-    const _endOfPeriod = '_endOfPeriod';
+    const _endOfPeriod = "_endOfPeriod";
     /**
      * @var string
      */
-    const _everyFourWeeks = '_everyFourWeeks';
+    const _everyFourWeeks = "_everyFourWeeks";
     /**
      * @var string
      */
-    const _everyThreeYears = '_everyThreeYears';
+    const _everyThreeYears = "_everyThreeYears";
     /**
      * @var string
      */
-    const _everyTwoMonths = '_everyTwoMonths';
+    const _everyTwoMonths = "_everyTwoMonths";
     /**
      * @var string
      */
-    const _everyTwoWeeks = '_everyTwoWeeks';
+    const _everyTwoWeeks = "_everyTwoWeeks";
     /**
      * @var string
      */
-    const _everyTwoYears = '_everyTwoYears';
+    const _everyTwoYears = "_everyTwoYears";
     /**
      * @var string
      */
-    const _hourly = '_hourly';
+    const _hourly = "_hourly";
     /**
      * @var string
      */
-    const _monthly = '_monthly';
+    const _monthly = "_monthly";
     /**
      * @var string
      */
-    const _never = '_never';
+    const _never = "_never";
     /**
      * @var string
      */
-    const _oneTime = '_oneTime';
+    const _oneTime = "_oneTime";
     /**
      * @var string
      */
-    const _quarterly = '_quarterly';
+    const _quarterly = "_quarterly";
     /**
      * @var string
      */
-    const _startOfPeriod = '_startOfPeriod';
+    const _startOfPeriod = "_startOfPeriod";
     /**
      * @var string
      */
-    const _twiceAMonth = '_twiceAMonth';
+    const _twiceAMonth = "_twiceAMonth";
     /**
      * @var string
      */
-    const _twiceAYear = '_twiceAYear';
+    const _twiceAYear = "_twiceAYear";
     /**
      * @var string
      */
-    const _weekly = '_weekly';
+    const _weekly = "_weekly";
 }

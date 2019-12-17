@@ -76,7 +76,7 @@ class GlobalAccountMappingSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingBook' => 'SearchMultiSelectField',
         'class' => 'SearchMultiSelectField',
         'customDimension' => 'SearchMultiSelectCustomField',
@@ -92,5 +92,5 @@ class GlobalAccountMappingSearchBasic extends SearchRecordBasic
         'sourceAccount' => 'SearchMultiSelectField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

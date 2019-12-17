@@ -20,7 +20,7 @@ class LoginRequest
      */
     public $passport;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'passport' => 'Passport',
-    );
+    ];
 }

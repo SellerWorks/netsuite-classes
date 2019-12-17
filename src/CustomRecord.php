@@ -192,7 +192,7 @@ class CustomRecord extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customRecordId' => 'string',
         'customForm' => 'RecordRef',
         'isInactive' => 'boolean',
@@ -237,5 +237,5 @@ class CustomRecord extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

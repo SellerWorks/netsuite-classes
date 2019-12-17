@@ -28,9 +28,9 @@ class HcmJobSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'HcmJobSearchRowBasic',
         'employeeJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

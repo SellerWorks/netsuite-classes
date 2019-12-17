@@ -24,8 +24,8 @@ class SolutionTopicsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'topics' => 'SolutionTopics[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

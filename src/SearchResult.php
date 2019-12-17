@@ -48,7 +48,7 @@ class SearchResult
      */
     public $searchRowList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'totalRecords' => 'integer',
         'pageSize' => 'integer',
@@ -57,5 +57,5 @@ class SearchResult
         'searchId' => 'string',
         'recordList' => 'RecordList',
         'searchRowList' => 'SearchRowList',
-    );
+    ];
 }

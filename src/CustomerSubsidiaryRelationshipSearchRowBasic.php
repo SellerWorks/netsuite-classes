@@ -56,7 +56,7 @@ class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'balance' => 'SearchColumnDoubleField[]',
         'depositbalance' => 'SearchColumnDoubleField[]',
         'entity' => 'SearchColumnSelectField[]',
@@ -67,5 +67,5 @@ class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'unbilledorders' => 'SearchColumnDoubleField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

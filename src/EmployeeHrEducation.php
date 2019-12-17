@@ -28,9 +28,9 @@ class EmployeeHrEducation
      */
     public $degreeDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'education' => 'RecordRef',
         'degree' => 'string',
         'degreeDate' => 'dateTime',
-    );
+    ];
 }

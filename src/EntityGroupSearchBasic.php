@@ -64,7 +64,7 @@ class EntityGroupSearchBasic extends SearchRecordBasic
      */
     public $isPrivate;
     /**
-     * @var SearchLongField
+     * @var SearchDoubleField
      */
     public $laborResources;
     /**
@@ -72,7 +72,7 @@ class EntityGroupSearchBasic extends SearchRecordBasic
      */
     public $lastModifiedDate;
     /**
-     * @var SearchLongField
+     * @var SearchDoubleField
      */
     public $machineResources;
     /**
@@ -88,7 +88,7 @@ class EntityGroupSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'email' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -101,11 +101,11 @@ class EntityGroupSearchBasic extends SearchRecordBasic
         'isInactive' => 'SearchBooleanField',
         'isManufacturingWorkCenter' => 'SearchBooleanField',
         'isPrivate' => 'SearchBooleanField',
-        'laborResources' => 'SearchLongField',
+        'laborResources' => 'SearchDoubleField',
         'lastModifiedDate' => 'SearchDateField',
-        'machineResources' => 'SearchLongField',
+        'machineResources' => 'SearchDoubleField',
         'subsidiary' => 'SearchMultiSelectField',
         'workCalendar' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

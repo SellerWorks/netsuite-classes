@@ -11,36 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Preferences.
+ * Preferences
  */
 class Preferences
 {
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $warningAsError;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $disableMandatoryCustomFieldValidation;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $disableSystemNotesForCustomFields;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $ignoreReadOnlyFields;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $runServerSuiteScriptAndTriggerWorkflows;
 
     public static $paramtypesmap = array(
-        'warningAsError' => 'boolean',
-        'disableMandatoryCustomFieldValidation' => 'boolean',
-        'disableSystemNotesForCustomFields' => 'boolean',
-        'ignoreReadOnlyFields' => 'boolean',
-        'runServerSuiteScriptAndTriggerWorkflows' => 'boolean',
+        "warningAsError" => "boolean",
+        "disableMandatoryCustomFieldValidation" => "boolean",
+        "disableSystemNotesForCustomFields" => "boolean",
+        "ignoreReadOnlyFields" => "boolean",
+        "runServerSuiteScriptAndTriggerWorkflows" => "boolean",
     );
 }

@@ -28,9 +28,9 @@ class CustomRecordTypeLinks
      */
     public $linkLabel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'linkCenter' => 'RecordRef',
         'linkSection' => 'RecordRef',
         'linkLabel' => 'string',
-    );
+    ];
 }

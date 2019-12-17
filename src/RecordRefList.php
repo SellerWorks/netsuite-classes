@@ -20,7 +20,7 @@ class RecordRefList
      */
     public $recordRef;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'recordRef' => 'RecordRef[]',
-    );
+    ];
 }

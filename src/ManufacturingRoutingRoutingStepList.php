@@ -24,8 +24,8 @@ class ManufacturingRoutingRoutingStepList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'manufacturingRoutingRoutingStep' => 'ManufacturingRoutingRoutingStep[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

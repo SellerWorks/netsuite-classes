@@ -160,7 +160,7 @@ class EntitySearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
         'addressLabel' => 'SearchStringField',
@@ -197,5 +197,5 @@ class EntitySearchBasic extends SearchRecordBasic
         'type' => 'SearchEnumMultiSelectField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class LandedCostSummary
      */
     public $transaction;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'category' => 'RecordRef',
         'amount' => 'float',
         'source' => 'LandedCostSource',
         'transaction' => 'RecordRef',
-    );
+    ];
 }

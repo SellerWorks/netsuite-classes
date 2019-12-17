@@ -20,7 +20,7 @@ class AsyncSearchResult extends AsyncResult
      */
     public $searchResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchResult' => 'SearchResult',
-    );
+    ];
 }

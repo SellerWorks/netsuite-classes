@@ -24,8 +24,8 @@ class GetItemAvailabilityResult
      */
     public $itemAvailabilityList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'itemAvailabilityList' => 'ItemAvailabilityList',
-    );
+    ];
 }

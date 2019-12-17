@@ -100,7 +100,7 @@ class PaymentCard extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'lastFourDigits' => 'string',
         'issuerIdNumber' => 'string',
         'entity' => 'RecordRef',
@@ -122,5 +122,5 @@ class PaymentCard extends Record
         'issueNumber' => 'string',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

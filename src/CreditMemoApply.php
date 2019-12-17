@@ -60,7 +60,7 @@ class CreditMemoApply
      */
     public $line;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'doc' => 'integer',
         'applyDate' => 'dateTime',
@@ -72,5 +72,5 @@ class CreditMemoApply
         'currency' => 'string',
         'amount' => 'float',
         'line' => 'integer',
-    );
+    ];
 }

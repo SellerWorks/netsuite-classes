@@ -20,7 +20,7 @@ class DimensionRef
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'scriptId' => 'string',
-    );
+    ];
 }

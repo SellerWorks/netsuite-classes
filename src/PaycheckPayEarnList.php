@@ -24,8 +24,8 @@ class PaycheckPayEarnList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'paycheckPayEarn' => 'PaycheckPayEarn[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

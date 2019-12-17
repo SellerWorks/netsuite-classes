@@ -52,7 +52,7 @@ class EntityGroupSearchRowBasic extends SearchRowBasic
      */
     public $isPrivate;
     /**
-     * @var SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
     public $laborResources;
     /**
@@ -60,7 +60,7 @@ class EntityGroupSearchRowBasic extends SearchRowBasic
      */
     public $lastModifiedDate;
     /**
-     * @var SearchColumnLongField[]
+     * @var SearchColumnDoubleField[]
      */
     public $machineResources;
     /**
@@ -88,7 +88,7 @@ class EntityGroupSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'email' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'groupName' => 'SearchColumnStringField[]',
@@ -98,14 +98,14 @@ class EntityGroupSearchRowBasic extends SearchRowBasic
         'isInactive' => 'SearchColumnBooleanField[]',
         'isManufacturingWorkCenter' => 'SearchColumnBooleanField[]',
         'isPrivate' => 'SearchColumnBooleanField[]',
-        'laborResources' => 'SearchColumnLongField[]',
+        'laborResources' => 'SearchColumnDoubleField[]',
         'lastModifiedDate' => 'SearchColumnDateField[]',
-        'machineResources' => 'SearchColumnLongField[]',
+        'machineResources' => 'SearchColumnDoubleField[]',
         'owner' => 'SearchColumnSelectField[]',
         'savedSearch' => 'SearchColumnStringField[]',
         'size' => 'SearchColumnLongField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'workCalendar' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

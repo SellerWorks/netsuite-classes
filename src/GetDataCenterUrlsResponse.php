@@ -20,7 +20,7 @@ class GetDataCenterUrlsResponse
      */
     public $getDataCenterUrlsResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getDataCenterUrlsResult' => 'GetDataCenterUrlsResult',
-    );
+    ];
 }

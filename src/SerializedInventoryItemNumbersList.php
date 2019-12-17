@@ -24,8 +24,8 @@ class SerializedInventoryItemNumbersList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'numbers' => 'SerializedInventoryItemNumbers[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

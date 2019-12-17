@@ -116,7 +116,7 @@ class DepositApplication extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'arAcct' => 'RecordRef',
@@ -142,5 +142,5 @@ class DepositApplication extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -116,7 +116,7 @@ class ChargeSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'amount' => 'SearchColumnDoubleField[]',
         'billingAccount' => 'SearchColumnSelectField[]',
         'billingItem' => 'SearchColumnSelectField[]',
@@ -142,5 +142,5 @@ class ChargeSearchRowBasic extends SearchRowBasic
         'subscriptionLine' => 'SearchColumnSelectField[]',
         'use' => 'SearchColumnEnumSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

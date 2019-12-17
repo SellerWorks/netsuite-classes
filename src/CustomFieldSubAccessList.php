@@ -24,8 +24,8 @@ class CustomFieldSubAccessList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'subAccess' => 'CustomFieldSubAccess[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class ManufacturingCostTemplateSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'ManufacturingCostTemplateSearch',
         'columns' => 'ManufacturingCostTemplateSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

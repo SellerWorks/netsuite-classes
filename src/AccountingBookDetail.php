@@ -28,9 +28,9 @@ class AccountingBookDetail
      */
     public $exchangeRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingBook' => 'RecordRef',
         'currency' => 'RecordRef',
         'exchangeRate' => 'float',
-    );
+    ];
 }

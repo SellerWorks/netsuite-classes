@@ -32,10 +32,10 @@ class CustomerDownload
      */
     public $expiration;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'file' => 'RecordRef',
         'licenseCode' => 'string',
         'remainingDownloads' => 'integer',
         'expiration' => 'dateTime',
-    );
+    ];
 }

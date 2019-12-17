@@ -32,10 +32,10 @@ class ManufacturingCostDetail
      */
     public $runRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'costCategory' => 'RecordRef',
         'item' => 'RecordRef',
         'fixedRate' => 'float',
         'runRate' => 'float',
-    );
+    ];
 }

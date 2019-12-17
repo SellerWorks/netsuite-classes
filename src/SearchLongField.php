@@ -28,9 +28,9 @@ class SearchLongField
      */
     public $operator;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'integer',
         'searchValue2' => 'integer',
         'operator' => 'SearchLongFieldOperator',
-    );
+    ];
 }

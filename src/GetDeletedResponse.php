@@ -20,7 +20,7 @@ class GetDeletedResponse
      */
     public $getDeletedResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getDeletedResult' => 'GetDeletedResult',
-    );
+    ];
 }

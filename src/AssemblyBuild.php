@@ -132,7 +132,7 @@ class AssemblyBuild extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'expirationDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
@@ -162,5 +162,5 @@ class AssemblyBuild extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

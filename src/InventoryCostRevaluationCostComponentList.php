@@ -24,8 +24,8 @@ class InventoryCostRevaluationCostComponentList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'costComponent' => 'InventoryCostRevaluationCostComponent[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

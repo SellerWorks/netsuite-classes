@@ -24,8 +24,8 @@ class CustomerRefundDepositList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customerRefundDeposit' => 'CustomerRefundDeposit[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

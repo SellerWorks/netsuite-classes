@@ -28,9 +28,9 @@ class GetAllResult
      */
     public $recordList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'totalRecords' => 'integer',
         'recordList' => 'RecordList',
-    );
+    ];
 }

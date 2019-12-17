@@ -72,7 +72,7 @@ class PaymentMethod extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'creditCard' => 'boolean',
         'undepFunds' => 'boolean',
@@ -87,5 +87,5 @@ class PaymentMethod extends Record
         'useExpressCheckout' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

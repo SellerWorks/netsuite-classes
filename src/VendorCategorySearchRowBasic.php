@@ -11,36 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorCategorySearchRowBasic.
+ * VendorCategorySearchRowBasic
  */
 class VendorCategorySearchRowBasic extends SearchRowBasic
 {
     /**
+     * @access public
      * @var SearchColumnSelectField[]
      */
     public $externalId;
     /**
+     * @access public
      * @var SearchColumnSelectField[]
      */
     public $internalId;
     /**
+     * @access public
      * @var SearchColumnBooleanField[]
      */
     public $isInactive;
     /**
+     * @access public
      * @var SearchColumnBooleanField[]
      */
     public $isTaxAgency;
     /**
+     * @access public
      * @var SearchColumnStringField[]
      */
     public $name;
 
     public static $paramtypesmap = array(
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'isTaxAgency' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
+        "externalId" => "SearchColumnSelectField[]",
+        "internalId" => "SearchColumnSelectField[]",
+        "isInactive" => "SearchColumnBooleanField[]",
+        "isTaxAgency" => "SearchColumnBooleanField[]",
+        "name" => "SearchColumnStringField[]",
     );
 }

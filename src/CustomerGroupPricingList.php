@@ -24,8 +24,8 @@ class CustomerGroupPricingList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'groupPricing' => 'CustomerGroupPricing[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

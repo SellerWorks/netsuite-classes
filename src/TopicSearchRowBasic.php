@@ -36,11 +36,11 @@ class TopicSearchRowBasic extends SearchRowBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
-    );
+    ];
 }

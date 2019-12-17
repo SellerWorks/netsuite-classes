@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignDirectMailList.
+ * CampaignDirectMailList
  */
 class CampaignDirectMailList
 {
     /**
+     * @access public
      * @var CampaignDirectMail[]
      */
     public $campaignDirectMail;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'campaignDirectMail' => 'CampaignDirectMail[]',
-        'replaceAll' => 'boolean',
+        "campaignDirectMail" => "CampaignDirectMail[]",
+        "replaceAll" => "boolean",
     );
 }

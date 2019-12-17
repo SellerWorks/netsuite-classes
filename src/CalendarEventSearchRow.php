@@ -68,7 +68,7 @@ class CalendarEventSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'CalendarEventSearchRowBasic',
         'attendeeJoin' => 'EntitySearchRowBasic',
         'attendeeContactJoin' => 'ContactSearchRowBasic',
@@ -82,5 +82,5 @@ class CalendarEventSearchRow extends SearchRow
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VsoePermitDiscount.
+ * VsoePermitDiscount
  */
 class VsoePermitDiscount
 {
@@ -20,9 +20,9 @@ class VsoePermitDiscount
     /**
      * @var string
      */
-    const _asAllowed = '_asAllowed';
+    const _asAllowed = "_asAllowed";
     /**
      * @var string
      */
-    const _never = '_never';
+    const _never = "_never";
 }

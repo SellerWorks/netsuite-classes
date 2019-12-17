@@ -216,6 +216,14 @@ class OtherChargePurchaseItem extends Record
      */
     public $vendor;
     /**
+     * @var OtherChargePurchaseItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -228,7 +236,7 @@ class OtherChargePurchaseItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'purchaseDescription' => 'string',
@@ -279,8 +287,10 @@ class OtherChargePurchaseItem extends Record
         'salesTaxCode' => 'RecordRef',
         'translationsList' => 'TranslationList',
         'vendor' => 'RecordRef',
+        'hierarchyVersionsList' => 'OtherChargePurchaseItemHierarchyVersionsList',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

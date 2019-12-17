@@ -72,7 +72,7 @@ class Address extends Record
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'country' => 'Country',
         'attention' => 'string',
@@ -87,5 +87,5 @@ class Address extends Record
         'addrText' => 'string',
         'override' => 'boolean',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

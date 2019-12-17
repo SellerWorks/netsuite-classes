@@ -20,7 +20,7 @@ class EmailEmployeesList
      */
     public $emailEmployees;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'emailEmployees' => 'RecordRef[]',
-    );
+    ];
 }

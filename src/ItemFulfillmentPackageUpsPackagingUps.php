@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentPackageUpsPackagingUps.
+ * ItemFulfillmentPackageUpsPackagingUps
  */
 class ItemFulfillmentPackageUpsPackagingUps
 {
@@ -20,21 +20,21 @@ class ItemFulfillmentPackageUpsPackagingUps
     /**
      * @var string
      */
-    const _upsExpressBox = '_upsExpressBox';
+    const _upsExpressBox = "_upsExpressBox";
     /**
      * @var string
      */
-    const _upsLetter = '_upsLetter';
+    const _upsLetter = "_upsLetter";
     /**
      * @var string
      */
-    const _upsPak = '_upsPak';
+    const _upsPak = "_upsPak";
     /**
      * @var string
      */
-    const _upsTube = '_upsTube';
+    const _upsTube = "_upsTube";
     /**
      * @var string
      */
-    const _yourPackaging = '_yourPackaging';
+    const _yourPackaging = "_yourPackaging";
 }

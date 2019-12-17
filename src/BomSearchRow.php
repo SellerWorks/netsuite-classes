@@ -36,11 +36,11 @@ class BomSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'BomSearchRowBasic',
         'assemblyItemJoin' => 'AssemblyItemBomSearchRowBasic',
         'revisionJoin' => 'BomRevisionSearchRowBasic',
         'transactionJoin' => 'TransactionSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

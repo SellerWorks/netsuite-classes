@@ -20,7 +20,7 @@ class MatrixOptionList
      */
     public $matrixOption;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'matrixOption' => 'SelectCustomFieldRef[]',
-    );
+    ];
 }

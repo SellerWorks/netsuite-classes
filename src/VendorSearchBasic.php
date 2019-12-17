@@ -252,6 +252,14 @@ class VendorSearchBasic extends SearchRecordBasic
      */
     public $phoneticName;
     /**
+     * @var SearchDoubleField
+     */
+    public $predConfidence;
+    /**
+     * @var SearchDoubleField
+     */
+    public $predictedDays;
+    /**
      * @var SearchBooleanField
      */
     public $printTransactions;
@@ -332,7 +340,7 @@ class VendorSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchStringField',
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
@@ -392,6 +400,8 @@ class VendorSearchBasic extends SearchRecordBasic
         'permission' => 'SearchEnumMultiSelectField',
         'phone' => 'SearchStringField',
         'phoneticName' => 'SearchStringField',
+        'predConfidence' => 'SearchDoubleField',
+        'predictedDays' => 'SearchDoubleField',
         'printTransactions' => 'SearchBooleanField',
         'purchaseOrderAmount' => 'SearchDoubleField',
         'purchaseOrderQuantity' => 'SearchDoubleField',
@@ -412,5 +422,5 @@ class VendorSearchBasic extends SearchRecordBasic
         'workCalendar' => 'SearchMultiSelectField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

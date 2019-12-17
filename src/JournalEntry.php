@@ -136,7 +136,7 @@ class JournalEntry extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'postingPeriod' => 'RecordRef',
         'tranDate' => 'dateTime',
         'currency' => 'RecordRef',
@@ -167,5 +167,5 @@ class JournalEntry extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

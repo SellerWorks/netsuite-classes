@@ -76,7 +76,7 @@ class TaskSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'TaskSearchRowBasic',
         'assignedJoin' => 'EmployeeSearchRowBasic',
         'caseJoin' => 'SupportCaseSearchRowBasic',
@@ -92,5 +92,5 @@ class TaskSearchRow extends SearchRow
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

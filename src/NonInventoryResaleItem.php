@@ -632,6 +632,14 @@ class NonInventoryResaleItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var NonInventoryResaleItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -644,7 +652,7 @@ class NonInventoryResaleItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'purchaseDescription' => 'string',
@@ -799,8 +807,10 @@ class NonInventoryResaleItem extends Record
         'translationsList' => 'TranslationList',
         'vendor' => 'RecordRef',
         'presentationItemList' => 'PresentationItemList',
+        'hierarchyVersionsList' => 'NonInventoryResaleItemHierarchyVersionsList',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

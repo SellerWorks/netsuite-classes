@@ -24,8 +24,8 @@ class SearchStringField
      */
     public $operator;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'string',
         'operator' => 'SearchStringFieldOperator',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class PartnerAddressbookList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'addressbook' => 'PartnerAddressbook[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

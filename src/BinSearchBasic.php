@@ -52,7 +52,7 @@ class BinSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'binNumber' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -62,5 +62,5 @@ class BinSearchBasic extends SearchRecordBasic
         'location' => 'SearchMultiSelectField',
         'memo' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

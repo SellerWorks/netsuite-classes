@@ -228,7 +228,7 @@ class CreditMemoItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'job' => 'RecordRef',
         'item' => 'RecordRef',
         'orderLine' => 'integer',
@@ -282,5 +282,5 @@ class CreditMemoItem
         'subscriptionLine' => 'RecordRef',
         'chargesList' => 'RecordRefList',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

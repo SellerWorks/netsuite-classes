@@ -32,10 +32,10 @@ class ListOrRecordRef
      */
     public $typeId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'internalId' => 'string',
         'externalId' => 'string',
         'typeId' => 'string',
-    );
+    ];
 }

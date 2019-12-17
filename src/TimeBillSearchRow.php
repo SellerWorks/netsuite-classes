@@ -96,7 +96,7 @@ class TimeBillSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'TimeBillSearchRowBasic',
         'callJoin' => 'PhoneCallSearchRowBasic',
         'caseJoin' => 'SupportCaseSearchRowBasic',
@@ -117,5 +117,5 @@ class TimeBillSearchRow extends SearchRow
         'vendorJoin' => 'VendorSearchRowBasic',
         'timeSheetJoin' => 'TimeSheetSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

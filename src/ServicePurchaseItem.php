@@ -212,6 +212,14 @@ class ServicePurchaseItem extends Record
      */
     public $vendor;
     /**
+     * @var ServicePurchaseItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -224,7 +232,7 @@ class ServicePurchaseItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'purchaseDescription' => 'string',
@@ -274,8 +282,10 @@ class ServicePurchaseItem extends Record
         'salesTaxCode' => 'RecordRef',
         'translationsList' => 'TranslationList',
         'vendor' => 'RecordRef',
+        'hierarchyVersionsList' => 'ServicePurchaseItemHierarchyVersionsList',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

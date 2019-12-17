@@ -108,7 +108,7 @@ class VendorReturnAuthorizationExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'orderLine' => 'integer',
         'line' => 'integer',
         'category' => 'RecordRef',
@@ -132,5 +132,5 @@ class VendorReturnAuthorizationExpense
         'amortizationEndDate' => 'dateTime',
         'amortizationResidual' => 'string',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

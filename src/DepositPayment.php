@@ -68,7 +68,7 @@ class DepositPayment
      */
     public $lineId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'deposit' => 'boolean',
         'id' => 'integer',
         'docDate' => 'dateTime',
@@ -82,5 +82,5 @@ class DepositPayment
         'transactionAmount' => 'float',
         'paymentAmount' => 'float',
         'lineId' => 'integer',
-    );
+    ];
 }

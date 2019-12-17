@@ -156,7 +156,7 @@ class SubsidiarySearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingBook' => 'SearchMultiSelectField',
         'accountingBookCurrency' => 'SearchMultiSelectField',
         'address' => 'SearchStringField',
@@ -192,5 +192,5 @@ class SubsidiarySearchBasic extends SearchRecordBasic
         'validUntil' => 'SearchDateField',
         'zip' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

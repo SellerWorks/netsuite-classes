@@ -92,11 +92,11 @@ class EntityGroup extends Record
      */
     public $subsidiary;
     /**
-     * @var int
+     * @var float
      */
     public $machineResources;
     /**
-     * @var int
+     * @var float
      */
     public $laborResources;
     /**
@@ -116,7 +116,7 @@ class EntityGroup extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'groupName' => 'string',
         'groupType' => 'EntityGroupType',
         'email' => 'string',
@@ -136,11 +136,11 @@ class EntityGroup extends Record
         'issueRole' => 'RecordRef',
         'isManufacturingWorkCenter' => 'boolean',
         'subsidiary' => 'RecordRef',
-        'machineResources' => 'integer',
-        'laborResources' => 'integer',
+        'machineResources' => 'float',
+        'laborResources' => 'float',
         'workCalendar' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

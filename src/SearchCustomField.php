@@ -24,8 +24,8 @@ class SearchCustomField
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'scriptId' => 'string',
-    );
+    ];
 }

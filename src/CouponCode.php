@@ -48,7 +48,7 @@ class CouponCode extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'promotion' => 'RecordRef',
         'code' => 'string',
         'recipient' => 'RecordRef',
@@ -57,5 +57,5 @@ class CouponCode extends Record
         'useCount' => 'integer',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -180,7 +180,7 @@ class CampaignSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'audience' => 'SearchColumnSelectField[]',
         'baseCost' => 'SearchColumnDoubleField[]',
         'campaignId' => 'SearchColumnStringField[]',
@@ -222,5 +222,5 @@ class CampaignSearchRowBasic extends SearchRowBasic
         'url' => 'SearchColumnStringField[]',
         'vertical' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

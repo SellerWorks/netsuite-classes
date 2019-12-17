@@ -40,12 +40,12 @@ class SiteCategoryTranslation
      */
     public $pageTitle;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'locale' => 'Language',
         'language' => 'string',
         'displayName' => 'string',
         'description' => 'string',
         'storeDetailedDescription' => 'string',
         'pageTitle' => 'string',
-    );
+    ];
 }

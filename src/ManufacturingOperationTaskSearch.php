@@ -36,11 +36,11 @@ class ManufacturingOperationTaskSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ManufacturingOperationTaskSearchBasic',
         'predecessorJoin' => 'ManufacturingOperationTaskSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'workOrderJoin' => 'TransactionSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

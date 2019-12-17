@@ -76,7 +76,7 @@ class ItemSupplyPlanSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'item' => 'SearchColumnSelectField[]',
@@ -92,5 +92,5 @@ class ItemSupplyPlanSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'units' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class CustomerCategorySearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'CustomerCategorySearch',
         'columns' => 'CustomerCategorySearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

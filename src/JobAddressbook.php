@@ -40,12 +40,12 @@ class JobAddressbook
      */
     public $addressbookAddress;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'defaultShipping' => 'boolean',
         'defaultBilling' => 'boolean',
         'isResidential' => 'boolean',
         'label' => 'string',
         'internalId' => 'string',
         'addressbookAddress' => 'Address',
-    );
+    ];
 }

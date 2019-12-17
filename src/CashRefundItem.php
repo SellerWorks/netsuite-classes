@@ -208,7 +208,7 @@ class CashRefundItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'job' => 'RecordRef',
         'item' => 'RecordRef',
         'line' => 'integer',
@@ -257,5 +257,5 @@ class CashRefundItem
         'chargeType' => 'RecordRef',
         'chargesList' => 'RecordRefList',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

@@ -136,7 +136,7 @@ class TaskSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accessLevel' => 'SearchColumnStringField[]',
         'actualTime' => 'SearchColumnDoubleField[]',
         'assigned' => 'SearchColumnSelectField[]',
@@ -167,5 +167,5 @@ class TaskSearchRowBasic extends SearchRowBasic
         'title' => 'SearchColumnStringField[]',
         'transaction' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

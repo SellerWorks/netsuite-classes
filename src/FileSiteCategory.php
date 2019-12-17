@@ -32,10 +32,10 @@ class FileSiteCategory
      */
     public $website;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'isDefault' => 'boolean',
         'category' => 'RecordRef',
         'categoryDescription' => 'string',
         'website' => 'RecordRef',
-    );
+    ];
 }

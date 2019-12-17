@@ -96,7 +96,7 @@ class InventoryAdjustmentInventory
      */
     public $exchangeRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'line' => 'integer',
         'inventoryDetail' => 'InventoryDetail',
@@ -117,5 +117,5 @@ class InventoryAdjustmentInventory
         'currency' => 'string',
         'expirationDate' => 'dateTime',
         'exchangeRate' => 'float',
-    );
+    ];
 }

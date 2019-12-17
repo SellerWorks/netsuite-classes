@@ -36,7 +36,7 @@ class ItemMember
      */
     public $quantity;
     /**
-     * @var string
+     * @var RecordRef
      */
     public $memberUnit;
     /**
@@ -92,13 +92,13 @@ class ItemMember
      */
     public $memberKey;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'memberDescr' => 'string',
         'componentYield' => 'float',
         'bomQuantity' => 'float',
         'itemSource' => 'ItemSource',
         'quantity' => 'float',
-        'memberUnit' => 'string',
+        'memberUnit' => 'RecordRef',
         'vsoeDeferral' => 'VsoeDeferral',
         'vsoePermitDiscount' => 'VsoePermitDiscount',
         'vsoeDelivered' => 'boolean',
@@ -112,5 +112,5 @@ class ItemMember
         'obsoleteRevision' => 'RecordRef',
         'lineNumber' => 'integer',
         'memberKey' => 'string',
-    );
+    ];
 }

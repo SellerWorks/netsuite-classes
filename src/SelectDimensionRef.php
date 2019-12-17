@@ -20,7 +20,7 @@ class SelectDimensionRef extends DimensionRef
      */
     public $value;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'value' => 'ListOrRecordRef',
-    );
+    ];
 }

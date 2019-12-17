@@ -28,9 +28,9 @@ class CurrencyRateFilter
      */
     public $effectiveDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseCurrency' => 'RecordRef',
         'fromCurrency' => 'RecordRef',
         'effectiveDate' => 'dateTime',
-    );
+    ];
 }

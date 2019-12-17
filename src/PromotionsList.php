@@ -24,8 +24,8 @@ class PromotionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'promotions' => 'Promotions[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

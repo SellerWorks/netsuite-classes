@@ -32,10 +32,10 @@ class OtherNameCategorySearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'OtherNameCategorySearch',
         'columns' => 'OtherNameCategorySearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

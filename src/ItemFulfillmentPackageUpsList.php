@@ -24,8 +24,8 @@ class ItemFulfillmentPackageUpsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'packageUps' => 'ItemFulfillmentPackageUps[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

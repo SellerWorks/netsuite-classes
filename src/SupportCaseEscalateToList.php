@@ -24,8 +24,8 @@ class SupportCaseEscalateToList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'escalateTo' => 'SupportCaseEscalateTo[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

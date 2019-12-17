@@ -24,8 +24,8 @@ class VendorCreditExpenseList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expense' => 'VendorCreditExpense[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

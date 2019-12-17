@@ -52,7 +52,7 @@ class Department extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'includeChildren' => 'boolean',
         'parent' => 'RecordRef',
@@ -62,5 +62,5 @@ class Department extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

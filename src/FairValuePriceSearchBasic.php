@@ -88,7 +88,7 @@ class FairValuePriceSearchBasic extends SearchRecordBasic
      */
     public $unitsType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'SearchMultiSelectField',
         'endDate' => 'SearchDateField',
         'externalId' => 'SearchMultiSelectField',
@@ -107,5 +107,5 @@ class FairValuePriceSearchBasic extends SearchRecordBasic
         'lowValuePercent' => 'SearchDoubleField',
         'startDate' => 'SearchDateField',
         'unitsType' => 'SearchMultiSelectField',
-    );
+    ];
 }

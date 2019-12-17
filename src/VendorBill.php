@@ -192,6 +192,10 @@ class VendorBill extends Record
      */
     public $itemList;
     /**
+     * @var VendorBillInstallmentList
+     */
+    public $installmentList;
+    /**
      * @var PurchLandedCostList
      */
     public $landedCostsList;
@@ -203,6 +207,10 @@ class VendorBill extends Record
      * @var TaxDetailsList
      */
     public $taxDetailsList;
+    /**
+     * @var bool
+     */
+    public $overrideInstallments;
     /**
      * @var CustomFieldList
      */
@@ -216,7 +224,7 @@ class VendorBill extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'nexus' => 'RecordRef',
@@ -261,11 +269,13 @@ class VendorBill extends Record
         'expenseList' => 'VendorBillExpenseList',
         'accountingBookDetailList' => 'AccountingBookDetailList',
         'itemList' => 'VendorBillItemList',
+        'installmentList' => 'VendorBillInstallmentList',
         'landedCostsList' => 'PurchLandedCostList',
         'purchaseOrderList' => 'RecordRefList',
         'taxDetailsList' => 'TaxDetailsList',
+        'overrideInstallments' => 'boolean',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

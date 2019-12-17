@@ -32,10 +32,10 @@ class PromotionCodeSearchAdvanced extends SearchRecord
      */
     public $savedSearchId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'PromotionCodeSearch',
         'columns' => 'PromotionCodeSearchRow',
         'savedSearchScriptId' => 'string',
         'savedSearchId' => 'string',
-    );
+    ];
 }

@@ -36,11 +36,11 @@ class ProjectTaskPredecessor
      */
     public $endDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'task' => 'RecordRef',
         'type' => 'ProjectTaskPredecessorPredecessorType',
         'lagDays' => 'float',
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
-    );
+    ];
 }

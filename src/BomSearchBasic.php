@@ -84,7 +84,7 @@ class BomSearchBasic extends SearchRecordBasic
      */
     public $usedOnAssembly;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'availableForAllAssemblies' => 'SearchBooleanField',
         'availableForAllLocations' => 'SearchBooleanField',
         'createdDate' => 'SearchDateField',
@@ -102,5 +102,5 @@ class BomSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'useComponentYield' => 'SearchBooleanField',
         'usedOnAssembly' => 'SearchBooleanField',
-    );
+    ];
 }

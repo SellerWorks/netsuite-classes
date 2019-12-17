@@ -132,7 +132,7 @@ class WorkOrderItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'line' => 'integer',
         'item' => 'RecordRef',
         'operationSequenceNumber' => 'integer',
@@ -162,5 +162,5 @@ class WorkOrderItem
         'commitInventory' => 'WorkOrderItemItemCommitInventory',
         'plannedIssueDate' => 'dateTime',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

@@ -60,6 +60,30 @@ class Term extends Record
      */
     public $isInactive;
     /**
+     * @var bool
+     */
+    public $installment;
+    /**
+     * @var TermRecurrenceFrequency
+     */
+    public $recurrenceFrequency;
+    /**
+     * @var int
+     */
+    public $recurrenceCount;
+    /**
+     * @var int
+     */
+    public $repeatEvery;
+    /**
+     * @var bool
+     */
+    public $splitEvenly;
+    /**
+     * @var TermPercentagesList
+     */
+    public $percentagesList;
+    /**
      * @var string
      */
     public $internalId;
@@ -68,7 +92,7 @@ class Term extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'dateDriven' => 'boolean',
         'daysUntilNetDue' => 'integer',
@@ -80,7 +104,13 @@ class Term extends Record
         'dayDiscountExpires' => 'integer',
         'preferred' => 'boolean',
         'isInactive' => 'boolean',
+        'installment' => 'boolean',
+        'recurrenceFrequency' => 'TermRecurrenceFrequency',
+        'recurrenceCount' => 'integer',
+        'repeatEvery' => 'integer',
+        'splitEvenly' => 'boolean',
+        'percentagesList' => 'TermPercentagesList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

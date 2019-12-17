@@ -24,8 +24,8 @@ class CustomRecordTypeChildren
      */
     public $childTab;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'childDescr' => 'string',
         'childTab' => 'RecordRef',
-    );
+    ];
 }

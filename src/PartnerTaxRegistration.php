@@ -11,36 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerTaxRegistration.
+ * PartnerTaxRegistration
  */
 class PartnerTaxRegistration
 {
     /**
+     * @access public
      * @var Country
      */
     public $nexusCountry;
     /**
+     * @access public
      * @var RecordRef
      */
     public $nexus;
     /**
+     * @access public
      * @var RecordRef
      */
     public $address;
     /**
+     * @access public
      * @var string
      */
     public $taxRegistrationNumber;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $id;
 
     public static $paramtypesmap = array(
-        'nexusCountry' => 'Country',
-        'nexus' => 'RecordRef',
-        'address' => 'RecordRef',
-        'taxRegistrationNumber' => 'string',
-        'id' => 'integer',
+        "nexusCountry" => "Country",
+        "nexus" => "RecordRef",
+        "address" => "RecordRef",
+        "taxRegistrationNumber" => "string",
+        "id" => "integer",
     );
 }

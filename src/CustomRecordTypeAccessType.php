@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeAccessType.
+ * CustomRecordTypeAccessType
  */
 class CustomRecordTypeAccessType
 {
@@ -20,13 +20,13 @@ class CustomRecordTypeAccessType
     /**
      * @var string
      */
-    const _noPermissionRequired = '_noPermissionRequired';
+    const _noPermissionRequired = "_noPermissionRequired";
     /**
      * @var string
      */
-    const _requireCustomRecordEntriesPermission = '_requireCustomRecordEntriesPermission';
+    const _requireCustomRecordEntriesPermission = "_requireCustomRecordEntriesPermission";
     /**
      * @var string
      */
-    const _usePermissionList = '_usePermissionList';
+    const _usePermissionList = "_usePermissionList";
 }

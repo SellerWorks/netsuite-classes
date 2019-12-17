@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class EmployeeAccruedTimeAccrualMethod
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */

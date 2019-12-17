@@ -144,6 +144,18 @@ class ExpenseReport extends Record
      */
     public $accountingBookDetailList;
     /**
+     * @var TaxDetailsList
+     */
+    public $taxDetailsList;
+    /**
+     * @var RecordRef
+     */
+    public $nexus;
+    /**
+     * @var RecordRef
+     */
+    public $subsidiaryTaxRegNum;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -156,7 +168,7 @@ class ExpenseReport extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'status' => 'string',
@@ -189,8 +201,11 @@ class ExpenseReport extends Record
         'location' => 'RecordRef',
         'expenseList' => 'ExpenseReportExpenseList',
         'accountingBookDetailList' => 'AccountingBookDetailList',
+        'taxDetailsList' => 'TaxDetailsList',
+        'nexus' => 'RecordRef',
+        'subsidiaryTaxRegNum' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -28,9 +28,9 @@ class PaycheckSearchRow extends SearchRow
      */
     public $payrollItemJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'PaycheckSearchRowBasic',
         'employeeJoin' => 'EmployeeSearchRowBasic',
         'payrollItemJoin' => 'PayrollItemSearchRowBasic',
-    );
+    ];
 }

@@ -44,7 +44,7 @@ class PaycheckJournalDeduction
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'payrollItem' => 'RecordRef',
         'amount' => 'float',
@@ -52,5 +52,5 @@ class PaycheckJournalDeduction
         'class' => 'RecordRef',
         'location' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

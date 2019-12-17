@@ -20,7 +20,7 @@ class DetachReference
      */
     public $detachFrom;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'detachFrom' => 'BaseRef',
-    );
+    ];
 }

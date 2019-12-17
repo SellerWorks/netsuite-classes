@@ -40,12 +40,12 @@ class CustomerAddressbook
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'defaultShipping' => 'boolean',
         'defaultBilling' => 'boolean',
         'isResidential' => 'boolean',
         'label' => 'string',
         'addressbookAddress' => 'Address',
         'internalId' => 'string',
-    );
+    ];
 }

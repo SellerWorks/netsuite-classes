@@ -88,7 +88,7 @@ class OpportunitySearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'OpportunitySearchRowBasic',
         'actualJoin' => 'TransactionSearchRowBasic',
         'callJoin' => 'PhoneCallSearchRowBasic',
@@ -107,5 +107,5 @@ class OpportunitySearchRow extends SearchRow
         'taskJoin' => 'TaskSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

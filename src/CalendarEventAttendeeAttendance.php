@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventAttendeeAttendance.
+ * CalendarEventAttendeeAttendance
  */
 class CalendarEventAttendeeAttendance
 {
@@ -20,9 +20,9 @@ class CalendarEventAttendeeAttendance
     /**
      * @var string
      */
-    const _optional = '_optional';
+    const _optional = "_optional";
     /**
      * @var string
      */
-    const _required = '_required';
+    const _required = "_required";
 }

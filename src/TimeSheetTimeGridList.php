@@ -24,8 +24,8 @@ class TimeSheetTimeGridList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'timeSheetTimeGrid' => 'TimeSheetTimeGrid[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

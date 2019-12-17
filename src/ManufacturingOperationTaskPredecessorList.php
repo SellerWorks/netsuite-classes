@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskPredecessorList.
+ * ManufacturingOperationTaskPredecessorList
  */
 class ManufacturingOperationTaskPredecessorList
 {
     /**
+     * @access public
      * @var ManufacturingOperationTaskPredecessor[]
      */
     public $manufacturingOperationTaskPredecessor;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'manufacturingOperationTaskPredecessor' => 'ManufacturingOperationTaskPredecessor[]',
-        'replaceAll' => 'boolean',
+        "manufacturingOperationTaskPredecessor" => "ManufacturingOperationTaskPredecessor[]",
+        "replaceAll" => "boolean",
     );
 }

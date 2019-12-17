@@ -80,7 +80,7 @@ class ItemSupplyPlanSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -97,5 +97,5 @@ class ItemSupplyPlanSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'units' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

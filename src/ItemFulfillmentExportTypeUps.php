@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class ItemFulfillmentExportTypeUps
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */

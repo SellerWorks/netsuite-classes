@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchMultiSelectCustomField.
+ * SearchMultiSelectCustomField
  */
 class SearchMultiSelectCustomField extends SearchCustomField
 {
     /**
+     * @access public
      * @var ListOrRecordRef[]
      */
     public $searchValue;
     /**
+     * @access public
      * @var SearchMultiSelectFieldOperator
      */
     public $operator;
 
     public static $paramtypesmap = array(
-        'searchValue' => 'ListOrRecordRef[]',
-        'operator' => 'SearchMultiSelectFieldOperator',
+        "searchValue" => "ListOrRecordRef[]",
+        "operator" => "SearchMultiSelectFieldOperator",
     );
 }

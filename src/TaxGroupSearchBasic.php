@@ -104,7 +104,7 @@ class TaxGroupSearchBasic extends SearchRecordBasic
      */
     public $zip;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'city' => 'SearchStringField',
         'country' => 'SearchEnumMultiSelectField',
         'county' => 'SearchStringField',
@@ -127,5 +127,5 @@ class TaxGroupSearchBasic extends SearchRecordBasic
         'unitPrice1' => 'SearchDoubleField',
         'unitPrice2' => 'SearchDoubleField',
         'zip' => 'SearchStringField',
-    );
+    ];
 }

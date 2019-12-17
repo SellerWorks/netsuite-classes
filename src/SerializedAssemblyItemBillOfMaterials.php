@@ -40,12 +40,12 @@ class SerializedAssemblyItemBillOfMaterials
      */
     public $memo;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'billOfMaterials' => 'RecordRef',
         'currentRevision' => 'string',
         'masterDefault' => 'boolean',
         'defaultForLocationList' => 'RecordRefList',
         'inactive' => 'string',
         'memo' => 'string',
-    );
+    ];
 }

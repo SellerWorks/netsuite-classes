@@ -488,6 +488,14 @@ class ServiceResaleItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var ServiceResaleItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -500,7 +508,7 @@ class ServiceResaleItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'purchaseDescription' => 'string',
@@ -619,8 +627,10 @@ class ServiceResaleItem extends Record
         'translationsList' => 'TranslationList',
         'vendor' => 'RecordRef',
         'presentationItemList' => 'PresentationItemList',
+        'hierarchyVersionsList' => 'ServiceResaleItemHierarchyVersionsList',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

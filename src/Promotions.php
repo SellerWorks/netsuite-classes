@@ -24,8 +24,8 @@ class Promotions
      */
     public $couponCode;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'promoCode' => 'RecordRef',
         'couponCode' => 'RecordRef',
-    );
+    ];
 }

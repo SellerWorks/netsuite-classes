@@ -28,9 +28,9 @@ class CustomRecordTypeForms
      */
     public $formPref;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'formEdit' => 'string',
         'formName' => 'string',
         'formPref' => 'boolean',
-    );
+    ];
 }

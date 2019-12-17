@@ -82,6 +82,10 @@ class LocationSearchBasic extends SearchRecordBasic
     /**
      * @var SearchBooleanField
      */
+    public $isIncludeInCt;
+    /**
+     * @var SearchBooleanField
+     */
     public $isMonday;
     /**
      * @var SearchBooleanField
@@ -188,7 +192,7 @@ class LocationSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchStringField',
         'allowStorePickup' => 'SearchBooleanField',
         'autoAssignmentRegionSetting' => 'SearchEnumMultiSelectField',
@@ -205,6 +209,7 @@ class LocationSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'isFriday' => 'SearchBooleanField',
         'isInactive' => 'SearchBooleanField',
+        'isIncludeInCt' => 'SearchBooleanField',
         'isMonday' => 'SearchBooleanField',
         'isOffice' => 'SearchBooleanField',
         'isSaturday' => 'SearchBooleanField',
@@ -232,5 +237,5 @@ class LocationSearchBasic extends SearchRecordBasic
         'usesBins' => 'SearchBooleanField',
         'zip' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

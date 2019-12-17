@@ -24,8 +24,8 @@ class TaxTypeNexusesTaxList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'nexusesTax' => 'TaxTypeNexusesTax[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

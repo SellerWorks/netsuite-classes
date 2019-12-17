@@ -76,7 +76,7 @@ class ManufacturingRouting extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'billOfMaterials' => 'RecordRef',
         'subsidiary' => 'RecordRef',
@@ -92,5 +92,5 @@ class ManufacturingRouting extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -60,7 +60,7 @@ class CustomList extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'owner' => 'RecordRef',
         'isOrdered' => 'boolean',
@@ -72,5 +72,5 @@ class CustomList extends Record
         'customValueList' => 'CustomListCustomValueList',
         'translationsList' => 'CustomListTranslationsList',
         'internalId' => 'string',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class CurrencyRate_core
      */
     public $effectiveDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseCurrency' => 'RecordRef',
         'fromCurrency' => 'RecordRef',
         'exchangeRate' => 'float',
         'effectiveDate' => 'dateTime',
-    );
+    ];
 }

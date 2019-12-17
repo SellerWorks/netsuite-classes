@@ -24,8 +24,8 @@ class CustomFieldType extends Record
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'fieldType' => 'CustomizationFieldType',
         'scriptId' => 'string',
-    );
+    ];
 }

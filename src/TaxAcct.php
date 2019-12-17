@@ -48,7 +48,7 @@ class TaxAcct extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'description' => 'string',
         'nexus' => 'RecordRef',
@@ -57,5 +57,5 @@ class TaxAcct extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

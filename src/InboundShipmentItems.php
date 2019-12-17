@@ -92,7 +92,7 @@ class InboundShipmentItems
      */
     public $incoterm;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'purchaseOrder' => 'RecordRef',
         'shipmentItem' => 'RecordRef',
@@ -112,5 +112,5 @@ class InboundShipmentItems
         'shipmentItemAmount' => 'float',
         'poCurrency' => 'RecordRef',
         'incoterm' => 'RecordRef',
-    );
+    ];
 }

@@ -28,9 +28,9 @@ class RevRecTemplateRecurrence
      */
     public $recamount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'incomeaccount' => 'RecordRef',
         'periodOffset' => 'integer',
         'recamount' => 'string',
-    );
+    ];
 }

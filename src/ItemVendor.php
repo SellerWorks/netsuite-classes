@@ -44,11 +44,11 @@ class ItemVendor
      */
     public $schedule;
     /**
-     * @var string
+     * @var RecordRef
      */
     public $subsidiary;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'vendor' => 'RecordRef',
         'vendorCode' => 'string',
         'vendorCurrencyName' => 'string',
@@ -56,6 +56,6 @@ class ItemVendor
         'purchasePrice' => 'float',
         'preferredVendor' => 'boolean',
         'schedule' => 'RecordRef',
-        'subsidiary' => 'string',
-    );
+        'subsidiary' => 'RecordRef',
+    ];
 }

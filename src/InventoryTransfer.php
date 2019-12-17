@@ -76,7 +76,7 @@ class InventoryTransfer extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'tranDate' => 'dateTime',
@@ -92,5 +92,5 @@ class InventoryTransfer extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

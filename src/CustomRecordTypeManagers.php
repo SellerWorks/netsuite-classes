@@ -20,7 +20,7 @@ class CustomRecordTypeManagers
      */
     public $managerEmp;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'managerEmp' => 'RecordRef',
-    );
+    ];
 }

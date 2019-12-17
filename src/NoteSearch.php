@@ -100,7 +100,7 @@ class NoteSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'NoteSearchBasic',
         'authorJoin' => 'EmployeeSearchBasic',
         'callJoin' => 'PhoneCallSearchBasic',
@@ -122,5 +122,5 @@ class NoteSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

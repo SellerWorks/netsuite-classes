@@ -20,7 +20,7 @@ class GetItemAvailabilityResponse
      */
     public $getItemAvailabilityResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getItemAvailabilityResult' => 'GetItemAvailabilityResult',
-    );
+    ];
 }

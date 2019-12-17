@@ -20,7 +20,7 @@ class SearchColumnField
      */
     public $customLabel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customLabel' => 'string',
-    );
+    ];
 }

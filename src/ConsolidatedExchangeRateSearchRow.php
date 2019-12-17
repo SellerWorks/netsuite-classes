@@ -36,11 +36,11 @@ class ConsolidatedExchangeRateSearchRow extends SearchRow
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ConsolidatedExchangeRateSearchRowBasic',
         'fromSubsidiaryJoin' => 'SubsidiarySearchRowBasic',
         'periodJoin' => 'AccountingPeriodSearchRowBasic',
         'toSubsidiaryJoin' => 'SubsidiarySearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
-    );
+    ];
 }

@@ -184,7 +184,7 @@ class Issue extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'issueNumber' => 'string',
         'createdDate' => 'dateTime',
@@ -227,5 +227,5 @@ class Issue extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -196,7 +196,7 @@ class LotNumberedInventoryItemLocations
      */
     public $rescheduleOutDays;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'location' => 'string',
         'quantityOnHand' => 'float',
         'onHandValueMli' => 'float',
@@ -242,5 +242,5 @@ class LotNumberedInventoryItemLocations
         'supplyTimeFence' => 'integer',
         'rescheduleInDays' => 'integer',
         'rescheduleOutDays' => 'integer',
-    );
+    ];
 }

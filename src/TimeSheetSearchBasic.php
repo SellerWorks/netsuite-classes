@@ -56,7 +56,7 @@ class TimeSheetSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'approvalStatus' => 'SearchMultiSelectField',
         'employee' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
@@ -67,5 +67,5 @@ class TimeSheetSearchBasic extends SearchRecordBasic
         'timeSheetDate' => 'SearchDateField',
         'totalHours' => 'SearchDoubleField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

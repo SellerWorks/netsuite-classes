@@ -152,7 +152,7 @@ class ProjectTask extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'eventId' => 'RecordRef',
         'percentTimeComplete' => 'float',
@@ -187,5 +187,5 @@ class ProjectTask extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

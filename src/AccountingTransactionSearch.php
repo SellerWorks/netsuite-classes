@@ -32,10 +32,10 @@ class AccountingTransactionSearch extends SearchRecord
      */
     public $transactionJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'AccountingTransactionSearchBasic',
         'accountJoin' => 'AccountSearchBasic',
         'revRecScheduleJoin' => 'RevRecScheduleSearchBasic',
         'transactionJoin' => 'TransactionSearchBasic',
-    );
+    ];
 }

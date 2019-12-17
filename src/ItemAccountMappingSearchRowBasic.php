@@ -72,7 +72,7 @@ class ItemAccountMappingSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingBook' => 'SearchColumnSelectField[]',
         'class' => 'SearchColumnSelectField[]',
         'customDimension' => 'SearchColumnSelectCustomField[]',
@@ -87,5 +87,5 @@ class ItemAccountMappingSearchRowBasic extends SearchRowBasic
         'sourceAccount' => 'SearchColumnSelectField[]',
         'subsidiary' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

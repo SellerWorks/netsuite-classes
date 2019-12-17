@@ -108,7 +108,7 @@ class SiteCategory extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'website' => 'RecordRef',
         'itemId' => 'string',
         'parentCategory' => 'RecordRef',
@@ -132,5 +132,5 @@ class SiteCategory extends Record
         'translationsList' => 'SiteCategoryTranslationList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

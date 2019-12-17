@@ -52,7 +52,7 @@ class JobCreditCards
      */
     public $validFrom;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'ccNumber' => 'string',
         'ccExpireDate' => 'dateTime',
@@ -62,5 +62,5 @@ class JobCreditCards
         'ccDefault' => 'boolean',
         'debitCardIssueNo' => 'string',
         'validFrom' => 'dateTime',
-    );
+    ];
 }

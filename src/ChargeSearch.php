@@ -72,7 +72,7 @@ class ChargeSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ChargeSearchBasic',
         'billingAccountJoin' => 'BillingAccountSearchBasic',
         'billingScheduleJoin' => 'BillingScheduleSearchBasic',
@@ -87,5 +87,5 @@ class ChargeSearch extends SearchRecord
         'usageJoin' => 'UsageSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

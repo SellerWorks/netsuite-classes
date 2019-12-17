@@ -24,8 +24,8 @@ class EmployeeEarningList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'employeeEarning' => 'EmployeeEarning[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

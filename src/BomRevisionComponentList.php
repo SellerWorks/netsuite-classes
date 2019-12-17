@@ -24,8 +24,8 @@ class BomRevisionComponentList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'bomRevisionComponent' => 'BomRevisionComponent[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

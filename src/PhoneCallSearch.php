@@ -68,7 +68,7 @@ class PhoneCallSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'PhoneCallSearchBasic',
         'caseJoin' => 'SupportCaseSearchBasic',
         'companyCustomerJoin' => 'CustomerSearchBasic',
@@ -82,5 +82,5 @@ class PhoneCallSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

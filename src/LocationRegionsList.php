@@ -24,8 +24,8 @@ class LocationRegionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'locationRegions' => 'LocationRegions[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

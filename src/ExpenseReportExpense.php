@@ -116,11 +116,15 @@ class ExpenseReportExpense
      */
     public $refNumber;
     /**
+     * @var string
+     */
+    public $taxDetailsReference;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'line' => 'integer',
         'expenseDate' => 'dateTime',
         'category' => 'RecordRef',
@@ -146,6 +150,7 @@ class ExpenseReportExpense
         'corporateCreditCard' => 'boolean',
         'receipt' => 'boolean',
         'refNumber' => 'integer',
+        'taxDetailsReference' => 'string',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

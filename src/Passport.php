@@ -32,10 +32,10 @@ class Passport
      */
     public $role;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'email' => 'string',
         'password' => 'string',
         'account' => 'string',
         'role' => 'RecordRef',
-    );
+    ];
 }

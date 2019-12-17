@@ -868,6 +868,14 @@ class SerializedInventoryItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var int
+     */
+    public $futureHorizon;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -880,7 +888,7 @@ class SerializedInventoryItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -1094,8 +1102,10 @@ class SerializedInventoryItem extends Record
         'locationsList' => 'SerializedInventoryItemLocationsList',
         'translationsList' => 'TranslationList',
         'presentationItemList' => 'PresentationItemList',
+        'futureHorizon' => 'integer',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

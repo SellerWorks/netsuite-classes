@@ -36,11 +36,11 @@ class CurrencyRateSearchRowBasic extends SearchRowBasic
      */
     public $transactionCurrency;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseCurrency' => 'SearchColumnSelectField[]',
         'effectiveDate' => 'SearchColumnDateField[]',
         'exchangeRate' => 'SearchColumnDoubleField[]',
         'internalId' => 'SearchColumnSelectField[]',
         'transactionCurrency' => 'SearchColumnSelectField[]',
-    );
+    ];
 }

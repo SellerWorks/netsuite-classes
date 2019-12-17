@@ -24,8 +24,8 @@ class CustomerCurrencyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'CustomerCurrency[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

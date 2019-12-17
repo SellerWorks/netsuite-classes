@@ -28,9 +28,9 @@ class PartnerPromoCode
      */
     public $endDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'promoCode' => 'RecordRef',
         'discount' => 'string',
         'endDate' => 'dateTime',
-    );
+    ];
 }

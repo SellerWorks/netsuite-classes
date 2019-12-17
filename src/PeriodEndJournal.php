@@ -104,7 +104,7 @@ class PeriodEndJournal extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'transactionNumber' => 'string',
@@ -127,5 +127,5 @@ class PeriodEndJournal extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

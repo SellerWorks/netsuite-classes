@@ -76,7 +76,7 @@ class BillingScheduleSearchRowBasic extends SearchRowBasic
      */
     public $type;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'applyToSubtotal' => 'SearchColumnBooleanField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'frequency' => 'SearchColumnEnumSelectField[]',
@@ -92,5 +92,5 @@ class BillingScheduleSearchRowBasic extends SearchRowBasic
         'recurrenceTerms' => 'SearchColumnStringField[]',
         'repeatEvery' => 'SearchColumnLongField[]',
         'type' => 'SearchColumnEnumSelectField[]',
-    );
+    ];
 }

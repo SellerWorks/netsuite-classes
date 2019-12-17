@@ -80,7 +80,7 @@ class MessageSearch extends SearchRecord
      */
     public $vendorJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'MessageSearchBasic',
         'attachmentsJoin' => 'FileSearchBasic',
         'authorJoin' => 'EntitySearchBasic',
@@ -97,5 +97,5 @@ class MessageSearch extends SearchRecord
         'transactionJoin' => 'TransactionSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
-    );
+    ];
 }

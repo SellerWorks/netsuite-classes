@@ -220,7 +220,7 @@ class ContactSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
         'addressLabel' => 'SearchStringField',
@@ -272,5 +272,5 @@ class ContactSearchBasic extends SearchRecordBasic
         'type' => 'SearchEnumMultiSelectField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

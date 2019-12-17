@@ -28,9 +28,9 @@ class ChangePassword
      */
     public $newPassword2;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currentPassword' => 'string',
         'newPassword' => 'string',
         'newPassword2' => 'string',
-    );
+    ];
 }

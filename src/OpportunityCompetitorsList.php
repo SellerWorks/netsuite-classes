@@ -24,8 +24,8 @@ class OpportunityCompetitorsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'competitors' => 'OpportunityCompetitors[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

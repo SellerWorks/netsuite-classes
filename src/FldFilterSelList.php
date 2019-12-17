@@ -20,7 +20,7 @@ class FldFilterSelList
      */
     public $fldFilterSel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'fldFilterSel' => 'RecordRef[]',
-    );
+    ];
 }

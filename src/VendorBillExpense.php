@@ -116,7 +116,7 @@ class VendorBillExpense
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'orderDoc' => 'integer',
         'orderLine' => 'integer',
         'line' => 'integer',
@@ -142,5 +142,5 @@ class VendorBillExpense
         'amortizationEndDate' => 'dateTime',
         'amortizationResidual' => 'string',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

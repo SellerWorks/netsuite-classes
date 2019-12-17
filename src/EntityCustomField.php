@@ -228,7 +228,7 @@ class EntityCustomField extends CustomFieldType
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'label' => 'string',
         'owner' => 'RecordRef',
         'description' => 'string',
@@ -282,5 +282,5 @@ class EntityCustomField extends CustomFieldType
         'subAccessList' => 'CustomFieldSubAccessList',
         'translationsList' => 'CustomFieldTranslationsList',
         'internalId' => 'string',
-    );
+    ];
 }

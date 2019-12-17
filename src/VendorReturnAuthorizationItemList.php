@@ -24,8 +24,8 @@ class VendorReturnAuthorizationItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'VendorReturnAuthorizationItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

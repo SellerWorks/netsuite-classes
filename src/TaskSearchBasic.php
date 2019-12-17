@@ -124,7 +124,7 @@ class TaskSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'actualTime' => 'SearchDoubleField',
         'assigned' => 'SearchMultiSelectField',
         'company' => 'SearchMultiSelectField',
@@ -152,5 +152,5 @@ class TaskSearchBasic extends SearchRecordBasic
         'timeRemaining' => 'SearchDoubleField',
         'title' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

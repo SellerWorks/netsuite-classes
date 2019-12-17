@@ -28,9 +28,9 @@ class IssueVersion
      */
     public $build;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'primary' => 'boolean',
         'version' => 'RecordRef',
         'build' => 'RecordRef',
-    );
+    ];
 }

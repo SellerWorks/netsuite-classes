@@ -108,7 +108,7 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic
      */
     public $workCalendar;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'actualWork' => 'SearchDoubleField',
         'cost' => 'SearchDoubleField',
         'costBase' => 'SearchDoubleField',
@@ -132,5 +132,5 @@ class ProjectTaskAssignmentSearchBasic extends SearchRecordBasic
         'unitPriceBase' => 'SearchDoubleField',
         'units' => 'SearchDoubleField',
         'workCalendar' => 'SearchMultiSelectField',
-    );
+    ];
 }

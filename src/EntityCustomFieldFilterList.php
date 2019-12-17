@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityCustomFieldFilterList.
+ * EntityCustomFieldFilterList
  */
 class EntityCustomFieldFilterList
 {
     /**
+     * @access public
      * @var EntityCustomFieldFilter[]
      */
     public $filter;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'filter' => 'EntityCustomFieldFilter[]',
-        'replaceAll' => 'boolean',
+        "filter" => "EntityCustomFieldFilter[]",
+        "replaceAll" => "boolean",
     );
 }

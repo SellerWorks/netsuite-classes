@@ -136,6 +136,10 @@ class TransactionSearchRow extends SearchRow
      */
     public $headerBillingAccountJoin;
     /**
+     * @var InstallmentSearchRowBasic
+     */
+    public $installmentJoin;
+    /**
      * @var InventoryDetailSearchRowBasic
      */
     public $inventoryDetailJoin;
@@ -292,7 +296,7 @@ class TransactionSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'TransactionSearchRowBasic',
         'accountJoin' => 'AccountSearchRowBasic',
         'accountingPeriodJoin' => 'AccountingPeriodSearchRowBasic',
@@ -323,6 +327,7 @@ class TransactionSearchRow extends SearchRow
         'fromLocationJoin' => 'LocationSearchRowBasic',
         'fulfillingTransactionJoin' => 'TransactionSearchRowBasic',
         'headerBillingAccountJoin' => 'BillingAccountSearchRowBasic',
+        'installmentJoin' => 'InstallmentSearchRowBasic',
         'inventoryDetailJoin' => 'InventoryDetailSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'itemNumberJoin' => 'InventoryNumberSearchRowBasic',
@@ -362,5 +367,5 @@ class TransactionSearchRow extends SearchRow
         'vendorJoin' => 'VendorSearchRowBasic',
         'vendorLineJoin' => 'VendorSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

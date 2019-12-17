@@ -24,8 +24,8 @@ class EstimateItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'EstimateItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

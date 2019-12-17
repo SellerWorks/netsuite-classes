@@ -72,7 +72,7 @@ class CustomRecordSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'recType' => 'RecordRef',
         'altName' => 'SearchColumnStringField[]',
         'availableOffline' => 'SearchColumnBooleanField[]',
@@ -87,5 +87,5 @@ class CustomRecordSearchRowBasic extends SearchRowBasic
         'owner' => 'SearchColumnSelectField[]',
         'parent' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

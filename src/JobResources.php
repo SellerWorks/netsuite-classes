@@ -28,9 +28,9 @@ class JobResources
      */
     public $role;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'jobResource' => 'RecordRef',
         'email' => 'string',
         'role' => 'RecordRef',
-    );
+    ];
 }

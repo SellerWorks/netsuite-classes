@@ -44,7 +44,7 @@ class ManufacturingRoutingSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ManufacturingRoutingSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'locationJoin' => 'LocationSearchRowBasic',
@@ -52,5 +52,5 @@ class ManufacturingRoutingSearchRow extends SearchRow
         'manufacturingWorkCenterJoin' => 'EntityGroupSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

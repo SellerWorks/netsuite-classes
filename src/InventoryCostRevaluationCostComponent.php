@@ -36,11 +36,11 @@ class InventoryCostRevaluationCostComponent
      */
     public $costCategory;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'cost' => 'float',
         'componentItem' => 'RecordRef',
         'quantity' => 'float',
         'units' => 'RecordRef',
         'costCategory' => 'RecordRef',
-    );
+    ];
 }

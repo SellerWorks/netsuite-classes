@@ -100,7 +100,7 @@ class TaxGroup extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'itemId' => 'string',
         'description' => 'string',
         'state' => 'string',
@@ -122,5 +122,5 @@ class TaxGroup extends Record
         'taxItemList' => 'TaxGroupTaxItemList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -76,7 +76,7 @@ class CustomRecordSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'recType' => 'RecordRef',
         'availableOffline' => 'SearchBooleanField',
         'created' => 'SearchDateField',
@@ -92,5 +92,5 @@ class CustomRecordSearchBasic extends SearchRecordBasic
         'owner' => 'SearchMultiSelectField',
         'parent' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

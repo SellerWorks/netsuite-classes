@@ -116,7 +116,7 @@ class BillingAccount extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'idNumber' => 'string',
         'customerDefault' => 'boolean',
@@ -142,5 +142,5 @@ class BillingAccount extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

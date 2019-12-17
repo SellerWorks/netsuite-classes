@@ -28,9 +28,9 @@ class CustomFieldRoleAccess
      */
     public $searchLevel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'role' => 'RecordRef',
         'accessLevel' => 'CustomizationAccessLevel',
         'searchLevel' => 'CustomizationSearchLevel',
-    );
+    ];
 }

@@ -116,7 +116,7 @@ class ItemFulfillmentPackageFedEx
      */
     public $authorizationNumberFedEx;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'packageWeightFedEx' => 'float',
         'dryIceWeightFedEx' => 'float',
         'packageTrackingNumberFedEx' => 'string',
@@ -142,5 +142,5 @@ class ItemFulfillmentPackageFedEx
         'signatureOptionsFedEx' => 'ItemFulfillmentPackageFedExSignatureOptionsFedEx',
         'signatureReleaseFedEx' => 'string',
         'authorizationNumberFedEx' => 'string',
-    );
+    ];
 }

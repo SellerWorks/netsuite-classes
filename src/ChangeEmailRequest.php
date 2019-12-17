@@ -20,7 +20,7 @@ class ChangeEmailRequest
      */
     public $changeEmail;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'changeEmail' => 'ChangeEmail',
-    );
+    ];
 }

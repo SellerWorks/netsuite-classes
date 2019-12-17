@@ -24,8 +24,8 @@ class InterCompanyJournalEntryAccountingBookDetailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'interCompanyJournalEntryAccountingBookDetail' => 'InterCompanyJournalEntryAccountingBookDetail[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

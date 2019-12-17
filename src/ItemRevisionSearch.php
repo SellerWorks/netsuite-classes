@@ -28,9 +28,9 @@ class ItemRevisionSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ItemRevisionSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

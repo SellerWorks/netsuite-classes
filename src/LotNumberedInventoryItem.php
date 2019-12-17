@@ -872,6 +872,14 @@ class LotNumberedInventoryItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var int
+     */
+    public $futureHorizon;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -884,7 +892,7 @@ class LotNumberedInventoryItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -1099,8 +1107,10 @@ class LotNumberedInventoryItem extends Record
         'locationsList' => 'LotNumberedInventoryItemLocationsList',
         'translationsList' => 'TranslationList',
         'presentationItemList' => 'PresentationItemList',
+        'futureHorizon' => 'integer',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class JobMilestonesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'milestones' => 'JobMilestones[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

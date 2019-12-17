@@ -28,9 +28,9 @@ class AccountingPeriodSearch extends SearchRecord
      */
     public $userNotesJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'AccountingPeriodSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
-    );
+    ];
 }

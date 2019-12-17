@@ -48,7 +48,7 @@ class TaxDetailSearchBasic extends SearchRecordBasic
      */
     public $tranId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchMultiSelectField',
         'lineNumber' => 'SearchLongField',
         'taxAmount' => 'SearchDoubleField',
@@ -57,5 +57,5 @@ class TaxDetailSearchBasic extends SearchRecordBasic
         'taxRate' => 'SearchDoubleField',
         'taxType' => 'SearchMultiSelectField',
         'tranId' => 'SearchMultiSelectField',
-    );
+    ];
 }

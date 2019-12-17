@@ -24,8 +24,8 @@ class EmployeeCompanyContributionList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'employeeCompanyContribution' => 'EmployeeCompanyContribution[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -20,7 +20,7 @@ class AddResponse
      */
     public $writeResponse;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'writeResponse' => 'WriteResponse',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class Price
      */
     public $quantity;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'value' => 'float',
         'quantity' => 'float',
-    );
+    ];
 }

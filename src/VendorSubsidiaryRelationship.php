@@ -56,7 +56,7 @@ class VendorSubsidiaryRelationship extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseCurrency' => 'RecordRef',
         'creditLimit' => 'float',
         'entity' => 'RecordRef',
@@ -67,5 +67,5 @@ class VendorSubsidiaryRelationship extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class BudgetCategory extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'budgetType' => 'boolean',
         'isInactive' => 'boolean',
         'internalId' => 'string',
-    );
+    ];
 }

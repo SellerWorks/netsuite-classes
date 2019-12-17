@@ -84,7 +84,7 @@ class FairValuePriceSearchRowBasic extends SearchRowBasic
      */
     public $unitsType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'SearchColumnSelectField[]',
         'endDate' => 'SearchColumnDateField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -102,5 +102,5 @@ class FairValuePriceSearchRowBasic extends SearchRowBasic
         'startDate' => 'SearchColumnDateField[]',
         'units' => 'SearchColumnSelectField[]',
         'unitsType' => 'SearchColumnSelectField[]',
-    );
+    ];
 }

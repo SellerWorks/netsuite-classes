@@ -40,12 +40,12 @@ class CostCategory extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'account' => 'RecordRef',
         'itemCostType' => 'CostCategoryItemCostType',
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

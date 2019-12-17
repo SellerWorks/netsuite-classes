@@ -24,8 +24,8 @@ class PricingGroupSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'PricingGroupSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

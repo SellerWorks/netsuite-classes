@@ -24,8 +24,8 @@ class TaxDetailsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'taxDetails' => 'TaxDetails[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

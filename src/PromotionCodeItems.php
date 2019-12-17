@@ -20,7 +20,7 @@ class PromotionCodeItems
      */
     public $item;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
-    );
+    ];
 }

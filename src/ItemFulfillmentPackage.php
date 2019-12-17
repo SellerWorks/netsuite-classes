@@ -28,9 +28,9 @@ class ItemFulfillmentPackage
      */
     public $packageTrackingNumber;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'packageWeight' => 'float',
         'packageDescr' => 'string',
         'packageTrackingNumber' => 'string',
-    );
+    ];
 }

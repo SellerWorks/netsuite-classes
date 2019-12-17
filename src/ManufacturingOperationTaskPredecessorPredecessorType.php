@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingOperationTaskPredecessorPredecessorType.
+ * ManufacturingOperationTaskPredecessorPredecessorType
  */
 class ManufacturingOperationTaskPredecessorPredecessorType
 {
@@ -20,17 +20,17 @@ class ManufacturingOperationTaskPredecessorPredecessorType
     /**
      * @var string
      */
-    const _finishToFinish = '_finishToFinish';
+    const _finishToFinish = "_finishToFinish";
     /**
      * @var string
      */
-    const _finishToStart = '_finishToStart';
+    const _finishToStart = "_finishToStart";
     /**
      * @var string
      */
-    const _startToFinish = '_startToFinish';
+    const _startToFinish = "_startToFinish";
     /**
      * @var string
      */
-    const _startToStart = '_startToStart';
+    const _startToStart = "_startToStart";
 }

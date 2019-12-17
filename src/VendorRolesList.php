@@ -24,8 +24,8 @@ class VendorRolesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'roles' => 'VendorRoles[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

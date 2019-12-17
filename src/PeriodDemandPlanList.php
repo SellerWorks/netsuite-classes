@@ -20,7 +20,7 @@ class PeriodDemandPlanList
      */
     public $periodDemandPlan;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'periodDemandPlan' => 'PeriodDemandPlan[]',
-    );
+    ];
 }

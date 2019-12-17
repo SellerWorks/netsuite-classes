@@ -24,8 +24,8 @@ class ItemVendorList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'itemVendor' => 'ItemVendor[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

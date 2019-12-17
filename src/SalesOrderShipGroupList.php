@@ -24,8 +24,8 @@ class SalesOrderShipGroupList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'shipGroup' => 'TransactionShipGroup[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

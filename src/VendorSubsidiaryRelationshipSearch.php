@@ -32,10 +32,10 @@ class VendorSubsidiaryRelationshipSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'VendorSubsidiaryRelationshipSearchBasic',
         'subsidiaryJoin' => 'SubsidiarySearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

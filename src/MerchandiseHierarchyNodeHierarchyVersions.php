@@ -40,12 +40,12 @@ class MerchandiseHierarchyNodeHierarchyVersions
      */
     public $parentNode;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'isIncluded' => 'boolean',
         'hierarchyVersion' => 'RecordRef',
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
         'hierarchyLevel' => 'RecordRef',
         'parentNode' => 'RecordRef',
-    );
+    ];
 }

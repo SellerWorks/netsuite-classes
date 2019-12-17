@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemOutOfStockBehavior.
+ * ItemOutOfStockBehavior
  */
 class ItemOutOfStockBehavior
 {
@@ -20,21 +20,21 @@ class ItemOutOfStockBehavior
     /**
      * @var string
      */
-    const _allowBackOrdersButDisplayOutOfStockMessage = '_allowBackOrdersButDisplayOutOfStockMessage';
+    const _allowBackOrdersButDisplayOutOfStockMessage = "_allowBackOrdersButDisplayOutOfStockMessage";
     /**
      * @var string
      */
-    const _allowBackOrdersWithNoOutOfStockMessage = '_allowBackOrdersWithNoOutOfStockMessage';
+    const _allowBackOrdersWithNoOutOfStockMessage = "_allowBackOrdersWithNoOutOfStockMessage";
     /**
      * @var string
      */
-    const _default = '_default';
+    const _default = "_default";
     /**
      * @var string
      */
-    const _disallowBackOrdersButDisplayOutOfStockMessage = '_disallowBackOrdersButDisplayOutOfStockMessage';
+    const _disallowBackOrdersButDisplayOutOfStockMessage = "_disallowBackOrdersButDisplayOutOfStockMessage";
     /**
      * @var string
      */
-    const _removeItemWhenOutOfStock = '_removeItemWhenOutOfStock';
+    const _removeItemWhenOutOfStock = "_removeItemWhenOutOfStock";
 }

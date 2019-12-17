@@ -108,7 +108,7 @@ class TimeItem
      */
     public $isExempt;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'employee' => 'RecordRef',
         'timeType' => 'TimeItemTimeType',
@@ -132,5 +132,5 @@ class TimeItem
         'isUtilized' => 'boolean',
         'isProductive' => 'boolean',
         'isExempt' => 'boolean',
-    );
+    ];
 }

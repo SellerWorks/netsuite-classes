@@ -64,7 +64,7 @@ class EmployeeDirectDeposit
      */
     public $inactive;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'id' => 'integer',
         'netAccount' => 'boolean',
         'savingsAccount' => 'boolean',
@@ -77,5 +77,5 @@ class EmployeeDirectDeposit
         'bankAccountNumber' => 'string',
         'amount' => 'float',
         'inactive' => 'boolean',
-    );
+    ];
 }

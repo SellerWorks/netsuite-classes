@@ -20,7 +20,7 @@ class CustomizationType
      */
     public $getCustomizationType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getCustomizationType' => 'GetCustomizationType',
-    );
+    ];
 }

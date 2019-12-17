@@ -24,8 +24,8 @@ class JobPercentCompleteOverrideList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'jobPercentCompleteOverride' => 'JobPercentCompleteOverride[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

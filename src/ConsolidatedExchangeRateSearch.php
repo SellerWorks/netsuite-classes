@@ -36,11 +36,11 @@ class ConsolidatedExchangeRateSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ConsolidatedExchangeRateSearchBasic',
         'fromSubsidiaryJoin' => 'SubsidiarySearchBasic',
         'periodJoin' => 'AccountingPeriodSearchBasic',
         'toSubsidiaryJoin' => 'SubsidiarySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

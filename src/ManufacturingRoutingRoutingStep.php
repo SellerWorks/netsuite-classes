@@ -28,11 +28,11 @@ class ManufacturingRoutingRoutingStep
      */
     public $manufacturingWorkCenter;
     /**
-     * @var int
+     * @var float
      */
     public $machineResources;
     /**
-     * @var int
+     * @var float
      */
     public $laborResources;
     /**
@@ -60,17 +60,17 @@ class ManufacturingRoutingRoutingStep
      */
     public $lagUnits;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'operationSequence' => 'integer',
         'operationName' => 'string',
         'manufacturingWorkCenter' => 'RecordRef',
-        'machineResources' => 'integer',
-        'laborResources' => 'integer',
+        'machineResources' => 'float',
+        'laborResources' => 'float',
         'manufacturingCostTemplate' => 'RecordRef',
         'setupTime' => 'float',
         'runRate' => 'float',
         'lagType' => 'ManufacturingLagType',
         'lagAmount' => 'integer',
         'lagUnits' => 'string',
-    );
+    ];
 }

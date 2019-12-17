@@ -92,7 +92,7 @@ class AccountSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountingContext' => 'SearchColumnStringField[]',
         'balance' => 'SearchColumnDoubleField[]',
         'cashFlowRateType' => 'SearchColumnEnumSelectField[]',
@@ -112,5 +112,5 @@ class AccountSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'type' => 'SearchColumnEnumSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

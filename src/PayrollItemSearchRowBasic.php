@@ -56,7 +56,7 @@ class PayrollItemSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expenseAccount' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
@@ -67,5 +67,5 @@ class PayrollItemSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnStringField[]',
         'vendor' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

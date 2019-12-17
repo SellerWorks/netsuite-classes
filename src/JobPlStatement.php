@@ -36,11 +36,11 @@ class JobPlStatement
      */
     public $margin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'costCategory' => 'string',
         'revenue' => 'float',
         'cost' => 'float',
         'profit' => 'float',
         'margin' => 'float',
-    );
+    ];
 }

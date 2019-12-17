@@ -84,7 +84,7 @@ class VendorSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'VendorSearchBasic',
         'accountJoin' => 'AccountSearchBasic',
         'campaignResponseJoin' => 'CampaignSearchBasic',
@@ -102,5 +102,5 @@ class VendorSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

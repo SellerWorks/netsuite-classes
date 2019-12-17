@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignCampaignEventType.
+ * CampaignCampaignEventType
  */
 class CampaignCampaignEventType
 {
@@ -20,25 +20,25 @@ class CampaignCampaignEventType
     /**
      * @var string
      */
-    const _default = '_default';
+    const _default = "_default";
     /**
      * @var string
      */
-    const _directMail = '_directMail';
+    const _directMail = "_directMail";
     /**
      * @var string
      */
-    const _email = '_email';
+    const _email = "_email";
     /**
      * @var string
      */
-    const _integration = '_integration';
+    const _integration = "_integration";
     /**
      * @var string
      */
-    const _leadNurturingEmail = '_leadNurturingEmail';
+    const _leadNurturingEmail = "_leadNurturingEmail";
     /**
      * @var string
      */
-    const _other = '_other';
+    const _other = "_other";
 }

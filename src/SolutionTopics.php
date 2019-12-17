@@ -20,7 +20,7 @@ class SolutionTopics
      */
     public $topic;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'topic' => 'RecordRef',
-    );
+    ];
 }

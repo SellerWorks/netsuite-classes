@@ -208,6 +208,14 @@ class NonInventoryPurchaseItem extends Record
      */
     public $vendor;
     /**
+     * @var NonInventoryPurchaseItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -220,7 +228,7 @@ class NonInventoryPurchaseItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'purchaseDescription' => 'string',
@@ -269,8 +277,10 @@ class NonInventoryPurchaseItem extends Record
         'salesTaxCode' => 'RecordRef',
         'translationsList' => 'TranslationList',
         'vendor' => 'RecordRef',
+        'hierarchyVersionsList' => 'NonInventoryPurchaseItemHierarchyVersionsList',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

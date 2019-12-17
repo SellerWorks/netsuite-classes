@@ -32,10 +32,10 @@ class SearchDateCustomField extends SearchCustomField
      */
     public $operator;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'predefinedSearchValue' => 'SearchDate',
         'searchValue' => 'dateTime',
         'searchValue2' => 'dateTime',
         'operator' => 'SearchDateFieldOperator',
-    );
+    ];
 }

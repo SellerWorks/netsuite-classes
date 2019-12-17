@@ -20,7 +20,7 @@ class WsRoleList
      */
     public $wsRole;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'wsRole' => 'WsRole[]',
-    );
+    ];
 }

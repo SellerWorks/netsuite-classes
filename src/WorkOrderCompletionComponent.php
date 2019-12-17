@@ -11,41 +11,47 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderCompletionComponent.
+ * WorkOrderCompletionComponent
  */
 class WorkOrderCompletionComponent
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $item;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $operationSequenceNumber;
     /**
+     * @access public
      * @var float
      */
     public $quantityPer;
     /**
+     * @access public
      * @var float
      */
     public $quantity;
     /**
+     * @access public
      * @var InventoryDetail
      */
     public $componentInventoryDetail;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $lineNumber;
 
     public static $paramtypesmap = array(
-        'item' => 'RecordRef',
-        'operationSequenceNumber' => 'integer',
-        'quantityPer' => 'float',
-        'quantity' => 'float',
-        'componentInventoryDetail' => 'InventoryDetail',
-        'lineNumber' => 'integer',
+        "item" => "RecordRef",
+        "operationSequenceNumber" => "integer",
+        "quantityPer" => "float",
+        "quantity" => "float",
+        "componentInventoryDetail" => "InventoryDetail",
+        "lineNumber" => "integer",
     );
 }

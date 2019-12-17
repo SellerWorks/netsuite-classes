@@ -11,26 +11,29 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RevRecScheduleRecurrence.
+ * RevRecScheduleRecurrence
  */
 class RevRecScheduleRecurrence
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $incomeaccount;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $periodOffset;
     /**
+     * @access public
      * @var string
      */
     public $recamount;
 
     public static $paramtypesmap = array(
-        'incomeaccount' => 'RecordRef',
-        'periodOffset' => 'integer',
-        'recamount' => 'string',
+        "incomeaccount" => "RecordRef",
+        "periodOffset" => "integer",
+        "recamount" => "string",
     );
 }

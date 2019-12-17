@@ -24,8 +24,8 @@ class CheckItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'CheckItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

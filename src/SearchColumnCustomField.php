@@ -28,9 +28,9 @@ class SearchColumnCustomField
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customLabel' => 'string',
         'internalId' => 'string',
         'scriptId' => 'string',
-    );
+    ];
 }

@@ -48,7 +48,7 @@ class HcmJob extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'title' => 'string',
         'isInactive' => 'boolean',
         'employmentCategory' => 'RecordRef',
@@ -57,5 +57,5 @@ class HcmJob extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

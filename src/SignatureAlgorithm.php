@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SignatureAlgorithm.
+ * SignatureAlgorithm
  */
 class SignatureAlgorithm
 {
@@ -20,9 +20,9 @@ class SignatureAlgorithm
     /**
      * @var string
      */
-    const HMAC_SHA256 = 'HMAC_SHA256';
+    const HMAC_SHA256 = "HMAC_SHA256";
     /**
      * @var string
      */
-    const HMAC_SHA1 = 'HMAC_SHA1';
+    const HMAC_SHA1 = "HMAC_SHA1";
 }

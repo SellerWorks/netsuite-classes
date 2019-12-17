@@ -80,7 +80,7 @@ class RevRecTemplateSearchBasic extends SearchRecordBasic
      */
     public $useForeignAmounts;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'amorMethod' => 'SearchEnumMultiSelectField',
         'amorPeriod' => 'SearchLongField',
         'amorStartOffset' => 'SearchLongField',
@@ -97,5 +97,5 @@ class RevRecTemplateSearchBasic extends SearchRecordBasic
         'periodOffset' => 'SearchLongField',
         'targetAccount' => 'SearchMultiSelectField',
         'useForeignAmounts' => 'SearchBooleanField',
-    );
+    ];
 }

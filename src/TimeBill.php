@@ -132,6 +132,10 @@ class TimeBill extends Record
      */
     public $status;
     /**
+     * @var bool
+     */
+    public $timeModified;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -144,7 +148,7 @@ class TimeBill extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'employee' => 'RecordRef',
         'tranDate' => 'dateTime',
@@ -174,8 +178,9 @@ class TimeBill extends Record
         'lastModifiedDate' => 'dateTime',
         'timeSheet' => 'RecordRef',
         'status' => 'string',
+        'timeModified' => 'boolean',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

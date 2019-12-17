@@ -20,7 +20,7 @@ class AsyncStatusResponse
      */
     public $asyncStatusResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'asyncStatusResult' => 'AsyncStatusResult',
-    );
+    ];
 }

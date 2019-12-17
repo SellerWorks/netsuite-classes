@@ -56,7 +56,7 @@ class CampaignResponse extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'entity' => 'RecordRef',
         'leadSource' => 'RecordRef',
         'campaignEvent' => 'RecordRef',
@@ -67,5 +67,5 @@ class CampaignResponse extends Record
         'responsesList' => 'CampaignResponseResponsesList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

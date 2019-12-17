@@ -24,8 +24,8 @@ class PaycheckPayTimeList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'paycheckPayTime' => 'PaycheckPayTime[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

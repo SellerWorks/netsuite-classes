@@ -20,7 +20,7 @@ class LandedCost extends Record
      */
     public $landedCostDataList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'landedCostDataList' => 'LandedCostDataList',
-    );
+    ];
 }

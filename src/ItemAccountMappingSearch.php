@@ -48,7 +48,7 @@ class ItemAccountMappingSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ItemAccountMappingSearchBasic',
         'classJoin' => 'ClassificationSearchBasic',
         'departmentJoin' => 'DepartmentSearchBasic',
@@ -57,5 +57,5 @@ class ItemAccountMappingSearch extends SearchRecord
         'sourceAccountJoin' => 'AccountSearchBasic',
         'subsidiaryJoin' => 'SubsidiarySearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

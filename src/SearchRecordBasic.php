@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchRecordBasic.
+ * SearchRecordBasic
  */
 class SearchRecordBasic extends SearchRecord
 {

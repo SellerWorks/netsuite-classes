@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemOverheadType.
+ * ItemOverheadType
  */
 class ItemOverheadType
 {
@@ -20,13 +20,13 @@ class ItemOverheadType
     /**
      * @var string
      */
-    const _amountBaseUnit = '_amountBaseUnit';
+    const _amountBaseUnit = "_amountBaseUnit";
     /**
      * @var string
      */
-    const _percentOfMaterial = '_percentOfMaterial';
+    const _percentOfMaterial = "_percentOfMaterial";
     /**
      * @var string
      */
-    const _percentOfTotal = '_percentOfTotal';
+    const _percentOfTotal = "_percentOfTotal";
 }

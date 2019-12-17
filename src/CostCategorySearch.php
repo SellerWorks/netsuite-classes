@@ -28,9 +28,9 @@ class CostCategorySearch extends SearchRecord
      */
     public $transactionJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'CostCategorySearchBasic',
         'accountJoin' => 'AccountSearchBasic',
         'transactionJoin' => 'TransactionSearchBasic',
-    );
+    ];
 }

@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseStatusStage.
+ * SupportCaseStatusStage
  */
 class SupportCaseStatusStage
 {
@@ -20,13 +20,13 @@ class SupportCaseStatusStage
     /**
      * @var string
      */
-    const _closed = '_closed';
+    const _closed = "_closed";
     /**
      * @var string
      */
-    const _escalated = '_escalated';
+    const _escalated = "_escalated";
     /**
      * @var string
      */
-    const _open = '_open';
+    const _open = "_open";
 }

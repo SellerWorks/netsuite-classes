@@ -32,10 +32,10 @@ class RevRecScheduleSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'RevRecScheduleSearch',
         'columns' => 'RevRecScheduleSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

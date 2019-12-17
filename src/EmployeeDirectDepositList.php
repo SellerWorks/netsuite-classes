@@ -24,8 +24,8 @@ class EmployeeDirectDepositList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'employeeDirectDeposit' => 'EmployeeDirectDeposit[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

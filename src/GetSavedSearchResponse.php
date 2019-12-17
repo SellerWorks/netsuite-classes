@@ -20,7 +20,7 @@ class GetSavedSearchResponse
      */
     public $getSavedSearchResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getSavedSearchResult' => 'GetSavedSearchResult',
-    );
+    ];
 }

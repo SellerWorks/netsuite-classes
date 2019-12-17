@@ -56,7 +56,7 @@ class PostingTransactionSummaryField
      */
     public $book;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'period' => 'boolean',
         'account' => 'boolean',
         'parentItem' => 'boolean',
@@ -67,5 +67,5 @@ class PostingTransactionSummaryField
         'location' => 'boolean',
         'subsidiary' => 'boolean',
         'book' => 'boolean',
-    );
+    ];
 }

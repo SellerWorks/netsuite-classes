@@ -24,8 +24,8 @@ class CustomRecordCustomFieldFilterList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'filter' => 'CustomRecordCustomFieldFilter[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class InitializeRefType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -41,6 +41,14 @@ class InitializeRefType
      * @var string
      */
     const customerDeposit = 'customerDeposit';
+    /**
+     * @var string
+     */
+    const customPurchase = 'customPurchase';
+    /**
+     * @var string
+     */
+    const customSale = 'customSale';
     /**
      * @var string
      */

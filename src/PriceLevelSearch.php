@@ -24,8 +24,8 @@ class PriceLevelSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'PriceLevelSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

@@ -32,10 +32,10 @@ class Pricing
      */
     public $priceList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'RecordRef',
         'priceLevel' => 'RecordRef',
         'discount' => 'float',
         'priceList' => 'PriceList',
-    );
+    ];
 }

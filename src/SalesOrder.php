@@ -668,7 +668,7 @@ class SalesOrder extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'customForm' => 'RecordRef',
         'entity' => 'RecordRef',
@@ -832,5 +832,5 @@ class SalesOrder extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

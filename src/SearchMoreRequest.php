@@ -20,7 +20,7 @@ class SearchMoreRequest
      */
     public $pageIndex;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'pageIndex' => 'integer',
-    );
+    ];
 }

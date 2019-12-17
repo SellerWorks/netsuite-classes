@@ -84,7 +84,7 @@ class AccountingPeriod extends Record
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'periodName' => 'string',
         'parent' => 'RecordRef',
         'startDate' => 'dateTime',
@@ -102,5 +102,5 @@ class AccountingPeriod extends Record
         'allLocked' => 'boolean',
         'allowNonGLChanges' => 'boolean',
         'internalId' => 'string',
-    );
+    ];
 }

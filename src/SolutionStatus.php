@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionStatus.
+ * SolutionStatus
  */
 class SolutionStatus
 {
@@ -20,9 +20,9 @@ class SolutionStatus
     /**
      * @var string
      */
-    const _approved = '_approved';
+    const _approved = "_approved";
     /**
      * @var string
      */
-    const _unapproved = '_unapproved';
+    const _unapproved = "_unapproved";
 }

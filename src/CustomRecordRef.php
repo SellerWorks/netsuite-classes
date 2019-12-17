@@ -32,10 +32,10 @@ class CustomRecordRef extends BaseRef
      */
     public $scriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'externalId' => 'string',
         'typeId' => 'string',
         'scriptId' => 'string',
-    );
+    ];
 }

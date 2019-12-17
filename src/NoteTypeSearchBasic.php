@@ -44,7 +44,7 @@ class NoteTypeSearchBasic extends SearchRecordBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'description' => 'SearchStringField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -52,5 +52,5 @@ class NoteTypeSearchBasic extends SearchRecordBasic
         'internalIdNumber' => 'SearchLongField',
         'isInactive' => 'SearchBooleanField',
         'name' => 'SearchStringField',
-    );
+    ];
 }

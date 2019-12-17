@@ -11,46 +11,53 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerSubsidiaryRelationship.
+ * CustomerSubsidiaryRelationship
  */
 class CustomerSubsidiaryRelationship extends Record
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $entity;
     /**
+     * @access public
      * @var RecordRef
      */
     public $subsidiary;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $isPrimarySub;
     /**
+     * @access public
      * @var RecordRef
      */
     public $primaryCurrency;
     /**
+     * @access public
      * @var CustomFieldList
      */
     public $customFieldList;
     /**
+     * @access public
      * @var string
      */
     public $internalId;
     /**
+     * @access public
      * @var string
      */
     public $externalId;
 
     public static $paramtypesmap = array(
-        'entity' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'isPrimarySub' => 'boolean',
-        'primaryCurrency' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
+        "entity" => "RecordRef",
+        "subsidiary" => "RecordRef",
+        "isPrimarySub" => "boolean",
+        "primaryCurrency" => "RecordRef",
+        "customFieldList" => "CustomFieldList",
+        "internalId" => "string",
+        "externalId" => "string",
     );
 }

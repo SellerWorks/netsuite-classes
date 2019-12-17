@@ -24,8 +24,8 @@ class SubsidiaryAccountingBookDetailList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'subsidiaryAccountingBookDetail' => 'SubsidiaryAccountingBookDetail[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

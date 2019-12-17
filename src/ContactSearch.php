@@ -132,7 +132,7 @@ class ContactSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ContactSearchBasic',
         'callJoin' => 'PhoneCallSearchBasic',
         'campaignResponseJoin' => 'CampaignSearchBasic',
@@ -162,5 +162,5 @@ class ContactSearch extends SearchRecord
         'vendorJoin' => 'VendorSearchBasic',
         'vendorPrimaryJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

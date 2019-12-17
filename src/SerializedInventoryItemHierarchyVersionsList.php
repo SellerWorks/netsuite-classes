@@ -24,8 +24,8 @@ class SerializedInventoryItemHierarchyVersionsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'serializedInventoryItemHierarchyVersions' => 'SerializedInventoryItemHierarchyVersions[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

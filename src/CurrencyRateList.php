@@ -20,7 +20,7 @@ class CurrencyRateList
      */
     public $currencyRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currencyRate' => 'CurrencyRate[]',
-    );
+    ];
 }

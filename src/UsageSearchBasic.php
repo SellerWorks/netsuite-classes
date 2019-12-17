@@ -64,7 +64,7 @@ class UsageSearchBasic extends SearchRecordBasic
      */
     public $subscriptionPlan;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customer' => 'SearchMultiSelectField',
         'date' => 'SearchDateField',
         'externalId' => 'SearchMultiSelectField',
@@ -77,5 +77,5 @@ class UsageSearchBasic extends SearchRecordBasic
         'subscription' => 'SearchMultiSelectField',
         'subscriptionLine' => 'SearchMultiSelectField',
         'subscriptionPlan' => 'SearchMultiSelectField',
-    );
+    ];
 }

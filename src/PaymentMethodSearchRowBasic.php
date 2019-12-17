@@ -44,7 +44,7 @@ class PaymentMethodSearchRowBasic extends SearchRowBasic
      */
     public $name;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'account' => 'SearchColumnSelectField[]',
         'creditCard' => 'SearchColumnBooleanField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -52,5 +52,5 @@ class PaymentMethodSearchRowBasic extends SearchRowBasic
         'isDebitCard' => 'SearchColumnBooleanField[]',
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
-    );
+    ];
 }

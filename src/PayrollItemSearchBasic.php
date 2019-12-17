@@ -60,7 +60,7 @@ class PayrollItemSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expenseAccount' => 'SearchMultiSelectField',
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
@@ -72,5 +72,5 @@ class PayrollItemSearchBasic extends SearchRecordBasic
         'subsidiary' => 'SearchMultiSelectField',
         'vendor' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

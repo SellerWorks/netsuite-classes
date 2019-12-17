@@ -36,11 +36,11 @@ class InventoryNumberLocations
      */
     public $quantityInTransit;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'location' => 'string',
         'quantityOnHand' => 'float',
         'quantityAvailable' => 'float',
         'quantityOnOrder' => 'float',
         'quantityInTransit' => 'float',
-    );
+    ];
 }

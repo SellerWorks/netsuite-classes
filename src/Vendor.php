@@ -328,6 +328,14 @@ class Vendor extends Record
      */
     public $taxRegistrationList;
     /**
+     * @var int
+     */
+    public $predictedDays;
+    /**
+     * @var float
+     */
+    public $predConfidence;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -340,7 +348,7 @@ class Vendor extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'entityId' => 'string',
         'altName' => 'string',
@@ -419,8 +427,10 @@ class Vendor extends Record
         'currencyList' => 'VendorCurrencyList',
         'rolesList' => 'VendorRolesList',
         'taxRegistrationList' => 'VendorTaxRegistrationList',
+        'predictedDays' => 'integer',
+        'predConfidence' => 'float',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

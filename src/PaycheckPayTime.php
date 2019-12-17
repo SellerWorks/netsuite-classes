@@ -56,7 +56,7 @@ class PaycheckPayTime
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'line' => 'integer',
         'payItem' => 'integer',
@@ -67,5 +67,5 @@ class PaycheckPayTime
         'count' => 'float',
         'rate' => 'float',
         'amount' => 'float',
-    );
+    ];
 }

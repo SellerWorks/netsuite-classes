@@ -24,8 +24,8 @@ class ContactAccessRolesList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'contactRoles' => 'ContactAccessRoles[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

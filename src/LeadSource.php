@@ -11,36 +11,41 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LeadSource.
+ * LeadSource
  */
 class LeadSource extends Record
 {
     /**
+     * @access public
      * @var string
      */
     public $name;
     /**
+     * @access public
      * @var string
      */
     public $description;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $isInactive;
     /**
+     * @access public
      * @var string
      */
     public $internalId;
     /**
+     * @access public
      * @var string
      */
     public $externalId;
 
     public static $paramtypesmap = array(
-        'name' => 'string',
-        'description' => 'string',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
+        "name" => "string",
+        "description" => "string",
+        "isInactive" => "boolean",
+        "internalId" => "string",
+        "externalId" => "string",
     );
 }

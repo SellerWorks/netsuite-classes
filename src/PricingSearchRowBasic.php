@@ -56,7 +56,7 @@ class PricingSearchRowBasic extends SearchRowBasic
      */
     public $unitPrice;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'SearchColumnSelectField[]',
         'customer' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
@@ -67,5 +67,5 @@ class PricingSearchRowBasic extends SearchRowBasic
         'quantityRange' => 'SearchColumnStringField[]',
         'saleUnit' => 'SearchColumnSelectField[]',
         'unitPrice' => 'SearchColumnDoubleField[]',
-    );
+    ];
 }

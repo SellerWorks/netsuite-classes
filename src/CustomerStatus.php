@@ -48,7 +48,7 @@ class CustomerStatus extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'stage' => 'CustomerStatusStage',
         'probability' => 'float',
@@ -57,5 +57,5 @@ class CustomerStatus extends Record
         'isInactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

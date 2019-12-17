@@ -248,7 +248,7 @@ class PartnerSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
         'addressLabel' => 'SearchStringField',
@@ -307,5 +307,5 @@ class PartnerSearchBasic extends SearchRecordBasic
         'URL' => 'SearchStringField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

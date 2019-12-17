@@ -136,6 +136,10 @@ class ItemSearchBasic extends SearchRecordBasic
      */
     public $componentYield;
     /**
+     * @var SearchMultiSelectField
+     */
+    public $consumptionUnit;
+    /**
      * @var SearchBooleanField
      */
     public $contingentRevenueHandling;
@@ -335,6 +339,10 @@ class ItemSearchBasic extends SearchRecordBasic
      * @var SearchBooleanField
      */
     public $froogleProductFeed;
+    /**
+     * @var SearchLongField
+     */
+    public $futureHorizon;
     /**
      * @var SearchDoubleField
      */
@@ -1180,7 +1188,7 @@ class ItemSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accBookRevRecForecastRule' => 'SearchMultiSelectField',
         'account' => 'SearchMultiSelectField',
         'accountingBook' => 'SearchMultiSelectField',
@@ -1211,6 +1219,7 @@ class ItemSearchBasic extends SearchRecordBasic
         'component' => 'SearchMultiSelectField',
         'componentOf' => 'SearchMultiSelectField',
         'componentYield' => 'SearchDoubleField',
+        'consumptionUnit' => 'SearchMultiSelectField',
         'contingentRevenueHandling' => 'SearchBooleanField',
         'copyDescription' => 'SearchBooleanField',
         'correlatedItem' => 'SearchMultiSelectField',
@@ -1261,6 +1270,7 @@ class ItemSearchBasic extends SearchRecordBasic
         'forwardConsumptionDays' => 'SearchLongField',
         'fraudRisk' => 'SearchEnumMultiSelectField',
         'froogleProductFeed' => 'SearchBooleanField',
+        'futureHorizon' => 'SearchLongField',
         'fxCost' => 'SearchDoubleField',
         'generateAccruals' => 'SearchBooleanField',
         'giftCertAuthCode' => 'SearchStringField',
@@ -1472,5 +1482,5 @@ class ItemSearchBasic extends SearchRecordBasic
         'weight' => 'SearchDoubleField',
         'yahooProductFeed' => 'SearchBooleanField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

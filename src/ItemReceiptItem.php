@@ -116,7 +116,7 @@ class ItemReceiptItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'itemReceive' => 'boolean',
         'jobName' => 'string',
         'item' => 'RecordRef',
@@ -142,5 +142,5 @@ class ItemReceiptItem
         'options' => 'CustomFieldList',
         'landedCost' => 'LandedCost',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

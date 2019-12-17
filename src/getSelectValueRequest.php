@@ -24,8 +24,8 @@ class getSelectValueRequest
      */
     public $pageIndex;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'fieldDescription' => 'GetSelectValueFieldDescription',
         'pageIndex' => 'integer',
-    );
+    ];
 }

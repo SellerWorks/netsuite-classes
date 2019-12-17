@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransactionPaymentEventHoldReason.
+ * TransactionPaymentEventHoldReason
  */
 class TransactionPaymentEventHoldReason
 {
@@ -20,101 +20,101 @@ class TransactionPaymentEventHoldReason
     /**
      * @var string
      */
-    const _amountExceedsMaximumAllowedAmount = '_amountExceedsMaximumAllowedAmount';
+    const _amountExceedsMaximumAllowedAmount = "_amountExceedsMaximumAllowedAmount";
     /**
      * @var string
      */
-    const _authorizationDecline = '_authorizationDecline';
+    const _authorizationDecline = "_authorizationDecline";
     /**
      * @var string
      */
-    const _cardExpired = '_cardExpired';
+    const _cardExpired = "_cardExpired";
     /**
      * @var string
      */
-    const _cardInvalid = '_cardInvalid';
+    const _cardInvalid = "_cardInvalid";
     /**
      * @var string
      */
-    const _confirmationOfTheOperationIsPending = '_confirmationOfTheOperationIsPending';
+    const _confirmationOfTheOperationIsPending = "_confirmationOfTheOperationIsPending";
     /**
      * @var string
      */
-    const _externalFraudRejection = '_externalFraudRejection';
+    const _externalFraudRejection = "_externalFraudRejection";
     /**
      * @var string
      */
-    const _externalFraudReview = '_externalFraudReview';
+    const _externalFraudReview = "_externalFraudReview";
     /**
      * @var string
      */
-    const _failedToPrimeDevice = '_failedToPrimeDevice';
+    const _failedToPrimeDevice = "_failedToPrimeDevice";
     /**
      * @var string
      */
-    const _fatalError = '_fatalError';
+    const _fatalError = "_fatalError";
     /**
      * @var string
      */
-    const _forwardedToPayerAuthentication = '_forwardedToPayerAuthentication';
+    const _forwardedToPayerAuthentication = "_forwardedToPayerAuthentication";
     /**
      * @var string
      */
-    const _forwardRequested = '_forwardRequested';
+    const _forwardRequested = "_forwardRequested";
     /**
      * @var string
      */
-    const _gatewayAsynchronousNotification = '_gatewayAsynchronousNotification';
+    const _gatewayAsynchronousNotification = "_gatewayAsynchronousNotification";
     /**
      * @var string
      */
-    const _gatewayError = '_gatewayError';
+    const _gatewayError = "_gatewayError";
     /**
      * @var string
      */
-    const _generalHold = '_generalHold';
+    const _generalHold = "_generalHold";
     /**
      * @var string
      */
-    const _generalReject = '_generalReject';
+    const _generalReject = "_generalReject";
     /**
      * @var string
      */
-    const _operationWasSuccessful = '_operationWasSuccessful';
+    const _operationWasSuccessful = "_operationWasSuccessful";
     /**
      * @var string
      */
-    const _operationWasTerminated = '_operationWasTerminated';
+    const _operationWasTerminated = "_operationWasTerminated";
     /**
      * @var string
      */
-    const _overridenBy = '_overridenBy';
+    const _overridenBy = "_overridenBy";
     /**
      * @var string
      */
-    const _partnerDecline = '_partnerDecline';
+    const _partnerDecline = "_partnerDecline";
     /**
      * @var string
      */
-    const _paymentDeviceWasPrimed = '_paymentDeviceWasPrimed';
+    const _paymentDeviceWasPrimed = "_paymentDeviceWasPrimed";
     /**
      * @var string
      */
-    const _paymentOperationWasCanceled = '_paymentOperationWasCanceled';
+    const _paymentOperationWasCanceled = "_paymentOperationWasCanceled";
     /**
      * @var string
      */
-    const _systemError = '_systemError';
+    const _systemError = "_systemError";
     /**
      * @var string
      */
-    const _verbalAuthorizationRequested = '_verbalAuthorizationRequested';
+    const _verbalAuthorizationRequested = "_verbalAuthorizationRequested";
     /**
      * @var string
      */
-    const _verificationRejection = '_verificationRejection';
+    const _verificationRejection = "_verificationRejection";
     /**
      * @var string
      */
-    const _verificationRequired = '_verificationRequired';
+    const _verificationRequired = "_verificationRequired";
 }

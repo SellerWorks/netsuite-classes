@@ -32,10 +32,10 @@ class GetSelectValueResult
      */
     public $baseRefList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'totalRecords' => 'integer',
         'totalPages' => 'integer',
         'baseRefList' => 'BaseRefList',
-    );
+    ];
 }

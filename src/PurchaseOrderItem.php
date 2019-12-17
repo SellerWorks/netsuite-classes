@@ -164,7 +164,7 @@ class PurchaseOrderItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'line' => 'integer',
         'quantityOnShipments' => 'float',
@@ -202,5 +202,5 @@ class PurchaseOrderItem
         'createdFrom' => 'RecordRef',
         'linkedOrderList' => 'RecordRefList',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

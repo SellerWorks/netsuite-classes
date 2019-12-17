@@ -324,6 +324,14 @@ class VendorSearchRowBasic extends SearchRowBasic
      */
     public $phoneticName;
     /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $predConfidence;
+    /**
+     * @var SearchColumnDoubleField[]
+     */
+    public $predictedDays;
+    /**
      * @var SearchColumnStringField[]
      */
     public $printOnCheckAs;
@@ -468,7 +476,7 @@ class VendorSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchColumnStringField[]',
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
@@ -546,6 +554,8 @@ class VendorSearchRowBasic extends SearchRowBasic
         'permission' => 'SearchColumnEnumSelectField[]',
         'phone' => 'SearchColumnStringField[]',
         'phoneticName' => 'SearchColumnStringField[]',
+        'predConfidence' => 'SearchColumnDoubleField[]',
+        'predictedDays' => 'SearchColumnDoubleField[]',
         'printOnCheckAs' => 'SearchColumnStringField[]',
         'printTransactions' => 'SearchColumnBooleanField[]',
         'purchaseOrderAmount' => 'SearchColumnDoubleField[]',
@@ -582,5 +592,5 @@ class VendorSearchRowBasic extends SearchRowBasic
         'workCalendar' => 'SearchColumnSelectField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

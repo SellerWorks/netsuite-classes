@@ -64,7 +64,7 @@ class BinWorksheetItem
      */
     public $itemBlank;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'itemName' => 'string',
         'description' => 'string',
@@ -77,5 +77,5 @@ class BinWorksheetItem
         'itemBinList' => 'string',
         'itemPreferBin' => 'string',
         'itemBlank' => 'string',
-    );
+    ];
 }

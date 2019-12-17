@@ -28,9 +28,9 @@ class BillingAccountSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'BillingAccountSearchRowBasic',
         'jobJoin' => 'JobSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

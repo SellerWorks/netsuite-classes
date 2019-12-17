@@ -28,9 +28,9 @@ class CustomFieldDepartmentAccess
      */
     public $searchLevel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'dept' => 'RecordRef',
         'accessLevel' => 'CustomizationAccessLevel',
         'searchLevel' => 'CustomizationSearchLevel',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class DemandPlanMatrix
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'demandPlan' => 'DemandPlan[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

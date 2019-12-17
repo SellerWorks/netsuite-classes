@@ -176,7 +176,7 @@ class InboundShipmentSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'actualDeliveryDate' => 'SearchColumnDateField[]',
         'actualShippingDate' => 'SearchColumnDateField[]',
         'billOfLading' => 'SearchColumnStringField[]',
@@ -217,5 +217,5 @@ class InboundShipmentSearchRowBasic extends SearchRowBasic
         'vendor' => 'SearchColumnSelectField[]',
         'vesselNumber' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

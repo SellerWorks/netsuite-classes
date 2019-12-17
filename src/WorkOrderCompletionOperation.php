@@ -28,11 +28,11 @@ class WorkOrderCompletionOperation
      */
     public $workCenter;
     /**
-     * @var int
+     * @var float
      */
     public $machineResources;
     /**
-     * @var int
+     * @var float
      */
     public $laborResources;
     /**
@@ -72,12 +72,12 @@ class WorkOrderCompletionOperation
      */
     public $laborRunTime;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'operationSequence' => 'integer',
         'operationName' => 'string',
         'workCenter' => 'string',
-        'machineResources' => 'integer',
-        'laborResources' => 'integer',
+        'machineResources' => 'float',
+        'laborResources' => 'float',
         'inputQuantity' => 'float',
         'quantityRemaining' => 'float',
         'predecessorCompletedQuantity' => 'float',
@@ -87,5 +87,5 @@ class WorkOrderCompletionOperation
         'laborSetupTime' => 'float',
         'machineRunTime' => 'float',
         'laborRunTime' => 'float',
-    );
+    ];
 }

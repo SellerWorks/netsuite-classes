@@ -24,8 +24,8 @@ class AccountLocalizationsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountLocalizations' => 'AccountLocalizations[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

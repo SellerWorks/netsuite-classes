@@ -24,8 +24,8 @@ class CashSaleSalesTeamList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'salesTeam' => 'CashSaleSalesTeam[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

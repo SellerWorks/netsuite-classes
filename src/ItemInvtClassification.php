@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemInvtClassification.
+ * ItemInvtClassification
  */
 class ItemInvtClassification
 {
@@ -20,13 +20,13 @@ class ItemInvtClassification
     /**
      * @var string
      */
-    const _a = '_a';
+    const _a = "_a";
     /**
      * @var string
      */
-    const _b = '_b';
+    const _b = "_b";
     /**
      * @var string
      */
-    const _c = '_c';
+    const _c = "_c";
 }

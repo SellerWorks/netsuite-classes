@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderItemList.
+ * WorkOrderItemList
  */
 class WorkOrderItemList
 {
     /**
+     * @access public
      * @var WorkOrderItem[]
      */
     public $item;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'item' => 'WorkOrderItem[]',
-        'replaceAll' => 'boolean',
+        "item" => "WorkOrderItem[]",
+        "replaceAll" => "boolean",
     );
 }

@@ -96,7 +96,7 @@ class FolderSearchBasic extends SearchRecordBasic
      */
     public $subsidiary;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'class' => 'SearchMultiSelectField',
         'department' => 'SearchMultiSelectField',
         'description' => 'SearchStringField',
@@ -117,5 +117,5 @@ class FolderSearchBasic extends SearchRecordBasic
         'private' => 'SearchBooleanField',
         'size' => 'SearchLongField',
         'subsidiary' => 'SearchMultiSelectField',
-    );
+    ];
 }

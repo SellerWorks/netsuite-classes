@@ -20,7 +20,7 @@ class BooleanCustomFieldRef extends CustomFieldRef
      */
     public $value;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'value' => 'boolean',
-    );
+    ];
 }

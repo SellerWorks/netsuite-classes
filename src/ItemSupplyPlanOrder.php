@@ -44,7 +44,7 @@ class ItemSupplyPlanOrder
      */
     public $orderType;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'orderLineId' => 'integer',
         'orderDate' => 'dateTime',
         'receiptDate' => 'dateTime',
@@ -52,5 +52,5 @@ class ItemSupplyPlanOrder
         'quantity' => 'float',
         'orderCreated' => 'boolean',
         'orderType' => 'ItemSupplyPlanOrderType',
-    );
+    ];
 }

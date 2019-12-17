@@ -68,7 +68,7 @@ class Translation
      */
     public $outOfStockMessage;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'locale' => 'Language',
         'language' => 'string',
         'displayName' => 'string',
@@ -82,5 +82,5 @@ class Translation
         'pageTitle' => 'string',
         'noPriceMessage' => 'string',
         'outOfStockMessage' => 'string',
-    );
+    ];
 }

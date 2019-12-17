@@ -44,7 +44,7 @@ class SubsidiarySearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'SubsidiarySearchBasic',
         'addressJoin' => 'AddressSearchBasic',
         'defaultAdvanceToApplyAccountJoin' => 'AccountSearchBasic',
@@ -52,5 +52,5 @@ class SubsidiarySearch extends SearchRecord
         'shippingAddressJoin' => 'AddressSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

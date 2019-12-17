@@ -116,7 +116,7 @@ class BillingAccountSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'billingSchedule' => 'SearchMultiSelectField',
         'cashSaleForm' => 'SearchMultiSelectField',
         'class' => 'SearchMultiSelectField',
@@ -142,5 +142,5 @@ class BillingAccountSearchBasic extends SearchRecordBasic
         'startDate' => 'SearchDateField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

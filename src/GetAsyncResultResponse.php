@@ -20,7 +20,7 @@ class GetAsyncResultResponse
      */
     public $asyncResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'asyncResult' => 'AsyncResult',
-    );
+    ];
 }

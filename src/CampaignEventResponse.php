@@ -72,7 +72,7 @@ class CampaignEventResponse
      */
     public $bouncedRatio;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'type' => 'string',
         'dateSent' => 'dateTime',
@@ -87,5 +87,5 @@ class CampaignEventResponse
         'unsubscribedRatio' => 'float',
         'bounced' => 'integer',
         'bouncedRatio' => 'float',
-    );
+    ];
 }

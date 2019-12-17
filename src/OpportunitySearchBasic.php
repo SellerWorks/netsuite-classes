@@ -276,7 +276,7 @@ class OpportunitySearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'amount' => 'SearchDoubleField',
         'availableOffline' => 'SearchBooleanField',
         'buyingReason' => 'SearchMultiSelectField',
@@ -342,5 +342,5 @@ class OpportunitySearchBasic extends SearchRecordBasic
         'winLossReason' => 'SearchMultiSelectField',
         'wonBy' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

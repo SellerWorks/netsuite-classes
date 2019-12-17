@@ -48,7 +48,7 @@ class BillingScheduleMilestone
      */
     public $comments;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'milestoneId' => 'integer',
         'milestoneAmount' => 'float',
         'milestoneTerms' => 'RecordRef',
@@ -57,5 +57,5 @@ class BillingScheduleMilestone
         'milestoneCompleted' => 'boolean',
         'milestoneActualCompletionDate' => 'dateTime',
         'comments' => 'string',
-    );
+    ];
 }

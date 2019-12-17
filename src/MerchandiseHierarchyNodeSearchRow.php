@@ -24,8 +24,8 @@ class MerchandiseHierarchyNodeSearchRow extends SearchRow
      */
     public $parentNodeJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'MerchandiseHierarchyNodeSearchRowBasic',
         'parentNodeJoin' => 'MerchandiseHierarchyNodeSearchRowBasic',
-    );
+    ];
 }

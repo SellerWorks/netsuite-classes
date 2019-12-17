@@ -24,8 +24,8 @@ class VendorPaymentApplyList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'VendorPaymentApply[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDeletedRequest.
+ * GetDeletedRequest
  */
 class GetDeletedRequest
 {
     /**
+     * @access public
      * @var GetDeletedFilter
      */
     public $getDeletedFilter;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $pageIndex;
 
     public static $paramtypesmap = array(
-        'getDeletedFilter' => 'GetDeletedFilter',
-        'pageIndex' => 'integer',
+        "getDeletedFilter" => "GetDeletedFilter",
+        "pageIndex" => "integer",
     );
 }

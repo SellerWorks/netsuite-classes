@@ -11,51 +11,59 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignCategory.
+ * CampaignCategory
  */
 class CampaignCategory extends Record
 {
     /**
+     * @access public
      * @var string
      */
     public $name;
     /**
+     * @access public
      * @var RecordRef
      */
     public $parent;
     /**
+     * @access public
      * @var RecordRef
      */
     public $leadSource;
     /**
+     * @access public
      * @var string
      */
     public $description;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $isexternal;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $isInactive;
     /**
+     * @access public
      * @var string
      */
     public $internalId;
     /**
+     * @access public
      * @var string
      */
     public $externalId;
 
     public static $paramtypesmap = array(
-        'name' => 'string',
-        'parent' => 'RecordRef',
-        'leadSource' => 'RecordRef',
-        'description' => 'string',
-        'isexternal' => 'boolean',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
+        "name" => "string",
+        "parent" => "RecordRef",
+        "leadSource" => "RecordRef",
+        "description" => "string",
+        "isexternal" => "boolean",
+        "isInactive" => "boolean",
+        "internalId" => "string",
+        "externalId" => "string",
     );
 }

@@ -164,7 +164,7 @@ class Campaign extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'campaignId' => 'string',
         'title' => 'string',
@@ -202,5 +202,5 @@ class Campaign extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

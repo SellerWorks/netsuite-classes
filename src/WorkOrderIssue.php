@@ -100,7 +100,7 @@ class WorkOrderIssue extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -122,5 +122,5 @@ class WorkOrderIssue extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

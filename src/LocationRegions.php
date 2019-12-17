@@ -20,7 +20,7 @@ class LocationRegions
      */
     public $region;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'region' => 'RecordRef',
-    );
+    ];
 }

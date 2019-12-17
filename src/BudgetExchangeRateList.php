@@ -20,7 +20,7 @@ class BudgetExchangeRateList
      */
     public $budgetExchangeRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'budgetExchangeRate' => 'BudgetExchangeRate[]',
-    );
+    ];
 }

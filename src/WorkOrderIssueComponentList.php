@@ -24,8 +24,8 @@ class WorkOrderIssueComponentList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'workOrderIssueComponent' => 'WorkOrderIssueComponent[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -20,7 +20,7 @@ class ProductFeedList
      */
     public $productFeed;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'productFeed' => 'ItemProductFeed[]',
-    );
+    ];
 }

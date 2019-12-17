@@ -28,9 +28,9 @@ class FairValuePriceSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'FairValuePriceSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

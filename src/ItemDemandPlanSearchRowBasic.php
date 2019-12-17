@@ -88,7 +88,7 @@ class ItemDemandPlanSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'alternateSourceItem' => 'SearchColumnSelectField[]',
         'analysisDuration' => 'SearchColumnLongField[]',
         'demandDate' => 'SearchColumnDateField[]',
@@ -107,5 +107,5 @@ class ItemDemandPlanSearchRowBasic extends SearchRowBasic
         'subsidiary' => 'SearchColumnSelectField[]',
         'units' => 'SearchColumnSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

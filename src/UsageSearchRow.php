@@ -36,11 +36,11 @@ class UsageSearchRow extends SearchRow
      */
     public $subscriptionPlanJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'UsageSearchRowBasic',
         'chargeJoin' => 'ChargeSearchRowBasic',
         'customerJoin' => 'CustomerSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'subscriptionPlanJoin' => 'ItemSearchRowBasic',
-    );
+    ];
 }

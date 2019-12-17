@@ -164,7 +164,7 @@ class CalendarEvent extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'company' => 'RecordRef',
         'contact' => 'RecordRef',
         'supportCase' => 'RecordRef',
@@ -202,5 +202,5 @@ class CalendarEvent extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

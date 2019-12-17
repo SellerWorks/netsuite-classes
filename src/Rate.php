@@ -24,8 +24,8 @@ class Rate
      */
     public $priceLevel;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'value' => 'float',
         'priceLevel' => 'RecordRef',
-    );
+    ];
 }

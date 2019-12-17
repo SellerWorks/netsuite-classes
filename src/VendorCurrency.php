@@ -28,9 +28,9 @@ class VendorCurrency
      */
     public $unbilledOrders;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currency' => 'RecordRef',
         'balance' => 'float',
         'unbilledOrders' => 'float',
-    );
+    ];
 }

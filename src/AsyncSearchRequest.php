@@ -20,7 +20,7 @@ class AsyncSearchRequest
      */
     public $searchRecord;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchRecord' => 'SearchRecord',
-    );
+    ];
 }

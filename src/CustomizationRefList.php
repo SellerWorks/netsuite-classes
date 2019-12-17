@@ -20,7 +20,7 @@ class CustomizationRefList
      */
     public $customizationRef;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customizationRef' => 'CustomizationRef[]',
-    );
+    ];
 }

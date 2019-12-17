@@ -11,46 +11,53 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepartmentSearchRowBasic.
+ * DepartmentSearchRowBasic
  */
 class DepartmentSearchRowBasic extends SearchRowBasic
 {
     /**
+     * @access public
      * @var SearchColumnSelectField[]
      */
     public $externalId;
     /**
+     * @access public
      * @var SearchColumnSelectField[]
      */
     public $internalId;
     /**
+     * @access public
      * @var SearchColumnBooleanField[]
      */
     public $isInactive;
     /**
+     * @access public
      * @var SearchColumnStringField[]
      */
     public $name;
     /**
+     * @access public
      * @var SearchColumnStringField[]
      */
     public $nameNoHierarchy;
     /**
+     * @access public
      * @var SearchColumnSelectField[]
      */
     public $subsidiary;
     /**
+     * @access public
      * @var SearchColumnCustomFieldList
      */
     public $customFieldList;
 
     public static $paramtypesmap = array(
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
-        'nameNoHierarchy' => 'SearchColumnStringField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
+        "externalId" => "SearchColumnSelectField[]",
+        "internalId" => "SearchColumnSelectField[]",
+        "isInactive" => "SearchColumnBooleanField[]",
+        "name" => "SearchColumnStringField[]",
+        "nameNoHierarchy" => "SearchColumnStringField[]",
+        "subsidiary" => "SearchColumnSelectField[]",
+        "customFieldList" => "SearchColumnCustomFieldList",
     );
 }

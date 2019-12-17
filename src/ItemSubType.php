@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSubType.
+ * ItemSubType
  */
 class ItemSubType
 {
@@ -20,13 +20,13 @@ class ItemSubType
     /**
      * @var string
      */
-    const _forPurchase = '_forPurchase';
+    const _forPurchase = "_forPurchase";
     /**
      * @var string
      */
-    const _forResale = '_forResale';
+    const _forResale = "_forResale";
     /**
      * @var string
      */
-    const _forSale = '_forSale';
+    const _forSale = "_forSale";
 }

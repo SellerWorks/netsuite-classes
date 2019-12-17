@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class TaxRounding
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */

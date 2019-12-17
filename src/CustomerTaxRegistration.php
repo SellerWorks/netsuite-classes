@@ -36,11 +36,11 @@ class CustomerTaxRegistration
      */
     public $id;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'nexusCountry' => 'Country',
         'nexus' => 'RecordRef',
         'address' => 'RecordRef',
         'taxRegistrationNumber' => 'string',
         'id' => 'integer',
-    );
+    ];
 }

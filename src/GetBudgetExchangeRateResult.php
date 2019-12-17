@@ -24,8 +24,8 @@ class GetBudgetExchangeRateResult
      */
     public $budgetExchangeRateList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'status' => 'Status',
         'budgetExchangeRateList' => 'BudgetExchangeRateList',
-    );
+    ];
 }

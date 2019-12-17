@@ -56,7 +56,7 @@ class VendorCreditApply
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'applyDate' => 'dateTime',
         'doc' => 'integer',
@@ -67,5 +67,5 @@ class VendorCreditApply
         'due' => 'float',
         'currency' => 'string',
         'amount' => 'float',
-    );
+    ];
 }

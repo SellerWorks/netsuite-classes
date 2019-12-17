@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryItemFraudRisk.
+ * InventoryItemFraudRisk
  */
 class InventoryItemFraudRisk
 {
@@ -20,13 +20,13 @@ class InventoryItemFraudRisk
     /**
      * @var string
      */
-    const _high = '_high';
+    const _high = "_high";
     /**
      * @var string
      */
-    const _low = '_low';
+    const _low = "_low";
     /**
      * @var string
      */
-    const _medium = '_medium';
+    const _medium = "_medium";
 }

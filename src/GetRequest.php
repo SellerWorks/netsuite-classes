@@ -20,7 +20,7 @@ class GetRequest
      */
     public $baseRef;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseRef' => 'BaseRef',
-    );
+    ];
 }

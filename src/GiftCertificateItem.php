@@ -268,7 +268,7 @@ class GiftCertificateItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -332,5 +332,5 @@ class GiftCertificateItem extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

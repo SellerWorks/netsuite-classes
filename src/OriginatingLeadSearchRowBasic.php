@@ -728,7 +728,7 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchColumnStringField[]',
         'address' => 'SearchColumnStringField[]',
         'address1' => 'SearchColumnStringField[]',
@@ -907,5 +907,5 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic
         'webLead' => 'SearchColumnBooleanField[]',
         'zipCode' => 'SearchColumnStringField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

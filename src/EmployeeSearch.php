@@ -44,6 +44,10 @@ class EmployeeSearch extends SearchRecord
      */
     public $locationJoin;
     /**
+     * @var JobSearchBasic
+     */
+    public $managedJobJoin;
+    /**
      * @var MessageSearchBasic
      */
     public $messagesJoin;
@@ -84,7 +88,7 @@ class EmployeeSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'EmployeeSearchBasic',
         'campaignResponseJoin' => 'CampaignSearchBasic',
         'chargeJoin' => 'ChargeSearchBasic',
@@ -92,6 +96,7 @@ class EmployeeSearch extends SearchRecord
         'fileJoin' => 'FileSearchBasic',
         'hcmJobJoin' => 'HcmJobSearchBasic',
         'locationJoin' => 'LocationSearchBasic',
+        'managedJobJoin' => 'JobSearchBasic',
         'messagesJoin' => 'MessageSearchBasic',
         'messagesFromJoin' => 'MessageSearchBasic',
         'messagesToJoin' => 'MessageSearchBasic',
@@ -102,5 +107,5 @@ class EmployeeSearch extends SearchRecord
         'userJoin' => 'EmployeeSearchBasic',
         'userNotesJoin' => 'NoteSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

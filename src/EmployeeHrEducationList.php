@@ -24,8 +24,8 @@ class EmployeeHrEducationList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'employeeHrEducation' => 'EmployeeHrEducation[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class PaycheckJournalDeductionList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'paycheckJournalDeduction' => 'PaycheckJournalDeduction[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

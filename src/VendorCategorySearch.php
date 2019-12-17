@@ -24,8 +24,8 @@ class VendorCategorySearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'VendorCategorySearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

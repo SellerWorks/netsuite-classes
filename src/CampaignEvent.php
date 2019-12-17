@@ -56,7 +56,7 @@ class CampaignEvent
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'campaignGroup' => 'RecordRef',
         'description' => 'string',
@@ -67,5 +67,5 @@ class CampaignEvent
         'dateScheduled' => 'dateTime',
         'promoCode' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

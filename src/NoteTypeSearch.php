@@ -24,8 +24,8 @@ class NoteTypeSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'NoteTypeSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

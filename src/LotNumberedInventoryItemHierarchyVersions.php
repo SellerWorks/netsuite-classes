@@ -36,11 +36,11 @@ class LotNumberedInventoryItemHierarchyVersions
      */
     public $hierarchyNode;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'isIncluded' => 'boolean',
         'hierarchyVersion' => 'RecordRef',
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
         'hierarchyNode' => 'RecordRef',
-    );
+    ];
 }

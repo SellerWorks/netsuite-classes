@@ -24,8 +24,8 @@ class InterCompanyTransferOrderItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'InterCompanyTransferOrderItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class FileSiteCategoryList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'siteCategory' => 'FileSiteCategory[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class PaycheckPaySummaryList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'paycheckPaySummary' => 'PaycheckPaySummary[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

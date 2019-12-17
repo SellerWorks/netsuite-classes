@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SalesOrderItemFulfillmentChoice.
+ * SalesOrderItemFulfillmentChoice
  */
 class SalesOrderItemFulfillmentChoice
 {
@@ -20,9 +20,9 @@ class SalesOrderItemFulfillmentChoice
     /**
      * @var string
      */
-    const _ship = '_ship';
+    const _ship = "_ship";
     /**
      * @var string
      */
-    const _storePickup = '_storePickup';
+    const _storePickup = "_storePickup";
 }

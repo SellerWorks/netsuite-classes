@@ -20,7 +20,7 @@ class GetPostingTransactionSummaryResponse
      */
     public $getPostingTransactionSummaryResult;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'getPostingTransactionSummaryResult' => 'GetPostingTransactionSummaryResult',
-    );
+    ];
 }

@@ -11,16 +11,17 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MapSsoRequest.
+ * MapSsoRequest
  */
 class MapSsoRequest
 {
     /**
+     * @access public
      * @var SsoCredentials
      */
     public $ssoCredentials;
 
     public static $paramtypesmap = array(
-        'ssoCredentials' => 'SsoCredentials',
+        "ssoCredentials" => "SsoCredentials",
     );
 }

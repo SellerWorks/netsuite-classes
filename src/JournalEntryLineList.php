@@ -24,8 +24,8 @@ class JournalEntryLineList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'line' => 'JournalEntryLine[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

@@ -436,7 +436,7 @@ class Employee extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'template' => 'RecordRef',
         'entityId' => 'string',
@@ -542,5 +542,5 @@ class Employee extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

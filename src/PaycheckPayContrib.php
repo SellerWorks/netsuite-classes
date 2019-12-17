@@ -36,11 +36,11 @@ class PaycheckPayContrib
      */
     public $manualEntry;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'payItem' => 'RecordRef',
         'line' => 'integer',
         'wageBase' => 'float',
         'amount' => 'float',
         'manualEntry' => 'boolean',
-    );
+    ];
 }

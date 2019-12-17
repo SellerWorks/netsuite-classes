@@ -852,6 +852,18 @@ class LotNumberedAssemblyItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var LotNumberedAssemblyItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var int
+     */
+    public $futureHorizon;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -864,7 +876,7 @@ class LotNumberedAssemblyItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -1074,8 +1086,11 @@ class LotNumberedAssemblyItem extends Record
         'numbersList' => 'LotNumberedInventoryItemNumbersList',
         'translationsList' => 'TranslationList',
         'presentationItemList' => 'PresentationItemList',
+        'hierarchyVersionsList' => 'LotNumberedAssemblyItemHierarchyVersionsList',
+        'futureHorizon' => 'integer',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class LanguageValue
      */
     public $value;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'locale' => 'Language',
         'value' => 'string',
-    );
+    ];
 }

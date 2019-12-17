@@ -24,8 +24,8 @@ class DeleteRequest
      */
     public $deletionReason;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'baseRef' => 'BaseRef',
         'deletionReason' => 'DeletionReason',
-    );
+    ];
 }

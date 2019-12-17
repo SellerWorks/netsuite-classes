@@ -48,7 +48,7 @@ class ItemRevision extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'name' => 'string',
         'effectiveDate' => 'dateTime',
@@ -57,5 +57,5 @@ class ItemRevision extends Record
         'inactive' => 'boolean',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

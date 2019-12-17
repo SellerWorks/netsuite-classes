@@ -28,9 +28,9 @@ class ExpenseCategoryRates
      */
     public $defaultRate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'subsidiary' => 'RecordRef',
         'currency' => 'RecordRef',
         'defaultRate' => 'float',
-    );
+    ];
 }

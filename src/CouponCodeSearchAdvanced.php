@@ -32,10 +32,10 @@ class CouponCodeSearchAdvanced extends SearchRecord
      */
     public $savedSearchId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'CouponCodeSearch',
         'columns' => 'CouponCodeSearchRow',
         'savedSearchScriptId' => 'string',
         'savedSearchId' => 'string',
-    );
+    ];
 }

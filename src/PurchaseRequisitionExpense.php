@@ -76,7 +76,7 @@ class PurchaseRequisitionExpense
      */
     public $isBillable;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'line' => 'integer',
         'category' => 'RecordRef',
         'location' => 'RecordRef',
@@ -92,5 +92,5 @@ class PurchaseRequisitionExpense
         'linkedOrderList' => 'RecordRefList',
         'linkedOrderStatus' => 'string',
         'isBillable' => 'boolean',
-    );
+    ];
 }

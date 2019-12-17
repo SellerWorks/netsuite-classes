@@ -60,7 +60,7 @@ class Usage extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'memo' => 'string',
         'item' => 'RecordRef',
@@ -72,5 +72,5 @@ class Usage extends Record
         'usageDate' => 'dateTime',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

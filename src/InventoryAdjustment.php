@@ -96,7 +96,7 @@ class InventoryAdjustment extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'postingPeriod' => 'RecordRef',
         'tranDate' => 'dateTime',
         'createdDate' => 'dateTime',
@@ -117,5 +117,5 @@ class InventoryAdjustment extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

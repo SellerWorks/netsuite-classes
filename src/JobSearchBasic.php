@@ -332,6 +332,10 @@ class JobSearchBasic extends SearchRecordBasic
      */
     public $subsidiary;
     /**
+     * @var SearchMultiSelectField
+     */
+    public $timeApproval;
+    /**
      * @var SearchDoubleField
      */
     public $timeRemaining;
@@ -352,7 +356,7 @@ class JobSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchStringField',
         'actualTime' => 'SearchDoubleField',
         'address' => 'SearchStringField',
@@ -432,10 +436,11 @@ class JobSearchBasic extends SearchRecordBasic
         'state' => 'SearchStringField',
         'status' => 'SearchMultiSelectField',
         'subsidiary' => 'SearchMultiSelectField',
+        'timeApproval' => 'SearchMultiSelectField',
         'timeRemaining' => 'SearchDoubleField',
         'type' => 'SearchMultiSelectField',
         'usePercentCompleteOverride' => 'SearchBooleanField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

@@ -52,7 +52,7 @@ class NexusSearchRowBasic extends SearchRowBasic
      */
     public $taxDateFromFulfillment;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'country' => 'SearchColumnEnumSelectField[]',
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
@@ -62,5 +62,5 @@ class NexusSearchRowBasic extends SearchRowBasic
         'state' => 'SearchColumnSelectField[]',
         'taxAgency' => 'SearchColumnSelectField[]',
         'taxDateFromFulfillment' => 'SearchColumnBooleanField[]',
-    );
+    ];
 }

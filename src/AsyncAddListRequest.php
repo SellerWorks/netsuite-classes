@@ -20,7 +20,7 @@ class AsyncAddListRequest
      */
     public $record;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'record' => 'Record[]',
-    );
+    ];
 }

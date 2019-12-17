@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class TransactionLinkType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -33,6 +33,10 @@ class TransactionLinkType
      * @var string
      */
     const _blcgaJeFullfillment = '_blcgaJeFullfillment';
+    /**
+     * @var string
+     */
+    const _captureAuthorization = '_captureAuthorization';
     /**
      * @var string
      */
@@ -112,6 +116,10 @@ class TransactionLinkType
     /**
      * @var string
      */
+    const _kitShipment = '_kitShipment';
+    /**
+     * @var string
+     */
     const _landedCost = '_landedCost';
     /**
      * @var string
@@ -160,7 +168,15 @@ class TransactionLinkType
     /**
      * @var string
      */
+    const _prepaymentApplication = '_prepaymentApplication';
+    /**
+     * @var string
+     */
     const _purchaseContractOrder = '_purchaseContractOrder';
+    /**
+     * @var string
+     */
+    const _purchaseOrderPrepayment = '_purchaseOrderPrepayment';
     /**
      * @var string
      */

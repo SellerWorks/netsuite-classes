@@ -880,6 +880,18 @@ class SerializedAssemblyItem extends Record
      */
     public $presentationItemList;
     /**
+     * @var SerializedAssemblyItemHierarchyVersionsList
+     */
+    public $hierarchyVersionsList;
+    /**
+     * @var int
+     */
+    public $futureHorizon;
+    /**
+     * @var RecordRef
+     */
+    public $consumptionUnit;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -892,7 +904,7 @@ class SerializedAssemblyItem extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'createdDate' => 'dateTime',
         'lastModifiedDate' => 'dateTime',
         'customForm' => 'RecordRef',
@@ -1109,8 +1121,11 @@ class SerializedAssemblyItem extends Record
         'numbersList' => 'SerializedInventoryItemNumbersList',
         'translationsList' => 'TranslationList',
         'presentationItemList' => 'PresentationItemList',
+        'hierarchyVersionsList' => 'SerializedAssemblyItemHierarchyVersionsList',
+        'futureHorizon' => 'integer',
+        'consumptionUnit' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

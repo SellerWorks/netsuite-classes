@@ -48,7 +48,7 @@ class InventoryAssignment
      */
     public $quantityAvailable;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'internalId' => 'string',
         'issueInventoryNumber' => 'RecordRef',
         'receiptInventoryNumber' => 'string',
@@ -57,5 +57,5 @@ class InventoryAssignment
         'quantity' => 'float',
         'expirationDate' => 'dateTime',
         'quantityAvailable' => 'float',
-    );
+    ];
 }

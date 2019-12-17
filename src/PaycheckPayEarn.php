@@ -11,46 +11,53 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayEarn.
+ * PaycheckPayEarn
  */
 class PaycheckPayEarn
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $payItem;
     /**
-     * @var int
+     * @access public
+     * @var integer
      */
     public $line;
     /**
+     * @access public
      * @var float
      */
     public $count;
     /**
+     * @access public
      * @var string
      */
     public $rate;
     /**
+     * @access public
      * @var RecordRef
      */
     public $serviceItem;
     /**
+     * @access public
      * @var float
      */
     public $grossAmount;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $manualEntry;
 
     public static $paramtypesmap = array(
-        'payItem' => 'RecordRef',
-        'line' => 'integer',
-        'count' => 'float',
-        'rate' => 'string',
-        'serviceItem' => 'RecordRef',
-        'grossAmount' => 'float',
-        'manualEntry' => 'boolean',
+        "payItem" => "RecordRef",
+        "line" => "integer",
+        "count" => "float",
+        "rate" => "string",
+        "serviceItem" => "RecordRef",
+        "grossAmount" => "float",
+        "manualEntry" => "boolean",
     );
 }

@@ -124,7 +124,7 @@ class ChargeSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'amount' => 'SearchDoubleField',
         'billingAccount' => 'SearchMultiSelectField',
         'billingItem' => 'SearchMultiSelectField',
@@ -152,5 +152,5 @@ class ChargeSearchBasic extends SearchRecordBasic
         'subscriptionLine' => 'SearchMultiSelectField',
         'use' => 'SearchEnumMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

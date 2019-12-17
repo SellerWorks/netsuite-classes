@@ -36,11 +36,11 @@ class ContactAddressbook
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'defaultShipping' => 'boolean',
         'defaultBilling' => 'boolean',
         'label' => 'string',
         'addressbookAddress' => 'Address',
         'internalId' => 'string',
-    );
+    ];
 }

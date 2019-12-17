@@ -44,7 +44,7 @@ class CustomerStatusSearchRowBasic extends SearchRowBasic
      */
     public $probability;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'description' => 'SearchColumnStringField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'includeInLeadReports' => 'SearchColumnBooleanField[]',
@@ -52,5 +52,5 @@ class CustomerStatusSearchRowBasic extends SearchRowBasic
         'isInactive' => 'SearchColumnBooleanField[]',
         'name' => 'SearchColumnStringField[]',
         'probability' => 'SearchColumnStringField[]',
-    );
+    ];
 }

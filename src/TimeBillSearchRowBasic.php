@@ -144,6 +144,10 @@ class TimeBillSearchRowBasic extends SearchRowBasic
      */
     public $temporaryStateJurisdiction;
     /**
+     * @var SearchColumnBooleanField[]
+     */
+    public $timeModified;
+    /**
      * @var SearchColumnSelectField[]
      */
     public $timeSheet;
@@ -156,7 +160,7 @@ class TimeBillSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'approvalStatus' => 'SearchColumnSelectField[]',
         'break' => 'SearchColumnStringField[]',
         'class' => 'SearchColumnSelectField[]',
@@ -189,8 +193,9 @@ class TimeBillSearchRowBasic extends SearchRowBasic
         'supervisorApproval' => 'SearchColumnBooleanField[]',
         'temporaryLocalJurisdiction' => 'SearchColumnStringField[]',
         'temporaryStateJurisdiction' => 'SearchColumnStringField[]',
+        'timeModified' => 'SearchColumnBooleanField[]',
         'timeSheet' => 'SearchColumnSelectField[]',
         'type' => 'SearchColumnEnumSelectField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

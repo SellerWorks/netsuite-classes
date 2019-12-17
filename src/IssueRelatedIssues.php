@@ -28,9 +28,9 @@ class IssueRelatedIssues
      */
     public $relationshipComment;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'relationship' => 'IssueRelationship',
         'issueNumber' => 'RecordRef',
         'relationshipComment' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class AttachContactReference extends AttachReference
      */
     public $contactRole;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'contact' => 'RecordRef',
         'contactRole' => 'RecordRef',
-    );
+    ];
 }

@@ -36,11 +36,11 @@ class PresentationItem
      */
     public $basePrice;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'itemType' => 'PresentationItemType',
         'description' => 'string',
         'onlinePrice' => 'float',
         'basePrice' => 'float',
-    );
+    ];
 }

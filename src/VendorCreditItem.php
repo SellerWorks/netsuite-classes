@@ -136,7 +136,7 @@ class VendorCreditItem
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'RecordRef',
         'vendorName' => 'string',
         'line' => 'integer',
@@ -167,5 +167,5 @@ class VendorCreditItem
         'taxAmount' => 'float',
         'taxDetailsReference' => 'string',
         'customFieldList' => 'CustomFieldList',
-    );
+    ];
 }

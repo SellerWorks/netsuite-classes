@@ -32,10 +32,10 @@ class CampaignResponseResponses
      */
     public $note;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'response' => 'string',
         'responseDate' => 'string',
         'author' => 'string',
         'note' => 'string',
-    );
+    ];
 }

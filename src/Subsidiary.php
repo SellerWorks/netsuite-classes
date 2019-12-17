@@ -192,7 +192,7 @@ class Subsidiary extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'parent' => 'RecordRef',
         'isInactive' => 'boolean',
@@ -237,5 +237,5 @@ class Subsidiary extends Record
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

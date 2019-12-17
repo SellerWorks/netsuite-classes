@@ -36,11 +36,11 @@ class BomSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'BomSearchBasic',
         'assemblyItemJoin' => 'AssemblyItemBomSearchBasic',
         'revisionJoin' => 'BomRevisionSearchBasic',
         'transactionJoin' => 'TransactionSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

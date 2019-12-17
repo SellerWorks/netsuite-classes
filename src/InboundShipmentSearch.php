@@ -40,12 +40,12 @@ class InboundShipmentSearch extends SearchRecord
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'InboundShipmentSearchBasic',
         'itemJoin' => 'ItemSearchBasic',
         'itemReceiptJoin' => 'TransactionSearchBasic',
         'purchaseOrderJoin' => 'TransactionSearchBasic',
         'vendorJoin' => 'VendorSearchBasic',
         'customSearchJoin' => 'CustomSearchJoin[]',
-    );
+    ];
 }

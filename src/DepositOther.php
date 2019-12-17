@@ -52,7 +52,7 @@ class DepositOther
      */
     public $memo;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'entity' => 'RecordRef',
         'amount' => 'float',
         'account' => 'RecordRef',
@@ -62,5 +62,5 @@ class DepositOther
         'class' => 'RecordRef',
         'location' => 'RecordRef',
         'memo' => 'string',
-    );
+    ];
 }

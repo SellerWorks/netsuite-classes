@@ -80,7 +80,7 @@ class MessageSearchRow extends SearchRow
      */
     public $vendorJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'MessageSearchRowBasic',
         'attachmentsJoin' => 'FileSearchRowBasic',
         'authorJoin' => 'EntitySearchRowBasic',
@@ -97,5 +97,5 @@ class MessageSearchRow extends SearchRow
         'transactionJoin' => 'TransactionSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'vendorJoin' => 'VendorSearchRowBasic',
-    );
+    ];
 }

@@ -44,7 +44,7 @@ class SubsidiarySearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'SubsidiarySearchRowBasic',
         'addressJoin' => 'AddressSearchRowBasic',
         'defaultAdvanceToApplyAccountJoin' => 'AccountSearchRowBasic',
@@ -52,5 +52,5 @@ class SubsidiarySearchRow extends SearchRow
         'shippingAddressJoin' => 'AddressSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

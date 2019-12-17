@@ -24,8 +24,8 @@ class InterCompanyJournalEntryLineList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'line' => 'InterCompanyJournalEntryLine[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

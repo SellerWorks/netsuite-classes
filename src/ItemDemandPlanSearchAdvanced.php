@@ -32,10 +32,10 @@ class ItemDemandPlanSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'ItemDemandPlanSearch',
         'columns' => 'ItemDemandPlanSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

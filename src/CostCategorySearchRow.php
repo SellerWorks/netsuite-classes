@@ -28,9 +28,9 @@ class CostCategorySearchRow extends SearchRow
      */
     public $transactionJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'CostCategorySearchRowBasic',
         'accountJoin' => 'AccountSearchRowBasic',
         'transactionJoin' => 'TransactionSearchRowBasic',
-    );
+    ];
 }

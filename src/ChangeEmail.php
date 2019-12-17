@@ -32,10 +32,10 @@ class ChangeEmail
      */
     public $justThisAccount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'currentPassword' => 'string',
         'newEmail' => 'string',
         'newEmail2' => 'string',
         'justThisAccount' => 'boolean',
-    );
+    ];
 }

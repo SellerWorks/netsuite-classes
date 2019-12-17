@@ -184,7 +184,7 @@ class SerializedInventoryItemLocations
      */
     public $rescheduleOutDays;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'location' => 'string',
         'quantityOnHand' => 'float',
         'onHandValueMli' => 'float',
@@ -227,5 +227,5 @@ class SerializedInventoryItemLocations
         'supplyTimeFence' => 'integer',
         'rescheduleInDays' => 'integer',
         'rescheduleOutDays' => 'integer',
-    );
+    ];
 }

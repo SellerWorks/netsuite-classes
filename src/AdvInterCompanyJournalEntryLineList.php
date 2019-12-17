@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AdvInterCompanyJournalEntryLineList.
+ * AdvInterCompanyJournalEntryLineList
  */
 class AdvInterCompanyJournalEntryLineList
 {
     /**
+     * @access public
      * @var AdvInterCompanyJournalEntryLine[]
      */
     public $line;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'line' => 'AdvInterCompanyJournalEntryLine[]',
-        'replaceAll' => 'boolean',
+        "line" => "AdvInterCompanyJournalEntryLine[]",
+        "replaceAll" => "boolean",
     );
 }

@@ -128,6 +128,10 @@ class Location extends Record
      */
     public $classTranslationList;
     /**
+     * @var bool
+     */
+    public $includeInControlTower;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -140,7 +144,7 @@ class Location extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'name' => 'string',
         'parent' => 'RecordRef',
         'includeChildren' => 'boolean',
@@ -169,8 +173,9 @@ class Location extends Record
         'excludeLocationRegionsList' => 'LocationRegionsList',
         'businessHoursList' => 'LocationBusinessHoursList',
         'classTranslationList' => 'ClassTranslationList',
+        'includeInControlTower' => 'boolean',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

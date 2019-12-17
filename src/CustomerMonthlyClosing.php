@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerMonthlyClosing.
+ * CustomerMonthlyClosing
  */
 class CustomerMonthlyClosing
 {
@@ -20,29 +20,29 @@ class CustomerMonthlyClosing
     /**
      * @var string
      */
-    const _one = '_one';
+    const _one = "_one";
     /**
      * @var string
      */
-    const _five = '_five';
+    const _five = "_five";
     /**
      * @var string
      */
-    const _ten = '_ten';
+    const _ten = "_ten";
     /**
      * @var string
      */
-    const _fifteen = '_fifteen';
+    const _fifteen = "_fifteen";
     /**
      * @var string
      */
-    const _twenty = '_twenty';
+    const _twenty = "_twenty";
     /**
      * @var string
      */
-    const _twentyFive = '_twentyFive';
+    const _twentyFive = "_twentyFive";
     /**
      * @var string
      */
-    const _endOfTheMonth = '_endOfTheMonth';
+    const _endOfTheMonth = "_endOfTheMonth";
 }

@@ -320,6 +320,10 @@ class Job extends Record
      */
     public $creditCardsList;
     /**
+     * @var RecordRef
+     */
+    public $timeApproval;
+    /**
      * @var CustomFieldList
      */
     public $customFieldList;
@@ -332,7 +336,7 @@ class Job extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'entityId' => 'string',
         'altName' => 'string',
@@ -409,8 +413,9 @@ class Job extends Record
         'addressbookList' => 'JobAddressbookList',
         'milestonesList' => 'JobMilestonesList',
         'creditCardsList' => 'JobCreditCardsList',
+        'timeApproval' => 'RecordRef',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class LotNumberedInventoryItemLocationsList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'locations' => 'LotNumberedInventoryItemLocations[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

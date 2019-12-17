@@ -11,41 +11,47 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignChannel.
+ * CampaignChannel
  */
 class CampaignChannel extends Record
 {
     /**
+     * @access public
      * @var string
      */
     public $name;
     /**
+     * @access public
      * @var CampaignChannelEventType
      */
     public $eventType;
     /**
+     * @access public
      * @var string
      */
     public $description;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $isInactive;
     /**
+     * @access public
      * @var string
      */
     public $internalId;
     /**
+     * @access public
      * @var string
      */
     public $externalId;
 
     public static $paramtypesmap = array(
-        'name' => 'string',
-        'eventType' => 'CampaignChannelEventType',
-        'description' => 'string',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
+        "name" => "string",
+        "eventType" => "CampaignChannelEventType",
+        "description" => "string",
+        "isInactive" => "boolean",
+        "internalId" => "string",
+        "externalId" => "string",
     );
 }

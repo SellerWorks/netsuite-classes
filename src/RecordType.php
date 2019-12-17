@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class RecordType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -188,6 +188,10 @@ class RecordType
     /**
      * @var string
      */
+    const customPurchase = 'customPurchase';
+    /**
+     * @var string
+     */
     const customRecord = 'customRecord';
     /**
      * @var string
@@ -197,6 +201,10 @@ class RecordType
      * @var string
      */
     const customRecordType = 'customRecordType';
+    /**
+     * @var string
+     */
+    const customSale = 'customSale';
     /**
      * @var string
      */

@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AlcoholRecipientType.
+ * AlcoholRecipientType
  */
 class AlcoholRecipientType
 {
@@ -20,9 +20,9 @@ class AlcoholRecipientType
     /**
      * @var string
      */
-    const _consumer = '_consumer';
+    const _consumer = "_consumer";
     /**
      * @var string
      */
-    const _licensee = '_licensee';
+    const _licensee = "_licensee";
 }

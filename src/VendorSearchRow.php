@@ -84,7 +84,7 @@ class VendorSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'VendorSearchRowBasic',
         'accountJoin' => 'AccountSearchRowBasic',
         'campaignResponseJoin' => 'CampaignSearchRowBasic',
@@ -102,5 +102,5 @@ class VendorSearchRow extends SearchRow
         'userJoin' => 'EmployeeSearchRowBasic',
         'userNotesJoin' => 'NoteSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

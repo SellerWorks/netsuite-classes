@@ -24,8 +24,8 @@ class TopicSolution
      */
     public $message;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'solution' => 'RecordRef',
         'message' => 'string',
-    );
+    ];
 }

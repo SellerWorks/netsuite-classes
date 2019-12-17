@@ -172,7 +172,7 @@ class ItemNumberCustomField extends CustomFieldType
      */
     public $internalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'label' => 'string',
         'owner' => 'RecordRef',
         'description' => 'string',
@@ -212,5 +212,5 @@ class ItemNumberCustomField extends CustomFieldType
         'itemsList' => 'RecordRefList',
         'translationsList' => 'CustomFieldTranslationsList',
         'internalId' => 'string',
-    );
+    ];
 }

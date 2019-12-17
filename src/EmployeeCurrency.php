@@ -11,16 +11,17 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeCurrency.
+ * EmployeeCurrency
  */
 class EmployeeCurrency
 {
     /**
+     * @access public
      * @var RecordRef
      */
     public $currency;
 
     public static $paramtypesmap = array(
-        'currency' => 'RecordRef',
+        "currency" => "RecordRef",
     );
 }

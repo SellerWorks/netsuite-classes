@@ -24,8 +24,8 @@ class CurrencyRateSearch extends SearchRecord
      */
     public $userJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'CurrencyRateSearchBasic',
         'userJoin' => 'EmployeeSearchBasic',
-    );
+    ];
 }

@@ -60,7 +60,7 @@ class CouponCodeSearchBasic extends SearchRecordBasic
      */
     public $used;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'code' => 'SearchStringField',
         'dateSent' => 'SearchDateField',
         'externalId' => 'SearchMultiSelectField',
@@ -72,5 +72,5 @@ class CouponCodeSearchBasic extends SearchRecordBasic
         'recipient' => 'SearchMultiSelectField',
         'useCount' => 'SearchLongField',
         'used' => 'SearchBooleanField',
-    );
+    ];
 }

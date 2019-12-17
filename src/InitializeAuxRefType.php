@@ -15,8 +15,8 @@ namespace SellerWorks\Netsuite\Model;
  */
 class InitializeAuxRefType
 {
-    public static $paramtypesmap = array(
-    );
+    public static $paramtypesmap = [
+    ];
     /**
      * @var string
      */
@@ -33,4 +33,8 @@ class InitializeAuxRefType
      * @var string
      */
     const itemFulfillment = 'itemFulfillment';
+    /**
+     * @var string
+     */
+    const tranType = 'tranType';
 }

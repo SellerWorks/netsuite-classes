@@ -56,7 +56,7 @@ class ManufacturingCostTemplateSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'externalId' => 'SearchMultiSelectField',
         'externalIdString' => 'SearchStringField',
         'internalId' => 'SearchMultiSelectField',
@@ -67,5 +67,5 @@ class ManufacturingCostTemplateSearchBasic extends SearchRecordBasic
         'name' => 'SearchStringField',
         'subsidiary' => 'SearchMultiSelectField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }

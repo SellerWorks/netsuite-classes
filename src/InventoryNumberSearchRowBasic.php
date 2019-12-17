@@ -68,7 +68,7 @@ class InventoryNumberSearchRowBasic extends SearchRowBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'expirationDate' => 'SearchColumnDateField[]',
         'externalId' => 'SearchColumnSelectField[]',
         'internalId' => 'SearchColumnSelectField[]',
@@ -82,5 +82,5 @@ class InventoryNumberSearchRowBasic extends SearchRowBasic
         'quantityonhand' => 'SearchColumnDoubleField[]',
         'quantityonorder' => 'SearchColumnDoubleField[]',
         'customFieldList' => 'SearchColumnCustomFieldList',
-    );
+    ];
 }

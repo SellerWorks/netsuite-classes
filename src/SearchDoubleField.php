@@ -28,9 +28,9 @@ class SearchDoubleField
      */
     public $operator;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'float',
         'searchValue2' => 'float',
         'operator' => 'SearchDoubleFieldOperator',
-    );
+    ];
 }

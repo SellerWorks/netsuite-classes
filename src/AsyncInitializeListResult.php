@@ -20,7 +20,7 @@ class AsyncInitializeListResult extends AsyncResult
      */
     public $readResponseList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'readResponseList' => 'ReadResponseList',
-    );
+    ];
 }

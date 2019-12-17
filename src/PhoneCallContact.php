@@ -32,10 +32,10 @@ class PhoneCallContact
      */
     public $email;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'company' => 'RecordRef',
         'contact' => 'RecordRef',
         'phone' => 'string',
         'email' => 'string',
-    );
+    ];
 }

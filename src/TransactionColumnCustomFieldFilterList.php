@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransactionColumnCustomFieldFilterList.
+ * TransactionColumnCustomFieldFilterList
  */
 class TransactionColumnCustomFieldFilterList
 {
     /**
+     * @access public
      * @var TransactionColumnCustomFieldFilter[]
      */
     public $filter;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'filter' => 'TransactionColumnCustomFieldFilter[]',
-        'replaceAll' => 'boolean',
+        "filter" => "TransactionColumnCustomFieldFilter[]",
+        "replaceAll" => "boolean",
     );
 }

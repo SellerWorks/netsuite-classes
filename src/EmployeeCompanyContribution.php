@@ -40,12 +40,12 @@ class EmployeeCompanyContribution
      */
     public $expirationDate;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'payrollItem' => 'RecordRef',
         'rate' => 'string',
         'limit' => 'float',
         'inactive' => 'boolean',
         'effectiveDate' => 'dateTime',
         'expirationDate' => 'dateTime',
-    );
+    ];
 }

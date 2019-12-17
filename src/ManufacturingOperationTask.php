@@ -92,11 +92,11 @@ class ManufacturingOperationTask extends Record
      */
     public $autoCalculateLag;
     /**
-     * @var int
+     * @var float
      */
     public $machineResources;
     /**
-     * @var int
+     * @var float
      */
     public $laborResources;
     /**
@@ -120,7 +120,7 @@ class ManufacturingOperationTask extends Record
      */
     public $externalId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'customForm' => 'RecordRef',
         'manufacturingWorkCenter' => 'RecordRef',
         'manufacturingCostTemplate' => 'RecordRef',
@@ -140,12 +140,12 @@ class ManufacturingOperationTask extends Record
         'startDate' => 'dateTime',
         'endDate' => 'dateTime',
         'autoCalculateLag' => 'boolean',
-        'machineResources' => 'integer',
-        'laborResources' => 'integer',
+        'machineResources' => 'float',
+        'laborResources' => 'float',
         'costDetailList' => 'ManufacturingCostDetailList',
         'predecessorList' => 'ManufacturingOperationTaskPredecessorList',
         'customFieldList' => 'CustomFieldList',
         'internalId' => 'string',
         'externalId' => 'string',
-    );
+    ];
 }

@@ -24,8 +24,8 @@ class CustomFieldRoleAccessList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'roleAccess' => 'CustomFieldRoleAccess[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

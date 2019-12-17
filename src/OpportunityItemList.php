@@ -24,8 +24,8 @@ class OpportunityItemList
      */
     public $replaceAll;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'item' => 'OpportunityItem[]',
         'replaceAll' => 'boolean',
-    );
+    ];
 }

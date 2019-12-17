@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventReminderType.
+ * CalendarEventReminderType
  */
 class CalendarEventReminderType
 {
@@ -20,13 +20,13 @@ class CalendarEventReminderType
     /**
      * @var string
      */
-    const _none = '_none';
+    const _none = "_none";
     /**
      * @var string
      */
-    const _eMail = '_eMail';
+    const _eMail = "_eMail";
     /**
      * @var string
      */
-    const _popupWindow = '_popupWindow';
+    const _popupWindow = "_popupWindow";
 }

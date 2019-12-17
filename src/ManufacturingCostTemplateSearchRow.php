@@ -32,10 +32,10 @@ class ManufacturingCostTemplateSearchRow extends SearchRow
      */
     public $customSearchJoin;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'basic' => 'ManufacturingCostTemplateSearchRowBasic',
         'itemJoin' => 'ItemSearchRowBasic',
         'userJoin' => 'EmployeeSearchRowBasic',
         'customSearchJoin' => 'CustomSearchRowBasic[]',
-    );
+    ];
 }

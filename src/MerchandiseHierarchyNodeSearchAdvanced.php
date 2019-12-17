@@ -32,10 +32,10 @@ class MerchandiseHierarchyNodeSearchAdvanced extends SearchRecord
      */
     public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'criteria' => 'MerchandiseHierarchyNodeSearch',
         'columns' => 'MerchandiseHierarchyNodeSearchRow',
         'savedSearchId' => 'string',
         'savedSearchScriptId' => 'string',
-    );
+    ];
 }

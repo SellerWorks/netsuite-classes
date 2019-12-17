@@ -36,11 +36,11 @@ class PaycheckPayExp
      */
     public $amount;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'apply' => 'boolean',
         'line' => 'integer',
         'origDoc' => 'integer',
         'transaction' => 'string',
         'amount' => 'float',
-    );
+    ];
 }

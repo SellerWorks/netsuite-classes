@@ -24,8 +24,8 @@ class TokenPassportSignature
      */
     public $algorithm;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         '_' => 'string',
         'algorithm' => 'string',
-    );
+    ];
 }

@@ -20,7 +20,7 @@ class SearchColumnDateCustomField extends SearchColumnCustomField
      */
     public $searchValue;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'searchValue' => 'dateTime',
-    );
+    ];
 }

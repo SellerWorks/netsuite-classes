@@ -11,21 +11,23 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LotNumberedInventoryItemNumbersList.
+ * LotNumberedInventoryItemNumbersList
  */
 class LotNumberedInventoryItemNumbersList
 {
     /**
+     * @access public
      * @var LotNumberedInventoryItemNumbers[]
      */
     public $numbers;
     /**
-     * @var bool
+     * @access public
+     * @var boolean
      */
     public $replaceAll;
 
     public static $paramtypesmap = array(
-        'numbers' => 'LotNumberedInventoryItemNumbers[]',
-        'replaceAll' => 'boolean',
+        "numbers" => "LotNumberedInventoryItemNumbers[]",
+        "replaceAll" => "boolean",
     );
 }

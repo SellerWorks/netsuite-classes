@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmailPreference.
+ * EmailPreference
  */
 class EmailPreference
 {
@@ -20,13 +20,13 @@ class EmailPreference
     /**
      * @var string
      */
-    const _default = '_default';
+    const _default = "_default";
     /**
      * @var string
      */
-    const _hTML = '_hTML';
+    const _hTML = "_hTML";
     /**
      * @var string
      */
-    const _pDF = '_pDF';
+    const _pDF = "_pDF";
 }

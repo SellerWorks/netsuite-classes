@@ -640,7 +640,7 @@ class CustomerSearchBasic extends SearchRecordBasic
      */
     public $customFieldList;
 
-    public static $paramtypesmap = array(
+    public static $paramtypesmap = [
         'accountNumber' => 'SearchStringField',
         'address' => 'SearchStringField',
         'addressee' => 'SearchStringField',
@@ -797,5 +797,5 @@ class CustomerSearchBasic extends SearchRecordBasic
         'webLead' => 'SearchBooleanField',
         'zipCode' => 'SearchStringField',
         'customFieldList' => 'SearchCustomFieldList',
-    );
+    ];
 }
