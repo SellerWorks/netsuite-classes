@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckSearchBasic.
+ * PaycheckSearchBasic
  */
-class PaycheckSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchLongField
-     */
-    public $batchNumber;
-    /**
-     * @var SearchDateField
-     */
-    public $checkDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $employee;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchBooleanField
-     */
-    public $hasGLImpact;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payrollItem;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payrollItemType;
+class PaycheckSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $batchNumber;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $checkDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $hasGLImpact;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payrollItem;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payrollItemType;
 
-    public static $paramtypesmap = [
-        'account' => 'SearchMultiSelectField',
-        'batchNumber' => 'SearchLongField',
-        'checkDate' => 'SearchDateField',
-        'employee' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'hasGLImpact' => 'SearchBooleanField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'payrollItem' => 'SearchMultiSelectField',
-        'payrollItemType' => 'SearchMultiSelectField',
-    ];
+	static $paramtypesmap = array(
+		"account" => "SearchMultiSelectField",
+		"batchNumber" => "SearchLongField",
+		"checkDate" => "SearchDateField",
+		"employee" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"hasGLImpact" => "SearchBooleanField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"payrollItem" => "SearchMultiSelectField",
+		"payrollItemType" => "SearchMultiSelectField",
+	);
 }

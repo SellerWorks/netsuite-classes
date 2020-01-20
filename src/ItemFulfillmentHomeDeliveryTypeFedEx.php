@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentHomeDeliveryTypeFedEx.
+ * ItemFulfillmentHomeDeliveryTypeFedEx
  */
-class ItemFulfillmentHomeDeliveryTypeFedEx
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _appointment = '_appointment';
-    /**
-     * @var string
-     */
-    const _dateCertain = '_dateCertain';
-    /**
-     * @var string
-     */
-    const _evening = '_evening';
+class ItemFulfillmentHomeDeliveryTypeFedEx {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _appointment = "_appointment";
+	/**
+	 * @var string
+	 */
+	const _dateCertain = "_dateCertain";
+	/**
+	 * @var string
+	 */
+	const _evening = "_evening";
 }

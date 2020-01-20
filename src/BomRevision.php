@@ -11,71 +11,82 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomRevision.
+ * BomRevision
  */
-class BomRevision extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var RecordRef
-     */
-    public $billOfMaterials;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var dateTime
-     */
-    public $effectiveStartDate;
-    /**
-     * @var dateTime
-     */
-    public $effectiveEndDate;
-    /**
-     * @var BomRevisionComponentList
-     */
-    public $componentList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class BomRevision extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billOfMaterials;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveStartDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveEndDate;
+	/**
+	 * @access public
+	 * @var BomRevisionComponentList
+	 */
+	public $componentList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'name' => 'string',
-        'createdDate' => 'dateTime',
-        'billOfMaterials' => 'RecordRef',
-        'memo' => 'string',
-        'isInactive' => 'boolean',
-        'effectiveStartDate' => 'dateTime',
-        'effectiveEndDate' => 'dateTime',
-        'componentList' => 'BomRevisionComponentList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"name" => "string",
+		"createdDate" => "dateTime",
+		"billOfMaterials" => "RecordRef",
+		"memo" => "string",
+		"isInactive" => "boolean",
+		"effectiveStartDate" => "dateTime",
+		"effectiveEndDate" => "dateTime",
+		"componentList" => "BomRevisionComponentList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

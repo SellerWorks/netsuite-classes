@@ -11,211 +11,250 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseSearchBasic.
+ * SupportCaseSearchBasic
  */
-class SupportCaseSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $assigned;
-    /**
-     * @var SearchBooleanField
-     */
-    public $awaitingReply;
-    /**
-     * @var SearchStringField
-     */
-    public $caseNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $category;
-    /**
-     * @var SearchDateField
-     */
-    public $closedDate;
-    /**
-     * @var SearchStringField
-     */
-    public $company;
-    /**
-     * @var SearchStringField
-     */
-    public $contact;
-    /**
-     * @var SearchDateField
-     */
-    public $createdDate;
-    /**
-     * @var SearchStringField
-     */
-    public $email;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $escalateTo;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchBooleanField
-     */
-    public $helpDesk;
-    /**
-     * @var SearchStringField
-     */
-    public $inboundEmail;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $issue;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchBooleanField
-     */
-    public $lastMessage;
-    /**
-     * @var SearchDateField
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchDateField
-     */
-    public $lastReopenedDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $locked;
-    /**
-     * @var SearchStringField
-     */
-    public $message;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $messageAuthor;
-    /**
-     * @var SearchDateField
-     */
-    public $messageDate;
-    /**
-     * @var SearchBooleanField
-     */
-    public $messageType;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $module;
-    /**
-     * @var SearchLongField
-     */
-    public $number;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $origin;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $priority;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $product;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $profile;
-    /**
-     * @var SearchStringField
-     */
-    public $serialNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $stage;
-    /**
-     * @var SearchDateField
-     */
-    public $startDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $status;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchStringField
-     */
-    public $title;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class SupportCaseSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $assigned;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $awaitingReply;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $caseNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $closedDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $company;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $contact;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $escalateTo;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $helpDesk;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $inboundEmail;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $issue;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $lastMessage;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $lastReopenedDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $locked;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $messageAuthor;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $messageDate;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $messageType;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $module;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $number;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $origin;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $priority;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $product;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $profile;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $serialNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $stage;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'assigned' => 'SearchMultiSelectField',
-        'awaitingReply' => 'SearchBooleanField',
-        'caseNumber' => 'SearchStringField',
-        'category' => 'SearchMultiSelectField',
-        'closedDate' => 'SearchDateField',
-        'company' => 'SearchStringField',
-        'contact' => 'SearchStringField',
-        'createdDate' => 'SearchDateField',
-        'email' => 'SearchStringField',
-        'escalateTo' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'helpDesk' => 'SearchBooleanField',
-        'inboundEmail' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'issue' => 'SearchMultiSelectField',
-        'item' => 'SearchMultiSelectField',
-        'lastMessage' => 'SearchBooleanField',
-        'lastModifiedDate' => 'SearchDateField',
-        'lastReopenedDate' => 'SearchDateField',
-        'locked' => 'SearchBooleanField',
-        'message' => 'SearchStringField',
-        'messageAuthor' => 'SearchMultiSelectField',
-        'messageDate' => 'SearchDateField',
-        'messageType' => 'SearchBooleanField',
-        'module' => 'SearchMultiSelectField',
-        'number' => 'SearchLongField',
-        'origin' => 'SearchMultiSelectField',
-        'priority' => 'SearchMultiSelectField',
-        'product' => 'SearchMultiSelectField',
-        'profile' => 'SearchMultiSelectField',
-        'serialNumber' => 'SearchStringField',
-        'stage' => 'SearchEnumMultiSelectField',
-        'startDate' => 'SearchDateField',
-        'status' => 'SearchMultiSelectField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'title' => 'SearchStringField',
-        'customFieldList' => 'SearchCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"assigned" => "SearchMultiSelectField",
+		"awaitingReply" => "SearchBooleanField",
+		"caseNumber" => "SearchStringField",
+		"category" => "SearchMultiSelectField",
+		"closedDate" => "SearchDateField",
+		"company" => "SearchStringField",
+		"contact" => "SearchStringField",
+		"createdDate" => "SearchDateField",
+		"email" => "SearchStringField",
+		"escalateTo" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"helpDesk" => "SearchBooleanField",
+		"inboundEmail" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"issue" => "SearchMultiSelectField",
+		"item" => "SearchMultiSelectField",
+		"lastMessage" => "SearchBooleanField",
+		"lastModifiedDate" => "SearchDateField",
+		"lastReopenedDate" => "SearchDateField",
+		"locked" => "SearchBooleanField",
+		"message" => "SearchStringField",
+		"messageAuthor" => "SearchMultiSelectField",
+		"messageDate" => "SearchDateField",
+		"messageType" => "SearchBooleanField",
+		"module" => "SearchMultiSelectField",
+		"number" => "SearchLongField",
+		"origin" => "SearchMultiSelectField",
+		"priority" => "SearchMultiSelectField",
+		"product" => "SearchMultiSelectField",
+		"profile" => "SearchMultiSelectField",
+		"serialNumber" => "SearchStringField",
+		"stage" => "SearchEnumMultiSelectField",
+		"startDate" => "SearchDateField",
+		"status" => "SearchMultiSelectField",
+		"subsidiary" => "SearchMultiSelectField",
+		"title" => "SearchStringField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

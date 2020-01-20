@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingPeriodFiscalCalendars.
+ * AccountingPeriodFiscalCalendars
  */
-class AccountingPeriodFiscalCalendars
-{
-    /**
-     * @var RecordRef
-     */
-    public $fiscalCalendar;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
+class AccountingPeriodFiscalCalendars {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $fiscalCalendar;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
 
-    public static $paramtypesmap = [
-        'fiscalCalendar' => 'RecordRef',
-        'parent' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"fiscalCalendar" => "RecordRef",
+		"parent" => "RecordRef",
+	);
 }

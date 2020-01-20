@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PostingTransactionSummaryField.
+ * PostingTransactionSummaryField
  */
-class PostingTransactionSummaryField
-{
-    /**
-     * @var bool
-     */
-    public $period;
-    /**
-     * @var bool
-     */
-    public $account;
-    /**
-     * @var bool
-     */
-    public $parentItem;
-    /**
-     * @var bool
-     */
-    public $item;
-    /**
-     * @var bool
-     */
-    public $entity;
-    /**
-     * @var bool
-     */
-    public $department;
-    /**
-     * @var bool
-     */
-    public $class;
-    /**
-     * @var bool
-     */
-    public $location;
-    /**
-     * @var bool
-     */
-    public $subsidiary;
-    /**
-     * @var bool
-     */
-    public $book;
+class PostingTransactionSummaryField {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $period;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $parentItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $book;
 
-    public static $paramtypesmap = [
-        'period' => 'boolean',
-        'account' => 'boolean',
-        'parentItem' => 'boolean',
-        'item' => 'boolean',
-        'entity' => 'boolean',
-        'department' => 'boolean',
-        'class' => 'boolean',
-        'location' => 'boolean',
-        'subsidiary' => 'boolean',
-        'book' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"period" => "boolean",
+		"account" => "boolean",
+		"parentItem" => "boolean",
+		"item" => "boolean",
+		"entity" => "boolean",
+		"department" => "boolean",
+		"class" => "boolean",
+		"location" => "boolean",
+		"subsidiary" => "boolean",
+		"book" => "boolean",
+	);
 }

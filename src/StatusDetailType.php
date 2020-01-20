@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StatusDetailType.
+ * StatusDetailType
  */
-class StatusDetailType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const ERROR = 'ERROR';
-    /**
-     * @var string
-     */
-    const WARN = 'WARN';
-    /**
-     * @var string
-     */
-    const INFO = 'INFO';
+class StatusDetailType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const ERROR = "ERROR";
+	/**
+	 * @var string
+	 */
+	const WARN = "WARN";
+	/**
+	 * @var string
+	 */
+	const INFO = "INFO";
 }

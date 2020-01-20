@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DimensionList.
+ * DimensionList
  */
-class DimensionList
-{
-    /**
-     * @var DimensionRef[]
-     */
-    public $dimension;
+class DimensionList {
+	/**
+	 * @access public
+	 * @var DimensionRef[]
+	 */
+	public $dimension;
 
-    public static $paramtypesmap = [
-        'dimension' => 'DimensionRef[]',
-    ];
+	static $paramtypesmap = array(
+		"dimension" => "DimensionRef[]",
+	);
 }

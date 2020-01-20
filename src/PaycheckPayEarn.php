@@ -13,51 +13,50 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * PaycheckPayEarn
  */
-class PaycheckPayEarn
-{
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $payItem;
-    /**
-     * @access public
-     * @var integer
-     */
-    public $line;
-    /**
-     * @access public
-     * @var float
-     */
-    public $count;
-    /**
-     * @access public
-     * @var string
-     */
-    public $rate;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $serviceItem;
-    /**
-     * @access public
-     * @var float
-     */
-    public $grossAmount;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $manualEntry;
+class PaycheckPayEarn {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payItem;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $count;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $serviceItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $grossAmount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $manualEntry;
 
-    public static $paramtypesmap = array(
-        "payItem" => "RecordRef",
-        "line" => "integer",
-        "count" => "float",
-        "rate" => "string",
-        "serviceItem" => "RecordRef",
-        "grossAmount" => "float",
-        "manualEntry" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"payItem" => "RecordRef",
+		"line" => "integer",
+		"count" => "float",
+		"rate" => "string",
+		"serviceItem" => "RecordRef",
+		"grossAmount" => "float",
+		"manualEntry" => "boolean",
+	);
 }

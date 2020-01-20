@@ -8,7 +8,7 @@
 
 $serviceFile = __DIR__ . '/NetSuiteService.php';
 
-if (!is_readable($serviceFile)) {
+if (!\is_readable($serviceFile)) {
     return;
 }
 
@@ -42,7 +42,7 @@ namespace SellerWorks\Netsuite\Model;
 PHP;
 
         \file_put_contents($file, $content);
-        $classmap[] = \sprintf("'%s' => 'SellerWorks\\Netsuite\\Model\\%s'", $className, $className);
+        $classmap[] = \sprintf("'%s' => 'SellerWorks\\NetSuite\\Model\\%s'", $className, $className);
     }
 }
 
@@ -59,7 +59,7 @@ $content = <<<PHP
 
 declare(strict_types=1);
 
-namespace SellerWorks\Netsuite\Model;
+namespace SellerWorks\NetSuite\Model;
 
 function classmap(): array
 {

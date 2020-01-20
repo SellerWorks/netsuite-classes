@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerSubsidiaryRelationshipSearchRowBasic.
+ * CustomerSubsidiaryRelationshipSearchRowBasic
  */
-class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $balance;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $depositbalance;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $entity;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isprimarysub;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $primaryCurrency;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unbilledorders;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class CustomerSubsidiaryRelationshipSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $depositbalance;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isprimarysub;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $primaryCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unbilledorders;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'balance' => 'SearchColumnDoubleField[]',
-        'depositbalance' => 'SearchColumnDoubleField[]',
-        'entity' => 'SearchColumnSelectField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isprimarysub' => 'SearchColumnBooleanField[]',
-        'primaryCurrency' => 'SearchColumnSelectField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'unbilledorders' => 'SearchColumnDoubleField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"balance" => "SearchColumnDoubleField[]",
+		"depositbalance" => "SearchColumnDoubleField[]",
+		"entity" => "SearchColumnSelectField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isprimarysub" => "SearchColumnBooleanField[]",
+		"primaryCurrency" => "SearchColumnSelectField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"unbilledorders" => "SearchColumnDoubleField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

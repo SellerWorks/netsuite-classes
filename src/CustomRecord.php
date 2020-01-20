@@ -11,231 +11,274 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecord.
+ * CustomRecord
  */
-class CustomRecord extends Record
-{
-    /**
-     * @var string
-     */
-    public $customRecordId;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var string
-     */
-    public $disclaimer;
-    /**
-     * @var dateTime
-     */
-    public $created;
-    /**
-     * @var dateTime
-     */
-    public $lastModified;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $autoName;
-    /**
-     * @var string
-     */
-    public $altName;
-    /**
-     * @var RecordRef
-     */
-    public $owner;
-    /**
-     * @var RecordRef
-     */
-    public $recType;
-    /**
-     * @var bool
-     */
-    public $enableNumbering;
-    /**
-     * @var string
-     */
-    public $numberingPrefix;
-    /**
-     * @var string
-     */
-    public $numberingSuffix;
-    /**
-     * @var int
-     */
-    public $numberingMinDigits;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var int
-     */
-    public $numberingInit;
-    /**
-     * @var int
-     */
-    public $numberingCurrentNumber;
-    /**
-     * @var bool
-     */
-    public $allowNumberingOverride;
-    /**
-     * @var bool
-     */
-    public $isNumberingUpdateable;
-    /**
-     * @var CustomRecordTranslationsList
-     */
-    public $translationsList;
-    /**
-     * @var bool
-     */
-    public $includeName;
-    /**
-     * @var bool
-     */
-    public $showId;
-    /**
-     * @var bool
-     */
-    public $showCreationDate;
-    /**
-     * @var bool
-     */
-    public $showCreationDateOnList;
-    /**
-     * @var bool
-     */
-    public $showLastModified;
-    /**
-     * @var bool
-     */
-    public $showLastModifiedOnList;
-    /**
-     * @var bool
-     */
-    public $showOwner;
-    /**
-     * @var bool
-     */
-    public $showOwnerOnList;
-    /**
-     * @var bool
-     */
-    public $showOwnerAllowChange;
-    /**
-     * @var bool
-     */
-    public $usePermissions;
-    /**
-     * @var bool
-     */
-    public $allowAttachments;
-    /**
-     * @var bool
-     */
-    public $showNotes;
-    /**
-     * @var bool
-     */
-    public $enablEmailMerge;
-    /**
-     * @var bool
-     */
-    public $isOrdered;
-    /**
-     * @var bool
-     */
-    public $allowInlineEditing;
-    /**
-     * @var bool
-     */
-    public $isAvailableOffline;
-    /**
-     * @var bool
-     */
-    public $allowQuickSearch;
-    /**
-     * @var string
-     */
-    public $recordName;
-    /**
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CustomRecord extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $customRecordId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $disclaimer;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $created;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModified;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $owner;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $recType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $enableNumbering;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $numberingPrefix;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $numberingSuffix;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $numberingMinDigits;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $numberingInit;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $numberingCurrentNumber;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowNumberingOverride;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isNumberingUpdateable;
+	/**
+	 * @access public
+	 * @var CustomRecordTranslationsList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeName;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showId;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showCreationDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showCreationDateOnList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showLastModified;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showLastModifiedOnList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showOwner;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showOwnerOnList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showOwnerAllowChange;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $usePermissions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowAttachments;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $showNotes;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $enablEmailMerge;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOrdered;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowInlineEditing;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isAvailableOffline;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowQuickSearch;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $recordName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scriptId;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customRecordId' => 'string',
-        'customForm' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'parent' => 'RecordRef',
-        'disclaimer' => 'string',
-        'created' => 'dateTime',
-        'lastModified' => 'dateTime',
-        'name' => 'string',
-        'autoName' => 'boolean',
-        'altName' => 'string',
-        'owner' => 'RecordRef',
-        'recType' => 'RecordRef',
-        'enableNumbering' => 'boolean',
-        'numberingPrefix' => 'string',
-        'numberingSuffix' => 'string',
-        'numberingMinDigits' => 'integer',
-        'description' => 'string',
-        'numberingInit' => 'integer',
-        'numberingCurrentNumber' => 'integer',
-        'allowNumberingOverride' => 'boolean',
-        'isNumberingUpdateable' => 'boolean',
-        'translationsList' => 'CustomRecordTranslationsList',
-        'includeName' => 'boolean',
-        'showId' => 'boolean',
-        'showCreationDate' => 'boolean',
-        'showCreationDateOnList' => 'boolean',
-        'showLastModified' => 'boolean',
-        'showLastModifiedOnList' => 'boolean',
-        'showOwner' => 'boolean',
-        'showOwnerOnList' => 'boolean',
-        'showOwnerAllowChange' => 'boolean',
-        'usePermissions' => 'boolean',
-        'allowAttachments' => 'boolean',
-        'showNotes' => 'boolean',
-        'enablEmailMerge' => 'boolean',
-        'isOrdered' => 'boolean',
-        'allowInlineEditing' => 'boolean',
-        'isAvailableOffline' => 'boolean',
-        'allowQuickSearch' => 'boolean',
-        'recordName' => 'string',
-        'scriptId' => 'string',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customRecordId" => "string",
+		"customForm" => "RecordRef",
+		"isInactive" => "boolean",
+		"parent" => "RecordRef",
+		"disclaimer" => "string",
+		"created" => "dateTime",
+		"lastModified" => "dateTime",
+		"name" => "string",
+		"autoName" => "boolean",
+		"altName" => "string",
+		"owner" => "RecordRef",
+		"recType" => "RecordRef",
+		"enableNumbering" => "boolean",
+		"numberingPrefix" => "string",
+		"numberingSuffix" => "string",
+		"numberingMinDigits" => "integer",
+		"description" => "string",
+		"numberingInit" => "integer",
+		"numberingCurrentNumber" => "integer",
+		"allowNumberingOverride" => "boolean",
+		"isNumberingUpdateable" => "boolean",
+		"translationsList" => "CustomRecordTranslationsList",
+		"includeName" => "boolean",
+		"showId" => "boolean",
+		"showCreationDate" => "boolean",
+		"showCreationDateOnList" => "boolean",
+		"showLastModified" => "boolean",
+		"showLastModifiedOnList" => "boolean",
+		"showOwner" => "boolean",
+		"showOwnerOnList" => "boolean",
+		"showOwnerAllowChange" => "boolean",
+		"usePermissions" => "boolean",
+		"allowAttachments" => "boolean",
+		"showNotes" => "boolean",
+		"enablEmailMerge" => "boolean",
+		"isOrdered" => "boolean",
+		"allowInlineEditing" => "boolean",
+		"isAvailableOffline" => "boolean",
+		"allowQuickSearch" => "boolean",
+		"recordName" => "string",
+		"scriptId" => "string",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

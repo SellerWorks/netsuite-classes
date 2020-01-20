@@ -11,411 +11,490 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Job.
+ * Job
  */
-class Job extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $entityId;
-    /**
-     * @var string
-     */
-    public $altName;
-    /**
-     * @var string
-     */
-    public $companyName;
-    /**
-     * @var string
-     */
-    public $phoneticName;
-    /**
-     * @var RecordRef
-     */
-    public $entityStatus;
-    /**
-     * @var string
-     */
-    public $defaultAddress;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var JobPercentCompleteOverrideList
-     */
-    public $percentCompleteOverrideList;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var bool
-     */
-    public $billPay;
-    /**
-     * @var dateTime
-     */
-    public $dateCreated;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var RecordRef
-     */
-    public $workplace;
-    /**
-     * @var RecordRef
-     */
-    public $language;
-    /**
-     * @var string
-     */
-    public $comments;
-    /**
-     * @var string
-     */
-    public $accountNumber;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $fxRate;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $phone;
-    /**
-     * @var string
-     */
-    public $altPhone;
-    /**
-     * @var dateTime
-     */
-    public $calculatedEndDate;
-    /**
-     * @var dateTime
-     */
-    public $calculatedEndDateBaseline;
-    /**
-     * @var dateTime
-     */
-    public $startDateBaseline;
-    /**
-     * @var dateTime
-     */
-    public $projectedEndDate;
-    /**
-     * @var dateTime
-     */
-    public $projectedEndDateBaseline;
-    /**
-     * @var dateTime
-     */
-    public $lastBaselineDate;
-    /**
-     * @var RecordRef
-     */
-    public $jobType;
-    /**
-     * @var float
-     */
-    public $percentComplete;
-    /**
-     * @var float
-     */
-    public $estimatedCost;
-    /**
-     * @var float
-     */
-    public $estimatedRevenue;
-    /**
-     * @var Duration
-     */
-    public $estimatedTime;
-    /**
-     * @var Duration
-     */
-    public $estimatedTimeOverride;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var EmailPreference
-     */
-    public $emailPreference;
-    /**
-     * @var float
-     */
-    public $openingBalance;
-    /**
-     * @var dateTime
-     */
-    public $openingBalanceDate;
-    /**
-     * @var RecordRef
-     */
-    public $openingBalanceAccount;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var JobBillingType
-     */
-    public $jobBillingType;
-    /**
-     * @var RecordRef
-     */
-    public $billingSchedule;
-    /**
-     * @var RecordRef
-     */
-    public $jobItem;
-    /**
-     * @var float
-     */
-    public $percentTimeComplete;
-    /**
-     * @var Duration
-     */
-    public $actualTime;
-    /**
-     * @var bool
-     */
-    public $allowTime;
-    /**
-     * @var Duration
-     */
-    public $timeRemaining;
-    /**
-     * @var bool
-     */
-    public $limitTimeToAssignees;
-    /**
-     * @var float
-     */
-    public $estimatedLaborCost;
-    /**
-     * @var float
-     */
-    public $estimatedLaborCostBaseline;
-    /**
-     * @var RecordRef
-     */
-    public $estimateRevRecTemplate;
-    /**
-     * @var RecordRef
-     */
-    public $revRecForecastRule;
-    /**
-     * @var bool
-     */
-    public $usePercentCompleteOverride;
-    /**
-     * @var float
-     */
-    public $estimatedLaborRevenue;
-    /**
-     * @var float
-     */
-    public $estimatedGrossProfit;
-    /**
-     * @var float
-     */
-    public $estimatedGrossProfitPercent;
-    /**
-     * @var RecordRef
-     */
-    public $projectExpenseType;
-    /**
-     * @var bool
-     */
-    public $applyProjectExpenseTypeToAll;
-    /**
-     * @var bool
-     */
-    public $allowAllResourcesForTasks;
-    /**
-     * @var float
-     */
-    public $jobPrice;
-    /**
-     * @var bool
-     */
-    public $isUtilizedTime;
-    /**
-     * @var bool
-     */
-    public $isProductiveTime;
-    /**
-     * @var bool
-     */
-    public $isExemptTime;
-    /**
-     * @var bool
-     */
-    public $materializeTime;
-    /**
-     * @var bool
-     */
-    public $allowExpenses;
-    /**
-     * @var bool
-     */
-    public $allocatePayrollExpenses;
-    /**
-     * @var bool
-     */
-    public $includeCrmTasksInTotals;
-    /**
-     * @var GlobalSubscriptionStatus
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var JobResourcesList
-     */
-    public $jobResourcesList;
-    /**
-     * @var JobPlStatementList
-     */
-    public $plStatementList;
-    /**
-     * @var JobAddressbookList
-     */
-    public $addressbookList;
-    /**
-     * @var JobMilestonesList
-     */
-    public $milestonesList;
-    /**
-     * @var JobCreditCardsList
-     */
-    public $creditCardsList;
-    /**
-     * @var RecordRef
-     */
-    public $timeApproval;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Job extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $companyName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $defaultAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var JobPercentCompleteOverrideList
+	 */
+	public $percentCompleteOverrideList;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $billPay;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $workplace;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $language;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $accountNumber;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $fxRate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altPhone;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $calculatedEndDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $calculatedEndDateBaseline;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDateBaseline;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $projectedEndDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $projectedEndDateBaseline;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastBaselineDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $jobType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percentComplete;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedRevenue;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $estimatedTime;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $estimatedTimeOverride;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var EmailPreference
+	 */
+	public $emailPreference;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $openingBalance;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $openingBalanceDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $openingBalanceAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var JobBillingType
+	 */
+	public $jobBillingType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingSchedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $jobItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percentTimeComplete;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $actualTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowTime;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $timeRemaining;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $limitTimeToAssignees;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedLaborCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedLaborCostBaseline;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $estimateRevRecTemplate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $revRecForecastRule;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $usePercentCompleteOverride;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedLaborRevenue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedGrossProfit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estimatedGrossProfitPercent;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $projectExpenseType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $applyProjectExpenseTypeToAll;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowAllResourcesForTasks;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $jobPrice;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isUtilizedTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isProductiveTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isExemptTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $materializeTime;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowExpenses;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allocatePayrollExpenses;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeCrmTasksInTotals;
+	/**
+	 * @access public
+	 * @var GlobalSubscriptionStatus
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var JobResourcesList
+	 */
+	public $jobResourcesList;
+	/**
+	 * @access public
+	 * @var JobPlStatementList
+	 */
+	public $plStatementList;
+	/**
+	 * @access public
+	 * @var JobAddressbookList
+	 */
+	public $addressbookList;
+	/**
+	 * @access public
+	 * @var JobMilestonesList
+	 */
+	public $milestonesList;
+	/**
+	 * @access public
+	 * @var JobCreditCardsList
+	 */
+	public $creditCardsList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $timeApproval;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'entityId' => 'string',
-        'altName' => 'string',
-        'companyName' => 'string',
-        'phoneticName' => 'string',
-        'entityStatus' => 'RecordRef',
-        'defaultAddress' => 'string',
-        'parent' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'percentCompleteOverrideList' => 'JobPercentCompleteOverrideList',
-        'lastModifiedDate' => 'dateTime',
-        'billPay' => 'boolean',
-        'dateCreated' => 'dateTime',
-        'category' => 'RecordRef',
-        'workplace' => 'RecordRef',
-        'language' => 'RecordRef',
-        'comments' => 'string',
-        'accountNumber' => 'string',
-        'currency' => 'RecordRef',
-        'fxRate' => 'float',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'phone' => 'string',
-        'altPhone' => 'string',
-        'calculatedEndDate' => 'dateTime',
-        'calculatedEndDateBaseline' => 'dateTime',
-        'startDateBaseline' => 'dateTime',
-        'projectedEndDate' => 'dateTime',
-        'projectedEndDateBaseline' => 'dateTime',
-        'lastBaselineDate' => 'dateTime',
-        'jobType' => 'RecordRef',
-        'percentComplete' => 'float',
-        'estimatedCost' => 'float',
-        'estimatedRevenue' => 'float',
-        'estimatedTime' => 'Duration',
-        'estimatedTimeOverride' => 'Duration',
-        'fax' => 'string',
-        'email' => 'string',
-        'emailPreference' => 'EmailPreference',
-        'openingBalance' => 'float',
-        'openingBalanceDate' => 'dateTime',
-        'openingBalanceAccount' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'jobBillingType' => 'JobBillingType',
-        'billingSchedule' => 'RecordRef',
-        'jobItem' => 'RecordRef',
-        'percentTimeComplete' => 'float',
-        'actualTime' => 'Duration',
-        'allowTime' => 'boolean',
-        'timeRemaining' => 'Duration',
-        'limitTimeToAssignees' => 'boolean',
-        'estimatedLaborCost' => 'float',
-        'estimatedLaborCostBaseline' => 'float',
-        'estimateRevRecTemplate' => 'RecordRef',
-        'revRecForecastRule' => 'RecordRef',
-        'usePercentCompleteOverride' => 'boolean',
-        'estimatedLaborRevenue' => 'float',
-        'estimatedGrossProfit' => 'float',
-        'estimatedGrossProfitPercent' => 'float',
-        'projectExpenseType' => 'RecordRef',
-        'applyProjectExpenseTypeToAll' => 'boolean',
-        'allowAllResourcesForTasks' => 'boolean',
-        'jobPrice' => 'float',
-        'isUtilizedTime' => 'boolean',
-        'isProductiveTime' => 'boolean',
-        'isExemptTime' => 'boolean',
-        'materializeTime' => 'boolean',
-        'allowExpenses' => 'boolean',
-        'allocatePayrollExpenses' => 'boolean',
-        'includeCrmTasksInTotals' => 'boolean',
-        'globalSubscriptionStatus' => 'GlobalSubscriptionStatus',
-        'jobResourcesList' => 'JobResourcesList',
-        'plStatementList' => 'JobPlStatementList',
-        'addressbookList' => 'JobAddressbookList',
-        'milestonesList' => 'JobMilestonesList',
-        'creditCardsList' => 'JobCreditCardsList',
-        'timeApproval' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"entityId" => "string",
+		"altName" => "string",
+		"companyName" => "string",
+		"phoneticName" => "string",
+		"entityStatus" => "RecordRef",
+		"defaultAddress" => "string",
+		"parent" => "RecordRef",
+		"isInactive" => "boolean",
+		"percentCompleteOverrideList" => "JobPercentCompleteOverrideList",
+		"lastModifiedDate" => "dateTime",
+		"billPay" => "boolean",
+		"dateCreated" => "dateTime",
+		"category" => "RecordRef",
+		"workplace" => "RecordRef",
+		"language" => "RecordRef",
+		"comments" => "string",
+		"accountNumber" => "string",
+		"currency" => "RecordRef",
+		"fxRate" => "float",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"phone" => "string",
+		"altPhone" => "string",
+		"calculatedEndDate" => "dateTime",
+		"calculatedEndDateBaseline" => "dateTime",
+		"startDateBaseline" => "dateTime",
+		"projectedEndDate" => "dateTime",
+		"projectedEndDateBaseline" => "dateTime",
+		"lastBaselineDate" => "dateTime",
+		"jobType" => "RecordRef",
+		"percentComplete" => "float",
+		"estimatedCost" => "float",
+		"estimatedRevenue" => "float",
+		"estimatedTime" => "Duration",
+		"estimatedTimeOverride" => "Duration",
+		"fax" => "string",
+		"email" => "string",
+		"emailPreference" => "EmailPreference",
+		"openingBalance" => "float",
+		"openingBalanceDate" => "dateTime",
+		"openingBalanceAccount" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"jobBillingType" => "JobBillingType",
+		"billingSchedule" => "RecordRef",
+		"jobItem" => "RecordRef",
+		"percentTimeComplete" => "float",
+		"actualTime" => "Duration",
+		"allowTime" => "boolean",
+		"timeRemaining" => "Duration",
+		"limitTimeToAssignees" => "boolean",
+		"estimatedLaborCost" => "float",
+		"estimatedLaborCostBaseline" => "float",
+		"estimateRevRecTemplate" => "RecordRef",
+		"revRecForecastRule" => "RecordRef",
+		"usePercentCompleteOverride" => "boolean",
+		"estimatedLaborRevenue" => "float",
+		"estimatedGrossProfit" => "float",
+		"estimatedGrossProfitPercent" => "float",
+		"projectExpenseType" => "RecordRef",
+		"applyProjectExpenseTypeToAll" => "boolean",
+		"allowAllResourcesForTasks" => "boolean",
+		"jobPrice" => "float",
+		"isUtilizedTime" => "boolean",
+		"isProductiveTime" => "boolean",
+		"isExemptTime" => "boolean",
+		"materializeTime" => "boolean",
+		"allowExpenses" => "boolean",
+		"allocatePayrollExpenses" => "boolean",
+		"includeCrmTasksInTotals" => "boolean",
+		"globalSubscriptionStatus" => "GlobalSubscriptionStatus",
+		"jobResourcesList" => "JobResourcesList",
+		"plStatementList" => "JobPlStatementList",
+		"addressbookList" => "JobAddressbookList",
+		"milestonesList" => "JobMilestonesList",
+		"creditCardsList" => "JobCreditCardsList",
+		"timeApproval" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

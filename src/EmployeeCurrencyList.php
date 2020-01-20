@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeCurrencyList.
+ * EmployeeCurrencyList
  */
-class EmployeeCurrencyList
-{
-    /**
-     * @var EmployeeCurrency[]
-     */
-    public $employeeCurrency;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class EmployeeCurrencyList {
+	/**
+	 * @access public
+	 * @var EmployeeCurrency[]
+	 */
+	public $employeeCurrency;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'employeeCurrency' => 'EmployeeCurrency[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"employeeCurrency" => "EmployeeCurrency[]",
+		"replaceAll" => "boolean",
+	);
 }

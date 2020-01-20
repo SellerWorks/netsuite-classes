@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingRates.
+ * BillingRates
  */
-class BillingRates
-{
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var RecordRef
-     */
-    public $billingClass;
-    /**
-     * @var RateList
-     */
-    public $rateList;
+class BillingRates {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingClass;
+	/**
+	 * @access public
+	 * @var RateList
+	 */
+	public $rateList;
 
-    public static $paramtypesmap = [
-        'currency' => 'RecordRef',
-        'billingClass' => 'RecordRef',
-        'rateList' => 'RateList',
-    ];
+	static $paramtypesmap = array(
+		"currency" => "RecordRef",
+		"billingClass" => "RecordRef",
+		"rateList" => "RateList",
+	);
 }

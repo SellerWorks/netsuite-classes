@@ -11,156 +11,184 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemGroup.
+ * ItemGroup
  */
-class ItemGroup extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var bool
-     */
-    public $includeStartEndLines;
-    /**
-     * @var bool
-     */
-    public $isVsoeBundle;
-    /**
-     * @var RecordRef
-     */
-    public $defaultItemShipMethod;
-    /**
-     * @var bool
-     */
-    public $availableToPartners;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $upcCode;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $vendorName;
-    /**
-     * @var RecordRef
-     */
-    public $issueProduct;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var ShippingCarrier
-     */
-    public $itemCarrier;
-    /**
-     * @var RecordRefList
-     */
-    public $itemShipMethodList;
-    /**
-     * @var bool
-     */
-    public $printItems;
-    /**
-     * @var ItemMemberList
-     */
-    public $memberList;
-    /**
-     * @var TranslationList
-     */
-    public $translationsList;
-    /**
-     * @var ItemGroupHierarchyVersionsList
-     */
-    public $hierarchyVersionsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ItemGroup extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeStartEndLines;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isVsoeBundle;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultItemShipMethod;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $availableToPartners;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $upcCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $issueProduct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var ShippingCarrier
+	 */
+	public $itemCarrier;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $itemShipMethodList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $printItems;
+	/**
+	 * @access public
+	 * @var ItemMemberList
+	 */
+	public $memberList;
+	/**
+	 * @access public
+	 * @var TranslationList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var ItemGroupHierarchyVersionsList
+	 */
+	public $hierarchyVersionsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'customForm' => 'RecordRef',
-        'includeStartEndLines' => 'boolean',
-        'isVsoeBundle' => 'boolean',
-        'defaultItemShipMethod' => 'RecordRef',
-        'availableToPartners' => 'boolean',
-        'isInactive' => 'boolean',
-        'itemId' => 'string',
-        'upcCode' => 'string',
-        'displayName' => 'string',
-        'vendorName' => 'string',
-        'issueProduct' => 'RecordRef',
-        'parent' => 'RecordRef',
-        'description' => 'string',
-        'subsidiaryList' => 'RecordRefList',
-        'includeChildren' => 'boolean',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'itemCarrier' => 'ShippingCarrier',
-        'itemShipMethodList' => 'RecordRefList',
-        'printItems' => 'boolean',
-        'memberList' => 'ItemMemberList',
-        'translationsList' => 'TranslationList',
-        'hierarchyVersionsList' => 'ItemGroupHierarchyVersionsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"customForm" => "RecordRef",
+		"includeStartEndLines" => "boolean",
+		"isVsoeBundle" => "boolean",
+		"defaultItemShipMethod" => "RecordRef",
+		"availableToPartners" => "boolean",
+		"isInactive" => "boolean",
+		"itemId" => "string",
+		"upcCode" => "string",
+		"displayName" => "string",
+		"vendorName" => "string",
+		"issueProduct" => "RecordRef",
+		"parent" => "RecordRef",
+		"description" => "string",
+		"subsidiaryList" => "RecordRefList",
+		"includeChildren" => "boolean",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"itemCarrier" => "ShippingCarrier",
+		"itemShipMethodList" => "RecordRefList",
+		"printItems" => "boolean",
+		"memberList" => "ItemMemberList",
+		"translationsList" => "TranslationList",
+		"hierarchyVersionsList" => "ItemGroupHierarchyVersionsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

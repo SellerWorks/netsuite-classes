@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * IssueRelatedIssues.
+ * IssueRelatedIssues
  */
-class IssueRelatedIssues
-{
-    /**
-     * @var IssueRelationship
-     */
-    public $relationship;
-    /**
-     * @var RecordRef
-     */
-    public $issueNumber;
-    /**
-     * @var string
-     */
-    public $relationshipComment;
+class IssueRelatedIssues {
+	/**
+	 * @access public
+	 * @var IssueRelationship
+	 */
+	public $relationship;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $issueNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $relationshipComment;
 
-    public static $paramtypesmap = [
-        'relationship' => 'IssueRelationship',
-        'issueNumber' => 'RecordRef',
-        'relationshipComment' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"relationship" => "IssueRelationship",
+		"issueNumber" => "RecordRef",
+		"relationshipComment" => "string",
+	);
 }

@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobResources.
+ * JobResources
  */
-class JobResources
-{
-    /**
-     * @var RecordRef
-     */
-    public $jobResource;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var RecordRef
-     */
-    public $role;
+class JobResources {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $jobResource;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $role;
 
-    public static $paramtypesmap = [
-        'jobResource' => 'RecordRef',
-        'email' => 'string',
-        'role' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"jobResource" => "RecordRef",
+		"email" => "string",
+		"role" => "RecordRef",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SiteCategoryTranslationList.
+ * SiteCategoryTranslationList
  */
-class SiteCategoryTranslationList
-{
-    /**
-     * @var SiteCategoryTranslation[]
-     */
-    public $translation;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SiteCategoryTranslationList {
+	/**
+	 * @access public
+	 * @var SiteCategoryTranslation[]
+	 */
+	public $translation;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'translation' => 'SiteCategoryTranslation[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"translation" => "SiteCategoryTranslation[]",
+		"replaceAll" => "boolean",
+	);
 }

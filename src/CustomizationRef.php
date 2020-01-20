@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomizationRef.
+ * CustomizationRef
  */
-class CustomizationRef extends RecordRef
-{
-    /**
-     * @var string
-     */
-    public $scriptId;
+class CustomizationRef extends RecordRef {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scriptId;
 
-    public static $paramtypesmap = [
-        'scriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"scriptId" => "string",
+	);
 }

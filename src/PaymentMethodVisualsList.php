@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentMethodVisualsList.
+ * PaymentMethodVisualsList
  */
-class PaymentMethodVisualsList
-{
-    /**
-     * @var PaymentMethodVisuals[]
-     */
-    public $paymentMethodVisuals;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class PaymentMethodVisualsList {
+	/**
+	 * @access public
+	 * @var PaymentMethodVisuals[]
+	 */
+	public $paymentMethodVisuals;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'paymentMethodVisuals' => 'PaymentMethodVisuals[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"paymentMethodVisuals" => "PaymentMethodVisuals[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberBinSearchRowBasic.
+ * InventoryNumberBinSearchRowBasic
  */
-class InventoryNumberBinSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $binNumber;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $inventoryNumber;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityAvailable;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityOnHand;
+class InventoryNumberBinSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $inventoryNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityOnHand;
 
-    public static $paramtypesmap = [
-        'binNumber' => 'SearchColumnSelectField[]',
-        'inventoryNumber' => 'SearchColumnSelectField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'quantityAvailable' => 'SearchColumnDoubleField[]',
-        'quantityOnHand' => 'SearchColumnDoubleField[]',
-    ];
+	static $paramtypesmap = array(
+		"binNumber" => "SearchColumnSelectField[]",
+		"inventoryNumber" => "SearchColumnSelectField[]",
+		"location" => "SearchColumnSelectField[]",
+		"quantityAvailable" => "SearchColumnDoubleField[]",
+		"quantityOnHand" => "SearchColumnDoubleField[]",
+	);
 }

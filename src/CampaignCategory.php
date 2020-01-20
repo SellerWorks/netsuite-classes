@@ -13,57 +13,56 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CampaignCategory
  */
-class CampaignCategory extends Record
-{
-    /**
-     * @access public
-     * @var string
-     */
-    public $name;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $leadSource;
-    /**
-     * @access public
-     * @var string
-     */
-    public $description;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $isexternal;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $isInactive;
-    /**
-     * @access public
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @access public
-     * @var string
-     */
-    public $externalId;
+class CampaignCategory extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isexternal;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        "name" => "string",
-        "parent" => "RecordRef",
-        "leadSource" => "RecordRef",
-        "description" => "string",
-        "isexternal" => "boolean",
-        "isInactive" => "boolean",
-        "internalId" => "string",
-        "externalId" => "string",
-    );
+	static $paramtypesmap = array(
+		"name" => "string",
+		"parent" => "RecordRef",
+		"leadSource" => "RecordRef",
+		"description" => "string",
+		"isexternal" => "boolean",
+		"isInactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

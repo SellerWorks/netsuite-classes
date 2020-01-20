@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeHcmPositionList.
+ * EmployeeHcmPositionList
  */
-class EmployeeHcmPositionList
-{
-    /**
-     * @var EmployeeHcmPosition[]
-     */
-    public $employeeHcmPosition;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class EmployeeHcmPositionList {
+	/**
+	 * @access public
+	 * @var EmployeeHcmPosition[]
+	 */
+	public $employeeHcmPosition;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'employeeHcmPosition' => 'EmployeeHcmPosition[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"employeeHcmPosition" => "EmployeeHcmPosition[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSource.
+ * ItemSource
  */
-class ItemSource
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _stock = '_stock';
-    /**
-     * @var string
-     */
-    const _phantom = '_phantom';
-    /**
-     * @var string
-     */
-    const _workOrder = '_workOrder';
-    /**
-     * @var string
-     */
-    const _purchaseOrder = '_purchaseOrder';
+class ItemSource {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _stock = "_stock";
+	/**
+	 * @var string
+	 */
+	const _phantom = "_phantom";
+	/**
+	 * @var string
+	 */
+	const _workOrder = "_workOrder";
+	/**
+	 * @var string
+	 */
+	const _purchaseOrder = "_purchaseOrder";
 }

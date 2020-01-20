@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomRecordTypeSublistsList
  */
-class CustomRecordTypeSublistsList
-{
-    /**
-     * @access public
-     * @var CustomRecordTypeSublists[]
-     */
-    public $sublists;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class CustomRecordTypeSublistsList {
+	/**
+	 * @access public
+	 * @var CustomRecordTypeSublists[]
+	 */
+	public $sublists;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "sublists" => "CustomRecordTypeSublists[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"sublists" => "CustomRecordTypeSublists[]",
+		"replaceAll" => "boolean",
+	);
 }

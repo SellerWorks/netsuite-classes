@@ -11,111 +11,130 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentCardToken.
+ * PaymentCardToken
  */
-class PaymentCardToken extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var string
-     */
-    public $mask;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var PaymentInstrumentState
-     */
-    public $state;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $preserveOnFile;
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var string
-     */
-    public $token;
-    /**
-     * @var dateTime
-     */
-    public $tokenExpirationDate;
-    /**
-     * @var TokenFamily
-     */
-    public $tokenFamily;
-    /**
-     * @var string
-     */
-    public $tokenNamespace;
-    /**
-     * @var string
-     */
-    public $cardIssuerIdNumber;
-    /**
-     * @var PaymentCardBrand
-     */
-    public $cardBrand;
-    /**
-     * @var PaymentCardType
-     */
-    public $cardType;
-    /**
-     * @var string
-     */
-    public $cardNameOnCard;
-    /**
-     * @var string
-     */
-    public $cardLastFourDigits;
-    /**
-     * @var dateTime
-     */
-    public $cardExpirationDate;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class PaymentCardToken extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mask;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var PaymentInstrumentState
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $preserveOnFile;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $token;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tokenExpirationDate;
+	/**
+	 * @access public
+	 * @var TokenFamily
+	 */
+	public $tokenFamily;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tokenNamespace;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $cardIssuerIdNumber;
+	/**
+	 * @access public
+	 * @var PaymentCardBrand
+	 */
+	public $cardBrand;
+	/**
+	 * @access public
+	 * @var PaymentCardType
+	 */
+	public $cardType;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $cardNameOnCard;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $cardLastFourDigits;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $cardExpirationDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'entity' => 'RecordRef',
-        'mask' => 'string',
-        'paymentMethod' => 'RecordRef',
-        'memo' => 'string',
-        'state' => 'PaymentInstrumentState',
-        'isInactive' => 'boolean',
-        'preserveOnFile' => 'boolean',
-        'isDefault' => 'boolean',
-        'token' => 'string',
-        'tokenExpirationDate' => 'dateTime',
-        'tokenFamily' => 'TokenFamily',
-        'tokenNamespace' => 'string',
-        'cardIssuerIdNumber' => 'string',
-        'cardBrand' => 'PaymentCardBrand',
-        'cardType' => 'PaymentCardType',
-        'cardNameOnCard' => 'string',
-        'cardLastFourDigits' => 'string',
-        'cardExpirationDate' => 'dateTime',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"entity" => "RecordRef",
+		"mask" => "string",
+		"paymentMethod" => "RecordRef",
+		"memo" => "string",
+		"state" => "PaymentInstrumentState",
+		"isInactive" => "boolean",
+		"preserveOnFile" => "boolean",
+		"isDefault" => "boolean",
+		"token" => "string",
+		"tokenExpirationDate" => "dateTime",
+		"tokenFamily" => "TokenFamily",
+		"tokenNamespace" => "string",
+		"cardIssuerIdNumber" => "string",
+		"cardBrand" => "PaymentCardBrand",
+		"cardType" => "PaymentCardType",
+		"cardNameOnCard" => "string",
+		"cardLastFourDigits" => "string",
+		"cardExpirationDate" => "dateTime",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

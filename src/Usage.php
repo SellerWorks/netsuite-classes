@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Usage.
+ * Usage
  */
-class Usage extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var RecordRef
-     */
-    public $subscriptionPlan;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var RecordRef
-     */
-    public $usageSubscription;
-    /**
-     * @var RecordRef
-     */
-    public $usageSubscriptionLine;
-    /**
-     * @var float
-     */
-    public $usageQuantity;
-    /**
-     * @var dateTime
-     */
-    public $usageDate;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Usage extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subscriptionPlan;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $usageSubscription;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $usageSubscriptionLine;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $usageQuantity;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $usageDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'memo' => 'string',
-        'item' => 'RecordRef',
-        'subscriptionPlan' => 'RecordRef',
-        'customer' => 'RecordRef',
-        'usageSubscription' => 'RecordRef',
-        'usageSubscriptionLine' => 'RecordRef',
-        'usageQuantity' => 'float',
-        'usageDate' => 'dateTime',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"memo" => "string",
+		"item" => "RecordRef",
+		"subscriptionPlan" => "RecordRef",
+		"customer" => "RecordRef",
+		"usageSubscription" => "RecordRef",
+		"usageSubscriptionLine" => "RecordRef",
+		"usageQuantity" => "float",
+		"usageDate" => "dateTime",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

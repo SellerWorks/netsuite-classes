@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NoteDirection.
+ * NoteDirection
  */
-class NoteDirection
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _incoming = '_incoming';
-    /**
-     * @var string
-     */
-    const _outgoing = '_outgoing';
+class NoteDirection {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _incoming = "_incoming";
+	/**
+	 * @var string
+	 */
+	const _outgoing = "_outgoing";
 }

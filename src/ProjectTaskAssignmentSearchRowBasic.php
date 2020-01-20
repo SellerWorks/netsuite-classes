@@ -11,121 +11,142 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskAssignmentSearchRowBasic.
+ * ProjectTaskAssignmentSearchRowBasic
  */
-class ProjectTaskAssignmentSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $actualWork;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $cost;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $costBase;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $endDate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $estimatedWork;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $estimatedWorkBaseline;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $grossProfit;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $grossProfitBase;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $price;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $priceBase;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $resource;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $resourceName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $serviceItem;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $serviceItemDesc;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startDate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitCost;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitCostBase;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitPrice;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $unitPriceBase;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $units;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $workCalendar;
+class ProjectTaskAssignmentSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $actualWork;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $costBase;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $estimatedWork;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $estimatedWorkBaseline;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $grossProfit;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $grossProfitBase;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $priceBase;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $resource;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $resourceName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $serviceItem;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $serviceItemDesc;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitCost;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitCostBase;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitPrice;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $unitPriceBase;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $workCalendar;
 
-    public static $paramtypesmap = [
-        'actualWork' => 'SearchColumnDoubleField[]',
-        'cost' => 'SearchColumnDoubleField[]',
-        'costBase' => 'SearchColumnDoubleField[]',
-        'endDate' => 'SearchColumnDateField[]',
-        'estimatedWork' => 'SearchColumnDoubleField[]',
-        'estimatedWorkBaseline' => 'SearchColumnDoubleField[]',
-        'grossProfit' => 'SearchColumnDoubleField[]',
-        'grossProfitBase' => 'SearchColumnDoubleField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'price' => 'SearchColumnDoubleField[]',
-        'priceBase' => 'SearchColumnDoubleField[]',
-        'resource' => 'SearchColumnSelectField[]',
-        'resourceName' => 'SearchColumnStringField[]',
-        'serviceItem' => 'SearchColumnStringField[]',
-        'serviceItemDesc' => 'SearchColumnStringField[]',
-        'startDate' => 'SearchColumnDateField[]',
-        'unitCost' => 'SearchColumnDoubleField[]',
-        'unitCostBase' => 'SearchColumnDoubleField[]',
-        'unitPrice' => 'SearchColumnDoubleField[]',
-        'unitPriceBase' => 'SearchColumnDoubleField[]',
-        'units' => 'SearchColumnDoubleField[]',
-        'workCalendar' => 'SearchColumnSelectField[]',
-    ];
+	static $paramtypesmap = array(
+		"actualWork" => "SearchColumnDoubleField[]",
+		"cost" => "SearchColumnDoubleField[]",
+		"costBase" => "SearchColumnDoubleField[]",
+		"endDate" => "SearchColumnDateField[]",
+		"estimatedWork" => "SearchColumnDoubleField[]",
+		"estimatedWorkBaseline" => "SearchColumnDoubleField[]",
+		"grossProfit" => "SearchColumnDoubleField[]",
+		"grossProfitBase" => "SearchColumnDoubleField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"price" => "SearchColumnDoubleField[]",
+		"priceBase" => "SearchColumnDoubleField[]",
+		"resource" => "SearchColumnSelectField[]",
+		"resourceName" => "SearchColumnStringField[]",
+		"serviceItem" => "SearchColumnStringField[]",
+		"serviceItemDesc" => "SearchColumnStringField[]",
+		"startDate" => "SearchColumnDateField[]",
+		"unitCost" => "SearchColumnDoubleField[]",
+		"unitCostBase" => "SearchColumnDoubleField[]",
+		"unitPrice" => "SearchColumnDoubleField[]",
+		"unitPriceBase" => "SearchColumnDoubleField[]",
+		"units" => "SearchColumnDoubleField[]",
+		"workCalendar" => "SearchColumnSelectField[]",
+	);
 }

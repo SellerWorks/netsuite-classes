@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleRecurrenceList.
+ * BillingScheduleRecurrenceList
  */
-class BillingScheduleRecurrenceList
-{
-    /**
-     * @var BillingScheduleRecurrence[]
-     */
-    public $billingScheduleRecurrence;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class BillingScheduleRecurrenceList {
+	/**
+	 * @access public
+	 * @var BillingScheduleRecurrence[]
+	 */
+	public $billingScheduleRecurrence;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'billingScheduleRecurrence' => 'BillingScheduleRecurrence[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"billingScheduleRecurrence" => "BillingScheduleRecurrence[]",
+		"replaceAll" => "boolean",
+	);
 }

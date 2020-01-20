@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SearchEnumMultiSelectField
  */
-class SearchEnumMultiSelectField
-{
-    /**
-     * @access public
-     * @var string[]
-     */
-    public $searchValue;
-    /**
-     * @access public
-     * @var SearchEnumMultiSelectFieldOperator
-     */
-    public $operator;
+class SearchEnumMultiSelectField {
+	/**
+	 * @access public
+	 * @var string[]
+	 */
+	public $searchValue;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectFieldOperator
+	 */
+	public $operator;
 
-    public static $paramtypesmap = array(
-        "searchValue" => "string[]",
-        "operator" => "SearchEnumMultiSelectFieldOperator",
-    );
+	static $paramtypesmap = array(
+		"searchValue" => "string[]",
+		"operator" => "SearchEnumMultiSelectFieldOperator",
+	);
 }

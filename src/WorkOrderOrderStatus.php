@@ -11,38 +11,38 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderOrderStatus.
+ * WorkOrderOrderStatus
  */
-class WorkOrderOrderStatus
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _built = '_built';
-    /**
-     * @var string
-     */
-    const _cancelled = '_cancelled';
-    /**
-     * @var string
-     */
-    const _closed = '_closed';
-    /**
-     * @var string
-     */
-    const _inProcess = '_inProcess';
-    /**
-     * @var string
-     */
-    const _planned = '_planned';
-    /**
-     * @var string
-     */
-    const _released = '_released';
-    /**
-     * @var string
-     */
-    const _undefined = '_undefined';
+class WorkOrderOrderStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _built = "_built";
+	/**
+	 * @var string
+	 */
+	const _cancelled = "_cancelled";
+	/**
+	 * @var string
+	 */
+	const _closed = "_closed";
+	/**
+	 * @var string
+	 */
+	const _inProcess = "_inProcess";
+	/**
+	 * @var string
+	 */
+	const _planned = "_planned";
+	/**
+	 * @var string
+	 */
+	const _released = "_released";
+	/**
+	 * @var string
+	 */
+	const _undefined = "_undefined";
 }

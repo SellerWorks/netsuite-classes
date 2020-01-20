@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Record.
+ * Record
  */
-class Record
-{
-    /**
-     * @var NullField
-     */
-    public $nullFieldList;
+class Record {
+	/**
+	 * @access public
+	 * @var NullField
+	 */
+	public $nullFieldList;
 
-    public static $paramtypesmap = [
-        'nullFieldList' => 'NullField',
-    ];
+	static $paramtypesmap = array(
+		"nullFieldList" => "NullField",
+	);
 }

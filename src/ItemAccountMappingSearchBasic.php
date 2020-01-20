@@ -11,91 +11,106 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAccountMappingSearchBasic.
+ * ItemAccountMappingSearchBasic
  */
-class ItemAccountMappingSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBook;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $class;
-    /**
-     * @var SearchMultiSelectCustomField
-     */
-    public $customDimension;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $department;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $destinationAccount;
-    /**
-     * @var SearchDateField
-     */
-    public $effectiveDate;
-    /**
-     * @var SearchDateField
-     */
-    public $endDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $itemAccount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $sourceAccount;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $subsidiary;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class ItemAccountMappingSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectCustomField
+	 */
+	public $customDimension;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $destinationAccount;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $itemAccount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $sourceAccount;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'accountingBook' => 'SearchMultiSelectField',
-        'class' => 'SearchMultiSelectField',
-        'customDimension' => 'SearchMultiSelectCustomField',
-        'department' => 'SearchMultiSelectField',
-        'destinationAccount' => 'SearchMultiSelectField',
-        'effectiveDate' => 'SearchDateField',
-        'endDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'itemAccount' => 'SearchEnumMultiSelectField',
-        'location' => 'SearchMultiSelectField',
-        'sourceAccount' => 'SearchMultiSelectField',
-        'subsidiary' => 'SearchMultiSelectField',
-        'customFieldList' => 'SearchCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"accountingBook" => "SearchMultiSelectField",
+		"class" => "SearchMultiSelectField",
+		"customDimension" => "SearchMultiSelectCustomField",
+		"department" => "SearchMultiSelectField",
+		"destinationAccount" => "SearchMultiSelectField",
+		"effectiveDate" => "SearchDateField",
+		"endDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"itemAccount" => "SearchEnumMultiSelectField",
+		"location" => "SearchMultiSelectField",
+		"sourceAccount" => "SearchMultiSelectField",
+		"subsidiary" => "SearchMultiSelectField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

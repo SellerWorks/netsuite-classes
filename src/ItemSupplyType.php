@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyType.
+ * ItemSupplyType
  */
-class ItemSupplyType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _build = '_build';
-    /**
-     * @var string
-     */
-    const _purchase = '_purchase';
-    /**
-     * @var string
-     */
-    const _transfer = '_transfer';
+class ItemSupplyType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _build = "_build";
+	/**
+	 * @var string
+	 */
+	const _purchase = "_purchase";
+	/**
+	 * @var string
+	 */
+	const _transfer = "_transfer";
 }

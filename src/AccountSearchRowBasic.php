@@ -11,106 +11,124 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountSearchRowBasic.
+ * AccountSearchRowBasic
  */
-class AccountSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $accountingContext;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $balance;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $cashFlowRateType;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $category1099Misc;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $generalRateType;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $legalName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $locale;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $localizedLegalName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $localizedName;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $localizedNumber;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $number;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $type;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class AccountSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $accountingContext;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $cashFlowRateType;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $category1099Misc;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $generalRateType;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $legalName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $localizedLegalName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $localizedName;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $localizedNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $number;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'accountingContext' => 'SearchColumnStringField[]',
-        'balance' => 'SearchColumnDoubleField[]',
-        'cashFlowRateType' => 'SearchColumnEnumSelectField[]',
-        'category1099Misc' => 'SearchColumnSelectField[]',
-        'description' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'generalRateType' => 'SearchColumnEnumSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'legalName' => 'SearchColumnStringField[]',
-        'locale' => 'SearchColumnStringField[]',
-        'localizedLegalName' => 'SearchColumnStringField[]',
-        'localizedName' => 'SearchColumnStringField[]',
-        'localizedNumber' => 'SearchColumnStringField[]',
-        'name' => 'SearchColumnStringField[]',
-        'number' => 'SearchColumnStringField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'type' => 'SearchColumnEnumSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"accountingContext" => "SearchColumnStringField[]",
+		"balance" => "SearchColumnDoubleField[]",
+		"cashFlowRateType" => "SearchColumnEnumSelectField[]",
+		"category1099Misc" => "SearchColumnSelectField[]",
+		"description" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"generalRateType" => "SearchColumnEnumSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"legalName" => "SearchColumnStringField[]",
+		"locale" => "SearchColumnStringField[]",
+		"localizedLegalName" => "SearchColumnStringField[]",
+		"localizedName" => "SearchColumnStringField[]",
+		"localizedNumber" => "SearchColumnStringField[]",
+		"name" => "SearchColumnStringField[]",
+		"number" => "SearchColumnStringField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"type" => "SearchColumnEnumSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

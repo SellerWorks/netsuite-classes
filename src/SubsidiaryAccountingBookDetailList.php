@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiaryAccountingBookDetailList.
+ * SubsidiaryAccountingBookDetailList
  */
-class SubsidiaryAccountingBookDetailList
-{
-    /**
-     * @var SubsidiaryAccountingBookDetail[]
-     */
-    public $subsidiaryAccountingBookDetail;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SubsidiaryAccountingBookDetailList {
+	/**
+	 * @access public
+	 * @var SubsidiaryAccountingBookDetail[]
+	 */
+	public $subsidiaryAccountingBookDetail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'subsidiaryAccountingBookDetail' => 'SubsidiaryAccountingBookDetail[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"subsidiaryAccountingBookDetail" => "SubsidiaryAccountingBookDetail[]",
+		"replaceAll" => "boolean",
+	);
 }

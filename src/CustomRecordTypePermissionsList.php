@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypePermissionsList.
+ * CustomRecordTypePermissionsList
  */
-class CustomRecordTypePermissionsList
-{
-    /**
-     * @var CustomRecordTypePermissions[]
-     */
-    public $permissions;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomRecordTypePermissionsList {
+	/**
+	 * @access public
+	 * @var CustomRecordTypePermissions[]
+	 */
+	public $permissions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'permissions' => 'CustomRecordTypePermissions[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"permissions" => "CustomRecordTypePermissions[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SearchMoreWithIdRequest
  */
-class SearchMoreWithIdRequest
-{
-    /**
-     * @access public
-     * @var string
-     */
-    public $searchId;
-    /**
-     * @access public
-     * @var integer
-     */
-    public $pageIndex;
+class SearchMoreWithIdRequest {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $searchId;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageIndex;
 
-    public static $paramtypesmap = array(
-        "searchId" => "string",
-        "pageIndex" => "integer",
-    );
+	static $paramtypesmap = array(
+		"searchId" => "string",
+		"pageIndex" => "integer",
+	);
 }

@@ -13,27 +13,26 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * EmployeeSubscriptions
  */
-class EmployeeSubscriptions
-{
-    /**
-     * @access public
-     * @var string
-     */
-    public $subscribed;
-    /**
-     * @access public
-     * @var string
-     */
-    public $subscription;
-    /**
-     * @access public
-     * @var dateTime
-     */
-    public $lastModifiedDate;
+class EmployeeSubscriptions {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $subscribed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $subscription;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
 
-    public static $paramtypesmap = array(
-        "subscribed" => "string",
-        "subscription" => "string",
-        "lastModifiedDate" => "dateTime",
-    );
+	static $paramtypesmap = array(
+		"subscribed" => "string",
+		"subscription" => "string",
+		"lastModifiedDate" => "dateTime",
+	);
 }

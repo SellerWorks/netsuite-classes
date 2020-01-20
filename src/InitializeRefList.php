@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InitializeRefList.
+ * InitializeRefList
  */
-class InitializeRefList
-{
-    /**
-     * @var InitializeRef[]
-     */
-    public $initializeRef;
+class InitializeRefList {
+	/**
+	 * @access public
+	 * @var InitializeRef[]
+	 */
+	public $initializeRef;
 
-    public static $paramtypesmap = [
-        'initializeRef' => 'InitializeRef[]',
-    ];
+	static $paramtypesmap = array(
+		"initializeRef" => "InitializeRef[]",
+	);
 }

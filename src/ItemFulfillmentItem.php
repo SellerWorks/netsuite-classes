@@ -11,131 +11,154 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemFulfillmentItem.
+ * ItemFulfillmentItem
  */
-class ItemFulfillmentItem
-{
-    /**
-     * @var string
-     */
-    public $jobName;
-    /**
-     * @var bool
-     */
-    public $itemReceive;
-    /**
-     * @var string
-     */
-    public $itemName;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var float
-     */
-    public $onHand;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var string
-     */
-    public $unitsDisplay;
-    /**
-     * @var string
-     */
-    public $createPo;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $binNumbers;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var string
-     */
-    public $poNum;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var int
-     */
-    public $orderLine;
-    /**
-     * @var float
-     */
-    public $quantityRemaining;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var int
-     */
-    public $shipGroup;
-    /**
-     * @var bool
-     */
-    public $itemIsFulfilled;
-    /**
-     * @var RecordRef
-     */
-    public $shipAddress;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class ItemFulfillmentItem {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $jobName;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $itemReceive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $onHand;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $unitsDisplay;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $createPo;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $binNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $poNum;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $orderLine;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityRemaining;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $shipGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $itemIsFulfilled;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'jobName' => 'string',
-        'itemReceive' => 'boolean',
-        'itemName' => 'string',
-        'description' => 'string',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'onHand' => 'float',
-        'quantity' => 'float',
-        'unitsDisplay' => 'string',
-        'createPo' => 'string',
-        'inventoryDetail' => 'InventoryDetail',
-        'binNumbers' => 'string',
-        'serialNumbers' => 'string',
-        'poNum' => 'string',
-        'item' => 'RecordRef',
-        'orderLine' => 'integer',
-        'quantityRemaining' => 'float',
-        'options' => 'CustomFieldList',
-        'shipGroup' => 'integer',
-        'itemIsFulfilled' => 'boolean',
-        'shipAddress' => 'RecordRef',
-        'shipMethod' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"jobName" => "string",
+		"itemReceive" => "boolean",
+		"itemName" => "string",
+		"description" => "string",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"onHand" => "float",
+		"quantity" => "float",
+		"unitsDisplay" => "string",
+		"createPo" => "string",
+		"inventoryDetail" => "InventoryDetail",
+		"binNumbers" => "string",
+		"serialNumbers" => "string",
+		"poNum" => "string",
+		"item" => "RecordRef",
+		"orderLine" => "integer",
+		"quantityRemaining" => "float",
+		"options" => "CustomFieldList",
+		"shipGroup" => "integer",
+		"itemIsFulfilled" => "boolean",
+		"shipAddress" => "RecordRef",
+		"shipMethod" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+	);
 }

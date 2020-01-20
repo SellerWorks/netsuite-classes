@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetListResponse.
+ * GetListResponse
  */
-class GetListResponse
-{
-    /**
-     * @var ReadResponseList
-     */
-    public $readResponseList;
+class GetListResponse {
+	/**
+	 * @access public
+	 * @var ReadResponseList
+	 */
+	public $readResponseList;
 
-    public static $paramtypesmap = [
-        'readResponseList' => 'ReadResponseList',
-    ];
+	static $paramtypesmap = array(
+		"readResponseList" => "ReadResponseList",
+	);
 }

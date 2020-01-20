@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomPurchaseItemList
  */
-class CustomPurchaseItemList
-{
-    /**
-     * @access public
-     * @var CustomPurchaseItem[]
-     */
-    public $item;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class CustomPurchaseItemList {
+	/**
+	 * @access public
+	 * @var CustomPurchaseItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "item" => "CustomPurchaseItem[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"item" => "CustomPurchaseItem[]",
+		"replaceAll" => "boolean",
+	);
 }

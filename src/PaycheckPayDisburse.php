@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayDisburse.
+ * PaycheckPayDisburse
  */
-class PaycheckPayDisburse
-{
-    /**
-     * @var string
-     */
-    public $method;
-    /**
-     * @var string
-     */
-    public $bankName;
-    /**
-     * @var string
-     */
-    public $bankAccountDecrypt;
-    /**
-     * @var string
-     */
-    public $statusName;
-    /**
-     * @var float
-     */
-    public $amount;
+class PaycheckPayDisburse {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $method;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankAccountDecrypt;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $statusName;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = [
-        'method' => 'string',
-        'bankName' => 'string',
-        'bankAccountDecrypt' => 'string',
-        'statusName' => 'string',
-        'amount' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"method" => "string",
+		"bankName" => "string",
+		"bankAccountDecrypt" => "string",
+		"statusName" => "string",
+		"amount" => "float",
+	);
 }

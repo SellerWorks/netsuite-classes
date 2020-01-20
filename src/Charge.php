@@ -11,161 +11,190 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Charge.
+ * Charge
  */
-class Charge extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $salesOrder;
-    /**
-     * @var RecordRef
-     */
-    public $billTo;
-    /**
-     * @var RecordRef
-     */
-    public $billingAccount;
-    /**
-     * @var ChargeStage
-     */
-    public $stage;
-    /**
-     * @var dateTime
-     */
-    public $chargeDate;
-    /**
-     * @var ChargeUse
-     */
-    public $use;
-    /**
-     * @var RecordRef
-     */
-    public $chargeType;
-    /**
-     * @var RecordRef
-     */
-    public $projectTask;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var RecordRef
-     */
-    public $timeRecord;
-    /**
-     * @var string
-     */
-    public $rate;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $billingItem;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var RecordRef
-     */
-    public $transaction;
-    /**
-     * @var RecordRef
-     */
-    public $transactionLine;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $salesOrderLine;
-    /**
-     * @var RecordRef
-     */
-    public $subscriptionLine;
-    /**
-     * @var RecordRef
-     */
-    public $invoice;
-    /**
-     * @var RecordRef
-     */
-    public $invoiceLine;
-    /**
-     * @var RecordRef
-     */
-    public $rule;
-    /**
-     * @var string
-     */
-    public $runId;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Charge extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesOrder;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billTo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingAccount;
+	/**
+	 * @access public
+	 * @var ChargeStage
+	 */
+	public $stage;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $chargeDate;
+	/**
+	 * @access public
+	 * @var ChargeUse
+	 */
+	public $use;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $chargeType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $projectTask;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $timeRecord;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingItem;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transaction;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transactionLine;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesOrderLine;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subscriptionLine;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $invoice;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $invoiceLine;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $rule;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $runId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'salesOrder' => 'RecordRef',
-        'billTo' => 'RecordRef',
-        'billingAccount' => 'RecordRef',
-        'stage' => 'ChargeStage',
-        'chargeDate' => 'dateTime',
-        'use' => 'ChargeUse',
-        'chargeType' => 'RecordRef',
-        'projectTask' => 'RecordRef',
-        'description' => 'string',
-        'createdDate' => 'dateTime',
-        'timeRecord' => 'RecordRef',
-        'rate' => 'string',
-        'quantity' => 'float',
-        'amount' => 'float',
-        'billingItem' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'transaction' => 'RecordRef',
-        'transactionLine' => 'RecordRef',
-        'class' => 'RecordRef',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'salesOrderLine' => 'RecordRef',
-        'subscriptionLine' => 'RecordRef',
-        'invoice' => 'RecordRef',
-        'invoiceLine' => 'RecordRef',
-        'rule' => 'RecordRef',
-        'runId' => 'string',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"salesOrder" => "RecordRef",
+		"billTo" => "RecordRef",
+		"billingAccount" => "RecordRef",
+		"stage" => "ChargeStage",
+		"chargeDate" => "dateTime",
+		"use" => "ChargeUse",
+		"chargeType" => "RecordRef",
+		"projectTask" => "RecordRef",
+		"description" => "string",
+		"createdDate" => "dateTime",
+		"timeRecord" => "RecordRef",
+		"rate" => "string",
+		"quantity" => "float",
+		"amount" => "float",
+		"billingItem" => "RecordRef",
+		"currency" => "RecordRef",
+		"transaction" => "RecordRef",
+		"transactionLine" => "RecordRef",
+		"class" => "RecordRef",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"salesOrderLine" => "RecordRef",
+		"subscriptionLine" => "RecordRef",
+		"invoice" => "RecordRef",
+		"invoiceLine" => "RecordRef",
+		"rule" => "RecordRef",
+		"runId" => "string",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

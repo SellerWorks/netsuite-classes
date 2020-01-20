@@ -13,15 +13,14 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * AddListResponse
  */
-class AddListResponse
-{
-    /**
-     * @access public
-     * @var WriteResponseList
-     */
-    public $writeResponseList;
+class AddListResponse {
+	/**
+	 * @access public
+	 * @var WriteResponseList
+	 */
+	public $writeResponseList;
 
-    public static $paramtypesmap = array(
-        "writeResponseList" => "WriteResponseList",
-    );
+	static $paramtypesmap = array(
+		"writeResponseList" => "WriteResponseList",
+	);
 }

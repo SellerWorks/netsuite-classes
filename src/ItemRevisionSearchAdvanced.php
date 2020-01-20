@@ -13,33 +13,32 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * ItemRevisionSearchAdvanced
  */
-class ItemRevisionSearchAdvanced extends SearchRecord
-{
-    /**
-     * @access public
-     * @var ItemRevisionSearch
-     */
-    public $criteria;
-    /**
-     * @access public
-     * @var ItemRevisionSearchRow
-     */
-    public $columns;
-    /**
-     * @access public
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @access public
-     * @var string
-     */
-    public $savedSearchScriptId;
+class ItemRevisionSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ItemRevisionSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var ItemRevisionSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        "criteria" => "ItemRevisionSearch",
-        "columns" => "ItemRevisionSearchRow",
-        "savedSearchId" => "string",
-        "savedSearchScriptId" => "string",
-    );
+	static $paramtypesmap = array(
+		"criteria" => "ItemRevisionSearch",
+		"columns" => "ItemRevisionSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

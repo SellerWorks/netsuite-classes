@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * KitItemHierarchyVersionsList.
+ * KitItemHierarchyVersionsList
  */
-class KitItemHierarchyVersionsList
-{
-    /**
-     * @var KitItemHierarchyVersions[]
-     */
-    public $kitItemHierarchyVersions;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class KitItemHierarchyVersionsList {
+	/**
+	 * @access public
+	 * @var KitItemHierarchyVersions[]
+	 */
+	public $kitItemHierarchyVersions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'kitItemHierarchyVersions' => 'KitItemHierarchyVersions[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"kitItemHierarchyVersions" => "KitItemHierarchyVersions[]",
+		"replaceAll" => "boolean",
+	);
 }

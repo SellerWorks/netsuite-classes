@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerPaymentDeposit.
+ * CustomerPaymentDeposit
  */
-class CustomerPaymentDeposit
-{
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var int
-     */
-    public $doc;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var dateTime
-     */
-    public $depositDate;
-    /**
-     * @var string
-     */
-    public $refNum;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var float
-     */
-    public $remaining;
-    /**
-     * @var string
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $amount;
+class CustomerPaymentDeposit {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $doc;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $depositDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $refNum;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $remaining;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = [
-        'apply' => 'boolean',
-        'doc' => 'integer',
-        'line' => 'integer',
-        'depositDate' => 'dateTime',
-        'refNum' => 'string',
-        'total' => 'float',
-        'remaining' => 'float',
-        'currency' => 'string',
-        'amount' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"apply" => "boolean",
+		"doc" => "integer",
+		"line" => "integer",
+		"depositDate" => "dateTime",
+		"refNum" => "string",
+		"total" => "float",
+		"remaining" => "float",
+		"currency" => "string",
+		"amount" => "float",
+	);
 }

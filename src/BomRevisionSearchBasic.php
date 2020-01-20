@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomRevisionSearchBasic.
+ * BomRevisionSearchBasic
  */
-class BomRevisionSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $billOfMaterials;
-    /**
-     * @var SearchDateField
-     */
-    public $createdDate;
-    /**
-     * @var SearchDateField
-     */
-    public $effectiveEndDate;
-    /**
-     * @var SearchDateField
-     */
-    public $effectiveStartDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchStringField
-     */
-    public $memo;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
+class BomRevisionSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $billOfMaterials;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $effectiveEndDate;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $effectiveStartDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'billOfMaterials' => 'SearchMultiSelectField',
-        'createdDate' => 'SearchDateField',
-        'effectiveEndDate' => 'SearchDateField',
-        'effectiveStartDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'memo' => 'SearchStringField',
-        'name' => 'SearchStringField',
-    ];
+	static $paramtypesmap = array(
+		"billOfMaterials" => "SearchMultiSelectField",
+		"createdDate" => "SearchDateField",
+		"effectiveEndDate" => "SearchDateField",
+		"effectiveStartDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"memo" => "SearchStringField",
+		"name" => "SearchStringField",
+	);
 }

@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Department.
+ * Department
  */
-class Department extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var ClassTranslationList
-     */
-    public $classTranslationList;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Department extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var ClassTranslationList
+	 */
+	public $classTranslationList;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'includeChildren' => 'boolean',
-        'parent' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'classTranslationList' => 'ClassTranslationList',
-        'subsidiaryList' => 'RecordRefList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"includeChildren" => "boolean",
+		"parent" => "RecordRef",
+		"isInactive" => "boolean",
+		"classTranslationList" => "ClassTranslationList",
+		"subsidiaryList" => "RecordRefList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

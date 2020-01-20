@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NullField.
+ * NullField
  */
-class NullField
-{
-    /**
-     * @var string[]
-     */
-    public $name;
+class NullField {
+	/**
+	 * @access public
+	 * @var string[]
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'name' => 'string[]',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string[]",
+	);
 }

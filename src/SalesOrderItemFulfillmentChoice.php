@@ -13,16 +13,16 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SalesOrderItemFulfillmentChoice
  */
-class SalesOrderItemFulfillmentChoice
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _ship = "_ship";
-    /**
-     * @var string
-     */
-    const _storePickup = "_storePickup";
+class SalesOrderItemFulfillmentChoice {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _ship = "_ship";
+	/**
+	 * @var string
+	 */
+	const _storePickup = "_storePickup";
 }

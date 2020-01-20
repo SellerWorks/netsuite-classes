@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * EstimatePartnersList
  */
-class EstimatePartnersList
-{
-    /**
-     * @access public
-     * @var Partners[]
-     */
-    public $partners;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class EstimatePartnersList {
+	/**
+	 * @access public
+	 * @var Partners[]
+	 */
+	public $partners;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "partners" => "Partners[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"partners" => "Partners[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * ExpenseCategoryRatesList
  */
-class ExpenseCategoryRatesList
-{
-    /**
-     * @access public
-     * @var ExpenseCategoryRates[]
-     */
-    public $expenseCategoryRates;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class ExpenseCategoryRatesList {
+	/**
+	 * @access public
+	 * @var ExpenseCategoryRates[]
+	 */
+	public $expenseCategoryRates;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "expenseCategoryRates" => "ExpenseCategoryRates[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"expenseCategoryRates" => "ExpenseCategoryRates[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,101 +11,118 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * FairValuePriceSearchBasic.
+ * FairValuePriceSearchBasic
  */
-class FairValuePriceSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $currency;
-    /**
-     * @var SearchDateField
-     */
-    public $endDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchDoubleField
-     */
-    public $fairValue;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $fairValueFormula;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $fairValueRangePolicy;
-    /**
-     * @var SearchDoubleField
-     */
-    public $highValue;
-    /**
-     * @var SearchDoubleField
-     */
-    public $highValuePercent;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isVsoePrice;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $itemRevenueCategory;
-    /**
-     * @var SearchDoubleField
-     */
-    public $lowValue;
-    /**
-     * @var SearchDoubleField
-     */
-    public $lowValuePercent;
-    /**
-     * @var SearchDateField
-     */
-    public $startDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $unitsType;
+class FairValuePriceSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $fairValue;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $fairValueFormula;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $fairValueRangePolicy;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $highValue;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $highValuePercent;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isVsoePrice;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $itemRevenueCategory;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $lowValue;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $lowValuePercent;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $unitsType;
 
-    public static $paramtypesmap = [
-        'currency' => 'SearchMultiSelectField',
-        'endDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'fairValue' => 'SearchDoubleField',
-        'fairValueFormula' => 'SearchMultiSelectField',
-        'fairValueRangePolicy' => 'SearchEnumMultiSelectField',
-        'highValue' => 'SearchDoubleField',
-        'highValuePercent' => 'SearchDoubleField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isVsoePrice' => 'SearchBooleanField',
-        'item' => 'SearchMultiSelectField',
-        'itemRevenueCategory' => 'SearchMultiSelectField',
-        'lowValue' => 'SearchDoubleField',
-        'lowValuePercent' => 'SearchDoubleField',
-        'startDate' => 'SearchDateField',
-        'unitsType' => 'SearchMultiSelectField',
-    ];
+	static $paramtypesmap = array(
+		"currency" => "SearchMultiSelectField",
+		"endDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"fairValue" => "SearchDoubleField",
+		"fairValueFormula" => "SearchMultiSelectField",
+		"fairValueRangePolicy" => "SearchEnumMultiSelectField",
+		"highValue" => "SearchDoubleField",
+		"highValuePercent" => "SearchDoubleField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isVsoePrice" => "SearchBooleanField",
+		"item" => "SearchMultiSelectField",
+		"itemRevenueCategory" => "SearchMultiSelectField",
+		"lowValue" => "SearchDoubleField",
+		"lowValuePercent" => "SearchDoubleField",
+		"startDate" => "SearchDateField",
+		"unitsType" => "SearchMultiSelectField",
+	);
 }

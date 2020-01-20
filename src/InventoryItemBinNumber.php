@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryItemBinNumber.
+ * InventoryItemBinNumber
  */
-class InventoryItemBinNumber
-{
-    /**
-     * @var RecordRef
-     */
-    public $binNumber;
-    /**
-     * @var string
-     */
-    public $onHand;
-    /**
-     * @var string
-     */
-    public $onHandAvail;
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var bool
-     */
-    public $preferredBin;
+class InventoryItemBinNumber {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $onHand;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $onHandAvail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $preferredBin;
 
-    public static $paramtypesmap = [
-        'binNumber' => 'RecordRef',
-        'onHand' => 'string',
-        'onHandAvail' => 'string',
-        'location' => 'string',
-        'preferredBin' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"binNumber" => "RecordRef",
+		"onHand" => "string",
+		"onHandAvail" => "string",
+		"location" => "string",
+		"preferredBin" => "boolean",
+	);
 }

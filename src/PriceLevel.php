@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PriceLevel.
+ * PriceLevel
  */
-class PriceLevel extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var float
-     */
-    public $discountpct;
-    /**
-     * @var bool
-     */
-    public $updateExistingPrices;
-    /**
-     * @var bool
-     */
-    public $isOnline;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class PriceLevel extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $discountpct;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $updateExistingPrices;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'discountpct' => 'float',
-        'updateExistingPrices' => 'boolean',
-        'isOnline' => 'boolean',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"discountpct" => "float",
+		"updateExistingPrices" => "boolean",
+		"isOnline" => "boolean",
+		"isInactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

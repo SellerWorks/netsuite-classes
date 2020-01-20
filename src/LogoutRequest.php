@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LogoutRequest.
+ * LogoutRequest
  */
-class LogoutRequest
-{
-    public static $paramtypesmap = [
-    ];
+class LogoutRequest {
+
+	static $paramtypesmap = array(
+	);
 }

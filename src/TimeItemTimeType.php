@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeItemTimeType.
+ * TimeItemTimeType
  */
-class TimeItemTimeType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _actualTime = '_actualTime';
-    /**
-     * @var string
-     */
-    const _plannedTime = '_plannedTime';
+class TimeItemTimeType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _actualTime = "_actualTime";
+	/**
+	 * @var string
+	 */
+	const _plannedTime = "_plannedTime";
 }

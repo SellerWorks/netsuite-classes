@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LanguageValue.
+ * LanguageValue
  */
-class LanguageValue
-{
-    /**
-     * @var Language
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $value;
+class LanguageValue {
+	/**
+	 * @access public
+	 * @var Language
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $value;
 
-    public static $paramtypesmap = [
-        'locale' => 'Language',
-        'value' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"locale" => "Language",
+		"value" => "string",
+	);
 }

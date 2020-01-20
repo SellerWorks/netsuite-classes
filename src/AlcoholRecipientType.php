@@ -13,16 +13,16 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * AlcoholRecipientType
  */
-class AlcoholRecipientType
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _consumer = "_consumer";
-    /**
-     * @var string
-     */
-    const _licensee = "_licensee";
+class AlcoholRecipientType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _consumer = "_consumer";
+	/**
+	 * @var string
+	 */
+	const _licensee = "_licensee";
 }

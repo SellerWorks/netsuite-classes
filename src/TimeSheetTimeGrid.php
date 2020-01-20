@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheetTimeGrid.
+ * TimeSheetTimeGrid
  */
-class TimeSheetTimeGrid
-{
-    /**
-     * @var TimeEntry
-     */
-    public $sunday;
-    /**
-     * @var TimeEntry
-     */
-    public $monday;
-    /**
-     * @var TimeEntry
-     */
-    public $tuesday;
-    /**
-     * @var TimeEntry
-     */
-    public $wednesday;
-    /**
-     * @var TimeEntry
-     */
-    public $thursday;
-    /**
-     * @var TimeEntry
-     */
-    public $friday;
-    /**
-     * @var TimeEntry
-     */
-    public $saturday;
+class TimeSheetTimeGrid {
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $sunday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $monday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $tuesday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $wednesday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $thursday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $friday;
+	/**
+	 * @access public
+	 * @var TimeEntry
+	 */
+	public $saturday;
 
-    public static $paramtypesmap = [
-        'sunday' => 'TimeEntry',
-        'monday' => 'TimeEntry',
-        'tuesday' => 'TimeEntry',
-        'wednesday' => 'TimeEntry',
-        'thursday' => 'TimeEntry',
-        'friday' => 'TimeEntry',
-        'saturday' => 'TimeEntry',
-    ];
+	static $paramtypesmap = array(
+		"sunday" => "TimeEntry",
+		"monday" => "TimeEntry",
+		"tuesday" => "TimeEntry",
+		"wednesday" => "TimeEntry",
+		"thursday" => "TimeEntry",
+		"friday" => "TimeEntry",
+		"saturday" => "TimeEntry",
+	);
 }

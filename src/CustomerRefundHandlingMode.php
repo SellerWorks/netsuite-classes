@@ -13,20 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomerRefundHandlingMode
  */
-class CustomerRefundHandlingMode
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _process = "_process";
-    /**
-     * @var string
-     */
-    const _recordExternalEvent = "_recordExternalEvent";
-    /**
-     * @var string
-     */
-    const _saveOnly = "_saveOnly";
+class CustomerRefundHandlingMode {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _process = "_process";
+	/**
+	 * @var string
+	 */
+	const _recordExternalEvent = "_recordExternalEvent";
+	/**
+	 * @var string
+	 */
+	const _saveOnly = "_saveOnly";
 }

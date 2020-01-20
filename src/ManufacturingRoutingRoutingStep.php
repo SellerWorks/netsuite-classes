@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingRoutingRoutingStep.
+ * ManufacturingRoutingRoutingStep
  */
-class ManufacturingRoutingRoutingStep
-{
-    /**
-     * @var int
-     */
-    public $operationSequence;
-    /**
-     * @var string
-     */
-    public $operationName;
-    /**
-     * @var RecordRef
-     */
-    public $manufacturingWorkCenter;
-    /**
-     * @var float
-     */
-    public $machineResources;
-    /**
-     * @var float
-     */
-    public $laborResources;
-    /**
-     * @var RecordRef
-     */
-    public $manufacturingCostTemplate;
-    /**
-     * @var float
-     */
-    public $setupTime;
-    /**
-     * @var float
-     */
-    public $runRate;
-    /**
-     * @var ManufacturingLagType
-     */
-    public $lagType;
-    /**
-     * @var int
-     */
-    public $lagAmount;
-    /**
-     * @var string
-     */
-    public $lagUnits;
+class ManufacturingRoutingRoutingStep {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $operationSequence;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $operationName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $manufacturingWorkCenter;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $machineResources;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborResources;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $manufacturingCostTemplate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $setupTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $runRate;
+	/**
+	 * @access public
+	 * @var ManufacturingLagType
+	 */
+	public $lagType;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $lagAmount;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $lagUnits;
 
-    public static $paramtypesmap = [
-        'operationSequence' => 'integer',
-        'operationName' => 'string',
-        'manufacturingWorkCenter' => 'RecordRef',
-        'machineResources' => 'float',
-        'laborResources' => 'float',
-        'manufacturingCostTemplate' => 'RecordRef',
-        'setupTime' => 'float',
-        'runRate' => 'float',
-        'lagType' => 'ManufacturingLagType',
-        'lagAmount' => 'integer',
-        'lagUnits' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"operationSequence" => "integer",
+		"operationName" => "string",
+		"manufacturingWorkCenter" => "RecordRef",
+		"machineResources" => "float",
+		"laborResources" => "float",
+		"manufacturingCostTemplate" => "RecordRef",
+		"setupTime" => "float",
+		"runRate" => "float",
+		"lagType" => "ManufacturingLagType",
+		"lagAmount" => "integer",
+		"lagUnits" => "string",
+	);
 }

@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * VendorReturnAuthorizationExpenseList
  */
-class VendorReturnAuthorizationExpenseList
-{
-    /**
-     * @access public
-     * @var VendorReturnAuthorizationExpense[]
-     */
-    public $expense;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class VendorReturnAuthorizationExpenseList {
+	/**
+	 * @access public
+	 * @var VendorReturnAuthorizationExpense[]
+	 */
+	public $expense;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "expense" => "VendorReturnAuthorizationExpense[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"expense" => "VendorReturnAuthorizationExpense[]",
+		"replaceAll" => "boolean",
+	);
 }

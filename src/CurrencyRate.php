@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyRate.
+ * CurrencyRate
  */
-class CurrencyRate extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $baseCurrency;
-    /**
-     * @var RecordRef
-     */
-    public $transactionCurrency;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var dateTime
-     */
-    public $effectiveDate;
-    /**
-     * @var string
-     */
-    public $internalId;
+class CurrencyRate extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $baseCurrency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $transactionCurrency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
 
-    public static $paramtypesmap = [
-        'baseCurrency' => 'RecordRef',
-        'transactionCurrency' => 'RecordRef',
-        'exchangeRate' => 'float',
-        'effectiveDate' => 'dateTime',
-        'internalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"baseCurrency" => "RecordRef",
+		"transactionCurrency" => "RecordRef",
+		"exchangeRate" => "float",
+		"effectiveDate" => "dateTime",
+		"internalId" => "string",
+	);
 }

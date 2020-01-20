@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * InvoiceItemCostList
  */
-class InvoiceItemCostList
-{
-    /**
-     * @access public
-     * @var InvoiceItemCost[]
-     */
-    public $itemCost;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class InvoiceItemCostList {
+	/**
+	 * @access public
+	 * @var InvoiceItemCost[]
+	 */
+	public $itemCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "itemCost" => "InvoiceItemCost[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"itemCost" => "InvoiceItemCost[]",
+		"replaceAll" => "boolean",
+	);
 }

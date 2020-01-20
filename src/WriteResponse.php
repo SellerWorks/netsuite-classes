@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * WriteResponse
  */
-class WriteResponse
-{
-    /**
-     * @access public
-     * @var Status
-     */
-    public $status;
-    /**
-     * @access public
-     * @var BaseRef
-     */
-    public $baseRef;
+class WriteResponse {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $baseRef;
 
-    public static $paramtypesmap = array(
-        "status" => "Status",
-        "baseRef" => "BaseRef",
-    );
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"baseRef" => "BaseRef",
+	);
 }

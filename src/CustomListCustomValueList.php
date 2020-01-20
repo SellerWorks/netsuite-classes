@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListCustomValueList.
+ * CustomListCustomValueList
  */
-class CustomListCustomValueList
-{
-    /**
-     * @var CustomListCustomValue[]
-     */
-    public $customValue;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomListCustomValueList {
+	/**
+	 * @access public
+	 * @var CustomListCustomValue[]
+	 */
+	public $customValue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'customValue' => 'CustomListCustomValue[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"customValue" => "CustomListCustomValue[]",
+		"replaceAll" => "boolean",
+	);
 }

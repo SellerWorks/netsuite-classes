@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyComponent.
+ * AssemblyComponent
  */
-class AssemblyComponent
-{
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var InventoryDetail
-     */
-    public $componentInventoryDetail;
-    /**
-     * @var string
-     */
-    public $componentNumbers;
-    /**
-     * @var string
-     */
-    public $binNumbers;
-    /**
-     * @var int
-     */
-    public $lineNumber;
+class AssemblyComponent {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $componentInventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $componentNumbers;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $binNumbers;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $lineNumber;
 
-    public static $paramtypesmap = [
-        'item' => 'RecordRef',
-        'quantity' => 'float',
-        'quantityOnHand' => 'float',
-        'componentInventoryDetail' => 'InventoryDetail',
-        'componentNumbers' => 'string',
-        'binNumbers' => 'string',
-        'lineNumber' => 'integer',
-    ];
+	static $paramtypesmap = array(
+		"item" => "RecordRef",
+		"quantity" => "float",
+		"quantityOnHand" => "float",
+		"componentInventoryDetail" => "InventoryDetail",
+		"componentNumbers" => "string",
+		"binNumbers" => "string",
+		"lineNumber" => "integer",
+	);
 }

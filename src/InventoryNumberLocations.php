@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberLocations.
+ * InventoryNumberLocations
  */
-class InventoryNumberLocations
-{
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
-    /**
-     * @var float
-     */
-    public $quantityOnOrder;
-    /**
-     * @var float
-     */
-    public $quantityInTransit;
+class InventoryNumberLocations {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnOrder;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityInTransit;
 
-    public static $paramtypesmap = [
-        'location' => 'string',
-        'quantityOnHand' => 'float',
-        'quantityAvailable' => 'float',
-        'quantityOnOrder' => 'float',
-        'quantityInTransit' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"location" => "string",
+		"quantityOnHand" => "float",
+		"quantityAvailable" => "float",
+		"quantityOnOrder" => "float",
+		"quantityInTransit" => "float",
+	);
 }

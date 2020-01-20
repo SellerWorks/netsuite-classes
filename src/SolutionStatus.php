@@ -13,16 +13,16 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SolutionStatus
  */
-class SolutionStatus
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _approved = "_approved";
-    /**
-     * @var string
-     */
-    const _unapproved = "_unapproved";
+class SolutionStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _approved = "_approved";
+	/**
+	 * @var string
+	 */
+	const _unapproved = "_unapproved";
 }

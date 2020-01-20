@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchEnumMultiSelectFieldOperator.
+ * SearchEnumMultiSelectFieldOperator
  */
-class SearchEnumMultiSelectFieldOperator
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const anyOf = 'anyOf';
-    /**
-     * @var string
-     */
-    const noneOf = 'noneOf';
+class SearchEnumMultiSelectFieldOperator {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const anyOf = "anyOf";
+	/**
+	 * @var string
+	 */
+	const noneOf = "noneOf";
 }

@@ -11,176 +11,208 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeBill.
+ * TimeBill
  */
-class TimeBill extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $employee;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $approvalStatus;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var RecordRef
-     */
-    public $caseTaskEvent;
-    /**
-     * @var bool
-     */
-    public $isBillable;
-    /**
-     * @var RecordRef
-     */
-    public $payrollItem;
-    /**
-     * @var bool
-     */
-    public $paidExternally;
-    /**
-     * @var RecordRef
-     */
-    public $workplace;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var Duration
-     */
-    public $hours;
-    /**
-     * @var RecordRef
-     */
-    public $price;
-    /**
-     * @var TimeBillTimeType
-     */
-    public $timeType;
-    /**
-     * @var float
-     */
-    public $rate;
-    /**
-     * @var bool
-     */
-    public $overrideRate;
-    /**
-     * @var RecordRef
-     */
-    public $temporaryLocalJurisdiction;
-    /**
-     * @var RecordRef
-     */
-    public $temporaryStateJurisdiction;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var string
-     */
-    public $rejectionNote;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var bool
-     */
-    public $supervisorApproval;
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $timeSheet;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var bool
-     */
-    public $timeModified;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class TimeBill extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $caseTaskEvent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBillable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payrollItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $paidExternally;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $workplace;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $hours;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var TimeBillTimeType
+	 */
+	public $timeType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $overrideRate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $temporaryLocalJurisdiction;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $temporaryStateJurisdiction;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $rejectionNote;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $supervisorApproval;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $timeSheet;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $timeModified;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'employee' => 'RecordRef',
-        'tranDate' => 'dateTime',
-        'approvalStatus' => 'RecordRef',
-        'customer' => 'RecordRef',
-        'caseTaskEvent' => 'RecordRef',
-        'isBillable' => 'boolean',
-        'payrollItem' => 'RecordRef',
-        'paidExternally' => 'boolean',
-        'workplace' => 'RecordRef',
-        'item' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'hours' => 'Duration',
-        'price' => 'RecordRef',
-        'timeType' => 'TimeBillTimeType',
-        'rate' => 'float',
-        'overrideRate' => 'boolean',
-        'temporaryLocalJurisdiction' => 'RecordRef',
-        'temporaryStateJurisdiction' => 'RecordRef',
-        'memo' => 'string',
-        'rejectionNote' => 'string',
-        'subsidiary' => 'RecordRef',
-        'supervisorApproval' => 'boolean',
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'timeSheet' => 'RecordRef',
-        'status' => 'string',
-        'timeModified' => 'boolean',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"employee" => "RecordRef",
+		"tranDate" => "dateTime",
+		"approvalStatus" => "RecordRef",
+		"customer" => "RecordRef",
+		"caseTaskEvent" => "RecordRef",
+		"isBillable" => "boolean",
+		"payrollItem" => "RecordRef",
+		"paidExternally" => "boolean",
+		"workplace" => "RecordRef",
+		"item" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"hours" => "Duration",
+		"price" => "RecordRef",
+		"timeType" => "TimeBillTimeType",
+		"rate" => "float",
+		"overrideRate" => "boolean",
+		"temporaryLocalJurisdiction" => "RecordRef",
+		"temporaryStateJurisdiction" => "RecordRef",
+		"memo" => "string",
+		"rejectionNote" => "string",
+		"subsidiary" => "RecordRef",
+		"supervisorApproval" => "boolean",
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"timeSheet" => "RecordRef",
+		"status" => "string",
+		"timeModified" => "boolean",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

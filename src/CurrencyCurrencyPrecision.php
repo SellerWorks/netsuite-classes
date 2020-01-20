@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CurrencyCurrencyPrecision.
+ * CurrencyCurrencyPrecision
  */
-class CurrencyCurrencyPrecision
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _two = '_two';
-    /**
-     * @var string
-     */
-    const _zero = '_zero';
+class CurrencyCurrencyPrecision {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _two = "_two";
+	/**
+	 * @var string
+	 */
+	const _zero = "_zero";
 }

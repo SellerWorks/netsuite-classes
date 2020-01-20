@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomListTranslations.
+ * CustomListTranslations
  */
-class CustomListTranslations
-{
-    /**
-     * @var Language
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $localeDescription;
-    /**
-     * @var string
-     */
-    public $name;
+class CustomListTranslations {
+	/**
+	 * @access public
+	 * @var Language
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $localeDescription;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'locale' => 'Language',
-        'localeDescription' => 'string',
-        'name' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"locale" => "Language",
+		"localeDescription" => "string",
+		"name" => "string",
+	);
 }

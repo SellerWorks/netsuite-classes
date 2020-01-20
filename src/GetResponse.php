@@ -13,15 +13,14 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * GetResponse
  */
-class GetResponse
-{
-    /**
-     * @access public
-     * @var ReadResponse
-     */
-    public $readResponse;
+class GetResponse {
+	/**
+	 * @access public
+	 * @var ReadResponse
+	 */
+	public $readResponse;
 
-    public static $paramtypesmap = array(
-        "readResponse" => "ReadResponse",
-    );
+	static $paramtypesmap = array(
+		"readResponse" => "ReadResponse",
+	);
 }

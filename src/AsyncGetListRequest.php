@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncGetListRequest.
+ * AsyncGetListRequest
  */
-class AsyncGetListRequest
-{
-    /**
-     * @var BaseRef[]
-     */
-    public $baseRef;
+class AsyncGetListRequest {
+	/**
+	 * @access public
+	 * @var BaseRef[]
+	 */
+	public $baseRef;
 
-    public static $paramtypesmap = [
-        'baseRef' => 'BaseRef[]',
-    ];
+	static $paramtypesmap = array(
+		"baseRef" => "BaseRef[]",
+	);
 }

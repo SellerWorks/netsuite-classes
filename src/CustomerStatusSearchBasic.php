@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerStatusSearchBasic.
+ * CustomerStatusSearchBasic
  */
-class CustomerStatusSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchBooleanField
-     */
-    public $includeInLeadReports;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchDoubleField
-     */
-    public $probability;
+class CustomerStatusSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $includeInLeadReports;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchDoubleField
+	 */
+	public $probability;
 
-    public static $paramtypesmap = [
-        'description' => 'SearchStringField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'includeInLeadReports' => 'SearchBooleanField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'name' => 'SearchStringField',
-        'probability' => 'SearchDoubleField',
-    ];
+	static $paramtypesmap = array(
+		"description" => "SearchStringField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"includeInLeadReports" => "SearchBooleanField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"name" => "SearchStringField",
+		"probability" => "SearchDoubleField",
+	);
 }

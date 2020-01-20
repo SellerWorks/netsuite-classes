@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CostCategorySearchRow.
+ * CostCategorySearchRow
  */
-class CostCategorySearchRow extends SearchRow
-{
-    /**
-     * @var CostCategorySearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var AccountSearchRowBasic
-     */
-    public $accountJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
+class CostCategorySearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var CostCategorySearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var AccountSearchRowBasic
+	 */
+	public $accountJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'CostCategorySearchRowBasic',
-        'accountJoin' => 'AccountSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "CostCategorySearchRowBasic",
+		"accountJoin" => "AccountSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+	);
 }

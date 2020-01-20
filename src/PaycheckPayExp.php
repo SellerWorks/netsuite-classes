@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaycheckPayExp.
+ * PaycheckPayExp
  */
-class PaycheckPayExp
-{
-    /**
-     * @var bool
-     */
-    public $apply;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var int
-     */
-    public $origDoc;
-    /**
-     * @var string
-     */
-    public $transaction;
-    /**
-     * @var float
-     */
-    public $amount;
+class PaycheckPayExp {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apply;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $origDoc;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $transaction;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
 
-    public static $paramtypesmap = [
-        'apply' => 'boolean',
-        'line' => 'integer',
-        'origDoc' => 'integer',
-        'transaction' => 'string',
-        'amount' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"apply" => "boolean",
+		"line" => "integer",
+		"origDoc" => "integer",
+		"transaction" => "string",
+		"amount" => "float",
+	);
 }

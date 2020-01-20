@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BomRevisionComponentSearchRowBasic.
+ * BomRevisionComponentSearchRowBasic
  */
-class BomRevisionComponentSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $bomQuantity;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $bomRevision;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $componentYield;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $itemSource;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $itemSubtype;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $itemType;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $lineId;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantity;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $units;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $weight;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class BomRevisionComponentSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $bomQuantity;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $bomRevision;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $componentYield;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $itemSource;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $itemSubtype;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $itemType;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $lineId;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $weight;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'bomQuantity' => 'SearchColumnDoubleField[]',
-        'bomRevision' => 'SearchColumnSelectField[]',
-        'componentYield' => 'SearchColumnDoubleField[]',
-        'description' => 'SearchColumnStringField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'itemSource' => 'SearchColumnEnumSelectField[]',
-        'itemSubtype' => 'SearchColumnStringField[]',
-        'itemType' => 'SearchColumnSelectField[]',
-        'lineId' => 'SearchColumnLongField[]',
-        'quantity' => 'SearchColumnDoubleField[]',
-        'units' => 'SearchColumnStringField[]',
-        'weight' => 'SearchColumnDoubleField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"bomQuantity" => "SearchColumnDoubleField[]",
+		"bomRevision" => "SearchColumnSelectField[]",
+		"componentYield" => "SearchColumnDoubleField[]",
+		"description" => "SearchColumnStringField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"item" => "SearchColumnSelectField[]",
+		"itemSource" => "SearchColumnEnumSelectField[]",
+		"itemSubtype" => "SearchColumnStringField[]",
+		"itemType" => "SearchColumnSelectField[]",
+		"lineId" => "SearchColumnLongField[]",
+		"quantity" => "SearchColumnDoubleField[]",
+		"units" => "SearchColumnStringField[]",
+		"weight" => "SearchColumnDoubleField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

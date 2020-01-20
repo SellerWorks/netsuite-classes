@@ -11,76 +11,88 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallSearch.
+ * PhoneCallSearch
  */
-class PhoneCallSearch extends SearchRecord
-{
-    /**
-     * @var PhoneCallSearchBasic
-     */
-    public $basic;
-    /**
-     * @var SupportCaseSearchBasic
-     */
-    public $caseJoin;
-    /**
-     * @var CustomerSearchBasic
-     */
-    public $companyCustomerJoin;
-    /**
-     * @var ContactSearchBasic
-     */
-    public $contactJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var FileSearchBasic
-     */
-    public $fileJoin;
-    /**
-     * @var OpportunitySearchBasic
-     */
-    public $opportunityJoin;
-    /**
-     * @var OriginatingLeadSearchBasic
-     */
-    public $originatingLeadJoin;
-    /**
-     * @var EntitySearchBasic
-     */
-    public $participantJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class PhoneCallSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var PhoneCallSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchBasic
+	 */
+	public $companyCustomerJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchBasic
+	 */
+	public $contactJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var FileSearchBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var OpportunitySearchBasic
+	 */
+	public $opportunityJoin;
+	/**
+	 * @access public
+	 * @var OriginatingLeadSearchBasic
+	 */
+	public $originatingLeadJoin;
+	/**
+	 * @access public
+	 * @var EntitySearchBasic
+	 */
+	public $participantJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'PhoneCallSearchBasic',
-        'caseJoin' => 'SupportCaseSearchBasic',
-        'companyCustomerJoin' => 'CustomerSearchBasic',
-        'contactJoin' => 'ContactSearchBasic',
-        'employeeJoin' => 'EmployeeSearchBasic',
-        'fileJoin' => 'FileSearchBasic',
-        'opportunityJoin' => 'OpportunitySearchBasic',
-        'originatingLeadJoin' => 'OriginatingLeadSearchBasic',
-        'participantJoin' => 'EntitySearchBasic',
-        'transactionJoin' => 'TransactionSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'userNotesJoin' => 'NoteSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "PhoneCallSearchBasic",
+		"caseJoin" => "SupportCaseSearchBasic",
+		"companyCustomerJoin" => "CustomerSearchBasic",
+		"contactJoin" => "ContactSearchBasic",
+		"employeeJoin" => "EmployeeSearchBasic",
+		"fileJoin" => "FileSearchBasic",
+		"opportunityJoin" => "OpportunitySearchBasic",
+		"originatingLeadJoin" => "OriginatingLeadSearchBasic",
+		"participantJoin" => "EntitySearchBasic",
+		"transactionJoin" => "TransactionSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"userNotesJoin" => "NoteSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

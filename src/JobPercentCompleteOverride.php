@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobPercentCompleteOverride.
+ * JobPercentCompleteOverride
  */
-class JobPercentCompleteOverride
-{
-    /**
-     * @var RecordRef
-     */
-    public $period;
-    /**
-     * @var float
-     */
-    public $percent;
-    /**
-     * @var string
-     */
-    public $comments;
+class JobPercentCompleteOverride {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $period;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $comments;
 
-    public static $paramtypesmap = [
-        'period' => 'RecordRef',
-        'percent' => 'float',
-        'comments' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"period" => "RecordRef",
+		"percent" => "float",
+		"comments" => "string",
+	);
 }

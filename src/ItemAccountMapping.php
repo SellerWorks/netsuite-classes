@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemAccountMapping.
+ * ItemAccountMapping
  */
-class ItemAccountMapping extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var dateTime
-     */
-    public $effectiveDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var ItemAccountMappingItemAccount
-     */
-    public $itemAccount;
-    /**
-     * @var RecordRef
-     */
-    public $sourceAccount;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $destinationAccount;
-    /**
-     * @var BaseRef
-     */
-    public $customDimension;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ItemAccountMapping extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var ItemAccountMappingItemAccount
+	 */
+	public $itemAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $sourceAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $destinationAccount;
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $customDimension;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'effectiveDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'accountingBook' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'itemAccount' => 'ItemAccountMappingItemAccount',
-        'sourceAccount' => 'RecordRef',
-        'class' => 'RecordRef',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'destinationAccount' => 'RecordRef',
-        'customDimension' => 'BaseRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"effectiveDate" => "dateTime",
+		"endDate" => "dateTime",
+		"accountingBook" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"itemAccount" => "ItemAccountMappingItemAccount",
+		"sourceAccount" => "RecordRef",
+		"class" => "RecordRef",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"destinationAccount" => "RecordRef",
+		"customDimension" => "BaseRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseSearchRow.
+ * SupportCaseSearchRow
  */
-class SupportCaseSearchRow extends SearchRow
-{
-    /**
-     * @var SupportCaseSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EntitySearchRowBasic
-     */
-    public $companyJoin;
-    /**
-     * @var ContactSearchRowBasic
-     */
-    public $contactJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $customerJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $employeeJoin;
-    /**
-     * @var FileSearchRowBasic
-     */
-    public $fileJoin;
-    /**
-     * @var IssueSearchRowBasic
-     */
-    public $issueJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $itemJoin;
-    /**
-     * @var MessageSearchRowBasic
-     */
-    public $messagesJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class SupportCaseSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var SupportCaseSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EntitySearchRowBasic
+	 */
+	public $companyJoin;
+	/**
+	 * @access public
+	 * @var ContactSearchRowBasic
+	 */
+	public $contactJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $customerJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $employeeJoin;
+	/**
+	 * @access public
+	 * @var FileSearchRowBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var IssueSearchRowBasic
+	 */
+	public $issueJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchRowBasic
+	 */
+	public $messagesJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'SupportCaseSearchRowBasic',
-        'companyJoin' => 'EntitySearchRowBasic',
-        'contactJoin' => 'ContactSearchRowBasic',
-        'customerJoin' => 'CustomerSearchRowBasic',
-        'employeeJoin' => 'EmployeeSearchRowBasic',
-        'fileJoin' => 'FileSearchRowBasic',
-        'issueJoin' => 'IssueSearchRowBasic',
-        'itemJoin' => 'ItemSearchRowBasic',
-        'messagesJoin' => 'MessageSearchRowBasic',
-        'timeJoin' => 'TimeBillSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "SupportCaseSearchRowBasic",
+		"companyJoin" => "EntitySearchRowBasic",
+		"contactJoin" => "ContactSearchRowBasic",
+		"customerJoin" => "CustomerSearchRowBasic",
+		"employeeJoin" => "EmployeeSearchRowBasic",
+		"fileJoin" => "FileSearchRowBasic",
+		"issueJoin" => "IssueSearchRowBasic",
+		"itemJoin" => "ItemSearchRowBasic",
+		"messagesJoin" => "MessageSearchRowBasic",
+		"timeJoin" => "TimeBillSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

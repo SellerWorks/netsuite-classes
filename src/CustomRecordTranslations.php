@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTranslations.
+ * CustomRecordTranslations
  */
-class CustomRecordTranslations
-{
-    /**
-     * @var Language
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $language;
-    /**
-     * @var string
-     */
-    public $label;
+class CustomRecordTranslations {
+	/**
+	 * @access public
+	 * @var Language
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $language;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $label;
 
-    public static $paramtypesmap = [
-        'locale' => 'Language',
-        'language' => 'string',
-        'label' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"locale" => "Language",
+		"language" => "string",
+		"label" => "string",
+	);
 }

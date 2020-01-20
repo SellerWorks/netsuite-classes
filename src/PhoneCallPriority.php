@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallPriority.
+ * PhoneCallPriority
  */
-class PhoneCallPriority
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _high = '_high';
-    /**
-     * @var string
-     */
-    const _low = '_low';
-    /**
-     * @var string
-     */
-    const _medium = '_medium';
+class PhoneCallPriority {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _high = "_high";
+	/**
+	 * @var string
+	 */
+	const _low = "_low";
+	/**
+	 * @var string
+	 */
+	const _medium = "_medium";
 }

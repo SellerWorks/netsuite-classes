@@ -13,15 +13,14 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * AttachReference
  */
-class AttachReference
-{
-    /**
-     * @access public
-     * @var BaseRef
-     */
-    public $attachTo;
+class AttachReference {
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $attachTo;
 
-    public static $paramtypesmap = array(
-        "attachTo" => "BaseRef",
-    );
+	static $paramtypesmap = array(
+		"attachTo" => "BaseRef",
+	);
 }

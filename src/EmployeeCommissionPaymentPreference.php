@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeCommissionPaymentPreference.
+ * EmployeeCommissionPaymentPreference
  */
-class EmployeeCommissionPaymentPreference
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _accountsPayable = '_accountsPayable';
-    /**
-     * @var string
-     */
-    const _payroll = '_payroll';
-    /**
-     * @var string
-     */
-    const _systemPreference = '_systemPreference';
+class EmployeeCommissionPaymentPreference {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _accountsPayable = "_accountsPayable";
+	/**
+	 * @var string
+	 */
+	const _payroll = "_payroll";
+	/**
+	 * @var string
+	 */
+	const _systemPreference = "_systemPreference";
 }

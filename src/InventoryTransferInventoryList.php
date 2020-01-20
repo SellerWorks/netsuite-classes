@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryTransferInventoryList.
+ * InventoryTransferInventoryList
  */
-class InventoryTransferInventoryList
-{
-    /**
-     * @var InventoryTransferInventory[]
-     */
-    public $inventory;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InventoryTransferInventoryList {
+	/**
+	 * @access public
+	 * @var InventoryTransferInventory[]
+	 */
+	public $inventory;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'inventory' => 'InventoryTransferInventory[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"inventory" => "InventoryTransferInventory[]",
+		"replaceAll" => "boolean",
+	);
 }

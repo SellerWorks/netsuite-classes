@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberSearchAdvanced.
+ * InventoryNumberSearchAdvanced
  */
-class InventoryNumberSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var InventoryNumberSearch
-     */
-    public $criteria;
-    /**
-     * @var InventoryNumberSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class InventoryNumberSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var InventoryNumberSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var InventoryNumberSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'InventoryNumberSearch',
-        'columns' => 'InventoryNumberSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "InventoryNumberSearch",
+		"columns" => "InventoryNumberSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

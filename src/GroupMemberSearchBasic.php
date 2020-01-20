@@ -13,15 +13,14 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * GroupMemberSearchBasic
  */
-class GroupMemberSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $groupId;
+class GroupMemberSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $groupId;
 
-    public static $paramtypesmap = array(
-        "groupId" => "RecordRef",
-    );
+	static $paramtypesmap = array(
+		"groupId" => "RecordRef",
+	);
 }

@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WsRole.
+ * WsRole
  */
-class WsRole
-{
-    /**
-     * @var RecordRef
-     */
-    public $role;
-    /**
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $isLoggedInRole;
+class WsRole {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $role;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDefault;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isLoggedInRole;
 
-    public static $paramtypesmap = [
-        'role' => 'RecordRef',
-        'isDefault' => 'boolean',
-        'isInactive' => 'boolean',
-        'isLoggedInRole' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"role" => "RecordRef",
+		"isDefault" => "boolean",
+		"isInactive" => "boolean",
+		"isLoggedInRole" => "boolean",
+	);
 }

@@ -11,156 +11,184 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderItem.
+ * WorkOrderItem
  */
-class WorkOrderItem
-{
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var int
-     */
-    public $operationSequenceNumber;
-    /**
-     * @var float
-     */
-    public $componentYield;
-    /**
-     * @var float
-     */
-    public $bomQuantity;
-    /**
-     * @var float
-     */
-    public $quantityCommitted;
-    /**
-     * @var float
-     */
-    public $quantityBackOrdered;
-    /**
-     * @var float
-     */
-    public $quantityAvailable;
-    /**
-     * @var float
-     */
-    public $averageCost;
-    /**
-     * @var float
-     */
-    public $lastPurchasePrice;
-    /**
-     * @var float
-     */
-    public $quantityOnHand;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var InventoryDetail
-     */
-    public $inventoryDetail;
-    /**
-     * @var string
-     */
-    public $serialNumbers;
-    /**
-     * @var float
-     */
-    public $orderPriority;
-    /**
-     * @var CustomFieldList
-     */
-    public $options;
-    /**
-     * @var ItemSource
-     */
-    public $itemSource;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $poVendor;
-    /**
-     * @var float
-     */
-    public $poRate;
-    /**
-     * @var float
-     */
-    public $percentComplete;
-    /**
-     * @var float
-     */
-    public $contribution;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var WorkOrderItemItemCommitInventory
-     */
-    public $commitInventory;
-    /**
-     * @var dateTime
-     */
-    public $plannedIssueDate;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
+class WorkOrderItem {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $line;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $operationSequenceNumber;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $componentYield;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $bomQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityCommitted;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityBackOrdered;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityAvailable;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $averageCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $lastPurchasePrice;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityOnHand;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var InventoryDetail
+	 */
+	public $inventoryDetail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $serialNumbers;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $orderPriority;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $options;
+	/**
+	 * @access public
+	 * @var ItemSource
+	 */
+	public $itemSource;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $poVendor;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $poRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percentComplete;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $contribution;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var WorkOrderItemItemCommitInventory
+	 */
+	public $commitInventory;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $plannedIssueDate;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'line' => 'integer',
-        'item' => 'RecordRef',
-        'operationSequenceNumber' => 'integer',
-        'componentYield' => 'float',
-        'bomQuantity' => 'float',
-        'quantityCommitted' => 'float',
-        'quantityBackOrdered' => 'float',
-        'quantityAvailable' => 'float',
-        'averageCost' => 'float',
-        'lastPurchasePrice' => 'float',
-        'quantityOnHand' => 'float',
-        'quantity' => 'float',
-        'units' => 'RecordRef',
-        'inventoryDetail' => 'InventoryDetail',
-        'serialNumbers' => 'string',
-        'orderPriority' => 'float',
-        'options' => 'CustomFieldList',
-        'itemSource' => 'ItemSource',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'poVendor' => 'RecordRef',
-        'poRate' => 'float',
-        'percentComplete' => 'float',
-        'contribution' => 'float',
-        'description' => 'string',
-        'commitInventory' => 'WorkOrderItemItemCommitInventory',
-        'plannedIssueDate' => 'dateTime',
-        'customFieldList' => 'CustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"line" => "integer",
+		"item" => "RecordRef",
+		"operationSequenceNumber" => "integer",
+		"componentYield" => "float",
+		"bomQuantity" => "float",
+		"quantityCommitted" => "float",
+		"quantityBackOrdered" => "float",
+		"quantityAvailable" => "float",
+		"averageCost" => "float",
+		"lastPurchasePrice" => "float",
+		"quantityOnHand" => "float",
+		"quantity" => "float",
+		"units" => "RecordRef",
+		"inventoryDetail" => "InventoryDetail",
+		"serialNumbers" => "string",
+		"orderPriority" => "float",
+		"options" => "CustomFieldList",
+		"itemSource" => "ItemSource",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"poVendor" => "RecordRef",
+		"poRate" => "float",
+		"percentComplete" => "float",
+		"contribution" => "float",
+		"description" => "string",
+		"commitInventory" => "WorkOrderItemItemCommitInventory",
+		"plannedIssueDate" => "dateTime",
+		"customFieldList" => "CustomFieldList",
+	);
 }

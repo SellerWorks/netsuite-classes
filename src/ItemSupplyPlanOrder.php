@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyPlanOrder.
+ * ItemSupplyPlanOrder
  */
-class ItemSupplyPlanOrder
-{
-    /**
-     * @var int
-     */
-    public $orderLineId;
-    /**
-     * @var dateTime
-     */
-    public $orderDate;
-    /**
-     * @var dateTime
-     */
-    public $receiptDate;
-    /**
-     * @var RecordRef
-     */
-    public $sourceLocation;
-    /**
-     * @var float
-     */
-    public $quantity;
-    /**
-     * @var bool
-     */
-    public $orderCreated;
-    /**
-     * @var ItemSupplyPlanOrderType
-     */
-    public $orderType;
+class ItemSupplyPlanOrder {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $orderLineId;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $orderDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $receiptDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $sourceLocation;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $orderCreated;
+	/**
+	 * @access public
+	 * @var ItemSupplyPlanOrderType
+	 */
+	public $orderType;
 
-    public static $paramtypesmap = [
-        'orderLineId' => 'integer',
-        'orderDate' => 'dateTime',
-        'receiptDate' => 'dateTime',
-        'sourceLocation' => 'RecordRef',
-        'quantity' => 'float',
-        'orderCreated' => 'boolean',
-        'orderType' => 'ItemSupplyPlanOrderType',
-    ];
+	static $paramtypesmap = array(
+		"orderLineId" => "integer",
+		"orderDate" => "dateTime",
+		"receiptDate" => "dateTime",
+		"sourceLocation" => "RecordRef",
+		"quantity" => "float",
+		"orderCreated" => "boolean",
+		"orderType" => "ItemSupplyPlanOrderType",
+	);
 }

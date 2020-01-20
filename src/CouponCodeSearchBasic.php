@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CouponCodeSearchBasic.
+ * CouponCodeSearchBasic
  */
-class CouponCodeSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchStringField
-     */
-    public $code;
-    /**
-     * @var SearchDateField
-     */
-    public $dateSent;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchLongField
-     */
-    public $id;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $promotion;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $recipient;
-    /**
-     * @var SearchLongField
-     */
-    public $useCount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $used;
+class CouponCodeSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $code;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $dateSent;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $promotion;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $recipient;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $useCount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $used;
 
-    public static $paramtypesmap = [
-        'code' => 'SearchStringField',
-        'dateSent' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'id' => 'SearchLongField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'promotion' => 'SearchMultiSelectField',
-        'recipient' => 'SearchMultiSelectField',
-        'useCount' => 'SearchLongField',
-        'used' => 'SearchBooleanField',
-    ];
+	static $paramtypesmap = array(
+		"code" => "SearchStringField",
+		"dateSent" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"id" => "SearchLongField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"promotion" => "SearchMultiSelectField",
+		"recipient" => "SearchMultiSelectField",
+		"useCount" => "SearchLongField",
+		"used" => "SearchBooleanField",
+	);
 }

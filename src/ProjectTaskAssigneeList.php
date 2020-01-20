@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskAssigneeList.
+ * ProjectTaskAssigneeList
  */
-class ProjectTaskAssigneeList
-{
-    /**
-     * @var ProjectTaskAssignee[]
-     */
-    public $projectTaskAssignee;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ProjectTaskAssigneeList {
+	/**
+	 * @access public
+	 * @var ProjectTaskAssignee[]
+	 */
+	public $projectTaskAssignee;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'projectTaskAssignee' => 'ProjectTaskAssignee[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"projectTaskAssignee" => "ProjectTaskAssignee[]",
+		"replaceAll" => "boolean",
+	);
 }

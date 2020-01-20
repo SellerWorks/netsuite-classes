@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordSearch.
+ * CustomRecordSearch
  */
-class CustomRecordSearch extends SearchRecord
-{
-    /**
-     * @var CustomRecordSearchBasic
-     */
-    public $basic;
-    /**
-     * @var FileSearchBasic
-     */
-    public $fileJoin;
-    /**
-     * @var MessageSearchBasic
-     */
-    public $messagesJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $ownerJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class CustomRecordSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CustomRecordSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var FileSearchBasic
+	 */
+	public $fileJoin;
+	/**
+	 * @access public
+	 * @var MessageSearchBasic
+	 */
+	public $messagesJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $ownerJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'CustomRecordSearchBasic',
-        'fileJoin' => 'FileSearchBasic',
-        'messagesJoin' => 'MessageSearchBasic',
-        'ownerJoin' => 'EmployeeSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'userNotesJoin' => 'NoteSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "CustomRecordSearchBasic",
+		"fileJoin" => "FileSearchBasic",
+		"messagesJoin" => "MessageSearchBasic",
+		"ownerJoin" => "EmployeeSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"userNotesJoin" => "NoteSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

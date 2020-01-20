@@ -11,96 +11,112 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ResourceAllocation.
+ * ResourceAllocation
  */
-class ResourceAllocation extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $requestedby;
-    /**
-     * @var ResourceAllocationApprovalStatus
-     */
-    public $approvalStatus;
-    /**
-     * @var RecordRef
-     */
-    public $nextApprover;
-    /**
-     * @var RecordRef
-     */
-    public $allocationResource;
-    /**
-     * @var RecordRef
-     */
-    public $project;
-    /**
-     * @var string
-     */
-    public $notes;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var float
-     */
-    public $allocationAmount;
-    /**
-     * @var ResourceAllocationAllocationUnit
-     */
-    public $allocationUnit;
-    /**
-     * @var float
-     */
-    public $numberHours;
-    /**
-     * @var float
-     */
-    public $percentOfTime;
-    /**
-     * @var RecordRef
-     */
-    public $allocationType;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ResourceAllocation extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $requestedby;
+	/**
+	 * @access public
+	 * @var ResourceAllocationApprovalStatus
+	 */
+	public $approvalStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nextApprover;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $allocationResource;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $project;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $notes;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $allocationAmount;
+	/**
+	 * @access public
+	 * @var ResourceAllocationAllocationUnit
+	 */
+	public $allocationUnit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $numberHours;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $percentOfTime;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $allocationType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'requestedby' => 'RecordRef',
-        'approvalStatus' => 'ResourceAllocationApprovalStatus',
-        'nextApprover' => 'RecordRef',
-        'allocationResource' => 'RecordRef',
-        'project' => 'RecordRef',
-        'notes' => 'string',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'allocationAmount' => 'float',
-        'allocationUnit' => 'ResourceAllocationAllocationUnit',
-        'numberHours' => 'float',
-        'percentOfTime' => 'float',
-        'allocationType' => 'RecordRef',
-        'customForm' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"requestedby" => "RecordRef",
+		"approvalStatus" => "ResourceAllocationApprovalStatus",
+		"nextApprover" => "RecordRef",
+		"allocationResource" => "RecordRef",
+		"project" => "RecordRef",
+		"notes" => "string",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"allocationAmount" => "float",
+		"allocationUnit" => "ResourceAllocationAllocationUnit",
+		"numberHours" => "float",
+		"percentOfTime" => "float",
+		"allocationType" => "RecordRef",
+		"customForm" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

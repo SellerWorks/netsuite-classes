@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ShippingCarrier.
+ * ShippingCarrier
  */
-class ShippingCarrier
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _fedexUspsMore = '_fedexUspsMore';
-    /**
-     * @var string
-     */
-    const _ups = '_ups';
+class ShippingCarrier {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _fedexUspsMore = "_fedexUspsMore";
+	/**
+	 * @var string
+	 */
+	const _ups = "_ups";
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchCustomField.
+ * SearchCustomField
  */
-class SearchCustomField
-{
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $scriptId;
+class SearchCustomField {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scriptId;
 
-    public static $paramtypesmap = [
-        'internalId' => 'string',
-        'scriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"internalId" => "string",
+		"scriptId" => "string",
+	);
 }

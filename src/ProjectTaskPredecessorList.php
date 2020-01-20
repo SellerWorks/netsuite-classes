@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * ProjectTaskPredecessorList
  */
-class ProjectTaskPredecessorList
-{
-    /**
-     * @access public
-     * @var ProjectTaskPredecessor[]
-     */
-    public $projectTaskPredecessor;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class ProjectTaskPredecessorList {
+	/**
+	 * @access public
+	 * @var ProjectTaskPredecessor[]
+	 */
+	public $projectTaskPredecessor;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "projectTaskPredecessor" => "ProjectTaskPredecessor[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"projectTaskPredecessor" => "ProjectTaskPredecessor[]",
+		"replaceAll" => "boolean",
+	);
 }

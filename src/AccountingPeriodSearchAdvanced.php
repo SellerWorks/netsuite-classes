@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingPeriodSearchAdvanced.
+ * AccountingPeriodSearchAdvanced
  */
-class AccountingPeriodSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var AccountingPeriodSearch
-     */
-    public $criteria;
-    /**
-     * @var AccountingPeriodSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class AccountingPeriodSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var AccountingPeriodSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var AccountingPeriodSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'AccountingPeriodSearch',
-        'columns' => 'AccountingPeriodSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "AccountingPeriodSearch",
+		"columns" => "AccountingPeriodSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

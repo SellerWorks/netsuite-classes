@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepositCashBack.
+ * DepositCashBack
  */
-class DepositCashBack
-{
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $memo;
+class DepositCashBack {
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
 
-    public static $paramtypesmap = [
-        'amount' => 'float',
-        'account' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'memo' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"amount" => "float",
+		"account" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"memo" => "string",
+	);
 }

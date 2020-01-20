@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorBillInstallment.
+ * VendorBillInstallment
  */
-class VendorBillInstallment
-{
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var dateTime
-     */
-    public $dueDate;
-    /**
-     * @var float
-     */
-    public $amountDue;
-    /**
-     * @var int
-     */
-    public $seqNum;
-    /**
-     * @var string
-     */
-    public $status;
+class VendorBillInstallment {
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dueDate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amountDue;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $seqNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
 
-    public static $paramtypesmap = [
-        'amount' => 'float',
-        'dueDate' => 'dateTime',
-        'amountDue' => 'float',
-        'seqNum' => 'integer',
-        'status' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"amount" => "float",
+		"dueDate" => "dateTime",
+		"amountDue" => "float",
+		"seqNum" => "integer",
+		"status" => "string",
+	);
 }

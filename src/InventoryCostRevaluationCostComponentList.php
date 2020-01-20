@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryCostRevaluationCostComponentList.
+ * InventoryCostRevaluationCostComponentList
  */
-class InventoryCostRevaluationCostComponentList
-{
-    /**
-     * @var InventoryCostRevaluationCostComponent[]
-     */
-    public $costComponent;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class InventoryCostRevaluationCostComponentList {
+	/**
+	 * @access public
+	 * @var InventoryCostRevaluationCostComponent[]
+	 */
+	public $costComponent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'costComponent' => 'InventoryCostRevaluationCostComponent[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"costComponent" => "InventoryCostRevaluationCostComponent[]",
+		"replaceAll" => "boolean",
+	);
 }
