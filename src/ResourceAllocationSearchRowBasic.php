@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace SellerWorks\Netsuite\Model;
+namespace SellerWorks\NetSuite\Model;
 
 /**
  * ResourceAllocationSearchRowBasic

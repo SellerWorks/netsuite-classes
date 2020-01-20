@@ -1,6 +1,6 @@
 {
     "name": "sellerworks/netsuite-php-toolkit",
-    "description": "Netsuite PHP Toolkit Classes",
+    "description": "NetSuite PHP Toolkit Classes",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,7 +9,7 @@
             "email": "steve@nebes.net"
         },
         {
-            "name": "Netsuite, Inc."
+            "name": "NetSuite, Inc."
         }
     ],
     "config": {
