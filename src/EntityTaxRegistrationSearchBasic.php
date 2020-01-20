@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EntityTaxRegistrationSearchBasic.
+ * EntityTaxRegistrationSearchBasic
  */
-class EntityTaxRegistrationSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $address;
-    /**
-     * @var SearchLongField
-     */
-    public $id;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $nexusCountry;
-    /**
-     * @var SearchStringField
-     */
-    public $taxRegistrationNumber;
+class EntityTaxRegistrationSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $address;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $nexusCountry;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $taxRegistrationNumber;
 
-    public static $paramtypesmap = [
-        'address' => 'SearchMultiSelectField',
-        'id' => 'SearchLongField',
-        'nexusCountry' => 'SearchEnumMultiSelectField',
-        'taxRegistrationNumber' => 'SearchStringField',
-    ];
+	static $paramtypesmap = array(
+		"address" => "SearchMultiSelectField",
+		"id" => "SearchLongField",
+		"nexusCountry" => "SearchEnumMultiSelectField",
+		"taxRegistrationNumber" => "SearchStringField",
+	);
 }

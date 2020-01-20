@@ -11,136 +11,160 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepositApplication.
+ * DepositApplication
  */
-class DepositApplication extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $arAcct;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var RecordRef
-     */
-    public $deposit;
-    /**
-     * @var dateTime
-     */
-    public $depDate;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var float
-     */
-    public $applied;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var float
-     */
-    public $unapplied;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var DepositApplicationApplyList
-     */
-    public $applyList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class DepositApplication extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $arAcct;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $deposit;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $depDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $applied;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unapplied;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var DepositApplicationApplyList
+	 */
+	public $applyList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'arAcct' => 'RecordRef',
-        'status' => 'string',
-        'customer' => 'RecordRef',
-        'tranDate' => 'dateTime',
-        'postingPeriod' => 'RecordRef',
-        'deposit' => 'RecordRef',
-        'depDate' => 'dateTime',
-        'currency' => 'RecordRef',
-        'exchangeRate' => 'float',
-        'memo' => 'string',
-        'subsidiary' => 'RecordRef',
-        'total' => 'float',
-        'department' => 'RecordRef',
-        'applied' => 'float',
-        'class' => 'RecordRef',
-        'unapplied' => 'float',
-        'location' => 'RecordRef',
-        'tranId' => 'string',
-        'applyList' => 'DepositApplicationApplyList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"arAcct" => "RecordRef",
+		"status" => "string",
+		"customer" => "RecordRef",
+		"tranDate" => "dateTime",
+		"postingPeriod" => "RecordRef",
+		"deposit" => "RecordRef",
+		"depDate" => "dateTime",
+		"currency" => "RecordRef",
+		"exchangeRate" => "float",
+		"memo" => "string",
+		"subsidiary" => "RecordRef",
+		"total" => "float",
+		"department" => "RecordRef",
+		"applied" => "float",
+		"class" => "RecordRef",
+		"unapplied" => "float",
+		"location" => "RecordRef",
+		"tranId" => "string",
+		"applyList" => "DepositApplicationApplyList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -11,96 +11,112 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingPeriod.
+ * AccountingPeriod
  */
-class AccountingPeriod extends Record
-{
-    /**
-     * @var string
-     */
-    public $periodName;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @var RecordRef
-     */
-    public $fiscalCalendar;
-    /**
-     * @var dateTime
-     */
-    public $closedOnDate;
-    /**
-     * @var bool
-     */
-    public $isAdjust;
-    /**
-     * @var AccountingPeriodFiscalCalendarsList
-     */
-    public $fiscalCalendarsList;
-    /**
-     * @var bool
-     */
-    public $isQuarter;
-    /**
-     * @var bool
-     */
-    public $isYear;
-    /**
-     * @var bool
-     */
-    public $closed;
-    /**
-     * @var bool
-     */
-    public $apLocked;
-    /**
-     * @var bool
-     */
-    public $arLocked;
-    /**
-     * @var bool
-     */
-    public $payrollLocked;
-    /**
-     * @var bool
-     */
-    public $allLocked;
-    /**
-     * @var bool
-     */
-    public $allowNonGLChanges;
-    /**
-     * @var string
-     */
-    public $internalId;
+class AccountingPeriod extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $periodName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $fiscalCalendar;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $closedOnDate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isAdjust;
+	/**
+	 * @access public
+	 * @var AccountingPeriodFiscalCalendarsList
+	 */
+	public $fiscalCalendarsList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isQuarter;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isYear;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $closed;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $apLocked;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $arLocked;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $payrollLocked;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allLocked;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $allowNonGLChanges;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
 
-    public static $paramtypesmap = [
-        'periodName' => 'string',
-        'parent' => 'RecordRef',
-        'startDate' => 'dateTime',
-        'endDate' => 'dateTime',
-        'fiscalCalendar' => 'RecordRef',
-        'closedOnDate' => 'dateTime',
-        'isAdjust' => 'boolean',
-        'fiscalCalendarsList' => 'AccountingPeriodFiscalCalendarsList',
-        'isQuarter' => 'boolean',
-        'isYear' => 'boolean',
-        'closed' => 'boolean',
-        'apLocked' => 'boolean',
-        'arLocked' => 'boolean',
-        'payrollLocked' => 'boolean',
-        'allLocked' => 'boolean',
-        'allowNonGLChanges' => 'boolean',
-        'internalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"periodName" => "string",
+		"parent" => "RecordRef",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"fiscalCalendar" => "RecordRef",
+		"closedOnDate" => "dateTime",
+		"isAdjust" => "boolean",
+		"fiscalCalendarsList" => "AccountingPeriodFiscalCalendarsList",
+		"isQuarter" => "boolean",
+		"isYear" => "boolean",
+		"closed" => "boolean",
+		"apLocked" => "boolean",
+		"arLocked" => "boolean",
+		"payrollLocked" => "boolean",
+		"allLocked" => "boolean",
+		"allowNonGLChanges" => "boolean",
+		"internalId" => "string",
+	);
 }

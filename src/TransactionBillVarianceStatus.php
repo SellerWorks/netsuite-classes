@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransactionBillVarianceStatus.
+ * TransactionBillVarianceStatus
  */
-class TransactionBillVarianceStatus
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _journalNotPosted = '_journalNotPosted';
-    /**
-     * @var string
-     */
-    const _journalPosted = '_journalPosted';
-    /**
-     * @var string
-     */
-    const _noVariances = '_noVariances';
+class TransactionBillVarianceStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _journalNotPosted = "_journalNotPosted";
+	/**
+	 * @var string
+	 */
+	const _journalPosted = "_journalPosted";
+	/**
+	 * @var string
+	 */
+	const _noVariances = "_noVariances";
 }

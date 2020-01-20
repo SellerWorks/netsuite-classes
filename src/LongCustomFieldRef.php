@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LongCustomFieldRef.
+ * LongCustomFieldRef
  */
-class LongCustomFieldRef extends CustomFieldRef
-{
-    /**
-     * @var int
-     */
-    public $value;
+class LongCustomFieldRef extends CustomFieldRef {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $value;
 
-    public static $paramtypesmap = [
-        'value' => 'integer',
-    ];
+	static $paramtypesmap = array(
+		"value" => "integer",
+	);
 }

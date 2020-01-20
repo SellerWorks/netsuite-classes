@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ConsolidatedExchangeRateSearchBasic.
+ * ConsolidatedExchangeRateSearchBasic
  */
-class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $accountingBook;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $fromSubsidiary;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDerivedRate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $period;
-    /**
-     * @var SearchDateField
-     */
-    public $periodStartDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $toSubsidiary;
+class ConsolidatedExchangeRateSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $fromSubsidiary;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDerivedRate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $period;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $periodStartDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $toSubsidiary;
 
-    public static $paramtypesmap = [
-        'accountingBook' => 'SearchMultiSelectField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'fromSubsidiary' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isDerivedRate' => 'SearchBooleanField',
-        'period' => 'SearchMultiSelectField',
-        'periodStartDate' => 'SearchDateField',
-        'toSubsidiary' => 'SearchMultiSelectField',
-    ];
+	static $paramtypesmap = array(
+		"accountingBook" => "SearchMultiSelectField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"fromSubsidiary" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isDerivedRate" => "SearchBooleanField",
+		"period" => "SearchMultiSelectField",
+		"periodStartDate" => "SearchDateField",
+		"toSubsidiary" => "SearchMultiSelectField",
+	);
 }

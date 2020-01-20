@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AssemblyItemEffectiveBomControl.
+ * AssemblyItemEffectiveBomControl
  */
-class AssemblyItemEffectiveBomControl
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _effectiveDate = '_effectiveDate';
-    /**
-     * @var string
-     */
-    const _revisionControl = '_revisionControl';
+class AssemblyItemEffectiveBomControl {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _effectiveDate = "_effectiveDate";
+	/**
+	 * @var string
+	 */
+	const _revisionControl = "_revisionControl";
 }

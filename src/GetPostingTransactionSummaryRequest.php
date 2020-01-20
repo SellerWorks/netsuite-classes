@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetPostingTransactionSummaryRequest.
+ * GetPostingTransactionSummaryRequest
  */
-class GetPostingTransactionSummaryRequest
-{
-    /**
-     * @var PostingTransactionSummaryField
-     */
-    public $fields;
-    /**
-     * @var PostingTransactionSummaryFilter
-     */
-    public $filters;
-    /**
-     * @var int
-     */
-    public $pageIndex;
-    /**
-     * @var string
-     */
-    public $operationId;
+class GetPostingTransactionSummaryRequest {
+	/**
+	 * @access public
+	 * @var PostingTransactionSummaryField
+	 */
+	public $fields;
+	/**
+	 * @access public
+	 * @var PostingTransactionSummaryFilter
+	 */
+	public $filters;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $pageIndex;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $operationId;
 
-    public static $paramtypesmap = [
-        'fields' => 'PostingTransactionSummaryField',
-        'filters' => 'PostingTransactionSummaryFilter',
-        'pageIndex' => 'integer',
-        'operationId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"fields" => "PostingTransactionSummaryField",
+		"filters" => "PostingTransactionSummaryFilter",
+		"pageIndex" => "integer",
+		"operationId" => "string",
+	);
 }

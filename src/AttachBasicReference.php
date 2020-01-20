@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AttachBasicReference.
+ * AttachBasicReference
  */
-class AttachBasicReference extends AttachReference
-{
-    /**
-     * @var BaseRef
-     */
-    public $attachedRecord;
+class AttachBasicReference extends AttachReference {
+	/**
+	 * @access public
+	 * @var BaseRef
+	 */
+	public $attachedRecord;
 
-    public static $paramtypesmap = [
-        'attachedRecord' => 'BaseRef',
-    ];
+	static $paramtypesmap = array(
+		"attachedRecord" => "BaseRef",
+	);
 }

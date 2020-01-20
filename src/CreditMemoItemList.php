@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CreditMemoItemList
  */
-class CreditMemoItemList
-{
-    /**
-     * @access public
-     * @var CreditMemoItem[]
-     */
-    public $item;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class CreditMemoItemList {
+	/**
+	 * @access public
+	 * @var CreditMemoItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "item" => "CreditMemoItem[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"item" => "CreditMemoItem[]",
+		"replaceAll" => "boolean",
+	);
 }

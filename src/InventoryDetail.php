@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryDetail.
+ * InventoryDetail
  */
-class InventoryDetail extends Record
-{
-    /**
-     * @var InventoryAssignmentList
-     */
-    public $inventoryAssignmentList;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
+class InventoryDetail extends Record {
+	/**
+	 * @access public
+	 * @var InventoryAssignmentList
+	 */
+	public $inventoryAssignmentList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
 
-    public static $paramtypesmap = [
-        'inventoryAssignmentList' => 'InventoryAssignmentList',
-        'customForm' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"inventoryAssignmentList" => "InventoryAssignmentList",
+		"customForm" => "RecordRef",
+	);
 }

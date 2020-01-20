@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentMethodSearchBasic.
+ * PaymentMethodSearchBasic
  */
-class PaymentMethodSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $account;
-    /**
-     * @var SearchBooleanField
-     */
-    public $creditCard;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isDebitCard;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
+class PaymentMethodSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $creditCard;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isDebitCard;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'account' => 'SearchMultiSelectField',
-        'creditCard' => 'SearchBooleanField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isDebitCard' => 'SearchBooleanField',
-        'isInactive' => 'SearchBooleanField',
-        'name' => 'SearchStringField',
-    ];
+	static $paramtypesmap = array(
+		"account" => "SearchMultiSelectField",
+		"creditCard" => "SearchBooleanField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isDebitCard" => "SearchBooleanField",
+		"isInactive" => "SearchBooleanField",
+		"name" => "SearchStringField",
+	);
 }

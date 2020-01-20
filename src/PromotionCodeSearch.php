@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeSearch.
+ * PromotionCodeSearch
  */
-class PromotionCodeSearch extends SearchRecord
-{
-    /**
-     * @var PromotionCodeSearchBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class PromotionCodeSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var PromotionCodeSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'PromotionCodeSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "PromotionCodeSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

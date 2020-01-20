@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationGeolocationMethod.
+ * LocationGeolocationMethod
  */
-class LocationGeolocationMethod
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _deriveFromPostalCode = '_deriveFromPostalCode';
-    /**
-     * @var string
-     */
-    const _useLatLongCoordinates = '_useLatLongCoordinates';
+class LocationGeolocationMethod {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _deriveFromPostalCode = "_deriveFromPostalCode";
+	/**
+	 * @var string
+	 */
+	const _useLatLongCoordinates = "_useLatLongCoordinates";
 }

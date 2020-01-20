@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SerializedAssemblyItemBillOfMaterials.
+ * SerializedAssemblyItemBillOfMaterials
  */
-class SerializedAssemblyItemBillOfMaterials
-{
-    /**
-     * @var RecordRef
-     */
-    public $billOfMaterials;
-    /**
-     * @var string
-     */
-    public $currentRevision;
-    /**
-     * @var bool
-     */
-    public $masterDefault;
-    /**
-     * @var RecordRefList
-     */
-    public $defaultForLocationList;
-    /**
-     * @var string
-     */
-    public $inactive;
-    /**
-     * @var string
-     */
-    public $memo;
+class SerializedAssemblyItemBillOfMaterials {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billOfMaterials;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currentRevision;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $masterDefault;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $defaultForLocationList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
 
-    public static $paramtypesmap = [
-        'billOfMaterials' => 'RecordRef',
-        'currentRevision' => 'string',
-        'masterDefault' => 'boolean',
-        'defaultForLocationList' => 'RecordRefList',
-        'inactive' => 'string',
-        'memo' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"billOfMaterials" => "RecordRef",
+		"currentRevision" => "string",
+		"masterDefault" => "boolean",
+		"defaultForLocationList" => "RecordRefList",
+		"inactive" => "string",
+		"memo" => "string",
+	);
 }

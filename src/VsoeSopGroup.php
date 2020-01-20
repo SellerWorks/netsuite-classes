@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VsoeSopGroup.
+ * VsoeSopGroup
  */
-class VsoeSopGroup
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _exclude = '_exclude';
-    /**
-     * @var string
-     */
-    const _normal = '_normal';
-    /**
-     * @var string
-     */
-    const _software = '_software';
+class VsoeSopGroup {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _exclude = "_exclude";
+	/**
+	 * @var string
+	 */
+	const _normal = "_normal";
+	/**
+	 * @var string
+	 */
+	const _software = "_software";
 }

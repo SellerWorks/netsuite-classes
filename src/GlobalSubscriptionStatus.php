@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GlobalSubscriptionStatus.
+ * GlobalSubscriptionStatus
  */
-class GlobalSubscriptionStatus
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _confirmedOptIn = '_confirmedOptIn';
-    /**
-     * @var string
-     */
-    const _confirmedOptOut = '_confirmedOptOut';
-    /**
-     * @var string
-     */
-    const _softOptIn = '_softOptIn';
-    /**
-     * @var string
-     */
-    const _softOptOut = '_softOptOut';
+class GlobalSubscriptionStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _confirmedOptIn = "_confirmedOptIn";
+	/**
+	 * @var string
+	 */
+	const _confirmedOptOut = "_confirmedOptOut";
+	/**
+	 * @var string
+	 */
+	const _softOptIn = "_softOptIn";
+	/**
+	 * @var string
+	 */
+	const _softOptOut = "_softOptOut";
 }

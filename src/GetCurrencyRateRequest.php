@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetCurrencyRateRequest.
+ * GetCurrencyRateRequest
  */
-class GetCurrencyRateRequest
-{
-    /**
-     * @var CurrencyRateFilter
-     */
-    public $currencyRateFilter;
+class GetCurrencyRateRequest {
+	/**
+	 * @access public
+	 * @var CurrencyRateFilter
+	 */
+	public $currencyRateFilter;
 
-    public static $paramtypesmap = [
-        'currencyRateFilter' => 'CurrencyRateFilter',
-    ];
+	static $paramtypesmap = array(
+		"currencyRateFilter" => "CurrencyRateFilter",
+	);
 }

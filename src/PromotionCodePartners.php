@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodePartners.
+ * PromotionCodePartners
  */
-class PromotionCodePartners
-{
-    /**
-     * @var RecordRef
-     */
-    public $partner;
-    /**
-     * @var string
-     */
-    public $code;
+class PromotionCodePartners {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $code;
 
-    public static $paramtypesmap = [
-        'partner' => 'RecordRef',
-        'code' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"partner" => "RecordRef",
+		"code" => "string",
+	);
 }

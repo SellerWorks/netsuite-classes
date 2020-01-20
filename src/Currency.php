@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Currency.
+ * Currency
  */
-class Currency extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $symbol;
-    /**
-     * @var bool
-     */
-    public $isBaseCurrency;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $overrideCurrencyFormat;
-    /**
-     * @var string
-     */
-    public $displaySymbol;
-    /**
-     * @var CurrencySymbolPlacement
-     */
-    public $symbolPlacement;
-    /**
-     * @var CurrencyLocale
-     */
-    public $locale;
-    /**
-     * @var string
-     */
-    public $formatSample;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var CurrencyFxRateUpdateTimezone
-     */
-    public $fxRateUpdateTimezone;
-    /**
-     * @var bool
-     */
-    public $inclInFxRateUpdates;
-    /**
-     * @var CurrencyCurrencyPrecision
-     */
-    public $currencyPrecision;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Currency extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $symbol;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBaseCurrency;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $overrideCurrencyFormat;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displaySymbol;
+	/**
+	 * @access public
+	 * @var CurrencySymbolPlacement
+	 */
+	public $symbolPlacement;
+	/**
+	 * @access public
+	 * @var CurrencyLocale
+	 */
+	public $locale;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $formatSample;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var CurrencyFxRateUpdateTimezone
+	 */
+	public $fxRateUpdateTimezone;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inclInFxRateUpdates;
+	/**
+	 * @access public
+	 * @var CurrencyCurrencyPrecision
+	 */
+	public $currencyPrecision;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'symbol' => 'string',
-        'isBaseCurrency' => 'boolean',
-        'isInactive' => 'boolean',
-        'overrideCurrencyFormat' => 'boolean',
-        'displaySymbol' => 'string',
-        'symbolPlacement' => 'CurrencySymbolPlacement',
-        'locale' => 'CurrencyLocale',
-        'formatSample' => 'string',
-        'exchangeRate' => 'float',
-        'fxRateUpdateTimezone' => 'CurrencyFxRateUpdateTimezone',
-        'inclInFxRateUpdates' => 'boolean',
-        'currencyPrecision' => 'CurrencyCurrencyPrecision',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"symbol" => "string",
+		"isBaseCurrency" => "boolean",
+		"isInactive" => "boolean",
+		"overrideCurrencyFormat" => "boolean",
+		"displaySymbol" => "string",
+		"symbolPlacement" => "CurrencySymbolPlacement",
+		"locale" => "CurrencyLocale",
+		"formatSample" => "string",
+		"exchangeRate" => "float",
+		"fxRateUpdateTimezone" => "CurrencyFxRateUpdateTimezone",
+		"inclInFxRateUpdates" => "boolean",
+		"currencyPrecision" => "CurrencyCurrencyPrecision",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

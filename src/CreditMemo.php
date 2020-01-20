@@ -11,501 +11,598 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CreditMemo.
+ * CreditMemo
  */
-class CreditMemo extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiaryTaxRegNum;
-    /**
-     * @var bool
-     */
-    public $taxRegOverride;
-    /**
-     * @var bool
-     */
-    public $taxDetailsOverride;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var string
-     */
-    public $vatRegNum;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var string
-     */
-    public $tranId;
-    /**
-     * @var RecordRef
-     */
-    public $entityTaxRegNum;
-    /**
-     * @var dateTime
-     */
-    public $taxPointDate;
-    /**
-     * @var RecordRef
-     */
-    public $createdFrom;
-    /**
-     * @var RecordRef
-     */
-    public $postingPeriod;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $salesRep;
-    /**
-     * @var RecordRef
-     */
-    public $partner;
-    /**
-     * @var string
-     */
-    public $contribPct;
-    /**
-     * @var string
-     */
-    public $otherRefNum;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $excludeCommission;
-    /**
-     * @var RecordRef
-     */
-    public $leadSource;
-    /**
-     * @var float
-     */
-    public $balance;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
-    /**
-     * @var string
-     */
-    public $onCreditHold;
-    /**
-     * @var float
-     */
-    public $amountPaid;
-    /**
-     * @var dateTime
-     */
-    public $salesEffectiveDate;
-    /**
-     * @var float
-     */
-    public $totalCostEstimate;
-    /**
-     * @var float
-     */
-    public $estGrossProfit;
-    /**
-     * @var float
-     */
-    public $estGrossProfitPercent;
-    /**
-     * @var string
-     */
-    public $currencyName;
-    /**
-     * @var RecordRef
-     */
-    public $promoCode;
-    /**
-     * @var float
-     */
-    public $amountRemaining;
-    /**
-     * @var RecordRef
-     */
-    public $discountItem;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string
-     */
-    public $discountRate;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var float
-     */
-    public $taxRate;
-    /**
-     * @var float
-     */
-    public $unapplied;
-    /**
-     * @var bool
-     */
-    public $autoApply;
-    /**
-     * @var float
-     */
-    public $applied;
-    /**
-     * @var bool
-     */
-    public $toBePrinted;
-    /**
-     * @var bool
-     */
-    public $toBeEmailed;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var bool
-     */
-    public $toBeFaxed;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var RecordRef
-     */
-    public $messageSel;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var Address
-     */
-    public $billingAddress;
-    /**
-     * @var RecordRef
-     */
-    public $billAddressList;
-    /**
-     * @var RecordRef
-     */
-    public $shipMethod;
-    /**
-     * @var float
-     */
-    public $shippingCost;
-    /**
-     * @var float
-     */
-    public $shippingTax1Rate;
-    /**
-     * @var RecordRef
-     */
-    public $shippingTaxCode;
-    /**
-     * @var RecordRef
-     */
-    public $handlingTaxCode;
-    /**
-     * @var string
-     */
-    public $shippingTax2Rate;
-    /**
-     * @var float
-     */
-    public $handlingTax1Rate;
-    /**
-     * @var string
-     */
-    public $handlingTax2Rate;
-    /**
-     * @var float
-     */
-    public $handlingCost;
-    /**
-     * @var float
-     */
-    public $subTotal;
-    /**
-     * @var float
-     */
-    public $discountTotal;
-    /**
-     * @var RevenueStatus
-     */
-    public $revenueStatus;
-    /**
-     * @var float
-     */
-    public $recognizedRevenue;
-    /**
-     * @var float
-     */
-    public $deferredRevenue;
-    /**
-     * @var bool
-     */
-    public $revRecOnRevCommitment;
-    /**
-     * @var float
-     */
-    public $taxTotal;
-    /**
-     * @var float
-     */
-    public $tax2Total;
-    /**
-     * @var float
-     */
-    public $altShippingCost;
-    /**
-     * @var float
-     */
-    public $altHandlingCost;
-    /**
-     * @var bool
-     */
-    public $isMultiShipTo;
-    /**
-     * @var float
-     */
-    public $total;
-    /**
-     * @var RecordRef
-     */
-    public $salesGroup;
-    /**
-     * @var bool
-     */
-    public $syncSalesTeams;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var RecordRef
-     */
-    public $giftCert;
-    /**
-     * @var float
-     */
-    public $giftCertTotal;
-    /**
-     * @var float
-     */
-    public $giftCertApplied;
-    /**
-     * @var float
-     */
-    public $giftCertAvailable;
-    /**
-     * @var bool
-     */
-    public $tranIsVsoeBundle;
-    /**
-     * @var bool
-     */
-    public $vsoeAutoCalc;
-    /**
-     * @var bool
-     */
-    public $syncPartnerTeams;
-    /**
-     * @var CreditMemoSalesTeamList
-     */
-    public $salesTeamList;
-    /**
-     * @var CreditMemoItemList
-     */
-    public $itemList;
-    /**
-     * @var AccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var CreditMemoPartnersList
-     */
-    public $partnersList;
-    /**
-     * @var CreditMemoApplyList
-     */
-    public $applyList;
-    /**
-     * @var TaxDetailsList
-     */
-    public $taxDetailsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class CreditMemo extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiaryTaxRegNum;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxRegOverride;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $taxDetailsOverride;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $tranId;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entityTaxRegNum;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $taxPointDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $createdFrom;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRep;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $contribPct;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $otherRefNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $excludeCommission;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $leadSource;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $onCreditHold;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amountPaid;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $salesEffectiveDate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $totalCostEstimate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $estGrossProfitPercent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currencyName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $promoCode;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amountRemaining;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $discountItem;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $source;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $discountRate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unapplied;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $autoApply;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $applied;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBePrinted;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeEmailed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $toBeFaxed;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $messageSel;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var Address
+	 */
+	public $billingAddress;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billAddressList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shipMethod;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $shippingTax1Rate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $shippingTaxCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $handlingTaxCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $shippingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingTax1Rate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $handlingTax2Rate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $handlingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $subTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $discountTotal;
+	/**
+	 * @access public
+	 * @var RevenueStatus
+	 */
+	public $revenueStatus;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $recognizedRevenue;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $deferredRevenue;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $revRecOnRevCommitment;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $taxTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $tax2Total;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altShippingCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $altHandlingCost;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isMultiShipTo;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $total;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesGroup;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncSalesTeams;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $giftCert;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertTotal;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertApplied;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $giftCertAvailable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $tranIsVsoeBundle;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $vsoeAutoCalc;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $syncPartnerTeams;
+	/**
+	 * @access public
+	 * @var CreditMemoSalesTeamList
+	 */
+	public $salesTeamList;
+	/**
+	 * @access public
+	 * @var CreditMemoItemList
+	 */
+	public $itemList;
+	/**
+	 * @access public
+	 * @var AccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var CreditMemoPartnersList
+	 */
+	public $partnersList;
+	/**
+	 * @access public
+	 * @var CreditMemoApplyList
+	 */
+	public $applyList;
+	/**
+	 * @access public
+	 * @var TaxDetailsList
+	 */
+	public $taxDetailsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'nexus' => 'RecordRef',
-        'subsidiaryTaxRegNum' => 'RecordRef',
-        'taxRegOverride' => 'boolean',
-        'taxDetailsOverride' => 'boolean',
-        'customForm' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'entity' => 'RecordRef',
-        'vatRegNum' => 'string',
-        'tranDate' => 'dateTime',
-        'tranId' => 'string',
-        'entityTaxRegNum' => 'RecordRef',
-        'taxPointDate' => 'dateTime',
-        'createdFrom' => 'RecordRef',
-        'postingPeriod' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'job' => 'RecordRef',
-        'salesRep' => 'RecordRef',
-        'partner' => 'RecordRef',
-        'contribPct' => 'string',
-        'otherRefNum' => 'string',
-        'memo' => 'string',
-        'excludeCommission' => 'boolean',
-        'leadSource' => 'RecordRef',
-        'balance' => 'float',
-        'account' => 'RecordRef',
-        'exchangeRate' => 'float',
-        'onCreditHold' => 'string',
-        'amountPaid' => 'float',
-        'salesEffectiveDate' => 'dateTime',
-        'totalCostEstimate' => 'float',
-        'estGrossProfit' => 'float',
-        'estGrossProfitPercent' => 'float',
-        'currencyName' => 'string',
-        'promoCode' => 'RecordRef',
-        'amountRemaining' => 'float',
-        'discountItem' => 'RecordRef',
-        'source' => 'string',
-        'discountRate' => 'string',
-        'isTaxable' => 'boolean',
-        'taxItem' => 'RecordRef',
-        'taxRate' => 'float',
-        'unapplied' => 'float',
-        'autoApply' => 'boolean',
-        'applied' => 'float',
-        'toBePrinted' => 'boolean',
-        'toBeEmailed' => 'boolean',
-        'email' => 'string',
-        'toBeFaxed' => 'boolean',
-        'fax' => 'string',
-        'messageSel' => 'RecordRef',
-        'message' => 'string',
-        'billingAddress' => 'Address',
-        'billAddressList' => 'RecordRef',
-        'shipMethod' => 'RecordRef',
-        'shippingCost' => 'float',
-        'shippingTax1Rate' => 'float',
-        'shippingTaxCode' => 'RecordRef',
-        'handlingTaxCode' => 'RecordRef',
-        'shippingTax2Rate' => 'string',
-        'handlingTax1Rate' => 'float',
-        'handlingTax2Rate' => 'string',
-        'handlingCost' => 'float',
-        'subTotal' => 'float',
-        'discountTotal' => 'float',
-        'revenueStatus' => 'RevenueStatus',
-        'recognizedRevenue' => 'float',
-        'deferredRevenue' => 'float',
-        'revRecOnRevCommitment' => 'boolean',
-        'taxTotal' => 'float',
-        'tax2Total' => 'float',
-        'altShippingCost' => 'float',
-        'altHandlingCost' => 'float',
-        'isMultiShipTo' => 'boolean',
-        'total' => 'float',
-        'salesGroup' => 'RecordRef',
-        'syncSalesTeams' => 'boolean',
-        'status' => 'string',
-        'giftCert' => 'RecordRef',
-        'giftCertTotal' => 'float',
-        'giftCertApplied' => 'float',
-        'giftCertAvailable' => 'float',
-        'tranIsVsoeBundle' => 'boolean',
-        'vsoeAutoCalc' => 'boolean',
-        'syncPartnerTeams' => 'boolean',
-        'salesTeamList' => 'CreditMemoSalesTeamList',
-        'itemList' => 'CreditMemoItemList',
-        'accountingBookDetailList' => 'AccountingBookDetailList',
-        'partnersList' => 'CreditMemoPartnersList',
-        'applyList' => 'CreditMemoApplyList',
-        'taxDetailsList' => 'TaxDetailsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"nexus" => "RecordRef",
+		"subsidiaryTaxRegNum" => "RecordRef",
+		"taxRegOverride" => "boolean",
+		"taxDetailsOverride" => "boolean",
+		"customForm" => "RecordRef",
+		"currency" => "RecordRef",
+		"entity" => "RecordRef",
+		"vatRegNum" => "string",
+		"tranDate" => "dateTime",
+		"tranId" => "string",
+		"entityTaxRegNum" => "RecordRef",
+		"taxPointDate" => "dateTime",
+		"createdFrom" => "RecordRef",
+		"postingPeriod" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"job" => "RecordRef",
+		"salesRep" => "RecordRef",
+		"partner" => "RecordRef",
+		"contribPct" => "string",
+		"otherRefNum" => "string",
+		"memo" => "string",
+		"excludeCommission" => "boolean",
+		"leadSource" => "RecordRef",
+		"balance" => "float",
+		"account" => "RecordRef",
+		"exchangeRate" => "float",
+		"onCreditHold" => "string",
+		"amountPaid" => "float",
+		"salesEffectiveDate" => "dateTime",
+		"totalCostEstimate" => "float",
+		"estGrossProfit" => "float",
+		"estGrossProfitPercent" => "float",
+		"currencyName" => "string",
+		"promoCode" => "RecordRef",
+		"amountRemaining" => "float",
+		"discountItem" => "RecordRef",
+		"source" => "string",
+		"discountRate" => "string",
+		"isTaxable" => "boolean",
+		"taxItem" => "RecordRef",
+		"taxRate" => "float",
+		"unapplied" => "float",
+		"autoApply" => "boolean",
+		"applied" => "float",
+		"toBePrinted" => "boolean",
+		"toBeEmailed" => "boolean",
+		"email" => "string",
+		"toBeFaxed" => "boolean",
+		"fax" => "string",
+		"messageSel" => "RecordRef",
+		"message" => "string",
+		"billingAddress" => "Address",
+		"billAddressList" => "RecordRef",
+		"shipMethod" => "RecordRef",
+		"shippingCost" => "float",
+		"shippingTax1Rate" => "float",
+		"shippingTaxCode" => "RecordRef",
+		"handlingTaxCode" => "RecordRef",
+		"shippingTax2Rate" => "string",
+		"handlingTax1Rate" => "float",
+		"handlingTax2Rate" => "string",
+		"handlingCost" => "float",
+		"subTotal" => "float",
+		"discountTotal" => "float",
+		"revenueStatus" => "RevenueStatus",
+		"recognizedRevenue" => "float",
+		"deferredRevenue" => "float",
+		"revRecOnRevCommitment" => "boolean",
+		"taxTotal" => "float",
+		"tax2Total" => "float",
+		"altShippingCost" => "float",
+		"altHandlingCost" => "float",
+		"isMultiShipTo" => "boolean",
+		"total" => "float",
+		"salesGroup" => "RecordRef",
+		"syncSalesTeams" => "boolean",
+		"status" => "string",
+		"giftCert" => "RecordRef",
+		"giftCertTotal" => "float",
+		"giftCertApplied" => "float",
+		"giftCertAvailable" => "float",
+		"tranIsVsoeBundle" => "boolean",
+		"vsoeAutoCalc" => "boolean",
+		"syncPartnerTeams" => "boolean",
+		"salesTeamList" => "CreditMemoSalesTeamList",
+		"itemList" => "CreditMemoItemList",
+		"accountingBookDetailList" => "AccountingBookDetailList",
+		"partnersList" => "CreditMemoPartnersList",
+		"applyList" => "CreditMemoApplyList",
+		"taxDetailsList" => "TaxDetailsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

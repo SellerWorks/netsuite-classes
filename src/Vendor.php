@@ -11,426 +11,508 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Vendor.
+ * Vendor
  */
-class Vendor extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $entityId;
-    /**
-     * @var string
-     */
-    public $altName;
-    /**
-     * @var bool
-     */
-    public $isPerson;
-    /**
-     * @var string
-     */
-    public $phoneticName;
-    /**
-     * @var string
-     */
-    public $salutation;
-    /**
-     * @var string
-     */
-    public $firstName;
-    /**
-     * @var string
-     */
-    public $middleName;
-    /**
-     * @var string
-     */
-    public $lastName;
-    /**
-     * @var string
-     */
-    public $companyName;
-    /**
-     * @var string
-     */
-    public $phone;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @var string
-     */
-    public $defaultAddress;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var dateTime
-     */
-    public $dateCreated;
-    /**
-     * @var RecordRef
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $printOnCheckAs;
-    /**
-     * @var string
-     */
-    public $altPhone;
-    /**
-     * @var string
-     */
-    public $homePhone;
-    /**
-     * @var string
-     */
-    public $mobilePhone;
-    /**
-     * @var string
-     */
-    public $altEmail;
-    /**
-     * @var string
-     */
-    public $comments;
-    /**
-     * @var GlobalSubscriptionStatus
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var RecordRef
-     */
-    public $image;
-    /**
-     * @var EmailPreference
-     */
-    public $emailPreference;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $representingSubsidiary;
-    /**
-     * @var string
-     */
-    public $accountNumber;
-    /**
-     * @var string
-     */
-    public $legalName;
-    /**
-     * @var string
-     */
-    public $vatRegNumber;
-    /**
-     * @var RecordRef
-     */
-    public $expenseAccount;
-    /**
-     * @var RecordRef
-     */
-    public $payablesAccount;
-    /**
-     * @var RecordRef
-     */
-    public $terms;
-    /**
-     * @var RecordRef
-     */
-    public $incoterm;
-    /**
-     * @var float
-     */
-    public $creditLimit;
-    /**
-     * @var float
-     */
-    public $balancePrimary;
-    /**
-     * @var float
-     */
-    public $openingBalance;
-    /**
-     * @var dateTime
-     */
-    public $openingBalanceDate;
-    /**
-     * @var RecordRef
-     */
-    public $openingBalanceAccount;
-    /**
-     * @var float
-     */
-    public $balance;
-    /**
-     * @var float
-     */
-    public $unbilledOrdersPrimary;
-    /**
-     * @var string
-     */
-    public $bcn;
-    /**
-     * @var float
-     */
-    public $unbilledOrders;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var bool
-     */
-    public $is1099Eligible;
-    /**
-     * @var bool
-     */
-    public $isJobResourceVend;
-    /**
-     * @var float
-     */
-    public $laborCost;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantity;
-    /**
-     * @var float
-     */
-    public $purchaseOrderAmount;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantityDiff;
-    /**
-     * @var float
-     */
-    public $receiptQuantity;
-    /**
-     * @var float
-     */
-    public $receiptAmount;
-    /**
-     * @var float
-     */
-    public $receiptQuantityDiff;
-    /**
-     * @var RecordRef
-     */
-    public $workCalendar;
-    /**
-     * @var string
-     */
-    public $taxIdNum;
-    /**
-     * @var RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var bool
-     */
-    public $giveAccess;
-    /**
-     * @var bool
-     */
-    public $sendEmail;
-    /**
-     * @var bool
-     */
-    public $billPay;
-    /**
-     * @var bool
-     */
-    public $isAccountant;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $password2;
-    /**
-     * @var bool
-     */
-    public $requirePwdChange;
-    /**
-     * @var bool
-     */
-    public $eligibleForCommission;
-    /**
-     * @var bool
-     */
-    public $emailTransactions;
-    /**
-     * @var bool
-     */
-    public $printTransactions;
-    /**
-     * @var bool
-     */
-    public $faxTransactions;
-    /**
-     * @var RecordRef
-     */
-    public $defaultTaxReg;
-    /**
-     * @var VendorPricingScheduleList
-     */
-    public $pricingScheduleList;
-    /**
-     * @var SubscriptionsList
-     */
-    public $subscriptionsList;
-    /**
-     * @var VendorAddressbookList
-     */
-    public $addressbookList;
-    /**
-     * @var VendorCurrencyList
-     */
-    public $currencyList;
-    /**
-     * @var VendorRolesList
-     */
-    public $rolesList;
-    /**
-     * @var VendorTaxRegistrationList
-     */
-    public $taxRegistrationList;
-    /**
-     * @var int
-     */
-    public $predictedDays;
-    /**
-     * @var float
-     */
-    public $predConfidence;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Vendor extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPerson;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $salutation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $firstName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $middleName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $lastName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $companyName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $url;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $defaultAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $category;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $printOnCheckAs;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altPhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $homePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mobilePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var GlobalSubscriptionStatus
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var EmailPreference
+	 */
+	public $emailPreference;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $representingSubsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $accountNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $legalName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNumber;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payablesAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $terms;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $incoterm;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $creditLimit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $balancePrimary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $openingBalance;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $openingBalanceDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $openingBalanceAccount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $balance;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unbilledOrdersPrimary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bcn;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $unbilledOrders;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $is1099Eligible;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isJobResourceVend;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborCost;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantityDiff;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantityDiff;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $workCalendar;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxIdNum;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sendEmail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $billPay;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isAccountant;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $requirePwdChange;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $eligibleForCommission;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $emailTransactions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $printTransactions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $faxTransactions;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultTaxReg;
+	/**
+	 * @access public
+	 * @var VendorPricingScheduleList
+	 */
+	public $pricingScheduleList;
+	/**
+	 * @access public
+	 * @var SubscriptionsList
+	 */
+	public $subscriptionsList;
+	/**
+	 * @access public
+	 * @var VendorAddressbookList
+	 */
+	public $addressbookList;
+	/**
+	 * @access public
+	 * @var VendorCurrencyList
+	 */
+	public $currencyList;
+	/**
+	 * @access public
+	 * @var VendorRolesList
+	 */
+	public $rolesList;
+	/**
+	 * @access public
+	 * @var VendorTaxRegistrationList
+	 */
+	public $taxRegistrationList;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $predictedDays;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $predConfidence;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'entityId' => 'string',
-        'altName' => 'string',
-        'isPerson' => 'boolean',
-        'phoneticName' => 'string',
-        'salutation' => 'string',
-        'firstName' => 'string',
-        'middleName' => 'string',
-        'lastName' => 'string',
-        'companyName' => 'string',
-        'phone' => 'string',
-        'fax' => 'string',
-        'email' => 'string',
-        'url' => 'string',
-        'defaultAddress' => 'string',
-        'isInactive' => 'boolean',
-        'lastModifiedDate' => 'dateTime',
-        'dateCreated' => 'dateTime',
-        'category' => 'RecordRef',
-        'title' => 'string',
-        'printOnCheckAs' => 'string',
-        'altPhone' => 'string',
-        'homePhone' => 'string',
-        'mobilePhone' => 'string',
-        'altEmail' => 'string',
-        'comments' => 'string',
-        'globalSubscriptionStatus' => 'GlobalSubscriptionStatus',
-        'image' => 'RecordRef',
-        'emailPreference' => 'EmailPreference',
-        'subsidiary' => 'RecordRef',
-        'representingSubsidiary' => 'RecordRef',
-        'accountNumber' => 'string',
-        'legalName' => 'string',
-        'vatRegNumber' => 'string',
-        'expenseAccount' => 'RecordRef',
-        'payablesAccount' => 'RecordRef',
-        'terms' => 'RecordRef',
-        'incoterm' => 'RecordRef',
-        'creditLimit' => 'float',
-        'balancePrimary' => 'float',
-        'openingBalance' => 'float',
-        'openingBalanceDate' => 'dateTime',
-        'openingBalanceAccount' => 'RecordRef',
-        'balance' => 'float',
-        'unbilledOrdersPrimary' => 'float',
-        'bcn' => 'string',
-        'unbilledOrders' => 'float',
-        'currency' => 'RecordRef',
-        'is1099Eligible' => 'boolean',
-        'isJobResourceVend' => 'boolean',
-        'laborCost' => 'float',
-        'purchaseOrderQuantity' => 'float',
-        'purchaseOrderAmount' => 'float',
-        'purchaseOrderQuantityDiff' => 'float',
-        'receiptQuantity' => 'float',
-        'receiptAmount' => 'float',
-        'receiptQuantityDiff' => 'float',
-        'workCalendar' => 'RecordRef',
-        'taxIdNum' => 'string',
-        'taxItem' => 'RecordRef',
-        'giveAccess' => 'boolean',
-        'sendEmail' => 'boolean',
-        'billPay' => 'boolean',
-        'isAccountant' => 'boolean',
-        'password' => 'string',
-        'password2' => 'string',
-        'requirePwdChange' => 'boolean',
-        'eligibleForCommission' => 'boolean',
-        'emailTransactions' => 'boolean',
-        'printTransactions' => 'boolean',
-        'faxTransactions' => 'boolean',
-        'defaultTaxReg' => 'RecordRef',
-        'pricingScheduleList' => 'VendorPricingScheduleList',
-        'subscriptionsList' => 'SubscriptionsList',
-        'addressbookList' => 'VendorAddressbookList',
-        'currencyList' => 'VendorCurrencyList',
-        'rolesList' => 'VendorRolesList',
-        'taxRegistrationList' => 'VendorTaxRegistrationList',
-        'predictedDays' => 'integer',
-        'predConfidence' => 'float',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"entityId" => "string",
+		"altName" => "string",
+		"isPerson" => "boolean",
+		"phoneticName" => "string",
+		"salutation" => "string",
+		"firstName" => "string",
+		"middleName" => "string",
+		"lastName" => "string",
+		"companyName" => "string",
+		"phone" => "string",
+		"fax" => "string",
+		"email" => "string",
+		"url" => "string",
+		"defaultAddress" => "string",
+		"isInactive" => "boolean",
+		"lastModifiedDate" => "dateTime",
+		"dateCreated" => "dateTime",
+		"category" => "RecordRef",
+		"title" => "string",
+		"printOnCheckAs" => "string",
+		"altPhone" => "string",
+		"homePhone" => "string",
+		"mobilePhone" => "string",
+		"altEmail" => "string",
+		"comments" => "string",
+		"globalSubscriptionStatus" => "GlobalSubscriptionStatus",
+		"image" => "RecordRef",
+		"emailPreference" => "EmailPreference",
+		"subsidiary" => "RecordRef",
+		"representingSubsidiary" => "RecordRef",
+		"accountNumber" => "string",
+		"legalName" => "string",
+		"vatRegNumber" => "string",
+		"expenseAccount" => "RecordRef",
+		"payablesAccount" => "RecordRef",
+		"terms" => "RecordRef",
+		"incoterm" => "RecordRef",
+		"creditLimit" => "float",
+		"balancePrimary" => "float",
+		"openingBalance" => "float",
+		"openingBalanceDate" => "dateTime",
+		"openingBalanceAccount" => "RecordRef",
+		"balance" => "float",
+		"unbilledOrdersPrimary" => "float",
+		"bcn" => "string",
+		"unbilledOrders" => "float",
+		"currency" => "RecordRef",
+		"is1099Eligible" => "boolean",
+		"isJobResourceVend" => "boolean",
+		"laborCost" => "float",
+		"purchaseOrderQuantity" => "float",
+		"purchaseOrderAmount" => "float",
+		"purchaseOrderQuantityDiff" => "float",
+		"receiptQuantity" => "float",
+		"receiptAmount" => "float",
+		"receiptQuantityDiff" => "float",
+		"workCalendar" => "RecordRef",
+		"taxIdNum" => "string",
+		"taxItem" => "RecordRef",
+		"giveAccess" => "boolean",
+		"sendEmail" => "boolean",
+		"billPay" => "boolean",
+		"isAccountant" => "boolean",
+		"password" => "string",
+		"password2" => "string",
+		"requirePwdChange" => "boolean",
+		"eligibleForCommission" => "boolean",
+		"emailTransactions" => "boolean",
+		"printTransactions" => "boolean",
+		"faxTransactions" => "boolean",
+		"defaultTaxReg" => "RecordRef",
+		"pricingScheduleList" => "VendorPricingScheduleList",
+		"subscriptionsList" => "SubscriptionsList",
+		"addressbookList" => "VendorAddressbookList",
+		"currencyList" => "VendorCurrencyList",
+		"rolesList" => "VendorRolesList",
+		"taxRegistrationList" => "VendorTaxRegistrationList",
+		"predictedDays" => "integer",
+		"predConfidence" => "float",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AsyncStatusResponse.
+ * AsyncStatusResponse
  */
-class AsyncStatusResponse
-{
-    /**
-     * @var AsyncStatusResult
-     */
-    public $asyncStatusResult;
+class AsyncStatusResponse {
+	/**
+	 * @access public
+	 * @var AsyncStatusResult
+	 */
+	public $asyncStatusResult;
 
-    public static $paramtypesmap = [
-        'asyncStatusResult' => 'AsyncStatusResult',
-    ];
+	static $paramtypesmap = array(
+		"asyncStatusResult" => "AsyncStatusResult",
+	);
 }

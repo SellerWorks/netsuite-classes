@@ -1,5 +1,5 @@
 {
-    "name": "sellerworks/netsuite-classes",
+    "name": "sellerworks/netsuite-php-toolkit",
     "description": "Netsuite PHP Toolkit Classes",
     "type": "library",
     "license": "MIT",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SellerWorks\\Netsuite\\Model\\": "src/"
+            "SellerWorks\\NetSuite\\Model\\": "src/"
         },
         "files": [
             "src/classmap.php"

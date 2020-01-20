@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CalendarEventSearchAdvanced.
+ * CalendarEventSearchAdvanced
  */
-class CalendarEventSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var CalendarEventSearch
-     */
-    public $criteria;
-    /**
-     * @var CalendarEventSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class CalendarEventSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CalendarEventSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var CalendarEventSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'CalendarEventSearch',
-        'columns' => 'CalendarEventSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "CalendarEventSearch",
+		"columns" => "CalendarEventSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

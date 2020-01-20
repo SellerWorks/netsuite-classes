@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDeletedFilter.
+ * GetDeletedFilter
  */
-class GetDeletedFilter
-{
-    /**
-     * @var SearchDateField
-     */
-    public $deletedDate;
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $type;
-    /**
-     * @var SearchStringField
-     */
-    public $scriptId;
+class GetDeletedFilter {
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $deletedDate;
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $scriptId;
 
-    public static $paramtypesmap = [
-        'deletedDate' => 'SearchDateField',
-        'type' => 'SearchEnumMultiSelectField',
-        'scriptId' => 'SearchStringField',
-    ];
+	static $paramtypesmap = array(
+		"deletedDate" => "SearchDateField",
+		"type" => "SearchEnumMultiSelectField",
+		"scriptId" => "SearchStringField",
+	);
 }

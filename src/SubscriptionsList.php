@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SubscriptionsList
  */
-class SubscriptionsList
-{
-    /**
-     * @access public
-     * @var Subscriptions[]
-     */
-    public $subscriptions;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class SubscriptionsList {
+	/**
+	 * @access public
+	 * @var Subscriptions[]
+	 */
+	public $subscriptions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "subscriptions" => "Subscriptions[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"subscriptions" => "Subscriptions[]",
+		"replaceAll" => "boolean",
+	);
 }

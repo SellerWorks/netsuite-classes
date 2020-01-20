@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectValueFieldDescription.
+ * GetSelectValueFieldDescription
  */
-class GetSelectValueFieldDescription
-{
-    /**
-     * @var RecordType
-     */
-    public $recordType;
-    /**
-     * @var RecordRef
-     */
-    public $customRecordType;
-    /**
-     * @var RecordRef
-     */
-    public $customTransactionType;
-    /**
-     * @var string
-     */
-    public $sublist;
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var GetSelectValueFilter
-     */
-    public $filter;
-    /**
-     * @var GetSelectFilterByFieldValueList
-     */
-    public $filterByValueList;
+class GetSelectValueFieldDescription {
+	/**
+	 * @access public
+	 * @var RecordType
+	 */
+	public $recordType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customRecordType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customTransactionType;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $sublist;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $field;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var GetSelectValueFilter
+	 */
+	public $filter;
+	/**
+	 * @access public
+	 * @var GetSelectFilterByFieldValueList
+	 */
+	public $filterByValueList;
 
-    public static $paramtypesmap = [
-        'recordType' => 'RecordType',
-        'customRecordType' => 'RecordRef',
-        'customTransactionType' => 'RecordRef',
-        'sublist' => 'string',
-        'field' => 'string',
-        'customForm' => 'RecordRef',
-        'filter' => 'GetSelectValueFilter',
-        'filterByValueList' => 'GetSelectFilterByFieldValueList',
-    ];
+	static $paramtypesmap = array(
+		"recordType" => "RecordType",
+		"customRecordType" => "RecordRef",
+		"customTransactionType" => "RecordRef",
+		"sublist" => "string",
+		"field" => "string",
+		"customForm" => "RecordRef",
+		"filter" => "GetSelectValueFilter",
+		"filterByValueList" => "GetSelectFilterByFieldValueList",
+	);
 }

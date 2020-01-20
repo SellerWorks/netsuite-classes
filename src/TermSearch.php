@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * TermSearch
  */
-class TermSearch extends SearchRecord
-{
-    /**
-     * @access public
-     * @var TermSearchBasic
-     */
-    public $basic;
-    /**
-     * @access public
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
+class TermSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var TermSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
 
-    public static $paramtypesmap = array(
-        "basic" => "TermSearchBasic",
-        "userJoin" => "EmployeeSearchBasic",
-    );
+	static $paramtypesmap = array(
+		"basic" => "TermSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+	);
 }

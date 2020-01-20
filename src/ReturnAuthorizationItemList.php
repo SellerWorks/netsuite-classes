@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * ReturnAuthorizationItemList
  */
-class ReturnAuthorizationItemList
-{
-    /**
-     * @access public
-     * @var ReturnAuthorizationItem[]
-     */
-    public $item;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class ReturnAuthorizationItemList {
+	/**
+	 * @access public
+	 * @var ReturnAuthorizationItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "item" => "ReturnAuthorizationItem[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"item" => "ReturnAuthorizationItem[]",
+		"replaceAll" => "boolean",
+	);
 }

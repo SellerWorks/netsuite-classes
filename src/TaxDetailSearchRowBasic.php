@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxDetailSearchRowBasic.
+ * TaxDetailSearchRowBasic
  */
-class TaxDetailSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $account;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $details;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $lineNumber;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $taxAmount;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $taxBasis;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxCode;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $taxRate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $taxType;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $tranId;
+class TaxDetailSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $details;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $lineNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $taxAmount;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $taxBasis;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxCode;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $taxRate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $taxType;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $tranId;
 
-    public static $paramtypesmap = [
-        'account' => 'SearchColumnStringField[]',
-        'details' => 'SearchColumnStringField[]',
-        'lineNumber' => 'SearchColumnLongField[]',
-        'taxAmount' => 'SearchColumnDoubleField[]',
-        'taxBasis' => 'SearchColumnDoubleField[]',
-        'taxCode' => 'SearchColumnSelectField[]',
-        'taxRate' => 'SearchColumnDoubleField[]',
-        'taxType' => 'SearchColumnSelectField[]',
-        'tranId' => 'SearchColumnLongField[]',
-    ];
+	static $paramtypesmap = array(
+		"account" => "SearchColumnStringField[]",
+		"details" => "SearchColumnStringField[]",
+		"lineNumber" => "SearchColumnLongField[]",
+		"taxAmount" => "SearchColumnDoubleField[]",
+		"taxBasis" => "SearchColumnDoubleField[]",
+		"taxCode" => "SearchColumnSelectField[]",
+		"taxRate" => "SearchColumnDoubleField[]",
+		"taxType" => "SearchColumnSelectField[]",
+		"tranId" => "SearchColumnLongField[]",
+	);
 }

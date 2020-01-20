@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * RecurrenceDowMaskList.
+ * RecurrenceDowMaskList
  */
-class RecurrenceDowMaskList
-{
-    /**
-     * @var RecurrenceDow
-     */
-    public $recurrenceDowMask;
+class RecurrenceDowMaskList {
+	/**
+	 * @access public
+	 * @var RecurrenceDow
+	 */
+	public $recurrenceDowMask;
 
-    public static $paramtypesmap = [
-        'recurrenceDowMask' => 'RecurrenceDow',
-    ];
+	static $paramtypesmap = array(
+		"recurrenceDowMask" => "RecurrenceDow",
+	);
 }

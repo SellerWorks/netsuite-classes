@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ChargeSearchRow.
+ * ChargeSearchRow
  */
-class ChargeSearchRow extends SearchRow
-{
-    /**
-     * @var ChargeSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var BillingAccountSearchRowBasic
-     */
-    public $billingAccountJoin;
-    /**
-     * @var BillingScheduleSearchRowBasic
-     */
-    public $billingScheduleJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $chargeEmployeeJoin;
-    /**
-     * @var CustomerSearchRowBasic
-     */
-    public $customerJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $invoiceJoin;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $itemJoin;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $salesOrderJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var UsageSearchRowBasic
-     */
-    public $usageJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class ChargeSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var ChargeSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var BillingAccountSearchRowBasic
+	 */
+	public $billingAccountJoin;
+	/**
+	 * @access public
+	 * @var BillingScheduleSearchRowBasic
+	 */
+	public $billingScheduleJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $chargeEmployeeJoin;
+	/**
+	 * @access public
+	 * @var CustomerSearchRowBasic
+	 */
+	public $customerJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $invoiceJoin;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $salesOrderJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var UsageSearchRowBasic
+	 */
+	public $usageJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'ChargeSearchRowBasic',
-        'billingAccountJoin' => 'BillingAccountSearchRowBasic',
-        'billingScheduleJoin' => 'BillingScheduleSearchRowBasic',
-        'chargeEmployeeJoin' => 'EmployeeSearchRowBasic',
-        'customerJoin' => 'CustomerSearchRowBasic',
-        'invoiceJoin' => 'TransactionSearchRowBasic',
-        'itemJoin' => 'ItemSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'salesOrderJoin' => 'TransactionSearchRowBasic',
-        'timeJoin' => 'TimeBillSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'usageJoin' => 'UsageSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "ChargeSearchRowBasic",
+		"billingAccountJoin" => "BillingAccountSearchRowBasic",
+		"billingScheduleJoin" => "BillingScheduleSearchRowBasic",
+		"chargeEmployeeJoin" => "EmployeeSearchRowBasic",
+		"customerJoin" => "CustomerSearchRowBasic",
+		"invoiceJoin" => "TransactionSearchRowBasic",
+		"itemJoin" => "ItemSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"salesOrderJoin" => "TransactionSearchRowBasic",
+		"timeJoin" => "TimeBillSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"usageJoin" => "UsageSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

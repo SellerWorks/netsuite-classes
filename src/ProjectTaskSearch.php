@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskSearch.
+ * ProjectTaskSearch
  */
-class ProjectTaskSearch extends SearchRecord
-{
-    /**
-     * @var ProjectTaskSearchBasic
-     */
-    public $basic;
-    /**
-     * @var JobSearchBasic
-     */
-    public $jobJoin;
-    /**
-     * @var ProjectTaskSearchBasic
-     */
-    public $predecessorJoin;
-    /**
-     * @var ProjectTaskAssignmentSearchBasic
-     */
-    public $projectTaskAssignmentJoin;
-    /**
-     * @var ResourceAllocationSearchBasic
-     */
-    public $resourceAllocationJoin;
-    /**
-     * @var ProjectTaskSearchBasic
-     */
-    public $successorJoin;
-    /**
-     * @var TimeBillSearchBasic
-     */
-    public $timeJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class ProjectTaskSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var JobSearchBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchBasic
+	 */
+	public $predecessorJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskAssignmentSearchBasic
+	 */
+	public $projectTaskAssignmentJoin;
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearchBasic
+	 */
+	public $resourceAllocationJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchBasic
+	 */
+	public $successorJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'ProjectTaskSearchBasic',
-        'jobJoin' => 'JobSearchBasic',
-        'predecessorJoin' => 'ProjectTaskSearchBasic',
-        'projectTaskAssignmentJoin' => 'ProjectTaskAssignmentSearchBasic',
-        'resourceAllocationJoin' => 'ResourceAllocationSearchBasic',
-        'successorJoin' => 'ProjectTaskSearchBasic',
-        'timeJoin' => 'TimeBillSearchBasic',
-        'transactionJoin' => 'TransactionSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'userNotesJoin' => 'NoteSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "ProjectTaskSearchBasic",
+		"jobJoin" => "JobSearchBasic",
+		"predecessorJoin" => "ProjectTaskSearchBasic",
+		"projectTaskAssignmentJoin" => "ProjectTaskAssignmentSearchBasic",
+		"resourceAllocationJoin" => "ResourceAllocationSearchBasic",
+		"successorJoin" => "ProjectTaskSearchBasic",
+		"timeJoin" => "TimeBillSearchBasic",
+		"transactionJoin" => "TransactionSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"userNotesJoin" => "NoteSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

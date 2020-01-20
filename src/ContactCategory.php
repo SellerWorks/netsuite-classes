@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactCategory.
+ * ContactCategory
  */
-class ContactCategory extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $private;
-    /**
-     * @var bool
-     */
-    public $sync;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ContactCategory extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $private;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sync;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'private' => 'boolean',
-        'sync' => 'boolean',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"private" => "boolean",
+		"sync" => "boolean",
+		"isInactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

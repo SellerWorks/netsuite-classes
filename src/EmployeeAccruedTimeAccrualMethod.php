@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeAccruedTimeAccrualMethod.
+ * EmployeeAccruedTimeAccrualMethod
  */
-class EmployeeAccruedTimeAccrualMethod
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _lumpSums = '_lumpSums';
-    /**
-     * @var string
-     */
-    const _perHourWorked = '_perHourWorked';
-    /**
-     * @var string
-     */
-    const _perPayPeriod = '_perPayPeriod';
+class EmployeeAccruedTimeAccrualMethod {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _lumpSums = "_lumpSums";
+	/**
+	 * @var string
+	 */
+	const _perHourWorked = "_perHourWorked";
+	/**
+	 * @var string
+	 */
+	const _perPayPeriod = "_perPayPeriod";
 }

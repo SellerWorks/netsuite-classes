@@ -11,101 +11,118 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeSearchBasic.
+ * PromotionCodeSearchBasic
  */
-class PromotionCodeSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $applyDiscountTo;
-    /**
-     * @var SearchStringField
-     */
-    public $code;
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $discount;
-    /**
-     * @var SearchDateField
-     */
-    public $endDate;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $freeShipItem;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isPublic;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $item;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $location;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $partner;
-    /**
-     * @var SearchDateField
-     */
-    public $startDate;
-    /**
-     * @var SearchCustomFieldList
-     */
-    public $customFieldList;
+class PromotionCodeSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $applyDiscountTo;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $code;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $discount;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $freeShipItem;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isPublic;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $partner;
+	/**
+	 * @access public
+	 * @var SearchDateField
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var SearchCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'applyDiscountTo' => 'SearchEnumMultiSelectField',
-        'code' => 'SearchStringField',
-        'description' => 'SearchStringField',
-        'discount' => 'SearchMultiSelectField',
-        'endDate' => 'SearchDateField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'freeShipItem' => 'SearchMultiSelectField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'isPublic' => 'SearchBooleanField',
-        'item' => 'SearchMultiSelectField',
-        'location' => 'SearchMultiSelectField',
-        'name' => 'SearchStringField',
-        'partner' => 'SearchMultiSelectField',
-        'startDate' => 'SearchDateField',
-        'customFieldList' => 'SearchCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"applyDiscountTo" => "SearchEnumMultiSelectField",
+		"code" => "SearchStringField",
+		"description" => "SearchStringField",
+		"discount" => "SearchMultiSelectField",
+		"endDate" => "SearchDateField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"freeShipItem" => "SearchMultiSelectField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"isPublic" => "SearchBooleanField",
+		"item" => "SearchMultiSelectField",
+		"location" => "SearchMultiSelectField",
+		"name" => "SearchStringField",
+		"partner" => "SearchMultiSelectField",
+		"startDate" => "SearchDateField",
+		"customFieldList" => "SearchCustomFieldList",
+	);
 }

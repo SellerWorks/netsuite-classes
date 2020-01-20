@@ -13,8 +13,8 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * InvalidSessionFault
  */
-class InvalidSessionFault extends NSSoapFault
-{
-    public static $paramtypesmap = array(
-    );
+class InvalidSessionFault extends NSSoapFault {
+
+	static $paramtypesmap = array(
+	);
 }

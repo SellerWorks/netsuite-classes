@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SubsidiaryNexusList.
+ * SubsidiaryNexusList
  */
-class SubsidiaryNexusList
-{
-    /**
-     * @var SubsidiaryNexus[]
-     */
-    public $nexus;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SubsidiaryNexusList {
+	/**
+	 * @access public
+	 * @var SubsidiaryNexus[]
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'nexus' => 'SubsidiaryNexus[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"nexus" => "SubsidiaryNexus[]",
+		"replaceAll" => "boolean",
+	);
 }

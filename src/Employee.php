@@ -11,536 +11,640 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Employee.
+ * Employee
  */
-class Employee extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $template;
-    /**
-     * @var string
-     */
-    public $entityId;
-    /**
-     * @var string
-     */
-    public $salutation;
-    /**
-     * @var string
-     */
-    public $firstName;
-    /**
-     * @var string
-     */
-    public $middleName;
-    /**
-     * @var string
-     */
-    public $lastName;
-    /**
-     * @var string
-     */
-    public $altName;
-    /**
-     * @var string
-     */
-    public $phone;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $defaultAddress;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $phoneticName;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var dateTime
-     */
-    public $dateCreated;
-    /**
-     * @var string
-     */
-    public $initials;
-    /**
-     * @var string
-     */
-    public $officePhone;
-    /**
-     * @var string
-     */
-    public $homePhone;
-    /**
-     * @var string
-     */
-    public $mobilePhone;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $billingClass;
-    /**
-     * @var string
-     */
-    public $accountNumber;
-    /**
-     * @var EmployeeCompensationCurrency
-     */
-    public $compensationCurrency;
-    /**
-     * @var EmployeeBaseWageType
-     */
-    public $baseWageType;
-    /**
-     * @var float
-     */
-    public $baseWage;
-    /**
-     * @var string
-     */
-    public $comments;
-    /**
-     * @var GlobalSubscriptionStatus
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var RecordRef
-     */
-    public $image;
-    /**
-     * @var EmployeePayFrequency
-     */
-    public $payFrequency;
-    /**
-     * @var dateTime
-     */
-    public $lastPaidDate;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var EmployeeUseTimeData
-     */
-    public $useTimeData;
-    /**
-     * @var bool
-     */
-    public $usePerquest;
-    /**
-     * @var RecordRef
-     */
-    public $workplace;
-    /**
-     * @var string
-     */
-    public $adpId;
-    /**
-     * @var bool
-     */
-    public $directDeposit;
-    /**
-     * @var float
-     */
-    public $expenseLimit;
-    /**
-     * @var float
-     */
-    public $purchaseOrderLimit;
-    /**
-     * @var float
-     */
-    public $purchaseOrderApprovalLimit;
-    /**
-     * @var string
-     */
-    public $socialSecurityNumber;
-    /**
-     * @var RecordRef
-     */
-    public $supervisor;
-    /**
-     * @var RecordRef
-     */
-    public $approver;
-    /**
-     * @var float
-     */
-    public $approvalLimit;
-    /**
-     * @var RecordRef
-     */
-    public $timeApprover;
-    /**
-     * @var RecordRef
-     */
-    public $employeeType;
-    /**
-     * @var bool
-     */
-    public $isSalesRep;
-    /**
-     * @var RecordRef
-     */
-    public $salesRole;
-    /**
-     * @var bool
-     */
-    public $isSupportRep;
-    /**
-     * @var bool
-     */
-    public $isJobResource;
-    /**
-     * @var float
-     */
-    public $laborCost;
-    /**
-     * @var dateTime
-     */
-    public $birthDate;
-    /**
-     * @var dateTime
-     */
-    public $hireDate;
-    /**
-     * @var dateTime
-     */
-    public $releaseDate;
-    /**
-     * @var string
-     */
-    public $terminationDetails;
-    /**
-     * @var RecordRef
-     */
-    public $terminationReason;
-    /**
-     * @var EmployeeTerminationRegretted
-     */
-    public $terminationRegretted;
-    /**
-     * @var EmployeeTerminationCategory
-     */
-    public $terminationCategory;
-    /**
-     * @var RecordRef
-     */
-    public $timeOffPlan;
-    /**
-     * @var dateTime
-     */
-    public $lastReviewDate;
-    /**
-     * @var dateTime
-     */
-    public $nextReviewDate;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var RecordRef
-     */
-    public $employeeStatus;
-    /**
-     * @var string
-     */
-    public $jobDescription;
-    /**
-     * @var EmployeeWorkAssignment
-     */
-    public $workAssignment;
-    /**
-     * @var RecordRef
-     */
-    public $job;
-    /**
-     * @var RecordRef
-     */
-    public $maritalStatus;
-    /**
-     * @var RecordRef
-     */
-    public $ethnicity;
-    /**
-     * @var Gender
-     */
-    public $gender;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseOrderApprover;
-    /**
-     * @var RecordRef
-     */
-    public $workCalendar;
-    /**
-     * @var bool
-     */
-    public $giveAccess;
-    /**
-     * @var RecordRef
-     */
-    public $defaultExpenseReportCurrency;
-    /**
-     * @var bool
-     */
-    public $concurrentWebServicesUser;
-    /**
-     * @var bool
-     */
-    public $sendEmail;
-    /**
-     * @var bool
-     */
-    public $hasOfflineAccess;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $password2;
-    /**
-     * @var bool
-     */
-    public $requirePwdChange;
-    /**
-     * @var bool
-     */
-    public $inheritIPRules;
-    /**
-     * @var string
-     */
-    public $IPAddressRule;
-    /**
-     * @var dateTime
-     */
-    public $startDateTimeOffCalc;
-    /**
-     * @var EmployeeCommissionPaymentPreference
-     */
-    public $commissionPaymentPreference;
-    /**
-     * @var bool
-     */
-    public $billPay;
-    /**
-     * @var RecordRef
-     */
-    public $defaultAcctCorpCardExp;
-    /**
-     * @var bool
-     */
-    public $eligibleForCommission;
-    /**
-     * @var EmployeeSubscriptionsList
-     */
-    public $subscriptionsList;
-    /**
-     * @var EmployeeRatesList
-     */
-    public $ratesList;
-    /**
-     * @var EmployeeAddressbookList
-     */
-    public $addressbookList;
-    /**
-     * @var EmployeeRolesList
-     */
-    public $rolesList;
-    /**
-     * @var EmployeeHrEducationList
-     */
-    public $hrEducationList;
-    /**
-     * @var EmployeeAccruedTimeList
-     */
-    public $accruedTimeList;
-    /**
-     * @var EmployeeDirectDepositList
-     */
-    public $directDepositList;
-    /**
-     * @var EmployeeCurrencyList
-     */
-    public $currencyList;
-    /**
-     * @var EmployeeCompanyContributionList
-     */
-    public $companyContributionList;
-    /**
-     * @var EmployeeEarningList
-     */
-    public $earningList;
-    /**
-     * @var EmployeeEmergencyContactList
-     */
-    public $emergencyContactList;
-    /**
-     * @var EmployeeHcmPositionList
-     */
-    public $hcmPositionList;
-    /**
-     * @var EmployeeDeductionList
-     */
-    public $deductionList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Employee extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $template;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $salutation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $firstName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $middleName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $lastName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $defaultAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $initials;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $officePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $homePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mobilePhone;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $billingClass;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $accountNumber;
+	/**
+	 * @access public
+	 * @var EmployeeCompensationCurrency
+	 */
+	public $compensationCurrency;
+	/**
+	 * @access public
+	 * @var EmployeeBaseWageType
+	 */
+	public $baseWageType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $baseWage;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var GlobalSubscriptionStatus
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var EmployeePayFrequency
+	 */
+	public $payFrequency;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastPaidDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var EmployeeUseTimeData
+	 */
+	public $useTimeData;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $usePerquest;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $workplace;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $adpId;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $directDeposit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $expenseLimit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderLimit;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderApprovalLimit;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $socialSecurityNumber;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $supervisor;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $approver;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $approvalLimit;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $timeApprover;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employeeType;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isSalesRep;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesRole;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isSupportRep;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isJobResource;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborCost;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $birthDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $hireDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $releaseDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $terminationDetails;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $terminationReason;
+	/**
+	 * @access public
+	 * @var EmployeeTerminationRegretted
+	 */
+	public $terminationRegretted;
+	/**
+	 * @access public
+	 * @var EmployeeTerminationCategory
+	 */
+	public $terminationCategory;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $timeOffPlan;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastReviewDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $nextReviewDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employeeStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $jobDescription;
+	/**
+	 * @access public
+	 * @var EmployeeWorkAssignment
+	 */
+	public $workAssignment;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $job;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $maritalStatus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $ethnicity;
+	/**
+	 * @access public
+	 * @var Gender
+	 */
+	public $gender;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseOrderApprover;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $workCalendar;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultExpenseReportCurrency;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $concurrentWebServicesUser;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sendEmail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $hasOfflineAccess;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $requirePwdChange;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inheritIPRules;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $IPAddressRule;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDateTimeOffCalc;
+	/**
+	 * @access public
+	 * @var EmployeeCommissionPaymentPreference
+	 */
+	public $commissionPaymentPreference;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $billPay;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultAcctCorpCardExp;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $eligibleForCommission;
+	/**
+	 * @access public
+	 * @var EmployeeSubscriptionsList
+	 */
+	public $subscriptionsList;
+	/**
+	 * @access public
+	 * @var EmployeeRatesList
+	 */
+	public $ratesList;
+	/**
+	 * @access public
+	 * @var EmployeeAddressbookList
+	 */
+	public $addressbookList;
+	/**
+	 * @access public
+	 * @var EmployeeRolesList
+	 */
+	public $rolesList;
+	/**
+	 * @access public
+	 * @var EmployeeHrEducationList
+	 */
+	public $hrEducationList;
+	/**
+	 * @access public
+	 * @var EmployeeAccruedTimeList
+	 */
+	public $accruedTimeList;
+	/**
+	 * @access public
+	 * @var EmployeeDirectDepositList
+	 */
+	public $directDepositList;
+	/**
+	 * @access public
+	 * @var EmployeeCurrencyList
+	 */
+	public $currencyList;
+	/**
+	 * @access public
+	 * @var EmployeeCompanyContributionList
+	 */
+	public $companyContributionList;
+	/**
+	 * @access public
+	 * @var EmployeeEarningList
+	 */
+	public $earningList;
+	/**
+	 * @access public
+	 * @var EmployeeEmergencyContactList
+	 */
+	public $emergencyContactList;
+	/**
+	 * @access public
+	 * @var EmployeeHcmPositionList
+	 */
+	public $hcmPositionList;
+	/**
+	 * @access public
+	 * @var EmployeeDeductionList
+	 */
+	public $deductionList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'template' => 'RecordRef',
-        'entityId' => 'string',
-        'salutation' => 'string',
-        'firstName' => 'string',
-        'middleName' => 'string',
-        'lastName' => 'string',
-        'altName' => 'string',
-        'phone' => 'string',
-        'fax' => 'string',
-        'email' => 'string',
-        'defaultAddress' => 'string',
-        'isInactive' => 'boolean',
-        'phoneticName' => 'string',
-        'lastModifiedDate' => 'dateTime',
-        'dateCreated' => 'dateTime',
-        'initials' => 'string',
-        'officePhone' => 'string',
-        'homePhone' => 'string',
-        'mobilePhone' => 'string',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'billingClass' => 'RecordRef',
-        'accountNumber' => 'string',
-        'compensationCurrency' => 'EmployeeCompensationCurrency',
-        'baseWageType' => 'EmployeeBaseWageType',
-        'baseWage' => 'float',
-        'comments' => 'string',
-        'globalSubscriptionStatus' => 'GlobalSubscriptionStatus',
-        'image' => 'RecordRef',
-        'payFrequency' => 'EmployeePayFrequency',
-        'lastPaidDate' => 'dateTime',
-        'currency' => 'RecordRef',
-        'useTimeData' => 'EmployeeUseTimeData',
-        'usePerquest' => 'boolean',
-        'workplace' => 'RecordRef',
-        'adpId' => 'string',
-        'directDeposit' => 'boolean',
-        'expenseLimit' => 'float',
-        'purchaseOrderLimit' => 'float',
-        'purchaseOrderApprovalLimit' => 'float',
-        'socialSecurityNumber' => 'string',
-        'supervisor' => 'RecordRef',
-        'approver' => 'RecordRef',
-        'approvalLimit' => 'float',
-        'timeApprover' => 'RecordRef',
-        'employeeType' => 'RecordRef',
-        'isSalesRep' => 'boolean',
-        'salesRole' => 'RecordRef',
-        'isSupportRep' => 'boolean',
-        'isJobResource' => 'boolean',
-        'laborCost' => 'float',
-        'birthDate' => 'dateTime',
-        'hireDate' => 'dateTime',
-        'releaseDate' => 'dateTime',
-        'terminationDetails' => 'string',
-        'terminationReason' => 'RecordRef',
-        'terminationRegretted' => 'EmployeeTerminationRegretted',
-        'terminationCategory' => 'EmployeeTerminationCategory',
-        'timeOffPlan' => 'RecordRef',
-        'lastReviewDate' => 'dateTime',
-        'nextReviewDate' => 'dateTime',
-        'title' => 'string',
-        'employeeStatus' => 'RecordRef',
-        'jobDescription' => 'string',
-        'workAssignment' => 'EmployeeWorkAssignment',
-        'job' => 'RecordRef',
-        'maritalStatus' => 'RecordRef',
-        'ethnicity' => 'RecordRef',
-        'gender' => 'Gender',
-        'purchaseOrderApprover' => 'RecordRef',
-        'workCalendar' => 'RecordRef',
-        'giveAccess' => 'boolean',
-        'defaultExpenseReportCurrency' => 'RecordRef',
-        'concurrentWebServicesUser' => 'boolean',
-        'sendEmail' => 'boolean',
-        'hasOfflineAccess' => 'boolean',
-        'password' => 'string',
-        'password2' => 'string',
-        'requirePwdChange' => 'boolean',
-        'inheritIPRules' => 'boolean',
-        'IPAddressRule' => 'string',
-        'startDateTimeOffCalc' => 'dateTime',
-        'commissionPaymentPreference' => 'EmployeeCommissionPaymentPreference',
-        'billPay' => 'boolean',
-        'defaultAcctCorpCardExp' => 'RecordRef',
-        'eligibleForCommission' => 'boolean',
-        'subscriptionsList' => 'EmployeeSubscriptionsList',
-        'ratesList' => 'EmployeeRatesList',
-        'addressbookList' => 'EmployeeAddressbookList',
-        'rolesList' => 'EmployeeRolesList',
-        'hrEducationList' => 'EmployeeHrEducationList',
-        'accruedTimeList' => 'EmployeeAccruedTimeList',
-        'directDepositList' => 'EmployeeDirectDepositList',
-        'currencyList' => 'EmployeeCurrencyList',
-        'companyContributionList' => 'EmployeeCompanyContributionList',
-        'earningList' => 'EmployeeEarningList',
-        'emergencyContactList' => 'EmployeeEmergencyContactList',
-        'hcmPositionList' => 'EmployeeHcmPositionList',
-        'deductionList' => 'EmployeeDeductionList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"template" => "RecordRef",
+		"entityId" => "string",
+		"salutation" => "string",
+		"firstName" => "string",
+		"middleName" => "string",
+		"lastName" => "string",
+		"altName" => "string",
+		"phone" => "string",
+		"fax" => "string",
+		"email" => "string",
+		"defaultAddress" => "string",
+		"isInactive" => "boolean",
+		"phoneticName" => "string",
+		"lastModifiedDate" => "dateTime",
+		"dateCreated" => "dateTime",
+		"initials" => "string",
+		"officePhone" => "string",
+		"homePhone" => "string",
+		"mobilePhone" => "string",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"billingClass" => "RecordRef",
+		"accountNumber" => "string",
+		"compensationCurrency" => "EmployeeCompensationCurrency",
+		"baseWageType" => "EmployeeBaseWageType",
+		"baseWage" => "float",
+		"comments" => "string",
+		"globalSubscriptionStatus" => "GlobalSubscriptionStatus",
+		"image" => "RecordRef",
+		"payFrequency" => "EmployeePayFrequency",
+		"lastPaidDate" => "dateTime",
+		"currency" => "RecordRef",
+		"useTimeData" => "EmployeeUseTimeData",
+		"usePerquest" => "boolean",
+		"workplace" => "RecordRef",
+		"adpId" => "string",
+		"directDeposit" => "boolean",
+		"expenseLimit" => "float",
+		"purchaseOrderLimit" => "float",
+		"purchaseOrderApprovalLimit" => "float",
+		"socialSecurityNumber" => "string",
+		"supervisor" => "RecordRef",
+		"approver" => "RecordRef",
+		"approvalLimit" => "float",
+		"timeApprover" => "RecordRef",
+		"employeeType" => "RecordRef",
+		"isSalesRep" => "boolean",
+		"salesRole" => "RecordRef",
+		"isSupportRep" => "boolean",
+		"isJobResource" => "boolean",
+		"laborCost" => "float",
+		"birthDate" => "dateTime",
+		"hireDate" => "dateTime",
+		"releaseDate" => "dateTime",
+		"terminationDetails" => "string",
+		"terminationReason" => "RecordRef",
+		"terminationRegretted" => "EmployeeTerminationRegretted",
+		"terminationCategory" => "EmployeeTerminationCategory",
+		"timeOffPlan" => "RecordRef",
+		"lastReviewDate" => "dateTime",
+		"nextReviewDate" => "dateTime",
+		"title" => "string",
+		"employeeStatus" => "RecordRef",
+		"jobDescription" => "string",
+		"workAssignment" => "EmployeeWorkAssignment",
+		"job" => "RecordRef",
+		"maritalStatus" => "RecordRef",
+		"ethnicity" => "RecordRef",
+		"gender" => "Gender",
+		"purchaseOrderApprover" => "RecordRef",
+		"workCalendar" => "RecordRef",
+		"giveAccess" => "boolean",
+		"defaultExpenseReportCurrency" => "RecordRef",
+		"concurrentWebServicesUser" => "boolean",
+		"sendEmail" => "boolean",
+		"hasOfflineAccess" => "boolean",
+		"password" => "string",
+		"password2" => "string",
+		"requirePwdChange" => "boolean",
+		"inheritIPRules" => "boolean",
+		"IPAddressRule" => "string",
+		"startDateTimeOffCalc" => "dateTime",
+		"commissionPaymentPreference" => "EmployeeCommissionPaymentPreference",
+		"billPay" => "boolean",
+		"defaultAcctCorpCardExp" => "RecordRef",
+		"eligibleForCommission" => "boolean",
+		"subscriptionsList" => "EmployeeSubscriptionsList",
+		"ratesList" => "EmployeeRatesList",
+		"addressbookList" => "EmployeeAddressbookList",
+		"rolesList" => "EmployeeRolesList",
+		"hrEducationList" => "EmployeeHrEducationList",
+		"accruedTimeList" => "EmployeeAccruedTimeList",
+		"directDepositList" => "EmployeeDirectDepositList",
+		"currencyList" => "EmployeeCurrencyList",
+		"companyContributionList" => "EmployeeCompanyContributionList",
+		"earningList" => "EmployeeEarningList",
+		"emergencyContactList" => "EmployeeEmergencyContactList",
+		"hcmPositionList" => "EmployeeHcmPositionList",
+		"deductionList" => "EmployeeDeductionList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * Solutions
  */
-class Solutions
-{
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $solution;
-    /**
-     * @access public
-     * @var string
-     */
-    public $message;
+class Solutions {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $solution;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
 
-    public static $paramtypesmap = array(
-        "solution" => "RecordRef",
-        "message" => "string",
-    );
+	static $paramtypesmap = array(
+		"solution" => "RecordRef",
+		"message" => "string",
+	);
 }

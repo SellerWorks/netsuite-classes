@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetSelectFilterByFieldValueList.
+ * GetSelectFilterByFieldValueList
  */
-class GetSelectFilterByFieldValueList
-{
-    /**
-     * @var GetSelectFilterByFieldValue[]
-     */
-    public $filterBy;
+class GetSelectFilterByFieldValueList {
+	/**
+	 * @access public
+	 * @var GetSelectFilterByFieldValue[]
+	 */
+	public $filterBy;
 
-    public static $paramtypesmap = [
-        'filterBy' => 'GetSelectFilterByFieldValue[]',
-    ];
+	static $paramtypesmap = array(
+		"filterBy" => "GetSelectFilterByFieldValue[]",
+	);
 }

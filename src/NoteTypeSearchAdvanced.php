@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * NoteTypeSearchAdvanced.
+ * NoteTypeSearchAdvanced
  */
-class NoteTypeSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var NoteTypeSearch
-     */
-    public $criteria;
-    /**
-     * @var NoteTypeSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class NoteTypeSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var NoteTypeSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var NoteTypeSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'NoteTypeSearch',
-        'columns' => 'NoteTypeSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "NoteTypeSearch",
+		"columns" => "NoteTypeSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

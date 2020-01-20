@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TransactionBodyCustomFieldFilterList.
+ * TransactionBodyCustomFieldFilterList
  */
-class TransactionBodyCustomFieldFilterList
-{
-    /**
-     * @var TransactionBodyCustomFieldFilter[]
-     */
-    public $filter;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class TransactionBodyCustomFieldFilterList {
+	/**
+	 * @access public
+	 * @var TransactionBodyCustomFieldFilter[]
+	 */
+	public $filter;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'filter' => 'TransactionBodyCustomFieldFilter[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"filter" => "TransactionBodyCustomFieldFilter[]",
+		"replaceAll" => "boolean",
+	);
 }

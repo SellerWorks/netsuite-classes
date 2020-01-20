@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * AccountingTransactionSearch.
+ * AccountingTransactionSearch
  */
-class AccountingTransactionSearch extends SearchRecord
-{
-    /**
-     * @var AccountingTransactionSearchBasic
-     */
-    public $basic;
-    /**
-     * @var AccountSearchBasic
-     */
-    public $accountJoin;
-    /**
-     * @var RevRecScheduleSearchBasic
-     */
-    public $revRecScheduleJoin;
-    /**
-     * @var TransactionSearchBasic
-     */
-    public $transactionJoin;
+class AccountingTransactionSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var AccountingTransactionSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var AccountSearchBasic
+	 */
+	public $accountJoin;
+	/**
+	 * @access public
+	 * @var RevRecScheduleSearchBasic
+	 */
+	public $revRecScheduleJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchBasic
+	 */
+	public $transactionJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'AccountingTransactionSearchBasic',
-        'accountJoin' => 'AccountSearchBasic',
-        'revRecScheduleJoin' => 'RevRecScheduleSearchBasic',
-        'transactionJoin' => 'TransactionSearchBasic',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "AccountingTransactionSearchBasic",
+		"accountJoin" => "AccountSearchBasic",
+		"revRecScheduleJoin" => "RevRecScheduleSearchBasic",
+		"transactionJoin" => "TransactionSearchBasic",
+	);
 }

@@ -11,126 +11,148 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeItem.
+ * TimeItem
  */
-class TimeItem
-{
-    /**
-     * @var int
-     */
-    public $id;
-    /**
-     * @var RecordRef
-     */
-    public $employee;
-    /**
-     * @var TimeItemTimeType
-     */
-    public $timeType;
-    /**
-     * @var dateTime
-     */
-    public $tranDate;
-    /**
-     * @var RecordRef
-     */
-    public $customer;
-    /**
-     * @var bool
-     */
-    public $isBillable;
-    /**
-     * @var RecordRef
-     */
-    public $payrollItem;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var RecordRef
-     */
-    public $temporaryLocalJurisdiction;
-    /**
-     * @var RecordRef
-     */
-    public $temporaryStateJurisdiction;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var Duration
-     */
-    public $hours;
-    /**
-     * @var RecordRef
-     */
-    public $price;
-    /**
-     * @var float
-     */
-    public $rate;
-    /**
-     * @var bool
-     */
-    public $overrideRate;
-    /**
-     * @var Duration
-     */
-    public $hoursTotal;
-    /**
-     * @var RecordRef
-     */
-    public $caseTaskEvent;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $isUtilized;
-    /**
-     * @var bool
-     */
-    public $isProductive;
-    /**
-     * @var bool
-     */
-    public $isExempt;
+class TimeItem {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $employee;
+	/**
+	 * @access public
+	 * @var TimeItemTimeType
+	 */
+	public $timeType;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $tranDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customer;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isBillable;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payrollItem;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $temporaryLocalJurisdiction;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $temporaryStateJurisdiction;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $hours;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $price;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $rate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $overrideRate;
+	/**
+	 * @access public
+	 * @var Duration
+	 */
+	public $hoursTotal;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $caseTaskEvent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isUtilized;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isProductive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isExempt;
 
-    public static $paramtypesmap = [
-        'id' => 'integer',
-        'employee' => 'RecordRef',
-        'timeType' => 'TimeItemTimeType',
-        'tranDate' => 'dateTime',
-        'customer' => 'RecordRef',
-        'isBillable' => 'boolean',
-        'payrollItem' => 'RecordRef',
-        'item' => 'RecordRef',
-        'temporaryLocalJurisdiction' => 'RecordRef',
-        'temporaryStateJurisdiction' => 'RecordRef',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'hours' => 'Duration',
-        'price' => 'RecordRef',
-        'rate' => 'float',
-        'overrideRate' => 'boolean',
-        'hoursTotal' => 'Duration',
-        'caseTaskEvent' => 'RecordRef',
-        'memo' => 'string',
-        'isUtilized' => 'boolean',
-        'isProductive' => 'boolean',
-        'isExempt' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"id" => "integer",
+		"employee" => "RecordRef",
+		"timeType" => "TimeItemTimeType",
+		"tranDate" => "dateTime",
+		"customer" => "RecordRef",
+		"isBillable" => "boolean",
+		"payrollItem" => "RecordRef",
+		"item" => "RecordRef",
+		"temporaryLocalJurisdiction" => "RecordRef",
+		"temporaryStateJurisdiction" => "RecordRef",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"hours" => "Duration",
+		"price" => "RecordRef",
+		"rate" => "float",
+		"overrideRate" => "boolean",
+		"hoursTotal" => "Duration",
+		"caseTaskEvent" => "RecordRef",
+		"memo" => "string",
+		"isUtilized" => "boolean",
+		"isProductive" => "boolean",
+		"isExempt" => "boolean",
+	);
 }

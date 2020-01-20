@@ -11,26 +11,26 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LandedCostMethod.
+ * LandedCostMethod
  */
-class LandedCostMethod
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _quantity = '_quantity';
-    /**
-     * @var string
-     */
-    const _value = '_value';
-    /**
-     * @var string
-     */
-    const _weight = '_weight';
-    /**
-     * @var string
-     */
-    const _line = '_line';
+class LandedCostMethod {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _quantity = "_quantity";
+	/**
+	 * @var string
+	 */
+	const _value = "_value";
+	/**
+	 * @var string
+	 */
+	const _weight = "_weight";
+	/**
+	 * @var string
+	 */
+	const _line = "_line";
 }

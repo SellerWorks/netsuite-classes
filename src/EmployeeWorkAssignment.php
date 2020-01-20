@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeWorkAssignment.
+ * EmployeeWorkAssignment
  */
-class EmployeeWorkAssignment
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _job = '_job';
-    /**
-     * @var string
-     */
-    const _position = '_position';
+class EmployeeWorkAssignment {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _job = "_job";
+	/**
+	 * @var string
+	 */
+	const _position = "_position";
 }

@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ConsolidatedExchangeRate.
+ * ConsolidatedExchangeRate
  */
-class ConsolidatedExchangeRate extends Record
-{
-    /**
-     * @var string
-     */
-    public $postingPeriod;
-    /**
-     * @var string
-     */
-    public $fromSubsidiary;
-    /**
-     * @var string
-     */
-    public $fromCurrency;
-    /**
-     * @var string
-     */
-    public $toSubsidiary;
-    /**
-     * @var string
-     */
-    public $toCurrency;
-    /**
-     * @var float
-     */
-    public $averageRate;
-    /**
-     * @var float
-     */
-    public $currentRate;
-    /**
-     * @var float
-     */
-    public $historicalRate;
-    /**
-     * @var string
-     */
-    public $accountingBook;
-    /**
-     * @var bool
-     */
-    public $isPeriodClosed;
-    /**
-     * @var bool
-     */
-    public $isDerived;
-    /**
-     * @var bool
-     */
-    public $isEliminationSubsidiary;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ConsolidatedExchangeRate extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $postingPeriod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fromSubsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fromCurrency;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $toSubsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $toCurrency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $averageRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $currentRate;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $historicalRate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPeriodClosed;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDerived;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isEliminationSubsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'postingPeriod' => 'string',
-        'fromSubsidiary' => 'string',
-        'fromCurrency' => 'string',
-        'toSubsidiary' => 'string',
-        'toCurrency' => 'string',
-        'averageRate' => 'float',
-        'currentRate' => 'float',
-        'historicalRate' => 'float',
-        'accountingBook' => 'string',
-        'isPeriodClosed' => 'boolean',
-        'isDerived' => 'boolean',
-        'isEliminationSubsidiary' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"postingPeriod" => "string",
+		"fromSubsidiary" => "string",
+		"fromCurrency" => "string",
+		"toSubsidiary" => "string",
+		"toCurrency" => "string",
+		"averageRate" => "float",
+		"currentRate" => "float",
+		"historicalRate" => "float",
+		"accountingBook" => "string",
+		"isPeriodClosed" => "boolean",
+		"isDerived" => "boolean",
+		"isEliminationSubsidiary" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

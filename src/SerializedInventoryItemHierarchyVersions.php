@@ -13,39 +13,38 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SerializedInventoryItemHierarchyVersions
  */
-class SerializedInventoryItemHierarchyVersions
-{
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $isIncluded;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $hierarchyVersion;
-    /**
-     * @access public
-     * @var dateTime
-     */
-    public $startDate;
-    /**
-     * @access public
-     * @var dateTime
-     */
-    public $endDate;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $hierarchyNode;
+class SerializedInventoryItemHierarchyVersions {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isIncluded;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $hierarchyVersion;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $startDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $endDate;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $hierarchyNode;
 
-    public static $paramtypesmap = array(
-        "isIncluded" => "boolean",
-        "hierarchyVersion" => "RecordRef",
-        "startDate" => "dateTime",
-        "endDate" => "dateTime",
-        "hierarchyNode" => "RecordRef",
-    );
+	static $paramtypesmap = array(
+		"isIncluded" => "boolean",
+		"hierarchyVersion" => "RecordRef",
+		"startDate" => "dateTime",
+		"endDate" => "dateTime",
+		"hierarchyNode" => "RecordRef",
+	);
 }

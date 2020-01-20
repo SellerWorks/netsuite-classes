@@ -11,30 +11,30 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleType.
+ * BillingScheduleType
  */
-class BillingScheduleType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _chargeBased = '_chargeBased';
-    /**
-     * @var string
-     */
-    const _fixedBidInterval = '_fixedBidInterval';
-    /**
-     * @var string
-     */
-    const _fixedBidMilestone = '_fixedBidMilestone';
-    /**
-     * @var string
-     */
-    const _standard = '_standard';
-    /**
-     * @var string
-     */
-    const _timeAndMaterials = '_timeAndMaterials';
+class BillingScheduleType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _chargeBased = "_chargeBased";
+	/**
+	 * @var string
+	 */
+	const _fixedBidInterval = "_fixedBidInterval";
+	/**
+	 * @var string
+	 */
+	const _fixedBidMilestone = "_fixedBidMilestone";
+	/**
+	 * @var string
+	 */
+	const _standard = "_standard";
+	/**
+	 * @var string
+	 */
+	const _timeAndMaterials = "_timeAndMaterials";
 }

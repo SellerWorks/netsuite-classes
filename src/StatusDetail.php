@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * StatusDetail.
+ * StatusDetail
  */
-class StatusDetail
-{
-    /**
-     * @var StatusDetailCodeType
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var bool
-     */
-    public $afterSubmitFailed;
-    /**
-     * @var StatusDetailType
-     */
-    public $type;
+class StatusDetail {
+	/**
+	 * @access public
+	 * @var StatusDetailCodeType
+	 */
+	public $code;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $afterSubmitFailed;
+	/**
+	 * @access public
+	 * @var StatusDetailType
+	 */
+	public $type;
 
-    public static $paramtypesmap = [
-        'code' => 'StatusDetailCodeType',
-        'message' => 'string',
-        'afterSubmitFailed' => 'boolean',
-        'type' => 'StatusDetailType',
-    ];
+	static $paramtypesmap = array(
+		"code" => "StatusDetailCodeType",
+		"message" => "string",
+		"afterSubmitFailed" => "boolean",
+		"type" => "StatusDetailType",
+	);
 }

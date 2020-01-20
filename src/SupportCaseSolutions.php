@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseSolutions.
+ * SupportCaseSolutions
  */
-class SupportCaseSolutions
-{
-    /**
-     * @var RecordRef
-     */
-    public $solution;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var dateTime
-     */
-    public $dateApplied;
+class SupportCaseSolutions {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $solution;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateApplied;
 
-    public static $paramtypesmap = [
-        'solution' => 'RecordRef',
-        'message' => 'string',
-        'dateApplied' => 'dateTime',
-    ];
+	static $paramtypesmap = array(
+		"solution" => "RecordRef",
+		"message" => "string",
+		"dateApplied" => "dateTime",
+	);
 }

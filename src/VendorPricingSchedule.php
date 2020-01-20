@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorPricingSchedule.
+ * VendorPricingSchedule
  */
-class VendorPricingSchedule
-{
-    /**
-     * @var string
-     */
-    public $scheduleName;
-    /**
-     * @var float
-     */
-    public $scheduleDiscount;
+class VendorPricingSchedule {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scheduleName;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $scheduleDiscount;
 
-    public static $paramtypesmap = [
-        'scheduleName' => 'string',
-        'scheduleDiscount' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"scheduleName" => "string",
+		"scheduleDiscount" => "float",
+	);
 }

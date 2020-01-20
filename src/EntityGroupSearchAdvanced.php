@@ -13,33 +13,32 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * EntityGroupSearchAdvanced
  */
-class EntityGroupSearchAdvanced extends SearchRecord
-{
-    /**
-     * @access public
-     * @var EntityGroupSearch
-     */
-    public $criteria;
-    /**
-     * @access public
-     * @var EntityGroupSearchRow
-     */
-    public $columns;
-    /**
-     * @access public
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @access public
-     * @var string
-     */
-    public $savedSearchScriptId;
+class EntityGroupSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var EntityGroupSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var EntityGroupSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = array(
-        "criteria" => "EntityGroupSearch",
-        "columns" => "EntityGroupSearchRow",
-        "savedSearchId" => "string",
-        "savedSearchScriptId" => "string",
-    );
+	static $paramtypesmap = array(
+		"criteria" => "EntityGroupSearch",
+		"columns" => "EntityGroupSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

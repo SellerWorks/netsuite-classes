@@ -13,27 +13,26 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * GiftCertificateSearch
  */
-class GiftCertificateSearch extends SearchRecord
-{
-    /**
-     * @access public
-     * @var GiftCertificateSearchBasic
-     */
-    public $basic;
-    /**
-     * @access public
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @access public
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class GiftCertificateSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var GiftCertificateSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        "basic" => "GiftCertificateSearchBasic",
-        "userJoin" => "EmployeeSearchBasic",
-        "customSearchJoin" => "CustomSearchJoin[]",
-    );
+	static $paramtypesmap = array(
+		"basic" => "GiftCertificateSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

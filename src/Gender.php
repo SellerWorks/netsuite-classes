@@ -13,20 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * Gender
  */
-class Gender
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const _omitted = "_omitted";
-    /**
-     * @var string
-     */
-    const _female = "_female";
-    /**
-     * @var string
-     */
-    const _male = "_male";
+class Gender {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _omitted = "_omitted";
+	/**
+	 * @var string
+	 */
+	const _female = "_female";
+	/**
+	 * @var string
+	 */
+	const _male = "_male";
 }

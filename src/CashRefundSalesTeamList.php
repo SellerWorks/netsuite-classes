@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CashRefundSalesTeamList.
+ * CashRefundSalesTeamList
  */
-class CashRefundSalesTeamList
-{
-    /**
-     * @var CashRefundSalesTeam[]
-     */
-    public $salesTeam;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CashRefundSalesTeamList {
+	/**
+	 * @access public
+	 * @var CashRefundSalesTeam[]
+	 */
+	public $salesTeam;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'salesTeam' => 'CashRefundSalesTeam[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"salesTeam" => "CashRefundSalesTeam[]",
+		"replaceAll" => "boolean",
+	);
 }

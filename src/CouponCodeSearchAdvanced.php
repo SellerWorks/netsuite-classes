@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CouponCodeSearchAdvanced.
+ * CouponCodeSearchAdvanced
  */
-class CouponCodeSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var CouponCodeSearch
-     */
-    public $criteria;
-    /**
-     * @var CouponCodeSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
+class CouponCodeSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CouponCodeSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var CouponCodeSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'CouponCodeSearch',
-        'columns' => 'CouponCodeSearchRow',
-        'savedSearchScriptId' => 'string',
-        'savedSearchId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "CouponCodeSearch",
+		"columns" => "CouponCodeSearchRow",
+		"savedSearchScriptId" => "string",
+		"savedSearchId" => "string",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeCurrencyList.
+ * PromotionCodeCurrencyList
  */
-class PromotionCodeCurrencyList
-{
-    /**
-     * @var PromotionCodeCurrency[]
-     */
-    public $currency;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class PromotionCodeCurrencyList {
+	/**
+	 * @access public
+	 * @var PromotionCodeCurrency[]
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'currency' => 'PromotionCodeCurrency[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"currency" => "PromotionCodeCurrency[]",
+		"replaceAll" => "boolean",
+	);
 }

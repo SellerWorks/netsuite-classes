@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InitializeAuxRef.
+ * InitializeAuxRef
  */
-class InitializeAuxRef extends BaseRef
-{
-    /**
-     * @var InitializeAuxRefType
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
-    /**
-     * @var string
-     */
-    public $scriptId;
+class InitializeAuxRef extends BaseRef {
+	/**
+	 * @access public
+	 * @var InitializeAuxRefType
+	 */
+	public $type;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $scriptId;
 
-    public static $paramtypesmap = [
-        'type' => 'InitializeAuxRefType',
-        'internalId' => 'string',
-        'externalId' => 'string',
-        'scriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"type" => "InitializeAuxRefType",
+		"internalId" => "string",
+		"externalId" => "string",
+		"scriptId" => "string",
+	);
 }

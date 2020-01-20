@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ManufacturingCostTemplateSearchRow.
+ * ManufacturingCostTemplateSearchRow
  */
-class ManufacturingCostTemplateSearchRow extends SearchRow
-{
-    /**
-     * @var ManufacturingCostTemplateSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var ItemSearchRowBasic
-     */
-    public $itemJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class ManufacturingCostTemplateSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var ManufacturingCostTemplateSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var ItemSearchRowBasic
+	 */
+	public $itemJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'ManufacturingCostTemplateSearchRowBasic',
-        'itemJoin' => 'ItemSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "ManufacturingCostTemplateSearchRowBasic",
+		"itemJoin" => "ItemSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

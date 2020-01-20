@@ -11,56 +11,64 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * DepositOther.
+ * DepositOther
  */
-class DepositOther
-{
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var RecordRef
-     */
-    public $paymentMethod;
-    /**
-     * @var string
-     */
-    public $refNum;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $memo;
+class DepositOther {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $paymentMethod;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $refNum;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
 
-    public static $paramtypesmap = [
-        'entity' => 'RecordRef',
-        'amount' => 'float',
-        'account' => 'RecordRef',
-        'paymentMethod' => 'RecordRef',
-        'refNum' => 'string',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'location' => 'RecordRef',
-        'memo' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"entity" => "RecordRef",
+		"amount" => "float",
+		"account" => "RecordRef",
+		"paymentMethod" => "RecordRef",
+		"refNum" => "string",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"location" => "RecordRef",
+		"memo" => "string",
+	);
 }

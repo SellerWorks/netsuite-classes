@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GeneralTokenSupportedOperationsListList.
+ * GeneralTokenSupportedOperationsListList
  */
-class GeneralTokenSupportedOperationsListList
-{
-    /**
-     * @var PaymentInstrumentSupportedOperation[]
-     */
-    public $GeneralTokenSupportedOperationsList;
+class GeneralTokenSupportedOperationsListList {
+	/**
+	 * @access public
+	 * @var PaymentInstrumentSupportedOperation[]
+	 */
+	public $GeneralTokenSupportedOperationsList;
 
-    public static $paramtypesmap = [
-        'GeneralTokenSupportedOperationsList' => 'PaymentInstrumentSupportedOperation[]',
-    ];
+	static $paramtypesmap = array(
+		"GeneralTokenSupportedOperationsList" => "PaymentInstrumentSupportedOperation[]",
+	);
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ReadResponse.
+ * ReadResponse
  */
-class ReadResponse
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var Record
-     */
-    public $record;
+class ReadResponse {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var Record
+	 */
+	public $record;
 
-    public static $paramtypesmap = [
-        'status' => 'Status',
-        'record' => 'Record',
-    ];
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"record" => "Record",
+	);
 }

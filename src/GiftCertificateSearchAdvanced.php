@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GiftCertificateSearchAdvanced.
+ * GiftCertificateSearchAdvanced
  */
-class GiftCertificateSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var GiftCertificateSearch
-     */
-    public $criteria;
-    /**
-     * @var GiftCertificateSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class GiftCertificateSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var GiftCertificateSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var GiftCertificateSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'GiftCertificateSearch',
-        'columns' => 'GiftCertificateSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "GiftCertificateSearch",
+		"columns" => "GiftCertificateSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

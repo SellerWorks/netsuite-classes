@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InboundShipmentLandedCostAllocationMethod.
+ * InboundShipmentLandedCostAllocationMethod
  */
-class InboundShipmentLandedCostAllocationMethod
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _quantity = '_quantity';
-    /**
-     * @var string
-     */
-    const _value = '_value';
-    /**
-     * @var string
-     */
-    const _weight = '_weight';
+class InboundShipmentLandedCostAllocationMethod {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _quantity = "_quantity";
+	/**
+	 * @var string
+	 */
+	const _value = "_value";
+	/**
+	 * @var string
+	 */
+	const _weight = "_weight";
 }

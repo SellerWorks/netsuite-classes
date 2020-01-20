@@ -13,51 +13,50 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CustomerSubsidiaryRelationship
  */
-class CustomerSubsidiaryRelationship extends Record
-{
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $isPrimarySub;
-    /**
-     * @access public
-     * @var RecordRef
-     */
-    public $primaryCurrency;
-    /**
-     * @access public
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @access public
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @access public
-     * @var string
-     */
-    public $externalId;
+class CustomerSubsidiaryRelationship extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPrimarySub;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $primaryCurrency;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = array(
-        "entity" => "RecordRef",
-        "subsidiary" => "RecordRef",
-        "isPrimarySub" => "boolean",
-        "primaryCurrency" => "RecordRef",
-        "customFieldList" => "CustomFieldList",
-        "internalId" => "string",
-        "externalId" => "string",
-    );
+	static $paramtypesmap = array(
+		"entity" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"isPrimarySub" => "boolean",
+		"primaryCurrency" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

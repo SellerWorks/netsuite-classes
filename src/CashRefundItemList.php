@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * CashRefundItemList
  */
-class CashRefundItemList
-{
-    /**
-     * @access public
-     * @var CashRefundItem[]
-     */
-    public $item;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class CashRefundItemList {
+	/**
+	 * @access public
+	 * @var CashRefundItem[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "item" => "CashRefundItem[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"item" => "CashRefundItem[]",
+		"replaceAll" => "boolean",
+	);
 }

@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionSearchRowBasic.
+ * SolutionSearchRowBasic
  */
-class SolutionSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $assigned;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $caseCount;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $createdDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $description;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $displayOnline;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $message;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $previewref;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $solutionCode;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $status;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $title;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class SolutionSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $assigned;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $caseCount;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $displayOnline;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $message;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $previewref;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $solutionCode;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'assigned' => 'SearchColumnSelectField[]',
-        'caseCount' => 'SearchColumnLongField[]',
-        'createdDate' => 'SearchColumnDateField[]',
-        'description' => 'SearchColumnStringField[]',
-        'displayOnline' => 'SearchColumnBooleanField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'lastModifiedDate' => 'SearchColumnDateField[]',
-        'message' => 'SearchColumnStringField[]',
-        'previewref' => 'SearchColumnStringField[]',
-        'solutionCode' => 'SearchColumnStringField[]',
-        'status' => 'SearchColumnEnumSelectField[]',
-        'title' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"assigned" => "SearchColumnSelectField[]",
+		"caseCount" => "SearchColumnLongField[]",
+		"createdDate" => "SearchColumnDateField[]",
+		"description" => "SearchColumnStringField[]",
+		"displayOnline" => "SearchColumnBooleanField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"lastModifiedDate" => "SearchColumnDateField[]",
+		"message" => "SearchColumnStringField[]",
+		"previewref" => "SearchColumnStringField[]",
+		"solutionCode" => "SearchColumnStringField[]",
+		"status" => "SearchColumnEnumSelectField[]",
+		"title" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

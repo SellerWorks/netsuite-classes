@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * JobTypeSearchRowBasic.
+ * JobTypeSearchRowBasic
  */
-class JobTypeSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $parent;
+class JobTypeSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $parent;
 
-    public static $paramtypesmap = [
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
-        'parent' => 'SearchColumnSelectField[]',
-    ];
+	static $paramtypesmap = array(
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"name" => "SearchColumnStringField[]",
+		"parent" => "SearchColumnSelectField[]",
+	);
 }

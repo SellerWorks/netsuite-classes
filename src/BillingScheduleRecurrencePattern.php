@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleRecurrencePattern.
+ * BillingScheduleRecurrencePattern
  */
-class BillingScheduleRecurrencePattern
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _anniversaryBillDate = '_anniversaryBillDate';
-    /**
-     * @var string
-     */
-    const _fixedBillDate = '_fixedBillDate';
+class BillingScheduleRecurrencePattern {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _anniversaryBillDate = "_anniversaryBillDate";
+	/**
+	 * @var string
+	 */
+	const _fixedBillDate = "_fixedBillDate";
 }

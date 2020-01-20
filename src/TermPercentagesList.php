@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TermPercentagesList.
+ * TermPercentagesList
  */
-class TermPercentagesList
-{
-    /**
-     * @var TermPercentages[]
-     */
-    public $termPercentages;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class TermPercentagesList {
+	/**
+	 * @access public
+	 * @var TermPercentages[]
+	 */
+	public $termPercentages;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'termPercentages' => 'TermPercentages[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"termPercentages" => "TermPercentages[]",
+		"replaceAll" => "boolean",
+	);
 }

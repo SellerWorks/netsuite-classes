@@ -11,226 +11,268 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationSearchRowBasic.
+ * LocationSearchRowBasic
  */
-class LocationSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address1;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address2;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $address3;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $allowStorePickup;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $autoAssignmentRegionSetting;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $bufferStock;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $city;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $country;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $dailyShippingCapacity;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $endTime;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $geolocationMethod;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isFriday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isIncludeInCt;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isMonday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isOffice;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isSaturday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isSunday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isThursday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isTuesday;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isWednesday;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $latitude;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $locationType;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $longitude;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $makeInventoryAvailable;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $makeInventoryAvailableStore;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $nameNoHierarchy;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $nextPickupCutOffTime;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $phone;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $sameDayPickupCutOffTime;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $startTime;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $state;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $storePickupBufferStock;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnEnumSelectField[]
-     */
-    public $timeZone;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $totalShippingCapacity;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $tranPrefix;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $usesBins;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $zip;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class LocationSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address1;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address2;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $address3;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $allowStorePickup;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $autoAssignmentRegionSetting;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $bufferStock;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $city;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $dailyShippingCapacity;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $endTime;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $geolocationMethod;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isFriday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isIncludeInCt;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isMonday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isOffice;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isSaturday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isSunday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isThursday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isTuesday;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isWednesday;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $latitude;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $locationType;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $longitude;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $makeInventoryAvailable;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $makeInventoryAvailableStore;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $nameNoHierarchy;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $nextPickupCutOffTime;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $sameDayPickupCutOffTime;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $startTime;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $state;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $storePickupBufferStock;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnEnumSelectField[]
+	 */
+	public $timeZone;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $totalShippingCapacity;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $tranPrefix;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $usesBins;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $zip;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'address1' => 'SearchColumnStringField[]',
-        'address2' => 'SearchColumnStringField[]',
-        'address3' => 'SearchColumnStringField[]',
-        'allowStorePickup' => 'SearchColumnBooleanField[]',
-        'autoAssignmentRegionSetting' => 'SearchColumnEnumSelectField[]',
-        'bufferStock' => 'SearchColumnLongField[]',
-        'city' => 'SearchColumnStringField[]',
-        'country' => 'SearchColumnEnumSelectField[]',
-        'dailyShippingCapacity' => 'SearchColumnLongField[]',
-        'endTime' => 'SearchColumnDateField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'geolocationMethod' => 'SearchColumnEnumSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isFriday' => 'SearchColumnBooleanField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'isIncludeInCt' => 'SearchColumnBooleanField[]',
-        'isMonday' => 'SearchColumnBooleanField[]',
-        'isOffice' => 'SearchColumnBooleanField[]',
-        'isSaturday' => 'SearchColumnBooleanField[]',
-        'isSunday' => 'SearchColumnBooleanField[]',
-        'isThursday' => 'SearchColumnBooleanField[]',
-        'isTuesday' => 'SearchColumnBooleanField[]',
-        'isWednesday' => 'SearchColumnBooleanField[]',
-        'latitude' => 'SearchColumnDoubleField[]',
-        'locationType' => 'SearchColumnEnumSelectField[]',
-        'longitude' => 'SearchColumnDoubleField[]',
-        'makeInventoryAvailable' => 'SearchColumnBooleanField[]',
-        'makeInventoryAvailableStore' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
-        'nameNoHierarchy' => 'SearchColumnStringField[]',
-        'nextPickupCutOffTime' => 'SearchColumnDateField[]',
-        'phone' => 'SearchColumnStringField[]',
-        'sameDayPickupCutOffTime' => 'SearchColumnDateField[]',
-        'startTime' => 'SearchColumnDateField[]',
-        'state' => 'SearchColumnStringField[]',
-        'storePickupBufferStock' => 'SearchColumnDoubleField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'timeZone' => 'SearchColumnEnumSelectField[]',
-        'totalShippingCapacity' => 'SearchColumnLongField[]',
-        'tranPrefix' => 'SearchColumnStringField[]',
-        'usesBins' => 'SearchColumnBooleanField[]',
-        'zip' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"address1" => "SearchColumnStringField[]",
+		"address2" => "SearchColumnStringField[]",
+		"address3" => "SearchColumnStringField[]",
+		"allowStorePickup" => "SearchColumnBooleanField[]",
+		"autoAssignmentRegionSetting" => "SearchColumnEnumSelectField[]",
+		"bufferStock" => "SearchColumnLongField[]",
+		"city" => "SearchColumnStringField[]",
+		"country" => "SearchColumnEnumSelectField[]",
+		"dailyShippingCapacity" => "SearchColumnLongField[]",
+		"endTime" => "SearchColumnDateField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"geolocationMethod" => "SearchColumnEnumSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isFriday" => "SearchColumnBooleanField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"isIncludeInCt" => "SearchColumnBooleanField[]",
+		"isMonday" => "SearchColumnBooleanField[]",
+		"isOffice" => "SearchColumnBooleanField[]",
+		"isSaturday" => "SearchColumnBooleanField[]",
+		"isSunday" => "SearchColumnBooleanField[]",
+		"isThursday" => "SearchColumnBooleanField[]",
+		"isTuesday" => "SearchColumnBooleanField[]",
+		"isWednesday" => "SearchColumnBooleanField[]",
+		"latitude" => "SearchColumnDoubleField[]",
+		"locationType" => "SearchColumnEnumSelectField[]",
+		"longitude" => "SearchColumnDoubleField[]",
+		"makeInventoryAvailable" => "SearchColumnBooleanField[]",
+		"makeInventoryAvailableStore" => "SearchColumnBooleanField[]",
+		"name" => "SearchColumnStringField[]",
+		"nameNoHierarchy" => "SearchColumnStringField[]",
+		"nextPickupCutOffTime" => "SearchColumnDateField[]",
+		"phone" => "SearchColumnStringField[]",
+		"sameDayPickupCutOffTime" => "SearchColumnDateField[]",
+		"startTime" => "SearchColumnDateField[]",
+		"state" => "SearchColumnStringField[]",
+		"storePickupBufferStock" => "SearchColumnDoubleField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"timeZone" => "SearchColumnEnumSelectField[]",
+		"totalShippingCapacity" => "SearchColumnLongField[]",
+		"tranPrefix" => "SearchColumnStringField[]",
+		"usesBins" => "SearchColumnBooleanField[]",
+		"zip" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

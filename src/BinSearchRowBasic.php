@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BinSearchRowBasic.
+ * BinSearchRowBasic
  */
-class BinSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $binNumber;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $inactive;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class BinSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $binNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'binNumber' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'inactive' => 'SearchColumnBooleanField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'location' => 'SearchColumnStringField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"binNumber" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"inactive" => "SearchColumnBooleanField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"location" => "SearchColumnStringField[]",
+		"memo" => "SearchColumnStringField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

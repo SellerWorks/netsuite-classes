@@ -13,8 +13,8 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * InvalidAccountFault
  */
-class InvalidAccountFault extends NSSoapFault
-{
-    public static $paramtypesmap = array(
-    );
+class InvalidAccountFault extends NSSoapFault {
+
+	static $paramtypesmap = array(
+	);
 }

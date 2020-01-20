@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Passport.
+ * Passport
  */
-class Passport
-{
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $account;
-    /**
-     * @var RecordRef
-     */
-    public $role;
+class Passport {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $role;
 
-    public static $paramtypesmap = [
-        'email' => 'string',
-        'password' => 'string',
-        'account' => 'string',
-        'role' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"email" => "string",
+		"password" => "string",
+		"account" => "string",
+		"role" => "RecordRef",
+	);
 }

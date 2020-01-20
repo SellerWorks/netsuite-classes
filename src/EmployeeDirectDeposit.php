@@ -11,71 +11,82 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * EmployeeDirectDeposit.
+ * EmployeeDirectDeposit
  */
-class EmployeeDirectDeposit
-{
-    /**
-     * @var int
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $netAccount;
-    /**
-     * @var bool
-     */
-    public $savingsAccount;
-    /**
-     * @var bool
-     */
-    public $accountPrenoted;
-    /**
-     * @var EmployeeDirectDepositAccountStatus
-     */
-    public $accountStatus;
-    /**
-     * @var string
-     */
-    public $bankName;
-    /**
-     * @var string
-     */
-    public $bankId;
-    /**
-     * @var string
-     */
-    public $bankNumber;
-    /**
-     * @var string
-     */
-    public $bankRoutingNumber;
-    /**
-     * @var string
-     */
-    public $bankAccountNumber;
-    /**
-     * @var float
-     */
-    public $amount;
-    /**
-     * @var bool
-     */
-    public $inactive;
+class EmployeeDirectDeposit {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $id;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $netAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $savingsAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $accountPrenoted;
+	/**
+	 * @access public
+	 * @var EmployeeDirectDepositAccountStatus
+	 */
+	public $accountStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankRoutingNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bankAccountNumber;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $amount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inactive;
 
-    public static $paramtypesmap = [
-        'id' => 'integer',
-        'netAccount' => 'boolean',
-        'savingsAccount' => 'boolean',
-        'accountPrenoted' => 'boolean',
-        'accountStatus' => 'EmployeeDirectDepositAccountStatus',
-        'bankName' => 'string',
-        'bankId' => 'string',
-        'bankNumber' => 'string',
-        'bankRoutingNumber' => 'string',
-        'bankAccountNumber' => 'string',
-        'amount' => 'float',
-        'inactive' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"id" => "integer",
+		"netAccount" => "boolean",
+		"savingsAccount" => "boolean",
+		"accountPrenoted" => "boolean",
+		"accountStatus" => "EmployeeDirectDepositAccountStatus",
+		"bankName" => "string",
+		"bankId" => "string",
+		"bankNumber" => "string",
+		"bankRoutingNumber" => "string",
+		"bankAccountNumber" => "string",
+		"amount" => "float",
+		"inactive" => "boolean",
+	);
 }

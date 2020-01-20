@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeUseType.
+ * PromotionCodeUseType
  */
-class PromotionCodeUseType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _multipleUses = '_multipleUses';
-    /**
-     * @var string
-     */
-    const _singleUse = '_singleUse';
+class PromotionCodeUseType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _multipleUses = "_multipleUses";
+	/**
+	 * @var string
+	 */
+	const _singleUse = "_singleUse";
 }

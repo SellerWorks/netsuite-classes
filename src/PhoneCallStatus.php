@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PhoneCallStatus.
+ * PhoneCallStatus
  */
-class PhoneCallStatus
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _completed = '_completed';
-    /**
-     * @var string
-     */
-    const _scheduled = '_scheduled';
+class PhoneCallStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _completed = "_completed";
+	/**
+	 * @var string
+	 */
+	const _scheduled = "_scheduled";
 }

@@ -11,101 +11,118 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemDemandPlanSearchRowBasic.
+ * ItemDemandPlanSearchRowBasic
  */
-class ItemDemandPlanSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $alternateSourceItem;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $analysisDuration;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $demandDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $lastModifiedDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnLongField[]
-     */
-    public $projectionDuration;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $projectionInterval;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $projectionMethod;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $projectionStartDate;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantity;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityUom;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $subsidiary;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $units;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class ItemDemandPlanSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $alternateSourceItem;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $analysisDuration;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $demandDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnLongField[]
+	 */
+	public $projectionDuration;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $projectionInterval;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $projectionMethod;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $projectionStartDate;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantity;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityUom;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'alternateSourceItem' => 'SearchColumnSelectField[]',
-        'analysisDuration' => 'SearchColumnLongField[]',
-        'demandDate' => 'SearchColumnDateField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'lastModifiedDate' => 'SearchColumnDateField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'projectionDuration' => 'SearchColumnLongField[]',
-        'projectionInterval' => 'SearchColumnStringField[]',
-        'projectionMethod' => 'SearchColumnStringField[]',
-        'projectionStartDate' => 'SearchColumnDateField[]',
-        'quantity' => 'SearchColumnDoubleField[]',
-        'quantityUom' => 'SearchColumnDoubleField[]',
-        'subsidiary' => 'SearchColumnSelectField[]',
-        'units' => 'SearchColumnSelectField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"alternateSourceItem" => "SearchColumnSelectField[]",
+		"analysisDuration" => "SearchColumnLongField[]",
+		"demandDate" => "SearchColumnDateField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"item" => "SearchColumnSelectField[]",
+		"lastModifiedDate" => "SearchColumnDateField[]",
+		"location" => "SearchColumnSelectField[]",
+		"memo" => "SearchColumnStringField[]",
+		"projectionDuration" => "SearchColumnLongField[]",
+		"projectionInterval" => "SearchColumnStringField[]",
+		"projectionMethod" => "SearchColumnStringField[]",
+		"projectionStartDate" => "SearchColumnDateField[]",
+		"quantity" => "SearchColumnDoubleField[]",
+		"quantityUom" => "SearchColumnDoubleField[]",
+		"subsidiary" => "SearchColumnSelectField[]",
+		"units" => "SearchColumnSelectField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

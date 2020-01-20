@@ -11,22 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskStatus.
+ * ProjectTaskStatus
  */
-class ProjectTaskStatus
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _completed = '_completed';
-    /**
-     * @var string
-     */
-    const _inProgress = '_inProgress';
-    /**
-     * @var string
-     */
-    const _notStarted = '_notStarted';
+class ProjectTaskStatus {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _completed = "_completed";
+	/**
+	 * @var string
+	 */
+	const _inProgress = "_inProgress";
+	/**
+	 * @var string
+	 */
+	const _notStarted = "_notStarted";
 }

@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * MessageMediaItemList.
+ * MessageMediaItemList
  */
-class MessageMediaItemList
-{
-    /**
-     * @var File[]
-     */
-    public $mediaItem;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class MessageMediaItemList {
+	/**
+	 * @access public
+	 * @var File[]
+	 */
+	public $mediaItem;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'mediaItem' => 'File[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"mediaItem" => "File[]",
+		"replaceAll" => "boolean",
+	);
 }

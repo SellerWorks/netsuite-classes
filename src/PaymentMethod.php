@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PaymentMethod.
+ * PaymentMethod
  */
-class PaymentMethod extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $creditCard;
-    /**
-     * @var bool
-     */
-    public $undepFunds;
-    /**
-     * @var RecordRef
-     */
-    public $account;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var bool
-     */
-    public $isOnline;
-    /**
-     * @var PaymentMethodVisualsList
-     */
-    public $visualsList;
-    /**
-     * @var bool
-     */
-    public $isDebitCard;
-    /**
-     * @var RecordRefList
-     */
-    public $merchantAccountsList;
-    /**
-     * @var string
-     */
-    public $payPalEmailAddress;
-    /**
-     * @var string
-     */
-    public $expressCheckoutArrangement;
-    /**
-     * @var bool
-     */
-    public $useExpressCheckout;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class PaymentMethod extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $creditCard;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $undepFunds;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isOnline;
+	/**
+	 * @access public
+	 * @var PaymentMethodVisualsList
+	 */
+	public $visualsList;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isDebitCard;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $merchantAccountsList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $payPalEmailAddress;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $expressCheckoutArrangement;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $useExpressCheckout;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'creditCard' => 'boolean',
-        'undepFunds' => 'boolean',
-        'account' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'isOnline' => 'boolean',
-        'visualsList' => 'PaymentMethodVisualsList',
-        'isDebitCard' => 'boolean',
-        'merchantAccountsList' => 'RecordRefList',
-        'payPalEmailAddress' => 'string',
-        'expressCheckoutArrangement' => 'string',
-        'useExpressCheckout' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"creditCard" => "boolean",
+		"undepFunds" => "boolean",
+		"account" => "RecordRef",
+		"isInactive" => "boolean",
+		"isOnline" => "boolean",
+		"visualsList" => "PaymentMethodVisualsList",
+		"isDebitCard" => "boolean",
+		"merchantAccountsList" => "RecordRefList",
+		"payPalEmailAddress" => "string",
+		"expressCheckoutArrangement" => "string",
+		"useExpressCheckout" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

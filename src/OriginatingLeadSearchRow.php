@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * OriginatingLeadSearchRow
  */
-class OriginatingLeadSearchRow extends SearchRow
-{
-    /**
-     * @access public
-     * @var OriginatingLeadSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @access public
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class OriginatingLeadSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var OriginatingLeadSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = array(
-        "basic" => "OriginatingLeadSearchRowBasic",
-        "customSearchJoin" => "CustomSearchRowBasic[]",
-    );
+	static $paramtypesmap = array(
+		"basic" => "OriginatingLeadSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

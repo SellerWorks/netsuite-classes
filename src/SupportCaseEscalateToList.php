@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SupportCaseEscalateToList.
+ * SupportCaseEscalateToList
  */
-class SupportCaseEscalateToList
-{
-    /**
-     * @var SupportCaseEscalateTo[]
-     */
-    public $escalateTo;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class SupportCaseEscalateToList {
+	/**
+	 * @access public
+	 * @var SupportCaseEscalateTo[]
+	 */
+	public $escalateTo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'escalateTo' => 'SupportCaseEscalateTo[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"escalateTo" => "SupportCaseEscalateTo[]",
+		"replaceAll" => "boolean",
+	);
 }

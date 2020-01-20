@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InterCompanyJournalEntryAccountingBookDetail.
+ * InterCompanyJournalEntryAccountingBookDetail
  */
-class InterCompanyJournalEntryAccountingBookDetail
-{
-    /**
-     * @var RecordRef
-     */
-    public $accountingBook;
-    /**
-     * @var RecordRef
-     */
-    public $currency;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var float
-     */
-    public $exchangeRate;
+class InterCompanyJournalEntryAccountingBookDetail {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $exchangeRate;
 
-    public static $paramtypesmap = [
-        'accountingBook' => 'RecordRef',
-        'currency' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'exchangeRate' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"accountingBook" => "RecordRef",
+		"currency" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"exchangeRate" => "float",
+	);
 }

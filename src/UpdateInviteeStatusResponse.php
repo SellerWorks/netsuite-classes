@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UpdateInviteeStatusResponse.
+ * UpdateInviteeStatusResponse
  */
-class UpdateInviteeStatusResponse
-{
-    /**
-     * @var WriteResponse
-     */
-    public $writeResponse;
+class UpdateInviteeStatusResponse {
+	/**
+	 * @access public
+	 * @var WriteResponse
+	 */
+	public $writeResponse;
 
-    public static $paramtypesmap = [
-        'writeResponse' => 'WriteResponse',
-    ];
+	static $paramtypesmap = array(
+		"writeResponse" => "WriteResponse",
+	);
 }

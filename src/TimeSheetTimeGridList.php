@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TimeSheetTimeGridList.
+ * TimeSheetTimeGridList
  */
-class TimeSheetTimeGridList
-{
-    /**
-     * @var TimeSheetTimeGrid[]
-     */
-    public $timeSheetTimeGrid;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class TimeSheetTimeGridList {
+	/**
+	 * @access public
+	 * @var TimeSheetTimeGrid[]
+	 */
+	public $timeSheetTimeGrid;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'timeSheetTimeGrid' => 'TimeSheetTimeGrid[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"timeSheetTimeGrid" => "TimeSheetTimeGrid[]",
+		"replaceAll" => "boolean",
+	);
 }

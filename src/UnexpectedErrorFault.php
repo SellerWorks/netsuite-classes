@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * UnexpectedErrorFault.
+ * UnexpectedErrorFault
  */
-class UnexpectedErrorFault extends NSSoapFault
-{
-    public static $paramtypesmap = [
-    ];
+class UnexpectedErrorFault extends NSSoapFault {
+
+	static $paramtypesmap = array(
+	);
 }

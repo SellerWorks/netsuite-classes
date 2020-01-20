@@ -11,76 +11,88 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InventoryNumberSearchRowBasic.
+ * InventoryNumberSearchRowBasic
  */
-class InventoryNumberSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $expirationDate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $inventoryNumber;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isonhand;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $item;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $location;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $memo;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityavailable;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityintransit;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityonhand;
-    /**
-     * @var SearchColumnDoubleField[]
-     */
-    public $quantityonorder;
-    /**
-     * @var SearchColumnCustomFieldList
-     */
-    public $customFieldList;
+class InventoryNumberSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $expirationDate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $inventoryNumber;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isonhand;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityavailable;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityintransit;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityonhand;
+	/**
+	 * @access public
+	 * @var SearchColumnDoubleField[]
+	 */
+	public $quantityonorder;
+	/**
+	 * @access public
+	 * @var SearchColumnCustomFieldList
+	 */
+	public $customFieldList;
 
-    public static $paramtypesmap = [
-        'expirationDate' => 'SearchColumnDateField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'inventoryNumber' => 'SearchColumnStringField[]',
-        'isonhand' => 'SearchColumnBooleanField[]',
-        'item' => 'SearchColumnSelectField[]',
-        'location' => 'SearchColumnSelectField[]',
-        'memo' => 'SearchColumnStringField[]',
-        'quantityavailable' => 'SearchColumnDoubleField[]',
-        'quantityintransit' => 'SearchColumnDoubleField[]',
-        'quantityonhand' => 'SearchColumnDoubleField[]',
-        'quantityonorder' => 'SearchColumnDoubleField[]',
-        'customFieldList' => 'SearchColumnCustomFieldList',
-    ];
+	static $paramtypesmap = array(
+		"expirationDate" => "SearchColumnDateField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"inventoryNumber" => "SearchColumnStringField[]",
+		"isonhand" => "SearchColumnBooleanField[]",
+		"item" => "SearchColumnSelectField[]",
+		"location" => "SearchColumnSelectField[]",
+		"memo" => "SearchColumnStringField[]",
+		"quantityavailable" => "SearchColumnDoubleField[]",
+		"quantityintransit" => "SearchColumnDoubleField[]",
+		"quantityonhand" => "SearchColumnDoubleField[]",
+		"quantityonorder" => "SearchColumnDoubleField[]",
+		"customFieldList" => "SearchColumnCustomFieldList",
+	);
 }

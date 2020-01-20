@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemSupplyPlan.
+ * ItemSupplyPlan
  */
-class ItemSupplyPlan extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var RecordRef
-     */
-    public $units;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var ItemSupplyPlanOrderList
-     */
-    public $orderList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ItemSupplyPlan extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $units;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var ItemSupplyPlanOrderList
+	 */
+	public $orderList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'location' => 'RecordRef',
-        'item' => 'RecordRef',
-        'units' => 'RecordRef',
-        'memo' => 'string',
-        'orderList' => 'ItemSupplyPlanOrderList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"location" => "RecordRef",
+		"item" => "RecordRef",
+		"units" => "RecordRef",
+		"memo" => "string",
+		"orderList" => "ItemSupplyPlanOrderList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

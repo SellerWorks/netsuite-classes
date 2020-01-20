@@ -11,61 +11,70 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * VendorSubsidiaryRelationship.
+ * VendorSubsidiaryRelationship
  */
-class VendorSubsidiaryRelationship extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $baseCurrency;
-    /**
-     * @var float
-     */
-    public $creditLimit;
-    /**
-     * @var RecordRef
-     */
-    public $entity;
-    /**
-     * @var bool
-     */
-    public $isPrimarySub;
-    /**
-     * @var RecordRef
-     */
-    public $primaryCurrency;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $taxItem;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class VendorSubsidiaryRelationship extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $baseCurrency;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $creditLimit;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $entity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPrimarySub;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $primaryCurrency;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxItem;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'baseCurrency' => 'RecordRef',
-        'creditLimit' => 'float',
-        'entity' => 'RecordRef',
-        'isPrimarySub' => 'boolean',
-        'primaryCurrency' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'taxItem' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"baseCurrency" => "RecordRef",
+		"creditLimit" => "float",
+		"entity" => "RecordRef",
+		"isPrimarySub" => "boolean",
+		"primaryCurrency" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"taxItem" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

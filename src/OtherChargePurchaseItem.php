@@ -11,286 +11,340 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * OtherChargePurchaseItem.
+ * OtherChargePurchaseItem
  */
-class OtherChargePurchaseItem extends Record
-{
-    /**
-     * @var dateTime
-     */
-    public $createdDate;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var string
-     */
-    public $purchaseDescription;
-    /**
-     * @var bool
-     */
-    public $manufacturingChargeItem;
-    /**
-     * @var float
-     */
-    public $cost;
-    /**
-     * @var string
-     */
-    public $costUnits;
-    /**
-     * @var RecordRef
-     */
-    public $expenseAccount;
-    /**
-     * @var bool
-     */
-    public $isTaxable;
-    /**
-     * @var ItemMatrixType
-     */
-    public $matrixType;
-    /**
-     * @var RecordRef
-     */
-    public $unitsType;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseUnit;
-    /**
-     * @var bool
-     */
-    public $includeChildren;
-    /**
-     * @var RecordRef
-     */
-    public $issueProduct;
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $itemId;
-    /**
-     * @var string
-     */
-    public $upcCode;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $vendorName;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $matrixItemNameTemplate;
-    /**
-     * @var bool
-     */
-    public $availableToPartners;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRefList
-     */
-    public $subsidiaryList;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $taxSchedule;
-    /**
-     * @var RecordRef
-     */
-    public $deferralAccount;
-    /**
-     * @var RecordRef
-     */
-    public $amortizationTemplate;
-    /**
-     * @var string
-     */
-    public $residual;
-    /**
-     * @var int
-     */
-    public $amortizationPeriod;
-    /**
-     * @var bool
-     */
-    public $isFulfillable;
-    /**
-     * @var bool
-     */
-    public $generateAccruals;
-    /**
-     * @var ItemAccountingBookDetailList
-     */
-    public $accountingBookDetailList;
-    /**
-     * @var RecordRef
-     */
-    public $costCategory;
-    /**
-     * @var ItemOverheadType
-     */
-    public $overheadType;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantity;
-    /**
-     * @var float
-     */
-    public $purchaseOrderAmount;
-    /**
-     * @var float
-     */
-    public $purchaseOrderQuantityDiff;
-    /**
-     * @var float
-     */
-    public $receiptQuantity;
-    /**
-     * @var float
-     */
-    public $receiptAmount;
-    /**
-     * @var float
-     */
-    public $receiptQuantityDiff;
-    /**
-     * @var string
-     */
-    public $currency;
-    /**
-     * @var ItemOptionsList
-     */
-    public $itemOptionsList;
-    /**
-     * @var MatrixOptionList
-     */
-    public $matrixOptionList;
-    /**
-     * @var ItemVendorList
-     */
-    public $itemVendorList;
-    /**
-     * @var RecordRef
-     */
-    public $purchaseTaxCode;
-    /**
-     * @var RecordRef
-     */
-    public $salesTaxCode;
-    /**
-     * @var TranslationList
-     */
-    public $translationsList;
-    /**
-     * @var RecordRef
-     */
-    public $vendor;
-    /**
-     * @var OtherChargePurchaseItemHierarchyVersionsList
-     */
-    public $hierarchyVersionsList;
-    /**
-     * @var RecordRef
-     */
-    public $consumptionUnit;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class OtherChargePurchaseItem extends Record {
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $createdDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $purchaseDescription;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $manufacturingChargeItem;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $cost;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $costUnits;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $expenseAccount;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isTaxable;
+	/**
+	 * @access public
+	 * @var ItemMatrixType
+	 */
+	public $matrixType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $unitsType;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseUnit;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $includeChildren;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $issueProduct;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $itemId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $upcCode;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $displayName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vendorName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $matrixItemNameTemplate;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $availableToPartners;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $subsidiaryList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $taxSchedule;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $deferralAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $amortizationTemplate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $residual;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $amortizationPeriod;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isFulfillable;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $generateAccruals;
+	/**
+	 * @access public
+	 * @var ItemAccountingBookDetailList
+	 */
+	public $accountingBookDetailList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $costCategory;
+	/**
+	 * @access public
+	 * @var ItemOverheadType
+	 */
+	public $overheadType;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $purchaseOrderQuantityDiff;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptAmount;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $receiptQuantityDiff;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $currency;
+	/**
+	 * @access public
+	 * @var ItemOptionsList
+	 */
+	public $itemOptionsList;
+	/**
+	 * @access public
+	 * @var MatrixOptionList
+	 */
+	public $matrixOptionList;
+	/**
+	 * @access public
+	 * @var ItemVendorList
+	 */
+	public $itemVendorList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $purchaseTaxCode;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $salesTaxCode;
+	/**
+	 * @access public
+	 * @var TranslationList
+	 */
+	public $translationsList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $vendor;
+	/**
+	 * @access public
+	 * @var OtherChargePurchaseItemHierarchyVersionsList
+	 */
+	public $hierarchyVersionsList;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $consumptionUnit;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'createdDate' => 'dateTime',
-        'lastModifiedDate' => 'dateTime',
-        'purchaseDescription' => 'string',
-        'manufacturingChargeItem' => 'boolean',
-        'cost' => 'float',
-        'costUnits' => 'string',
-        'expenseAccount' => 'RecordRef',
-        'isTaxable' => 'boolean',
-        'matrixType' => 'ItemMatrixType',
-        'unitsType' => 'RecordRef',
-        'purchaseUnit' => 'RecordRef',
-        'includeChildren' => 'boolean',
-        'issueProduct' => 'RecordRef',
-        'customForm' => 'RecordRef',
-        'itemId' => 'string',
-        'upcCode' => 'string',
-        'displayName' => 'string',
-        'vendorName' => 'string',
-        'parent' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'matrixItemNameTemplate' => 'string',
-        'availableToPartners' => 'boolean',
-        'department' => 'RecordRef',
-        'class' => 'RecordRef',
-        'subsidiaryList' => 'RecordRefList',
-        'location' => 'RecordRef',
-        'taxSchedule' => 'RecordRef',
-        'deferralAccount' => 'RecordRef',
-        'amortizationTemplate' => 'RecordRef',
-        'residual' => 'string',
-        'amortizationPeriod' => 'integer',
-        'isFulfillable' => 'boolean',
-        'generateAccruals' => 'boolean',
-        'accountingBookDetailList' => 'ItemAccountingBookDetailList',
-        'costCategory' => 'RecordRef',
-        'overheadType' => 'ItemOverheadType',
-        'purchaseOrderQuantity' => 'float',
-        'purchaseOrderAmount' => 'float',
-        'purchaseOrderQuantityDiff' => 'float',
-        'receiptQuantity' => 'float',
-        'receiptAmount' => 'float',
-        'receiptQuantityDiff' => 'float',
-        'currency' => 'string',
-        'itemOptionsList' => 'ItemOptionsList',
-        'matrixOptionList' => 'MatrixOptionList',
-        'itemVendorList' => 'ItemVendorList',
-        'purchaseTaxCode' => 'RecordRef',
-        'salesTaxCode' => 'RecordRef',
-        'translationsList' => 'TranslationList',
-        'vendor' => 'RecordRef',
-        'hierarchyVersionsList' => 'OtherChargePurchaseItemHierarchyVersionsList',
-        'consumptionUnit' => 'RecordRef',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"createdDate" => "dateTime",
+		"lastModifiedDate" => "dateTime",
+		"purchaseDescription" => "string",
+		"manufacturingChargeItem" => "boolean",
+		"cost" => "float",
+		"costUnits" => "string",
+		"expenseAccount" => "RecordRef",
+		"isTaxable" => "boolean",
+		"matrixType" => "ItemMatrixType",
+		"unitsType" => "RecordRef",
+		"purchaseUnit" => "RecordRef",
+		"includeChildren" => "boolean",
+		"issueProduct" => "RecordRef",
+		"customForm" => "RecordRef",
+		"itemId" => "string",
+		"upcCode" => "string",
+		"displayName" => "string",
+		"vendorName" => "string",
+		"parent" => "RecordRef",
+		"isInactive" => "boolean",
+		"matrixItemNameTemplate" => "string",
+		"availableToPartners" => "boolean",
+		"department" => "RecordRef",
+		"class" => "RecordRef",
+		"subsidiaryList" => "RecordRefList",
+		"location" => "RecordRef",
+		"taxSchedule" => "RecordRef",
+		"deferralAccount" => "RecordRef",
+		"amortizationTemplate" => "RecordRef",
+		"residual" => "string",
+		"amortizationPeriod" => "integer",
+		"isFulfillable" => "boolean",
+		"generateAccruals" => "boolean",
+		"accountingBookDetailList" => "ItemAccountingBookDetailList",
+		"costCategory" => "RecordRef",
+		"overheadType" => "ItemOverheadType",
+		"purchaseOrderQuantity" => "float",
+		"purchaseOrderAmount" => "float",
+		"purchaseOrderQuantityDiff" => "float",
+		"receiptQuantity" => "float",
+		"receiptAmount" => "float",
+		"receiptQuantityDiff" => "float",
+		"currency" => "string",
+		"itemOptionsList" => "ItemOptionsList",
+		"matrixOptionList" => "MatrixOptionList",
+		"itemVendorList" => "ItemVendorList",
+		"purchaseTaxCode" => "RecordRef",
+		"salesTaxCode" => "RecordRef",
+		"translationsList" => "TranslationList",
+		"vendor" => "RecordRef",
+		"hierarchyVersionsList" => "OtherChargePurchaseItemHierarchyVersionsList",
+		"consumptionUnit" => "RecordRef",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

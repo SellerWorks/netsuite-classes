@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetDataCenterUrlsResult.
+ * GetDataCenterUrlsResult
  */
-class GetDataCenterUrlsResult
-{
-    /**
-     * @var Status
-     */
-    public $status;
-    /**
-     * @var DataCenterUrls
-     */
-    public $dataCenterUrls;
+class GetDataCenterUrlsResult {
+	/**
+	 * @access public
+	 * @var Status
+	 */
+	public $status;
+	/**
+	 * @access public
+	 * @var DataCenterUrls
+	 */
+	public $dataCenterUrls;
 
-    public static $paramtypesmap = [
-        'status' => 'Status',
-        'dataCenterUrls' => 'DataCenterUrls',
-    ];
+	static $paramtypesmap = array(
+		"status" => "Status",
+		"dataCenterUrls" => "DataCenterUrls",
+	);
 }

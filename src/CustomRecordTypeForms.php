@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeForms.
+ * CustomRecordTypeForms
  */
-class CustomRecordTypeForms
-{
-    /**
-     * @var string
-     */
-    public $formEdit;
-    /**
-     * @var string
-     */
-    public $formName;
-    /**
-     * @var bool
-     */
-    public $formPref;
+class CustomRecordTypeForms {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $formEdit;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $formName;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $formPref;
 
-    public static $paramtypesmap = [
-        'formEdit' => 'string',
-        'formName' => 'string',
-        'formPref' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"formEdit" => "string",
+		"formName" => "string",
+		"formPref" => "boolean",
+	);
 }

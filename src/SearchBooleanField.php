@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchBooleanField.
+ * SearchBooleanField
  */
-class SearchBooleanField
-{
-    /**
-     * @var bool
-     */
-    public $searchValue;
+class SearchBooleanField {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $searchValue;
 
-    public static $paramtypesmap = [
-        'searchValue' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"searchValue" => "boolean",
+	);
 }

@@ -11,36 +11,40 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PartnerCategory.
+ * PartnerCategory
  */
-class PartnerCategory extends Record
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class PartnerCategory extends Record {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-        'parent' => 'RecordRef',
-        'isInactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+		"parent" => "RecordRef",
+		"isInactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

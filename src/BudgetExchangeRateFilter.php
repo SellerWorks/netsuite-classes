@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BudgetExchangeRateFilter.
+ * BudgetExchangeRateFilter
  */
-class BudgetExchangeRateFilter
-{
-    /**
-     * @var RecordRef
-     */
-    public $period;
-    /**
-     * @var RecordRef
-     */
-    public $fromSubsidiary;
-    /**
-     * @var RecordRef
-     */
-    public $toSubsidiary;
+class BudgetExchangeRateFilter {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $period;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $fromSubsidiary;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $toSubsidiary;
 
-    public static $paramtypesmap = [
-        'period' => 'RecordRef',
-        'fromSubsidiary' => 'RecordRef',
-        'toSubsidiary' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"period" => "RecordRef",
+		"fromSubsidiary" => "RecordRef",
+		"toSubsidiary" => "RecordRef",
+	);
 }

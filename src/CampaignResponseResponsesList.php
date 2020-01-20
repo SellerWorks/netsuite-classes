@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignResponseResponsesList.
+ * CampaignResponseResponsesList
  */
-class CampaignResponseResponsesList
-{
-    /**
-     * @var CampaignResponseResponses[]
-     */
-    public $responses;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CampaignResponseResponsesList {
+	/**
+	 * @access public
+	 * @var CampaignResponseResponses[]
+	 */
+	public $responses;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'responses' => 'CampaignResponseResponses[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"responses" => "CampaignResponseResponses[]",
+		"replaceAll" => "boolean",
+	);
 }

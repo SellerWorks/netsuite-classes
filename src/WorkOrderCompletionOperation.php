@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * WorkOrderCompletionOperation.
+ * WorkOrderCompletionOperation
  */
-class WorkOrderCompletionOperation
-{
-    /**
-     * @var int
-     */
-    public $operationSequence;
-    /**
-     * @var string
-     */
-    public $operationName;
-    /**
-     * @var string
-     */
-    public $workCenter;
-    /**
-     * @var float
-     */
-    public $machineResources;
-    /**
-     * @var float
-     */
-    public $laborResources;
-    /**
-     * @var float
-     */
-    public $inputQuantity;
-    /**
-     * @var float
-     */
-    public $quantityRemaining;
-    /**
-     * @var float
-     */
-    public $predecessorCompletedQuantity;
-    /**
-     * @var float
-     */
-    public $completedQuantity;
-    /**
-     * @var bool
-     */
-    public $recordSetup;
-    /**
-     * @var float
-     */
-    public $machineSetupTime;
-    /**
-     * @var float
-     */
-    public $laborSetupTime;
-    /**
-     * @var float
-     */
-    public $machineRunTime;
-    /**
-     * @var float
-     */
-    public $laborRunTime;
+class WorkOrderCompletionOperation {
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $operationSequence;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $operationName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $workCenter;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $machineResources;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborResources;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $inputQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $quantityRemaining;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $predecessorCompletedQuantity;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $completedQuantity;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $recordSetup;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $machineSetupTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborSetupTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $machineRunTime;
+	/**
+	 * @access public
+	 * @var float
+	 */
+	public $laborRunTime;
 
-    public static $paramtypesmap = [
-        'operationSequence' => 'integer',
-        'operationName' => 'string',
-        'workCenter' => 'string',
-        'machineResources' => 'float',
-        'laborResources' => 'float',
-        'inputQuantity' => 'float',
-        'quantityRemaining' => 'float',
-        'predecessorCompletedQuantity' => 'float',
-        'completedQuantity' => 'float',
-        'recordSetup' => 'boolean',
-        'machineSetupTime' => 'float',
-        'laborSetupTime' => 'float',
-        'machineRunTime' => 'float',
-        'laborRunTime' => 'float',
-    ];
+	static $paramtypesmap = array(
+		"operationSequence" => "integer",
+		"operationName" => "string",
+		"workCenter" => "string",
+		"machineResources" => "float",
+		"laborResources" => "float",
+		"inputQuantity" => "float",
+		"quantityRemaining" => "float",
+		"predecessorCompletedQuantity" => "float",
+		"completedQuantity" => "float",
+		"recordSetup" => "boolean",
+		"machineSetupTime" => "float",
+		"laborSetupTime" => "float",
+		"machineRunTime" => "float",
+		"laborRunTime" => "float",
+	);
 }

@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * GetServerTimeRequest.
+ * GetServerTimeRequest
  */
-class GetServerTimeRequest
-{
-    public static $paramtypesmap = [
-    ];
+class GetServerTimeRequest {
+
+	static $paramtypesmap = array(
+	);
 }

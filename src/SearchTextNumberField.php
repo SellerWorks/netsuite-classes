@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SearchTextNumberField.
+ * SearchTextNumberField
  */
-class SearchTextNumberField
-{
-    /**
-     * @var string
-     */
-    public $searchValue;
-    /**
-     * @var string
-     */
-    public $searchValue2;
-    /**
-     * @var SearchTextNumberFieldOperator
-     */
-    public $operator;
+class SearchTextNumberField {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $searchValue;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $searchValue2;
+	/**
+	 * @access public
+	 * @var SearchTextNumberFieldOperator
+	 */
+	public $operator;
 
-    public static $paramtypesmap = [
-        'searchValue' => 'string',
-        'searchValue2' => 'string',
-        'operator' => 'SearchTextNumberFieldOperator',
-    ];
+	static $paramtypesmap = array(
+		"searchValue" => "string",
+		"searchValue2" => "string",
+		"operator" => "SearchTextNumberFieldOperator",
+	);
 }

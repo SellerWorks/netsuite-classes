@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BillingScheduleSearchRow.
+ * BillingScheduleSearchRow
  */
-class BillingScheduleSearchRow extends SearchRow
-{
-    /**
-     * @var BillingScheduleSearchRowBasic
-     */
-    public $basic;
+class BillingScheduleSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var BillingScheduleSearchRowBasic
+	 */
+	public $basic;
 
-    public static $paramtypesmap = [
-        'basic' => 'BillingScheduleSearchRowBasic',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "BillingScheduleSearchRowBasic",
+	);
 }

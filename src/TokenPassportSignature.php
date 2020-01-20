@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TokenPassportSignature.
+ * TokenPassportSignature
  */
-class TokenPassportSignature
-{
-    /**
-     * @var string
-     */
-    public $_;
-    /**
-     * @var string
-     */
-    public $algorithm;
+class TokenPassportSignature {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $_;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $algorithm;
 
-    public static $paramtypesmap = [
-        '_' => 'string',
-        'algorithm' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"_" => "string",
+		"algorithm" => "string",
+	);
 }

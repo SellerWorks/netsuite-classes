@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * ManufacturingOperationTaskPredecessorList
  */
-class ManufacturingOperationTaskPredecessorList
-{
-    /**
-     * @access public
-     * @var ManufacturingOperationTaskPredecessor[]
-     */
-    public $manufacturingOperationTaskPredecessor;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class ManufacturingOperationTaskPredecessorList {
+	/**
+	 * @access public
+	 * @var ManufacturingOperationTaskPredecessor[]
+	 */
+	public $manufacturingOperationTaskPredecessor;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "manufacturingOperationTaskPredecessor" => "ManufacturingOperationTaskPredecessor[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"manufacturingOperationTaskPredecessor" => "ManufacturingOperationTaskPredecessor[]",
+		"replaceAll" => "boolean",
+	);
 }

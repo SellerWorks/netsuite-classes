@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxTypeNexusAccounts.
+ * TaxTypeNexusAccounts
  */
-class TaxTypeNexusAccounts
-{
-    /**
-     * @var RecordRef
-     */
-    public $nexus;
-    /**
-     * @var RecordRef
-     */
-    public $payablesAccount;
-    /**
-     * @var RecordRef
-     */
-    public $receivablesAccount;
+class TaxTypeNexusAccounts {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $payablesAccount;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $receivablesAccount;
 
-    public static $paramtypesmap = [
-        'nexus' => 'RecordRef',
-        'payablesAccount' => 'RecordRef',
-        'receivablesAccount' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"nexus" => "RecordRef",
+		"payablesAccount" => "RecordRef",
+		"receivablesAccount" => "RecordRef",
+	);
 }

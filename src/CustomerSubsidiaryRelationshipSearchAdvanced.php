@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomerSubsidiaryRelationshipSearchAdvanced.
+ * CustomerSubsidiaryRelationshipSearchAdvanced
  */
-class CustomerSubsidiaryRelationshipSearchAdvanced extends SearchRecord
-{
-    /**
-     * @var CustomerSubsidiaryRelationshipSearch
-     */
-    public $criteria;
-    /**
-     * @var CustomerSubsidiaryRelationshipSearchRow
-     */
-    public $columns;
-    /**
-     * @var string
-     */
-    public $savedSearchId;
-    /**
-     * @var string
-     */
-    public $savedSearchScriptId;
+class CustomerSubsidiaryRelationshipSearchAdvanced extends SearchRecord {
+	/**
+	 * @access public
+	 * @var CustomerSubsidiaryRelationshipSearch
+	 */
+	public $criteria;
+	/**
+	 * @access public
+	 * @var CustomerSubsidiaryRelationshipSearchRow
+	 */
+	public $columns;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $savedSearchScriptId;
 
-    public static $paramtypesmap = [
-        'criteria' => 'CustomerSubsidiaryRelationshipSearch',
-        'columns' => 'CustomerSubsidiaryRelationshipSearchRow',
-        'savedSearchId' => 'string',
-        'savedSearchScriptId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"criteria" => "CustomerSubsidiaryRelationshipSearch",
+		"columns" => "CustomerSubsidiaryRelationshipSearchRow",
+		"savedSearchId" => "string",
+		"savedSearchScriptId" => "string",
+	);
 }

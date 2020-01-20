@@ -11,51 +11,58 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemRevision.
+ * ItemRevision
  */
-class ItemRevision extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $item;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var dateTime
-     */
-    public $effectiveDate;
-    /**
-     * @var dateTime
-     */
-    public $obsoleteDate;
-    /**
-     * @var string
-     */
-    public $memo;
-    /**
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class ItemRevision extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $item;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $effectiveDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $obsoleteDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $memo;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $inactive;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'item' => 'RecordRef',
-        'name' => 'string',
-        'effectiveDate' => 'dateTime',
-        'obsoleteDate' => 'dateTime',
-        'memo' => 'string',
-        'inactive' => 'boolean',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"item" => "RecordRef",
+		"name" => "string",
+		"effectiveDate" => "dateTime",
+		"obsoleteDate" => "dateTime",
+		"memo" => "string",
+		"inactive" => "boolean",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }

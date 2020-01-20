@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PricingGroupSearchRowBasic.
+ * PricingGroupSearchRowBasic
  */
-class PricingGroupSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $isInactive;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $name;
+class PricingGroupSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'externalId' => 'SearchColumnSelectField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'isInactive' => 'SearchColumnBooleanField[]',
-        'name' => 'SearchColumnStringField[]',
-    ];
+	static $paramtypesmap = array(
+		"externalId" => "SearchColumnSelectField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"isInactive" => "SearchColumnBooleanField[]",
+		"name" => "SearchColumnStringField[]",
+	);
 }

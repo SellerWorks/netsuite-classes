@@ -11,18 +11,18 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskConstraintType.
+ * ProjectTaskConstraintType
  */
-class ProjectTaskConstraintType
-{
-    public static $paramtypesmap = [
-    ];
-    /**
-     * @var string
-     */
-    const _asSoonAsPossible = '_asSoonAsPossible';
-    /**
-     * @var string
-     */
-    const _fixedStart = '_fixedStart';
+class ProjectTaskConstraintType {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const _asSoonAsPossible = "_asSoonAsPossible";
+	/**
+	 * @var string
+	 */
+	const _fixedStart = "_fixedStart";
 }

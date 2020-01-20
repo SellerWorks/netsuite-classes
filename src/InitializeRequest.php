@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InitializeRequest.
+ * InitializeRequest
  */
-class InitializeRequest
-{
-    /**
-     * @var InitializeRecord
-     */
-    public $initializeRecord;
+class InitializeRequest {
+	/**
+	 * @access public
+	 * @var InitializeRecord
+	 */
+	public $initializeRecord;
 
-    public static $paramtypesmap = [
-        'initializeRecord' => 'InitializeRecord',
-    ];
+	static $paramtypesmap = array(
+		"initializeRecord" => "InitializeRecord",
+	);
 }

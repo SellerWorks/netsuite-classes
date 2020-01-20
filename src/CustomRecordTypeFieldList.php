@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeFieldList.
+ * CustomRecordTypeFieldList
  */
-class CustomRecordTypeFieldList
-{
-    /**
-     * @var CustomRecordCustomField[]
-     */
-    public $customField;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomRecordTypeFieldList {
+	/**
+	 * @access public
+	 * @var CustomRecordCustomField[]
+	 */
+	public $customField;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'customField' => 'CustomRecordCustomField[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"customField" => "CustomRecordCustomField[]",
+		"replaceAll" => "boolean",
+	);
 }

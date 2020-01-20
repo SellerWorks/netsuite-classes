@@ -11,10 +11,10 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * InvalidCredentialsFault.
+ * InvalidCredentialsFault
  */
-class InvalidCredentialsFault extends NSSoapFault
-{
-    public static $paramtypesmap = [
-    ];
+class InvalidCredentialsFault extends NSSoapFault {
+
+	static $paramtypesmap = array(
+	);
 }

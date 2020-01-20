@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * LocationRegions.
+ * LocationRegions
  */
-class LocationRegions
-{
-    /**
-     * @var RecordRef
-     */
-    public $region;
+class LocationRegions {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $region;
 
-    public static $paramtypesmap = [
-        'region' => 'RecordRef',
-    ];
+	static $paramtypesmap = array(
+		"region" => "RecordRef",
+	);
 }

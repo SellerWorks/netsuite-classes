@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * SolutionSearch.
+ * SolutionSearch
  */
-class SolutionSearch extends SearchRecord
-{
-    /**
-     * @var SolutionSearchBasic
-     */
-    public $basic;
-    /**
-     * @var SupportCaseSearchBasic
-     */
-    public $caseJoin;
-    /**
-     * @var SolutionSearchBasic
-     */
-    public $relatedSolutionJoin;
-    /**
-     * @var TopicSearchBasic
-     */
-    public $topicJoin;
-    /**
-     * @var EmployeeSearchBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchJoin[]
-     */
-    public $customSearchJoin;
+class SolutionSearch extends SearchRecord {
+	/**
+	 * @access public
+	 * @var SolutionSearchBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var SupportCaseSearchBasic
+	 */
+	public $caseJoin;
+	/**
+	 * @access public
+	 * @var SolutionSearchBasic
+	 */
+	public $relatedSolutionJoin;
+	/**
+	 * @access public
+	 * @var TopicSearchBasic
+	 */
+	public $topicJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchJoin[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'SolutionSearchBasic',
-        'caseJoin' => 'SupportCaseSearchBasic',
-        'relatedSolutionJoin' => 'SolutionSearchBasic',
-        'topicJoin' => 'TopicSearchBasic',
-        'userJoin' => 'EmployeeSearchBasic',
-        'userNotesJoin' => 'NoteSearchBasic',
-        'customSearchJoin' => 'CustomSearchJoin[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "SolutionSearchBasic",
+		"caseJoin" => "SupportCaseSearchBasic",
+		"relatedSolutionJoin" => "SolutionSearchBasic",
+		"topicJoin" => "TopicSearchBasic",
+		"userJoin" => "EmployeeSearchBasic",
+		"userNotesJoin" => "NoteSearchBasic",
+		"customSearchJoin" => "CustomSearchJoin[]",
+	);
 }

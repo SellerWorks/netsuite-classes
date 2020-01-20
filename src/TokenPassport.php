@@ -11,41 +11,46 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TokenPassport.
+ * TokenPassport
  */
-class TokenPassport
-{
-    /**
-     * @var string
-     */
-    public $account;
-    /**
-     * @var string
-     */
-    public $consumerKey;
-    /**
-     * @var string
-     */
-    public $token;
-    /**
-     * @var string
-     */
-    public $nonce;
-    /**
-     * @var int
-     */
-    public $timestamp;
-    /**
-     * @var TokenPassportSignature
-     */
-    public $signature;
+class TokenPassport {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $account;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $consumerKey;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $token;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $nonce;
+	/**
+	 * @access public
+	 * @var integer
+	 */
+	public $timestamp;
+	/**
+	 * @access public
+	 * @var TokenPassportSignature
+	 */
+	public $signature;
 
-    public static $paramtypesmap = [
-        'account' => 'string',
-        'consumerKey' => 'string',
-        'token' => 'string',
-        'nonce' => 'string',
-        'timestamp' => 'integer',
-        'signature' => 'TokenPassportSignature',
-    ];
+	static $paramtypesmap = array(
+		"account" => "string",
+		"consumerKey" => "string",
+		"token" => "string",
+		"nonce" => "string",
+		"timestamp" => "integer",
+		"signature" => "TokenPassportSignature",
+	);
 }

@@ -13,16 +13,16 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * SignatureAlgorithm
  */
-class SignatureAlgorithm
-{
-    public static $paramtypesmap = array(
-    );
-    /**
-     * @var string
-     */
-    const HMAC_SHA256 = "HMAC_SHA256";
-    /**
-     * @var string
-     */
-    const HMAC_SHA1 = "HMAC_SHA1";
+class SignatureAlgorithm {
+
+	static $paramtypesmap = array(
+	);
+	/**
+	 * @var string
+	 */
+	const HMAC_SHA256 = "HMAC_SHA256";
+	/**
+	 * @var string
+	 */
+	const HMAC_SHA1 = "HMAC_SHA1";
 }

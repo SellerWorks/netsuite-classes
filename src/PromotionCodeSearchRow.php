@@ -11,26 +11,28 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * PromotionCodeSearchRow.
+ * PromotionCodeSearchRow
  */
-class PromotionCodeSearchRow extends SearchRow
-{
-    /**
-     * @var PromotionCodeSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class PromotionCodeSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var PromotionCodeSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'PromotionCodeSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "PromotionCodeSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

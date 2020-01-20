@@ -11,46 +11,52 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ContactAccessRoles.
+ * ContactAccessRoles
  */
-class ContactAccessRoles
-{
-    /**
-     * @var bool
-     */
-    public $giveAccess;
-    /**
-     * @var RecordRef
-     */
-    public $contact;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var RecordRef
-     */
-    public $role;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $password2;
-    /**
-     * @var bool
-     */
-    public $sendEmail;
+class ContactAccessRoles {
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $contact;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $role;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sendEmail;
 
-    public static $paramtypesmap = [
-        'giveAccess' => 'boolean',
-        'contact' => 'RecordRef',
-        'email' => 'string',
-        'role' => 'RecordRef',
-        'password' => 'string',
-        'password2' => 'string',
-        'sendEmail' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"giveAccess" => "boolean",
+		"contact" => "RecordRef",
+		"email" => "string",
+		"role" => "RecordRef",
+		"password" => "string",
+		"password2" => "string",
+		"sendEmail" => "boolean",
+	);
 }

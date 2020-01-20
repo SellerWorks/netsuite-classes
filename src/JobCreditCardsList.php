@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * JobCreditCardsList
  */
-class JobCreditCardsList
-{
-    /**
-     * @access public
-     * @var JobCreditCards[]
-     */
-    public $creditCards;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class JobCreditCardsList {
+	/**
+	 * @access public
+	 * @var JobCreditCards[]
+	 */
+	public $creditCards;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "creditCards" => "JobCreditCards[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"creditCards" => "JobCreditCards[]",
+		"replaceAll" => "boolean",
+	);
 }

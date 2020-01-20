@@ -11,86 +11,100 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * TaxTypeSearchBasic.
+ * TaxTypeSearchBasic
  */
-class TaxTypeSearchBasic extends SearchRecordBasic
-{
-    /**
-     * @var SearchEnumMultiSelectField
-     */
-    public $country;
-    /**
-     * @var SearchStringField
-     */
-    public $description;
-    /**
-     * @var SearchBooleanField
-     */
-    public $doesNotAddToTotal;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $externalId;
-    /**
-     * @var SearchStringField
-     */
-    public $externalIdString;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $internalId;
-    /**
-     * @var SearchLongField
-     */
-    public $internalIdNumber;
-    /**
-     * @var SearchBooleanField
-     */
-    public $isInactive;
-    /**
-     * @var SearchStringField
-     */
-    public $name;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $nexus;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $payablesAccount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $postToItemCost;
-    /**
-     * @var SearchMultiSelectField
-     */
-    public $receivablesAccount;
-    /**
-     * @var SearchBooleanField
-     */
-    public $reverseCharge;
-    /**
-     * @var SearchBooleanField
-     */
-    public $taxInNetAmount;
+class TaxTypeSearchBasic extends SearchRecordBasic {
+	/**
+	 * @access public
+	 * @var SearchEnumMultiSelectField
+	 */
+	public $country;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $description;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $doesNotAddToTotal;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $externalIdString;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchLongField
+	 */
+	public $internalIdNumber;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var SearchStringField
+	 */
+	public $name;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $nexus;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $payablesAccount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $postToItemCost;
+	/**
+	 * @access public
+	 * @var SearchMultiSelectField
+	 */
+	public $receivablesAccount;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $reverseCharge;
+	/**
+	 * @access public
+	 * @var SearchBooleanField
+	 */
+	public $taxInNetAmount;
 
-    public static $paramtypesmap = [
-        'country' => 'SearchEnumMultiSelectField',
-        'description' => 'SearchStringField',
-        'doesNotAddToTotal' => 'SearchBooleanField',
-        'externalId' => 'SearchMultiSelectField',
-        'externalIdString' => 'SearchStringField',
-        'internalId' => 'SearchMultiSelectField',
-        'internalIdNumber' => 'SearchLongField',
-        'isInactive' => 'SearchBooleanField',
-        'name' => 'SearchStringField',
-        'nexus' => 'SearchMultiSelectField',
-        'payablesAccount' => 'SearchMultiSelectField',
-        'postToItemCost' => 'SearchBooleanField',
-        'receivablesAccount' => 'SearchMultiSelectField',
-        'reverseCharge' => 'SearchBooleanField',
-        'taxInNetAmount' => 'SearchBooleanField',
-    ];
+	static $paramtypesmap = array(
+		"country" => "SearchEnumMultiSelectField",
+		"description" => "SearchStringField",
+		"doesNotAddToTotal" => "SearchBooleanField",
+		"externalId" => "SearchMultiSelectField",
+		"externalIdString" => "SearchStringField",
+		"internalId" => "SearchMultiSelectField",
+		"internalIdNumber" => "SearchLongField",
+		"isInactive" => "SearchBooleanField",
+		"name" => "SearchStringField",
+		"nexus" => "SearchMultiSelectField",
+		"payablesAccount" => "SearchMultiSelectField",
+		"postToItemCost" => "SearchBooleanField",
+		"receivablesAccount" => "SearchMultiSelectField",
+		"reverseCharge" => "SearchBooleanField",
+		"taxInNetAmount" => "SearchBooleanField",
+	);
 }

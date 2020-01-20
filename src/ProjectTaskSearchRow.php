@@ -11,66 +11,76 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ProjectTaskSearchRow.
+ * ProjectTaskSearchRow
  */
-class ProjectTaskSearchRow extends SearchRow
-{
-    /**
-     * @var ProjectTaskSearchRowBasic
-     */
-    public $basic;
-    /**
-     * @var JobSearchRowBasic
-     */
-    public $jobJoin;
-    /**
-     * @var ProjectTaskSearchRowBasic
-     */
-    public $predecessorJoin;
-    /**
-     * @var ProjectTaskAssignmentSearchRowBasic
-     */
-    public $projectTaskAssignmentJoin;
-    /**
-     * @var ResourceAllocationSearchRowBasic
-     */
-    public $resourceAllocationJoin;
-    /**
-     * @var ProjectTaskSearchRowBasic
-     */
-    public $successorJoin;
-    /**
-     * @var TimeBillSearchRowBasic
-     */
-    public $timeJoin;
-    /**
-     * @var TransactionSearchRowBasic
-     */
-    public $transactionJoin;
-    /**
-     * @var EmployeeSearchRowBasic
-     */
-    public $userJoin;
-    /**
-     * @var NoteSearchRowBasic
-     */
-    public $userNotesJoin;
-    /**
-     * @var CustomSearchRowBasic[]
-     */
-    public $customSearchJoin;
+class ProjectTaskSearchRow extends SearchRow {
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchRowBasic
+	 */
+	public $basic;
+	/**
+	 * @access public
+	 * @var JobSearchRowBasic
+	 */
+	public $jobJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchRowBasic
+	 */
+	public $predecessorJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskAssignmentSearchRowBasic
+	 */
+	public $projectTaskAssignmentJoin;
+	/**
+	 * @access public
+	 * @var ResourceAllocationSearchRowBasic
+	 */
+	public $resourceAllocationJoin;
+	/**
+	 * @access public
+	 * @var ProjectTaskSearchRowBasic
+	 */
+	public $successorJoin;
+	/**
+	 * @access public
+	 * @var TimeBillSearchRowBasic
+	 */
+	public $timeJoin;
+	/**
+	 * @access public
+	 * @var TransactionSearchRowBasic
+	 */
+	public $transactionJoin;
+	/**
+	 * @access public
+	 * @var EmployeeSearchRowBasic
+	 */
+	public $userJoin;
+	/**
+	 * @access public
+	 * @var NoteSearchRowBasic
+	 */
+	public $userNotesJoin;
+	/**
+	 * @access public
+	 * @var CustomSearchRowBasic[]
+	 */
+	public $customSearchJoin;
 
-    public static $paramtypesmap = [
-        'basic' => 'ProjectTaskSearchRowBasic',
-        'jobJoin' => 'JobSearchRowBasic',
-        'predecessorJoin' => 'ProjectTaskSearchRowBasic',
-        'projectTaskAssignmentJoin' => 'ProjectTaskAssignmentSearchRowBasic',
-        'resourceAllocationJoin' => 'ResourceAllocationSearchRowBasic',
-        'successorJoin' => 'ProjectTaskSearchRowBasic',
-        'timeJoin' => 'TimeBillSearchRowBasic',
-        'transactionJoin' => 'TransactionSearchRowBasic',
-        'userJoin' => 'EmployeeSearchRowBasic',
-        'userNotesJoin' => 'NoteSearchRowBasic',
-        'customSearchJoin' => 'CustomSearchRowBasic[]',
-    ];
+	static $paramtypesmap = array(
+		"basic" => "ProjectTaskSearchRowBasic",
+		"jobJoin" => "JobSearchRowBasic",
+		"predecessorJoin" => "ProjectTaskSearchRowBasic",
+		"projectTaskAssignmentJoin" => "ProjectTaskAssignmentSearchRowBasic",
+		"resourceAllocationJoin" => "ResourceAllocationSearchRowBasic",
+		"successorJoin" => "ProjectTaskSearchRowBasic",
+		"timeJoin" => "TimeBillSearchRowBasic",
+		"transactionJoin" => "TransactionSearchRowBasic",
+		"userJoin" => "EmployeeSearchRowBasic",
+		"userNotesJoin" => "NoteSearchRowBasic",
+		"customSearchJoin" => "CustomSearchRowBasic[]",
+	);
 }

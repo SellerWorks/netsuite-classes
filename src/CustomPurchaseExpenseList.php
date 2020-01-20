@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomPurchaseExpenseList.
+ * CustomPurchaseExpenseList
  */
-class CustomPurchaseExpenseList
-{
-    /**
-     * @var CustomPurchaseExpense[]
-     */
-    public $expense;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomPurchaseExpenseList {
+	/**
+	 * @access public
+	 * @var CustomPurchaseExpense[]
+	 */
+	public $expense;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'expense' => 'CustomPurchaseExpense[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"expense" => "CustomPurchaseExpense[]",
+		"replaceAll" => "boolean",
+	);
 }

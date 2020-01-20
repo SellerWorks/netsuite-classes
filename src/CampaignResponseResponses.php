@@ -11,31 +11,34 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CampaignResponseResponses.
+ * CampaignResponseResponses
  */
-class CampaignResponseResponses
-{
-    /**
-     * @var string
-     */
-    public $response;
-    /**
-     * @var string
-     */
-    public $responseDate;
-    /**
-     * @var string
-     */
-    public $author;
-    /**
-     * @var string
-     */
-    public $note;
+class CampaignResponseResponses {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $response;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $responseDate;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $author;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $note;
 
-    public static $paramtypesmap = [
-        'response' => 'string',
-        'responseDate' => 'string',
-        'author' => 'string',
-        'note' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"response" => "string",
+		"responseDate" => "string",
+		"author" => "string",
+		"note" => "string",
+	);
 }

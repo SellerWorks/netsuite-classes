@@ -11,81 +11,94 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ConsolidatedExchangeRateSearchRowBasic.
+ * ConsolidatedExchangeRateSearchRowBasic
  */
-class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic
-{
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $accountingBook;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $averageRate;
-    /**
-     * @var SearchColumnBooleanField[]
-     */
-    public $closed;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $currentRate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $externalId;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $fromCurrency;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $fromSubsidiary;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $historicalRate;
-    /**
-     * @var SearchColumnSelectField[]
-     */
-    public $internalId;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $periodEndDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $periodName;
-    /**
-     * @var SearchColumnDateField[]
-     */
-    public $periodStartDate;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $toCurrency;
-    /**
-     * @var SearchColumnStringField[]
-     */
-    public $toSubsidiary;
+class ConsolidatedExchangeRateSearchRowBasic extends SearchRowBasic {
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $accountingBook;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $averageRate;
+	/**
+	 * @access public
+	 * @var SearchColumnBooleanField[]
+	 */
+	public $closed;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $currentRate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $externalId;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $fromCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $fromSubsidiary;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $historicalRate;
+	/**
+	 * @access public
+	 * @var SearchColumnSelectField[]
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $periodEndDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $periodName;
+	/**
+	 * @access public
+	 * @var SearchColumnDateField[]
+	 */
+	public $periodStartDate;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $toCurrency;
+	/**
+	 * @access public
+	 * @var SearchColumnStringField[]
+	 */
+	public $toSubsidiary;
 
-    public static $paramtypesmap = [
-        'accountingBook' => 'SearchColumnStringField[]',
-        'averageRate' => 'SearchColumnStringField[]',
-        'closed' => 'SearchColumnBooleanField[]',
-        'currentRate' => 'SearchColumnStringField[]',
-        'externalId' => 'SearchColumnSelectField[]',
-        'fromCurrency' => 'SearchColumnStringField[]',
-        'fromSubsidiary' => 'SearchColumnStringField[]',
-        'historicalRate' => 'SearchColumnStringField[]',
-        'internalId' => 'SearchColumnSelectField[]',
-        'periodEndDate' => 'SearchColumnDateField[]',
-        'periodName' => 'SearchColumnStringField[]',
-        'periodStartDate' => 'SearchColumnDateField[]',
-        'toCurrency' => 'SearchColumnStringField[]',
-        'toSubsidiary' => 'SearchColumnStringField[]',
-    ];
+	static $paramtypesmap = array(
+		"accountingBook" => "SearchColumnStringField[]",
+		"averageRate" => "SearchColumnStringField[]",
+		"closed" => "SearchColumnBooleanField[]",
+		"currentRate" => "SearchColumnStringField[]",
+		"externalId" => "SearchColumnSelectField[]",
+		"fromCurrency" => "SearchColumnStringField[]",
+		"fromSubsidiary" => "SearchColumnStringField[]",
+		"historicalRate" => "SearchColumnStringField[]",
+		"internalId" => "SearchColumnSelectField[]",
+		"periodEndDate" => "SearchColumnDateField[]",
+		"periodName" => "SearchColumnStringField[]",
+		"periodStartDate" => "SearchColumnDateField[]",
+		"toCurrency" => "SearchColumnStringField[]",
+		"toSubsidiary" => "SearchColumnStringField[]",
+	);
 }

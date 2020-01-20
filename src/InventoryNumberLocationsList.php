@@ -13,21 +13,20 @@ namespace SellerWorks\Netsuite\Model;
 /**
  * InventoryNumberLocationsList
  */
-class InventoryNumberLocationsList
-{
-    /**
-     * @access public
-     * @var InventoryNumberLocations[]
-     */
-    public $locations;
-    /**
-     * @access public
-     * @var boolean
-     */
-    public $replaceAll;
+class InventoryNumberLocationsList {
+	/**
+	 * @access public
+	 * @var InventoryNumberLocations[]
+	 */
+	public $locations;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = array(
-        "locations" => "InventoryNumberLocations[]",
-        "replaceAll" => "boolean",
-    );
+	static $paramtypesmap = array(
+		"locations" => "InventoryNumberLocations[]",
+		"replaceAll" => "boolean",
+	);
 }

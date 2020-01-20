@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * CustomRecordTypeManagersList.
+ * CustomRecordTypeManagersList
  */
-class CustomRecordTypeManagersList
-{
-    /**
-     * @var CustomRecordTypeManagers[]
-     */
-    public $managers;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class CustomRecordTypeManagersList {
+	/**
+	 * @access public
+	 * @var CustomRecordTypeManagers[]
+	 */
+	public $managers;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'managers' => 'CustomRecordTypeManagers[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"managers" => "CustomRecordTypeManagers[]",
+		"replaceAll" => "boolean",
+	);
 }

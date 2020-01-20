@@ -11,16 +11,16 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * BaseRef.
+ * BaseRef
  */
-class BaseRef
-{
-    /**
-     * @var string
-     */
-    public $name;
+class BaseRef {
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $name;
 
-    public static $paramtypesmap = [
-        'name' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"name" => "string",
+	);
 }

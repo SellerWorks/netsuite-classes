@@ -11,21 +11,22 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * ItemGroupHierarchyVersionsList.
+ * ItemGroupHierarchyVersionsList
  */
-class ItemGroupHierarchyVersionsList
-{
-    /**
-     * @var ItemGroupHierarchyVersions[]
-     */
-    public $itemGroupHierarchyVersions;
-    /**
-     * @var bool
-     */
-    public $replaceAll;
+class ItemGroupHierarchyVersionsList {
+	/**
+	 * @access public
+	 * @var ItemGroupHierarchyVersions[]
+	 */
+	public $itemGroupHierarchyVersions;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $replaceAll;
 
-    public static $paramtypesmap = [
-        'itemGroupHierarchyVersions' => 'ItemGroupHierarchyVersions[]',
-        'replaceAll' => 'boolean',
-    ];
+	static $paramtypesmap = array(
+		"itemGroupHierarchyVersions" => "ItemGroupHierarchyVersions[]",
+		"replaceAll" => "boolean",
+	);
 }

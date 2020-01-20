@@ -11,306 +11,364 @@ declare(strict_types=1);
 namespace SellerWorks\Netsuite\Model;
 
 /**
- * Partner.
+ * Partner
  */
-class Partner extends Record
-{
-    /**
-     * @var RecordRef
-     */
-    public $customForm;
-    /**
-     * @var string
-     */
-    public $entityId;
-    /**
-     * @var string
-     */
-    public $altName;
-    /**
-     * @var string
-     */
-    public $partnerCode;
-    /**
-     * @var bool
-     */
-    public $isPerson;
-    /**
-     * @var string
-     */
-    public $phoneticName;
-    /**
-     * @var string
-     */
-    public $salutation;
-    /**
-     * @var string
-     */
-    public $firstName;
-    /**
-     * @var string
-     */
-    public $middleName;
-    /**
-     * @var string
-     */
-    public $lastName;
-    /**
-     * @var string
-     */
-    public $companyName;
-    /**
-     * @var RecordRef
-     */
-    public $parent;
-    /**
-     * @var string
-     */
-    public $phone;
-    /**
-     * @var string
-     */
-    public $fax;
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @var string
-     */
-    public $defaultAddress;
-    /**
-     * @var bool
-     */
-    public $isInactive;
-    /**
-     * @var dateTime
-     */
-    public $lastModifiedDate;
-    /**
-     * @var dateTime
-     */
-    public $dateCreated;
-    /**
-     * @var PartnerTaxRegistrationList
-     */
-    public $taxRegistrationList;
-    /**
-     * @var GlobalSubscriptionStatus
-     */
-    public $globalSubscriptionStatus;
-    /**
-     * @var string
-     */
-    public $referringUrl;
-    /**
-     * @var RecordRefList
-     */
-    public $roleList;
-    /**
-     * @var CategoryList
-     */
-    public $categoryList;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $printOnCheckAs;
-    /**
-     * @var string
-     */
-    public $taxIdNum;
-    /**
-     * @var string
-     */
-    public $vatRegNumber;
-    /**
-     * @var string
-     */
-    public $comments;
-    /**
-     * @var string
-     */
-    public $bcn;
-    /**
-     * @var RecordRef
-     */
-    public $image;
-    /**
-     * @var TaxFractionUnit
-     */
-    public $taxFractionUnit;
-    /**
-     * @var EmailPreference
-     */
-    public $emailPreference;
-    /**
-     * @var RecordRef
-     */
-    public $defaultTaxReg;
-    /**
-     * @var TaxRounding
-     */
-    public $taxRounding;
-    /**
-     * @var RecordRef
-     */
-    public $department;
-    /**
-     * @var RecordRef
-     */
-    public $location;
-    /**
-     * @var RecordRef
-     */
-    public $class;
-    /**
-     * @var RecordRef
-     */
-    public $subsidiary;
-    /**
-     * @var string
-     */
-    public $homePhone;
-    /**
-     * @var string
-     */
-    public $mobilePhone;
-    /**
-     * @var string
-     */
-    public $altEmail;
-    /**
-     * @var bool
-     */
-    public $giveAccess;
-    /**
-     * @var RecordRef
-     */
-    public $accessRole;
-    /**
-     * @var bool
-     */
-    public $sendEmail;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $password2;
-    /**
-     * @var bool
-     */
-    public $requirePwdChange;
-    /**
-     * @var bool
-     */
-    public $subPartnerLogin;
-    /**
-     * @var string
-     */
-    public $loginAs;
-    /**
-     * @var bool
-     */
-    public $eligibleForCommission;
-    /**
-     * @var ContactAccessRolesList
-     */
-    public $contactRolesList;
-    /**
-     * @var PartnerPromoCodeList
-     */
-    public $promoCodeList;
-    /**
-     * @var PartnerAddressbookList
-     */
-    public $addressbookList;
-    /**
-     * @var SubscriptionsList
-     */
-    public $subscriptionsList;
-    /**
-     * @var CustomFieldList
-     */
-    public $customFieldList;
-    /**
-     * @var string
-     */
-    public $internalId;
-    /**
-     * @var string
-     */
-    public $externalId;
+class Partner extends Record {
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $customForm;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $entityId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $partnerCode;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isPerson;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phoneticName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $salutation;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $firstName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $middleName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $lastName;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $companyName;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $parent;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $phone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $fax;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $email;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $url;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $defaultAddress;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $isInactive;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $lastModifiedDate;
+	/**
+	 * @access public
+	 * @var dateTime
+	 */
+	public $dateCreated;
+	/**
+	 * @access public
+	 * @var PartnerTaxRegistrationList
+	 */
+	public $taxRegistrationList;
+	/**
+	 * @access public
+	 * @var GlobalSubscriptionStatus
+	 */
+	public $globalSubscriptionStatus;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $referringUrl;
+	/**
+	 * @access public
+	 * @var RecordRefList
+	 */
+	public $roleList;
+	/**
+	 * @access public
+	 * @var CategoryList
+	 */
+	public $categoryList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $title;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $printOnCheckAs;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $taxIdNum;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $vatRegNumber;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $comments;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $bcn;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $image;
+	/**
+	 * @access public
+	 * @var TaxFractionUnit
+	 */
+	public $taxFractionUnit;
+	/**
+	 * @access public
+	 * @var EmailPreference
+	 */
+	public $emailPreference;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $defaultTaxReg;
+	/**
+	 * @access public
+	 * @var TaxRounding
+	 */
+	public $taxRounding;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $department;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $location;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $class;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $subsidiary;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $homePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $mobilePhone;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $altEmail;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $giveAccess;
+	/**
+	 * @access public
+	 * @var RecordRef
+	 */
+	public $accessRole;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $sendEmail;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $password2;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $requirePwdChange;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $subPartnerLogin;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $loginAs;
+	/**
+	 * @access public
+	 * @var boolean
+	 */
+	public $eligibleForCommission;
+	/**
+	 * @access public
+	 * @var ContactAccessRolesList
+	 */
+	public $contactRolesList;
+	/**
+	 * @access public
+	 * @var PartnerPromoCodeList
+	 */
+	public $promoCodeList;
+	/**
+	 * @access public
+	 * @var PartnerAddressbookList
+	 */
+	public $addressbookList;
+	/**
+	 * @access public
+	 * @var SubscriptionsList
+	 */
+	public $subscriptionsList;
+	/**
+	 * @access public
+	 * @var CustomFieldList
+	 */
+	public $customFieldList;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $internalId;
+	/**
+	 * @access public
+	 * @var string
+	 */
+	public $externalId;
 
-    public static $paramtypesmap = [
-        'customForm' => 'RecordRef',
-        'entityId' => 'string',
-        'altName' => 'string',
-        'partnerCode' => 'string',
-        'isPerson' => 'boolean',
-        'phoneticName' => 'string',
-        'salutation' => 'string',
-        'firstName' => 'string',
-        'middleName' => 'string',
-        'lastName' => 'string',
-        'companyName' => 'string',
-        'parent' => 'RecordRef',
-        'phone' => 'string',
-        'fax' => 'string',
-        'email' => 'string',
-        'url' => 'string',
-        'defaultAddress' => 'string',
-        'isInactive' => 'boolean',
-        'lastModifiedDate' => 'dateTime',
-        'dateCreated' => 'dateTime',
-        'taxRegistrationList' => 'PartnerTaxRegistrationList',
-        'globalSubscriptionStatus' => 'GlobalSubscriptionStatus',
-        'referringUrl' => 'string',
-        'roleList' => 'RecordRefList',
-        'categoryList' => 'CategoryList',
-        'title' => 'string',
-        'printOnCheckAs' => 'string',
-        'taxIdNum' => 'string',
-        'vatRegNumber' => 'string',
-        'comments' => 'string',
-        'bcn' => 'string',
-        'image' => 'RecordRef',
-        'taxFractionUnit' => 'TaxFractionUnit',
-        'emailPreference' => 'EmailPreference',
-        'defaultTaxReg' => 'RecordRef',
-        'taxRounding' => 'TaxRounding',
-        'department' => 'RecordRef',
-        'location' => 'RecordRef',
-        'class' => 'RecordRef',
-        'subsidiary' => 'RecordRef',
-        'homePhone' => 'string',
-        'mobilePhone' => 'string',
-        'altEmail' => 'string',
-        'giveAccess' => 'boolean',
-        'accessRole' => 'RecordRef',
-        'sendEmail' => 'boolean',
-        'password' => 'string',
-        'password2' => 'string',
-        'requirePwdChange' => 'boolean',
-        'subPartnerLogin' => 'boolean',
-        'loginAs' => 'string',
-        'eligibleForCommission' => 'boolean',
-        'contactRolesList' => 'ContactAccessRolesList',
-        'promoCodeList' => 'PartnerPromoCodeList',
-        'addressbookList' => 'PartnerAddressbookList',
-        'subscriptionsList' => 'SubscriptionsList',
-        'customFieldList' => 'CustomFieldList',
-        'internalId' => 'string',
-        'externalId' => 'string',
-    ];
+	static $paramtypesmap = array(
+		"customForm" => "RecordRef",
+		"entityId" => "string",
+		"altName" => "string",
+		"partnerCode" => "string",
+		"isPerson" => "boolean",
+		"phoneticName" => "string",
+		"salutation" => "string",
+		"firstName" => "string",
+		"middleName" => "string",
+		"lastName" => "string",
+		"companyName" => "string",
+		"parent" => "RecordRef",
+		"phone" => "string",
+		"fax" => "string",
+		"email" => "string",
+		"url" => "string",
+		"defaultAddress" => "string",
+		"isInactive" => "boolean",
+		"lastModifiedDate" => "dateTime",
+		"dateCreated" => "dateTime",
+		"taxRegistrationList" => "PartnerTaxRegistrationList",
+		"globalSubscriptionStatus" => "GlobalSubscriptionStatus",
+		"referringUrl" => "string",
+		"roleList" => "RecordRefList",
+		"categoryList" => "CategoryList",
+		"title" => "string",
+		"printOnCheckAs" => "string",
+		"taxIdNum" => "string",
+		"vatRegNumber" => "string",
+		"comments" => "string",
+		"bcn" => "string",
+		"image" => "RecordRef",
+		"taxFractionUnit" => "TaxFractionUnit",
+		"emailPreference" => "EmailPreference",
+		"defaultTaxReg" => "RecordRef",
+		"taxRounding" => "TaxRounding",
+		"department" => "RecordRef",
+		"location" => "RecordRef",
+		"class" => "RecordRef",
+		"subsidiary" => "RecordRef",
+		"homePhone" => "string",
+		"mobilePhone" => "string",
+		"altEmail" => "string",
+		"giveAccess" => "boolean",
+		"accessRole" => "RecordRef",
+		"sendEmail" => "boolean",
+		"password" => "string",
+		"password2" => "string",
+		"requirePwdChange" => "boolean",
+		"subPartnerLogin" => "boolean",
+		"loginAs" => "string",
+		"eligibleForCommission" => "boolean",
+		"contactRolesList" => "ContactAccessRolesList",
+		"promoCodeList" => "PartnerPromoCodeList",
+		"addressbookList" => "PartnerAddressbookList",
+		"subscriptionsList" => "SubscriptionsList",
+		"customFieldList" => "CustomFieldList",
+		"internalId" => "string",
+		"externalId" => "string",
+	);
 }
