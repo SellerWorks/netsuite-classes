@@ -35,7 +35,7 @@ if (false !== \preg_match_all('@if \(!class_exists\("(.*?)"\)\) {(.*?})}@si', $s
 
 declare(strict_types=1);
 
-namespace SellerWorks\Netsuite\Model;
+namespace SellerWorks\NetSuite\Model;
 
 {$class}
 
